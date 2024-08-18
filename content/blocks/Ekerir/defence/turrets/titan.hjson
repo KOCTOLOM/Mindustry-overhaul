@@ -1,0 +1,18 @@
+research: breach
+
+ammoPerShot: 24
+health: 27000
+maxAmmo: 180
+armor: 24
+
+consumes: {
+    power: 400
+    }
+
+requirements: [
+    silicon/7500
+    graphite/9600
+    tungsten/8100
+    thorium/5000
+    carbide/2100
+    ]

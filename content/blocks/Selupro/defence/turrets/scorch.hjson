@@ -1,0 +1,205 @@
+research: duo
+targetAir: false
+fogRadius: 10.5
+shootCone: 50
+shootY: 3
+recoil: 0
+
+buildCostMultiplier: 1.75
+coolantMultiplier: 20
+
+maxAmmo: 18
+health: 320
+reload: 9
+range: 60
+armor: 3
+
+ammoUseEffect: none
+shootSound: flame
+
+requirements: [
+    copper/32
+    graphite/25
+]
+
+ammoTypes: {
+coal: {
+    type: BulletType
+    keepVelocity: false
+    collidesAir: false
+    hittable: false
+    hitSize: 7
+
+    reloadMultiplier: 1.25
+    ammoMultiplier: 6
+
+    statusDuration: 240
+    status: burning
+    pierceCap: 4
+    lifetime: 16
+    speed: 2.75
+    damage: 36
+
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+    }
+
+pyratite: {
+    type: BulletType
+    collidesAir: false
+    hittable: false
+    pierce: true
+    hitSize: 7
+
+    reloadMultiplier: 0.9
+    ammoMultiplier: 12
+    rangeChange: 40
+
+    statusDuration: 600
+    status: burning
+    lifetime: 36
+    damage: 54.5
+    speed: 3
+	pierceCap: 6
+	pierceArmor:true
+    despawnEffect: none
+
+smokeEffect: {
+    particles: 6
+    lifetime: 60
+    sizeFrom: 2
+    sizeTo: 0.25
+    length: 110
+    cone: 7
+
+    lightColor: 696969
+    lightOpacity: 0.7
+    lightRadius: 12.5
+
+    colorFrom: db661c
+    colorTo: 454545
+
+    sizeInterp: pow3In
+    interp: pow5Out
+    }
+
+shootEffect: {
+    particles: 12
+    lifetime: 81
+    sizeFrom: 2
+    sizeTo: 0.25
+    length: 110
+    cone: 7
+
+    lightColor: 696969
+    lightOpacity: 0.7
+    lightRadius: 12.5
+
+    colorFrom: ffb855
+    colorTo: db661c
+
+    sizeInterp: pow3In
+    interp: pow5Out
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 15
+
+    waveColor: ffaa5f
+    waveStroke: 1.5
+    waveRad: 4.5
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 2.5
+    smokes: 5
+
+    sparkColor: ffaa5f
+    sparkStroke: 1.25
+    sparkRad: 4.5
+    sparkLen: 1.5
+    sparks: 9
+}
+    }
+
+spore-pod: {
+    type: BulletType
+    collidesAir: false
+    hittable: false
+    hitSize: 6
+
+    ammoMultiplier: 3
+    rangeChange: 12
+
+    statusDuration: 180
+    status: spore-slowed
+    pierceCap: 12
+    lifetime: 24
+    damage: 24
+    speed: 3
+
+    despawnEffect: none
+
+smokeEffect: {
+    particles: 4
+    lifetime: 48
+    sizeFrom: 2
+    sizeTo: 0.25
+    length: 75
+    cone: 7
+
+    lightColor: 696969
+    lightOpacity: 0.7
+    lightRadius: 12.5
+
+    colorFrom: 7457ce
+    colorTo: 454545
+
+    sizeInterp: pow3In
+    interp: pow5Out
+    }
+
+shootEffect: {
+    particles: 7
+    lifetime: 55
+    sizeFrom: 2
+    sizeTo: 0.25
+    length: 75
+    cone: 7
+
+    lightColor: 9e78dc
+    lightOpacity: 0.7
+    lightRadius: 7.5
+
+    colorFrom: 9e78dc
+    colorTo: 7457ce
+
+    sizeInterp: pow3In
+    interp: pow5Out
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 15
+
+    waveColor: 9e78dc
+    waveStroke: 1.5
+    waveRad: 3
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 2.5
+    smokes: 3
+
+    sparkColor: 9e78dc
+    sparkStroke: 1.25
+    sparkRad: 4.5
+    sparkLen: 1.5
+    sparks: 3
+    }
+}
+    }

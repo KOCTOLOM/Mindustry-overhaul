@@ -1,0 +1,4 @@
+name: Naval Specialization
+healthMultiplier: 0.9
+
+opposites: [ bsm-ground-specialization, bsm-air-specialization ]

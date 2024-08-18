@@ -1,0 +1,17 @@
+type: SolarGenerator
+description: Provides a small amount of energy from the sun. A more efficient solar panel model.
+research: solar-panel
+category: power
+size: 2
+
+buildCostMultiplier: 3.405
+
+powerProduction: 2
+health: 180
+armor: 2
+
+requirements: [
+    lead/32
+    thorium/15
+    silicon/24
+]

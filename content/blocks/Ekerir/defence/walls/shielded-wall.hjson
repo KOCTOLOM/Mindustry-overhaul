@@ -1,0 +1,19 @@
+research: shielded-wall-small
+
+buildCostMultiplier: 18.686133
+
+breakCooldown: 1440
+shieldHealth: 5000
+chanceDeflect: 50
+health: 11000
+armor: 30
+
+consumes: {
+    power: 45
+    }
+
+requirements: [
+    surge-alloy/18
+    phase-fabric/24
+    carbide/21
+    ]

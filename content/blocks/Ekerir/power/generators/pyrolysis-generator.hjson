@@ -1,0 +1,15 @@
+research: chemical-combustion-chamber
+ambientSoundVolume: 0.05
+
+buildCostMultiplier: 1
+
+powerProduction: 130
+liquidCapacity: 180
+health: 7200
+
+requirements: [
+    silicon/80
+    tungsten/50
+    oxide/40
+    beryllium/90
+    ]

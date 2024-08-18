@@ -1,0 +1,11 @@
+research: tungsten-wall-large
+
+buildCostMultiplier: 15.75
+
+health: 1960
+armor: 15
+
+requirements: [
+    thorium/9
+    carbide/6
+    ]

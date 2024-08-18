@@ -1,0 +1,17 @@
+type: PayloadConveyor
+name: Large reinforced payload conveyor
+description: Designed for heavier transportation of units and large objects.
+research: reinforced-payload-router
+canOverdrive: false
+category: units
+size: 4
+
+payloadLimit: 4
+moveTime: 48
+health: 1150
+armor: 2
+
+requirements: [
+  silicon/18
+  tungsten/24
+]

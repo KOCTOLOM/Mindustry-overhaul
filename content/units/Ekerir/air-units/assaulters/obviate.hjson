@@ -1,0 +1,12 @@
+research: avert
+fogRadius: 25
+
+rotateSpeed: 2.1
+itemCapacity: 0
+health: 18000
+accel: 0.09
+speed: 1.5
+drag: 0.08
+armor: 15
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]

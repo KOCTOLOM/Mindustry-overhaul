@@ -1,0 +1,12 @@
+research: elude
+fogRadius: 25
+
+itemCapacity: 0
+rotateSpeed: 4
+health: 2100
+accel: 0.09
+drag: 0.08
+armor: 9
+speed: 2
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]

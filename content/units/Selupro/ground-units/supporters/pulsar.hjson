@@ -1,0 +1,102 @@
+research: nova
+targetAir: false
+stepShake: 0.6
+fogRadius: 18
+
+itemCapacity: 48
+buildSpeed: 0.24
+mineSpeed: 0.75
+mineTier: 3
+health: 840
+speed: 1
+armor: 9
+
+lightColor: 98ffa9
+lightOpacity: 0.7
+healColor: 84f491
+lightRadius: 75
+
+trailLength: 9
+
+immunities: [ electrified, shocked, bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ShieldRegenFieldAbility 
+    reload: 300
+    amount: 60
+    range: 60
+    max: 180
+}
+    {
+    type: RegenAbility
+    amount: 0.04
+}
+    ]
+
+weapons: [
+{
+    name: pulsar-weapon
+    rotationLimit: 15
+    rotateSpeed: 1.8
+    shootCone: 90
+    rotate: true
+    recoil: 2.5
+    shootY: 2.5
+    shake: 2.2
+    x: 5
+    y: 0.5
+
+    inaccuracy: 5
+    reload: 24
+
+    shootSound: shotgun-electro-shot
+    ejectEffect: none
+shoot: {
+    type: ShootSpread
+    spread: 2
+    shots: 4
+    }
+
+bullet: {
+    type: LightningBulletType
+    collidesAir: false
+    hitSize: 15
+    height: 0
+    width: 0
+
+    buildingDamageMultiplier: 0.5
+
+    lightningLengthRand: 4
+    lightningLength: 14
+    healAmount: 17.5
+    damage: 24
+
+    shootEffect: shootHeal
+
+    lightningColor: 98ffa9
+    hitColor: 98ffa9
+
+lightningType: {
+    collidesTeam: true
+    collidesAir: false
+    hittable: false
+    hitSize: 15
+    height: 0
+    width: 0
+
+    status: bsm-emp-tier-1
+    statusDuration: 180
+    healAmount: 7.5
+    lifetime: 1
+
+    hitEffect: hitLancer
+    despawnEffect: none
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 42.5
+}
+    }
+}
+    ]

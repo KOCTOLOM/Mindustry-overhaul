@@ -1,0 +1,10 @@
+absorbLasers: true
+
+itemCapacity: 5000
+health: 10000
+armor: 3
+
+requirements: [
+    copper/1250
+    lead/320
+]

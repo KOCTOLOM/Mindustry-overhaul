@@ -1,0 +1,13 @@
+research: power-node-large
+
+laserRange: 120
+maxNodes: 4
+health: 450
+armor: 15
+
+requirements: [
+    lead/150
+    titanium/120
+    silicon/90
+    surge-alloy/90
+]

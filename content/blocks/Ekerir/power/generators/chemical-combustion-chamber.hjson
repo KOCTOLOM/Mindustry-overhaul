@@ -1,0 +1,14 @@
+research: turbine-condenser
+ambientSoundVolume: 0.04
+
+buildCostMultiplier: 1
+
+powerProduction: 115
+liquidCapacity: 240
+health: 2700
+
+requirements: [
+    silicon/50
+    oxide/30
+    beryllium/80
+    ]

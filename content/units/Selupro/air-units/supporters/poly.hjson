@@ -1,0 +1,61 @@
+research: mono
+fogRadius: 17.5
+maxRange: 88
+
+itemCapacity: 32
+buildSpeed: 0.24
+mineSpeed: 1
+mineTier: 1
+health: 180
+speed: 3.25
+armor: 2
+
+lightColor: 98ffa9
+lightOpacity: 0.7
+lightRadius: 62.5
+
+trailLength: 6.25
+
+deathSound: medium-air-crush-2
+
+immunities: [ electrified, tarred, wet, bsm-ground-specialization, bsm-naval-specialization ]
+
+ammoType: {
+    type: PowerAmmoType
+    totalPower: 90
+}
+
+abilities: [
+{
+    type: RepairFieldAbility
+    reload: 240
+    amount: 24
+    range: 70
+    }
+]
+
+weapons: [
+{
+    name: poly-weapon
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: true
+    targetUnits: true
+    autoTarget: false
+    widthSinMag: 0.1
+    beamWidth: 0.5
+    shootCone: 30
+    rotate: true
+    aimDst: 0
+    x: 3.75
+    y: -2.5
+    
+    fractionRepairSpeed: 0.01
+    repairSpeed: 0.25
+    reload: 32
+
+bullet: {
+    maxRange: 90
+    }
+}
+    ]

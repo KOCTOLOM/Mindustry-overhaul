@@ -1,0 +1,688 @@
+research: antumbra
+alwaysShootWhenMoving: true
+circleTarget: true
+fogRadius: 55
+
+crashDamageMultiplier: 9
+
+itemCapacity: 18000
+rotateSpeed: 0.55
+fallSpeed: 0.0018
+health: 64000
+speed: 0.7
+armor: 220
+
+lightColor: fff8e8
+lightOpacity: 0.7
+healColor: b0bac0
+lightRadius: 145
+
+trailLength: 46
+
+deathSound: air-crush-large-1
+loopSoundVolume: 0.24
+loopSound: air-engine
+
+immunities: [ melting, burning, blasted, shocked, tarred, wet, bsm-ground-specialization, bsm-naval-specialization ]
+
+targetFlags: [ turret, repair, extinguisher, hasFogRadius, unitAssembler, unitCargoUnloadPoint, launchPad, reactor, generator, battery, factory, storage, drill, core ]
+
+abilities: [
+{
+    type: ShieldArcAbility
+    region: bsm-eclipse-shield
+    radius: 52.5
+    angle: 54.5
+    width: 10.5
+    y: -7
+
+    cooldown: 900
+    regen: 3.2
+    max: 18000
+    }
+{
+    type: ShieldRegenFieldAbility
+    range: 0
+
+    reload: 1050
+    amount: 4000
+    max: 24000
+    }
+{
+    type: ShieldRegenFieldAbility
+    range: 500
+
+    reload: 1050
+    amount: 500
+    max: 1500
+    }
+]
+
+weapons: [
+{
+    name: mount-weapon
+    predictTarget: false
+    controllable: false
+    layerOffset: -0.001
+    rotationLimit: 30
+    alternate: true
+    shootCone: 7.5
+    rotate: true
+    shake: 1.1
+    x: 3
+    y: 37
+
+    velocityRnd: 0.02
+    inaccuracy: 5
+    reload: 25
+
+    ejectEffect: casing1
+    shootSound: shoot
+shoot: {
+    shotDelay: 3
+    shots: 3
+    }    
+    
+bullet: {
+    type: BasicBulletType
+    collideTerrain: true
+    keepVelocity: false
+    height: 9
+    width: 7
+
+    buildingDamageMultiplier: 0.7
+    pierceArmor: true
+    lifetime: 60
+    damage: 86
+    speed: 4.5
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 21
+}
+    }
+
+{
+    name: large-bullet-mount
+    predictTarget: false
+    layerOffset: -0.001
+    rotationLimit: 7.5
+    rotateSpeed: 1.2
+    baseRotation: 9
+    alternate: true
+    shootCone: 30
+    rotate: true
+    shootY: 10
+    shadow: 8
+    shake: 3
+    x: 12
+    y: 26
+
+    velocityRnd: 0.2
+    inaccuracy: 7
+    reload: 45
+    
+    ejectEffect: casing3
+    shootSound: shootBig
+shoot: {
+    type: ShootMulti
+source: {
+    type: ShootSpread
+    shotDelay: 1
+    spread: 2
+    shots: 6
+    }
+
+dest: [
+{
+    type: ShootPattern
+    shotDelay: 10
+    shots: 2
+    }
+]
+    }
+    
+bullet: {
+    type: BasicBulletType
+    collideTerrain: false
+    keepVelocity: false
+    collidesAir: true
+    pierceArmor: true
+    despawnShake: 5
+    pierceCap: 5
+    pierce: true
+    hitShake: 5
+    height: 15
+    width: 9
+
+    buildingDamageMultiplier: 1.7
+
+    splashDamageRadius: 26
+    splashDamage: 121
+    lifetime: 45
+    speed: 5.75
+    damage: 170
+
+    hitEffect: flakExplosion
+    shootEffect: shootBig
+    
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 37.5
+
+    trailLength: 6
+    trailWidth: 1
+}
+    }
+
+{
+    name: orange-bsw
+    type: PointDefenseWeapon
+    rotationLimit: 150
+    mirror: false
+    shadow: 9
+    x: 0
+    y: -7
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 4.5
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 130
+
+    damage: 64
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+
+{
+name: orange-bsw
+    
+    type: PointDefenseWeapon
+    rotationLimit: 250
+    baseRotation: -45
+    shadow: 9
+    x: 6
+    y: -27
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 6.5
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 170
+
+    damage: 75
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+
+{
+    name: large-bullet-mount
+    rotationLimit: 40
+    baseRotation: 12
+    alternate: false
+    shootCone: 30
+    rotate: true
+    shake: 4
+    x: 11.5
+    y: 24
+
+    inaccuracy: 2
+    reload: 170
+    
+    ejectEffect: casing3
+    shootSound: shootBig
+shoot: {
+    type: ShootMulti
+source: {
+    type: ShootSpread
+    shotDelay: 1
+    spread: 1
+    shots: 2
+    }
+
+dest: [
+{
+    type: ShootPattern
+    shotDelay: 10
+    shots: 2
+    }
+]
+    }
+    
+bullet: {
+    type: BasicBulletType
+    keepVelocity: false
+    collidesAir: false
+    pierceArmor: true
+    despawnShake: 5
+    pierceCap: 5
+    pierce: true
+    hitShake: 5
+    height: 15
+    width: 9
+
+    buildingDamageMultiplier: 3
+
+    splashDamageRadius: 26
+    splashDamage: 82
+    lifetime: 45
+    damage: 60
+    speed: 4.2
+
+    fragRandomSpread: 0
+    fragBullets: 2
+    fragSpread: 20
+    fragSpread: 20
+    fragAngle: 0
+
+    hitEffect: flakExplosion
+    shootEffect: shootBig
+
+    trailLength: 6
+    trailWidth: 2
+    
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 37.5
+
+fragBullet: {
+    type: LaserBulletType
+    collidesAir: true
+    pierceArmor: true
+    sideLength: 0
+    hitShake: 3
+    length: 60
+
+    buildingDamageMultiplier: 3
+
+    damage: 95
+
+    colors: [ ec7458aa, ff9c5a, ffffff ]
+    }
+}
+    }
+
+{
+    name: zenith-missiles
+    rotationLimit: 15
+    baseRotation: 30
+    alternate: false
+    shootCone: 30
+    rotate: true
+    shake: 4
+    x: 19.5
+    y: 19.5
+
+    velocityRnd: 0.2
+    inaccuracy: 2
+    reload: 160
+
+    shootSound: missile
+shoot: {
+    type: ShootMulti
+
+source: {
+    type: ShootBarrel
+    spread: 2
+    shots: 2
+
+barrels: [
+    -1, 0, 0,
+    1, 0, 0
+]
+    }
+
+dest: [
+{
+    type: ShootPattern
+    shots: 2
+    shotDelay: 12
+    }
+]
+    }
+    
+bullet: {
+    type: BasicBulletType
+    sprite: missile
+    keepVelocity: false
+    pierceArmor: true
+    despawnShake: 7
+    shrinkX: 0.25
+    shrinkY: 0.5
+    drag: -0.003 
+    hitShake: 7
+    height: 8
+    width: 8
+
+    splashDamageRadius: 26
+    statusDuration: 90
+    splashDamage: 120
+    homingPower: 0.03
+    homingRange: 32
+    status: burning
+    weaveScale: 3
+    lifetime: 75
+    weaveMag: 1
+    damage: 190
+    speed: 2.8
+
+    despawnEffect: blastExplosion
+    hitEffect: blastExplosion
+
+    frontColor: ffa665
+    trailColor: d06b53
+    backColor: d06b53
+
+    lightColor: d06b53
+    lightOpacity: 0.7
+    lightRadius: 41.5
+}
+    }
+
+{
+    name: zenith-missiles
+    controllable: false
+    rotationLimit: 45
+    baseRotation: -30
+    autoTarget: true
+    alternate: false
+    shootCone: 60
+    rotate: true
+    shake: 4
+    x: 24.5
+    y: -1.5
+
+    velocityRnd: 0.5
+    inaccuracy: 70
+    reload: 230
+
+    shootSound: missile
+shoot: {
+    shotDelay: 2
+    shots: 5
+    }
+
+bullet: {
+    type: MissileBulletType
+    keepVelocity: false
+    pierceArmor: true
+    despawnShake: 7
+    shrinkX: 0.25
+    shrinkY: 0.5
+    hitShake: 7
+    height: 8
+    width: 8
+
+    splashDamageRadius: 36
+    splashDamage: 126
+    homingPower: 0.05
+    homingRange: 55
+    status: blasted
+    weaveScale: 3
+    lifetime: 75
+    weaveMag: 1
+    drag: 0.003
+    damage: 94
+    speed: 6.2
+
+    despawnEffect: blastExplosion
+    hitEffect: blastExplosion
+
+    frontColor: ffa665
+    trailColor: d06b53
+    backColor: d06b53
+
+    lightColor: d06b53
+    lightOpacity: 0.7
+    lightRadius: 41.5
+}
+    }
+
+{
+    name: large-artillery
+    minShootVelocity: 0.4
+    aiControllable: false
+    alwaysShooting: true
+    controllable: false
+    baseRotation: -155
+    alternate: false
+    rotateSpeed: 0
+    shootCone: 360
+    rotate: true
+    shadow: 17.5
+    shake: 11
+    x: 18.5
+    y: -17
+
+    velocityRnd: 0.9
+    inaccuracy: 9
+    reload: 40
+
+    shootEffect: shootSmall
+    shootSound: artillery
+    ejectEffect: casing2
+shoot: {
+    shotDelay: 4
+    shots: 2
+    }
+
+bullet: {
+    type: BasicBulletType
+    sprite: mine-bullet
+    collideTerrain: true
+    pierceBuilding: true
+    collidesTiles: true
+    collidesAir: false
+    despawnShake: 9
+    pierceCap: 3
+    pierce: true
+    shrinkX: 0
+    shrinkY: 0
+    height: 10
+    width: 10
+    
+    buildingDamageMultiplier: 6
+
+    splashDamageRadius: 40
+    fragRandomSpread: 360
+    splashDamage: 150
+    fragLifeMin: 0.7
+    fragBullets: 3
+    fragLifeMax: 4
+    knockback: 0.8
+    lifetime: 250
+    speed: 4.25
+    drag: 0.04
+    
+    hitEffect: flakExplosion
+
+    lightColor: f9c27a
+    lightOpacity: 0.7
+    lightRadius: 67.5
+
+    trailEffect: artilleryTrail
+    trailInterval: 9.5
+    trailColor: f9c27a
+    frontColor: fff8e8
+    backColor: f9c27a
+    trailLength: 6
+    trailWidth: 1
+    trailSize: 4
+
+despawnEffect:[
+{    
+    startDelay:5
+    type: ParticleEffect
+    particles: 7
+    cone: 360
+    length: 7
+    lifetime: 60
+    sizeFrom: 3
+    sizeTo: 4
+    layer:100.1
+    colorFrom: 5B5B5B
+    colorTo: 5B5B5B00
+    }
+{    
+    startDelay:5
+    type: ParticleEffect
+    particles: 12
+    cone: 360
+    length: 5
+    lifetime: 60
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.2
+    colorFrom: 808080
+    colorTo: 80808000
+}
+    {
+    startDelay:7
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 36
+    lifetime: 90
+    colorFrom: 5B5B5B20
+    colorTo: 5B5B5B00
+}
+    ]
+
+fragBullet: {
+    type: BasicBulletType
+    sprite: mine-bullet
+    collideTerrain: true
+    pierceBuilding: true
+    despawnShake: 1.75
+    collidesAir: false
+    hitShake: 1.75
+    pierce: true
+    shrinkX: 0
+    shrinkY: 0
+    height: 5
+    width: 5
+    
+    buildingDamageMultiplier: 6
+
+    splashDamageRadius: 26
+    splashDamage: 75
+    lifetime: 200
+    pierceCap: 2
+    damage: 30
+    speed: 4.5
+    drag: 0.06
+
+    hitEffect: flakExplosion
+
+    trailColor: ffa665
+    trailLength: 4
+    trailWidth: 1
+
+despawnEffect: [
+{    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 7
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: 5B5B5B
+    colorTo: 5B5B5B00
+    }
+{    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 5
+    lifetime: 45
+    sizeFrom: 1
+    sizeTo: 2
+    layer:100.2
+    colorFrom: 808080
+    colorTo: 80808000
+    }
+{
+    startDelay:7
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 26
+    lifetime: 90
+    colorFrom: 5B5B5B20
+    colorTo: 5B5B5B00
+    }
+]
+    }
+}
+    }
+
+{
+    name: large-laser-mount
+    predictTarget: false
+    rotationLimit: 15
+    baseRotation: 15
+    rotateSpeed: 1.8
+    rotate: true
+    shadow: 20
+    shootY: 9
+    recoil: 4
+    shake: 6
+    x: 15
+    y: 2
+
+    inaccuracy: 2
+    reload: 270
+
+    shootSound: laser
+shoot: {
+    type: ShootMulti
+source: {
+    type: ShootBarrel
+    shotDelay: 2
+    shots: 7
+
+barrels: [
+    -1, 0, 0,
+    1, 0, 0
+]
+    }
+
+dest: [
+{
+    type: ShootPattern
+    shots: 4
+    shotDelay: 12
+    }
+]
+    }
+
+bullet: {
+    type: LaserBulletType
+    pierceArmor: true
+    sideLength: 80
+    sideWidth: 1.5
+    sideAngle: 20
+    length: 370
+    width: 7.5
+
+    buildingDamageMultiplier: 1.25
+
+    damage: 120
+    
+    shootEffect: shockwave
+
+    colors: [ ec7458aa, ff9c5a, ffffff ]
+    }
+}
+    ]

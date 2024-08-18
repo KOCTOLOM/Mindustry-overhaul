@@ -1,0 +1,7 @@
+itemCapacity: 4
+health: 81
+
+requirements: [
+    copper/15
+    lead/8
+]

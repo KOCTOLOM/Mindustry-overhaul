@@ -1,0 +1,16 @@
+research: titanium-wall-large
+
+buildCostMultiplier: 10.95
+
+health: 1500
+armor: 8
+
+destroyBullet: {
+    instantDisappear: true
+
+    splashDamageRadius: 16
+    splashDamage: 180
+    speed: 0
+
+    despawnEffect: flakExplosion
+}

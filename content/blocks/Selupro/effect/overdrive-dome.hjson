@@ -1,0 +1,26 @@
+research: overdrive-projector
+
+speedBoost: 2.00
+useTime: 120
+
+liquidCapacity: 180
+itemCapacity: 96
+health: 2450
+reload: 60
+range: 450
+armor: 18
+
+consumes: {
+    liquid: cryofluid/0.5
+    power: 45
+}
+
+requirements: [
+    lead/1200
+    graphite/325
+    titanium/120
+    silicon/255
+    plastanium/210
+    phase-fabric/450
+    surge-alloy/560
+]

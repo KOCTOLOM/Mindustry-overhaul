@@ -1,0 +1,69 @@
+research: ground-factory
+fogRadius: 26.5
+stepShake: 0.15
+
+rotateSpeed: 12.5
+itemCapacity: 24
+health: 210
+speed: 0.6
+armor: 9
+
+lightColor: fff8e8
+lightOpacity: 0.7
+healColor: b0bac0
+lightRadius: 55
+
+immunities: [ blasted, bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ShieldRegenFieldAbility
+    reload: 200
+    amount: 25
+    range: 0
+    max: 50
+}
+    {
+    type: ArmorPlateAbility
+    healthMultiplier: 0.1
+}
+    {
+    type: RegenAbility
+    amount: 0.03
+}
+    ]
+
+weapons: [
+    {
+    name: dagger-weapon
+    rotationLimit: 25
+    rotateSpeed: 3
+    shootCone: 90
+    rotate: true
+    x: 4
+    y: 2
+
+    inaccuracy: 5
+    reload: 7.5
+
+    shootSound: machine-gun-shot-2
+    ejectEffect: casing1
+bullet: {
+    type: BasicBulletType
+    height: 9
+    width: 7
+
+    lifetime: 49
+    damage: 13
+    speed: 4
+    
+    incendAmount: 1
+    incendSpread: 2
+    incendChance: 0.04
+    
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 20
+    }
+}
+    ]

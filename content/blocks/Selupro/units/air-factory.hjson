@@ -1,0 +1,9 @@
+research: ground-factory
+
+itemCapacity: 360
+health: 500
+armor: 3
+
+consumes: {
+    power: 4
+}

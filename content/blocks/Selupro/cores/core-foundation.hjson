@@ -1,0 +1,12 @@
+absorbLasers: true
+
+itemCapacity: 25000
+health: 25000
+armor: 5
+
+requirements: [
+    graphite/5000
+    lead/6000
+    titanium/7250
+    silicon/3600
+]

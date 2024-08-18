@@ -1,0 +1,185 @@
+research: crawler
+alwaysShootWhenMoving: true
+targetAir: true
+stepShake: 0.7
+fogRadius: 29
+
+rotateSpeed: 1.8
+speed: 0.53335
+health: 960
+armor: 8
+
+lightColor: 665c9f
+lightOpacity: 0.7
+healColor: bf92f9
+lightRadius: 90
+
+immunities: [ melting, burning, sapped, bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ShieldArcAbility
+    region: bsm-atrax-shield-right
+    angleOffset: -75
+    radius: 10
+    angle: 64
+    width: 3
+    y: -1
+
+    cooldown: 300
+    regen: 3
+    max: 180
+}
+    {
+    type: ShieldArcAbility
+    region: bsm-atrax-shield-left
+    angleOffset: 75
+    radius: 10
+    angle: 64
+    width: 3
+    y: -1
+
+    cooldown: 300
+    regen: 3
+    max: 180
+}
+    {
+    type: RegenAbility
+    amount: 0.03
+}
+    ]
+
+weapons: [
+{
+    name: atrax-weapon
+    useAttackRange: false
+    rotationLimit: 15
+    rotateSpeed: 2.75
+    rotate: true
+    shootY: 3
+    recoil: 1
+    x: 7
+    y: 0
+
+    inaccuracy: 5
+    reload: 2.4
+
+    ejectEffect: none
+    shootSound: flame
+
+bullet: { 
+    type: LiquidBulletType
+    liquid: slag
+    collideTerrain: true
+    collidesAir: false
+    scaleLife: true
+
+    buildingDamageMultiplier: 2
+
+    statusDuration: 450
+    status: melting
+    knockback: 0.5
+    lifetime: 64
+    damage: 18
+    speed: 2.5
+    drag: 0.01
+
+    shootEffect: shootSmall
+
+    lightColor: ffa166
+    lightOpacity: 0.7
+    lightRadius: 32
+}
+    }
+
+{
+    name: purple-missiles
+    controllable: false
+    autoTarget: true
+    shootCone: 120
+    mirror: false
+    recoil: 2
+    shootY: 1
+    shake: 5
+    x: 4.15
+    y: -5
+
+    velocityRnd: 0.24
+    inaccuracy: 9
+    reload: 275
+
+    shootStatus: motor-deceleration-tier-1
+    chargeSound: target-locked-short
+    shootStatusDuration: 250
+    shootSound: rocket-shot-1
+shoot: {
+    type: ShootAlternate
+    firstShotDelay: 185
+    shotDelay: 9
+    spread: 1.8
+    barrels: 2
+    shots: 6
+    }
+
+bullet: {
+    type: MissileBulletType
+    keepVelocity: false
+    despawnShake: 7.5
+    scaleLife: true
+    shrinkX: 0.25
+    shrinkY: 0.5
+    height: 11
+    width: 11
+
+    splashDamageRadius: 40
+    lightningDamage: 12.5
+    lightningLength: 5
+    splashDamage: 32
+    homingPower: 0.1
+    homingRange: 180
+    lifetime: 155
+    lightning: 3
+    damage: 48
+    speed: 2.5
+    drag: 0.01
+
+    despawnEffect: none
+
+    lightColor: bf92f9
+    lightOpacity: 0.7
+    lightRadius: 23.5
+
+    trailEffect: artilleryTrail
+    trailInterval: 12.5
+    trailInterp: slope
+    trailColor: bf92f9
+    trailLength: 48
+    trailWidth: 2
+    trailSize: 2
+
+    frontColor: ffffff
+    backColor: bf92f9
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 48
+
+    waveColor: bf92f9
+    waveStroke: 3.2
+    waveRad: 48
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 14.5
+    smokes: 7
+
+    sparkColor: bf92f9
+    sparkStroke: 1.8
+    sparkRad: 27.5
+    sparkLen: 3
+    sparks: 9
+}
+    }
+}
+    ]

@@ -1,0 +1,14 @@
+research: reinforced-surge-wall
+
+buildCostMultiplier: 14.33
+
+lightningChance: 0.75
+lightningDamage: 90
+lightningLength: 18
+health: 5760
+armor: 18
+
+requirements: [
+    surge-alloy/24
+    tungsten/21
+    ]

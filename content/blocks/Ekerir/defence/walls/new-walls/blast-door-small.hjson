@@ -1,0 +1,15 @@
+type: AutoDoor
+name: Small Blast Door
+description: A small wall that opens when allied ground units are in range. Cannot be manually controlled.
+research: tungsten-wall-large
+category: defense
+
+buildCostMultiplier: 13.913333
+
+health: 1250
+armor: 5
+
+requirements: [
+    silicon/6
+    tungsten/6
+    ]

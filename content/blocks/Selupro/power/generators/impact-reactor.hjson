@@ -1,0 +1,9 @@
+research: differential-generator
+ambientSoundVolume: 0.25
+
+powerProduction: 220
+explosionRadius: 32
+liquidCapacity: 240
+itemDuration: 180
+itemCapacity: 360
+health: 5000

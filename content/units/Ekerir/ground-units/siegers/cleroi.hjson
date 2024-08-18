@@ -1,0 +1,264 @@
+research: merui
+alwaysShootWhenMoving: true
+legSplashDamage: 96
+legSplashRange: 12
+targetAir: false
+hovering: true
+fogRadius: 28
+stepShake: 1
+
+rotateSpeed: 2.5
+health: 3250
+speed: 0.64
+armor: 24
+
+lightColor: 8ca9e8
+lightOpacity: 0.7
+lightRadius: 81.5
+
+deathSound: mech-destroyed
+
+immunities: [ bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ShieldArcAbility
+    region: bsm-cleroi-shield
+    radius: 24
+    angle: 250
+    width: 3
+    y: -1.5
+
+    cooldown: 1440
+    regen: 3.2
+    max: 1800
+}
+
+    {
+    type: ShieldRegenFieldAbility
+    amount: 1500
+    reload: 1920
+    max: 1500
+    range: 0
+}
+    ]
+
+weapons: [
+{
+    parentizeEffects: true
+    controllable: false
+    autoTarget: true
+    shootCone: 360
+    rotate: false
+    mirror: false
+    recoil: 0
+    x: 0
+    y: -2
+
+    smoothReloadSpeed: 1.25
+    reload: 500
+
+    shootStatusDuration: 180
+    chargeSound: emp-charge
+    shootSound: pinger-wave
+    shootStatus: unmoving
+shoot: {
+    firstShotDelay: 177
+    shots: 1
+    }
+
+bullet: {
+    splashDamagePierce: true
+    pierceBuilding: true
+    collidesTiles: false
+    rangeOverride: 220
+    collidesTeam: true
+    despawnShake: 9
+    hittable: false
+    collides: true
+    hitShake: 9
+    height: 1
+    width: 1
+
+    splashDamageRadius: 72
+    status: bsm-emp-tier-2
+    statusDuration: 450
+    splashDamage: 181
+    healPercent: 25
+    lifetime: 0.01
+    pierceCap: 75
+    damage: 0
+    speed: 3
+
+    hitEffect: none
+    hitSound: none
+
+despawnEffect: {
+    type: ExplosionEffect
+
+    lifetime: 60
+
+    waveColor: 8ca9e8
+    waveStroke: 12.5
+    waveRad: 72
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 0
+    smokes: 0
+
+    sparkColor: 8ca9e8
+    sparkStroke: 1.8
+    sparkRad: 64
+    sparkLen: 5
+    sparks: 15
+    }
+
+chargeEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+
+    sizeFrom: 24
+    sizeTo: 0
+
+    lifetime: 160
+
+    colorFrom: 8ca9e8
+    colorTo: ffffff
+    }
+}
+    }
+
+{
+    name: blue-bsw
+    type: PointDefenseWeapon
+    rotateSpeed: 4.5
+    recoil: 0.25
+    rotate: true
+    x: 4
+    y: -5
+
+    targetSwitchInterval: 6
+    targetInterval: 6
+    reload: 3
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 180
+    damage: 18
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+
+{
+    name: plasma-weapon
+    alwaysShootWhenMoving: true
+    parentizeEffects: true
+    layerOffset: -0.002
+    alternate: false
+    recoil: 1.25
+    x: 3.5
+    y: 8.25
+
+    cooldownTime: 160
+    reload: 180
+
+    shootStatus: bsm-motor-deceleration-tier-1
+    chargeSound: plasma-charge
+    shootSound: plasma-shot-2
+    shootStatusDuration: 160
+shoot: {
+    firstShotDelay: 153
+    shotDelay: 12.5
+    shots: 3
+    }
+
+bullet: {
+    type: BasicBulletType
+    collideTerrain: true
+    collidesAir: false
+    scaleLife: true
+    recoil: 0.125
+    height: 12.5
+    width: 9
+    shake: 4
+
+    ammoMultiplier: 4
+
+    splashDamageRadius: 26
+    splashDamage: 96
+    lifetime: 88
+    damage: 121
+    drag: 0.01
+    speed: 4.5
+
+    smokeEffect: shootSmokeSquare
+    hitSound: bomb-plasma-hit
+    despawnEffect: none
+
+    lightColor: 8ca9e8
+    lightOpacity: 0.7
+    lightRadius: 42.5
+
+    trailEffect: missileTrail
+    trailColor: 8ca9e8
+    trailInterval: 6
+    trailLength: 9
+    trailParam: 2
+    trailWidth: 2
+
+    frontColor: ffffff
+    backColor: 8ca9e8
+    hitColor: 8ca9e8
+
+shootEffect: {
+    type: WaveEffect
+    lifetime: 16
+    sizeFrom: 0
+    sizeTo: 15
+
+    colorFrom: 8ca9e8
+    colorTo: ffffff
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 48
+
+    waveColor: 8ca9e8
+    waveStroke: 2.5
+    waveRad: 26
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 12.5
+    smokes: 7
+
+    sparkColor: 8ca9e8
+    sparkStroke: 1.8
+    sparkRad: 18
+    sparkLen: 3
+    sparks: 9
+    }
+
+chargeEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    offsetX: -1
+
+    sizeFrom: 5
+    sizeTo: 0
+
+    lifetime: 140
+
+    colorFrom: 8ca9e8
+    colorTo: ffffff
+}
+    }
+}
+    ]

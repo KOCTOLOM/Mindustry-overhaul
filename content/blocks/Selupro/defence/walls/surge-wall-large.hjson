@@ -1,0 +1,30 @@
+research: surge-wall
+insulated: true
+
+buildCostMultiplier: 10
+
+lightningChance: 0.6
+lightningDamage: 24
+lightningLength: 24
+health: 7200
+armor: 5
+
+requirements: [
+    surge-alloy/24
+]
+
+destroyBullet: {
+    lightningLengthRand: 21
+    lightningDamage: 75
+    lightningLength: 12
+    statusDuration: 15
+    status: shocked
+    lightning: 8
+    lifetime: 15
+
+    lightColor: f3e979
+    lightOpacity: 0.7
+    lightRadius: 14.5
+
+    despawnSound: spark
+}

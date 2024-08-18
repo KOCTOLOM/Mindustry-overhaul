@@ -1,0 +1,17 @@
+type: PayloadRouter
+name: Small reinforced payload router
+description: More quickly and compactly distributes the load to the three possible free routes.
+research: 16c-06-small-reinforced-payload-conveyor
+canOverdrive: false
+category: units
+size: 2
+
+payloadLimit: 2
+moveTime: 24
+health: 750
+armor: 2
+
+requirements: [
+  silicon/8
+  tungsten/10
+]

@@ -1,0 +1,19 @@
+research: pyrolysis-generator
+ambientSoundVolume: 0.18
+
+buildCostMultiplier: 1
+
+powerProduction: 833.333333333
+explosionMinWarmup: 0.25
+explosionDamage: 18000
+liquidCapacity: 3000
+explosionRadius: 27
+health: 15000
+
+requirements: [
+    silicon/15000
+    tungsten/7000
+    oxide/2500
+    beryllium/18000
+    surge-alloy/5000
+    ]

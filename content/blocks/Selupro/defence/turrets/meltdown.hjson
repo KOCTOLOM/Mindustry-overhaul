@@ -1,0 +1,233 @@
+research: scorch
+moveWhileCharging: false
+firingMoveFract: 0.18
+predictTarget: false
+rotateSpeed: 0.24
+shootCone: 1
+shootY: 5
+recoil: 4
+shake: 2
+
+buildCostMultiplier: 0.3246169
+coolantMultiplier: 4
+
+shootDuration: 425
+cooldownTime: 750
+health: 9600
+reload: 900
+range: 600
+armor: 24
+
+loopSoundVolume: 3
+shootSound: none
+
+consumes: {
+    power: 180
+    }
+
+requirements: [
+    copper/4300
+    lead/2400
+    metaglass/700
+    silicon/700
+    thorium/2400
+    plastanium/700
+    surge-alloy/850
+    ]
+
+chargeSound: laser-large-charge
+loopSound: laser-large-shot-2
+shoot: {
+    firstShotDelay: 245
+    shots: 1
+    }
+
+shootEffect: {
+    type: WaveEffect
+    lifetime: 30
+    sizeFrom: 0
+    sizeTo: 360
+
+    colorFrom: ec745855
+    colorTo: ffffff
+    }
+
+shootType: {
+    type: ContinuousFlameBulletType
+    despawnShake: 18
+    drawSize: 150
+    hitShake: 18
+    length: 540
+    width: 18
+	hitColor:ec7458
+	hitEffect:[{
+    type: ParticleEffect
+    lifetime: 40
+    particles: 5
+    line: true
+    cone:20
+	interp:circleOut
+    length:120
+
+    strokeFrom: 1.4
+    strokeTo: 0
+    colorFrom: ec7458
+    colorTo: ec7458
+	}
+	{
+    type: ParticleEffect
+    lifetime: 30
+    particles: 5
+    line: true
+    cone:12
+	interp:elasticOut
+    length:140
+
+    strokeFrom: 1.4
+    strokeTo: 0
+    colorFrom: ec7458
+    colorTo: ec7458
+	}
+	]
+	colors:[ec745840,ec74585570,ec74585590,ec7458,ffffff]
+    ammoMultiplier: 1
+	
+	pierceArmor:true
+	
+    statusDuration: 1440
+    status: melting
+	
+    lifetime: 48
+    damage: 105
+	
+	laserAbsorb:true
+	
+	flareColor:ec7458
+	flareWidth:10
+	flareLength: 50
+	flareRotSpeed :0.3
+chargeEffect: {
+    type: MultiEffect
+
+effects: [
+    {
+    type: ParticleEffect
+    lifetime: 240
+    particles: 1
+    cone: 360
+
+    baseLength: 0
+    length: 0
+
+    sizeFrom: 0
+    sizeTo: 6
+
+    strokeFrom: 0.8
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: ec7458
+}
+    {
+    type: WaveEffect
+    lifetime: 240
+    sizeFrom: 70
+    sizeTo: 7
+    strokeFrom: 0
+    strokeTo: 4
+    colorFrom: ec7458
+    colorTo: ffffff
+    followParent: true
+    rotWithParent: true
+}
+    {
+    type: WaveEffect
+    startDelay: 120
+    lifetime: 100
+    sizeFrom: 0
+    sizeTo: 15
+    strokeFrom: 0
+    strokeTo: 4
+    colorFrom: ec7458
+    colorTo: ffffff
+    followParent: true
+    rotWithParent: true
+}
+    {
+    type: WaveEffect
+    startDelay: 220
+    lifetime: 15
+    sizeFrom: 150
+    sizeTo: 15
+    strokeFrom: 0
+    strokeTo: 3
+    colorFrom: ec7458
+    colorTo: ffffff
+    followParent: true
+    rotWithParent: true
+}
+    {
+    type: WaveEffect
+    startDelay: 240
+    lifetime: 30
+    sizeFrom: 0
+    sizeTo: 120
+    strokeFrom: 0
+    strokeTo: 5
+    colorFrom: ec7458
+    colorTo: ffffff
+    followParent: true
+    rotWithParent: true
+}
+
+    {
+    type: ParticleEffect
+    baseLength: 60
+    length: -60
+    cone: 360
+    particles: 15
+    lifetime: 240
+    sizeFrom: 2.5
+    sizeTo: 0
+    colorFrom: ec7458
+    colorTo: ffffff
+    strokeFrom: 0.8
+    strokeTo: 0.6 
+    followParent: true
+    rotWithParent: true
+}
+    {
+    type: ParticleEffect
+    baseLength: 50
+    length: -50
+    cone: 360
+    particles: 5
+    lifetime: 240
+    sizeFrom: 5
+    sizeTo: 0
+    colorFrom: ec7458
+    colorTo: ffffff
+    strokeFrom: 0.8
+    strokeTo: 0.6 
+    followParent: true
+    rotWithParent: true
+}
+    {
+    type: ParticleEffect
+    baseLength: 40
+    length: -40
+    cone: 360
+    particles: 3
+    lifetime: 240
+    sizeFrom: 9
+    sizeTo: 0
+    colorFrom: ec7458
+    colorTo: ffffff
+    strokeFrom: 0.8
+    strokeTo: 0.6 
+    followParent: true
+    rotWithParent: true
+}
+    ]
+}
+    }

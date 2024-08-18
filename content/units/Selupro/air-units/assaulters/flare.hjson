@@ -1,0 +1,71 @@
+research: air-factory
+circleTarget: true
+faceTarget: false
+fogRadius: 23.5
+range: 192
+
+strafePenalty: 0
+itemCapacity: 24
+rotateSpeed: 9
+accel: 0.025
+drag: 0.015
+health: 135
+speed: 5
+armor: 3
+
+lightColor: fff8e8
+lightOpacity: 0.7
+healColor: b0bac0
+lightRadius: 45
+
+trailLength: 7.5
+
+deathSound: air-crush-small-1
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+
+targetFlags: [ generator, reactor, battery, extinguisher, drill, repair ]
+
+abilities: [
+    {
+    type: RegenAbility
+    amount: 0.025
+}
+    ]
+
+weapons: [
+{   
+    name: mount-weapon
+    layerOffset: -0.001
+    shootCone: 24
+    x: 3.75
+    y: 2.25
+
+    reload: 5
+
+    shootSound: machine-gun-shot-3
+    ejectEffect: casing1
+    
+bullet: {
+    type: BasicBulletType
+    rangeOverride: 332
+    height: 9
+    width: 7
+
+    ammoMultiplier: 5
+
+    status: naval-specialization
+    statusDuration: 90
+    lifetime: 64
+    damage: 12.5
+    speed: 3
+    
+    smokeEffect: shootSmallSmoke
+    shootEffect: shootSmall
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 17.5
+    }
+}
+    ]

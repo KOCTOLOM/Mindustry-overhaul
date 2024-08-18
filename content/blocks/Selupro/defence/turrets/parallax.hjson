@@ -1,0 +1,21 @@
+research: scatter
+rotateSpeed: 14.5
+scaledForce: 4
+force: 16
+
+buildCostMultiplier: 1.8
+
+health: 550
+range: 270
+damage: 2.0
+armor: 2
+
+consumes: {
+    power: 6
+}
+
+requirements: [
+    graphite/65
+    titanium/75
+    silicon/42
+]

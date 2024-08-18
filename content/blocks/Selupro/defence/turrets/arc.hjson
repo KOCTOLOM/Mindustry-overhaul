@@ -1,0 +1,67 @@
+research: duo
+targetAir: false
+fogRadius: 21.5
+rotateSpeed: 4
+shootCone: 45
+recoil: 1
+
+buildCostMultiplier: 0.75
+coolantMultiplier: 3.2
+
+health: 210
+reload: 32
+range: 144
+armor: 2
+
+shootEffect: lightningShoot
+shootSound: spark
+
+consumes: {
+    power: 2.5
+}
+
+requirements: [
+    lead/32
+    graphite/24
+]
+shoot: {
+	firstShotDelay: 5
+    shotDelay: 1
+    shots: 3
+    }
+shootType: {
+    type: LightningBulletType
+    collidesAir: false
+    hittable: false
+    hitSize: 3
+	
+    buildingDamageMultiplier: 0.25
+    ammoMultiplier: 1
+
+    lightningLength: 25
+    damage: 24.5
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 14.5
+
+lightningType: {
+    collidesAir: false
+    hittable: false
+    hitSize: 3
+	width:0
+	heigth:0
+    buildingDamageMultplier: 0.25
+
+    statusDuration: 18
+    status: shocked
+    lifetime: 3
+
+    hitEffect: hitLancer
+    despawnEffect: none
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 14.5
+}
+    }

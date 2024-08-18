@@ -1,0 +1,68 @@
+research: ship-fabricator
+rotateMoveFirst: true
+omniMovement: false
+
+rotateSpeed: 5
+health: 500
+speed: 2.5
+armor: 2
+
+lightColor: bf92f9
+lightOpacity: 0.7
+lightRadius: 75
+
+immunities: [ bsm-air-specialization, bsm-naval-specialization ]
+
+weapons: [
+{
+    name: blaster-gun
+    baseRotation: -35
+    shootCone: 360
+    recoil: 0.15
+    top: true
+    x: 4
+    y: -2
+
+    inaccuracy: 3
+    reload: 48
+
+    shootSound: plasma-shot-1
+shoot: {
+    shotDelay: 7.5
+    shots: 3
+    }
+
+bullet: {
+    type: BasicBulletType
+    collideTerrain: true
+    height: 12
+    width: 7
+
+    pierceDamageFactor: 0.025
+
+    homingPower: 0.15
+    homingRange: 180
+    lifetime: 52.5
+    pierceCap: 3
+    damage: 48
+    speed: 5
+
+    despawnEffect: hitBulletColor
+    smokeEffect: shootBigSmoke
+    hitEffect: hitBulletColor
+    shootEffect: sparkShoot
+
+    frontColor: ffffff
+    backColor: bf92f9
+    hitColor: bf92f9
+    
+    trailColor: bf92f9
+    trailLength: 24.5
+    trailWidth: 1.5
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 24.5
+    }
+}
+    ]

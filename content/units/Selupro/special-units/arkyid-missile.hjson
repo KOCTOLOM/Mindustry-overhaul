@@ -1,0 +1,127 @@
+type: missile
+template: MissileUnitType
+controller: MissileAI
+
+playerControllable: false
+allowedInPayloads: false
+outlineColor: 565666
+createScorch: true
+createWreck: false
+lowAltitude: true
+useUnitCap: false
+drawCell: true
+physics: false
+hitSize: 3.5
+flying: true
+
+envDisabled: 0
+envEnabled: -1
+
+missileAccelTime: 30
+lifetime: 145.5
+rotateSpeed: 3
+fogRadius: 9
+maxRange: 6
+health: 96
+speed: 4.5
+armor: 5
+homingDelay:20
+deathExplosionEffect: none
+loopSoundVolume: 0.5
+
+trailColor: bf92f9
+trailLength: 12.5
+trailWidth: 1.5
+
+engineColor: bf92f9
+engineLayer: 110
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+
+parts: [
+    type: FlarePart
+    followRotation: true
+    color2: ffffff
+    color1: bf92f9
+    rotation: 45
+    radius: 24
+    stroke: 3
+    y: -5
+    ]
+
+weapons: [
+{
+    shootOnDeath: true
+    shootCone: 360
+    mirror: false
+    shake: 2.5
+    x: 0
+    y: 0
+
+    reload: 1
+
+bullet: {
+    type: ExplosionBulletType
+    collidesAir: false
+    despawnShake: 10
+    maxRange: 24
+
+    buildingDamageMultiplier: 2
+
+    splashDamageRadius: 60
+    lightningLength: 12.5
+    lightningDamage: 18
+    statusDuration: 300
+    status: emp-tier-2
+    splashDamage: 256
+    lightning: 4
+
+    hitSound: rocket-explosion
+    shootEffect: none
+
+    lightningColor: ffffff
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 64
+
+    waveColor: bf92f9
+    waveStroke: 5
+    waveRad: 60
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 21.5
+    smokes: 9
+
+    sparkColor: bf92f9
+    sparkStroke: 1.5
+    sparkRad: 48
+    sparkLen: 3
+    sparks: 18
+}
+
+despawnEffect: {
+    type: ExplosionEffect
+
+    lifetime: 64
+
+    waveColor: bf92f9
+    waveStroke: 5
+    waveRad: 60
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 21.5
+    smokes: 9
+
+    sparkColor: bf92f9
+    sparkStroke: 1.5
+    sparkRad: 48
+    sparkLen: 3
+    sparks: 18
+}
+    }
+}
+    ]

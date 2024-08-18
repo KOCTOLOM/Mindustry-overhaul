@@ -1,0 +1,313 @@
+faceTarget: false
+research: risso
+hitSize: 18
+
+speed: 0.5666666666666
+rotateSpeed: 1.8
+health: 1350
+armor: 18
+
+lightColor: fff8e8
+lightOpacity: 0.7
+lightRadius: 75
+
+immunities: [ spore-slowed, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-1 ]
+
+weapons: [
+{
+    name: missiles-mount
+    controllable: false
+    rotationLimit: 235
+    baseRotation: -135
+    rotateSpeed: 1.8
+    autoTarget: true
+    alternate: false
+    shootCone: 15
+    rotate: true
+    recoil: 1.5
+    shake: 3
+    x: 6
+    y: -11
+
+    cooldownTime: 120
+    reload: 32
+
+    shootSound: scanning
+bullet: {
+    type: SapBulletType
+    collidesGround: false
+    length: 120
+    width: 0.5
+
+    status: bsm-damage-reduction-tier-1
+    statusDuration: 90
+    sapStrength: 0.25
+    knockback: -1
+    lifetime: 10
+    damage: 24
+
+    shootEffect: shootSmall
+    despawnEffect: none
+
+    lightColor: feb380
+    lightOpacity: 0.7
+    lightRadius: 21
+
+    hitColor: feb380
+    color: feb380
+
+hitEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 24
+
+    sizeFrom: 0
+    sizeTo: 20
+
+    strokeFrom: 2
+    strokeTo: 0
+
+    colorFrom: feb380
+    colorTo: ea8878
+    }
+}
+    }
+
+{
+    name: ship-cannon
+    parentizeEffects: true
+    predictTarget: false
+    rotationLimit: 245
+    rotateSpeed: 1.5
+    alternate: false
+    mirror: false
+    rotate: true
+    shootY: -2
+    shake: 1.5
+    shadow: 2
+    x: 0
+    y: 8
+
+    cooldownTime: 90
+    reload: 90
+
+    shootSound: rail-shot-2
+    ejectEffect: casing3
+shoot: {
+    firstShotDelay: 20
+    shots: 1
+    }
+
+bullet: {
+    type: BasicBulletType
+    pierceBuilding: true
+    keepVelocity: false
+    collidesAir: false
+    despawnShake: 3
+    hittable: false
+    hitShake: 3
+    height: 9
+    width: 5
+
+    buildingDamageMultiplier: 1.25
+    pierceDamageFactor: 0.025
+
+    status: bsm-armor-piercing-tier-1
+    splashDamageRadius: 26
+    statusDuration: 90
+    splashDamage: 24
+    lifetime: 24.25
+    pierceCap: 15
+    damage: 48
+    speed: 16
+
+    smokeEffect: shootSmallSmoke
+    hitEffect: hitBulletColor
+    shootEffect: shootBig
+    hitSoundVolume: 0.25
+    hitSound: bomb-plasma-hit
+
+    lightColor: d1efff
+    lightOpacity: 0.7
+    lightRadius: 37.5
+
+    trailColor: 8ca9e8
+    trailLength: 5.5
+    trailWidth: 1.15
+
+    lightningColor: d1efff
+    frontColor: d1efff
+    backColor: 8ca9e8
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 9
+
+    sizeFrom: 0
+    sizeTo: 24
+
+    colorFrom: d1efff
+    colorTo: 8ca9e8
+    }
+
+chargeEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 18
+    offsetX: 3.5
+    sizeFrom: 5
+    sizeTo: 0
+
+    colorFrom: d1efff
+    colorTo: 8ca9e8
+    }
+}
+    }
+
+{
+    rotationLimit: 275
+    rotateSpeed: 1.25
+    display: false
+    mirror: false
+    rotate: true
+    shootY: 2
+    shadow: 5
+    shake: 3
+    x: 0
+    y: -2
+
+    cooldownTime: 210
+    reload: 180
+
+    shootSound: cannon-flying
+    ejectEffect: none
+shoot: { 
+    type: ShootAlternate
+    barrels: 2
+    spread: 6
+    shots: 2
+    }
+
+bullet: {
+    keepVelocity: false
+    collidesAir: false
+    despawnShake: 0
+    hittable: false
+    maxRange: 514
+    hitShake: 0
+    height: 1
+    width: 1
+
+    splashDamageRadius: 0
+    splashDamage: 0
+    pierceCap: 0
+    lifetime: 0
+    damage: 0
+    speed: 0
+
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    hitEffect: none
+    hitSound: none
+}
+    }
+
+{
+    name: ship-large-cannon
+    parentizeEffects: true
+    rotationLimit: 275
+    rotateSpeed: 1.25
+    mirror: false
+    rotate: true
+    recoil: 2
+    shootY: 3
+    shadow: 5
+    shake: 3
+    x: 0
+    y: -3
+
+    cooldownTime: 210
+    reload: 220
+
+    shootSound: cannon-shot-2
+    ejectEffect: casing2
+shoot: { 
+    type: ShootAlternate
+    barrels: 2
+    spread: 6
+    shots: 2
+    }
+
+parts: [
+{
+    type: RegionPart
+    suffix: -brl
+    progress: recoil
+    outline: false
+    mirror: false
+    under: true
+    moveY: -1.5
+}
+    ]
+
+bullet: {
+    type: ArtilleryBulletType
+    keepVelocity: false
+	collides:true
+	collidesTiles: true
+    collidesAir: false
+    despawnShake: 5
+    hittable: false
+    hitShake: 5
+    height: 14
+    width: 8
+
+    buildingDamageMultiplier: 1.5
+
+    status: bsm-ground-specialization
+    splashDamageRadius: 40
+    statusDuration: 180
+    splashDamage: 75
+    lifetime: 64.5
+    pierceCap: 2
+    damage: 60
+    speed: 8
+
+    smokeEffect: shootSmallSmoke
+    hitEffect: hitBulletColor
+    shootEffect: shootBig
+    hitSound: cannon-hit
+
+    lightColor: fff3d6
+    lightOpacity: 0.7
+    lightRadius: 37.5
+
+    trailInterp: slope
+    trailColor: ffd59e
+    trailLength: 12.5
+    trailWidth: 1.15
+
+    lightningColor: fff3d6
+    frontColor: fff3d6
+    backColor: ffd59e
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 9
+
+    sizeFrom: 0
+    sizeTo: 40
+
+    colorFrom: fff3d6
+    colorTo: ffd59e
+}
+    }
+}
+    ]

@@ -1,0 +1,270 @@
+faceTarget: false
+research: minke
+
+rotateSpeed: 1.25
+health: 2600
+speed: 0.64
+armor: 18
+
+lightColor: fff8e8
+lightOpacity: 0.7
+lightRadius: 90
+
+immunities: [ spore-slowed, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-2 ]
+
+abilities: [
+{
+    type: ShieldRegenFieldAbility
+    reload: 500
+    amount: 320
+    range: 100
+    max: 350
+    }
+]
+
+weapons: [
+{
+    name: missiles-mount
+
+    rotationLimit: 90
+    baseRotation: -25
+    shootCone: 45
+    rotate: true
+    shake: 3.5
+    x: 7
+    y: 0
+
+    velocityRnd: 0.15
+    inaccuracy: 5
+    reload: 250
+
+    shootSound: missile
+shoot: {
+    shotDelay: 15
+    shots: 5
+    }
+
+bullet: {
+    type: MissileBulletType
+    pierceBuilding: true
+    keepVelocity: true
+    despawnShake: 3.2
+    hitShake: 3.2
+    pierce: true
+    shrinkY: 0.1
+    drag: -0.003
+    height: 8
+    width: 8
+
+    pierceDamageFactor: 0.75
+
+    splashDamageRadius: 36
+    splashDamage: 41.5
+    homingRange: 75
+    weaveScale: 8
+    lifetime: 120
+    pierceCap: 3
+    damage: 47.5
+    weaveMag: 2
+    speed: 1.8
+
+    trailColor: 454545
+
+    frontColor: fff8e8
+    backColor: f9c27a
+
+    despawnEffect: blastExplosion
+    hitEffect: blastExplosion
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 32.5
+}
+    }
+
+{
+    name: selupro-machine-gun
+
+    rotationLimit: 180
+    baseRotation: -45
+    rotateSpeed: 1.25
+    alternate: false
+    rotate: true
+    shootY: 4
+    x: 7.5
+    y: -10
+
+    cooldownTime: 120
+    inaccuracy: 5
+    reload: 20
+
+    shootSound: machine-gun-shot-3
+    ejectEffect: casing1
+	
+	shoot: {
+		shotDelay: 2.5
+		shots: 3
+		}
+parts: [
+{
+    type: RegionPart
+    suffix: -brl
+    progress: recoil
+    outline: false
+    mirror: false
+    moveY: -0.75
+    under: true
+    x: 0
+    y: 1
+}
+    ]
+
+bullet: {
+    type: BasicBulletType
+    collideTerrain: true
+    ammoMultiplier: 2
+    height: 8.5
+    width: 6.5
+	
+    buildingDamageMultiplier: 0.3
+    pierceDamageFactor: 0.3
+
+    lifetime: 37.5
+    pierceCap: 3
+    damage: 42
+    speed: 8
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 20
+
+    trailColor: f9c27a
+    trailLength: 27.5
+    trailWidth: 1.25
+}
+    }
+
+{
+    name: double-machine-gun
+
+    rotationLimit: 275
+    rotateSpeed: 3
+    shootCone: 45
+    mirror: false
+    rotate: true
+    shootY: 4.5
+    recoils: 2
+    recoil: 1
+    shake: 5
+    x: 0
+    y: -5
+
+    cooldownTime: 180
+    reload: 80
+
+    ejectEffect: casing2Double
+    shootSound: cannon-shot-2
+shoot: { 
+    type: ShootMulti
+source: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 4
+    shots: 3
+	shotDelay: 4
+}
+dest: [ 
+{
+    type: ShootSpread
+    spread: 4
+    shots: 1
+    }
+]
+    }
+
+parts: [
+{
+    type: RegionPart
+    suffix: -brl-2
+    progress: recoil
+    recoilIndex: 1
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 1
+    op: blend
+    amount: 0
+    other: 0
+}
+    }
+
+{
+    type: RegionPart
+    suffix: -brl-1
+    progress: recoil
+    recoilIndex: 0
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 1
+    op: blend
+    amount: 0
+    other: 0
+    }
+}
+    ]
+
+bullet: {
+    type: ArtilleryBulletType
+	collides:true
+    collidesTiles: true
+	collideGround:true
+    despawnShake: 4.5
+    hitShake: 4.5
+    hitSize: 4
+    height: 16
+    width: 11
+
+    buildingDamageMultiplier: 1.25
+	
+	damage: 40
+	
+    splashDamageRadius: 23
+    statusDuration: 45
+    splashDamage: 30
+    status: blasted
+    lifetime: 120
+    speed: 2.5
+
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmallColor
+    hitEffect: flakExplosionBig
+    smokeEffect: shootBigSmoke
+    hitSound: cannon-hit
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailEffect: artilleryTrail
+    trailInterval: 17.5
+    trailInterp: slope
+    trailColor: feb380
+    trailLength: 21.5
+    trailWidth: 2.15
+    trailSize: 4
+
+    frontColor: ffffff
+    backColor: feb380
+    hitColor: ffffff
+    }
+}
+    ]

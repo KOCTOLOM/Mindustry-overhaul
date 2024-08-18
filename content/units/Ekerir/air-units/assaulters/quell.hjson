@@ -1,0 +1,236 @@
+research: obviate
+forceMultiTarget: true
+fogRadius: 48
+
+rotateSpeed: 0.8
+health: 96000
+speed: 0.95
+accel: 0.1
+drag: 0.06
+armor: 49
+
+engineColor: bf92f9
+engineLayer: 91
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+
+engines: [
+{
+    engineColor: bf92f9
+    engineLayer: 91
+    rotation: -135
+    radius: 3.9
+    x: -15.5
+    y: -15
+    }
+{
+    engineColor: bf92f9
+    engineLayer: 91
+    rotation: 315
+    radius: 3.9
+    x: 15.5
+    y: -15
+    }
+{
+    engineColor: bf92f9
+    engineLayer: 91
+    rotation: -135
+    radius: 3.9
+    x: -18
+    y: -7.25
+    }
+{
+    engineColor: bf92f9
+    engineLayer: 91
+    rotation: 315
+    radius: 3.9
+    x: 18
+    y: -7.25
+    }
+]
+
+abilities: [
+{
+    type: SuppressionFieldAbility
+    orbRadius: 5.3
+    x: 0
+    y: 1
+    }
+
+{
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.8
+    x: 0
+    y: -15.25
+
+effect: {
+    lightOpacity: 0
+    length: 5
+    particles: 1
+    layer: 90
+    lifetime: 15
+    sizeFrom: 4.8
+    sizeTo: 0
+    colorFrom: bf92f9
+    colorTo: bf92f9
+}
+    }
+
+{
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2.9
+    x: -15.5
+    y: -15
+
+effect: {
+    lightOpacity: 0
+    length: 3
+    particles: 1
+    layer: 90
+    lifetime: 12
+    sizeFrom: 3.9
+    sizeTo: 0
+    colorFrom: bf92f9
+    colorTo: bf92f9
+}
+    }
+
+{
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2.9
+    x: 15.5
+    y: -15
+
+effect: {
+    lightOpacity: 0
+    length: 3
+    particles: 1
+    layer: 90
+    lifetime: 12
+    sizeFrom: 3.9
+    sizeTo: 0
+    colorFrom: bf92f9
+    colorTo: bf92f9
+}
+    }
+
+{
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 3.2
+    x: -18
+    y: -7.25
+
+effect: {
+    lightOpacity: 0
+    length: 2
+    particles: 1
+    layer: 90
+    lifetime: 11
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: bf92f9
+    colorTo: bf92f9
+}
+    }
+
+{
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 3.2
+    x: 18
+    y: -7.25
+
+effect: {
+    lightOpacity: 0
+    length: 2
+    particles: 1
+    layer: 90
+    lifetime: 11
+    sizeFrom: 3
+    sizeTo: 0
+    colorFrom: bf92f9
+    colorTo: bf92f9
+}
+    }
+]
+
+weapons: [
+{
+    name: quell-weapon
+    layerOffset: -0.001
+    rotationLimit: 115
+    baseRotation: -45
+    alternate: false
+    rotateSpeed: 2
+    rotate: true
+    recoil: 1
+    x: 13
+    y: 0.65
+
+    reload: 55
+
+    shootSound: missileSmall
+
+bullet: { 
+    type: BulletType
+    spawnUnit: quell-missile
+    keepVelocity: false
+    collidesAir: false
+
+    speed: 0
+
+    smokeEffect: shootBigSmoke2
+    shootEffect: shootBig
+}
+    }
+
+{
+    name: avert-weapon
+
+    layerOffset: -0.001
+    controllable: false
+    rotationLimit: 120
+    rotateSpeed: 0.75
+    autoTarget: true
+    mirror: false
+    rotate: true
+    recoil: 1.65
+    top: true
+    x: 0
+    y: 12.5
+
+    velocityRnd: 0.4
+    inaccuracy: 14.5
+    reload: 32
+
+    shootSound: blaster
+
+shoot: {
+    shotDelay: 9
+    shots: 18
+    }
+
+bullet: {
+    type: LaserBoltType
+    collidesAir: false
+    height: 9
+    width: 5
+
+    buildingDamageMultiplier: 0.65
+
+    lifetime: 65
+    speed: 3.75
+    damage: 38
+
+    trailColor: bf92f9
+    frontColor: ffffff
+    backColor: bf92f9
+    trailLength: 3.2
+    trailWidth: 1.5
+}
+    }
+]

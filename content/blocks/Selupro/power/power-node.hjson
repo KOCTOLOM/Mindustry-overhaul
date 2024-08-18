@@ -1,0 +1,6 @@
+research: combustion-generator
+
+requirements: [
+    copper/2
+    lead/3
+]

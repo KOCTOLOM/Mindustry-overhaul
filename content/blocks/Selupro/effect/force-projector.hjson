@@ -1,0 +1,32 @@
+research: small-force-projector
+ambientSoundVolume: 0.32
+
+buildCostMultiplier: 5.99049
+phaseShieldBoost: 3000
+phaseRadiusBoost: 72
+phaseUseTime: 180
+
+cooldownBrokenBase: 1.4
+cooldownNormal: 1.08
+cooldownLiquid: 1.12
+sides: 6
+
+liquidCapacity: 360
+shieldHealth: 17500
+itemCapacity: 250
+health: 3300
+radius: 122
+armor: 16
+
+consumes: {
+    power: 25
+}
+
+requirements: [
+    lead/320
+    graphite/500
+    titanium/225
+    thorium/125
+    silicon/250
+    surge-alloy/180
+]

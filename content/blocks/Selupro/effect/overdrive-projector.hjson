@@ -1,0 +1,24 @@
+research: surge-smelter
+
+speedBoostPhase: 0.25
+phaseRangeBoost: -40
+speedBoost: 1.25
+useTime: 300
+
+itemCapacity: 50
+health: 750
+reload: 90
+range: 140
+armor: 5
+
+consumes: {
+    power: 12
+}
+
+requirements: [
+    lead/210
+    graphite/320
+    silicon/180
+    plastanium/150
+    surge-alloy/30
+]

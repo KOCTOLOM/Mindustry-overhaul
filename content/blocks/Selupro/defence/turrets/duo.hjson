@@ -1,0 +1,314 @@
+rotateSpeed: 10
+fogRadius: 24.5
+shootCone: 15
+recoil: 0.5
+range: 192
+shootY: 3
+
+inaccuracy: 2
+maxAmmo: 32
+health: 360
+reload: 24
+armor: 2
+
+ammoUseEffect: casing1
+
+requirements: [
+    copper/32
+]
+
+ammoTypes: {
+copper: {
+    type: BasicBulletType
+    height: 9
+    width: 7
+
+    pierceDamageFactor: 0.5
+    ammoMultiplier: 6
+
+    pierceCap: 2
+    lifetime: 48
+    damage: 18
+    speed: 3.2
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 24.5
+	
+    trailColor: f9c27a
+    trailLength: 7.5
+    trailWidth: 1.5
+	
+	despawnEffect:none
+	hitEffect:{
+    type: ExplosionEffect
+    lifetime: 30
+
+    waveColor: f9c27a
+    waveStroke: 1.25
+    waveRad: 3
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 1
+    smokes: 1
+
+    sparkColor: fff8e8
+    sparkStroke: 0.75
+    sparkRad: 1
+    sparkLen: 2
+    sparks: 2
+    }
+    }
+
+graphite: {
+    type: BasicBulletType
+    height: 12
+    width: 9
+
+    buildingDamageMultiplier: 1.25
+    pierceDamageFactor: 0.2
+    reloadMultiplier: 0.75
+    ammoMultiplier: 3
+
+    pierceCap: 2
+    lifetime: 64
+    damage: 25
+    speed: 2.75
+
+    lightColor: 95abd9
+    lightOpacity: 0.7
+    lightRadius: 27.5
+
+    trailColor: 6b77a1
+    trailLength: 7.5
+    trailWidth: 2
+
+    frontColor: 95abd9
+    backColor: 6b77a1
+	
+	despawnEffect:none
+	
+	hitEffect:{
+    type: ExplosionEffect
+    lifetime: 30
+
+    waveColor: 6b77a1
+    waveStroke: 1.25
+    waveRad: 3
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 1
+    smokes: 1
+
+    sparkColor: 95abd9
+    sparkStroke: 0.75
+    sparkRad: 1
+    sparkLen: 2
+    sparks: 2
+    }
+    }
+
+silicon: {
+    type: BasicBulletType
+    height: 9
+    width: 7
+
+    buildingDamageMultiplier: 0.75
+    pierceDamageFactor: 0.2
+    reloadMultiplier: 1.5
+    ammoMultiplier: 9
+
+    homingPower: 0.05
+    lifetime: 42.5
+    pierceCap: 3
+    damage: 16
+    speed: 4.75
+
+    lightColor: 8e9097
+    lightOpacity: 0.7
+    lightRadius: 21
+
+    trailColor: 767a84
+    trailLength: 7.5
+    trailWidth: 1.5
+
+    frontColor: 8e9097
+    backColor: 767a84
+	
+	despawnEffect:none
+	
+	hitEffect:{
+    type: ExplosionEffect
+    lifetime: 30
+
+    waveColor: 767a84
+    waveStroke: 1.25
+    waveRad: 3
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 1
+    smokes: 1
+
+    sparkColor: 8e9097
+    sparkStroke: 0.75
+    sparkRad: 1
+    sparkLen: 2
+    sparks: 3
+    }
+	
+    }
+
+scrap: {
+    type: BasicBulletType
+    height: 8
+    width: 6
+
+    buildingDamageMultiplier: 0.85
+    reloadMultiplier: 0.8
+
+    fragRandomSpread: 360
+    fragLifeMax: 2.1
+    fragLifeMin: 0.8
+    fragBullets: 3
+    fragSpread: 45
+    lifetime: 48
+    damage: 7
+    speed: 5
+	
+	pierceArmor:true
+	
+    lightColor: e0b28d
+    lightOpacity: 0.7
+    lightRadius: 18
+
+    trailColor: 9b928b
+    trailLength: 7.5
+    trailWidth: 1
+
+    frontColor: e0b28d
+    backColor: 9b928b
+	
+	despawnEffect:none
+	
+	hitEffect:{
+    type: ExplosionEffect
+    lifetime: 30
+
+    waveColor: 767a84
+    waveStroke: 1.25
+    waveRad: 3
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 2
+    smokes: 3
+
+    sparkColor: e0b28d
+    sparkStroke: 0.75
+    sparkRad: 1
+    sparkLen: 2
+    sparks: 2
+    }
+	
+fragBullet: {
+    type: BasicBulletType
+    shrinkY: 0.25
+    height: 12
+    width: 5
+
+    pierceCap: 3
+    lifetime: 6
+    damage: 4.8
+    speed: 4.5
+
+    lightColor: e0b28d
+    lightOpacity: 0.7
+    lightRadius: 12.5
+
+    trailColor: 9b928b
+    trailLength: 5.25
+    trailWidth: 0.75
+
+    frontColor: e0b28d
+    backColor: 9b928b
+
+	despawnEffect:none
+	
+	hitEffect:{
+    type: ExplosionEffect
+    lifetime: 12
+
+    waveColor: 767a84
+    waveStroke: 1.25
+    waveRad: 4
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 1
+    smokes: 2
+
+    sparkColor: e0b28d
+    sparkStroke: 0.75
+    sparkRad: 1
+    sparkLen: 2
+    sparks: 2
+    }
+    }
+}
+
+pyratite: {
+    type: BasicBulletType
+    makeFire: true
+    height: 12
+    width: 6
+
+    buildingDamageMultiplier: 0.01
+    pierceDamageFactor: 0.3
+    reloadMultiplier: 0.85
+    ammoMultiplier: 4
+
+    splashDamageRadius:4
+    statusDuration: 300
+    splashDamage: 5
+    status: burning
+    pierceCap: 2
+    lifetime: 56
+    damage: 14.5
+    speed: 4
+
+    lightColor: ffaa5f
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: d37f47
+    trailLength: 9.5
+    trailWidth: 1.35
+
+    frontColor: ffaa5f
+    backColor: d37f47
+
+hitEffect: {
+    type: MultiEffect
+
+effects: [
+{
+    effect: hitBulletSmall
+    colorTo: ffaa5f
+    lifetime: 20
+    sizeFrom: 3
+    sizeTo: 0
+    }
+{
+    effect: fireHit
+    colorTo: ffaa5f
+    lifetime: 20
+    sizeFrom: 1
+    sizeTo: 0
+    }
+]
+    }
+}
+    }

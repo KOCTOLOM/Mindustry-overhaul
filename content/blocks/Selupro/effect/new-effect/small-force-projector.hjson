@@ -1,0 +1,36 @@
+type: ForceProjector
+name: "Small force projector"
+description: "A small analog version of «[#ffd37f]Power Projectors[]». Compact, easy to use and fast shield recharge - together give indispensable help in the defense of important facilities. Cannot be improved, only coolant acceleration is possible."
+research: titanium-wall-large
+ambientSoundVolume: 0.16
+category: effect
+size: 2
+
+buildCostMultiplier: 3.59719
+phaseShieldBoost: 600
+phaseRadiusBoost: 44
+phaseUseTime: 450
+
+cooldownBrokenBase: 0.90
+cooldownNormal: 1.12
+cooldownLiquid: 1.24
+sides: 6
+
+liquidCapacity: 48
+shieldHealth: 2800
+itemCapacity: 0
+health: 1250
+radius: 100
+armor: 9
+
+consumes: {
+    power: 8.333335
+}
+
+requirements: [
+    copper/320
+    lead/150
+    graphite/210
+    titanium/180
+    silicon/120
+]

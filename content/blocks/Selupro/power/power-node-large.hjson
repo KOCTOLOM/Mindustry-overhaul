@@ -1,0 +1,7 @@
+research: power-node
+
+requirements: [
+    lead/12
+    graphite/15
+    silicon/5
+]

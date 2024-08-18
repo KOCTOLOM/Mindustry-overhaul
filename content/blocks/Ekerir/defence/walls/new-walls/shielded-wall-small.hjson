@@ -1,0 +1,28 @@
+type: ShieldWall
+name: Small Shielded Wall
+description: Protects structures from enemy projectiles, reflecting most bullets upon impact. Deploys a shield that absorbs most projectiles when power is provided. Conducts power.
+research: reinforced-surge-wall-large
+conductivePower: true
+consumesPower: true
+outputsPower: false
+category: defense
+hasPower: true
+
+buildCostMultiplier: 9.53
+
+breakCooldown: 1080
+shieldHealth: 1250
+chanceDeflect: 80
+regenSpeed: 3
+health: 2750
+armor: 24
+
+consumes: {
+    power: 8.33333333333
+    }
+
+requirements: [
+    silicon/12
+    phase-fabric/15
+    carbide/8
+    ]

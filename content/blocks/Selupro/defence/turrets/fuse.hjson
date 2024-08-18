@@ -1,0 +1,301 @@
+research: lancer
+rotateSpeed: 1.25
+shootCone: 30
+recoil: 5
+shake: 4
+
+buildCostMultiplier: 2.28
+coolantMultiplier: 1.8
+
+health: 1750
+maxAmmo: 64
+reload: 48
+range: 100
+armor: 15
+
+requirements: [
+    graphite/320
+    titanium/275
+    thorium/225
+]
+
+shootSound: shotgun
+shoot: {
+    type: ShootSpread
+    spread: 12
+    shots: 3
+}
+
+ammoTypes: {
+graphite: {
+    type: ShrapnelBulletType
+    pierce: false
+    length: 125
+
+    reloadMultiplier: 1.75
+    ammoMultiplier: 18
+    rangeChange: 20
+
+    knockback: 3.2
+    pierceCap: 21
+    lifetime: 18
+    damage: 75
+
+    toColor: 95abd9
+
+    lightColor: 95abd9
+    lightOpacity: 0.7
+    lightRadius: 32.5
+}
+
+titanium: {
+    type: ShrapnelBulletType
+    length: 118
+    width: 17
+
+    reloadMultiplier: 1.25
+    ammoMultiplier: 5
+    rangeChange: 16
+
+    status: armor-piercing-tier-1
+    statusDuration: 180
+    knockback: 4.5
+    lifetime: 18
+    damage: 121
+
+    toColor: a4b8fa
+
+    lightColor: a4b8fa
+    lightOpacity: 0.7
+    lightRadius: 27.5
+}
+
+thorium: {
+    type: ShrapnelBulletType
+    pierce: false
+    length: 240
+	rangeChange: 135
+	
+	buildingDamageMultiplier:2
+    reloadMultiplier: 0.2
+    ammoMultiplier: 2
+
+    status: armor-piercing-tier-2
+    statusDuration: 108
+    knockback: 7.5
+    pierceCap: 25
+    lifetime: 18
+    damage: 360
+
+    shootEffect: thoriumShoot
+    smokeEffect: thoriumShoot
+
+    toColor: f9a3c7
+
+    lightColor: f9a3c7
+    lightOpacity: 0.7
+    lightRadius: 24.5
+}
+
+pyratite: {
+    type: ShrapnelBulletType
+    pierce: false
+    length: 205
+	makeFire:true
+    reloadMultiplier: 0.85
+    ammoMultiplier: 8
+    rangeChange: 100
+
+    statusDuration: 540
+    status: burning
+    pierceCap: 18
+    lifetime: 24
+    damage: 64
+
+    toColor: ffaa5f
+
+    lightColor: ffaa5f
+    lightOpacity: 0.7
+    lightRadius: 41.5
+
+hitEffect: {
+    type: ParticleEffect
+    particles: 18
+    lifetime: 18
+    line: true
+    cone: 360
+
+    baseRotation: 0
+    baseLength: 0
+    length: 17.5
+
+    strokeFrom: 2.75
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: ffaa5f
+    }
+
+shootEffect: {
+    type: ParticleEffect
+    particles: 12
+    lifetime: 32
+    line: true
+    cone: 75
+
+    baseRotation: 0
+    baseLength: 0
+    length: 27.5
+
+    strokeFrom: 3.2
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: ffaa5f
+    }
+
+smokeEffect: {
+    type: ParticleEffect
+    particles: 8
+    lifetime: 24
+    line: true
+    cone: 60
+
+    baseRotation: 0
+    baseLength: 0
+    length: 24.5
+
+    strokeFrom: 4.8
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: ffaa5f
+    }
+}
+
+blast-compound: {
+    type: ShrapnelBulletType
+    pierce: false
+    length: 175
+
+    ammoMultiplier: 4
+    rangeChange: 72
+
+    statusDuration: 16
+    status: blasted
+    knockback: 6
+    pierceCap: 32
+    lifetime: 18
+    damage: 181
+
+    toColor: ff795e
+
+    lightColor: ff795e
+    lightOpacity: 0.7
+    lightRadius: 47.5
+
+hitEffect: {
+    type: ParticleEffect
+    particles: 18
+    lifetime: 16
+    line: true
+    cone: 360
+
+    baseRotation: 0
+    baseLength: 0
+    length: 17.5
+
+    strokeFrom: 2.4
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: ff795e
+    }
+
+shootEffect: {
+    type: ParticleEffect
+    particles: 15
+    lifetime: 16
+    line: true
+    cone: 75
+
+    baseRotation: 0
+    baseLength: 0
+    length: 21.5
+
+    strokeFrom: 3.2
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: ff795e
+    }
+
+smokeEffect: {
+    type: ParticleEffect
+    particles: 12
+    lifetime: 16
+    line: true
+    cone: 60
+
+    baseRotation: 0
+    baseLength: 0
+    length: 21.5
+
+    strokeFrom: 3.2
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: ff795e
+	}
+	   
+	fragBullets:1
+	fragBullet: {
+    type: BasicBulletType
+    collidesAir: false
+    shrinkY: 1
+    height: 0
+    width: 0
+	hittable:false
+    buildingDamageMultiplier: 0.4
+    pierceDamageFactor: 0.75
+
+    splashDamageRadius: 26
+    statusDuration: 10
+    splashDamage: 70
+    status: blasted
+    knockback: 2.5
+    lifetime: 15
+    damage: 10
+    speed: 0
+
+    lightColor: ff795e
+    lightOpacity: 0.7
+    lightRadius: 27.5
+
+    trailColor: c85c51
+    trailLength: 12.5
+    trailWidth: 1.75
+
+    frontColor: ff795e
+    backColor: c85c51
+
+	hitEffect:none
+	despawnEffect: {
+    type: ExplosionEffect
+
+    lifetime: 32
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 3
+    smokes: 4
+
+    sparkColor: ff795e
+    sparkStroke: 1.5
+    sparkRad: 20
+    sparkLen: 8
+    sparks: 6
+    }
+}
+}
+    }

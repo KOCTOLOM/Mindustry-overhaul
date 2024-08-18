@@ -1,0 +1,56 @@
+template: MissileUnitType
+
+type: missile
+playerControllable: false
+allowedInPayloads: false
+controller: MissileAI
+createScorch: false
+createWreck: false
+lowAltitude: true
+useUnitCap: false
+physics: false
+flying: true
+hitSize: 3
+
+envEnabled: -1
+envDisabled: 0
+
+missileAccelTime: 20
+rotateSpeed: 4
+fogRadius: 5
+lifetime: 85
+maxRange: 6
+health: 45
+speed: 4.3
+
+deathExplosionEffect: explosion
+loopSoundVolume: 0.1
+
+engineColor: c67fff
+trailColor: c67fff
+engineLayer: 110
+trailWidth: 1.5
+trailLength: 5
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+
+weapons: [
+    {
+    shootOnDeath: true
+    shootCone: 360
+    mirror: false
+
+    reload: 1
+    shake: 1
+
+bullet: {
+    type: ExplosionBulletType
+    collidesAir: false
+
+    splashDamageRadius: 25
+    splashDamage: 110
+
+    shootEffect: massiveExplosion
+    }
+}
+    ]

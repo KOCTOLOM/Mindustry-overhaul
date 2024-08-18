@@ -1,0 +1,882 @@
+research: core-bastion
+moveWhileCharging: false
+shootY: -2
+recoil: 2
+
+rotateSpeed: 1.25
+ammoPerShot: 5
+shootCone: 1
+maxAmmo: 270
+health: 2100
+reload: 450
+range: 380
+armor: 7
+
+consumes: {
+    power: 25
+    }
+
+requirements: [
+    silicon/210
+    beryllium/180
+    ]
+
+chargeSound: rail-charge-2
+shootSound: rail-shot-2
+ammoUseEffect: casing3
+shoot: {
+    firstShotDelay: 141
+    shots: 1
+    }
+
+ammoTypes: {
+//--------------------------------------ammo-1
+surge-alloy: {
+    type: LaserBulletType
+    parentizeEffects: true
+    pierceBuilding: true
+    drawSize: 575
+    pierce: true
+    length: 555
+    height: 32
+    width: 10
+
+    pierceDamageFactor: 0.0005
+    reloadMultiplier: 0.7
+    ammoMultiplier: 8
+
+    status: bsm-emp-tier-1
+    statusDuration: 300
+    pierceCap: 12
+    lifetime: 40
+    damage: 270
+
+    lightningLengthRand: 5
+    lightningAngleRand: 30
+    lightningSpacing: 24
+    lightningLength: 2.5
+    lightningDamage: 15
+    lightningDelay: 0.1
+
+    despawnEffect: hitBulletColor
+    hitEffect: hitBulletColor
+
+    lightningColor: f3e979
+    lightColor: f3e979
+    hitColor: f3e979
+
+    colors: [ f3e979, ffffff ]
+
+shootEffect: {
+    type: MultiEffect
+
+effects: [ shootBigColor, colorSparkBig, shootBigSmoke ]
+    }
+
+smokeEffect: [
+    {
+    type: WaveEffect
+    lifetime: 30
+
+    sizeFrom: 0
+    sizeTo: 50
+
+    strokeFrom: 2.5
+    strokeTo: 0
+
+    colorFrom: f3e979
+    colorTo: ffffff
+}
+
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 20
+    line: true
+    cone: 360
+
+    baseLength: 0
+    length: 40
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: f3e979
+    colorTo: ffffff
+}
+    ]
+
+chargeEffect: [
+{
+    type: ParticleEffect
+    lifetime: 135
+    particles: 1
+    cone: 360
+
+    baseLength: 0
+    length: 0
+
+    sizeFrom: 0
+    sizeTo: 5
+
+    strokeFrom: 0.8
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: f3e979
+    }
+{
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+
+    sizeFrom: 35
+    sizeTo: 0
+
+    strokeFrom: 5
+    strokeTo: 0
+
+    colorFrom: f3e979
+    colorTo: ffffff
+    }
+
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 5
+
+    baseLength: 70
+    length: -70
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: f3e979
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: f3e979
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+    particles: 5
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: f3e979
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+    particles: 3
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 9
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: f3e979
+    colorTo: ffffff
+    }
+]
+    }
+
+//--------------------------------------ammo-2
+beryllium: {
+    type: BasicBulletType
+    sprite: bsm-triangle-bullet
+    parentizeEffects: true
+    pierceBuilding: true
+    pierce: true
+    height: 30
+    width: 12
+
+    pierceDamageFactor: 0.05
+    reloadMultiplier: 1.3
+    ammoMultiplier: 12
+    rangeChange: 172
+
+    status: bsm-air-specialization
+    splashDamageRadius: 26
+    statusDuration: 450
+    splashDamage: 80
+    pierceCap: 3
+    lifetime: 93
+    damage: 150
+    speed: 11
+
+    hitEffect: hitBulletColor
+
+    trailEffect: disperseTrail
+    trailRotation: true
+    trailColor: ffffff
+    trailInterval: 1
+    trailLength: 3.5
+    trailWidth: 2.3
+
+    frontColor: ffffff
+    backColor: b1dd7e
+    hitColor: b1dd7e
+
+shootEffect: {
+    type: MultiEffect
+
+effects: [ shootBigColor, colorSparkBig, shootBigSmoke ]
+    }
+
+despawnEffect: {
+    type: WaveEffect
+    lifetime: 20
+
+    sizeFrom: 0
+    sizeTo: 40
+
+    strokeFrom: 2.5
+    strokeTo: 0
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+    }
+
+smokeEffect: [
+    {
+    type: WaveEffect
+    lifetime: 30
+
+    sizeFrom: 0
+    sizeTo: 50
+
+    strokeFrom: 2.5
+    strokeTo: 0
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+}
+
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 20
+    line: true
+    cone: 360
+
+    baseLength: 0
+    length: 40
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+}
+    ]
+
+chargeEffect: [
+{
+    type: ParticleEffect
+    lifetime: 135
+    particles: 1
+    cone: 360
+
+    baseLength: 0
+    length: 0
+
+    sizeFrom: 0
+    sizeTo: 5
+
+    strokeFrom: 0.8
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: b1dd7e
+    }
+{
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+
+    sizeFrom: 35
+    sizeTo: 0
+
+    strokeFrom: 5
+    strokeTo: 0
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+    }
+
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 5
+
+    baseLength: 70
+    length: -70
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+    particles: 5
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 3
+    lifetime: 135
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 9
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: b1dd7e
+    colorTo: ffffff
+    }
+]
+    }
+
+//--------------------------------------ammo-3
+tungsten: {
+    type: BasicBulletType
+    sprite: bsm-triangle-bullet
+    parentizeEffects: true
+    pierceBuilding: true
+    pierce: true
+    height: 29
+    width: 13
+
+    pierceDamageFactor: 0.025
+    ammoMultiplier: 8
+    rangeChange: 40
+
+    status: bsm-ground-specialization
+    splashDamageRadius: 15
+    statusDuration: 300
+    splashDamage: 60
+    pierceCap: 5
+    lifetime: 64
+    damage: 180
+    speed: 10.5
+
+    hitEffect: hitBulletColor
+
+    trailColor: 768a9a
+    trailInterval: 1.5
+    trailLength: 3.5
+    trailWidth: 2.3
+
+    frontColor: ffffff
+    backColor: 768a9a
+    hitColor: 768a9a
+
+shootEffect: {
+    type: MultiEffect
+
+effects: [ shootBigColor, colorSparkBig, shootBigSmoke ]
+    }
+
+despawnEffect: {
+    type: WaveEffect
+    lifetime: 10
+
+    sizeFrom: 0
+    sizeTo: 20
+
+    strokeFrom: 2.5
+    strokeTo: 0
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+    }
+
+smokeEffect: [
+    {
+    type: WaveEffect
+    lifetime: 30
+
+    sizeFrom: 0
+    sizeTo: 50
+
+    strokeFrom: 2.5
+    strokeTo: 0
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+}
+
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 20
+    line: true
+    cone: 360
+
+    baseLength: 0
+    length: 40
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+}
+    ]
+
+chargeEffect: [
+{
+    type: ParticleEffect
+    lifetime: 135
+    particles: 1
+    cone: 360
+
+    baseLength: 0
+    length: 0
+
+    sizeFrom: 0
+    sizeTo: 5
+
+    strokeFrom: 0.8
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: 768a9a
+    }
+{
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+
+    sizeFrom: 35
+    sizeTo: 0
+
+    strokeFrom: 5
+    strokeTo: 0
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+    }
+
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 5
+
+    baseLength: 70
+    length: -70
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+    particles: 5
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+    }
+{
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+    particles: 3
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 9
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: 768a9a
+    colorTo: ffffff
+    }
+]
+    }
+
+//--------------------------------------ammo-4
+carbide: {
+    type: BasicBulletType
+    sprite: bsm-triangle-bullet
+    parentizeEffects: true
+    pierceBuilding: true
+    pierceArmor: true
+    pierce: true
+    height: 31
+    width: 14
+
+    pierceDamageFactor: 0.0025
+    reloadMultiplier: 0.8
+    ammoMultiplier: 4
+    rangeChange: 56
+
+    status: bsm-armor-piercing-tier-1
+    splashDamageRadius: 20
+    statusDuration: 90
+    splashDamage: 70
+    pierceCap: 7
+    lifetime: 80
+    damage: 240
+    speed: 10
+
+    hitEffect: hitBulletColor
+
+    trailColor: c9a5c8
+    trailInterval: 1.8
+    trailLength: 3.5
+    trailWidth: 2.3
+
+    frontColor: ffffff
+    backColor: c9a5c8
+    hitColor: c9a5c8
+
+shootEffect: {
+    type: MultiEffect
+
+effects: [ shootBigColor, colorSparkBig, shootBigSmoke ]
+    }
+
+despawnEffect: {
+    type: WaveEffect
+    lifetime: 15
+
+    sizeFrom: 0
+    sizeTo: 30
+
+    strokeFrom: 2.5
+    strokeTo: 0
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+    }
+
+smokeEffect: [
+    {
+    type: WaveEffect
+    lifetime: 30
+
+    sizeFrom: 0
+    sizeTo: 50
+
+    strokeFrom: 2.5
+    strokeTo: 0
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+}
+
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 20
+    line: true
+    cone: 360
+
+    baseLength: 0
+    length: 40
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+}
+    ]
+
+chargeEffect: [
+    {
+    type: ParticleEffect
+    lifetime: 135
+    particles: 1
+    cone: 360
+
+    baseLength: 0
+    length: 0
+
+    sizeFrom: 0
+    sizeTo: 5
+
+    strokeFrom: 0.8
+    strokeTo: 0
+
+    colorFrom: ffffff
+    colorTo: c9a5c8
+}
+    {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+
+    sizeFrom: 35
+    sizeTo: 0
+
+    strokeFrom: 5
+    strokeTo: 0
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+}
+
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 5
+
+    baseLength: 70
+    length: -70
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+}
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    particles: 15
+    lifetime: 135
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 2.5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+}
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+    particles: 5
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 5
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+}
+    {
+    type: ParticleEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 135
+    particles: 3
+    line: true
+    cone: 360
+
+    baseLength: 34
+    length: -34
+
+    sizeFrom: 9
+    sizeTo: 0
+
+    strokeFrom: 0.8
+    strokeTo: 0.6
+
+    colorFrom: c9a5c8
+    colorTo: ffffff
+}
+    ]
+}
+    }

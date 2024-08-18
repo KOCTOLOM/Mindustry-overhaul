@@ -1,0 +1,164 @@
+research: poly
+forceMultiTarget: true
+faceTarget: true
+fogRadius: 42.5
+
+itemCapacity: 81
+buildSpeed: 0.32
+mineSpeed: 0.96
+mineTier: 2
+health: 750
+speed: 2.75
+armor: 4
+
+lightColor: 98ffa9
+lightOpacity: 0.7
+lightRadius: 67.5
+
+trailLength: 7.5
+
+deathSound: medium-air-crush-3
+
+immunities: [ electrified, shocked, tarred, wet, bsm-ground-specialization, bsm-naval-specialization ]
+
+ammoType: {
+    type: PowerAmmoType
+    totalPower: 1100
+}
+
+weapons: [
+    {
+    name: plasma-weapon-mount
+
+    layerOffset: -0.001
+    rotationLimit: 15
+    baseRotation: 15
+    shootCone: 30
+    rotate: true
+    shake: 0.32
+    x: 2.8
+    y: 8.6
+
+    inaccuracy: 7.5
+    reload: 6
+
+    shootSound: lasershoot
+
+bullet: {
+    type: LaserBoltBulletType
+    collidesTeam: true
+    collidesAir: false
+
+    buildingDamageMultiplier: 0.25
+
+    healPercent: 0.5
+    lifetime: 60
+    speed: 5.25
+    damage: 9
+
+    frontColor: ffffff
+    backColor: 84f491
+}
+    }
+
+{
+name: repair-bwc-large-green
+
+    layerOffset: -0.001
+    rotationLimit: 45
+    rotateSpeed: 2.25
+    baseRotation: -15
+    alternate: true
+    shootCone: 15
+    rotate: true
+    recoil: 2
+    shake: 3
+    x: 7
+    y: -2.5
+
+    inaccuracy: 15
+    reload: 90
+
+    ejectEffect: casing1
+    shootSound: missile
+
+shoot: { 
+    shotDelay: 9
+    shots: 2
+    }
+
+bullet: {
+    type: MissileBulletType
+    keepVelocity: false
+    collidesAir: false
+    despawnShake: 5
+    shrinkX: 0.25
+    shrinkY: 0.5
+    drag: -0.003
+    hitShake: 5
+    height: 12
+    width: 5
+
+    splashDamageRadius: 21
+    homingPower: 0.75
+    homingRange: 62.5
+    splashDamage: 45
+    healPercent: 3
+    weaveScale: 3
+    lifetime: 80
+    weaveMag: 5
+    damage: 75
+    speed: 1.8
+
+    despawnEffect: blastExplosion
+    hitEffect: blastExplosion
+
+    frontColor: ffffff
+    trailColor: 62ae7f
+    trailInterval: 12
+    backColor: 62ae7f
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 27
+}
+    }
+
+{
+    name: plasma-gun
+
+    soundPitchMax: 0.75
+    controllable: false
+    rotationLimit: 360
+    autoTarget: true
+    alternate: false
+    rotate: true
+    shootY: 2
+    recoil: 2
+    x: 4.2
+    y: -3.6
+
+    reload: 3
+
+    ejectEffect: none
+
+    shootSound: lasershoot
+
+bullet: {
+    type: LaserBoltBulletType
+    collidesGround: false
+
+    healPercent: 0.05
+    lifetime: 45
+    speed: 6.25
+    damage: 5
+
+    frontColor: ffffff
+    backColor: 84f491
+
+    trailColor: 84f491
+    trailLength: 3.2
+    trailWidth: 1.5
+    }
+}
+    ]

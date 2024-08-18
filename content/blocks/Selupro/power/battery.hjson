@@ -1,0 +1,13 @@
+research: combustion-generator
+
+baseExplosiveness: 5
+health: 81
+
+consumes: {
+    powerBuffered: 3000
+}
+
+requirements: [
+    copper/25
+    lead/24
+]

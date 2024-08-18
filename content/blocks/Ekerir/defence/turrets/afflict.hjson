@@ -1,0 +1,17 @@
+research: diffuse
+
+health: 21000
+armor: 18
+
+consumes: {
+    power: 250
+    }
+
+requirements: [
+    oxide/5000
+    beryllium/6900
+    silicon/8100
+    graphite/7500
+    tungsten/4090
+    surge-alloy/2500
+    ]

@@ -1,0 +1,14 @@
+research: tungsten-wall-large
+
+buildCostMultiplier: 12.66
+
+lightningChance: 0.4
+lightningDamage: 50
+lightningLength: 15
+health: 1440
+armor: 9
+
+requirements: [
+    surge-alloy/8
+    tungsten/5
+    ]

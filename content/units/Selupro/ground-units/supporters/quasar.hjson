@@ -1,0 +1,198 @@
+research: pulsar
+forceMultiTarget: true
+stepShake: 2.65
+fogRadius: 32.5
+
+rotateSpeed: 2.25
+itemCapacity: 96
+buildSpeed: 0.81
+mineSpeed: 0.96
+health: 2100
+mineTier: 3
+armor: 18
+
+lightColor: 98ffa9
+lightOpacity: 0.7
+healColor: 84f491
+lightRadius: 90
+
+trailLength: 12.5
+engineOffset: 7
+engineSize: 3.5
+
+deathSound: mech-destroyed
+
+immunities: [ electrified, shocked, bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ForceFieldAbility 
+    cooldown: 420
+    radius: 56
+    max: 1600
+    regen: 2
+    sides: 4
+}
+    {
+    type: RegenAbility
+    amount: 0.3
+}
+    ]
+
+weapons: [
+{
+    minShootVelocity: 0.01
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+
+    reload: 60
+
+    shootSound: mech-medium-footsteps
+bullet: {
+    type: BasicBulletType
+    maxRange: 196
+    height: 0
+    width: 0
+
+    lifetime: 10
+    damage: 0
+    speed: 1
+
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    hitEffect: none
+}
+    }
+
+{
+    name: quasar-weapon
+    predictTarget: true
+    rotationLimit: 18
+    rotateSpeed: 0.75
+    shootCone: 90
+    rotate: true
+    recoil: 4
+    shootY: 4
+    shake: 9
+    x: 7.5
+
+    reload: 160
+
+    chargeSound: laser-charge
+    shootSound: laser-shot
+shoot: {
+    firstShotDelay: 75
+    shotDelay: 5
+    shots: 3
+    }
+
+bullet: {
+    type: LaserBulletType
+    collidesTeam: true
+    collidesAir: false
+    length: 150
+    recoil: 1
+    width: 25
+
+    buildingDamageMultiplier: 1.75
+
+    statusDuration: 300
+    status: melting
+    healAmount: 170
+    damage: 92
+
+    colors: [ 84f491, 84f491, ffffff ]
+}
+    }
+
+{
+    name: hidden-pm-mount
+    layerOffset: -0.001
+    baseRotation: -205
+    shootCone: 360
+    rotate: false
+    shootY: 5.25
+    recoil: -5
+    shake: 5
+    x: 3
+    y: -2.5
+
+    velocityRnd: 0.2
+    inaccuracy: 30
+    reload: 180
+
+    shootSound: missile
+shoot: { 
+    shotDelay: 5
+    shots: 3
+    }
+
+bullet: {
+    type: BasicBulletType
+    
+    keepVelocity: false
+    collidesTeam: true
+    despawnShake: 3
+    scaleLife: true
+    shrinkX: 0.25
+    shrinkY: 0.5
+    hitShake: 3
+    height: 9
+    width: 9
+    
+    splashDamageRadius: 13
+    statusDuration: 180
+    status: electrified
+    homingPower: 1
+    homingDelay: 4
+    splashDamage: 32
+    homingRange: 5
+    healAmount: 40
+    lifetime: 140
+    damage: 48
+    drag: 0.02
+    speed: 4
+
+    despawnEffect: blastExplosion
+    hitEffect: blastExplosion
+
+    trailColor: 62ae7f
+    trailInterval: 12
+    trailLength: 72.5
+    trailInterval: 8
+    trailWidth: 1.5
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 27
+
+    frontColor: ffffff
+    backColor: 62ae7f
+}
+    }
+
+{
+    name: repair-bwc-green
+    type: RepairBeamWeapon
+    rotationLimit: 45
+    mirror: false
+    rotate: true
+    shootY: 3
+    x: 2
+    y: -4.5
+
+    repairSpeed: 0.25
+    beamWidth: 0.6
+
+bullet: {
+    maxRange: 100
+    }
+}
+    ]

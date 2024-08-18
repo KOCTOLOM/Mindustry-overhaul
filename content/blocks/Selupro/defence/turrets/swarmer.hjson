@@ -1,0 +1,383 @@
+research: parallax
+consumeAmmoOnce: true
+targetGround: false
+rotateSpeed: 3.2
+shootY: 4.5
+
+buildCostMultiplier: 1.6892
+coolantMultiplier: 1
+
+ammoPerShot: 2
+inaccuracy: 12
+maxAmmo: 108
+reload: 40
+health: 960
+range: 440
+armor: 5
+
+consumes: {
+    power: 6
+}
+
+requirements: [
+    graphite/180
+    titanium/120
+    silicon/120
+    plastanium/70
+]
+
+drawer: {
+    type: DrawTurret
+parts: [
+{
+    type: FlarePart
+    color2: ffffff80
+    color1: f1545440
+    rotation: 45
+    radius: 8
+    stroke: 2
+    y: -3.75
+    }
+]
+    }
+
+smokeEffect: shootBigSmoke
+chargeSound: target-locked
+shootSound: rocket-shot-1
+shootEffect: shootBig
+shoot: {
+    type: ShootBarrel
+    shotDelay: 2
+    shots: 3
+
+barrels: [
+    -4, 1.25, 0
+    0, 0, 0
+    4, -1.25, 0
+]
+    }
+
+ammoTypes: {
+blast-compound: {
+    type: MissileBulletType
+    collidesGround: false
+    shrinkY: 0
+    height: 15
+    width: 13
+
+    pierceDamageFactor: 0.65
+    reloadMultiplier: 0.3
+    ammoMultiplier: 2
+
+    splashDamageRadius: 20
+    statusDuration: 60
+    homingPower: 0.02
+    splashDamage: 60
+    homingRange: 180
+    status: blasted
+    knockback: 2.8
+    lifetime: 126
+    damage: 190
+    speed: 3.5
+	
+	pierceArmor:true
+	
+    hitSound: rocket-hit
+
+    lightColor: ff795e
+    lightOpacity: 0.7
+    lightRadius: 27.5
+
+    trailColor: c85c51
+    trailLength: 15
+    trailWidth: 1.4
+
+    frontColor: ff795e
+    backColor: c85c51
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 25
+
+    waveColor: ff795e
+    waveStroke: 3.2
+    waveRad: 60
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 21.5
+    smokes: 18
+
+    sparkColor: ff795e
+    sparkStroke: 2.5
+    sparkRad: 45
+    sparkLen: 4
+    sparks: 21
+}
+    }
+
+pyratite: {
+    type: MissileBulletType
+    collidesGround: false
+    shrinkY: 0
+    height: 15
+    width: 13
+
+	incendAmount: 2
+	incendSpread: 8
+	incendChance: 1
+	
+    reloadMultiplier: 0.85
+    ammoMultiplier: 2
+    rangeChange: 120
+
+    splashDamageRadius: 22
+    statusDuration: 750
+    homingPower: 0.02
+    splashDamage: 44
+    knockback: 0.08
+    status: burning
+    lifetime: 104
+    speed: 4.25
+    damage: 125
+	homingDelay: 30
+    hitSound: rocket-hit
+
+    lightColor: ffaa5f
+    lightOpacity: 0.7
+    lightRadius: 42.5
+
+    trailColor: d37f47
+    trailLength: 12
+    trailWidth: 1.2
+
+    frontColor: ffaa5f
+    backColor: d37f47
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 32
+
+    waveColor: ffaa5f
+    waveStroke: 3.2
+    waveRad: 60
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 17.5
+    smokes: 12
+
+    sparkColor: ffaa5f
+    sparkStroke: 2.25
+    sparkRad: 45
+    sparkLen: 4
+    sparks: 25
+}
+    }
+
+surge-alloy: {
+    type: MissileBulletType
+    collidesGround: false
+    shrinkY: 0
+    height: 11
+    width: 9
+
+    reloadMultiplier: 1.2
+    ammoMultiplier: 4
+    rangeChange: 160
+
+    splashDamageRadius: 0
+    lightningLength: 12.5
+    lightningDamage: 25
+    statusDuration: 300
+    status: emp-tier-2
+    homingPower: 0.09
+    homingRange: 60
+    splashDamage: 0
+    knockback: 0.15
+    pierceCap: 2
+    lifetime: 60
+    lightning: 3
+    damage: 80
+    speed: 10
+	homingDelay: 10
+	pierceArmor:true
+	
+    hitSound: rocket-hit
+
+    lightColor: fcf387
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: e8d174
+    trailLength: 72.5
+    trailWidth: 1.25
+
+    frontColor: fcf387
+    backColor: e8d174
+
+    despawnEffect: {
+    type: ExplosionEffect
+
+    lifetime: 60
+
+    waveColor: fcf387
+    waveStroke: 1.25
+    waveRad: 30
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 12
+    smokes: 8
+
+    sparkColor: fcf387
+    sparkStroke: 2.5
+    sparkRad: 45
+    sparkLen: 6
+    sparks: 14
+    }
+    hitEffect: {
+    type: WaveEffect
+	sides:4
+	rotation:45
+    lifetime: 30
+    sizeFrom: 0
+    sizeTo: 40
+    strokeFrom: 0
+    strokeTo: 5
+    colorFrom: fcf387
+    colorTo: ffffff00
+}
+	
+}
+
+titanium: {
+    type: MissileBulletType
+    collidesGround: false
+    scaleLife: true
+    shrinkY: 0
+    height: 12
+    width: 10
+
+    reloadMultiplier: 2.5
+    ammoMultiplier: 6
+    rangeChange: 70
+
+    status: armor-piercing-tier-1
+    splashDamageRadius: 20
+    statusDuration: 250
+    homingPower: 0.02
+	homingDelay: 30
+    splashDamage: 40
+    homingRange: 30
+    knockback: 0.5
+    lifetime: 127.5
+    damage: 40
+    speed: 4
+	
+	pierceArmor:true
+	
+    hitSound: rocket-hit
+
+    lightColor: a4b8fa
+    lightOpacity: 0.7
+    lightRadius: 34.5
+
+    trailColor: 919fe7
+    trailLength: 16
+    trailWidth: 1.1
+
+    frontColor: a4b8fa
+    backColor: 919fe7
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 32
+
+    waveColor: a4b8fa
+    waveStroke: 3.2
+    waveRad: 40
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 18
+    smokes: 12
+
+    sparkColor: a4b8fa
+    sparkStroke: 1.5
+    sparkRad: 30
+    sparkLen: 2
+    sparks: 15
+}
+    }
+
+plastanium: { 
+    type: MissileBulletType
+    shrinkY: 0
+    height: 13
+    width: 11
+
+    pierceDamageFactor: 100
+    ammoMultiplier: 3
+    rangeChange: 40
+
+    splashDamageRadius: 26
+    homingPower: 0.02
+    splashDamage: 41
+    homingRange: 180
+	homingDelay: 30
+    knockback: 0.25
+    fragBullets: 4
+    pierceCap: 2
+    lifetime: 127
+    damage: 40
+    speed: 3.8
+	
+    pierceArmor:true
+	
+    despawnEffect: plasticExplosion
+    hitEffect: plasticExplosion
+    hitSound: rocket-hit
+
+    lightColor: edf3a9
+    lightOpacity: 0.7
+    lightRadius: 24.5
+
+    frontColor: edf3a9
+    backColor: cbd97f
+
+    trailColor: cbd97f
+    trailLength: 32.5
+    trailWidth: 1.5
+	fragRandomSpread:45
+fragBullet: {
+    type: BasicBulletType
+    collidesGround: false
+    shrinkY: 0.25
+    height: 12
+    width: 9
+
+    pierceCap: 2
+    lifetime: 25
+    damage: 30
+    speed: 3.2
+	pierceArmor:true
+    hitEffect: hitBulletColor
+    despawnEffect: none
+
+    lightColor: edf3a9
+    lightOpacity: 0.7
+    lightRadius: 27.5
+
+    trailColor: cbd97f
+    trailLength: 72.5
+    trailWidth: 1.5
+
+    frontColor: edf3a9
+    backColor: cbd97f
+    }
+}
+    }

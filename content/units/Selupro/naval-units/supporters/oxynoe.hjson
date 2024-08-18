@@ -1,0 +1,122 @@
+research: retusa
+
+rotateSpeed: 1.5
+health: 1280
+speed: 0.6
+armor: 9
+
+immunities: [ spore-slowed, electrified, shocked, bsm-ground-specialization, bsm-air-specialization ]
+
+weapons: [
+{
+    name: flamethrower-weapon
+    rotateSpeed: 5
+    shootCone: 30
+    rotate: true
+    x: 4.5
+    y: 6.5
+
+    inaccuracy: 10
+    reload: 5
+
+    ejectEffect: casing1
+    shootSound: flame
+bullet: {
+    keepVelocity: false
+    collidesTeam: true
+    collidesAir: false
+    hittable: false
+    pierce: true
+    hitSize: 7
+
+    buildingDamageMultiplier: 1.5
+
+    statusDuration: 300
+    healPercent: 1.5
+    status: burning
+    lifetime: 9.5
+    damage: 37
+    speed: 5
+	frontColor:ffffff00
+	backColor:ffffff00
+    hitEffect: hitFlamePlasma
+    despawnEffect: none
+    ejectEffect: none
+
+shootEffect: {
+    particles: 15
+    lifetime: 32
+    sizeFrom: 2.5
+    sizeTo: 0.25
+    length: 50
+    cone: 5
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 17.5
+
+    colorFrom: ffffff
+    colorTo: 98ffa9
+
+    sizeInterp: pow3In
+    interp: pow5Out
+    }
+	fragBullets:2
+	fragRandomSpread:20
+	fragBullet:{
+	type: LightningBulletType
+    collidesAir: false
+    hittable: false
+    hitSize: 3
+
+    buildingDamageMultiplier: 2
+	lightningLengthRand:3
+    lightningLength: 6
+    damage: 12
+	pierceArmor:true
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 14.5
+	lightningColor: 98ffa9
+lightningType: {
+    collidesAir: false
+    hittable: false
+    hitSize: 3
+	width:0
+	heigth:0
+    buildingDamageMultiplier: 2
+
+    lifetime: 20
+
+    hitEffect: hitLancer
+    despawnEffect: none
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 14.5
+	}
+    }
+	fragOnHit:false
+}
+    }
+
+{   
+    name: green-bsw
+    type: PointDefenseWeapon
+    mirror: false
+    x: 0
+    y: 1
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 9
+
+bullet: {
+    maxRange: 100
+    damage: 17
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+    }
+}
+    ]

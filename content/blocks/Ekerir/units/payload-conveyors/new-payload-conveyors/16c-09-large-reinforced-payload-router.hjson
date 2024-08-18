@@ -1,0 +1,17 @@
+type: PayloadRouter
+name: Large reinforced payload router
+description: Allocates a heavier load to three possible free routes.
+research: 16c-08-large-reinforced-payload-conveyor
+canOverdrive: false
+category: units
+size: 4
+
+payloadLimit: 4
+moveTime: 48
+health: 1250
+armor: 3
+
+requirements: [
+  silicon/24
+  tungsten/32
+]

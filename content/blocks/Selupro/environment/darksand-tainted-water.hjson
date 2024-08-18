@@ -1,0 +1,6 @@
+liquidDrop: tainted-water-liquid
+
+status: spore-slowed
+speedMultiplier: 0.5
+statusDuration: 180
+albedo: 0.9

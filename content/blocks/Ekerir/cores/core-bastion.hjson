@@ -1,0 +1,12 @@
+absorbLasers: true
+
+unitCapModifier: 12
+itemCapacity: 7500
+health: 10000
+armor: 7
+
+requirements: [
+    graphite/3000
+    silicon/7500
+    beryllium/5000
+    ]

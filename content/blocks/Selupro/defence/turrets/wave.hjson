@@ -1,0 +1,95 @@
+research: duo
+shootCone: 50
+recoil: 0.8
+
+liquidCapacity: 75
+inaccuracy: 5
+health: 320
+range: 200
+reload: 4
+
+shootEffect: shootLiquid
+
+ammoTypes: {
+water: {
+    type: LiquidBulletType
+    liquid: water
+    scaleLife: true
+    orbSize: 4.5
+    drag: 0.01
+    layer: 98
+
+    reloadMultiplier: 1.25
+
+    statusDuration: 420
+    knockback: 0.75
+    lifetime: 50
+    status: wet
+    speed: 4.8
+
+    lightOpacity: 0
+    lightRadius: 0
+}
+
+slag: {
+    type: LiquidBulletType
+    liquid: slag
+    scaleLife: true
+    orbSize: 4.1
+    drag: 0.01
+
+    reloadMultiplier: 0.85
+
+    statusDuration: 480
+    knockback: 0.32
+    status: melting
+    lifetime: 50
+    damage: 6.5
+	pierceArmor:true
+    speed: 3.5
+
+    lightColor: ffa166
+    lightOpacity: 0.7
+    lightRadius: 32
+}
+
+cryofluid: {
+    type: LiquidBulletType
+    liquid: cryofluid
+    scaleLife: true
+    orbSize: 3.75
+    drag: 0.01
+
+    reloadMultiplier: 1.5
+
+    statusDuration: 540
+    status: freezing
+    knockback: 1.2
+    lifetime: 51.5
+    pierceCap: 25
+    speed: 5.25
+    damage: 5
+
+    lightColor: c0ecff
+    lightOpacity: 0.7
+    lightRadius: 24
+}
+
+oil: {
+    type: LiquidBulletType
+    liquid: oil
+    scaleLife: true
+    orbSize: 4.5
+    drag: 0.01
+    layer: 98
+
+    statusDuration: 900
+    knockback: 0.5
+    status: tarred
+    lifetime: 55
+    speed: 4
+
+    lightOpacity: 0
+    lightRadius: 0
+}
+    }

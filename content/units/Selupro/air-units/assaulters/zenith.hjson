@@ -1,0 +1,217 @@
+research: horizon
+alwaysShootWhenMoving: true
+circleTarget: true
+fogRadius: 32
+
+itemCapacity: 96
+rotateSpeed: 2.5
+accel: 0.025
+health: 1500
+drag: 0.03
+speed: 2.4
+armor: 24
+
+lightColor: fff8e8
+lightOpacity: 0.7
+lightRadius: 72.5
+healColor: b0bac0
+
+trailLength: 12.5
+
+deathSound: helicopter-crush
+loopSoundVolume: 0.075
+loopSound: air-engine
+
+immunities: [ blasted, shocked, bsm-ground-specialization, bsm-naval-specialization ]
+
+targetFlags: [ launchPad, factory, storage, repair, unitAssembler, battery ]
+
+abilities: [
+    {
+    type: RegenAbility
+    amount: 0.1333333333333
+}
+    ]
+
+weapons: [
+{
+    name: large-mm
+    rotate: true
+    shake: 1.8
+    x: 7
+    y: 0
+	rotateSpeed:2
+    velocityRnd: 0.1
+    inaccuracy: 9
+    reload: 360
+	
+    shootStatus: bsm-motor-deceleration-tier-1
+    chargeSound: target-locked-short
+    shootSound: rocket-shot-1
+    shootStatusDuration: 120
+shoot: {
+    type: ShootMulti
+source: {
+    type: ShootBarrel
+    shotDelay: 2
+    spread: 2
+    shots: 2
+
+barrels: [
+    -1, 0, 0,
+    1, 0, 0
+]
+    }
+
+dest: [
+{
+    type: ShootPattern
+    firstShotDelay: 185
+    shotDelay: 9
+    shots: 5
+    }
+]
+    }
+
+bullet: {
+    type: MissileBulletType
+    keepVelocity: false
+    despawnShake: 2.25
+    scaleLife: true
+    hitShake: 2.25
+    shrinkX: 0.25
+    shrinkY: 0.5
+    pierce: true
+    drag: -0.003
+    height: 12
+    width: 8
+
+    splashDamageRadius: 15
+    statusDuration: 60
+    splashDamage: 48
+    status: blasted
+    homingPower: 0.002
+    homingRange: 40
+    weaveScale: 6
+    lifetime: 95
+    weaveMag: 1
+    damage: 50
+    speed: 2.8
+
+    lightColor: d06b53
+    lightOpacity: 0.7
+    lightRadius: 72.5
+
+    trailInterp: slope
+    trailColor: 454545
+    trailInterval: 2
+    trailWidth: 2.5
+
+hitEffect: {
+    type: ExplosionEffect
+    lifetime: 60
+
+    waveColor: ffd2ae
+    waveStroke: 3.2
+    waveRad: 20
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 3.5
+    smokes: 7
+
+    sparkColor: ffd2ae
+    sparkStroke: 1.25
+    sparkRad: 24.5
+    sparkLen: 4
+    sparks: 15
+    }
+}
+    }
+
+{
+    name: hidden-bombing-mw
+    controllable: false
+    layerOffset: -0.001
+    baseRotation: -45
+    autoTarget: true
+    alternate: false
+    shootCone: 360
+    mirror: true
+    shake: 1.75
+    shootY: 1
+    x: 9
+    y: -4
+
+    velocityRnd: 0.35
+    reload: 140
+
+    shootStatus: bsm-motor-deceleration-tier-1
+    chargeSound: charging-power
+    shootStatusDuration: 340
+    shootSound: rocket-fire
+    ejectEffect: casing3
+shoot: {
+    firstShotDelay: 75
+    shotDelay: 20
+    shots: 3
+    }
+
+bullet: {
+    type: BasicBulletType
+    sprite: mine-bullet
+    despawnShake: 3.2
+    hitShake: 3.2
+    maxRange: 250
+    pierce: true
+    shrinkX: 0
+    shrinkY: 0
+    height: 8
+    width: 8
+	drag:0.06
+    buildingDamageMultiplier: 1.25
+
+    splashDamageRadius: 40
+    statusDuration: 450
+    splashDamage: 96
+    status: burning
+    lifetime: 140
+    speed: 2.75
+
+    smokeEffect: shootSmallSmoke
+    shootEffect: shootSmallColor
+    hitSound: rocket-explosion
+
+    lightColor: d06b53
+    lightOpacity: 0.7
+    lightRadius: 62.5
+
+    trailInterval: 4.5
+    trailColor: d06b53
+    trailLength: 4
+
+    frontColor: ffaa5f
+    backColor: d37f47
+
+hitEffect: {
+    type: ExplosionEffect
+    lifetime: 32
+
+    waveColor: ffaa5f
+    waveStroke: 3.2
+    waveRad: 48
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 14.5
+    smokes: 7
+
+    sparkColor: ffaa5f
+    sparkStroke: 1.8
+    sparkRad: 27.5
+    sparkLen: 3
+    sparks: 9
+}
+    }
+}
+    ]

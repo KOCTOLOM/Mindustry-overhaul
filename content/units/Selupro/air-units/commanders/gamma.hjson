@@ -1,0 +1,67 @@
+research: core-nucleus
+researchCostMultiplier: 0
+
+itemCapacity: 75
+buildSpeed: 1.5
+mineSpeed: 5
+mineTier: 2
+health: 320
+speed: 5
+armor: 8
+
+lightColor: fff8e8
+lightOpacity: 0.7
+lightRadius: 80
+
+trailLength: 5.75
+
+deathSound: air-crush-small-1
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ShieldRegenFieldAbility
+    reload: 75
+    amount: 15
+    range: 0
+    max: 90
+}
+    ]
+
+weapons: [
+{
+    name: gamma-weapon
+    x: 1
+    y: 2
+    
+    reload: 5
+
+    shootSound: machine-gun-shot-3
+    ejectEffect: casing1
+
+bullet: {
+    type: BasicBulletType
+    scaleLife: true
+    height: 11
+    width: 6.5
+    
+    buildingDamageMultiplier: 0.01
+    pierceDamageFactor: 0.0125
+
+    homingPower: 0.125
+    homingRange: 90
+    lifetime: 104.5
+    pierceCap: 3
+    damage: 18
+    speed: 3.75
+
+    smokeEffect: shootSmallSmoke
+    shootEffect: shootSmall
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 17.5
+    }
+}
+    ]

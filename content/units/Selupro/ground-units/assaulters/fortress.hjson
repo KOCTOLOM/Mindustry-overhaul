@@ -1,0 +1,206 @@
+research: mace
+forceMultiTarget: true
+targetAir: true
+stepShake: 3.25
+fogRadius: 47.5
+range: 384
+
+itemCapacity: 81
+rotateSpeed: 2
+health: 2250
+speed: 0.434
+armor: 32
+
+lightColor: fff8e8
+lightOpacity: 0.7
+lightRadius: 81.5
+healColor: b0bac0
+
+deathSound: mech-destroyed
+
+immunities: [ blasted, burning, melting, bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ShieldArcAbility
+    region: bsm-fortress-shield
+    radius: 27
+    angle: 90
+    width: 3
+    y: -9
+
+    cooldown: 1080
+    regen: 1.2
+    max: 600
+}
+    {
+    type: ArmorPlateAbility
+    healthMultiplier: 0.3
+}
+    {
+    type: RegenAbility
+    amount: 0.2084
+}
+    ]
+
+weapons: [
+{
+    minShootVelocity: 0.01
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+
+    reload: 60
+
+    shootSound: mech-medium-footsteps
+
+bullet: {
+    type: BasicBulletType
+    maxRange: 388
+    height: 0
+    width: 0
+
+    lifetime: 10
+    damage: 0
+    speed: 1
+
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    hitEffect: none
+}
+    }
+
+{
+    name: fortress-weapon
+    rotationLimit: 15
+    rotateSpeed: 1
+    shootCone: 30
+    rotate: true
+    recoil: 3.25
+    shootY: 7
+    shake: 9
+    x: 9.5
+    y: 1
+
+    reload: 64
+
+    shootSound: artillery-shot
+    shootEffect: shootSmall
+    ejectEffect: casing4
+bullet: {
+    type: ArtilleryBulletType
+    collidesTiles: true
+    collidesAir: false
+    despawnShake: 9
+    shrinkX: 0.3
+    shrinkY: 0.5
+    pierce: true
+    height: 20
+    width: 16
+
+    buildingDamageMultiplier: 1.6
+    
+    damage: 90
+    
+    status: bsm-armor-piercing-tier-1
+    splashDamageRadius: 26
+    statusDuration: 300
+    splashDamage: 120
+    knockback: 4.45
+    pierceCap: 96
+    lifetime: 163
+    speed: 2.4
+    incendAmount: 4
+    incendSpread: 12
+    incendChance: 0.8
+    hitEffect: blastExplosion
+    hitSound: artillery-hit
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 67.5
+
+    trailEffect: artilleryTrail
+    trailInterval: 9.5
+    trailColor: f9c27a
+    trailLength: 3
+    trailWidth: 1
+    trailSize: 4
+
+    frontColor: fff8e8
+    backColor: f9c27a
+}
+    }
+
+{
+    name: fortress-machine-gun
+    controllable: false
+    rotationLimit: 75
+    rotateSpeed: 0.8
+    autoTarget: true
+    shootCone: 25
+    mirror: false
+    rotate: true
+    shootY: 7.5
+    x: 5
+    y: -3.5
+
+    cooldownTime: 150
+    velocityRnd: 0.24
+    inaccuracy: 3
+    reload: 120
+
+    chargeSound: turret-target-lock
+    shootSound: turret-shot
+    ejectEffect: casing2
+shoot: {
+    firstShotDelay: 64
+    shotDelay: 6
+    shots: 4
+    }
+
+parts: [
+{
+    type: RegionPart
+    suffix: -brl
+    progress: recoil
+    outline: false
+    mirror: false
+    moveY: -0.75
+    under: true
+    x: 0
+    y: 2
+}
+    ]
+
+bullet: {
+    type: BasicBulletType
+    pierceBuilding: true
+    pierce: true
+    height: 12
+    width: 5
+
+    pierceDamageFactor: 0.005
+    ammoMultiplier: 24
+
+    pierceCap: 2
+    lifetime: 48
+    damage: 32
+    speed: 7.5
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 20
+
+    trailColor: f9c27a
+    trailLength: 7.5
+    trailWidth: 1
+    }
+}
+    ]

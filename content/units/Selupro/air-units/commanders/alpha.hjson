@@ -1,0 +1,54 @@
+research: core-shard
+researchCostMultiplier: 0
+
+itemCapacity: 32
+buildSpeed: 1
+mineSpeed: 5
+health: 180
+speed: 4.5
+armor: 3
+
+lightColor: fff8e8
+lightOpacity: 0.7
+lightRadius: 60
+
+trailLength: 5.25
+
+deathSound: air-crush-small-1
+
+immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+
+weapons: [
+{
+    name: alpha-weapon
+    x: 2.75
+    y: 1
+    
+    reload: 7.5
+
+    shootSound: machine-gun-shot-2
+    ejectEffect: casing1
+
+bullet: {
+    type: BasicBulletType
+    scaleLife: true
+    height: 9
+    width: 7
+    
+    buildingDamageMultiplier: 0.01
+    pierceDamageFactor: 0.005
+
+    lifetime: 80.5
+    pierceCap: 2
+    speed: 3.25
+    damage: 15
+
+    smokeEffect: shootSmallSmoke
+    shootEffect: shootSmall
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 17.5
+    }
+}
+    ]

@@ -1,0 +1,139 @@
+research: naval-factory
+faceTarget: false
+targetAir: false
+
+rotateSpeed: 4.5
+buildSpeed: 1.25
+health: 725
+speed: 1.45
+range: 180
+armor: 3
+
+immunities: [ spore-slowed, electrified, bsm-ground-specialization, bsm-air-specialization ]
+
+weapons: [
+{
+    controllable: false
+    rotateSpeed:1
+	baseRotation:180
+	rotationLimit:20
+    autoTarget: true
+    targetAir: false
+    mirror: false
+    rotate: true
+    reload: 180
+	shootCone:360
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+
+    shootSound: mineDeploy
+
+shoot: {
+    shotDelay: 15
+    shots: 3
+}
+
+bullet: {
+    type: BasicBulletType
+    sprite: mine-bullet
+    ignoreRotation: true
+    keepVelocity: false
+    collideFloor: true
+    collidesAir: false
+    maxRange: 210
+    hitSize: 22
+    shrinkX: 0
+    shrinkY: 0
+    layer: 10
+    height: 8
+    width: 8
+
+    buildingDamageMultiplier: 0.75
+
+    splashDamageRadius: 26
+    homingPower: 0.05
+	homingRange: 30
+	homingDelay:10
+    splashDamage: 45
+    healPercent: 4
+    lifetime: 147
+    damage: 32
+    speed: 1.5
+
+    hitSound: plasmaboom
+    shootEffect: none
+    smokeEffect: none
+    ejectEffect: none
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 41.5
+
+    trailColor: 98ffa9
+    trailLength: 21.5
+    trailWidth: 2
+
+    frontColor: ffffff
+    mixColorTo: ffffff
+    backColor: 98ffa9
+
+hitEffect: {
+    type: MultiEffect
+    effects: [ blastExplosion, greenCloud ]
+    }
+}
+    }
+
+{
+    name: flamethrower-weapon
+    parentizeEffect: true
+    rotate: true
+    y: -4
+    x: 4.5
+
+    reload: 7.5
+
+    shootSound: flame
+
+bullet: {
+    type: BulletType
+    collidesAir: false
+    hittable: false
+    pierce: true
+    hitSize: 7
+
+    buildingDamageMultiplier: 1.32
+
+    statusDuration: 300
+    status: burning
+    lifetime: 21
+    damage: 17.5
+    speed: 2
+
+    hitEffect: hitFlamePlasma
+    despawnEffect: none
+    ejectEffect: none
+
+shootEffect: {
+    particles: 15
+    lifetime: 22
+    sizeFrom: 1.5
+    sizeTo: 0.5
+    length: 45
+    cone: 5
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 17.5
+
+    colorFrom: ffffff
+    colorTo: 98ffa9
+
+    sizeInterp: pow3In
+    interp: pow5Out
+}
+    }
+}
+    ]

@@ -1,0 +1,25 @@
+research: flux-reactor
+ambientSoundVolume: 0.24
+
+buildCostMultiplier: 1
+
+explosionPuddleAmount: 500
+explosionPuddleRange: 18
+explosionMinWarmup: 0.18
+explosionDamage: 25000
+powerProduction: 1350
+explosionPuddles: 90
+liquidCapacity: 7000
+explosionRadius: 41
+itemCapacity: 15000
+heatOutput: 5000
+health: 24000
+
+requirements: [
+    thorium/15000
+    carbide/7000
+    silicon/18000
+    tungsten/21000
+    oxide/15000
+    beryllium/24000
+    ]

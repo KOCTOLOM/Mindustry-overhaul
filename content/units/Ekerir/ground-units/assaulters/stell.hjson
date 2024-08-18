@@ -1,0 +1,83 @@
+research: tank-fabricator
+targetAir: false
+fogRadius: 32.5
+
+rotateSpeed: 3
+health: 810
+speed: 0.45
+armor: 15
+
+lightColor: feb380
+lightOpacity: 0.7
+lightRadius: 62.5
+
+immunities: [ burning, blasted, bsm-air-specialization, bsm-naval-specialization ]
+
+weapons: [
+{
+    name: stell-weapon
+
+    soundPitchMax: 0.75
+    layerOffset: 0.0001
+    rotateSpeed: 0.8
+    mirror: false
+    rotate: true
+    shootY: 4.5
+    recoil: 1
+    shake: 3
+    x: 0
+    y: -0.75
+
+    cooldownTime: 81
+    reload: 125
+
+    heatColor: f9350f
+
+    shootSound: dullExplosion
+
+shoot: { 
+    type: ShootAlternate
+    barrels: 2
+    spread: 3.5
+    shots: 2
+}
+
+bullet: {
+    type: BasicBulletType
+    sprite: missile-large
+    collideTerrain: true
+    soundPitchMax: 0.45
+    collidesAir: false
+    despawnShake: 4.5
+    hitShake: 4.5
+    hitSize: 4
+    height: 7
+    width: 5
+
+    splashDamageRadius: 26
+    splashDamage: 45
+    lifetime: 82
+    damage: 32
+    speed: 3.2
+
+    lightColor: feb380
+    lightOpacity: 0.7
+    lightRadius: 21.5
+
+    trailColor: feb380
+    trailWidth: 1.7
+    trailLength: 5
+
+    hitSound: explosion
+
+    frontColor: ffffff
+    backColor: feb380
+    hitColor: feb380
+
+    despawnEffect: hitBulletColor
+    smokeEffect: shootBigSmoke
+    shootEffect: shootBigColor
+    hitEffect: blastExplosion
+}
+    }
+]

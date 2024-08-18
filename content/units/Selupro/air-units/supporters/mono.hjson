@@ -1,0 +1,21 @@
+research: air-factory
+fogRadius: 10.5
+
+itemCapacity: 48
+mineSpeed: 3
+mineTier: 2
+speed: 2.25
+health: 69
+
+lightColor: 98ffa9
+lightOpacity: 0.7
+lightRadius: 52.5
+
+trailLength: 5.45
+
+immunities: [ tarred, wet, bsm-ground-specialization, bsm-naval-specialization ]
+
+ammoType: {
+    type: PowerAmmoType
+    totalPower: 15
+}

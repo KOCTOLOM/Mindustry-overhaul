@@ -1,0 +1,14 @@
+absorbLasers: true
+
+unitCapModifier: 14
+itemCapacity: 10000
+health: 25000
+armor: 15
+
+requirements: [
+    oxide/2500
+    beryllium/15000
+    silicon/12000
+    graphite/8000
+    tungsten/5000
+    ]

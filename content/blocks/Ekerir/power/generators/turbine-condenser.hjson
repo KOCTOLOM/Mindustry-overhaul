@@ -1,0 +1,13 @@
+research: core-bastion
+ambientSoundVolume: 0.025
+
+buildCostMultiplier: 12.17
+
+powerProduction: 1.333333333333
+liquidCapacity: 150
+health: 780
+
+requirements: [
+    graphite/50
+    beryllium/20
+    ]

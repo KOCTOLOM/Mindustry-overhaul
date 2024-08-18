@@ -1,0 +1,302 @@
+research: breach
+shootWarmupSpeed: 0.009
+parentizeEffects: true
+consumeAmmoOnce: false
+targetGround: false
+shootCone: 30
+shootY: 11
+recoil: 3
+shake: 4
+
+coolantMultiplier: 2.5
+
+firingMoveFract: 0.18
+liquidCapacity: 5000
+velocityRnd: 0.24
+rotateSpeed: 1.25
+inaccuracy: -10
+ammoPerShot: 8
+maxAmmo: 9600
+health: 24000
+reload: 1500
+range: 340
+armor: 15
+
+consumes: {
+    power: 300
+    liquid: nitrogen/0.1
+    }
+
+requirements: [
+    silicon/9600
+    graphite/6000
+    tungsten/7200
+    beryllium/8100
+    ]
+
+chargeSound: heavy-minigun-charge
+shootSound: hell-minigun-shot
+ammoUseEffect: casing4
+shoot: {
+    type: ShootAlternate
+    firstShotDelay: 102
+    shotDelay: 1.5
+    spread: 4.7
+    barrels: 4
+    shots: 240
+    }
+
+smokeEffect: {
+    sizeInterp: pow3In
+    interp: pow5Out
+    lifetime: 180
+    particles: 7
+    layer: 100.1
+    cone: 9
+
+    sizeFrom: 1.5
+    sizeTo: 0
+    length: 24
+
+    lightColor: 454545
+    lightOpacity: 0.7
+    lightRadius: 12.5
+
+    colorFrom: 696969
+    colorTo: 454545
+    }
+
+ammoTypes: {
+//--------------------------------------ammo-1
+thorium: {
+    type: BasicBulletType
+    backSprite: large-bomb-back
+    sprite: mine-bullet
+    collidesGround: false
+    collidesTiles: false
+    shrinkY: 0.5
+    height: 18
+    width: 18
+
+    pierceDamageFactor: 100
+    reloadMultiplier: 0.4
+    ammoMultiplier: 12
+
+    status: bsm-armor-piercing-tier-1
+    splashDamageRadius: 26
+    statusDuration: 300
+    splashDamage: 90
+    knockback: 0.5
+    lifetime: 23.5
+    damage: 180
+    speed: 14.5
+
+    fragRandomSpread: 5
+    fragSpread: 120
+    fragBullets: 3
+
+    smokeEffect: shootSmokeDisperse
+    despawnEffect: hitBulletColor
+    shootEffect: shootBigColor
+    hitEffect: hitBulletColor
+
+    trailEffect: disperseTrail
+    trailRotation: true
+    rotationOffset: 90
+    trailColor: f9a3c7
+    trailChance: 0.44
+    trailLength: 1.75
+    trailWidth: 1.75
+
+    frontColor: ffffff
+    backColor: f9a3c7
+    hitColor: f9a3c7
+
+despawnEffect: {
+    type: ExplosionEffect
+    lifetime: 32
+
+    waveColor: f9a3c7
+    waveStroke: 3.2
+    waveRad: 26
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 12
+    smokes: 5
+
+    sparkColor: f9a3c7
+    sparkStroke: 1.25
+    sparkRad: 18
+    sparkLen: 3
+    sparks: 12
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+    lifetime: 32
+
+    waveColor: f9a3c7
+    waveStroke: 3.2
+    waveRad: 26
+
+    smokeColor: 696969
+    smokeSizeBase: 0
+    smokeSize: 12
+    smokes: 5
+
+    sparkColor: f9a3c7
+    sparkStroke: 1.25
+    sparkRad: 18
+    sparkLen: 3
+    sparks: 12
+    }
+
+fragBullet: {
+    type: ShrapnelBulletType
+    serrationSpaceOffset: 20
+    collidesGround: false
+    serrationSpacing: 4
+    serrationLenScl: 3
+    serrationWidth: 2
+    serrations: 1.5
+    length: 5
+    width: 3
+
+    knockback: 0.25
+    lifetime: 60
+    damage: 40
+
+    fromColor: ffffff
+    toColor: f9a3c7
+}
+    }
+
+//--------------------------------------ammo-2
+surge-alloy: {
+    type: BasicBulletType
+    backSprite: large-bomb-back
+    sprite: mine-bullet
+    collidesGround: false
+    collidesTiles: false
+    shrinkY: 0.5
+    height: 12
+    width: 12
+
+    pierceDamageFactor: 0.0005
+    reloadMultiplier: 1.8
+    ammoMultiplier: 8
+    rangeChange: 428
+
+    homingPower: 0.03
+    pierceCap: 18
+    lifetime: 48
+    damage: 69
+    speed: 16
+
+    lightningDamage: 20
+    lightningLength: 5
+    lightning: 4
+
+    smokeEffect: shootSmokeDisperse
+    despawnEffect: hitBulletColor
+    shootEffect: shootBigColor
+    hitEffect: hitBulletColor
+
+    trailEffect: disperseTrail
+    trailRotation: true
+    rotationOffset: 90
+    trailColor: fcf387
+    trailChance: 0.44
+    trailLength: 1
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: fcf387
+    hitColor: fcf387
+    }
+
+//--------------------------------------ammo-3
+tungsten: {
+    type: BasicBulletType
+    backSprite: large-bomb-back
+    sprite: mine-bullet
+    collidesGround: false
+    collidesTiles: false
+    shrinkY: 0.5
+    height: 16
+    width: 16
+
+    pierceDamageFactor: 0.005
+    ammoMultiplier: 18
+    rangeChange: 240
+
+    status: bsm-air-specialization
+    statusDuration: 450
+    knockback: 0.2
+    lifetime: 41.5
+    pierceCap: 8
+    damage: 120
+    speed: 15
+
+    smokeEffect: shootSmokeDisperse
+    despawnEffect: hitBulletColor
+    shootEffect: shootBigColor
+    hitEffect: hitBulletColor
+
+    trailEffect: disperseTrail
+    trailRotation: true
+    rotationOffset: 90
+    trailColor: a0b0c8
+    trailChance: 0.44
+    trailLength: 1.5
+    trailWidth: 1.5
+
+    frontColor: ffffff
+    backColor: a0b0c8
+    hitColor: a0b0c8
+    }
+
+//--------------------------------------ammo-4
+carbide: {
+    type: BasicBulletType
+    backSprite: large-bomb-back
+    sprite: mine-bullet
+    collidesGround: false
+    collidesTiles: false
+    pierceArmor: true
+    shrinkY: 0.5
+    height: 20
+    width: 20
+
+    pierceDamageFactor: 0.025
+    reloadMultiplier: 0.55
+    ammoMultiplier: 4
+    rangeChange: 212
+
+    status: bsm-armor-piercing-tier-2
+    statusDuration: 180
+    knockback: 0.3
+    pierceCap: 15
+    lifetime: 40
+    damage: 150
+    speed: 14
+
+    smokeEffect: shootSmokeDisperse
+    despawnEffect: hitBulletColor
+    shootEffect: shootBigColor
+    hitEffect: hitBulletColor
+
+    trailEffect: disperseTrail
+    trailRotation: true
+    rotationOffset: 90
+    trailColor: c9a5c8
+    trailChance: 0.44
+    trailLength: 1.5
+    trailWidth: 1.5
+
+    frontColor: ffffff
+    backColor: c9a5c8
+    hitColor: c9a5c8
+}
+    }

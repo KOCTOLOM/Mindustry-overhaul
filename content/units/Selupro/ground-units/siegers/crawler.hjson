@@ -1,0 +1,98 @@
+research: ground-factory
+targetAir: false
+stepShake: 0.048
+fogRadius: 5
+
+itemCapacity: 18
+rotateSpeed: 7.5
+speed: 1.2
+range: 40
+
+lightColor: 665c9f
+lightOpacity: 0.7
+lightRadius: 47.5
+healColor: bf92f9
+
+immunities: [ sapped, bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ArmorPlateAbility
+    healthMultiplier: 1
+}
+    {
+    type: RegenAbility
+    amount: 0.04
+}
+    ]
+
+weapons: [
+{
+    shootCone: 180
+    mirror: false
+    shootY: 0
+    x: 0
+    y: 0
+
+    reload: 45
+
+    chargeSound: boom-crawler
+    ejectEffect: none
+    shootSound: none
+shoot: {
+    firstShotDelay: 15
+    shots: 1
+    }
+
+bullet: {
+    instantDisappear: true
+    collidesTiles: false
+    collidesAir: false
+    rangeOverride: 46
+    killShooter: true
+    hittable: false
+    collides: false
+
+    buildingDamageMultiplier: 1.5
+
+    splashDamageRadius: 60
+    statusDuration: 90
+    splashDamage: 360
+    status: blasted
+    speed: 0
+
+    hitEffect: pulverize
+    hitSound: explosion
+}
+    }
+
+{
+    shootCone: 360
+    display: false
+    mirror: false
+    rotate: true
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+
+    reload: 60
+
+    shootSound: none
+bullet: {
+    type: BasicBulletType
+    rangeOverride: 100
+    height: 0
+    width: 0
+
+    lifetime: 1
+    damage: 0
+    speed: 0
+
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    hitEffect: none
+    }
+}
+    ]

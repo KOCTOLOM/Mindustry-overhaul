@@ -1,0 +1,215 @@
+research: duo
+targetGround: false
+rotateSpeed: 12.5
+fogRadius: 34.5
+shootCone: 32
+recoil: 1
+
+buildCostMultiplier: 2.1
+
+inaccuracy: 14
+maxAmmo: 45
+health: 660
+reload: 138
+range: 360
+armor: 3
+
+requirements: [
+    copper/120
+    lead/45
+]
+
+shootSound: shootSnap
+shoot: {
+    shotDelay: 6
+    shots: 12
+    }
+
+ammoTypes: {
+scrap: {
+    type: FlakBulletType
+    collidesGround: false
+    scaleLife: true
+    height: 8
+    width: 6
+
+    reloadMultiplier: 0.2
+    ammoMultiplier: 3
+	
+    splashDamageRadius: 20
+    splashDamage: 17.5
+    fragBullets: 6
+	fragRandomSpread:40
+	
+    lifetime: 67.5
+    pierceCap: 2
+    damage: 12
+    speed: 6
+
+    hitEffect: flakExplosion
+    shootEffect: shootSmall
+
+    lightColor: e0b28d
+    lightOpacity: 0.7
+    lightRadius: 21
+
+    trailColor: 9b928b
+    trailLength: 12.5
+    trailWidth: 1.25
+
+    frontColor: e0b28d
+    backColor: 9b928b
+
+fragBullet: {
+    type: BasicBulletType
+    collidesGround: false
+    shrinkY: 1
+    height: 12
+    width: 5
+
+    pierceCap: 6
+    lifetime: 20
+    damage: 5
+	
+	statusDuration: 180
+	status:motor-acceleration-tier-1
+	
+    despawnEffect: none
+
+    lightColor: e0b28d
+    lightOpacity: 0.7
+    lightRadius: 16.5
+
+    trailColor: 9b928b
+    trailLength: 7.5
+    trailWidth: 1
+
+    frontColor: e0b28d
+    backColor: 9b928b
+}
+    }
+
+lead: {
+    type: FlakBulletType
+    collidesGround: false
+    scaleLife: true
+    height: 8
+    width: 6
+
+    reloadMultiplier: 0.5
+    ammoMultiplier: 6
+
+    splashDamageRadius: 30
+    splashDamage: 22
+    pierceCap: 6
+    lifetime: 81
+    damage: 22
+    speed: 3.75
+
+    hitEffect: flakExplosion
+    shootEffect: shootSmall
+
+    lightColor: ab99d3
+    lightOpacity: 0.7
+    lightRadius: 24.5
+
+    trailColor: 8c7fa9
+    trailLength: 12.5
+    trailWidth: 1.25
+
+    frontColor: ab99d3
+    backColor: 8c7fa9
+    }
+
+silicon: {
+    type: FlakBulletType
+    collidesGround: false
+    height: 8
+    width: 6
+	
+	inaccuracy:20
+	
+    reloadMultiplier: 1.25
+    ammoMultiplier: 18
+	
+    splashDamageRadius: 0
+    homingPower: 0.02
+	splashDamageRadius:5
+    splashDamage: 10
+    pierceCap: 3
+    lifetime: 75
+    damage: 20
+    speed: 4.8
+
+    hitEffect: hitBulletColor
+    shootEffect: shootSmall
+
+    lightColor: 8e9097
+    lightOpacity: 0.7
+    lightRadius: 21.5
+
+    trailColor: 767a84
+    trailLength: 12.5
+    trailWidth: 1.25
+
+    frontColor: 8e9097
+    backColor: 767a84
+}
+
+metaglass: {
+    type: FlakBulletType
+    collidesGround: false
+    scaleLife: true
+    height: 8
+    width: 6
+
+    ammoMultiplier: 12
+	
+    splashDamageRadius: 26
+    splashDamage: 9
+    fragBullets: 3
+    pierceCap: 3
+    lifetime: 70
+    damage: 6
+    speed: 6
+	pierceArmor:true
+    hitEffect: flakExplosion
+    shootEffect: shootSmall
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 27.5
+
+    trailColor: ebeef5
+    trailLength: 12.5
+    trailWidth: 1.25
+
+    frontColor: ffffff
+    backColor: ebeef5
+
+fragBullet: {
+    type: BasicBulletType
+    collidesGround: false
+    shrinkY: 1
+    height: 12
+    width: 5
+
+    pierceCap: 2
+    lifetime: 20
+    damage: 6
+	pierceArmor:true
+    despawnEffect: none
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 16.5
+
+    trailColor: ebeef5
+    trailLength: 7.5
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: ebeef5
+    }
+}
+    }

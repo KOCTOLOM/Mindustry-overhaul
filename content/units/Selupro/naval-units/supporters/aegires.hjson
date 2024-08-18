@@ -1,0 +1,607 @@
+research: cyerce
+rotateToBuilding: false
+faceTarget: false
+
+buildSpeed: 4.5
+rotateSpeed: 1
+health: 24000
+speed: 0.35
+armor: 40
+
+immunities: [ burning, melting, electrified, blasted, overclock, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-1 ]
+
+abilities: [
+{
+    type: StatusFieldAbility
+    effect: overclock
+    duration: 350
+    reload: 500
+    range: 240
+    }
+    {
+    type: RegenAbility
+    amount: 8
+}
+	{
+    type: StatusFieldAbility
+    effect: motor-acceleration-tier-1
+    duration: 120
+    reload: 180
+    range: 240
+}
+	{
+    type: StatusFieldAbility
+    effect: auto-repair-tier-1
+    duration: 120
+    reload: 180
+    range: 240
+}
+]
+
+weapons:[
+{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+	rotateSpeed: 1000
+    layerOffset: -0.001
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 2
+parts:[
+    {
+    type: ShapePart
+    circle: false
+    hollow: true
+
+    color: 98ffa9
+    layer: 100.2
+    y: 0
+
+    rotateSpeed: 1
+    rotation: 0
+
+    radiusTo: 13
+    radius: 11
+
+    strokeTo: 1
+    stroke: 2
+}
+    {
+    type: ShapePart
+    circle: true
+    hollow: true
+
+    color: 98ffa9
+    layer: 100.3
+    y: 0
+
+    rotateSpeed: 1
+    rotation: 0
+
+    radiusTo: 10
+    radius: 7
+
+    strokeTo: 1
+    stroke: 2
+}
+    {
+    type: ShapePart
+    circle: true
+    hollow: false
+
+    color: 98ffa9
+    layer: 100.3
+    y: 0
+
+    rotateSpeed: 1
+    rotation: 0
+
+    radiusTo: 2
+    radius: 1
+
+    strokeTo: 0.5
+    stroke: 1
+}
+    {
+    type: ShapePart
+    circle: false
+    hollow: true
+
+    color: 98ffa9
+    layer: 100.3
+    y: 0
+
+    rotateSpeed: 1
+    rotation: 60
+
+    radiusTo: 12
+    radius: 9
+
+    strokeTo: 1
+    stroke: 2
+}
+    ]
+bullet: {
+    maxRange: 240
+}
+    }
+{
+    type: RepairBeamWeapon
+    targetBuildings: true
+	rotateSpeed: 100
+	rotationLimit:20
+	baseRotation:10
+	shootCone:45
+    controllable: false
+    layerOffset: -0.001
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 220
+}
+    }
+{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+    autoTarget: false
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:30
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 210
+}
+    }
+{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:50
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 200
+}
+    }
+{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:70
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 210
+}
+    }
+	{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:90
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 160
+}
+    }
+	{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:110
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 210
+}
+    }
+	{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:130
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 190
+}
+    }
+		{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:150
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 190
+}
+    }
+		{
+    type: RepairBeamWeapon
+    targetBuildings: true
+    controllable: false
+    layerOffset: -0.001
+	rotateSpeed: 100
+	shootCone:45
+	rotationLimit:20
+	baseRotation:170
+    autoTarget: false
+    widthSinMag: 0.1
+    autoTarget: true
+    alternate: false
+    beamWidth: 1
+    mirror: true
+    x: 0
+    y: 0
+    
+    fractionRepairSpeed: 0.005
+    repairSpeed: 0.3
+    reload: 400
+
+bullet: {
+    maxRange: 190
+}
+    }
+{
+    name: green-bsw
+    type: PointDefenseWeapon
+	rotateSpeed:40
+	rotationLimit:60
+	baseRotation:180
+    mirror: false
+    shadow: 9
+    x: 0
+    y: -9
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 4.5
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 240
+
+    damage: 64
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+{
+    name: green-bsw
+    type: PointDefenseWeapon
+	rotateSpeed:40
+	rotationLimit:60
+	baseRotation:120
+    mirror: true
+    shadow: 9
+    x: 6
+    y: -5
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 4.5
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 240
+
+    damage: 64
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+{
+    name: green-bsw
+    type: PointDefenseWeapon
+	rotateSpeed:40
+	rotationLimit:60
+	baseRotation:60
+    mirror: true
+    shadow: 9
+    x: 6
+    y: 5
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 4.5
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 240
+
+    damage: 64
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+	{
+    name: green-bsw
+    type: PointDefenseWeapon
+	rotateSpeed:40
+	rotationLimit:60
+	baseRotation:0
+    mirror: false
+    shadow: 9
+    x: 0
+    y: 9
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 4.5
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 240
+
+    damage: 64
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+{
+    name: green-bsw
+    type: PointDefenseWeapon
+	rotateSpeed:20
+    mirror: true
+    shadow: 9
+    x: 12
+    y: -14
+
+    targetSwitchInterval: 15
+    targetInterval: 10
+    reload: 6
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 340
+
+    damage: 8
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
+{
+    name: plasma-cannon-mount
+    parentizeEffects: true
+    controllable: false
+    rotateSpeed: 0.5
+	rotationLimit:190
+    continuous: true
+	controllable:true
+    alternate: false
+    rotate: true
+    shadow: 20
+    shootY: 2
+	top:false
+    recoil: 1
+    shake: 3
+    x: 13
+    y: 9.5
+
+    targetInterval: 20
+    cooldownTime: 350
+    reload: 190
+
+
+    chargeSound: beam-large-charge
+    shootSound: beam-large-shot-2
+	
+shoot: {
+    firstShotDelay: 45
+    }
+
+bullet: {
+    type: ContinuousFlameBulletType
+    timescaleDamage: false
+	hitEffect:[{
+    type: ParticleEffect
+    lifetime: 90
+    particles: 5
+    line: true
+    cone:20
+	interp:circleOut
+
+    strokeFrom: 1.4
+    strokeTo: 0
+    colorFrom: 98ffa9150
+    colorTo: 98ffa9150
+	}
+	{
+    type: ParticleEffect
+    lifetime: 30
+    particles: 5
+    line: true
+    cone:12
+	interp:elasticOut
+    length:140
+
+    strokeFrom: 1.4
+    strokeTo: 0
+    colorFrom: 98ffa9150
+    colorTo: 98ffa9150
+	}
+	]
+	colors:[98ffa910,98ffa930,98ffa9150,98ffa970,98ffa9]
+	
+	pierceArmor:true
+	
+    statusDuration: 220
+    status: melting
+	
+    lifetime: 185
+    damage: 65
+	pierceArmor:true
+	laserAbsorb:true
+	
+	flareColor:98ffa960
+	flareWidth:4
+	flareLength: 10
+	flareRotSpeed :-8
+	
+    parentizeEffects: true
+    collidesTeam: true
+    largeHit: false
+    drawSize: 200
+    length: 160
+    width: 3
+	
+	buildingDamageMultiplier:2
+	
+    healPercent: 0.6
+    lifetime: 200
+
+    incendChance: 1
+    incendSpread: 7
+    incendAmount: 2
+
+    hitEffect: hitMeltHeal
+    smokeEffect: none
+
+chargeEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+
+    lifetime: 50
+    sizeFrom: 32
+    sizeTo: 0
+
+    colorFrom: 84f491
+    colorTo: ffffff
+    }
+}
+    }
+
+]

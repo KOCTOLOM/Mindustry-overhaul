@@ -1,0 +1,1437 @@
+research: sei
+faceTarget: false
+
+rotateSpeed: 0.5
+health: 145000
+speed: 0.2
+armor: 35
+
+abilities: [
+    {
+    type: RegenAbility
+    amount: 44
+}
+    ]
+
+healColor: EB7600
+
+immunities: [ spore-slowed, burning, melting, shocked, blasted, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-1, bsm-armor-piercing-tier-2 ]
+
+weapons: [
+{
+    name: mobile-portable-railgun-system
+    rotateSpeed: 0.5
+    mirror: false
+    rotate: true
+    recoil: 4.5
+    recoilTime:20
+    shadow: 50
+    shootY: 23
+    shake: 6
+    x: 0
+    y: -3.5
+    layerOffset:3.5
+    predictTarget:false
+    
+    cooldownTime: 400
+    reload: 560
+
+    shootSound: railgun
+    ejectEffect: none
+shoot: {
+    firstShotDelay: 45
+    shots:2
+    shotDelay: 20
+    }
+bullet: {
+    type: ArtilleryBulletType
+        height: 48
+        width: 16
+        collidesAir: true
+        collidesGround: true
+        absorbable:false
+        hittable:false
+        buildingDamageMultiplier:0.5
+        status: emp-tier-2
+        statusDuration: 580
+        splashDamageRadius: 10
+        lightningDamage: 90
+        lightningLength: 5
+        lightning: 10
+        damage: 2000
+        splashDamage: 3400
+        lifetime: 19
+        speed: 48
+        scaledLife:true 
+        fragOnHit:false
+        despawnEffect: [
+        {
+        type: ParticleEffect
+        lifetime: 17
+        particles: 60
+        line: true
+        cone: 8
+
+        baseRotation: 0
+        length: 180
+
+        strokeFrom: 1.2
+        strokeTo: 1
+
+        colorFrom: ffffff
+        colorTo: a9d8ff00
+        }
+        {
+        type: ParticleEffect
+        lifetime: 14
+
+        particles: 40
+        line: true
+        cone: 7
+
+        baseRotation: 0
+        length: 230
+
+        strokeFrom: 1.2
+        strokeTo: 1
+
+        colorFrom: ffffff
+        colorTo: a9d8ff00
+        }
+        {
+        type: ParticleEffect
+        lifetime: 14
+
+        particles: 70
+        line: true
+        cone: 7
+
+        baseRotation: 0
+        length: 380
+
+        strokeFrom: 1.5
+        strokeTo: 0
+
+        colorFrom: ffffff
+        colorTo: a9d8ff
+        }
+        {
+        type: ParticleEffect
+        lifetime: 34
+
+        particles: 24
+        cone: 12
+
+        baseRotation: 0
+        length: 340
+
+        sizeFrom:1
+        sizeTo:3
+
+        colorFrom: ffffff
+        colorTo: a9d8ff00
+        }
+        {
+        type: ParticleEffect
+        lifetime: 14
+
+        particles: 15
+        cone: 15
+
+        baseRotation: 0
+        length: 270
+
+        sizeFrom:1
+        sizeTo:2
+
+        colorFrom: ffffff
+        colorTo: a9d8ff00
+        }
+        {
+        type: ParticleEffect
+        lifetime: 22
+
+        particles: 24
+        cone: 360
+
+        baseRotation: 0
+        length: 50
+
+        sizeFrom:2
+        sizeTo:5
+
+        colorFrom: ffffff
+        colorTo: a9d8ff00
+        }
+        {
+        type: ParticleEffect
+        lifetime: 20
+
+        particles: 30
+        line: true
+        cone: 360
+
+        baseRotation: 0
+        length: 120
+
+        strokeFrom: 1.2
+        strokeTo: 1
+
+        colorFrom: ffffff
+        colorTo: a9d8ff00
+        }
+        {
+        type: WaveEffect
+        sides: 5
+        sizeFrom: 0
+        sizeTo: 30
+        lifetime: 30
+        strokeFrom: 0
+        strokeTo: 10
+        colorFrom: ffffff40
+        colorTo: a9d8ff00
+        }
+        {
+        startDelay:10
+        type: WaveEffect
+        sides: 5
+        sizeFrom: 0
+        sizeTo: 30
+        lifetime: 30
+        strokeFrom: 0
+        strokeTo: 10
+        colorFrom: ffffff40
+        colorTo: a9d8ff00
+        }
+        {
+        startDelay:20
+        type: WaveEffect
+        sides: 5
+        sizeFrom: 0
+        sizeTo: 30
+        lifetime: 30
+        strokeFrom: 0
+        strokeTo: 10
+        colorFrom: ffffff40
+        colorTo: a9d8ff00
+        }
+        ]
+        hitEffect: none
+        shootEffect: shootBig
+
+        lightColor: ffffff
+        lightOpacity: 0.7
+        lightRadius: 32
+        
+        trailEffect:[
+        {
+        type: ParticleEffect
+        lifetime:40
+        particles: 3
+        
+        cone: 120
+        interp: circleOut
+        baseRotation: 0
+        length: -8
+
+        sizeFrom: 2
+        sizeTo: 0
+
+        colorFrom: ffffff
+        colorTo: a9d8ff
+        }
+        {
+        type: ParticleEffect
+        lifetime:50
+        particles: 6
+        
+        cone: 95
+        interp: circleOut
+        baseRotation: 0
+        length: -13
+
+        sizeFrom: 2
+        sizeTo: 0
+
+        colorFrom: ffffff
+        colorTo: a9d8ff
+        }
+        {
+        type: ParticleEffect
+        lifetime:60
+        particles: 4
+        interp: circleOut
+        cone: 40
+
+        baseRotation: 0
+        length: -16
+
+        sizeFrom: 2
+        sizeTo: 0
+
+        colorFrom: ffffff
+        colorTo: a9d8ff
+        }
+        {
+        type: RadialEffect
+        rotationSpacing : 120
+        lengthOffset: 0
+        effect: {
+            type: ParticleEffect
+            lifetime: 60
+            interp: circleOut
+            particles: 4
+            line: true
+            cone: 3
+
+            baseRotation: 0
+            length: 20
+
+            strokeFrom: 2
+            strokeTo: 0
+
+            colorFrom: ffffff
+            colorTo: a9d8ff00
+        }
+        }
+        {
+        type: RadialEffect
+        rotationSpacing : 120
+        rotationOffset: 0
+        lengthOffset: 0
+        effect: {
+            type: ParticleEffect
+            lifetime: 40
+            interp: circleOut
+            particles: 4
+            line: true
+            cone: 20
+
+            baseRotation: 0
+            length: 15
+
+            strokeFrom: 2
+            strokeTo: 0
+
+            colorFrom: ffffff
+            colorTo: a9d8ff00
+        }
+        }
+        {
+        type: RadialEffect
+        rotationSpacing : 120
+        rotationOffset: 0
+        lengthOffset: 0
+        effect: {
+            type: ParticleEffect
+            lifetime: 80
+            interp: circleOut
+            particles: 4
+            line: true
+            cone: 30
+
+            baseRotation: 0
+            length: 10
+
+            strokeFrom: 2
+            strokeTo: 0
+
+            colorFrom: ffffff
+            colorTo: a9d8ff00
+        }
+        }
+        ]        
+        trailRotation: true
+        trailColor:ffffff
+        frontColor: ffffff
+        backColor: ffffff
+        trailChance: 100
+        trailWidth: 1
+        trailLength: 50
+        trailInterval:1
+        fragBullets: 12
+        fragRandomSpread: 20
+        
+        fragBullet: { 
+            type: BasicBulletType
+            collideTerrain: false
+            pierceBuilding: true
+            collidesGround: true
+            collidesAir: true
+            absorbable:true
+            despawnShake: 1
+            pierce: true
+            pierceCap: 1
+            hitShake: 1
+            height: 20
+            width: 4
+
+            buildingDamageMultiplier: 0.7
+            
+            splashDamageRadius: 20
+            damage: 220
+            splashDamage: 70
+            pierceArmor:true
+            
+            lifetime: 25
+            speed: 8
+
+            despawnEffect: blastExplosion
+            hitEffect: blastExplosion
+
+            lightColor: fcf387
+            lightOpacity: 0.7
+            lightRadius: 32
+            
+            trailColor: ffffff
+            trailLength: 5.5
+            trailWidth: 1.5
+        }
+    }
+}
+{
+    name: double-machine-gun
+    controllable: false
+    mirror:false
+    rotationLimit: 210
+    baseRotation: -135
+    rotateSpeed: 3
+    autoTarget: true
+    alternate: false
+    shootCone: 45
+    rotate: true
+    shootY: 4.5
+    recoils: 2
+    recoil: 1
+    recoilTime:20
+    shake: 3
+    x: 20
+    y: -9
+    layerOffset:2
+    cooldownTime: 80
+    velocityRnd: 0.4
+    inaccuracy: 7
+    reload: 60
+
+    shootSound: cannon-shot-1
+    ejectEffect: casing2Double
+    
+shoot: { 
+    type: ShootMulti
+source: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 4
+    shots: 4
+    shotDelay:3
+    }
+
+dest: [ 
+{
+    type: ShootSpread
+    spread: 1
+    shots: 3
+    shotDelay: 20
+    }
+]
+    }
+
+parts: [
+{
+    type: RegionPart
+    suffix: -brl-2
+    progress: recoil
+    recoilIndex: 1
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 1
+    op: blend
+    amount: 0
+    other: 0
+}
+    }
+
+{
+    type: RegionPart
+    suffix: -brl-1
+    progress: recoil
+    recoilIndex: 0
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 0
+    op: blend
+    amount: 0
+    other: 0
+    }
+}
+    ]
+
+bullet: {
+    type: BasicBulletType
+    collidesGround: false
+    despawnShake: 1.6
+    collidesGround: false
+    hitShake: 3.2
+    hitSize: 3
+    height: 11
+    width: 5
+    
+    splashDamageRadius: 14
+    statusDuration: 45
+    splashDamage: 55
+    status: blasted
+    pierceCap: 2
+    lifetime: 20
+    damage: 220
+    speed: 12.8
+    pierceArmor:true
+    
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmallColor
+    smokeEffect: shootBigSmoke
+    hitSound: cannon-hit
+
+    lightColor: a9d8ff
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: a9d8ff
+    trailLength: 11
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: a9d8ff
+    hitColor: ffffff
+
+hitEffect: [
+    {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 0
+    sizeTo: 10
+
+    lifetime: 40
+
+    colorFrom: a9d8ff
+    colorTo: a9d8ff10
+}
+    {
+    type: ParticleEffect
+    line: true
+    length: 20.5
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 1.5
+    sizeTo: 1
+    colorFrom: a9d8ff
+    colorTo: ffffff00
+    strokeFrom: 1.25
+    strokeTo: 0.25    
+}
+    ]
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 6
+    sizeTo: 1
+
+    lifetime: 60
+
+    colorFrom: a9d8ff30
+    colorTo: a9d8ff00
+}
+    }
+}
+{
+    name: double-machine-gun
+    controllable: false
+    mirror:false
+    rotationLimit:175
+    baseRotation: -45
+    rotateSpeed: 2
+    autoTarget: true
+    alternate: false
+    shootCone: 15
+    rotate: true
+    shootY: 4.5
+    recoils: 2
+    recoil: 1
+    recoilTime:20
+    shake: 3
+    x: 14
+    y: 18
+    layerOffset:2
+    cooldownTime: 80
+    velocityRnd: 0.4
+    inaccuracy: 2
+    reload: 60
+
+    shootSound: cannon-shot-1
+    ejectEffect: casing2Double
+    
+shoot: { 
+    type: ShootMulti
+source: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 4
+    shots: 2
+    shotDelay:2
+    }
+
+dest: [ 
+{
+    type: ShootSpread
+    spread: 1
+    shots: 3
+    shotDelay: 20
+    }
+]
+    }
+
+parts: [
+{
+    type: RegionPart
+    suffix: -brl-2
+    progress: recoil
+    recoilIndex: 1
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 1
+    op: blend
+    amount: 0
+    other: 0
+}
+    }
+
+{
+    type: RegionPart
+    suffix: -brl-1
+    progress: recoil
+    recoilIndex: 0
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 0
+    op: blend
+    amount: 0
+    other: 0
+    }
+}
+    ]
+
+bullet: {
+    type: BasicBulletType
+    despawnShake: 1.6
+    collidesGround: false
+    hitShake: 3.2
+    hitSize: 3
+    height: 11
+    width: 5
+    
+    splashDamageRadius: 14
+    statusDuration: 45
+    splashDamage: 150
+    status: blasted
+    pierceCap: 3
+    lifetime: 20
+    damage: 220
+    speed: 12.8
+    pierceArmor:true
+    
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmallColor
+    smokeEffect: shootBigSmoke
+    hitSound: cannon-hit
+
+    lightColor: a9d8ff
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: a9d8ff
+    trailLength: 11
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: a9d8ff
+    hitColor: ffffff
+
+hitEffect: [
+    {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 0
+    sizeTo: 10
+
+    lifetime: 40
+
+    colorFrom: a9d8ff
+    colorTo: a9d8ff10
+}
+    {
+    type: ParticleEffect
+    line: true
+    length: 20.5
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 1.5
+    sizeTo: 1
+    colorFrom: a9d8ff
+    colorTo: ffffff00
+    strokeFrom: 1.25
+    strokeTo: 0.25    
+}
+    ]
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 6
+    sizeTo: 1
+
+    lifetime: 60
+
+    colorFrom: a9d8ff30
+    colorTo: a9d8ff00
+}
+    }
+}
+{
+    name: double-machine-gun
+    controllable: false
+    mirror:false
+    rotationLimit: 220
+    baseRotation: 135
+    rotateSpeed: 3
+    autoTarget: true
+    alternate: false
+    shootCone: 45
+    rotate: true
+    shootY: 4.5
+    recoils: 2
+    recoil: 1
+    recoilTime:20
+    shake: 3
+    x: -20
+    y: -9
+    layerOffset:2
+    cooldownTime: 80
+    velocityRnd: 0.4
+    inaccuracy: 7
+    reload: 60
+
+    shootSound: cannon-shot-1
+    ejectEffect: casing2Double
+    
+shoot: { 
+    type: ShootMulti
+source: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 4
+    shots: 4
+    shotDelay:3
+    }
+
+dest: [ 
+{
+    type: ShootSpread
+    spread: 1
+    shots: 3
+    shotDelay: 20
+    }
+]
+    }
+
+parts: [
+{
+    type: RegionPart
+    suffix: -brl-2
+    progress: recoil
+    recoilIndex: 1
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 1
+    op: blend
+    amount: 0
+    other: 0
+}
+    }
+
+{
+    type: RegionPart
+    suffix: -brl-1
+    progress: recoil
+    recoilIndex: 0
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 0
+    op: blend
+    amount: 0
+    other: 0
+    }
+}
+    ]
+
+bullet: {
+    type: BasicBulletType
+    collidesGround: false
+    despawnShake: 1.6
+    collidesGround: false
+    hitShake: 3.2
+    hitSize: 3
+    height: 11
+    width: 5
+    
+    splashDamageRadius: 14
+    statusDuration: 45
+    splashDamage: 55
+    status: blasted
+    pierceCap: 2
+    lifetime: 20
+    damage: 220
+    speed: 12.8
+    pierceArmor:true
+    
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmallColor
+    smokeEffect: shootBigSmoke
+    hitSound: cannon-hit
+
+    lightColor: a9d8ff
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: a9d8ff
+    trailLength: 11
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: a9d8ff
+    hitColor: ffffff
+
+hitEffect: [
+    {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 0
+    sizeTo: 10
+
+    lifetime: 40
+
+    colorFrom: a9d8ff
+    colorTo: a9d8ff10
+}
+    {
+    type: ParticleEffect
+    line: true
+    length: 20.5
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 1.5
+    sizeTo: 1
+    colorFrom: a9d8ff
+    colorTo: ffffff00
+    strokeFrom: 1.25
+    strokeTo: 0.25    
+}
+    ]
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 6
+    sizeTo: 1
+
+    lifetime: 60
+
+    colorFrom: a9d8ff30
+    colorTo: a9d8ff00
+}
+    }
+}
+{
+    name: double-machine-gun
+    controllable: false
+    mirror:false
+    rotationLimit:175
+    baseRotation: 45
+    rotateSpeed: 2
+    autoTarget: true
+    alternate: false
+    shootCone: 15
+    rotate: true
+    shootY: 4.5
+    recoils: 2
+    recoil: 1
+    recoilTime:20
+    shake: 3
+    x: -14
+    y: 18
+    layerOffset:2
+    cooldownTime: 80
+    velocityRnd: 0.4
+    inaccuracy: 2
+    reload: 60
+
+    shootSound: cannon-shot-1
+    ejectEffect: casing2Double
+    
+shoot: { 
+    type: ShootMulti
+source: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 4
+    shots: 2
+    shotDelay:2
+    }
+
+dest: [ 
+{
+    type: ShootSpread
+    spread: 1
+    shots: 3
+    shotDelay: 20
+    }
+]
+    }
+
+parts: [
+{
+    type: RegionPart
+    suffix: -brl-2
+    progress: recoil
+    recoilIndex: 1
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 1
+    op: blend
+    amount: 0
+    other: 0
+}
+    }
+
+{
+    type: RegionPart
+    suffix: -brl-1
+    progress: recoil
+    recoilIndex: 0
+    outline: false
+    mirror: false
+    moveY: -2.5
+    under: true
+
+heatProgress: {
+    type: recoil
+    recoilIndex: 0
+    op: blend
+    amount: 0
+    other: 0
+    }
+}
+    ]
+
+bullet: {
+    type: BasicBulletType
+    despawnShake: 1.6
+    collidesGround: false
+    hitShake: 3.2
+    hitSize: 3
+    height: 11
+    width: 5
+    
+    splashDamageRadius: 14
+    statusDuration: 45
+    splashDamage: 150
+    status: blasted
+    pierceCap: 3
+    lifetime: 20
+    damage: 220
+    speed: 12.8
+    pierceArmor:true
+    
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmallColor
+    smokeEffect: shootBigSmoke
+    hitSound: cannon-hit
+
+    lightColor: a9d8ff
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: a9d8ff
+    trailLength: 11
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: a9d8ff
+    hitColor: ffffff
+
+hitEffect: [
+    {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 0
+    sizeTo: 10
+
+    lifetime: 40
+
+    colorFrom: a9d8ff
+    colorTo: a9d8ff10
+}
+    {
+    type: ParticleEffect
+    line: true
+    length: 20.5
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 1.5
+    sizeTo: 1
+    colorFrom: a9d8ff
+    colorTo: ffffff00
+    strokeFrom: 1.25
+    strokeTo: 0.25    
+}
+    ]
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 6
+    sizeTo: 1
+
+    lifetime: 60
+
+    colorFrom: a9d8ff30
+    colorTo: a9d8ff00
+}
+    }
+}
+{
+    name: selupro-machine-gun
+    rotationLimit: 120
+    baseRotation: -45
+    rotateSpeed: 4
+    alternate: true
+    shootCone: 15
+    rotate: true
+    shootY: 4.5
+    recoil: 1
+    recoiltime:2
+    shake: 2
+    x: 16
+    y: 26
+
+    cooldownTime: 80
+    velocityRnd: 0.4
+    inaccuracy: 7
+    reload: 20
+
+    shootSound: machine-gun-shot-3
+    ejectEffect: casing1
+    
+    shoot: {
+        shotDelay: 2.5
+        shots: 4
+        spread: 2
+        }
+parts: [
+{
+    type: RegionPart
+    suffix: -brl
+    progress: recoil
+    outline: false
+    mirror: false
+    moveY: -0.8
+    under: true
+    x: 0
+    y: 1
+}
+    ]
+bullet: {
+    type: BasicBulletType
+    despawnShake: 3.2
+    hitShake: 3.2
+    hitSize: 3
+    height: 11
+    width: 5
+    
+    splashDamageRadius: 14
+    statusDuration: 45
+    splashDamage: 65
+    status: blasted
+    pierceCap: 12
+    lifetime: 20
+    damage: 150
+    speed: 12.8
+    pierceArmor:true
+    
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmallColor
+    smokeEffect: shootBigSmoke
+    hitSound: none
+
+    lightColor: a9d8ff
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: a9d8ff
+    trailLength: 11
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: a9d8ff
+    hitColor: ffffff
+
+hitEffect: [
+    {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 0
+    sizeTo: 10
+
+    lifetime: 40
+
+    colorFrom: a9d8ff
+    colorTo: a9d8ff10
+}
+    {
+    type: ParticleEffect
+    line: true
+    length: 20.5
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 1.5
+    sizeTo: 1
+    colorFrom: a9d8ff
+    colorTo: ffffff00
+    strokeFrom: 1.25
+    strokeTo: 0.25    
+}
+    ]
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 6
+    sizeTo: 1
+
+    lifetime: 60
+
+    colorFrom: a9d8ff30
+    colorTo: a9d8ff00
+}
+    }
+}
+{
+    name: selupro-machine-gun
+    rotationLimit: 40
+    rotateSpeed: 3
+    alternate: true
+    shootCone: 1
+    rotate: true
+    shootY: 4.5
+    recoil: 1
+    recoiltime:20
+    shake: 5
+    x: -7
+    y: 37
+    layerOffset:1
+    cooldownTime: 80
+    velocityRnd: 0.4
+    inaccuracy: 1
+    reload: 14
+
+    shootSound: machine-gun-shot-3
+    ejectEffect: casing1
+    
+    shoot: {
+        shotDelay: 2.5
+        shots: 4
+        spread: 2
+        }
+parts: [
+{
+    type: RegionPart
+    suffix: -brl
+    progress: recoil
+    outline: false
+    mirror: false
+    moveY: -0.8
+    under: true
+    x: 0
+    y: 1
+}
+    ]
+bullet: {
+    type: BasicBulletType
+    despawnShake: 3.2
+    hitShake: 3.2
+    hitSize: 3
+    height: 11
+    width: 5
+    
+    splashDamageRadius: 14
+    statusDuration: 45
+    splashDamage: 65
+    status: blasted
+    pierceCap: 12
+    lifetime: 20
+    damage: 75
+    speed: 12.8
+    pierceArmor:true
+    
+    despawnEffect: hitBulletColor
+    shootEffect: shootSmallColor
+    smokeEffect: shootBigSmoke
+    hitSound: none
+
+    lightColor: a9d8ff
+    lightOpacity: 0.7
+    lightRadius: 32.5
+
+    trailColor: a9d8ff
+    trailLength: 11
+    trailWidth: 1
+
+    frontColor: ffffff
+    backColor: a9d8ff
+    hitColor: ffffff
+
+hitEffect: [
+    {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 0
+    sizeTo: 10
+
+    lifetime: 40
+
+    colorFrom: a9d8ff
+    colorTo: a9d8ff10
+}
+    {
+    type: ParticleEffect
+    line: true
+    length: 20.5
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 1.5
+    sizeTo: 1
+    colorFrom: a9d8ff
+    colorTo: ffffff00
+    strokeFrom: 1.25
+    strokeTo: 0.25    
+}
+    ]
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 6
+    sizeTo: 1
+
+    lifetime: 60
+
+    colorFrom: a9d8ff30
+    colorTo: a9d8ff00
+}
+    }
+}
+{
+    name: large-orange-bsw
+    rotationLimit: 290
+    controllable:false
+    autoTarget:true
+    baseRotation: -45
+    rotateSpeed: 2
+    alternate: false
+    shootCone: 45
+    rotate: true
+    shootY: 4.5
+    recoil: 1
+    recoiltime:20
+    shake: 5
+    x: 18
+    y: -32
+    layerOffset:3
+    cooldownTime: 80
+    velocityRnd: 0.2
+    inaccuracy: 12
+    reload: 45
+
+    shoot: {
+    shotDelay: 1.2
+    shots: 6
+    }
+
+    shootSound: cannon-shot-1
+    
+    bullet:{
+    type: ArtilleryBulletType
+    sprite: large-bomb
+    collidesTiles: false
+    scaledLife:true
+    height: 10
+    width: 10
+    shrinkY:0.2
+    shrinkX:0.2
+    spin:2
+    buildingDamageMultiplier: 3
+    splashDamageRadius: 24
+    splashDamage: 240
+    damage:150
+    lifetime: 50
+    speed: 6
+    pierceArmor:true
+    
+    despawnSound: bomb-hit
+    
+    hitSoundVolume: 0.75
+    
+    lightColor: EFCA98
+    lightOpacity: 0.7
+    lightRadius: 64.5
+
+    trailInterval: 12.5
+    trailColor: E3A880
+    trailLength: 17.5
+    trailWidth: 1.4
+
+    frontColor: EFCA98
+    backColor: E3A880
+    collidesAir: false
+    reflectable: false
+    hittable: false
+    absorbable: false
+    
+hitEffect: [
+{
+    type: WaveEffect
+    sizeFrom: 4
+    sizeTo: 12
+    lifetime: 20
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: EFCA98
+    colorTo: E3A88000
+    }
+    {
+    type: WaveEffect
+    sizeFrom: 12
+    sizeTo: 24
+    lifetime: 20
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: EFCA98
+    colorTo: E3A88000
+    }
+]
+    fragSpread: 2
+    fragRandomSpread: 35
+    fragBullets:8
+    fragLifeMin:1
+    fragLifeMax:1.2
+    fragVelocityMin:0.2
+    fragVelocityMax:2
+    fragBullet: {
+    shrinkY:0
+    shrinkX:0
+    buildingDamageMultiplier: 2
+    type: ArtilleryBulletType
+    speed: 0.5
+    lifetime: 40
+    spin:-3
+    damage: 200
+    splashDamageRadius: 12
+    splashDamage: 200
+    pierceArmor:true
+    width: 6
+    height: 6
+    pierce:true
+    sprite: large-bomb
+    frontColor: EFCA98
+    lightColor: EFCA98
+    backColor: E3A880
+    hitColor: E3A880
+    despawnEffect:none
+    hitEffect: [
+{
+    type: WaveEffect
+    sizeFrom: 2
+    sizeTo: 4
+    lifetime: 20
+    strokeFrom: 0
+    strokeTo: 1
+    colorFrom: EFCA98
+    colorTo: E3A88000
+    }
+    {
+    type: WaveEffect
+    sizeFrom: 6
+    sizeTo: 12
+    lifetime: 20
+    strokeFrom: 0
+    strokeTo: 1
+    colorFrom: EFCA98
+    colorTo: E3A88000
+    }
+]
+    }
+}
+}
+    ]

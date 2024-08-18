@@ -1,0 +1,96 @@
+research: ground-factory
+stepShake: 0.08
+fogRadius: 35
+
+boostMultiplier: 2
+itemCapacity: 32
+buildSpeed: 0.16
+mineSpeed: 0.32
+mineTier: 2
+health: 180
+speed: 0.64
+armor: 5
+
+lightColor: 98ffa9
+lightOpacity: 0.7
+healColor: 84f491
+lightRadius: 60
+
+trailLength: 8
+
+immunities: [ electrified, bsm-status-air-specialization, bsm-status-naval-specialization ]
+
+abilities: [
+    {
+    type: RepairFieldAbility
+    reload: 180
+    amount: 24
+    range: 60
+}
+    {
+    type: RegenAbility
+    amount: 0.08
+}
+    ]
+
+weapons: [
+{
+    name: nova-weapon
+    predictTarget: false
+    rotationLimit: 15
+    rotateSpeed: 2.5
+    alternate: false
+    shootCone: 90
+    rotate: true
+    shootY: 2
+    recoil: 2
+    x: 4.5
+
+    cooldownTime: 96
+    reload: 120
+
+    chargeSound: blaster-charge
+    shootSound: blaster-shot-1
+    ejectEffect: none
+shoot: {
+    firstShotDelay: 75
+    shotDelay: 10
+    shots: 2
+}
+
+bullet: {
+    type: LaserBoltBulletType
+    parentizeEffects: true
+    collideTerrain: true
+    collidesTeam: true
+
+    pierceDamageFactor: 0.005
+
+    healAmount: 32
+    pierceCap: 2
+    lifetime: 68
+    damage: 41.5
+    speed: 5
+
+    hitEffect: hitBulletColor
+
+    frontColor: ffffff
+    backColor: 84f491
+
+chargeEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    offsetX: 2
+
+    sizeFrom: 7.5
+    sizeTo: 0
+
+    lifetime: 45
+
+    colorFrom: 84f491
+    colorTo: ffffff
+}
+    }
+}
+    ]

@@ -1,0 +1,27 @@
+type: PointDefenseTurret
+name: Fragment
+description: "Smaller, cheaper and more compact version of «[#feb380]Segment[]». Damages and destroys approaching projectiles. \n Does not interact with laser beams."
+research: parallax
+rotateSpeed: 4
+category: turret
+fogRadius: 47.5
+hasPower: true
+size: 1
+
+shootLength: 4.5
+bulletDamage: 6
+reload: 18
+health: 210
+range: 150
+armor: 3
+
+consumes: {
+    power: 5.416669
+}
+
+requirements: [
+    copper/75
+    lead/64
+    titanium/45
+    silicon/32
+]

@@ -1,0 +1,1313 @@
+research: scepter
+forceMultiTarget: true
+fogRadius: 52.5
+stepShake: 14.5
+range: 600
+
+itemCapacity: 1600
+rotateSpeed: 0.75
+health: 68000
+speed: 0.21
+armor: 196
+
+lightColor: fff8e8
+lightOpacity: 0.7
+healColor: b0bac0
+lightRadius: 170
+
+deathSound: mech-large-destroyed
+
+immunities: [ overclock, burning, melting, wet, blasted, shocked, bsm-air-specialization, bsm-naval-specialization ]
+
+abilities: [
+    {
+    type: ShieldRegenFieldAbility
+    reload: 1440
+    amount: 3000
+    max: 10000
+    range: 0
+}
+    {
+    type: ShieldRegenFieldAbility
+    reload: 1920
+    amount: 700
+    range: 100
+    max: 5000
+}
+    {
+    type: RegenAbility
+    amount: 8
+}
+	{
+    type: ArmorPlateAbility
+    healthMultiplier: 0.1
+}
+    ]
+
+weapons: [
+{
+    minShootVelocity: 0.01
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+
+    reload: 81
+
+    shootSound: mech-large-footsteps
+bullet: {
+    type: BasicBulletType
+    maxRange: 652
+    height: 0
+    width: 0
+
+    lifetime: 10
+    damage: 0
+    speed: 1
+
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    hitEffect: none
+}
+    }
+
+{
+    name: hidden-bombing-mw
+    controllable: false
+    layerOffset: -0.001
+    rotationLimit: 30
+    autoTarget: true
+    alternate: false
+    shootCone: 45
+    rotate: true
+    mirror: true
+    shake: 1.75
+    shootY: 1
+    x: 11
+    y: 10
+
+    reload: 2
+
+    ejectEffect: none
+    shootSound: flame
+bullet: {
+    type: BulletType
+    pierceBuilding: true
+    keepVelocity: false
+    collidesAir: false
+    pierceArmor: true
+    hittable: false
+    pierce: true
+    hitSize: 7
+
+    buildingDamageMultiplier: 1.45
+    ammoMultiplier: 15
+
+    statusDuration: 540
+    status: burning
+    pierceCap: 80
+    lifetime: 19
+    damage: 81
+    speed: 3
+
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+}
+    }
+
+{
+    name: hidden-bombing-mw
+    controllable: false
+    layerOffset: -0.001
+    rotationLimit: 30
+    autoTarget: true
+    alternate: false
+    shootCone: 45
+    rotate: true
+    mirror: true
+    shake: 1.75
+    shootY: 1
+    x: 7
+    y: 11
+
+    reload: 3
+
+    ejectEffect: none
+    shootSound: flame
+bullet: {
+    type: BulletType
+    pierceBuilding: true
+    keepVelocity: false
+    collidesAir: false
+    pierceArmor: true
+    hittable: false
+    pierce: true
+    hitSize: 7
+
+    buildingDamageMultiplier: 1.45
+    ammoMultiplier: 15
+
+    statusDuration: 540
+    status: burning
+    pierceCap: 81
+    lifetime: 19
+    damage: 81
+    speed: 3
+
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+}
+    }
+
+{
+    name: reign-weapon
+    shootCone: 45
+    shootY: 11
+    recoil: 5
+    shake: 5
+    x: 21.5
+    y: 1
+	
+    reload: 27
+	inaccuracy:2
+	velocityRnd:0.03
+    chargeSound: minigun-heavy-charge
+    shootSound: minigun-heavy-shot
+    ejectEffect: casing4
+shoot: {
+    type: ShootSpread
+    firstShootDelay: 80
+    shotDelay: 7
+    spread: 0
+    shots: 4
+    }
+
+bullet: {
+    type: BasicBulletType
+    pierceBuilding: true
+    despawnShake: 5
+    hittable: false
+    pierce: true
+    hitShake: 5
+    height: 33
+    width: 14
+
+    buildingDamageMultiplier: 1
+    splashDamageRadius: 13
+    fragRandomSpread: 25
+    fragVelocityMin: 0.4
+    splashDamage: 115
+    fragBullets: 2
+    fragLifeMin: 0
+    lifetime: 20.5
+    pierceCap: 3
+    damage: 275
+    speed: 19
+    
+    hitSound: heavy-minigun-hit
+    hitEffect: [
+	blastExplosion
+    {    
+    type: ParticleEffect
+    startDelay: 10
+    particles: 2
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 14
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 20
+    particles: 3
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 30
+    particles: 2
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 40
+    particles: 2
+    lifetime: 50
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 13
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 50
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 60
+    particles: 2
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 70
+    particles: 2
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 80
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 90
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 100
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 12
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	]
+	shootEffect: shootBig
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 52
+
+    trailColor: f9c27a
+    trailLength: 4
+    trailWidth: 2
+
+fragBullet: {
+    type: BasicBulletType
+    pierceBuilding: true
+    collidesAir: false
+    pierceArmor: true
+    despawnShake: 1
+    pierce: true
+    hitShake: 1
+    height: 10
+    width: 10
+
+    buildingDamageMultiplier: 1.3
+    pierceDamageFactor: 0.75
+
+    splashDamageRadius: 26
+    puddleLiquid: slag
+    splashDamage: 60
+    puddleAmount: 6
+    puddleRange: 3
+    pierceCap: 2
+    lifetime: 20
+    damage: 80
+    puddles: 2
+    speed: 5
+
+    incendChance: 10
+    incendSpread: 10
+    incendAmount: 1
+
+    hitEffect: [
+	flakExplosion
+	{    
+    type: ParticleEffect
+    startDelay: 10
+    particles: 2
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 6
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 20
+    particles: 2
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 7
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 30
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 40
+    particles: 1
+    lifetime: 50
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 50
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 60
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 70
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 80
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 90
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	{    
+    type: ParticleEffect
+    startDelay: 100
+    particles: 1
+    lifetime: 60
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 2
+    length: 8
+    sizeTo: 3
+
+    colorFrom: ffd2ae
+    colorTo: ffd2ae00
+	}
+	]
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 21
+
+    trailColor: F3E979F0
+    trailLength: 3
+    trailWidth: 1
+    }
+}
+    }
+
+{
+    inaccuracy: 8
+    shootCone: 45
+    shootY: 11
+    recoil: 5
+    shake: 5
+    x: -21.5
+    y: 1
+
+    velocityRnd: 0.5
+    reload: 540
+
+    shootSound: blaster-shot-1
+    ejectEffect: casing4
+shoot: {
+    type: ShootSpread
+    firstShootDelay: 80
+    shotDelay: 5
+    spread: 0.4
+    shots: 3
+    }
+
+bullet: {
+    type: BasicBulletType
+    sprite: large-bomb
+    pierceBuilding: true
+    despawnShake: 10
+    fragOnHit: false
+    hitSound: none
+    pierce: true
+    hitShake: 5
+    shrinkX: 0
+    shrinkY: 0
+    height: 20
+    width: 20
+    spin: 1
+
+    buildingDamageMultiplier: 0
+
+    pierceCap: 200
+    lifetime: 160
+    damage: 450
+    drag: 0.03
+    speed: 16
+
+    fragRandomSpread: 360
+    fragVelocityMin: 0.2
+    fragVelocityMax: 2
+    fragLifeMin: 0.4
+    fragBullets: 20
+    fragLifeMax: 3
+
+    homingPower: 0.002
+    homingRange: 30
+    homingDelay: 80
+
+    shootEffect: shootBig
+    hitEffect: none
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 52
+
+    trailColor: f9c27a
+    trailLength: 8
+    trailWidth: 1.5
+
+despawnEffect: [
+    {    
+    type: ParticleEffect
+    region: bsm-cross-explode
+    useRotation: false
+    particles: 1
+    lifetime: 30
+    layer: 100.3
+    cone: 0
+    
+    sizeFrom: 10
+    length: 0
+    sizeTo: 50
+
+    colorFrom: FF9F0F00
+    colorTo: FF9F0F
+}
+    {
+    type: ParticleEffect
+    region: bsm-cross-explode
+    useRotation: false
+    startDelay: 30
+    particles: 1
+    lifetime: 90
+    layer: 100.3
+    cone: 0
+    
+    sizeFrom: 50
+    length: 0
+    sizeTo: 70
+
+    colorFrom: FF9F0F
+    colorTo: FFF480
+}
+    {
+    type: ParticleEffect
+    region: bsm-cross-explode
+    useRotation: false
+    startDelay: 100
+    particles: 1
+    lifetime: 60
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 70
+    sizeTo: 40
+    length: 0
+
+    colorFrom: FFF480
+    colorTo: FFF480
+}
+    {
+    type: ParticleEffect
+    region: bsm-cross-explode
+    useRotation: false 
+    startDelay: 160
+    particles: 1
+    lifetime: 20
+    layer: 100.3
+    cone: 0
+    
+    sizeFrom: 40
+    length: 0
+    sizeTo: 0
+
+    colorFrom: FFF4803
+    colorTo: 000000
+}
+    {    
+    type: ParticleEffect
+    particles: 30
+    lifetime: 200
+    layer: 100.3
+    cone: 360
+    
+    sizeFrom: 2
+    length: 70
+    sizeTo: 3
+
+    colorFrom: 5B5B5B80
+    colorTo: 5B5B5B00
+}
+    {    
+    type: ParticleEffect
+    particles: 45
+    lifetime: 200
+    layer: 100.1
+    cone: 360
+    
+    sizeFrom: 1
+    length: 50
+    sizeTo: 3
+
+    colorFrom: 5B5B5B80
+    colorTo: 5B5B5B00
+}
+    ]
+
+fragBullet: {
+    type: BasicBulletType
+    sprite: large-bomb
+    pierceBuilding: true
+    collidesAir: false
+    despawnShake: 1
+    pierce: true
+    hitShake: 1
+    height: 10
+    width: 10
+    spin: 3
+
+    buildingDamageMultiplier: 0.2
+
+    splashDamageRadius: 26
+    splashDamage: 30
+    pierceCap: 200
+    lifetime: 60
+    damage: 90
+    drag: 0.07
+    speed: 4
+
+    incendSpread: 16
+    incendAmount: 16
+    incendChance: 1
+
+    hitEffect: flakExplosion
+
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 21
+
+    trailColor: F3E979F0
+    trailLength: 3
+    trailWidth: 1
+    }
+}
+    }
+
+{
+    name: reign-missile-launcher
+    showStatSprite: false
+    controllable: false
+    layerOffset: -0.001
+    autoTarget: true
+    alternate: false
+    shootCone: 360
+    shake: 4.5
+    recoil: 0
+    shootX: 0
+    shootY: 0
+    x: 10.5
+    y: -2.5
+
+    cooldownTime: 480
+    velocityRnd: 0.64
+    inaccuracy: 360
+    reload: 500
+
+    shootSound: rocket-shot-2
+shoot: { 
+    shotDelay: 4.5
+    shots: 24
+    }
+
+    warmupMaintainTime: 180
+    shootWarmupSpeed: 0.05
+    minWarmup: 0.9
+parts: [
+    {
+    type: RegionPart
+    suffix: -cover-top
+    progress: warmup
+    outline: false
+    moveY: 2.5
+}
+    {
+    type: RegionPart
+    suffix: -cover-bottom
+    progress: warmup
+    outline: false
+    moveY: -2.5
+}
+    {
+    type: RegionPart
+    suffix: -cover-right
+    progress: warmup
+    outline: false
+    moveX: 2.5
+}
+    {
+    type: RegionPart
+    suffix: -cover-left
+    progress: warmup
+    outline: false
+    moveX: -2.5
+}
+    ]
+
+bullet: {
+    type: MissileBulletType
+    keepVelocity: false
+    rangeOverride: 648
+    despawnShake: 3
+    shrinkX: 0.25
+    shrinkY: 0.5
+    hitShake: 3
+    height: 14
+    width: 8
+
+    buildingDamageMultiplier: 0.6
+
+    splashDamageRadius: 26
+    statusDuration: 300
+    homingPower: 0.03
+    splashDamage: 48
+    homingRange: 160
+    status: melting
+    weaveScale: 12
+    lifetime: 360
+    weaveMag: 4
+    damage: 150
+    speed: 4
+	
+	intervalBullets: 1
+    bulletInterval: 3
+    intervalRandomSpread: 0
+    intervalAngle:180
+	intervalDelay:50
+	intervalBullet:
+	{
+	type: BasicBulletType
+    height: 0
+    width: 0
+
+	splashDamageRadius: 10
+    splashDamage: 20
+    lifetime: 2
+    speed: -2
+    damage: 10
+    
+    hittable:false
+    reflectable: false
+    absorbable: false
+    pierce: true
+    pierceCap: 1
+	hitEffect:none
+	despawnEffect:none
+	incendAmount: 1
+    incendSpread: 1
+    incendChance: 0.8
+	}
+	
+    hitSound: rocket-explosion
+    despawnEffect: none
+
+    lightColor: ffd2ae
+    lightOpacity: 0.7
+    lightRadius: 32
+
+    trailInterp: slope
+    trailColor: 454545
+    trailInterval: 2
+    trailWidth: 2.5
+
+shootEffect: {
+    type: ExplosionEffect
+    lifetime: 300
+
+    waveColor: ffd2ae
+    waveStroke: 1.25
+    waveRad: 5
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 5
+    smokes: 7
+
+    sparkColor: ffd2ae
+    sparkStroke: 0
+    sparkRad: 0
+    sparkLen: 0
+    sparks: 0
+    }
+
+hitEffect: [{
+    type: ExplosionEffect
+    lifetime: 96
+
+    waveColor: ffd2ae
+    waveStroke: 3.2
+    waveRad: 40
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 12.5
+    smokes: 4
+
+    sparkColor: ffd2ae
+    sparkStroke: 1.25
+    sparkRad: 24.5
+    sparkLen: 5
+    sparks: 19
+    }
+	]
+	fragBullets: 7
+    fragRandomSpread: 25
+    fragVelocityMin: 0.5
+    fragVelocityMax: 1.7
+    fragLifeMin: 0.6
+    fragLifeMax: 1.3
+    fragBullet: {
+    type: BasicBulletType
+    shrinkX: 0
+    shrinkY: 0
+    drag: 0.02
+    height: 7
+    width: 3
+
+    lifetime: 14
+    speed: 2.25
+    damage: 21
+	pierceArmor:true
+    
+    incendAmount: 3
+    incendSpread: 8
+    incendChance: 1
+    
+    hittable:false
+    reflectable: false
+    absorbable: true
+    pierce: true
+    pierceCap: 2
+    pierceBuilding: true
+    
+    despawnEffect:[
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 7
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: 5B5B5B
+    colorTo: 5B5B5B00
+    }    
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 5
+    lifetime: 45
+    sizeFrom: 1
+    sizeTo: 2
+    layer:100.2
+    colorFrom: 808080
+    colorTo: 80808000
+    }
+    {
+    startDelay:4
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 26
+    lifetime: 90
+    colorFrom: 5B5B5B20
+    colorTo: 5B5B5B00
+    }
+    {
+    type: ParticleEffect
+    particles: 7
+    cone: 40
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 5
+    colorFrom: F3E979
+    colorTo: F3E97900
+    lifetime: 35
+    }
+    {
+    type: ParticleEffect
+    particles: 12
+    cone: 25
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 12
+    colorFrom: F3E979
+    colorTo: F3E97900
+    lifetime: 35
+    }
+    {
+    type: ParticleEffect
+    particles: 12
+    cone: 24
+    line: true
+    strokeFrom: 0.4
+    strokeTo: 1
+    lenFrom: 2
+    lenTo: 2
+    length: 16
+    colorFrom: F3E979
+    colorTo: F3E97900
+    lifetime: 30
+    }
+    ]
+        hitEffect: none
+    
+    trailColor: 5B5B5B
+    trailEffect: missileTrail
+    trailWidth: 1
+    trailLength: 4
+    trailParam: 2
+    trailInterval: 1
+    
+    frontColor: ffffff
+    backColor: F3E979
+
+    lightColor: F3E979
+    lightOpacity: 0.7
+    lightRadius: 31
+    fragBullets: 1
+    fragRandomSpread: 10
+    fragVelocityMin: 0.5
+    fragVelocityMax: 3.2
+    fragLifeMin: 0.6
+    fragLifeMax: 1.3
+    fragBullet: {
+    type: BasicBulletType
+    sprite: large-orb
+    shrinkX: 0
+    shrinkY: 0
+    drag: 0.02
+    height: 5
+    width: 3
+
+    splashDamageRadius: 8
+    splashDamage: 20
+    lifetime: 10
+    speed: 2
+    damage: 20
+    
+    hittable:false
+    reflectable: false
+    absorbable: false
+    pierce: true
+    pierceCap: 3
+    pierceBuilding: true
+    
+        despawnEffect:[
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 12
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: 5B5B5B
+    colorTo: 5B5B5B00
+    }    
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 12
+    lifetime: 45
+    sizeFrom: 1
+    sizeTo: 2
+    layer:100.2
+    colorFrom: 808080
+    colorTo: 80808000
+    }
+    {
+    startDelay:4
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 13
+    lifetime: 90
+    colorFrom: 5B5B5B20
+    colorTo: 5B5B5B00
+    }
+    {
+    type: ParticleEffect
+    particles: 6
+    cone: 50
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 1
+    lenFrom: 2
+    lenTo: 3
+    length: 20
+    colorFrom: F3E979
+    colorTo: F3E97900
+    lifetime: 35
+    }
+    ]
+        hitEffect: none
+    
+    trailColor: 5B5B5B
+    trailEffect: missileTrail
+    trailWidth: 1
+    trailLength: 2
+    trailParam: 2
+    trailInterval: 1
+    
+        frontColor: ffffff
+        backColor: F3E979
+    incendAmount: 1
+    incendSpread: 4
+    incendChance: 1
+    
+        lightColor: F3E979
+        lightOpacity: 0.7
+        lightRadius: 31
+    }
+    }
+}
+    }
+
+{
+    name: orange-bsw
+    controllable: false
+    rotationLimit: 30
+    autoTarget: true
+    shootCone: 24
+    rotate: true
+    shootY: 1
+    x: 13
+    y: -7
+
+    inaccuracy: 4
+    reload: 24
+
+    shootSound: rocket-fire
+    ejectEffect: casing1
+
+bullet: {
+    type: BasicBulletType
+    sprite: missile-large
+    collidesGround: false
+    keepVelocity: false
+    collidesAir: true
+    despawnShake: 3
+    shrinkX: 0.25
+    shrinkY: 0.5
+    hitShake: 3
+    height: 14
+    width: 6
+
+    splashDamageRadius: 40
+    splashDamage: 160
+    weaveScale: 1
+    lifetime: 25
+    weaveMag: 2
+    damage: 210
+    speed: 15
+
+    fragRandomSpread: 20
+    fragLifeMin: 0.4
+    fragBullets: 5
+    fragLifeMax: 1
+
+    homingPower: 0.2
+    homingRange: 70
+    homingDelay: 2
+
+    hitSound: rocket-explosion
+    despawnEffect: none
+
+    lightColor: ffd2ae
+    lightOpacity: 0.7
+    lightRadius: 32
+
+    trailColor: ffd2ae
+    trailWidth: 1.2
+    trailLength: 7
+
+shootEffect: {
+    type: ExplosionEffect
+    lifetime: 120
+
+    waveColor: ffd2ae
+    waveStroke: 1.25
+    waveRad: 5
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 3
+    smokes: 3
+
+    sparkColor: ffd2ae
+    sparkStroke: 1
+    sparkRad: 1
+    sparkLen: 2
+    sparks: 4
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+    lifetime: 96
+
+    waveColor: ffd2ae
+    waveStroke: 3.2
+    waveRad: 20
+
+    smokeColor: 454545
+    smokeSizeBase: 0
+    smokeSize: 3
+    smokes: 1
+
+    sparkColor: ffd2ae
+    sparkStroke: 1.25
+    sparkRad: 24.5
+    sparkLen: 3
+    sparks: 5
+    }
+
+fragBullet: {
+    type: BasicBulletType
+    collidesGround: false
+    collidesAir: true
+    pierceArmor: true
+    despawnShake: 1
+    pierce: true
+    hitShake: 1
+    height: 6
+    width: 6
+
+    splashDamage: 50
+    lifetime: 7
+    damage: 120
+    speed: 4
+
+    hitEffect: flakExplosion
+
+    lightColor: ffd2ae
+    lightOpacity: 0.7
+    lightRadius: 21
+
+    trailColor: f9c27a
+    trailLength: 5
+    trailWidth: 1.25
+    }
+}
+    }
+
+{
+    name: repair-bwc-orange
+    type: RepairBeamWeapon
+    rotateSpeed: 4
+    rotate: true
+    shootY: 1.5
+    x: 4.5
+    y: -8.5
+
+    repairSpeed: 0.4
+    beamWidth: 0.6
+
+    laserColor: ffa665
+    healColor: ffa665
+
+bullet: {
+    maxRange: 128
+    }
+}
+    ]

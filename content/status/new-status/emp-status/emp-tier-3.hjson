@@ -1,0 +1,21 @@
+name: Tier 3 EMP
+healthMultiplier: 0.9
+reloadMultiplier: 0.7
+speedMultiplier: 0.25
+
+effectChance: 0.125
+effect: {
+    type: ParticleEffect
+    particles: 12
+    lifetime: 25
+    line: true
+
+    baseRotation: 0
+    baseLength: 3.2
+    length: 0
+
+    strokeFrom: 1.25
+    strokeTo: 0
+
+    colorTo: d1efff
+}

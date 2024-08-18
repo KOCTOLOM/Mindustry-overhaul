@@ -1,0 +1,8 @@
+research: titanium-wall-large
+underBullets: true
+
+buildCostMultiplier: 0.25
+
+tileDamage: 10
+cooldown: 5
+damage: 9

@@ -1,0 +1,21 @@
+type: PowerNode
+name: "Armored large power node"
+description: "Armored power node with even greater durability and power transmission range."
+research: armored-power-node
+category: power
+size: 2
+
+laserColor1: FFAB51
+laserColor2: E69238
+
+laserRange: 18
+maxNodes: 12
+health: 960
+armor: 24
+
+requirements: [
+    lead/21
+    graphite/18
+    titanium/15
+    silicon/12
+]

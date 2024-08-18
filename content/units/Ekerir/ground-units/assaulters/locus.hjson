@@ -1,0 +1,72 @@
+research: stell
+alwaysShootWhenMoving: true
+fogRadius: 52.5
+
+rotateSpeed: 1.6
+health: 5000
+speed: 0.415
+armor: 24
+
+lightColor: feb380
+lightOpacity: 0.7
+lightRadius: 75
+
+immunities: [ burning, melting, blasted, bsm-air-specialization, bsm-naval-specialization ]
+
+weapons: [
+{
+    name: locus-weapon
+
+    layerOffset: 0.0001
+    rotateSpeed: 0.75
+    mirror: false
+    shootCone: 5
+    rotate: true
+    shootY: 10
+    recoil: 1
+    x: 0
+    y: 0
+
+    cooldownTime: 32
+    reload: 4.5
+
+    heatColor: f9350f
+
+    shootSound: bolt
+
+shoot: {
+    type: ShootAlternate
+}
+
+bullet: { 
+    type: BasicBulletType
+    sprite: missile-large
+    collideTerrain: true
+    length: 12
+    width: 5
+
+    buildingDamageMultiplier: 0.75
+
+    pierceDamageFactor: 0.8
+    lifetime: 52
+    damage: 24
+    speed: 7.5
+
+    lightColor: feb380
+    lightOpacity: 0.7
+    lightRadius: 21.5
+
+    hitEffect: hitBulletColor
+    endEffect: hitBulletColor
+    smokeEffect: colorSpark
+
+    trailColor: feb380
+    trailWidth: 1.7
+    trailLength: 5
+
+    frontColor: ffffff
+    backColor: feb380
+    hitColor: feb380
+}
+    }
+]

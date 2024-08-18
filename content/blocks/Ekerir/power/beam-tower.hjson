@@ -1,0 +1,16 @@
+research: beam-node
+
+buildCostMultiplier: 1
+
+health: 810
+armor: 25
+
+consumes: {
+    powerBuffered: 250
+    }
+
+requirements: [
+    silicon/50
+    oxide/20
+    beryllium/30
+    ]

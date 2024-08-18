@@ -1,0 +1,19 @@
+research: titan
+
+ammoPerShot: 180
+health: 25000
+maxAmmo: 900
+armor: 21
+
+consumes: {
+    power: 250
+    }
+
+requirements: [
+    oxide/15000
+    beryllium/24000
+    silicon/21000
+    tungsten/18000
+    thorium/12000
+    carbide/5000
+    ]

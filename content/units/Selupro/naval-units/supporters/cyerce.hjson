@@ -1,0 +1,208 @@
+research: oxynoe
+
+rotateSpeed: 1
+health: 2200
+speed: 0.56
+armor: 15
+
+immunities: [ burning, melting, shocked, blasted, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-2 ]
+
+weapons: [
+{
+    name: repair-bwc-green
+    type: RepairBeamWeapon
+    shootY: 6
+    x: 11
+    y: -10
+
+    repairSpeed: 0.7
+    beamWidth: 0.8
+
+bullet: {
+    maxRange: 130
+}
+    }
+
+{
+    name: plasma-cannon-mount
+    rotateSpeed: 4
+    rotate: true
+    shadow: 5
+    x: 9
+    y: 3
+
+    velocityRnd: 0.1
+    inaccuracy: 1
+    reload: 45
+
+    shootSound: missile
+    ejectEffect: none
+
+bullet: {
+    sprite: missile-large
+    collidesGround: true
+    keepVelocity: false
+    collidesAir: true
+    shrinkY: 0
+    height: 7
+    width: 7
+	buildingDamageMultiplier: 0.12
+    splashDamageRadius: 25
+    splashDamage: 260
+    explodeRange: 40
+    homingRange: 60
+    weaveScale: 8
+    lifetime: 80
+    drag: -0.003
+    weaveMag: 1
+    speed: 3
+
+	fragRandomSpread:1
+    fragBullets: 1
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 60
+
+    trailColor: 98ffa9
+    trailLength: 29
+    trailWidth: 3
+
+    frontColor: ffffff
+    backColor: 98ffa9
+
+hitEffect: [{
+    type: ExplosionEffect
+    lifetime: 28
+
+    waveColor: 98ffa9
+    waveRadBase: 3
+    waveRad: 24
+    waveStroke: 2
+    waveLife: 10
+
+    smokeColor: ffffff
+    smokes: 3
+
+    sparkColor: 98ffa9
+    sparkStroke: 1.5
+    sparkRad: 35
+    sparkLen: 2
+    sparks: 3
+    }
+	{
+    type: ParticleEffect
+    lifetime: 20
+    particles: 12
+    line: true
+    cone: 360
+
+    baseRotation: 0
+    baseLength: 32
+    length: -6
+
+    strokeFrom: 1.2
+    strokeTo: 0
+
+    colorFrom: 98ffa9
+    colorTo: 98ffa9
+}
+	]
+
+fragBullet: {
+	type: BasicBulletType
+	damage: 50
+	sprite:large-orb
+	buildingDamageMultiplier: 2
+	speed: 2.5
+	shrinkY:0
+	shrinkX:0
+	height: 10
+    width: 10
+	drag:0.003
+	pierce: true
+	pierceBuilding: true
+	pierceCap: 2
+	homingRange:20
+	homingPower:0.03
+	homingDelay:10
+	lifetime: 120
+	lightRadius: 40
+	lightOpacity: 0.9
+	frontColor: ffffff
+	lightColor: 98ffa9
+	backColor: 98ffa9
+	hitColor: 98ffa9
+	shootEffect: shootBigColor
+	smokeEffect: shootSmokeSquareBig
+	trailWidth: 2
+	trailLength: 12
+	trailEffect: none
+	trailColor: 98ffa9
+	collidesTiles: true
+	collides: true
+	collidesGround: true
+	collidesAir: true
+	
+	hitEffect: {
+    type: ExplosionEffect
+    lifetime: 28
+
+    waveColor: 98ffa9
+    waveRadBase: 7
+    waveRad: 30
+    waveStroke: 6
+    waveLife: 10
+
+    smokeColor: ffffff
+    smokes: 6
+
+    sparkColor: 98ffa9
+    sparkStroke: 1.5
+    sparkRad: 35
+    sparkLen: 4
+    sparks: 6
+    }
+	
+	reflectable: false
+	hittable: false
+	intervalBullets: 3
+	bulletInterval: 3
+	intervalRandomSpread: 360
+	intervalBullet: {
+	type: LightningBulletType
+    collidesAir: false
+    hittable: false
+    hitSize: 3
+
+    buildingDamageMultiplier: 2
+	lightningLengthRand:4
+    lightningLength: 4
+    damage: 20
+	pierceArmor:true
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 14.5
+	lightningColor: 98ffa9
+lightningType: {
+    collidesAir: false
+    hittable: false
+    hitSize: 3
+	width:0
+	heigth:0
+    buildingDamageMultiplier: 2
+
+    lifetime: 20
+
+    hitEffect: hitLancer
+    despawnEffect: none
+
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 14.5
+	}
+    }
+	}
+}
+}
+    ]

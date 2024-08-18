@@ -1,0 +1,22 @@
+name: High Power Electromagnetic Pulse
+speedMultiplier: 0
+disarm: true
+
+affinities: [ wet ]
+
+effectChance: 0.15
+effect: {
+    type: ParticleEffect
+    particles: 15
+    lifetime: 25
+    line: true
+
+    baseRotation: 0
+    baseLength: 3.2
+    length: 0
+
+    strokeFrom: 1.25
+    strokeTo: 0
+
+    colorTo: d1efff
+}

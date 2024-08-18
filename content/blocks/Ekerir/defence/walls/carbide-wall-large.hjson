@@ -1,0 +1,11 @@
+research: carbide-wall
+
+buildCostMultiplier: 22.3256
+
+health: 7840
+armor: 24
+
+requirements: [
+    thorium/24
+    carbide/18
+    ]

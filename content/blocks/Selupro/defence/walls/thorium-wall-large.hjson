@@ -1,0 +1,16 @@
+research: thorium-wall
+
+buildCostMultiplier: 10.47
+
+health: 6000
+armor: 24
+
+destroyBullet: {
+    instantDisappear: true
+
+    splashDamageRadius: 32
+    splashDamage: 480
+    speed: 0
+
+    despawnEffect: flakExplosionBig
+}

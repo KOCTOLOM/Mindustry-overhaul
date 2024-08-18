@@ -1,0 +1,25 @@
+research: 01t-01-fragment
+retargetTime: 0.1
+rotateSpeed: 18
+fogRadius: 34.5
+shootCone: 18
+
+coolantMultiplier: 5
+
+shootLength: 7.5
+bulletDamage: 30
+reload: 4
+health: 670
+range: 222
+armor: 8
+
+consumes: {
+    power: 12.5
+}
+
+requirements: [
+    titanium/125
+    thorium/100
+    silicon/64
+    phase-fabric/24
+]

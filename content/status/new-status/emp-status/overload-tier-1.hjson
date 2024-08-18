@@ -1,0 +1,4 @@
+name: Tier 1 Overload
+reloadMultiplier: 1.5
+speedMultiplier: 1.5
+show: false

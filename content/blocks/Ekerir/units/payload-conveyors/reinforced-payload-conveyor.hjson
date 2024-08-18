@@ -1,0 +1,8 @@
+research: 16c-07-small-reinforced-payload-router
+
+armor: 2
+
+requirements: [
+  silicon/8
+  tungsten/16
+]

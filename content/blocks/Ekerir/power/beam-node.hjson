@@ -1,0 +1,15 @@
+research: turbine-condenser
+
+buildCostMultiplier: 1
+
+health: 180
+armor: 15
+
+consumes: {
+    powerBuffered: 50
+    }
+
+requirements: [
+    graphite/5
+    beryllium/8
+    ]

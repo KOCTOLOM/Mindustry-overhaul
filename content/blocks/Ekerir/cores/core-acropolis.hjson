@@ -1,0 +1,16 @@
+absorbLasers: true
+
+unitCapModifier: 14
+itemCapacity: 15000
+health: 50000
+armor: 18
+
+requirements: [
+    oxide/21000
+    beryllium/24000
+    silicon/18000
+    tungsten/15000
+    thorium/12000
+    carbide/5000
+    surge-alloy/8000
+    ]

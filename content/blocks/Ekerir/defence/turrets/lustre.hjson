@@ -1,0 +1,16 @@
+research: sublimate
+
+health: 18000
+armor: 21
+
+consumes: {
+    power: 800
+    }
+
+requirements: [
+    silicon/5000
+    graphite/3600
+    tungsten/7500
+    thorium/2100
+    carbide/1800
+    ]
