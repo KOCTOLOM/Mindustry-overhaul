@@ -14,7 +14,7 @@ lightOpacity: 0.7
 healColor: bf92f9
 lightRadius: 120
 
-immunities: [ spore-slowed, sapped, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ spore-slowed, sapped, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
@@ -125,7 +125,7 @@ bullet: {
     inaccuracy: 30
     reload: 360
 
-    shootStatus: bsm-motor-deceleration-tier-1
+    shootStatus: mov-motor-deceleration-tier-1
     chargeSound: target-locked-short
     shootStatusDuration: 320
     shootSound: rocket-shot-1
@@ -149,7 +149,7 @@ bullet: {
     height: 11
     width: 11
 
-    status: bsm-emp-tier-1
+    status: mov-emp-tier-1
     splashDamageRadius: 40
     statusDuration: 180
     lightningDamage: 9

@@ -6,7 +6,7 @@ health: 92000
 speed: 0.25
 armor: 230
 
-immunities: [ spore-slowed, electrified, burning, blasted, melting, shocked, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-2, bsm-armor-piercing-tier-3 ]
+immunities: [ spore-slowed, electrified, burning, blasted, melting, shocked, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-2, mov-armor-piercing-tier-3 ]
 
 abilities: [ 
     {

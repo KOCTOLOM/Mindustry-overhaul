@@ -5,7 +5,7 @@ This mod is an amalgamation of EU and ET. However, in addition it adds new block
 
 The Aegirs are still not ready...
 
-![BetterDuStryMod](https://github.com/Dong-Wo-Long/BSM-other/blob/main/database-units.png)
+![BetterDuStryMod](https://github.com/Dong-Wo-Long/mov-other/blob/main/database-units.png)
 
 > [!IMPORTANT]
 > The mod does not shamelessly steal other people's sprites without their authors' permission to use them.

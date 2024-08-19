@@ -82,7 +82,7 @@ thorium: {
     reloadMultiplier: 0.4
     ammoMultiplier: 12
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
     statusDuration: 300
     splashDamage: 90
@@ -231,7 +231,7 @@ tungsten: {
     ammoMultiplier: 18
     rangeChange: 240
 
-    status: bsm-air-specialization
+    status: mov-air-specialization
     statusDuration: 450
     knockback: 0.2
     lifetime: 41.5
@@ -274,7 +274,7 @@ carbide: {
     ammoMultiplier: 4
     rangeChange: 212
 
-    status: bsm-armor-piercing-tier-2
+    status: mov-armor-piercing-tier-2
     statusDuration: 180
     knockback: 0.3
     pierceCap: 15

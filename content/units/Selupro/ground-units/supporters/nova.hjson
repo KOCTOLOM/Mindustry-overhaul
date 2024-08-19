@@ -18,7 +18,7 @@ lightRadius: 60
 
 trailLength: 8
 
-immunities: [ electrified, bsm-status-air-specialization, bsm-status-naval-specialization ]
+immunities: [ electrified, mov-status-air-specialization, mov-status-naval-specialization ]
 
 abilities: [
     {

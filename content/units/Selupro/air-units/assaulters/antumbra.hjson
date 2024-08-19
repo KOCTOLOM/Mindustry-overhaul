@@ -26,7 +26,7 @@ loopSound: air-engine
 
 trailLength: 19
 
-immunities: [ burning, blasted, shocked, tarred, wet, bsm-ground-specialization, bsm-naval-specialization ]
+immunities: [ burning, blasted, shocked, tarred, wet, mov-ground-specialization, mov-naval-specialization ]
 
 targetFlags: [ unitAssembler, unitCargoUnloadPoint, turret, reactor, generator, battery, core ]
 
@@ -92,7 +92,7 @@ bullet: {
     length: 360
     width: 0.75
 
-    status: bsm-damage-reduction-tier-1
+    status: mov-damage-reduction-tier-1
     statusDuration: 90
     sapStrength: 0.25
     knockback: -1
@@ -165,7 +165,7 @@ bullet: {
     buildingDamageMultiplier: 1.25
     pierceDamageFactor: 0.005
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
     statusDuration: 180
     splashDamage: 70
@@ -257,7 +257,7 @@ bullet: {
     buildingDamageMultiplier: 1.25
     pierceDamageFactor: 0.005
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
     statusDuration: 180
     splashDamage: 60
@@ -397,7 +397,7 @@ bullet: {
 
     buildingDamageMultiplier: 1.75
 
-    status: bsm-oxidation-tier-2
+    status: mov-oxidation-tier-2
     splashDamageRadius: 12
     statusDuration: 180
     splashDamage: 50
@@ -525,7 +525,7 @@ bullet: {
 
     buildingDamageMultiplier: 1.75
 
-    status: bsm-oxidation-tier-2
+    status: mov-oxidation-tier-2
     splashDamageRadius: 12
     statusDuration: 180
     splashDamage: 50

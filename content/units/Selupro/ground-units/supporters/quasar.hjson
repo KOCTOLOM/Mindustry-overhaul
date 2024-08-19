@@ -22,7 +22,7 @@ engineSize: 3.5
 
 deathSound: mech-destroyed
 
-immunities: [ electrified, shocked, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ electrified, shocked, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {

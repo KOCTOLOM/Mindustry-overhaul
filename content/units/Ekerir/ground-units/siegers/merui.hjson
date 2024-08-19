@@ -14,7 +14,7 @@ lightColor: 8ca9e8
 lightOpacity: 0.7
 lightRadius: 64.5
 
-immunities: [ bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ mov-air-specialization, mov-naval-specialization ]
 
 weapons: [
 {
@@ -32,7 +32,7 @@ weapons: [
     inaccuracy: 9
     reload: 180
 
-    shootStatus: bsm-motor-deceleration-tier-1
+    shootStatus: mov-motor-deceleration-tier-1
     chargeSound: blaster-charge
     shootSound: blaster-shot-2
     shootStatusDuration: 128
@@ -59,7 +59,7 @@ bullet: {
 
     buildingDamageMultiplier: 1.25
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 40
     statusDuration: 180
     splashDamage: 81

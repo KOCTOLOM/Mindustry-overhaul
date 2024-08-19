@@ -19,7 +19,7 @@ lightOpacity: 0.7
 healColor: 84f491
 lightRadius: 150
 
-immunities: [ shocked, wet, burning, melting, blasted, overclock, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ shocked, wet, burning, melting, blasted, overclock, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
@@ -36,7 +36,7 @@ abilities: [
 }
     {
     type: ShieldArcAbility
-    region: bsm-corvus-shield
+    region: mov-corvus-shield
     radius: 25
     angle: 120
     width: 8

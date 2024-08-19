@@ -22,7 +22,7 @@ deathSound: helicopter-crush
 loopSoundVolume: 0.075
 loopSound: air-engine
 
-immunities: [ blasted, shocked, bsm-ground-specialization, bsm-naval-specialization ]
+immunities: [ blasted, shocked, mov-ground-specialization, mov-naval-specialization ]
 
 targetFlags: [ launchPad, factory, storage, repair, unitAssembler, battery ]
 
@@ -45,7 +45,7 @@ weapons: [
     inaccuracy: 9
     reload: 360
 	
-    shootStatus: bsm-motor-deceleration-tier-1
+    shootStatus: mov-motor-deceleration-tier-1
     chargeSound: target-locked-short
     shootSound: rocket-shot-1
     shootStatusDuration: 120
@@ -146,7 +146,7 @@ hitEffect: {
     velocityRnd: 0.35
     reload: 140
 
-    shootStatus: bsm-motor-deceleration-tier-1
+    shootStatus: mov-motor-deceleration-tier-1
     chargeSound: charging-power
     shootStatusDuration: 340
     shootSound: rocket-fire

@@ -32,7 +32,7 @@ engineLayer: 110
 trailWidth: 1.5
 trailLength: 5
 
-immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+immunities: [ mov-ground-specialization, mov-naval-specialization ]
 
 weapons: [
     {

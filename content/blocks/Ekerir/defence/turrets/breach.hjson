@@ -45,7 +45,7 @@ surge-alloy: {
     reloadMultiplier: 0.7
     ammoMultiplier: 8
 
-    status: bsm-emp-tier-1
+    status: mov-emp-tier-1
     statusDuration: 300
     pierceCap: 12
     lifetime: 40
@@ -236,7 +236,7 @@ chargeEffect: [
 //--------------------------------------ammo-2
 beryllium: {
     type: BasicBulletType
-    sprite: bsm-triangle-bullet
+    sprite: mov-triangle-bullet
     parentizeEffects: true
     pierceBuilding: true
     pierce: true
@@ -248,7 +248,7 @@ beryllium: {
     ammoMultiplier: 12
     rangeChange: 172
 
-    status: bsm-air-specialization
+    status: mov-air-specialization
     splashDamageRadius: 26
     statusDuration: 450
     splashDamage: 80
@@ -453,7 +453,7 @@ chargeEffect: [
 //--------------------------------------ammo-3
 tungsten: {
     type: BasicBulletType
-    sprite: bsm-triangle-bullet
+    sprite: mov-triangle-bullet
     parentizeEffects: true
     pierceBuilding: true
     pierce: true
@@ -464,7 +464,7 @@ tungsten: {
     ammoMultiplier: 8
     rangeChange: 40
 
-    status: bsm-ground-specialization
+    status: mov-ground-specialization
     splashDamageRadius: 15
     statusDuration: 300
     splashDamage: 60
@@ -667,7 +667,7 @@ chargeEffect: [
 //--------------------------------------ammo-4
 carbide: {
     type: BasicBulletType
-    sprite: bsm-triangle-bullet
+    sprite: mov-triangle-bullet
     parentizeEffects: true
     pierceBuilding: true
     pierceArmor: true
@@ -680,7 +680,7 @@ carbide: {
     ammoMultiplier: 4
     rangeChange: 56
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 20
     statusDuration: 90
     splashDamage: 70

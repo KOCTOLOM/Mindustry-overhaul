@@ -11,7 +11,7 @@ lightColor: fff8e8
 lightOpacity: 0.7
 lightRadius: 75
 
-immunities: [ spore-slowed, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-1 ]
+immunities: [ spore-slowed, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-1 ]
 
 weapons: [
 {
@@ -39,7 +39,7 @@ bullet: {
     length: 120
     width: 0.5
 
-    status: bsm-damage-reduction-tier-1
+    status: mov-damage-reduction-tier-1
     statusDuration: 90
     sapStrength: 0.25
     knockback: -1
@@ -113,7 +113,7 @@ bullet: {
     buildingDamageMultiplier: 1.25
     pierceDamageFactor: 0.025
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
     statusDuration: 90
     splashDamage: 24
@@ -269,7 +269,7 @@ bullet: {
 
     buildingDamageMultiplier: 1.5
 
-    status: bsm-ground-specialization
+    status: mov-ground-specialization
     splashDamageRadius: 40
     statusDuration: 180
     splashDamage: 75

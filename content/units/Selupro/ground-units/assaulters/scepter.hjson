@@ -14,7 +14,7 @@ lightOpacity: 0.7
 healColor: b0bac0
 lightRadius: 140
 
-immunities: [ burning, melting, shocked, blasted, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ burning, melting, shocked, blasted, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
@@ -140,7 +140,7 @@ bullet: {
     buildingDamageMultiplier: 1.8
     pierceDamageFactor: 0.2
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 12
     statusDuration: 300
     splashDamage: 92

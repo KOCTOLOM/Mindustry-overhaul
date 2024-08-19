@@ -14,12 +14,12 @@ lightOpacity: 0.7
 healColor: bf92f9
 lightRadius: 150
 
-immunities: [ spore-slowed, shocked, sapped, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ spore-slowed, shocked, sapped, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
     type: ShieldArcAbility
-    region: bsm-cleroi-shield
+    region: mov-cleroi-shield
     radius: 24
     angle: 250
     width: 3
@@ -360,7 +360,7 @@ bullet: {
     length: 384
     width: 0.75
 
-    status: bsm-damage-reduction-tier-2
+    status: mov-damage-reduction-tier-2
     statusDuration: 90
     sapStrength: 0.5
     knockback: -1
@@ -412,7 +412,7 @@ hitEffect: {
     velocityRnd: 0.24
     reload: 360
     
-    shootStatus: bsm-motor-deceleration-tier-2
+    shootStatus: mov-motor-deceleration-tier-2
     shootStatusDuration: 300
     shootSound: rocket-fire
     ejectEffect: casing3

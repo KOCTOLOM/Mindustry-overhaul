@@ -17,7 +17,7 @@ trailLength: 5.5
 
 deathSound: air-crush-small-1
 
-immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+immunities: [ mov-ground-specialization, mov-naval-specialization ]
 
 weapons: [
 {

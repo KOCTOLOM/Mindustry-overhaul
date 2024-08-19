@@ -17,7 +17,7 @@ lightRadius: 170
 
 deathSound: mech-large-destroyed
 
-immunities: [ overclock, burning, melting, wet, blasted, shocked, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ overclock, burning, melting, wet, blasted, shocked, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
@@ -638,7 +638,7 @@ bullet: {
 despawnEffect: [
     {    
     type: ParticleEffect
-    region: bsm-cross-explode
+    region: mov-cross-explode
     useRotation: false
     particles: 1
     lifetime: 30
@@ -654,7 +654,7 @@ despawnEffect: [
 }
     {
     type: ParticleEffect
-    region: bsm-cross-explode
+    region: mov-cross-explode
     useRotation: false
     startDelay: 30
     particles: 1
@@ -671,7 +671,7 @@ despawnEffect: [
 }
     {
     type: ParticleEffect
-    region: bsm-cross-explode
+    region: mov-cross-explode
     useRotation: false
     startDelay: 100
     particles: 1
@@ -688,7 +688,7 @@ despawnEffect: [
 }
     {
     type: ParticleEffect
-    region: bsm-cross-explode
+    region: mov-cross-explode
     useRotation: false 
     startDelay: 160
     particles: 1

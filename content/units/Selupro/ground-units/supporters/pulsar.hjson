@@ -18,7 +18,7 @@ lightRadius: 75
 
 trailLength: 9
 
-immunities: [ electrified, shocked, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ electrified, shocked, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
@@ -85,7 +85,7 @@ lightningType: {
     height: 0
     width: 0
 
-    status: bsm-emp-tier-1
+    status: mov-emp-tier-1
     statusDuration: 180
     healAmount: 7.5
     lifetime: 1

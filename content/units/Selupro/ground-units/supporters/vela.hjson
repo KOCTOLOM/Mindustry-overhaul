@@ -19,7 +19,7 @@ lightRadius: 125
 
 trailLength: 15
 
-immunities: [ electrified, melting, burning, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ electrified, melting, burning, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
@@ -77,7 +77,7 @@ bullet: {
     cooldownTime: 700
     reload: 750
 
-    shootStatus: bsm-motor-deceleration-tier-3
+    shootStatus: mov-motor-deceleration-tier-3
     chargeSound: beam-large-charge
     shootSound: beam-large-shot-2
     shootStatusDuration: 725

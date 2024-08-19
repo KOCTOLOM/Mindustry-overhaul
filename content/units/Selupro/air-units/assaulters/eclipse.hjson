@@ -23,14 +23,14 @@ deathSound: air-crush-large-1
 loopSoundVolume: 0.24
 loopSound: air-engine
 
-immunities: [ melting, burning, blasted, shocked, tarred, wet, bsm-ground-specialization, bsm-naval-specialization ]
+immunities: [ melting, burning, blasted, shocked, tarred, wet, mov-ground-specialization, mov-naval-specialization ]
 
 targetFlags: [ turret, repair, extinguisher, hasFogRadius, unitAssembler, unitCargoUnloadPoint, launchPad, reactor, generator, battery, factory, storage, drill, core ]
 
 abilities: [
 {
     type: ShieldArcAbility
-    region: bsm-eclipse-shield
+    region: mov-eclipse-shield
     radius: 52.5
     angle: 54.5
     width: 10.5

@@ -11,7 +11,7 @@ lightColor: bf92f9
 lightOpacity: 0.7
 lightRadius: 75
 
-immunities: [ bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ mov-air-specialization, mov-naval-specialization ]
 
 weapons: [
 {

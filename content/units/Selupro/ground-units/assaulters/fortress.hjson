@@ -18,12 +18,12 @@ healColor: b0bac0
 
 deathSound: mech-destroyed
 
-immunities: [ blasted, burning, melting, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ blasted, burning, melting, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
     type: ShieldArcAbility
-    region: bsm-fortress-shield
+    region: mov-fortress-shield
     radius: 27
     angle: 90
     width: 3
@@ -108,7 +108,7 @@ bullet: {
     
     damage: 90
     
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
     statusDuration: 300
     splashDamage: 120

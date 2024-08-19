@@ -7,4 +7,4 @@ armor: 150
 accel: 0.1
 drag: 0.07
 
-immunities: [ bsm-ground-specialization, bsm-naval-specialization ]
+immunities: [ mov-ground-specialization, mov-naval-specialization ]

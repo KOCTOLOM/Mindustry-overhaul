@@ -8,7 +8,7 @@ armor: 89
 
 healColor: b0bac0
 
-immunities: [ spore-slowed, burning, melting, blasted, shocked, bsm-ground-specialization, bsm-air-specialization, bsm-armor-piercing-tier-2 ]
+immunities: [ spore-slowed, burning, melting, blasted, shocked, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-2 ]
 
 abilities: [
     {
@@ -251,7 +251,7 @@ bullet: {
     buildingDamageMultiplier: 1.25
     pierceDamageFactor: 0.8
 
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
     statusDuration: 90
     splashDamage: 120

@@ -18,12 +18,12 @@ lightRadius: 81.5
 
 deathSound: mech-destroyed
 
-immunities: [ bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
     type: ShieldArcAbility
-    region: bsm-cleroi-shield
+    region: mov-cleroi-shield
     radius: 24
     angle: 250
     width: 3
@@ -81,7 +81,7 @@ bullet: {
     width: 1
 
     splashDamageRadius: 72
-    status: bsm-emp-tier-2
+    status: mov-emp-tier-2
     statusDuration: 450
     splashDamage: 181
     healPercent: 25
@@ -166,7 +166,7 @@ bullet: {
     cooldownTime: 160
     reload: 180
 
-    shootStatus: bsm-motor-deceleration-tier-1
+    shootStatus: mov-motor-deceleration-tier-1
     chargeSound: plasma-charge
     shootSound: plasma-shot-2
     shootStatusDuration: 160

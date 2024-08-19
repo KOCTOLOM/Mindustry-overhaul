@@ -14,12 +14,12 @@ lightOpacity: 0.7
 healColor: bf92f9
 lightRadius: 90
 
-immunities: [ melting, burning, sapped, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ melting, burning, sapped, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
     type: ShieldArcAbility
-    region: bsm-atrax-shield-right
+    region: mov-atrax-shield-right
     angleOffset: -75
     radius: 10
     angle: 64
@@ -32,7 +32,7 @@ abilities: [
 }
     {
     type: ShieldArcAbility
-    region: bsm-atrax-shield-left
+    region: mov-atrax-shield-left
     angleOffset: 75
     radius: 10
     angle: 64

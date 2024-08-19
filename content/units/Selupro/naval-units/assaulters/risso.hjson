@@ -12,7 +12,7 @@ lightOpacity: 0.7
 lightRadius: 62.5
 healColor: b0bac0
 
-immunities: [ spore-slowed, bsm-ground-specialization, bsm-air-specialization ]
+immunities: [ spore-slowed, mov-ground-specialization, mov-air-specialization ]
 
 abilities: [
     {
@@ -58,7 +58,7 @@ bullet: {
 
     buildingDamageMultiplier: 1.25
 	
-    status: bsm-armor-piercing-tier-1
+    status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
     statusDuration: 90
     splashDamage: 30

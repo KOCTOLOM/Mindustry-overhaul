@@ -9,7 +9,7 @@ speed: 1.45
 range: 180
 armor: 3
 
-immunities: [ spore-slowed, electrified, bsm-ground-specialization, bsm-air-specialization ]
+immunities: [ spore-slowed, electrified, mov-ground-specialization, mov-air-specialization ]
 
 weapons: [
 {

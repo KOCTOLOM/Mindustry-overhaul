@@ -15,12 +15,12 @@ lightOpacity: 0.7
 healColor: bf92f9
 lightRadius: 230
 
-immunities: [ spore-slowed, blasted, shocked, sapped, bsm-air-specialization, bsm-naval-specialization ]
+immunities: [ spore-slowed, blasted, shocked, sapped, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
     type: ShieldArcAbility
-    region: bsm-toxopid-shield-right
+    region: mov-toxopid-shield-right
     angleOffset: -55
     radius: 25
     angle: 60
@@ -33,7 +33,7 @@ abilities: [
 }
     {
     type: ShieldArcAbility
-    region: bsm-toxopid-shield-left
+    region: mov-toxopid-shield-left
     angleOffset: 55
     radius: 25
     angle: 60
