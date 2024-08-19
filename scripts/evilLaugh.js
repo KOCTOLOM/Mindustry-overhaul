@@ -1,6 +1,6 @@
 importPackage(Packages.arc.assets.loaders);
 
-const mod = Vars.mods.locateMod("bsm");
+const mod = Vars.mods.locateMod("mov");
 
 const evilLaugh = new Sound();
 evilLaugh.load(Vars.tree.get("sounds/evil-laugh.ogg"));
