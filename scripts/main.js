@@ -13,4 +13,5 @@ require("reconstructors/additiveReconstructor");
 require("reconstructors/multiplicativeReconstructor");
 require("reconstructors/exponentialReconstructor");
 require("reconstructors/tetrativeReconstructor");
-require("launchPadDisabling")
+require("launchPadDisabling");
+require("plastaniumWalls")
