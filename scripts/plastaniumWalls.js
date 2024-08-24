@@ -9,8 +9,17 @@ var plastWallBullet = extend(ShrapnelBulletType, {
 	hitColor: Pal.plastaniumFront,
 });
 
+const NotPlastWall = extend(Wall, "not-plast-wall", {
+    requirements: ItemStack.with(Items.plastanium, 6, Items.metaglass, 8),
+    category: Category.defense,
+    health: 125,
+    insulated: true,
+    absorbLasers: true,
+    schematicPriority: 10,
+    buildVisibility: BuildVisibility.shown
+});
 
-Blocks.plastaniumWall.buildType = () => extend(Wall.WallBuild, Blocks.plastaniumWall, {
+NotPlastWall.buildType = () => extend(Wall.WallBuild, NotPlastWall, {
     cooldown: 0,
     collision(bullet){
         this.super$collision(bullet);
@@ -19,15 +28,26 @@ Blocks.plastaniumWall.buildType = () => extend(Wall.WallBuild, Blocks.plastanium
         
         if(this.cooldown == 4) {
             for(let i = 0; i < 4; i++){
-                plastWallBullet.create(this, this.x, this.y, (360 / 4) * i + 45);
+                plastWallBullet.create(this, this.x, this.y, (360 / 4) * i);
             }
             this.cooldown = 0;
         }
-        return true;
+        return true
     }
 });
 
-Blocks.plastaniumWallLarge.buildType = () => extend(Wall.WallBuild, Blocks.plastaniumWallLarge, {
+const NotPlastWallLarge = extend(Wall, "not-plast-wall-large", {
+    requirements: ItemStack.mult(NotPlastWall.requirements, 4),
+    category: Category.defense,
+    health: 125 * 4,
+    insulated: true,
+    absorbLasers: true,
+    schematicPriority: 10,
+    buildVisibility: BuildVisibility.shown,
+    size: 2
+});
+
+NotPlastWallLarge.buildType = () => extend(Wall.WallBuild, NotPlastWallLarge, {
     cooldown: 0,
     collision(bullet){
         this.super$collision(bullet);
@@ -40,7 +60,7 @@ Blocks.plastaniumWallLarge.buildType = () => extend(Wall.WallBuild, Blocks.plast
             }
             this.cooldown = 0;
         }
-        return true;
+        return true
     }
-})
+});
 
