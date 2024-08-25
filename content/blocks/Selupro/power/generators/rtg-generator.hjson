@@ -1,11 +1,11 @@
 research: differential-generator
 
 requirements: [
-    lead/120
-    plastanium/55
-	silicon/75
-	titanium/55
-    thorium/75
+    lead/80
+    plastanium/25
+	   silicon/75
+	   titanium/45
+    thorium/60
 ]
 
 powerProduction: 6
