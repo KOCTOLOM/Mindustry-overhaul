@@ -32,7 +32,6 @@ weapons: [
 
     reload: 600
 
-    chargeSound: boom-crawler
     ejectEffect: none
     shootSound: none
 shoot: {
@@ -62,6 +61,10 @@ bullet: {
     chargeSound: boom-crawler
     ejectEffect: none
     shootSound: none
+    shoot: {
+        firstShotDelay: 15
+        shots: 1
+    }
 bullet: {
     instantDisappear: true
     collidesTiles: false
@@ -78,6 +81,53 @@ bullet: {
     status: blasted
     speed: 0
 
+    chargeEffect:[
+    {
+    type: ParticleEffect
+    lifetime: 15
+    particles: 6
+    line: true
+    cone: 360
+
+    baseLength: 7.5
+    length: -2
+
+    strokeFrom: 1.2
+    strokeTo: 0
+
+    colorFrom: 6d56bf
+    colorTo: 6d56bf00
+}
+    {
+    type: ParticleEffect
+    lifetime: 15
+    particles: 3
+    line: true
+    cone: 360
+
+    baseLength: 11
+    length: -2
+
+    strokeFrom: 0.8
+    strokeTo: 0
+
+    colorFrom: 6d56bf
+    colorTo: 6d56bf00
+} 
+    {
+    type: ParticleEffect
+    lifetime: 15
+    particles: 1
+    cone: 360
+
+    sizeFrom: 2
+    length: 0
+    sizeTo: 3
+
+    colorFrom: 6d56bf
+    colorTo: ffffff
+}
+    ]
     hitEffect: [
     pulverize
     {
