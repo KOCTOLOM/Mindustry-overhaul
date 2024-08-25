@@ -179,7 +179,7 @@ bullet: {
     shake: 15
     x: 11
     y: -8
-	
+	   velocityRnd:0.25
     inaccuracy: 16
     reload: 320
 
