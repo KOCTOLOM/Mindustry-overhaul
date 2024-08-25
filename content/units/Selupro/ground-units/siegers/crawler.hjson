@@ -50,6 +50,7 @@ bullet: {
 }
 {
     shootOnDeath:true
+    controllable: false
     shootCone: 180
     mirror: false
     shootY: 0
@@ -87,8 +88,8 @@ bullet: {
     cone: 360
 
     sizeFrom: 3
-    length: 12
-    sizeTo: 1
+    length: 40
+    sizeTo: 2
 
     colorFrom: 6d56bf70
     colorTo: 6d56bf00
@@ -101,7 +102,7 @@ bullet: {
     cone: 360
 
     sizeFrom: 4
-    length: 20
+    length: 60
     sizeTo: 2
 
     colorFrom: 6d56bf30
@@ -110,12 +111,12 @@ bullet: {
     {
     type: ParticleEffect
     lifetime: 320
-    particles: 7
+    particles: 1
     layer: 100.1
-    cone: 1
+    cone:360
 
-    sizeFrom: 13
-    sizeTo: 9
+    sizeFrom: 9
+    sizeTo: 7
     length: 0
 
     colorFrom: 6d56bf80
