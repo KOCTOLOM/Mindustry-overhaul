@@ -30,8 +30,8 @@ abilities: [
     y: -9
 
     cooldown: 1080
-    regen: 1.2
-    max: 600
+    regen: 6.666666
+    max: 800
 }
     {
     type: ArmorPlateAbility
