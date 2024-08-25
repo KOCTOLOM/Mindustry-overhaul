@@ -17,10 +17,6 @@ immunities: [ sapped, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
-    type: ArmorPlateAbility
-    healthMultiplier: 1
-}
-    {
     type: RegenAbility
     amount: 0.04
 }
@@ -28,19 +24,19 @@ abilities: [
 
 weapons: [
 {
-    shootCone: 180
+    shootCone: 120
     mirror: false
     shootY: 0
     x: 0
     y: 0
 
-    reload: 45
+    reload: 600
 
     chargeSound: boom-crawler
     ejectEffect: none
     shootSound: none
 shoot: {
-    firstShotDelay: 15
+    firstShotDelay: 70
     shots: 1
     }
 
@@ -50,18 +46,81 @@ bullet: {
     collidesAir: false
     rangeOverride: 46
     killShooter: true
+}
+{
+    shootOnDeath:true
+    shootCone: 180
+    mirror: false
+    shootY: 0
+    x: 0
+    y: 0
+
+    reload: 1
+
+    chargeSound: boom-crawler
+    ejectEffect: none
+    shootSound: none
+bullet: {
+    instantDisappear: true
+    collidesTiles: false
+    collidesAir: false
+    rangeOverride: 46
     hittable: false
     collides: false
 
-    buildingDamageMultiplier: 1.5
+    buildingDamageMultiplier: 1
 
     splashDamageRadius: 60
     statusDuration: 90
-    splashDamage: 360
+    splashDamage: 690
     status: blasted
     speed: 0
 
-    hitEffect: pulverize
+    hitEffect: [
+    pulverize
+    {
+    type: ParticleEffect
+    lifetime: 300
+    particles: 5
+    layer: 100.2
+    cone: 360
+
+    sizeFrom: 3
+    length: 12
+    sizeTo: 1
+
+    colorFrom: 6d56bf70
+    colorTo: 6d56bf00
+}
+{
+    type: ParticleEffect
+    lifetime: 300
+    particles: 3
+    layer: 100.2
+    cone: 360
+
+    sizeFrom: 4
+    length: 20
+    sizeTo: 2
+
+    colorFrom: 6d56bf30
+    colorTo: 6d56bf00
+        }
+    {
+    type: ParticleEffect
+    lifetime: 320
+    particles: 7
+    layer: 100.1
+    cone: 1
+
+    sizeFrom: 13
+    sizeTo: 9
+    length: 0
+
+    colorFrom: 6d56bf80
+    colorTo: 6d56bf00
+}
+]
     hitSound: explosion
 }
     }
@@ -77,11 +136,12 @@ bullet: {
     y: 0
 
     reload: 60
-
+    shootStatusDuration: 100
+    shootStatus: fast
     shootSound: none
 bullet: {
     type: BasicBulletType
-    rangeOverride: 100
+    rangeOverride: 120
     height: 0
     width: 0
 
