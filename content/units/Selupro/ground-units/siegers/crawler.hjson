@@ -70,11 +70,11 @@ bullet: {
     hittable: false
     collides: false
 
-    buildingDamageMultiplier: 1
+    buildingDamageMultiplier: 1.2
 
     splashDamageRadius: 60
     statusDuration: 90
-    splashDamage: 690
+    splashDamage: 320
     status: blasted
     speed: 0
 
@@ -137,13 +137,13 @@ bullet: {
     x: 0
     y: 0
 
-    reload: 60
+    reload: 100
     shootStatusDuration: 100
     shootStatus: fast
     shootSound: none
 bullet: {
     type: BasicBulletType
-    rangeOverride: 120
+    rangeOverride: 190
     height: 0
     width: 0
 
