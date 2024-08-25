@@ -184,9 +184,10 @@ bullet: {
     x: 0
     y: -7
 
-    targetSwitchInterval: 15
-    targetInterval: 10
-    reload: 4.5
+
+    targetSwitchInterval: 1
+    targetInterval: 1
+    reload: 1.5
 
     shootSound: lasershoot
 bullet: {
@@ -199,6 +200,30 @@ bullet: {
 }
     }
 
+
+{
+    name: orange-bsw
+    type: PointDefenseWeapon
+    mirror: true
+    shadow: 9
+    x: 8
+    y: -4
+
+
+    targetSwitchInterval: 1
+    targetInterval: 1
+    reload: 4.5
+
+    shootSound: lasershoot
+bullet: {
+    maxRange: 130
+
+    damage: 64
+
+    shootEffect: sparkShoot
+    hitEffect: pointHit
+}
+    }
 {
 name: orange-bsw
     
@@ -209,9 +234,11 @@ name: orange-bsw
     x: 6
     y: -27
 
-    targetSwitchInterval: 15
-    targetInterval: 10
-    reload: 6.5
+    rotateSpeed:45
+
+    targetSwitchInterval: 1
+    targetInterval: 3
+    reload: 1.5
 
     shootSound: lasershoot
 bullet: {
@@ -382,6 +409,9 @@ bullet: {
     trailColor: d06b53
     backColor: d06b53
 
+    trailLength: 4
+    trailWidth: 1
+    
     lightColor: d06b53
     lightOpacity: 0.7
     lightRadius: 41.5
@@ -431,7 +461,7 @@ bullet: {
     lifetime: 75
     weaveMag: 1
     drag: 0.003
-    damage: 94
+    damage: 120
     speed: 6.2
 
     despawnEffect: blastExplosion
@@ -440,6 +470,9 @@ bullet: {
     frontColor: ffa665
     trailColor: d06b53
     backColor: d06b53
+
+    trailLength: 8
+    trailWidth: 1
 
     lightColor: d06b53
     lightOpacity: 0.7
