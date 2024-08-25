@@ -40,6 +40,32 @@ shoot: {
     }
 
 bullet: {
+    chargeEffect:[
+   {
+    type: ParticleEffect
+    baseLength: 12
+    length: -6
+    cone: 360
+    particles: 6
+    lifetime: 15
+    sizeFrom: 1.2
+    sizeTo: 0
+    colorFrom: 6d56bf70
+    colorTo: 6d56bf00
+ }
+    {
+    type: ParticleEffect
+    baseLength: 17
+    length: -9
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: 6d56bf70
+    colorTo: 6d56bf00
+}
+    ]
     instantDisappear: true
     collidesTiles: false
     collidesAir: false
@@ -81,43 +107,7 @@ bullet: {
     status: blasted
     speed: 0
 
-    chargeEffect:[
-   /* {
-    type: ParticleEffect
-    baseLength: 12
-    length: -6
-    cone: 360
-    particles: 6
-    lifetime: 15
-    sizeFrom: 1.2
-    sizeTo: 0
-    colorFrom: 6d56bf70
-    colorTo: 6d56bf00
-}
-    {
-    type: ParticleEffect
-    baseLength: 17
-    length: -9
-    cone: 360
-    particles: 3
-    lifetime: 15
-    sizeFrom: 2
-    sizeTo: 0
-    colorFrom: 6d56bf70
-    colorTo: 6d56bf00
-}
-    {
-    type: ParticleEffect
-    length: 0
-    cone: 360
-    particles: 1
-    lifetime: 16
-    sizeFrom: 2
-    sizeTo: 3
-    colorFrom: 6d56b40
-    colorTo: ffffff
-}
-    ]
+    
     hitEffect: [
     pulverize
     {
@@ -147,7 +137,7 @@ bullet: {
 
     colorFrom: 6d56bf30
     colorTo: 6d56bf00
-        }*/
+        }
     {
     type: ParticleEffect
     lifetime: 320
@@ -155,8 +145,8 @@ bullet: {
     layer: 100.1
     cone:360
 
-    sizeFrom: 9
-    sizeTo: 7
+    sizeFrom: 8
+    sizeTo: 4
     length: 0
 
     colorFrom: 6d56bf80
