@@ -1,6 +1,14 @@
 research: steam-generator
 
-powerProduction: 42
+requirements: [
+    lead/250
+    copper/250
+    silicon/110
+    titanium/120
+    metaglass/75
+]
+
+powerProduction: 38
 liquidCapacity: 32
 itemDuration: 120
 itemCapacity: 75
