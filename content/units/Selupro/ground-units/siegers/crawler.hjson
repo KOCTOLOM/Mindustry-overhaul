@@ -82,7 +82,7 @@ bullet: {
     speed: 0
 
     chargeEffect:[
-    {
+   /* {
     type: ParticleEffect
     baseLength: 12
     length: -6
@@ -93,8 +93,6 @@ bullet: {
     sizeTo: 0
     colorFrom: 6d56bf70
     colorTo: 6d56bf00
-    followParent: true
-    rotWithParent: true
 }
     {
     type: ParticleEffect
@@ -107,8 +105,6 @@ bullet: {
     sizeTo: 0
     colorFrom: 6d56bf70
     colorTo: 6d56bf00
-    followParent: true
-    rotWithParent: true
 }
     {
     type: ParticleEffect
@@ -120,8 +116,6 @@ bullet: {
     sizeTo: 3
     colorFrom: 6d56b40
     colorTo: ffffff
-    followParent: true
-    rotWithParent: true
 }
     ]
     hitEffect: [
@@ -153,7 +147,7 @@ bullet: {
 
     colorFrom: 6d56bf30
     colorTo: 6d56bf00
-        }
+        }*/
     {
     type: ParticleEffect
     lifetime: 320
@@ -168,7 +162,7 @@ bullet: {
     colorFrom: 6d56bf80
     colorTo: 6d56bf00
 }
-]
+] 
     hitSound: explosion
 }
     }
