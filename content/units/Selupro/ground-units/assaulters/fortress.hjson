@@ -30,7 +30,7 @@ abilities: [
     y: -9
 
     cooldown: 1080
-    regen: 6.666666
+    regen: 4
     max: 800
 }
     {
@@ -113,12 +113,12 @@ bullet: {
     statusDuration: 300
     splashDamage: 120
     knockback: 4.45
-    pierceCap: 96
+    pierceCap: 4
     lifetime: 163
     speed: 2.4
-    incendAmount: 4
-    incendSpread: 12
-    incendChance: 0.8
+    incendAmount: 8
+    incendSpread: 14
+    incendChance: 1
     hitEffect: blastExplosion
     hitSound: artillery-hit
 
@@ -129,9 +129,8 @@ bullet: {
     trailEffect: artilleryTrail
     trailInterval: 9.5
     trailColor: f9c27a
-    trailLength: 3
-    trailWidth: 1
-    trailSize: 4
+    trailLength: 5
+    trailWidth: 1.4
 
     frontColor: fff8e8
     backColor: f9c27a
