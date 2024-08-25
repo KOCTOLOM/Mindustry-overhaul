@@ -3,10 +3,12 @@ targetAir: false
 stepShake: 0.048
 fogRadius: 5
 
+health: 100
+armor: 5
 itemCapacity: 18
 rotateSpeed: 7.5
 speed: 1.2
-range: 40
+range: 60
 
 lightColor: 665c9f
 lightOpacity: 0.7
