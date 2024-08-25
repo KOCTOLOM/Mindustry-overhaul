@@ -1,5 +1,14 @@
 research: rtg-generator
 
+requirements: [
+    lead/420
+    metaglass/150
+    plastanium/70
+    silicon/220
+    graphite/120
+    thorium/275
+]
+
 powerProduction: 35
 explosionRadius: 24
 health: 2100
