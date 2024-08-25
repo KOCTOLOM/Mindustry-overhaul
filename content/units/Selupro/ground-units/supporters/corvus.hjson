@@ -1,16 +1,13 @@
 research: vela
 alwaysShootWhenMoving: true
-legSplashDamage: 320
+legSplashDamage: 520
 legSplashRange: 26
 stepShake: 10.5
 fogRadius: 128
 
 itemCapacity: 2250
 rotateSpeed: 0.48
-buildSpeed: 1.75
-mineSpeed: 1.25
 health: 68000
-mineTier: 5
 speed: 0.23
 armor: 164
 
@@ -28,7 +25,7 @@ abilities: [
     statusDuration: 750
     healPercent: 3.2
     maxTargets: 32
-    damage: 320
+    damage: 640
     reload: 720
     range: 260
     x: 0
@@ -135,20 +132,20 @@ bullet: {
     length: 930
     width: 70
 	
-	buildingDamageMultiplier: 0.7
+    buildingDamageMultiplier: 0.7
 	
     statusDuration: 1920
     healPercent: 100
     status: melting
     lifetime: 90
     damage: 10000
-	fragOnHit:false
-    lightningLengthRand: 20
-	lightningLength: 10
-    lightningAngleRand: 30
+    fragOnHit:false
+    lightningLengthRand: 10
+    lightningLength: 15
+    lightningAngleRand: 70
     lightningSpacing: 12.5
     lightningDamage: 350
-    lightningDelay: 1.1
+    lightningDelay: 0.7
 
     colors: [ 98ffa9, ffffff ]
     lightningColor: 98ffa9
@@ -275,7 +272,6 @@ effects: [
     type: ParticleEffect
     startDelay: 290
     baseLength: 120
-    line: true
     length: -100
     cone: 360
     particles: 30
@@ -291,28 +287,30 @@ effects: [
     }
 ]
     }
-	despawnEffect:[
-	{
+    despawnEffect:[
+    {
+    startDelay:25
     type: ParticleEffect
     length: 200
     cone: 360
     particles: 90
     lifetime: 300
-    sizeFrom: 2
-    sizeTo: 4
-    colorFrom: 98ffa9
+    sizeFrom: 4
+    sizeTo: 6
+    colorFrom: 98ffa940
     colorTo: 98ffa900
     followParent: true
     rotWithParent: true
 }
 	{
     type: ParticleEffect
-    length: 360
+    startDelay:30
+    length: 240
     cone: 360
-    particles: 120
+    particles: 70
     lifetime: 270
-    sizeFrom: 1
-    sizeTo: 3
+    sizeFrom: 2
+    sizeTo: 5
     colorFrom: 98ffa970
     colorTo: 98ffa900
     followParent: true
@@ -320,13 +318,14 @@ effects: [
 }
 	{
     type: ParticleEffect
-    length: 325
+    startDelay:10
+    length: 120
     cone: 360
-    particles: 120
+    particles: 30
     lifetime: 260
-    sizeFrom: 1
-    sizeTo: 3
-    colorFrom: 98ffa970
+    sizeFrom: 5
+    sizeTo: 9
+    colorFrom: 98ffa930
     colorTo: 98ffa900
     followParent: true
     rotWithParent: true
@@ -334,11 +333,13 @@ effects: [
 	{
     type: ParticleEffect
     length: 270
-    cone: 90
+    cone: 20
+    line:true
+    strokeFrom: 2
+    strokeTo: 2.4 
     particles: 120
     lifetime: 280
-    sizeFrom: 2
-    sizeTo: 4
+    From: 1
     colorFrom: 98ffa9
     colorTo: 98ffa900
     followParent: true
@@ -346,13 +347,14 @@ effects: [
 }
 	{
     type: ParticleEffect
+    startDelay:50
     length: 270
-    cone: 45
+    cone: 360
     particles: 120
     lifetime: 300
     sizeFrom: 1
     sizeTo: 3
-    colorFrom: 98ffa9
+    colorFrom: 98ffa990
     colorTo: 98ffa900
     followParent: true
     rotWithParent: true
@@ -371,42 +373,42 @@ effects: [
     rotWithParent: true
 }
 	]
-	fragRandomSpread: 10
+    fragRandomSpread: 10
     fragVelocityMin: 0.1
-	fragVelocityMax: 1.7
+    fragVelocityMax: 1.7
     fragBullets: 50
     fragLifeMin: 0.1
-	fragLifeMax: 2
-	fragBullet:{
-	type: BasicBulletType
-    sprite: large-orb
-    despawnShake: 4.5
-    hitShake: 4.5
-    shrinkX: 0.0
-    shrinkY: 0.0
-    height: 7.5
-    width: 7.5
+    fragLifeMax: 2
+    fragBullet:{
+        type: BasicBulletType
+        sprite: large-orb
+        despawnShake: 4.5
+        hitShake: 4.5
+        shrinkX: 0.0
+        shrinkY: 0.0
+        height: 7.5
+        width: 7.5
 
-    buildingDamageMultiplier: 1.3
+        buildingDamageMultiplier: 1.3
 
-    splashDamageRadius: 12
-    statusDuration: 180
-    splashDamage: 90
-    homingPower: 0.06
-    homingRange: 60
-    homingDelay: 50
-    status: burning
-    lifetime: 80
-    damage: 180
-    speed: 4
+        splashDamageRadius: 12
+        statusDuration: 180
+        splashDamage: 90
+        homingPower: 0.06
+        homingRange: 60
+        homingDelay: 40
+        status: burning
+        lifetime: 80
+        damage: 180
+        speed: 4
 	pierce:true
 	pierceCap: 2
 	pierceBuilding:true
 	pierceArmor:true
 	
-    smokeEffect: shootBigSmoke
-    shootEffect: shootBigColor
-    despawnEffect: [{
+        smokeEffect: shootBigSmoke
+        shootEffect: shootBigColor
+        despawnEffect: [{
     type: WaveEffect
     sides:4
     rotWithParent: false
@@ -420,7 +422,7 @@ effects: [
     colorTo: 84f491
 }
 	{
-	startDelay:60
+    startDelay:60
     type: WaveEffect
     sides:4
     rotWithParent: false
@@ -434,7 +436,7 @@ effects: [
     colorTo: 84f49100
 }
 ]
-	hitEffect:none
+    hitEffect:none
     hitSound: dullExplosion
 
     lightColor: 84f491
@@ -445,22 +447,22 @@ effects: [
     trailLength: 14
     trailWidth: 2
 	
-	weaveScale: 9
+    weaveScale: 9
     weaveMag: 2
 	
     frontColor: ffffff
     backColor: 84f491
     hitColor: 84f491
-	fragBullets: 1
+    fragBullets: 1
     fragRandomSpread: 0
     fragBullet: {
             type: LaserBulletType
             length: 40
-			width:7
+	    width:7
             damage: 160
             pierceArmor: true
             hitColor: 98ffa9
-			absorbable:false
+	    absorbable:false
             colors: [ 98ffa9, ffffff ]
             collidesAir: true
         }
