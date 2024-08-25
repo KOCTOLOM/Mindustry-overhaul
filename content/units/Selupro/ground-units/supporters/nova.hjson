@@ -1,4 +1,4 @@
-research: ground-factory
+тоresearch: ground-factory
 stepShake: 0.08
 fogRadius: 35
 
@@ -55,7 +55,7 @@ weapons: [
 shoot: {
     firstShotDelay: 75
     shotDelay: 10
-    shots: 2
+    shots: 3
 }
 
 bullet: {
@@ -69,28 +69,13 @@ bullet: {
     healAmount: 32
     pierceCap: 2
     lifetime: 68
-    damage: 41.5
+    damage: 23
     speed: 5
 
     hitEffect: hitBulletColor
 
     frontColor: ffffff
     backColor: 84f491
-
-chargeEffect: {
-    type: WaveEffect
-    rotWithParent: true
-    followParent: true
-    offsetX: 2
-
-    sizeFrom: 7.5
-    sizeTo: 0
-
-    lifetime: 45
-
-    colorFrom: 84f491
-    colorTo: ffffff
-}
     }
 }
     ]
