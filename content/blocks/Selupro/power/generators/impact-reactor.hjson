@@ -8,10 +8,10 @@ requirements: [
     silicon/600
     surge-alloy/300
     phase-fabric/130
-    thorium/750
+    thorium/450
 ]
 
-powerProduction: 460
+powerProduction: 520
 explosionRadius: 32
 liquidCapacity: 240
 itemDuration: 60
