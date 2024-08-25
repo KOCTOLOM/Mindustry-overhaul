@@ -25,9 +25,9 @@ abilities: [
     width: 3
     y: -1.5
 
-    cooldown: 450
-    regen: 2.4
-    max: 18000
+    cooldown: 10
+    regen: 3.2
+    max: 5000
 }
     {
     type: ShieldRegenFieldAbility
@@ -67,7 +67,7 @@ weapons: [
     x: 8.5
     y: 6.5
 
-    reload: 5
+    reload: 2.5
 
     ejectEffect: none
     shootSound: flame
@@ -78,14 +78,14 @@ bullet: {
     hittable: false
     hitSize: 6
 
-    buildingDamageMultiplier: 1.5
-    ammoMultiplier: 18
+    pierceArmor:true
+    buildingDamageMultiplier: 1.25
 
     statusDuration: 300
     status: burning
     pierceCap: 12
     lifetime: 24
-    damage: 52.5
+    damage: 50
     speed: 3
 
     despawnEffect: none
@@ -142,7 +142,7 @@ hitEffect: {
 
     velocityRnd: 0.28
     reload: 270
-	inaccuracy:4
+    inaccuracy:4
     chargeSound: anti-material-rifle-charge
     shootSound: anti-material-rifle-shot
 shoot: {
@@ -157,7 +157,7 @@ bullet: {
     width: 8
 
     pierceCap: 4
-    damage:50
+    damage:65
     drag: 0.05
     speed: 20
     buildingDamageMultiplier: 2
@@ -244,11 +244,11 @@ bullet: {
     length: 120
     width: 0.55
 
-    buildingDamageMultiplier: 0.85
+    buildingDamageMultiplier: 1.35
 
     sapStrength: 0.35
     lifetime: 30
-    damage: 32
+    damage: 30
 
     shootEffect: shootSmall
     despawnEffect: none
@@ -413,7 +413,7 @@ hitEffect: {
     reload: 360
     
     shootStatus: mov-motor-deceleration-tier-2
-    shootStatusDuration: 300
+    shootStatusDuration: 80
     shootSound: rocket-fire
     ejectEffect: casing3
 shoot: {
@@ -426,8 +426,8 @@ shoot: {
         dest: [
             {
             type: ShootPattern
-            shots: 3
-            shotDelay: 6
+            shots: 2
+            shotDelay: 12
             }
     ]
     }
