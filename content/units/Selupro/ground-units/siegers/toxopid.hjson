@@ -4,7 +4,7 @@ rotateSpeed: 0.45
 stepShake: 5.75
 fogRadius: 96
 
-legSplashDamage: 1300
+legSplashDamage: 1500
 legSplashRange: 40
 itemCapacity: 900
 health: 65000
@@ -27,9 +27,9 @@ abilities: [
     width: 5.5
     y: -7
 
-    cooldown: 900
-    regen: 2.5
-    max: 8100
+    cooldown: 1
+    regen: 12
+    max: 12000
 }
     {
     type: ShieldArcAbility
@@ -40,9 +40,9 @@ abilities: [
     width: 5.5
     y: -7
 
-    cooldown: 900
-    regen: 2.5
-    max: 8100
+    cooldown: 1
+    regen: 12
+    max: 12000
 }
     {
     type: RegenAbility
