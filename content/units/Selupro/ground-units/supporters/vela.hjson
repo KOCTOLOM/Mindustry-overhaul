@@ -6,9 +6,7 @@ fogRadius: 30
 itemCapacity: 960
 rotateSpeed: 0.9
 buildSpeed: 0.96
-mineSpeed: 1.5
 health: 27000
-mineTier: 4
 speed: 0.32
 armor: 69
 
@@ -182,8 +180,8 @@ bullet: {
     x: 11
     y: -8
 	
-    inaccuracy: 20
-    reload: 400
+    inaccuracy: 16
+    reload: 320
 
     chargeSound: target-locked-short
     shootSound: artillery-heavy-shot
@@ -194,12 +192,12 @@ shoot: {
     type: ShootSpread
     firstShotDelay: 185
     spread: 0.5
-    shots: 3
+    shots: 2
     }
 	dest: [
 	{
 	type: ShootPattern
-		shots: 3
+		shots: 4
 		shotDelay: 12
 	}
 	]
@@ -209,25 +207,25 @@ bullet: {
     sprite: missile-large
     despawnShake: 12.5
     collidesAir: false
-    scaleLife: true
     hitShake: 12.5
     shrinkY: 0.6
     height: 12
     width: 9
 
+    drag:0.003
     splashDamageRadius: 40
     statusDuration: 300
     status: electrified
-    splashDamage: 145
+    splashDamage: 95
     healPercent: 1.25
     knockback: 0.8
     lifetime: 232
-    damage: 90
+    damage: 130
     speed: 2.5
-	
-	homingPower: 0.03
+
+    homingPower: 0.03
     homingRange: 70
-	homingDelay:30
+    homingDelay:30
 	
     smokeEffect: shootBigSmoke2
     hitSound: bomb-plasma-hit
