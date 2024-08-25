@@ -87,10 +87,6 @@ bullet: {
     chargeSound: boom-crawler
     ejectEffect: none
     shootSound: none
-    shoot: {
-        firstShotDelay: 15
-        shots: 1
-    }
 bullet: {
     instantDisappear: true
     collidesTiles: false
