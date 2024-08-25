@@ -47,6 +47,7 @@ bullet: {
     rangeOverride: 46
     killShooter: true
 }
+}
 {
     shootOnDeath:true
     shootCone: 180
