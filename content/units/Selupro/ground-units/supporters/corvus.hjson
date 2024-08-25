@@ -6,7 +6,7 @@ stepShake: 10.5
 fogRadius: 128
 
 itemCapacity: 2250
-rotateSpeed: 0.48
+rotateSpeed: 0.36
 health: 68000
 speed: 0.23
 armor: 164
@@ -40,7 +40,7 @@ abilities: [
     y: -9
 
     cooldown: 1290
-    regen: 3.2
+    regen: 8
     max: 25000
 }
     {
@@ -110,7 +110,7 @@ bullet: {
     reload: 1860
     recoil: 0
 
-    shootStatusDuration: 360
+    shootStatusDuration: 470
     chargeSound: lasercharge
     shootSound: laserblast
     shootStatus: unmoving
@@ -512,10 +512,10 @@ bullet: {
     buildingDamageMultiplier: 0.75
 
     splashDamageRadius: 26
-    splashDamage: 45
+    splashDamage: 130
     healPercent: 15
     lifetime: 112
-    pierceCap: 2
+    pierceCap: 3
     damage: 170
     speed: 3
 
