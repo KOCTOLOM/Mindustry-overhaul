@@ -1,4 +1,4 @@
-тоresearch: ground-factory
+research: ground-factory
 stepShake: 0.08
 fogRadius: 35
 
@@ -60,8 +60,6 @@ shoot: {
 
 bullet: {
     type: LaserBoltBulletType
-    parentizeEffects: true
-    collideTerrain: true
     collidesTeam: true
 
     pierceDamageFactor: 0.005
@@ -69,7 +67,7 @@ bullet: {
     healAmount: 32
     pierceCap: 2
     lifetime: 68
-    damage: 23
+    damage: 25
     speed: 5
 
     hitEffect: hitBulletColor
