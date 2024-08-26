@@ -153,13 +153,14 @@ shoot: {
 
 bullet: {
     type: BasicBulletType
-    height: 14
-    width: 8
+    sprite: missile-large 
+    height: 13
+    width: 3
 
     pierceCap: 4
     damage:65
-    drag: 0.05
-    speed: 20
+    drag: 0.04
+    speed: 18
     buildingDamageMultiplier: 2
     pierceArmor:true
     
@@ -171,8 +172,8 @@ bullet: {
     lightRadius: 21
 
     trailColor: 6d56bf
-    trailLength: 3.2
-    trailWidth: 1.5
+    trailLength: 6
+    trailWidth: 1
 
     frontColor: bf92f9
     backColor: 6d56bf
