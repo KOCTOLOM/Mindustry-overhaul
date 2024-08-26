@@ -8,7 +8,7 @@ armor: 5
 itemCapacity: 18
 rotateSpeed: 7.5
 speed: 1.2
-range: 60
+range: 46
 
 lightColor: 665c9f
 lightOpacity: 0.7
@@ -101,7 +101,7 @@ bullet: {
 
     buildingDamageMultiplier: 1.2
 
-    splashDamageRadius: 60
+    splashDamageRadius: 46
     statusDuration: 90
     splashDamage: 320
     status: blasted
