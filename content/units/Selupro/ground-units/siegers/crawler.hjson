@@ -8,7 +8,7 @@ armor: 5
 itemCapacity: 18
 rotateSpeed: 7.5
 speed: 1.2
-range: 46
+range: 190
 
 lightColor: 665c9f
 lightOpacity: 0.7
@@ -95,7 +95,7 @@ bullet: {
     instantDisappear: true
     collidesTiles: false
     collidesAir: false
-    rangeOverride: 46
+    rangeOverride: 36
     hittable: false
     collides: false
 
