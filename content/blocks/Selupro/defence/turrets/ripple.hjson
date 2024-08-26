@@ -43,7 +43,7 @@ graphite: {
     collidesTiles: false
     height: 15
     width: 15
-
+    damage:50
     reloadMultiplier: 0.75
     ammoMultiplier: 3
 	
@@ -120,7 +120,7 @@ silicon: {
     collidesTiles: false
     height: 13
     width: 13
-
+    damage:40
     buildingDamageMultiplier: 0.1
     reloadMultiplier: 1.75
     ammoMultiplier: 5
@@ -199,7 +199,7 @@ thorium: {
 	hittable:false
     height: 17.5
     width: 17.5
-
+    damage:30
     buildingDamageMultiplier: 1.5
     reloadMultiplier: 0.5
     ammoMultiplier: 3
@@ -271,7 +271,7 @@ blast-compound: {
     collidesTiles: false
     height: 14
     width: 14
-
+    damage:120
     buildingDamageMultiplier: 0.3
     reloadMultiplier: 0.65
     ammoMultiplier: 2
@@ -395,7 +395,7 @@ plastanium: {
     height: 13
     width: 13
 	
-
+    damage:30
 	buildingDamageMultiplier: 0.1
     reloadMultiplier: 0.8
     ammoMultiplier: 3
