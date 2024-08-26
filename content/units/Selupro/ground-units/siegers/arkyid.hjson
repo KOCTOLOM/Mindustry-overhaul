@@ -230,6 +230,7 @@ despawnEffect: [
     name: spiroct-weapon
     controllable: false
     rotationLimit: 45
+    shootcone:35
     autoTarget: true
     rotate: true
     x: 4
@@ -267,6 +268,7 @@ bullet: {
     name: spiroct-weapon
     controllable: false
     rotationLimit: 60
+    shootcone:35
     autoTarget: true
     rotate: true
     x: 9
@@ -304,6 +306,7 @@ bullet: {
     name: spiroct-weapon
     controllable: false
     rotationLimit: 80
+    shootcone:35
     autoTarget: true
     rotate: true
     x: 14
@@ -352,21 +355,21 @@ bullet: {
     y: -7
 
     cooldownTime: 120
-    reload: 81
+    reload: 40
 
     shootSound: scanning
 bullet: {
     type: SapBulletType
     collidesGround: false
     length: 384
-    width: 0.75
+    width: 0.5
 
     status: mov-damage-reduction-tier-2
-    statusDuration: 90
-    sapStrength: 0.5
+    statusDuration: 120
+    sapStrength: 1.5
     knockback: -1
-    lifetime: 40
-    damage: 96
+    lifetime: 20
+    damage: 60
 
     shootEffect: shootSmall
     despawnEffect: none
