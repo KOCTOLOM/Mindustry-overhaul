@@ -6,7 +6,7 @@ range: 600
 
 itemCapacity: 1600
 rotateSpeed: 0.75
-health: 68000
+health: 76000
 speed: 0.21
 armor: 196
 
@@ -22,7 +22,7 @@ immunities: [ overclock, burning, melting, wet, blasted, shocked, mov-air-specia
 abilities: [
     {
     type: ShieldRegenFieldAbility
-    reload: 1440
+    reload: 640
     amount: 3000
     max: 10000
     range: 0
