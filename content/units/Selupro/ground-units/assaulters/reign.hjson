@@ -96,7 +96,7 @@ bullet: {
     ejectEffect: none
     shootSound: flame
 bullet: {
-    type: BulletType
+    type: BasicBulletType
     pierceBuilding: true
     keepVelocity: false
     collidesAir: false
