@@ -501,12 +501,12 @@ bullet: {
     sprite:missile-large
     keepVelocity: false
     despawnShake: 15
-    hitShake: 15
-    shrinkX: 0.3
-    shrinkY: 0.6
+    hitShake: 6
+    shrinkX: 0
+    shrinkY: 0
     pierce: true
-    height: 11
-    width: 11
+    height: 18
+    width: 4
      
     suppressionEffectChance: 1
     suppressionDuration: 120
@@ -517,7 +517,7 @@ bullet: {
     lightningDamage: 21
     lightningLength: 5
     homingPower: 0.03
-    splashDamage: 45
+    splashDamage: 200
     homingRange: 55
     weaveScale: 5
     pierceCap: 40
@@ -608,11 +608,11 @@ bullet: {
     despawnShake: 15
     absorbable: true
     hittable: false
-    hitShake: 15
-    shrinkX: 0.3
-    shrinkY: 0.6
-    height: 11
-    width: 11
+    hitShake: 6
+    shrinkX: 0
+    shrinkY: 0
+    height: 18
+    width: 4
     
     buildingDamageMultiplier:0.6
     
