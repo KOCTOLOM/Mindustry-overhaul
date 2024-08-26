@@ -7,7 +7,7 @@ lightningChance: 0.6
 lightningDamage: 24
 lightningLength: 24
 health: 7200
-armor: 5
+armor: 25
 
 requirements: [
     surge-alloy/24
