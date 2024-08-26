@@ -497,7 +497,8 @@ dest: [
     }
 
 bullet: {
-    type: MissileBulletType
+    type: BasicBulletType
+    sprite:missile-large
     keepVelocity: false
     despawnShake: 15
     hitShake: 15
@@ -507,15 +508,14 @@ bullet: {
     height: 11
     width: 11
      
-    suppressionEffectChance: 100
-    suppressionDuration: 300
-    suppressionRange: 40
+    suppressionEffectChance: 1
+    suppressionDuration: 120
+    suppressionRange: 90
     
     buildingDamageMultiplier: 0.7
     splashDamageRadius: 16
     lightningDamage: 21
     lightningLength: 5
-    collidesTeam: true
     homingPower: 0.03
     splashDamage: 45
     homingRange: 55
@@ -537,10 +537,32 @@ bullet: {
 
     lightningColor: ffffff
     trailColor: bf92f9
-    trailInterval: 15
-
+    trailLength:12
+    trailWidth:1
     frontColor: ffffff
     backColor: bf92f9
+    fragBullets: 3
+    fragRandomSpread:10
+    fragBullet: {
+    type: ShrapnelBulletType
+    length: 60
+    width: 6
+
+    buildingDamageMultiplier: 2
+    lifetime:20
+    serrationSpaceOffset: 2
+    serrationFadeOffset: 0
+    serrationLenScl: 3
+    serrationWidth: 2
+    serrations: 6
+    damage: 60
+    pierceArmor:true
+    shootEffect: none 
+    smokeEffect: none
+
+    fromColor: bf92f9
+    toColor: 6d56bf
+}
 }
     }
 
@@ -580,7 +602,8 @@ dest: [
     }
 
 bullet: {
-    type: MissileBulletType
+    type: BasicBulletType
+    sprite:missile-large
     keepVelocity: false
     despawnShake: 15
     absorbable: true
@@ -608,8 +631,8 @@ bullet: {
     drag: 0.003
 
     suppressionEffectChance: 1
-    suppressionDuration: 300
-    suppressionRange: 40
+    suppressionDuration: 200
+    suppressionRange: 70
     
     despawnEffect: blastExplosion
     hitEffect: blastExplosion
@@ -620,10 +643,33 @@ bullet: {
 
     lightningColor: ffffff
     trailColor: bf92f9
-    trailInterval: 15
+    trailLength:12
+    trailWidth:1
 
     frontColor: ffffff
     backColor: bf92f9
+    fragBullets: 5
+    fragRandomSpread:20
+    fragBullet: {
+    type: ShrapnelBulletType
+    length: 40
+    width: 6
+
+    buildingDamageMultiplier: 2
+    lifetime:20
+    serrationSpaceOffset: 2
+    serrationFadeOffset: 0
+    serrationLenScl: 3
+    serrationWidth: 2
+    serrations: 6
+    damage: 40
+    pierceArmor:true
+    shootEffect: none 
+    smokeEffect: none
+
+    fromColor: bf92f9
+    toColor: 6d56bf
+}
 }
     }
 
