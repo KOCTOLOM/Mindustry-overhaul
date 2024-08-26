@@ -131,17 +131,17 @@ bullet: {
     height: 11
     width: 11
 
-    splashDamageRadius: 40
+    splashDamageRadius: 20
     lightningDamage: 12.5
     lightningLength: 5
     splashDamage: 32
     homingPower: 0.1
     homingRange: 180
-    lifetime: 155
+    lifetime: 125
     lightning: 3
-    damage: 48
-    speed: 2.5
-    drag: 0.01
+    damage: 28
+    speed: 2.25
+    drag: 0.005
 
     despawnEffect: none
 
