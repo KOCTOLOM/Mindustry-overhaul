@@ -36,8 +36,11 @@ weapons: [
 
     ejectEffect: none
     shootSound: none
+
+    chargeSound: boom-crawler
+
 shoot: {
-    firstShotDelay: 70
+    firstShotDelay: 15
     shots: 1
     }
 
@@ -86,7 +89,6 @@ bullet: {
 
     reload: 1
 
-    chargeSound: boom-crawler
     ejectEffect: none
     shootSound: none
 bullet: {
@@ -165,8 +167,8 @@ bullet: {
     x: 0
     y: 0
 
-    reload: 100
-    shootStatusDuration: 100
+    reload: 1200
+    shootStatusDuration: 80
     shootStatus: fast
     shootSound: none
 bullet: {
@@ -182,7 +184,19 @@ bullet: {
     despawnEffect: none
     smokeEffect: none
     shootEffect: none
-    hitEffect: none
+    hitEffect:[
+   {
+    type: ParticleEffect
+    baseLength: 20
+    length: -20
+    cone: 360
+    particles: 8
+    lifetime: 15
+    sizeFrom: 1.2
+    sizeTo: 1
+    colorFrom: 6d56bf70
+    colorTo: 6d56bf00
+ }]
     }
 }
     ]
