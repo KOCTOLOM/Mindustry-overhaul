@@ -123,7 +123,7 @@ bullet: {
 
     velocityRnd: 0.45
     inaccuracy: 30
-    reload: 360
+    reload: 470
 
     shootStatus: mov-motor-deceleration-tier-1
     chargeSound: target-locked-short
@@ -153,15 +153,15 @@ bullet: {
     splashDamageRadius: 40
     statusDuration: 180
     lightningDamage: 9
-    lightningLength: 7
-    homingPower: 0.18
+    lightningLength: 4
+    homingPower: 0.06
     splashDamage: 75
-    homingRange: 360
-    lifetime: 250
+    homingRange: 60
+    lifetime: 200
     lightning: 4
-    speed: 3.25
-    damage: 81
-    drag: 0.01
+    speed: 2.75
+    damage: 42
+    drag: 0.005
 
     despawnEffect: none
 
@@ -173,7 +173,7 @@ bullet: {
     trailInterp: slope
     trailColor: bf92f9
     trailInterval: 15
-    trailLength: 48
+    trailLength: 8
     trailWidth: 2
     trailSize: 2
 
@@ -184,7 +184,7 @@ bullet: {
 hitEffect: {
     type: ExplosionEffect
 
-    lifetime: 48
+    lifetime: 60
 
     waveColor: bf92f9
     waveStroke: 3.2
@@ -192,8 +192,8 @@ hitEffect: {
 
     smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 14.5
-    smokes: 7
+    smokeSize: 6.5
+    smokes: 5
 
     sparkColor: bf92f9
     sparkStroke: 1.8
