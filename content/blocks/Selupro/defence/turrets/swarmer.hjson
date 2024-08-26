@@ -1,16 +1,16 @@
 research: parallax
 consumeAmmoOnce: true
 targetGround: false
-rotateSpeed: 3.2
+rotateSpeed: 4.4
 shootY: 4.5
 
-buildCostMultiplier: 1.6892
+buildCostMultiplier: 2
 coolantMultiplier: 1
 
-ammoPerShot: 2
+ammoPerShot: 4
 inaccuracy: 12
 maxAmmo: 108
-reload: 40
+reload: 54
 health: 960
 range: 440
 armor: 5
@@ -76,9 +76,9 @@ blast-compound: {
     homingRange: 180
     status: blasted
     knockback: 2.8
-    lifetime: 126
+    lifetime: 63
     damage: 190
-    speed: 3.5
+    speed: 7
 	
 	pierceArmor:true
 	
@@ -138,10 +138,10 @@ pyratite: {
     splashDamage: 44
     knockback: 0.08
     status: burning
-    lifetime: 104
-    speed: 4.25
+    lifetime: 52
+    speed: 8.5
     damage: 125
-	homingDelay: 30
+	   homingDelay: 30
     hitSound: rocket-hit
 
     lightColor: ffaa5f
@@ -198,12 +198,12 @@ surge-alloy: {
     splashDamage: 0
     knockback: 0.15
     pierceCap: 2
-    lifetime: 60
+    lifetime: 30
     lightning: 3
     damage: 80
-    speed: 10
-	homingDelay: 10
-	pierceArmor:true
+    speed: 20
+	   homingDelay: 5
+    pierceArmor:true
 	
     hitSound: rocket-hit
 
@@ -240,11 +240,11 @@ surge-alloy: {
     }
     hitEffect: {
     type: WaveEffect
-	sides:4
-	rotation:45
+	  sides:4
+
     lifetime: 30
     sizeFrom: 0
-    sizeTo: 40
+    sizeTo: 30
     strokeFrom: 0
     strokeTo: 5
     colorFrom: fcf387
@@ -273,9 +273,9 @@ titanium: {
     splashDamage: 40
     homingRange: 30
     knockback: 0.5
-    lifetime: 127.5
+    lifetime: 85
     damage: 40
-    speed: 4
+    speed: 6
 	
 	pierceArmor:true
 	
@@ -332,9 +332,9 @@ plastanium: {
     knockback: 0.25
     fragBullets: 4
     pierceCap: 2
-    lifetime: 127
+    lifetime: 64
     damage: 40
-    speed: 3.8
+    speed: 7.6
 	
     pierceArmor:true
 	
