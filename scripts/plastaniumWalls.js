@@ -9,17 +9,17 @@ var plastWallBullet = extend(ShrapnelBulletType, {
 	hitColor: Pal.plastaniumFront,
 });
 
-const NotPlastWall = extend(Wall, "not-plast-wall", {
-    requirements: ItemStack.with(Items.plastanium, 6, Items.metaglass, 8),
+const ReinfPlastWall = extend(Wall, "reinf-plast-wall", {
+    requirements: ItemStack.with(Items.plastanium, 15, Items.metaglass, 25, Items.surgeAlloy, 15),
     category: Category.defense,
-    health: 125,
+    health: 1700,
     insulated: true,
     absorbLasers: true,
     schematicPriority: 10,
     buildVisibility: BuildVisibility.shown
 });
 
-NotPlastWall.buildType = () => extend(Wall.WallBuild, NotPlastWall, {
+ReinfPlastWall.buildType = () => extend(Wall.WallBuild, ReinfPlastWall, {
     cooldown: 0,
     collision(bullet){
         this.super$collision(bullet);
@@ -36,10 +36,10 @@ NotPlastWall.buildType = () => extend(Wall.WallBuild, NotPlastWall, {
     }
 });
 
-const NotPlastWallLarge = extend(Wall, "not-plast-wall-large", {
-    requirements: ItemStack.mult(NotPlastWall.requirements, 4),
+const ReinfPlastWallLarge = extend(Wall, "reinf-plast-wall-large", {
+    requirements: ItemStack.mult(ReinfPlastWall.requirements, 4),
     category: Category.defense,
-    health: 125 * 4,
+    health: 1700 * 4,
     insulated: true,
     absorbLasers: true,
     schematicPriority: 10,
@@ -47,7 +47,7 @@ const NotPlastWallLarge = extend(Wall, "not-plast-wall-large", {
     size: 2
 });
 
-NotPlastWallLarge.buildType = () => extend(Wall.WallBuild, NotPlastWallLarge, {
+ReinfPlastWallLarge.buildType = () => extend(Wall.WallBuild, ReinfPlastWallLarge, {
     cooldown: 0,
     collision(bullet){
         this.super$collision(bullet);
