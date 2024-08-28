@@ -2,13 +2,13 @@ research: ground-factory
 targetAir: false
 stepShake: 0.048
 fogRadius: 5
-
+faceTarget: false
 health: 100
 armor: 5
 itemCapacity: 18
 rotateSpeed: 7.5
 speed: 1.2
-range: 190
+range: 24
 
 lightColor: 665c9f
 lightOpacity: 0.7
@@ -26,7 +26,7 @@ abilities: [
 
 weapons: [
 {
-    shootCone: 120
+    shootCone: 180
     mirror: false
     shootY: 0
     x: 0
@@ -40,7 +40,7 @@ weapons: [
     chargeSound: boom-crawler
 
 shoot: {
-    firstShotDelay: 15
+    firstShotDelay: 40
     shots: 1
     }
 
@@ -74,7 +74,7 @@ bullet: {
     instantDisappear: true
     collidesTiles: false
     collidesAir: false
-    rangeOverride: 46
+    rangeOverride: 24
     killShooter: true
 }
 }
@@ -160,6 +160,8 @@ bullet: {
 {
     shootCone: 360
     display: false
+    controllable: false
+    autoTarget:true
     mirror: false
     rotate: true
     shootX: 0
@@ -168,7 +170,7 @@ bullet: {
     y: 0
 
     reload: 1200
-    shootStatusDuration: 80
+    shootStatusDuration: 180
     shootStatus: fast
     shootSound: none
 bullet: {

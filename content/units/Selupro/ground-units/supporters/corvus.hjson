@@ -363,8 +363,8 @@ effects: [
     type: ParticleEffect
     length: 350
     cone: 20
-    particles: 70
-    lifetime: 340
+    particles: 50
+    lifetime: 270
     sizeFrom: 1
     sizeTo: 3
     colorFrom: 98ffa9
@@ -401,25 +401,25 @@ effects: [
         lifetime: 80
         damage: 180
         speed: 4
-	pierce:true
-	pierceCap: 2
-	pierceBuilding:true
-	pierceArmor:true
+    	pierce:true
+      	pierceCap: 2
+	    pierceBuilding:true
+	    pierceArmor:true
 	
         smokeEffect: shootBigSmoke
         shootEffect: shootBigColor
         despawnEffect: [{
-    type: WaveEffect
-    sides:4
-    rotWithParent: false
-    followParent: false
-    sizeFrom: 0
-    sizeTo: 20
+            type: WaveEffect
+            sides:4
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 20
 	
-    lifetime: 60
+            lifetime: 60
 
-    colorFrom: 84f491
-    colorTo: 84f491
+            colorFrom: 84f491
+            colorTo: 84f491
 }
 	{
     startDelay:60
@@ -458,11 +458,11 @@ effects: [
     fragBullet: {
             type: LaserBulletType
             length: 40
-	    width:7
+	        width:7
             damage: 160
             pierceArmor: true
             hitColor: 98ffa9
-	    absorbable:false
+	        absorbable:false
             colors: [ 98ffa9, ffffff ]
             collidesAir: true
         }
@@ -730,37 +730,38 @@ shoot: {
     type: ShootAlternate
     shotDelay: 3
     barrels: 3
-    spread: 4
+    spread: 3.5
     shots: 24
     }
 
 bullet: {
-    type: MissileBulletType
+    type: BasicBulletType
+    sprite:missile
     keepVelocity: false
     collidesTeam: true
     despawnShake: 11
     hitShake: 11
     shrinkX: 0
     shrinkY: 0
-    height: 8
-    width: 8
+    height: 10
+    width: 4
 
     buildingDamageMultiplier: 1.25
 
     splashDamageRadius: 26
     statusDuration: 180
     status: electrified
-    homingPower: 0.04
-    splashDamage: 52
+    homingPower: 0.05
+    splashDamage: 122
     homingRange: 80
-    homingDelay: 30
-    healPercent: 7
+    homingDelay: 50
+    healPercent: 4
     weaveScale: 4
-    lifetime: 350
-    drag: -0.001
+    lifetime: 370
+    drag: -0.003
     weaveMag: 3
-    speed: 1.55
-    damage: 200
+    speed: 1.25
+    damage: 150
 
     hitEffect: none
 
@@ -769,7 +770,8 @@ bullet: {
     lightRadius: 41
 
     trailColor: 62ae7f
-    trailInterval: 15
+    trailLength:9
+    trailWidth:1.5
 
     frontColor: ffffff
     backColor: 62ae7f

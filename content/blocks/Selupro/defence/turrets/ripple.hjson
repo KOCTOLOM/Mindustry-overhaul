@@ -494,16 +494,16 @@ spore-pod: {
 despawnEffect: {
     type: ExplosionEffect
 
-    lifetime: 180
+    lifetime: 120
 
     waveColor: 7457ce
-    waveStroke: 5
+    waveStroke: 4
     waveRad: 130
 
-    smokeColor: 9e78dc
+    smokeColor: 9e78dc70
     smokeSizeBase: 0
-    smokeSize: 32.5
-    smokes: 9
+    smokeSize: 5.5
+    smokes: 12
 
     sparkColor: 7457ce
     sparkStroke: 0
@@ -519,7 +519,7 @@ fragBullet: {
     height: 0
     width: 0
 
-    splashDamageRadius: 60
+    splashDamageRadius: 40
     status: spore-slowed
     statusDuration: 450
     splashDamage: 0
@@ -542,16 +542,16 @@ fragBullet: {
 hitEffect: {
     type: ExplosionEffect
 
-    lifetime: 160
+    lifetime: 60
 
     waveColor: 7457ce
-    waveStroke: 3.2
-    waveRad: 75
+    waveStroke: 2.2
+    waveRad: 60
 
     smokeColor: 9e78dc
     smokeSizeBase: 0
-    smokeSize: 27.5
-    smokes: 6
+    smokeSize: 3.5
+    smokes: 5
 
     sparkColor: 7457ce
     sparkStroke: 0
