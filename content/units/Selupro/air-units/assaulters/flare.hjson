@@ -2,7 +2,7 @@ research: air-factory
 circleTarget: true
 faceTarget: false
 fogRadius: 23.5
-range: 192
+range: 174
 
 strafePenalty: 0
 itemCapacity: 24
@@ -41,7 +41,7 @@ weapons: [
     x: 3.75
     y: 2.25
 
-    reload: 5
+    reload: 7
 
     shootSound: machine-gun-shot-3
     ejectEffect: casing1
@@ -55,8 +55,8 @@ bullet: {
     ammoMultiplier: 5
 
     status: naval-specialization
-    statusDuration: 90
-    lifetime: 64
+    statusDuration: 10
+    lifetime: 58
     damage: 12.5
     speed: 3
     
