@@ -97,7 +97,6 @@ bullet: {
 
 {
     name: corvus-weapon
-    parentizeEffects: true
     soundPitchMin: 1
     inaccuracy: 0
     mirror: false
@@ -121,7 +120,6 @@ shoot: {
 
 bullet: {
     type: LaserBulletType
-    parentizeEffects: true
     collidesTeam: true
     despawnShake: 21
     largeHit: true

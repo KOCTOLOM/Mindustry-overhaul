@@ -5,7 +5,7 @@ stepShake: 8.75
 fogRadius: 34.5
 
 itemCapacity: 9600
-health: 31000
+health: 28000
 speed: 0.35
 armor: 96
 
@@ -33,7 +33,7 @@ abilities: [
 }
     {
     type: ArmorPlateAbility
-    healthMultiplier: 0.2
+    healthMultiplier: 0.1
 }
     {
     type: RegenAbility

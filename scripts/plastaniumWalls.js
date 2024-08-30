@@ -1,8 +1,8 @@
 var plastWallBullet = extend(ShrapnelBulletType, {
-	damage: 220,
-	lifetime: 35,
+	damage: 120,
+	lifetime: 25,
 	width: 5,
-      serrations: 4,
+    serrations: 3,
 	length: 7,
 	ammoMultiplier: 0,
 	fromColor: Pal.plastaniumFront,

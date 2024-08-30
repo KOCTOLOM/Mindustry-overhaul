@@ -174,7 +174,7 @@ bullet: {
     shake: 5
     x: 21.5
     y: 1
-	
+	predictTarget: false
     reload: 27
 	inaccuracy:2
 	velocityRnd:0.03
