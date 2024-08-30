@@ -155,7 +155,7 @@ bullet: {
     splashDamage: 32
     homingRange: 5
     healAmount: 40
-    lifetime: 140
+    lifetime: 170
     damage: 48
     drag: 0.02
     speed: 4
@@ -188,7 +188,7 @@ bullet: {
     x: 2
     y: -4.5
 
-    repairSpeed: 0.25
+    repairSpeed: 0.15
     beamWidth: 0.6
 
 bullet: {

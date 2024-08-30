@@ -339,11 +339,11 @@ bullet: {
     splashDamageRadius: 40
     statusDuration: 300
     status: electrified
-    splashDamage: 95
+    splashDamage: 65
     healPercent: 1.25
     knockback: 0.8
     lifetime: 180
-    damage: 130
+    damage: 90
     speed: 2.5
 
     homingPower: 0.014

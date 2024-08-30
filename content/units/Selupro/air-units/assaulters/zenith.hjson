@@ -203,8 +203,8 @@ hitEffect: {
 
     smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 14.5
-    smokes: 7
+    smokeSize: 12.5
+    smokes: 6
 
     sparkColor: ffaa5f
     sparkStroke: 1.8

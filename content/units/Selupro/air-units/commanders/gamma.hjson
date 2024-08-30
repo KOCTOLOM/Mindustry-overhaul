@@ -22,8 +22,8 @@ immunities: [ mov-ground-specialization, mov-naval-specialization ]
 abilities: [
     {
     type: ShieldRegenFieldAbility
-    reload: 75
-    amount: 15
+    reload: 150
+    amount: 45
     range: 0
     max: 90
 }

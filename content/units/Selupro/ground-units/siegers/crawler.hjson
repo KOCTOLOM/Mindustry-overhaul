@@ -106,8 +106,25 @@ bullet: {
     splashDamage: 320
     status: blasted
     speed: 0
+    fragBullets:1
+    fragBullet:
+    {
+        instantDisappear: true
+        collidesTiles: false
+        collidesAir: true
+        collidesGround:false
+        hittable: false
+        collides: false
 
-    
+        buildingDamageMultiplier: 0
+
+        splashDamageRadius: 23
+        statusDuration: 90
+        splashDamage: 120
+        status: blasted
+        speed: 0
+    }
+
     hitEffect: [
     pulverize
     {
