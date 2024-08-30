@@ -114,8 +114,8 @@ bullet: {
     splashDamage: 120
     knockback: 4.45
     pierceCap: 4
-    lifetime: 163
-    speed: 2.4
+    lifetime: 81.5
+    speed: 4.8
     incendAmount: 8
     incendSpread: 14
     incendChance: 1
