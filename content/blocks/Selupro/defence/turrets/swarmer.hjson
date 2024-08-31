@@ -10,7 +10,7 @@ coolantMultiplier: 1
 ammoPerShot: 4
 inaccuracy: 12
 maxAmmo: 108
-reload: 54
+reload: 58
 health: 960
 range: 440
 armor: 5
@@ -186,7 +186,7 @@ surge-alloy: {
 
     reloadMultiplier: 1.2
     ammoMultiplier: 4
-    rangeChange: 160
+    rangeChange: 80
 
     splashDamageRadius: 0
     lightningLength: 12.5
@@ -198,11 +198,11 @@ surge-alloy: {
     splashDamage: 0
     knockback: 0.15
     pierceCap: 2
-    lifetime: 30
+    lifetime: 26
     lightning: 3
     damage: 80
     speed: 20
-	   homingDelay: 5
+	homingDelay: 5
     pierceArmor:true
 	
     hitSound: rocket-hit

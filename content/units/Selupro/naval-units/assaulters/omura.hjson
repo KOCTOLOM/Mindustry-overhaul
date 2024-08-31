@@ -6,6 +6,82 @@ health: 145000
 speed: 0.2
 armor: 35
 
+deathExplosionEffect: [
+    {
+        type: ExplosionEffect
+        waveRad: 0
+        sparks: 46
+        sparkLen: 16
+        sparkColor: 83a4ff
+        sparkStroke: 3
+        sparkRad: 124
+        smokes: 24
+        smokeColor: 83a4ff85
+        smokeSize: 14
+        smokeRad: 64
+        lifetime: 120
+    }
+     {
+        type: ParticleEffect
+        length: 70
+        cone: 360
+        particles: 20
+        lifetime: 360
+        sizeFrom: 20
+        sizeTo: 15
+        colorFrom: 83a4ff0f
+        colorTo: 83a4ff00
+    }
+    {
+        type: WaveEffect
+        sides: 26
+        lifetime: 120
+        sizeFrom: 0
+        sizeTo: 90
+        strokeFrom: 10
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: a9d8ff40
+        colorTo: a9d8ff00
+    }
+    {
+            type: WaveEffect
+            sides: 16
+            lifetime: 135
+            sizeFrom: 0
+            sizeTo: 50
+            strokeFrom: 10
+            strokeTo: 0
+            layer: 29.5
+            colorFrom: E3A88020
+            colorTo: E3A88000
+    }
+    {
+        type: WaveEffect
+        sides: 0
+        lifetime: 90
+        sizeFrom: 0
+        sizeTo: 130
+        strokeFrom: 10
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: 7191eb
+        colorTo: 7191eb
+    }
+    {
+        type: WaveEffect
+        sides: 0
+        lifetime: 90
+        sizeFrom: 0
+        sizeTo: 110
+        strokeFrom: 10
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: 7191eb
+        colorTo: 7191eb
+    }
+]
+
 abilities: [
     {
     type: RegenAbility

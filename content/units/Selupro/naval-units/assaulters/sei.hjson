@@ -6,6 +6,59 @@ health: 48000
 speed: 0.5
 armor: 89
 
+deathExplosionEffect: [
+    {
+        type: ExplosionEffect
+        waveRad: 0
+        sparks: 32
+        sparkLen: 14
+        sparkColor: 83a4ff
+        sparkStroke: 2.4
+        sparkRad: 84
+        smokes: 17
+        smokeColor: 83a4ff85
+        smokeSize: 12
+        smokeRad: 46
+        lifetime: 130
+    }
+    {
+        type: WaveEffect
+        sides: 16
+        lifetime: 140
+        sizeFrom: 0
+        sizeTo: 50
+        strokeFrom: 10
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: E3A88080
+        colorTo: E3A88040
+    }
+    {
+        type: WaveEffect
+        sides: 0
+        lifetime: 90
+        sizeFrom: 0
+        sizeTo: 90
+        strokeFrom: 10
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: 7191eb
+        colorTo: 7191eb
+    }
+    {
+        type: WaveEffect
+        sides: 0
+        lifetime: 90
+        sizeFrom: 0
+        sizeTo: 70
+        strokeFrom: 10
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: 7191eb
+        colorTo: 7191eb
+    }
+]
+
 healColor: b0bac0
 
 immunities: [ spore-slowed, burning, melting, blasted, shocked, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-2 ]

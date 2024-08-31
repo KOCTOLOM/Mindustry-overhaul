@@ -7,7 +7,7 @@ buildCostMultiplier: 1.8
 
 health: 550
 range: 270
-damage: 2.0
+damage: 2.4
 armor: 2
 
 consumes: {

@@ -203,4 +203,113 @@ hitEffect: {
 }
     }
 }
+{
+    controllable: false
+    shootOnDeath: true
+    alternate: false
+    shootCone: 360
+    alternate: false
+    mirror: false
+    recoil: 0
+    x: 0
+    y: 0
+
+    reload: 0
+
+    shootSound: bomb-plasma-hit
+bullet: {
+    type: BasicBulletType
+    collide:true
+    hittable: false
+    absorbable:false
+    reflectable: false
+    height: 0
+    width: 0
+
+    splashDamageRadius: 40
+    splashDamage: 80
+    status: spore-slowed
+    statusDuration: 800
+    lifetime: 15
+    damage: 0
+    speed: 0
+    shootEffect:[
+        {
+        type: ExplosionEffect
+        waveRad: 50
+        waveLife: 120
+        waveColor: bf92f9
+        sparks: 8
+        sparkLen: 4.5
+        sparkStroke: 1.1
+        sparkColor: bf92f9
+        sparkRad: 50
+        smokes: 3
+    }
+        {
+        startDelay:20
+        type: WaveEffect
+        sides: 0
+        sizeFrom: 0
+        sizeTo: 60
+        lifetime: 65
+        colorFrom: bf92f9
+        colorTo: bf92f900
+    }
+        {
+        type: ParticleEffect
+        particles: 45
+        cone: 360
+        length: 60
+        lifetime: 120
+        sizeFrom: 2
+        sizeTo: 4
+        layer:100.2
+        colorFrom: bf92f9
+        colorTo: bf92f900
+        interp: swingOut
+    }
+        {
+        type: ParticleEffect
+        startDelay:20
+        particles: 15
+        cone: 360
+        length: 70
+        lifetime: 90
+        sizeFrom: 1
+        sizeTo: 2
+        layer:100.3
+        colorFrom: bf92f9
+        colorTo: bf92f900
+        interp: swingOut
+    }
+        {
+        type: ParticleEffect
+        particles: 45
+        startDelay:40
+        cone: 360
+        length: 90
+        lifetime: 90
+        sizeFrom: 1
+        sizeTo: 3
+        layer:100.2
+        colorFrom: bf92f950
+        colorTo: bf92f900
+    }
+        {
+        type: ParticleEffect
+        startDelay:70
+        particles: 20
+        cone: 360
+        length: 60
+        lifetime: 160
+        sizeFrom: 3
+        sizeTo: 6
+        layer:100.1
+        colorFrom: bf92f930
+        colorTo: bf92f900
+    }
+        ]
+    }
+}
     ]

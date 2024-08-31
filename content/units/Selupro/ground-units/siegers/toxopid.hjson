@@ -692,7 +692,7 @@ bullet: {
     height: 0
     width: 0
 
-    splashDamageRadius: 200
+    splashDamageRadius: 240
     splashDamage: 3200
     lifetime: 65
     damage: 0
@@ -1032,8 +1032,8 @@ bullet: {
     height: 0
     width: 0
 
-    splashDamageRadius: 80
-    splashDamage: 2000
+    splashDamageRadius: 120
+    splashDamage: 3000
     lifetime: 60
     damage: 0
     speed: 0
@@ -1057,7 +1057,7 @@ bullet: {
     height: 0
     width: 0
 
-    splashDamageRadius: 40
+    splashDamageRadius: 80
     splashDamage: 8000
     lifetime: 55
     damage: 0

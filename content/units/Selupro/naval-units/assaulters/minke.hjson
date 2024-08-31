@@ -11,6 +11,59 @@ lightColor: fff8e8
 lightOpacity: 0.7
 lightRadius: 75
 
+deathExplosionEffect: [
+    {
+        type: ExplosionEffect
+        waveRad: 0
+        sparks: 7
+        sparkLen: 4
+        sparkColor: 83a4ff
+        sparkStroke: 1.7
+        sparkRad: 27
+        smokes: 7
+        smokeColor: 83a4ff85
+        smokeSize: 5
+        smokeRad: 22
+        lifetime: 120
+    }
+    {
+        type: WaveEffect
+        sides: 6
+        lifetime: 140
+        sizeFrom: 0
+        sizeTo: 16
+        strokeFrom: 5
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: E3A88080
+        colorTo: E3A88040
+    }
+    {
+        type: WaveEffect
+        sides: 0
+        lifetime: 90
+        sizeFrom: 0
+        sizeTo: 27
+        strokeFrom: 8
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: 7191eb60
+        colorTo: 7191eb00
+    }
+    {
+        type: WaveEffect
+        sides: 0
+        lifetime: 90
+        sizeFrom: 0
+        sizeTo: 25
+        strokeFrom: 8
+        strokeTo: 0
+        layer: 29.5
+        colorFrom: 7191eb60
+        colorTo: 7191eb00
+    }
+]
+
 immunities: [ spore-slowed, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-1 ]
 
 weapons: [
