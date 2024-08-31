@@ -6,9 +6,7 @@ fogRadius: 30
 itemCapacity: 960
 rotateSpeed: 0.9
 buildSpeed: 0.96
-mineSpeed: 1.5
 health: 27000
-mineTier: 4
 speed: 0.32
 armor: 69
 
@@ -73,7 +71,7 @@ bullet: {
     shake: 8
     x: 0
     y: 0
-
+    predictTarget: false
     cooldownTime: 700
     reload: 750
 
@@ -93,8 +91,8 @@ bullet: {
     hitShake: 4.5
     length: 320
     shake: 5.5
-	
-	buildingDamageMultiplier: 0.4
+	rangeOverride: 320
+	buildingDamageMultiplier: 0.6
 	
     statusDuration: 450
     incendChance: 1.5
@@ -103,7 +101,7 @@ bullet: {
     incendAmount: 5
     status: melting
     lifetime: 485
-    damage: 270
+    damage: 210
 
     despawnEffect: smokeCloud
     hitEffect: hitMeltHeal
@@ -127,6 +125,128 @@ chargeEffect: {
     colorTo: ffffff
     }
 }
+    }
+{
+    name: vela-sec-weapon
+    parentizeEffects: true
+    rotationLimit: 0.25
+    mirror: false
+    rotate: true
+    shootY: 14
+    top: false
+    recoil: 0
+    shake: 8
+    x: 0
+    y: 0
+    predictTarget: false
+    velocityRnd:0.4
+    reload: 1390
+
+shoot: {
+        type: ShootMulti
+        source: {
+            type: ShootSpread
+            shots: 2
+            spread: 3
+        }
+        dest: [
+            {
+            type: ShootPattern
+            firstShotDelay: 155
+            shots: 32
+            shotDelay: 15
+            }
+    ]
+    }
+        bullet: {
+                type: BasicBulletType
+                sprite: large-orb
+                despawnShake: 4.5
+                hitShake: 4.5
+                shrinkX: 0.0
+                shrinkY: 0.0
+                height: 7.5
+                width: 7.5
+                rangeOverride: 320
+                buildingDamageMultiplier: 1.3
+
+                splashDamageRadius: 12
+                statusDuration: 180
+                splashDamage: 50
+                homingPower: 0.02
+                homingRange: 60
+                homingDelay: 40
+                status: burning
+                lifetime: 16
+                damage: 40
+                speed: 16
+            	pierce:true
+              	pierceCap: 2
+        	    pierceBuilding:true
+        	    pierceArmor:true
+
+                smokeEffect: shootBigSmoke
+                shootEffect: shootBigColor
+                despawnEffect: [{
+                    type: WaveEffect
+                    sides:4
+                    rotWithParent: false
+                    followParent: false
+                    sizeFrom: 0
+                    sizeTo: 20
+
+                    lifetime: 60
+
+                    colorFrom: 84f491
+                    colorTo: 84f491
+        }
+        	{
+            startDelay:60
+            type: WaveEffect
+            sides:4
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 20
+            sizeTo: 10
+
+            lifetime: 40
+
+            colorFrom: 84f491
+            colorTo: 84f49100
+        }
+        ]
+            hitEffect:none
+            hitSound: dullExplosion
+
+            lightColor: 84f491
+            lightOpacity: 0.7
+            lightRadius: 24.5
+
+            trailColor: 84f491
+            trailLength: 14
+            trailWidth: 2
+
+            weaveScale: 3
+            weaveMag: 3
+
+            frontColor: ffffff
+            backColor: 84f491
+            hitColor: 84f491
+            fragBullets: 1
+            fragRandomSpread: 15
+            fragBullet: {
+                    type: LaserBulletType
+                    length: 60
+        	        width:6
+                    damage: 80
+                    pierceArmor: true
+                    hitColor: 98ffa9
+                    hitEffect:none
+        	        absorbable:false
+                    colors: [ 98ffa9, ffffff ]
+                    collidesAir: true
+                }
+            }
     }
 
 {
@@ -181,9 +301,9 @@ bullet: {
     shake: 15
     x: 11
     y: -8
-	
-    inaccuracy: 20
-    reload: 400
+	   velocityRnd:0.25
+    inaccuracy: 16
+    reload: 320
 
     chargeSound: target-locked-short
     shootSound: artillery-heavy-shot
@@ -194,12 +314,12 @@ shoot: {
     type: ShootSpread
     firstShotDelay: 185
     spread: 0.5
-    shots: 3
+    shots: 2
     }
 	dest: [
 	{
 	type: ShootPattern
-		shots: 3
+		shots: 4
 		shotDelay: 12
 	}
 	]
@@ -209,25 +329,26 @@ bullet: {
     sprite: missile-large
     despawnShake: 12.5
     collidesAir: false
-    scaleLife: true
     hitShake: 12.5
-    shrinkY: 0.6
+    shrinkY: 0.2
     height: 12
-    width: 9
+    width: 5
+
+    drag:0.002
 
     splashDamageRadius: 40
     statusDuration: 300
     status: electrified
-    splashDamage: 145
+    splashDamage: 65
     healPercent: 1.25
     knockback: 0.8
-    lifetime: 232
+    lifetime: 180
     damage: 90
     speed: 2.5
-	
-	homingPower: 0.03
+
+    homingPower: 0.014
     homingRange: 70
-	homingDelay:30
+    homingDelay: 30
 	
     smokeEffect: shootBigSmoke2
     hitSound: bomb-plasma-hit
@@ -237,11 +358,9 @@ bullet: {
     lightOpacity: 0.7
     lightRadius: 75
 
-    trailEffect: artilleryTrail
-    trailInterval: 7.5
     trailColor: 84f491
-    trailLength: 3
-    trailWidth: 3
+    trailLength: 5
+    trailWidth: 2
 
     frontColor: ffffff
     backColor: 84f491

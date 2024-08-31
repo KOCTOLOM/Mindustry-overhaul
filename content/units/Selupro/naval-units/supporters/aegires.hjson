@@ -53,9 +53,10 @@ weapons:[
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.05
+    repairSpeed: 0.15
     reload: 2
 parts:[
     {
@@ -152,9 +153,10 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed:  0.15
     reload: 400
 
 bullet: {
@@ -178,9 +180,10 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed:  0.15
     reload: 400
 
 bullet: {
@@ -204,9 +207,10 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed: 0.15
     reload: 400
 
 bullet: {
@@ -230,9 +234,10 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed: 0.15
     reload: 400
 
 bullet: {
@@ -256,9 +261,10 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed: 0.15
     reload: 400
 
 bullet: {
@@ -282,9 +288,10 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed: 0.15
     reload: 400
 
 bullet: {
@@ -308,13 +315,14 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed: 0.15
     reload: 400
 
 bullet: {
-    maxRange: 190
+    maxRange: 210
 }
     }
 		{
@@ -334,13 +342,14 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed: 0.15
     reload: 400
 
 bullet: {
-    maxRange: 190
+    maxRange: 210
 }
     }
 		{
@@ -360,13 +369,14 @@ bullet: {
     mirror: true
     x: 0
     y: 0
-    
-    fractionRepairSpeed: 0.005
-    repairSpeed: 0.3
+    targetSwitchInterval: 10
+    targetInterval: 3
+    fractionRepairSpeed: 0.003
+    repairSpeed: 0.15
     reload: 400
 
 bullet: {
-    maxRange: 190
+    maxRange: 210
 }
     }
 {
@@ -380,8 +390,8 @@ bullet: {
     x: 0
     y: -9
 
-    targetSwitchInterval: 15
-    targetInterval: 10
+    targetSwitchInterval: 10
+    targetInterval: 2
     reload: 4.5
 
     shootSound: lasershoot
@@ -405,8 +415,8 @@ bullet: {
     x: 6
     y: -5
 
-    targetSwitchInterval: 15
-    targetInterval: 10
+    targetSwitchInterval: 10
+    targetInterval: 2
     reload: 4.5
 
     shootSound: lasershoot
@@ -430,8 +440,8 @@ bullet: {
     x: 6
     y: 5
 
-    targetSwitchInterval: 15
-    targetInterval: 10
+    targetSwitchInterval: 10
+    targetInterval: 2
     reload: 4.5
 
     shootSound: lasershoot
@@ -455,8 +465,8 @@ bullet: {
     x: 0
     y: 9
 
-    targetSwitchInterval: 15
-    targetInterval: 10
+    targetSwitchInterval: 10
+    targetInterval: 2
     reload: 4.5
 
     shootSound: lasershoot
@@ -478,8 +488,8 @@ bullet: {
     x: 12
     y: -14
 
-    targetSwitchInterval: 15
-    targetInterval: 10
+    targetSwitchInterval: 10
+    targetInterval: 2
     reload: 6
 
     shootSound: lasershoot
@@ -495,10 +505,8 @@ bullet: {
 {
     name: plasma-cannon-mount
     parentizeEffects: true
-    controllable: false
     rotateSpeed: 0.5
 	rotationLimit:190
-    continuous: true
 	controllable:true
     alternate: false
     rotate: true
@@ -509,99 +517,206 @@ bullet: {
     shake: 3
     x: 13
     y: 9.5
-
+    inaccuracy:6
     targetInterval: 20
     cooldownTime: 350
-    reload: 190
+    reload: 210
+    velocityRnd:0.3
 
+    shootSound: plasma-shot-3
 
-    chargeSound: beam-large-charge
-    shootSound: beam-large-shot-2
-	
 shoot: {
-    firstShotDelay: 45
+    type: ShootMulti
+    source: {
+        type: ShootAlternate
+        spread: 1
+        barrels: 2
+        shots: 1
+        shotDelay: 2
     }
+    dest: [
+        {
+            type: ShootSpread
+            shots: 4
+            shotDelay: 14
+        }
+    ]
+}
 
 bullet: {
-    type: ContinuousFlameBulletType
-    timescaleDamage: false
-	hitEffect:[{
-    type: ParticleEffect
-    lifetime: 90
-    particles: 5
-    line: true
-    cone:20
-	interp:circleOut
+    sprite: missile-large
+    collidesGround: true
+    keepVelocity: false
+    scaleLife: true
+    collidesAir: true
+    shrinkY: 0
+    height: 8
+    width: 8
+    buildingDamageMultiplier: 0.8
+    splashDamageRadius: 25
+    splashDamage: 70
+    explodeRange: 40
+    weaveScale: 3
+    lifetime: 60
+    drag: 0.005
+    speed: 8
+    hittable: false
+	fragRandomSpread:0
+    fragBullets: 1
 
-    strokeFrom: 1.4
-    strokeTo: 0
-    colorFrom: 98ffa9150
-    colorTo: 98ffa9150
-	}
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 60
+
+    trailColor: 98ffa9
+    trailLength: 12
+    trailWidth: 2
+
+    frontColor: ffffff
+    backColor: 98ffa9
+
+hitEffect: [{
+    type: ExplosionEffect
+    lifetime: 60
+
+    waveColor: 98ffa9
+    waveRadBase: 10
+    waveRad: 36
+    waveStroke: 3
+    waveLife: 80
+
+    smokeColor: ffffff
+    smokes: 0
+
+    sparkColor: 98ffa9
+    sparkStroke: 1.5
+    sparkRad: 50
+    sparkLen: 5
+    sparks: 20
+    }
 	{
     type: ParticleEffect
-    lifetime: 30
-    particles: 5
+    lifetime: 20
+    particles: 12
     line: true
-    cone:12
-	interp:elasticOut
-    length:140
+    cone: 360
 
-    strokeFrom: 1.4
+    baseRotation: 0
+    baseLength: 46
+    length: -14
+
+    strokeFrom: 1.2
     strokeTo: 0
-    colorFrom: 98ffa9150
-    colorTo: 98ffa9150
-	}
+
+    colorFrom: 98ffa9
+    colorTo: 98ffa9
+}
 	]
-	colors:[98ffa910,98ffa930,98ffa9150,98ffa970,98ffa9]
-	
+fragAngle:180
+fragBullet: {
+	type: BasicBulletType
+	damage: 10
+	sprite:large-orb
+	buildingDamageMultiplier: 0
+	speed: 0
+	shrinkY:0
+	shrinkX:0
+	height: 14
+    width: 14
+	pierce: true
+	pierceBuilding: true
+	pierceCap: 9999
+	lifetime: 200
+	lightRadius: 40
+	lightOpacity: 0.9
+	frontColor: ffffff
+	lightColor: 98ffa9
+	backColor: 98ffa9
+	hitColor: 98ffa9
+	shootEffect: shootBigColor
+	smokeEffect: shootSmokeSquareBig
+	collidesTiles: true
+	collides: true
+	collidesGround: true
+	collidesAir: true
+    hitEffect: none
+	despawnEffect: [{
+        type: ExplosionEffect
+        lifetime: 60
+
+        waveColor: 98ffa9
+        waveRadBase: 10
+        waveRad: 36
+        waveStroke: 3
+        waveLife: 80
+
+        smokeColor: ffffff
+        smokes: 0
+
+        sparkColor: 98ffa9
+        sparkStroke: 1.5
+        sparkRad: 50
+        sparkLen: 5
+        sparks: 20
+        }
+    	{
+        type: ParticleEffect
+        lifetime: 20
+        particles: 12
+        line: true
+        cone: 360
+
+        baseRotation: 0
+        baseLength: 46
+        length: -14
+
+        strokeFrom: 1.2
+        strokeTo: 0
+
+        colorFrom: 98ffa9
+        colorTo: 98ffa9
+    }]
+    trailColor: 98ffa9
+    trailLength: 15
+    trailWidth: 2.5
+	reflectable: false
+	hittable: false
+	absorbable:false
+	intervalBullets: 9
+	bulletInterval: 20
+	intervalRandomSpread: 360
+	intervalBullet: {
+	type: LightningBulletType
+    hittable: false
+    hitSize: 3
+
+    buildingDamageMultiplier: 0.3
+
+	lightningLengthRand:4
+    lightningLength: 6
+    damage: 16
 	pierceArmor:true
-	
-    statusDuration: 220
-    status: melting
-	
-    lifetime: 185
-    damage: 65
-	pierceArmor:true
-	laserAbsorb:true
-	
-	flareColor:98ffa960
-	flareWidth:4
-	flareLength: 10
-	flareRotSpeed :-8
-	
-    parentizeEffects: true
-    collidesTeam: true
-    largeHit: false
-    drawSize: 200
-    length: 160
-    width: 3
-	
-	buildingDamageMultiplier:2
-	
-    healPercent: 0.6
-    lifetime: 200
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 14.5
+	lightningColor: 98ffa9
+lightningType: {
+    collidesAir: false
+    hittable: false
+    hitSize: 3
+	width:0
+	heigth:0
 
-    incendChance: 1
-    incendSpread: 7
-    incendAmount: 2
+    lifetime: 20
 
-    hitEffect: hitMeltHeal
-    smokeEffect: none
-
-chargeEffect: {
-    type: WaveEffect
-    rotWithParent: true
-    followParent: true
-
-    lifetime: 50
-    sizeFrom: 32
-    sizeTo: 0
-
-    colorFrom: 84f491
-    colorTo: ffffff
+    hitEffect: hitLancer
+    despawnEffect: none
+    lightColor: 98ffa9
+    lightOpacity: 0.7
+    lightRadius: 14.5
+	}
     }
+	}
 }
     }
-
-]
+    ]

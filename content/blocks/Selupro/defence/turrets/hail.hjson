@@ -373,10 +373,10 @@ despawnEffect: {
     waveStroke: 2.25
     waveRad: 35
 
-    smokeColor: 9e78dc
+    smokeColor: 9e78dc70
     smokeSizeBase: 0
-    smokeSize: 15
-    smokes: 12
+    smokeSize: 4
+    smokes: 11
 
     sparkColor: 7457ce
     sparkStroke: 0

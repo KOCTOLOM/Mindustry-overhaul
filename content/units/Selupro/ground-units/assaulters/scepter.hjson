@@ -5,7 +5,7 @@ stepShake: 8.75
 fogRadius: 34.5
 
 itemCapacity: 9600
-health: 32000
+health: 28000
 speed: 0.35
 armor: 96
 
@@ -29,15 +29,15 @@ abilities: [
     reload: 1440
     amount: 250
     range: 256
-    max: 250
+    max: 5000
 }
     {
     type: ArmorPlateAbility
-    healthMultiplier: 0.3
+    healthMultiplier: 0.1
 }
     {
     type: RegenAbility
-    amount: 0.8
+    amount: 2
 }
     ]
 
@@ -137,8 +137,8 @@ bullet: {
     height: 20
     width: 11
 
-    buildingDamageMultiplier: 1.8
-    pierceDamageFactor: 0.2
+    buildingDamageMultiplier: 1.2
+    pierceDamageFactor: 0.7
 
     status: mov-armor-piercing-tier-1
     splashDamageRadius: 12
@@ -148,7 +148,7 @@ bullet: {
     weaveScale: 3
     pierceCap: 96
     weaveMag: 3
-    damage: 172
+    damage: 242
     speed: 15
     incendAmount: 3
     incendSpread: 10
@@ -343,8 +343,9 @@ bullet: {
     height: 9
     width: 7
 
+    pierceArmor:true
     lifetime: 50
-    damage: 48
+    damage: 32
     speed: 4.5
 
     lightColor: fff8e8
@@ -392,8 +393,9 @@ bullet: {
     height: 9
     width: 9
 
-    buildingDamageMultiplier: 1.24
+    buildingDamageMultiplier: 1.5
 
+    pierceArmor:true
     splashDamageRadius: 26
     homingPower: 0.025
     splashDamage: 50
@@ -401,7 +403,7 @@ bullet: {
     lifetime: 129.5
     weaveScale: 6
     weaveMag: 3
-    damage: 75
+    damage: 65
     speed: 4
 
     despawnEffect: blastExplosion
@@ -417,7 +419,7 @@ bullet: {
     trailColor: 454545
     trailInterval: 2
     trailWidth: 1.5
-	fragBullets: 3
+    fragBullets: 3
     fragRandomSpread: 10
     fragVelocityMin: 0.5
     fragVelocityMax: 3.2

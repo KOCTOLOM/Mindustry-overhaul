@@ -2,13 +2,13 @@ research: scorch
 moveWhileCharging: false
 firingMoveFract: 0.18
 predictTarget: false
-rotateSpeed: 0.24
+rotateSpeed: 0.36
 shootCone: 1
 shootY: 5
 recoil: 4
 shake: 2
 
-buildCostMultiplier: 0.3246169
+buildCostMultiplier: 0.7
 coolantMultiplier: 4
 
 shootDuration: 425

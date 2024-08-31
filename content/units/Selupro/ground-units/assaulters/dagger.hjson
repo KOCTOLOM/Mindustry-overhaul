@@ -18,8 +18,8 @@ immunities: [ blasted, mov-air-specialization, mov-naval-specialization ]
 abilities: [
     {
     type: ShieldRegenFieldAbility
-    reload: 200
-    amount: 25
+    reload: 600
+    amount: 50
     range: 0
     max: 50
 }

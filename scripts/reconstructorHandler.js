@@ -28,7 +28,7 @@ function handleReconstructor(/* Reconstructor, ... */) {
 		caps.put(type, map)
 	})
 
-	var field = Class.forName("mindustry.world.Block").getDeclaredField("consumeBuilder");
+	var field = reconstructor.getClass().getClassLoader().loadClass("mindustry.world.Block").getDeclaredField("consumeBuilder");
 	field.setAccessible(true);
 	var consumeBuilder = field.get(reconstructor);
 	consumeBuilder.removeAll(c => {

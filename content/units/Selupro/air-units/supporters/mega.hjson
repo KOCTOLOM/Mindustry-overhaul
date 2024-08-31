@@ -31,8 +31,8 @@ weapons: [
     name: plasma-weapon-mount
 
     layerOffset: -0.001
-    rotationLimit: 15
-    baseRotation: 15
+    rotationLimit: 20
+    baseRotation: 5
     shootCone: 30
     rotate: true
     shake: 0.32
@@ -54,7 +54,7 @@ bullet: {
     healPercent: 0.5
     lifetime: 60
     speed: 5.25
-    damage: 9
+    damage: 17
 
     frontColor: ffffff
     backColor: 84f491
@@ -73,25 +73,26 @@ name: repair-bwc-large-green
     rotate: true
     recoil: 2
     shake: 3
-    x: 7
-    y: -2.5
+    x: 7.5
+    y: -2.25
 
-    inaccuracy: 15
-    reload: 90
+    inaccuracy: 4
+    reload: 50
 
     ejectEffect: casing1
     shootSound: missile
 
 shoot: { 
-    shotDelay: 9
+    shotDelay: 4
     shots: 2
     }
 
 bullet: {
-    type: MissileBulletType
+    type: BasicBulletType
+    sprite:missile
     keepVelocity: false
     collidesAir: false
-    despawnShake: 5
+    despawnShake: 2
     shrinkX: 0.25
     shrinkY: 0.5
     drag: -0.003
@@ -100,22 +101,40 @@ bullet: {
     width: 5
 
     splashDamageRadius: 21
-    homingPower: 0.75
+    homingPower: 0.02
     homingRange: 62.5
-    splashDamage: 45
+    splashDamage: 65
     healPercent: 3
-    weaveScale: 3
-    lifetime: 80
-    weaveMag: 5
-    damage: 75
+    weaveScale: 2
+    lifetime: 110
+    weaveMag: 3
+    damage: 35
     speed: 1.8
 
-    despawnEffect: blastExplosion
-    hitEffect: blastExplosion
+    despawnEffect: none
+    hitEffect: {
+        type: ExplosionEffect
+        lifetime: 29
 
+        waveColor: 62ae7f
+        waveStroke: 1.5
+        waveRad: 21
+
+        smokeColor: 69696960
+        smokeSizeBase: 1
+        smokeSize: 5.5
+        smokes: 3
+
+        sparkColor: 62ae7f
+        sparkStroke: 1.2
+        sparkRad: 22
+        sparkLen: 2
+        sparks: 4
+        }
     frontColor: ffffff
     trailColor: 62ae7f
-    trailInterval: 12
+    trailWidth:1
+    trailLength:12
     backColor: 62ae7f
 
     lightColor: 98ffa9

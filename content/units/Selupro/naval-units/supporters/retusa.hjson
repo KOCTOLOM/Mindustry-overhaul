@@ -42,7 +42,7 @@ bullet: {
     keepVelocity: false
     collideFloor: true
     collidesAir: false
-    maxRange: 210
+    rangeOverride: 150
     hitSize: 22
     shrinkX: 0
     shrinkY: 0
@@ -53,11 +53,11 @@ bullet: {
     buildingDamageMultiplier: 0.75
 
     splashDamageRadius: 26
-    homingPower: 0.05
+    homingPower: 0.04
 	homingRange: 30
-	homingDelay:10
-    splashDamage: 45
-    healPercent: 4
+	homingDelay:5
+    splashDamage: 50
+    healPercent: 2
     lifetime: 147
     damage: 32
     speed: 1.5

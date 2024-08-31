@@ -23,10 +23,10 @@ consumes: {
 }
 
 requirements: [
-    lead/320
-    graphite/500
+    lead/720
+    graphite/340
     titanium/225
     thorium/125
     silicon/250
-    surge-alloy/180
+    surge-alloy/45
 ]

@@ -1,9 +1,20 @@
 research: differential-generator
 ambientSoundVolume: 0.25
 
-powerProduction: 220
+requirements: [
+    lead/600
+    plastanium/340
+    graphite/430
+    silicon/600
+    surge-alloy/300
+    phase-fabric/130
+    thorium/450
+]
+
+powerProduction: 520
 explosionRadius: 32
 liquidCapacity: 240
-itemDuration: 180
+itemDuration: 60
 itemCapacity: 360
-health: 5000
+health: 4200
+armor: 30

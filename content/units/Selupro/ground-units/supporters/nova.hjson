@@ -55,13 +55,11 @@ weapons: [
 shoot: {
     firstShotDelay: 75
     shotDelay: 10
-    shots: 2
+    shots: 3
 }
 
 bullet: {
     type: LaserBoltBulletType
-    parentizeEffects: true
-    collideTerrain: true
     collidesTeam: true
 
     pierceDamageFactor: 0.005
@@ -69,28 +67,13 @@ bullet: {
     healAmount: 32
     pierceCap: 2
     lifetime: 68
-    damage: 41.5
+    damage: 25
     speed: 5
 
     hitEffect: hitBulletColor
 
     frontColor: ffffff
     backColor: 84f491
-
-chargeEffect: {
-    type: WaveEffect
-    rotWithParent: true
-    followParent: true
-    offsetX: 2
-
-    sizeFrom: 7.5
-    sizeTo: 0
-
-    lifetime: 45
-
-    colorFrom: 84f491
-    colorTo: ffffff
-}
     }
 }
     ]

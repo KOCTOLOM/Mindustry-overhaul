@@ -131,17 +131,17 @@ bullet: {
     height: 11
     width: 11
 
-    splashDamageRadius: 40
+    splashDamageRadius: 20
     lightningDamage: 12.5
     lightningLength: 5
     splashDamage: 32
     homingPower: 0.1
     homingRange: 180
-    lifetime: 155
+    lifetime: 125
     lightning: 3
-    damage: 48
-    speed: 2.5
-    drag: 0.01
+    damage: 28
+    speed: 2.25
+    drag: 0.005
 
     despawnEffect: none
 
@@ -163,20 +163,20 @@ bullet: {
 hitEffect: {
     type: ExplosionEffect
 
-    lifetime: 48
+    lifetime: 32
 
     waveColor: bf92f9
     waveStroke: 3.2
-    waveRad: 48
+    waveRad: 26
 
     smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 14.5
-    smokes: 7
+    smokeSize: 9
+    smokes: 4
 
     sparkColor: bf92f9
     sparkStroke: 1.8
-    sparkRad: 27.5
+    sparkRad: 12.5
     sparkLen: 3
     sparks: 9
 }

@@ -4,10 +4,10 @@ circleTarget: true
 fogRadius: 32
 
 itemCapacity: 96
-rotateSpeed: 2.5
-accel: 0.025
+rotateSpeed: 3
+accel: 0.05
 health: 1500
-drag: 0.03
+drag: 0.06
 speed: 2.4
 armor: 24
 
@@ -203,8 +203,8 @@ hitEffect: {
 
     smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 14.5
-    smokes: 7
+    smokeSize: 12.5
+    smokes: 6
 
     sparkColor: ffaa5f
     sparkStroke: 1.8

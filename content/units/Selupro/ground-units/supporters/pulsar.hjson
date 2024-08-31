@@ -26,7 +26,7 @@ abilities: [
     reload: 300
     amount: 60
     range: 60
-    max: 180
+    max: 120
 }
     {
     type: RegenAbility
