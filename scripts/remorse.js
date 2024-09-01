@@ -7,7 +7,7 @@ const remorse = extend(CoreBlock, "remorse", {
     armor: 25,
     itemCapacity: 13000,
     unitType: this,
-    
+    buildVisibility: BuildVisibility.hidden
     //Это на время разработки.
     //is it possible to build a core regardless of another core
     canPlaceOn(tile, team, rotation) {
