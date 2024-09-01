@@ -37,13 +37,13 @@ scrap: {
     ammoMultiplier: 3
 	
     splashDamageRadius: 20
-    splashDamage: 17.5
+    splashDamage: 18
     fragBullets: 6
 	fragRandomSpread:40
 	
     lifetime: 67.5
     pierceCap: 2
-    damage: 12
+    damage: 18
     speed: 6
 
     hitEffect: flakExplosion
@@ -100,10 +100,10 @@ lead: {
     ammoMultiplier: 6
 
     splashDamageRadius: 30
-    splashDamage: 7
+    splashDamage: 16
     pierceCap: 2
     lifetime: 81
-    damage: 12
+    damage: 19
     speed: 3.75
 
     hitEffect: flakExplosion
@@ -166,13 +166,12 @@ metaglass: {
     ammoMultiplier: 6
 	
     splashDamageRadius: 12
-    splashDamage: 9
+    splashDamage: 28
     fragBullets: 3
     pierceCap: 2
     lifetime: 70
     damage: 6
     speed: 6
-	pierceArmor:true
     hitEffect: flakExplosion
     shootEffect: shootSmall
 
@@ -196,7 +195,7 @@ fragBullet: {
 
     pierceCap: 2
     lifetime: 20
-    damage: 4
+    damage: 7
 	pierceArmor:true
     despawnEffect: none
 
