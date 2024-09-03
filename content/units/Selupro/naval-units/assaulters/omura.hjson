@@ -726,15 +726,15 @@ bullet: {
     height: 14
     width: 7
 
-    buildingDamageMultiplier:0.7
+    buildingDamageMultiplier:4
 
     splashDamageRadius: 14
     statusDuration: 45
-    splashDamage: 150
+    splashDamage: 10
     status: blasted
     pierceCap: 3
     lifetime: 52
-    damage: 220
+    damage: 31
     speed: 14
     pierceArmor:true
     

@@ -744,6 +744,7 @@ bullet: {
     trailWidth: 3
 	trailLength: 14
 
+
 hitEffect: {
     type: ExplosionEffect
     lifetime: 44

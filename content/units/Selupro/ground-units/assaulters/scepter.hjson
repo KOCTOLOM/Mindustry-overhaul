@@ -37,7 +37,7 @@ abilities: [
 }
     {
     type: RegenAbility
-    amount: 2
+    amount: 1.5
 }
     ]
 

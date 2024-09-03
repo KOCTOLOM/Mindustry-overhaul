@@ -17,8 +17,8 @@ flying: true
 envDisabled: 0
 envEnabled: -1
 
-missileAccelTime: 30
-lifetime: 145.5
+missileAccelTime: 25
+lifetime: 125
 rotateSpeed: 3
 fogRadius: 9
 maxRange: 6
@@ -66,14 +66,14 @@ bullet: {
     despawnShake: 10
     maxRange: 24
 
-    buildingDamageMultiplier: 1.5
+    buildingDamageMultiplier: 1.1
 
     splashDamageRadius: 60
     lightningLength: 12.5
     lightningDamage: 40
     statusDuration: 300
     status: emp-tier-1
-    splashDamage: 256
+    splashDamage: 326
     lightning: 6
 
     hitSound: rocket-explosion

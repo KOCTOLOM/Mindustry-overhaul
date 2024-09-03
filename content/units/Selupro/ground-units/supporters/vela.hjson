@@ -4,7 +4,7 @@ stepShake: 7.5
 fogRadius: 30
 
 itemCapacity: 960
-rotateSpeed: 0.9
+rotateSpeed: 1.2
 buildSpeed: 0.96
 health: 27000
 speed: 0.32
@@ -22,7 +22,7 @@ immunities: [ electrified, melting, burning, mov-air-specialization, mov-naval-s
 abilities: [
     {
     type: RegenAbility
-    amount: 0.708339
+    amount: 2.5
 }
     ]
 
@@ -171,12 +171,12 @@ shoot: {
                 buildingDamageMultiplier: 1.3
 
                 splashDamageRadius: 12
-                statusDuration: 180
+                statusDuration: 80
                 splashDamage: 50
                 homingPower: 0.02
                 homingRange: 60
                 homingDelay: 40
-                status: burning
+                status: slow
                 lifetime: 16
                 damage: 40
                 speed: 16
@@ -301,7 +301,7 @@ bullet: {
     shake: 15
     x: 11
     y: -8
-	   velocityRnd:0.25
+	velocityRnd:0.25
     inaccuracy: 16
     reload: 320
 
@@ -423,7 +423,7 @@ dest: [
 {
     type: ShootSpread
     spread: 4
-    shots: 1
+    shots: 2
     }
 ]
     }
@@ -477,12 +477,12 @@ bullet: {
     hitSize: 3
     height: 15
     width: 9
-
+    pierceArmor:true
     splashDamageRadius: 26
     statusDuration: 45
     splashDamage: 47.5
     status: blasted
-    pierceCap: 32
+    pierceCap: 5
     lifetime: 80
     speed: 3.2
 

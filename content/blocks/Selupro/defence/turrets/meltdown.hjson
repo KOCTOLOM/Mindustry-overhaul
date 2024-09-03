@@ -60,35 +60,6 @@ shootType: {
     length: 540
     width: 18
 	hitColor:ec7458
-	hitEffect:[{
-    type: ParticleEffect
-    lifetime: 40
-    particles: 5
-    line: true
-    cone:20
-	interp:circleOut
-    length:120
-
-    strokeFrom: 1.4
-    strokeTo: 0
-    colorFrom: ec7458
-    colorTo: ec7458
-	}
-	{
-    type: ParticleEffect
-    lifetime: 30
-    particles: 5
-    line: true
-    cone:12
-	interp:elasticOut
-    length:140
-
-    strokeFrom: 1.4
-    strokeTo: 0
-    colorFrom: ec7458
-    colorTo: ec7458
-	}
-	]
 	colors:[ec745840,ec74585570,ec74585590,ec7458,ffffff]
     ammoMultiplier: 1
 	
@@ -101,7 +72,56 @@ shootType: {
     damage: 105
 	
 	laserAbsorb:true
-	
+
+	fragBullets:1
+
+	fragBullet: {
+        type: BasicBulletType
+        sprite: large-orb
+        height: 0
+        width: 0
+        buildingDamageMultiplier:0
+        splashDamageRadius: 20
+        splashDamage: 0
+        lifetime: 1
+        speed: 0
+        damage: 0
+        statusDuration: 80
+        status: slow
+        hittable:false
+        reflectable: false
+        absorbable: false
+        pierceBuilding: true
+        hitEffect:[{
+            type: ParticleEffect
+            lifetime: 40
+            particles: 5
+            line: true
+            cone:20
+        	interp:circleOut
+            length:120
+
+            strokeFrom: 1.4
+            strokeTo: 0
+            colorFrom: ec7458
+            colorTo: ec7458
+        	}
+        	{
+            type: ParticleEffect
+            lifetime: 30
+            particles: 5
+            line: true
+            cone:12
+        	interp:elasticOut
+            length:140
+
+            strokeFrom: 1.4
+            strokeTo: 0
+            colorFrom: ec7458
+            colorTo: ec7458
+        	}
+        	]
+    }
 	flareColor:ec7458
 	flareWidth:10
 	flareLength: 50
