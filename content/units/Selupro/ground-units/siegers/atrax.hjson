@@ -155,7 +155,6 @@ bullet: {
     trailColor: bf92f9
     trailLength: 48
     trailWidth: 2
-    trailSize: 2
 
     frontColor: ffffff
     backColor: bf92f9
@@ -197,7 +196,7 @@ hitEffect: {
     shootSound: bomb-plasma-hit
 bullet: {
     type: BasicBulletType
-    collide:true
+    collides:true
     hittable: false
     absorbable:false
     reflectable: false

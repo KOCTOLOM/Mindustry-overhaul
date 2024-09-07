@@ -62,8 +62,6 @@ bullet: {
     type: LightningBulletType
     collidesAir: false
     hitSize: 15
-    height: 0
-    width: 0
 
     buildingDamageMultiplier: 0.5
 

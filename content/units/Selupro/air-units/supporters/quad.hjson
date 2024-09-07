@@ -54,7 +54,7 @@ weapons: [
     mirror: false
     x: 0
     y: 0
-
+    ignoreRotation: true
     velocityRnd: 0.8
     inaccuracy: 40
     reload: 125
@@ -71,7 +71,6 @@ shoot: {
 bullet: {
     type: BasicBulletType
     sprite: large-bomb
-    ignoreRotation: true
     keepVelocity: false
     collidesAir: false
     absorbable: false
@@ -104,7 +103,6 @@ bullet: {
 
     despawnEffect: greenBomb
     hitSound: plasmaboom
-    ejectEffect: none
 
     frontColor: ffffff
     mixColorTo: ffffff
@@ -318,8 +316,7 @@ shoot: {
     }
 
 bullet: {
-    type: LaserBoltType
-    parentizeEffects: true
+    type: BasicBulletType
     collideTerrain: true
     collidesAir: false
     despawnShake: 5
@@ -387,7 +384,6 @@ chargeEffect: {
 bullet: {
     type: BasicBulletType
     sprite: large-bomb
-    ignoreRotation: true
     keepVelocity: false
     collidesAir: false
     despawnShake: 9
@@ -421,7 +417,6 @@ bullet: {
     incendChance: 1
 
     hitSound: laser-large-shot-1
-    ejectEffect: none
     hittable: false
 
     mixColorTo: ffffff
@@ -474,7 +469,6 @@ despawnEffect: [
 fragBullet: {
     type: BasicBulletType
     sprite: large-bomb
-    ignoreRotation: true
     keepVelocity: false
     collidesAir: false
     despawnShake: 9
@@ -507,7 +501,6 @@ fragBullet: {
     fragBullets: 12
 
     hitSound: laser-large-shot-1
-    ejectEffect: none
     
     trailEffect: missileTrail
     trailColor: 5B5B5B

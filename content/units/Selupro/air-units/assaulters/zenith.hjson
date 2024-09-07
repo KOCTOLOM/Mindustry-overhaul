@@ -6,7 +6,7 @@ fogRadius: 32
 itemCapacity: 96
 rotateSpeed: 3
 accel: 0.05
-health: 1500
+health: 1400
 drag: 0.06
 speed: 2.4
 armor: 24
@@ -41,8 +41,8 @@ weapons: [
     x: 7
     y: 0
 	rotateSpeed:2
-    velocityRnd: 0.1
-    inaccuracy: 9
+    velocityRnd: 0.3
+    inaccuracy: 12
     reload: 360
 	
     shootStatus: mov-motor-deceleration-tier-1
@@ -67,8 +67,8 @@ dest: [
 {
     type: ShootPattern
     firstShotDelay: 185
-    shotDelay: 9
-    shots: 5
+    shotDelay: 7
+    shots: 6
     }
 ]
     }
@@ -133,7 +133,7 @@ hitEffect: {
     name: hidden-bombing-mw
     controllable: false
     layerOffset: -0.001
-    baseRotation: -45
+    baseRotation: -55
     autoTarget: true
     alternate: false
     shootCone: 360
@@ -144,7 +144,7 @@ hitEffect: {
     y: -4
 
     velocityRnd: 0.35
-    reload: 140
+    reload: 160
 
     shootStatus: mov-motor-deceleration-tier-1
     chargeSound: charging-power
@@ -153,8 +153,8 @@ hitEffect: {
     ejectEffect: casing3
 shoot: {
     firstShotDelay: 75
-    shotDelay: 20
-    shots: 3
+    shotDelay: 15
+    shots: 4
     }
 
 bullet: {
@@ -166,51 +166,51 @@ bullet: {
     pierce: true
     shrinkX: 0
     shrinkY: 0
-    height: 8
-    width: 8
+    height: 9
+    width: 9
 	drag:0.06
-    buildingDamageMultiplier: 1.25
-
-    splashDamageRadius: 40
-    statusDuration: 450
+    buildingDamageMultiplier: 0.5
+    incendChance: 0.2
+    incendSpread: 12
+    incendAmount: 2
+    splashDamageRadius: 20
+    statusDuration: 120
     splashDamage: 96
     status: burning
-    lifetime: 140
-    speed: 2.75
-
-    smokeEffect: shootSmallSmoke
-    shootEffect: shootSmallColor
+    lifetime: 120
+    speed: 1.25
+    spin:0.5
+    smokeEffect: none
+    shootEffect: none
     hitSound: rocket-explosion
-
     lightColor: d06b53
     lightOpacity: 0.7
     lightRadius: 62.5
 
-    trailInterval: 4.5
-    trailColor: d06b53
-    trailLength: 4
+    trailColor: d37f47
+    trailLength: 12
 
     frontColor: ffaa5f
     backColor: d37f47
 
 hitEffect: {
     type: ExplosionEffect
-    lifetime: 32
+    lifetime: 50
 
     waveColor: ffaa5f
     waveStroke: 3.2
-    waveRad: 48
+    waveRad: 22
 
-    smokeColor: 696969
+    smokeColor: d37f4750
     smokeSizeBase: 0
-    smokeSize: 12.5
-    smokes: 6
+    smokeSize: 6
+    smokes: 4
 
     sparkColor: ffaa5f
-    sparkStroke: 1.8
-    sparkRad: 27.5
-    sparkLen: 3
-    sparks: 9
+    sparkStroke: 1.2
+    sparkRad: 23
+    sparkLen: 7
+    sparks: 7
 }
     }
 }

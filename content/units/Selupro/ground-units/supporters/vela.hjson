@@ -141,7 +141,7 @@ chargeEffect: {
     predictTarget: false
     velocityRnd:0.4
     reload: 1390
-
+    shootSound: cannon-shot-1
 shoot: {
         type: ShootMulti
         source: {

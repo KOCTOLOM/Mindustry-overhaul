@@ -175,7 +175,6 @@ bullet: {
     trailInterval: 15
     trailLength: 8
     trailWidth: 2
-    trailSize: 2
 
     lightningColor: ffffff
     frontColor: ffffff
@@ -219,7 +218,7 @@ hitEffect: {
     shootSound: bomb-plasma-hit
 bullet: {
     type: BasicBulletType
-    collide:true
+    collides:true
     hittable: false
     absorbable:false
     reflectable: false

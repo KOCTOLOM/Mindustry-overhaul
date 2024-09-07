@@ -170,7 +170,6 @@ bullet: {
     shootSound: missile  
 shoot: {
     shotDelay: 6
-	spread:4
     shots: 3
     }
 

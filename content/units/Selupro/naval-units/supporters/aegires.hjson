@@ -555,7 +555,6 @@ bullet: {
     buildingDamageMultiplier: 0.8
     splashDamageRadius: 25
     splashDamage: 70
-    explodeRange: 40
     weaveScale: 3
     lifetime: 60
     drag: 0.005
@@ -705,8 +704,7 @@ lightningType: {
     hittable: false
     hitSize: 3
 	width:0
-	heigth:0
-
+    height:0
     lifetime: 20
 
     hitEffect: hitLancer

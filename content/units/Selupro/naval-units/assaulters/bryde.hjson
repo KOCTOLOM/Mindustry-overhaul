@@ -137,18 +137,18 @@ bullet: {
 
 {
     name: selupro-machine-gun
-
+    mirror:false
     rotationLimit: 180
     baseRotation: -45
     rotateSpeed: 1.25
     alternate: false
     rotate: true
     shootY: 4
-    x: 7.5
-    y: -10
-
+    x: 0
+    y: 5
+    velocityRnd:0.2
     cooldownTime: 120
-    inaccuracy: 5
+    inaccuracy: 7
     reload: 20
 
     shootSound: machine-gun-shot-3
@@ -156,7 +156,7 @@ bullet: {
 	
 	shoot: {
 		shotDelay: 2.5
-		shots: 3
+		shots: 6
 		}
 parts: [
 {

@@ -359,7 +359,7 @@ shoot: {
 
 source: {
     type: ShootBarrel
-    spread: 2
+
     shots: 2
 
 barrels: [
@@ -496,16 +496,15 @@ bullet: {
     x: 18.5
     y: -17
 
-    velocityRnd: 0.9
-    inaccuracy: 9
-    reload: 40
+    velocityRnd: 0.7
+    inaccuracy: 28
+    reload: 60
 
-    shootEffect: shootSmall
     shootSound: artillery
     ejectEffect: casing2
 shoot: {
-    shotDelay: 4
-    shots: 2
+    shotDelay: 6
+    shots: 4
     }
 
 bullet: {
@@ -515,15 +514,19 @@ bullet: {
     pierceBuilding: true
     collidesTiles: true
     collidesAir: false
-    despawnShake: 9
+    despawnShake: 7
     pierceCap: 3
+    spin:1.2
     pierce: true
     shrinkX: 0
     shrinkY: 0
-    height: 10
-    width: 10
-    
-    buildingDamageMultiplier: 6
+    height: 15
+    width: 15
+
+    despawnSound:bomb-hit
+    hitsound:bomb-hit
+
+    buildingDamageMultiplier: 4.5
 
     splashDamageRadius: 40
     fragRandomSpread: 360
@@ -532,33 +535,72 @@ bullet: {
     fragBullets: 3
     fragLifeMax: 4
     knockback: 0.8
-    lifetime: 250
-    speed: 4.25
-    drag: 0.04
+    lifetime: 220
+    speed: 4.75
+    drag: 0.03
     
     hitEffect: flakExplosion
 
     lightColor: f9c27a
     lightOpacity: 0.7
     lightRadius: 67.5
+    shootEffect: shootSmall
 
     trailEffect: artilleryTrail
     trailInterval: 9.5
     trailColor: f9c27a
     frontColor: fff8e8
     backColor: f9c27a
-    trailLength: 6
-    trailWidth: 1
-    trailSize: 4
+    trailLength: 20
+    trailWidth: 2.5
 
 despawnEffect:[
+{
+      type: RadialEffect
+      rotationSpacing : 120
+      rotationOffset: 0
+      lengthOffset: 8
+      effect: {
+          type: ParticleEffect
+          particles: 12
+          length: 30
+          lifetime: 70
+          sizeFrom: 3
+          sizeTo: 0
+          cone: 10
+          interp: circleOut
+          colorFrom: ff9c5a
+          colorTo: ff9c5a00
+          layer:100.3
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 120
+      rotationOffset: 60
+      lengthOffset: 8
+      effect: {
+          type: ParticleEffect
+          particles: 3
+          startDelay:5
+          length: 20
+          lifetime: 50
+          sizeFrom: 3
+          sizeTo: 0
+          cone: 30
+          interp: circleOut
+          colorFrom: ff9c5a
+          colorTo: ff9c5a00
+          layer:100.3
+          }
+}
 {    
     startDelay:5
     type: ParticleEffect
     particles: 7
     cone: 360
     length: 7
-    lifetime: 60
+    lifetime: 120
     sizeFrom: 3
     sizeTo: 4
     layer:100.1
@@ -571,9 +613,9 @@ despawnEffect:[
     particles: 12
     cone: 360
     length: 5
-    lifetime: 60
+    lifetime: 120
     sizeFrom: 2
-    sizeTo: 3
+    sizeTo: 4
     layer:100.2
     colorFrom: 808080
     colorTo: 80808000
@@ -582,8 +624,8 @@ despawnEffect:[
     startDelay:7
     type: WaveEffect
     sizeFrom: 0
-    sizeTo: 36
-    lifetime: 90
+    sizeTo: 42
+    lifetime: 140
     colorFrom: 5B5B5B20
     colorTo: 5B5B5B00
 }
@@ -600,11 +642,10 @@ fragBullet: {
     pierce: true
     shrinkX: 0
     shrinkY: 0
-    height: 5
-    width: 5
-    
-    buildingDamageMultiplier: 6
-
+    height: 7
+    width: 7
+    spin:-0.2
+    buildingDamageMultiplier: 5
     splashDamageRadius: 26
     splashDamage: 75
     lifetime: 200
@@ -614,12 +655,52 @@ fragBullet: {
     drag: 0.06
 
     hitEffect: flakExplosion
-
+    despawnSound:bomb-hit
+    hitsound:bomb-hit
     trailColor: ffa665
     trailLength: 4
     trailWidth: 1
 
 despawnEffect: [
+{
+      type: RadialEffect
+      rotationSpacing : 120
+      rotationOffset: 0
+      lengthOffset: 8
+      effect: {
+          type: ParticleEffect
+          particles: 12
+          length: 40
+          lifetime: 30
+          sizeFrom: 3
+          sizeTo: 0
+          cone: 1
+          interp: circleOut
+          colorFrom: ff9c5a
+          colorTo: ff9c5a00
+          layer:100.3
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 60
+      rotationOffset: 60
+      lengthOffset: 8
+      effect: {
+          type: ParticleEffect
+          particles: 7
+          startDelay:5
+          length: 12
+          lifetime: 40
+          sizeFrom: 2
+          sizeTo: 0
+          cone: 50
+          interp: circleOut
+          colorFrom: ff9c5a
+          colorTo: ff9c5a00
+          layer:100.3
+          }
+}
 {    
     startDelay:5
     type: ParticleEffect
@@ -713,7 +794,61 @@ bullet: {
 
     damage: 120
     
-    shootEffect: shockwave
+    shootEffect: [
+    {
+          type: RadialEffect
+          rotationSpacing : 120
+          rotationOffset: 0
+          lengthOffset: 0
+          effect: {
+              followParent: false
+              rotWithParent: false
+              type: ParticleEffect
+              particles: 3
+              length: 15
+              lifetime: 80
+              sizeFrom: 2
+              sizeTo: 3
+              cone: 70
+              interp: circleOut
+              colorFrom: ff9c5a
+              colorTo: ff9c5a00
+              layer:100.3
+              }
+    }
+    {
+        followParent: false
+        rotWithParent: false
+        type: ParticleEffect
+        particles: 8
+        length: 230
+        lifetime: 120
+        line:true
+        strokeFrom: 1.2
+        strokeTo: 1
+        cone: 2
+        interp: circleOut
+        colorFrom: ffffff
+        colorTo: ff9c5a00
+        layer:100.3
+        }
+    {
+         followParent: false
+         rotWithParent: false
+         type: ParticleEffect
+         particles: 4
+         length: 250
+         lifetime: 140
+         line:true
+         strokeFrom: 1.2
+         strokeTo: 1
+         cone: 0
+         interp: circleOut
+         colorFrom: ffffff
+         colorTo: ffffff20
+         layer:100.3
+    }
+    ]
 
     colors: [ ec7458aa, ff9c5a, ffffff ]
     }

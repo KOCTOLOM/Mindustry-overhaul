@@ -186,20 +186,8 @@ hitEffect: {
     type: MultiEffect
 
 effects: [
-{
-    effect: hitBulletSmall
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 3
-    sizeTo: 0
-    }
-{
-    effect: fireHit
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 1
-    sizeTo: 0
-    }
+    hitBulletSmall
+    fireHit
 ]
     }
 }

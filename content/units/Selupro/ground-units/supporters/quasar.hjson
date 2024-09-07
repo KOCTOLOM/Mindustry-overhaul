@@ -152,9 +152,9 @@ bullet: {
     status: electrified
     homingPower: 1
     homingDelay: 4
-    splashDamage: 32
-    homingRange: 5
-    healAmount: 40
+    splashDamage: 42
+    homingRange: 30
+    healAmount: 120
     lifetime: 170
     damage: 48
     drag: 0.02
@@ -188,7 +188,7 @@ bullet: {
     x: 2
     y: -4.5
 
-    repairSpeed: 0.15
+    repairSpeed: 0.06
     beamWidth: 0.6
 
 bullet: {

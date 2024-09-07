@@ -1,6 +1,5 @@
 const remorse = extend(CoreBlock, "remorse", {
     requirements: ItemStack.with(Items.copper, 1),
-    buildVisibility: BuildVisibility.shown,
     category: Category.effect,
     size: 5,
     health: 500000,

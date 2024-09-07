@@ -26,7 +26,7 @@ requirements: [
 ]
 shoot: {
 	firstShotDelay: 5
-    shotDelay: 1
+    shotDelay: 2
     shots: 3
     }
 shootType: {
@@ -39,7 +39,7 @@ shootType: {
     ammoMultiplier: 1
 
     lightningLength: 25
-    damage: 24.5
+    damage: 22
 
     lightColor: ffffff
     lightOpacity: 0.7
@@ -50,8 +50,8 @@ lightningType: {
     hittable: false
     hitSize: 3
 	width:0
-	heigth:0
-    buildingDamageMultplier: 0.25
+	height: 0
+    buildingDamageMultiplier: 0.2
 
     statusDuration: 18
     status: shocked

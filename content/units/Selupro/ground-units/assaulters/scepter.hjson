@@ -76,7 +76,6 @@ bullet: {
 
 {
     name: scepter-weapon
-    parentizeEffects: true
     rotationLimit: 30
     baseRotation: 7.5
     rotateSpeed: 0.6
@@ -128,7 +127,6 @@ parts: [
 
 bullet: {
     type: BasicBulletType
-    parentizeEffects: true
     collideTerrain: true
     pierceBuilding: true
     despawnShake: 7.5

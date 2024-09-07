@@ -290,25 +290,10 @@ pyratite: {
     frontColor: ffaa5f
     backColor: d37f47
 
-hitEffect: {
-    type: MultiEffect
+hitEffect: [
+    hitBulletSmall
+    fireHit
 
-effects: [
-{
-    effect: hitBulletSmall
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 3
-    sizeTo: 0
-    }
-{
-    effect: fireHit
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 1
-    sizeTo: 0
-    }
 ]
     }
 }
-    }

@@ -18,7 +18,6 @@ weapons: [
 	baseRotation:180
 	rotationLimit:20
     autoTarget: true
-    targetAir: false
     mirror: false
     rotate: true
     reload: 180
@@ -27,7 +26,7 @@ weapons: [
     shootY: 0
     x: 0
     y: 0
-
+    ignoreRotation: true
     shootSound: mineDeploy
 
 shoot: {
@@ -38,7 +37,6 @@ shoot: {
 bullet: {
     type: BasicBulletType
     sprite: mine-bullet
-    ignoreRotation: true
     keepVelocity: false
     collideFloor: true
     collidesAir: false
@@ -50,12 +48,12 @@ bullet: {
     height: 8
     width: 8
 
-    buildingDamageMultiplier: 0.75
+    buildingDamageMultiplier: 1.75
 
     splashDamageRadius: 26
-    homingPower: 0.04
-	homingRange: 30
-	homingDelay:5
+    homingPower: 0.09
+	homingRange: 20
+	homingDelay:2
     splashDamage: 50
     healPercent: 2
     lifetime: 147
@@ -65,7 +63,6 @@ bullet: {
     hitSound: plasmaboom
     shootEffect: none
     smokeEffect: none
-    ejectEffect: none
 
     lightColor: 98ffa9
     lightOpacity: 0.7
@@ -88,7 +85,6 @@ hitEffect: {
 
 {
     name: flamethrower-weapon
-    parentizeEffect: true
     rotate: true
     y: -4
     x: 4.5
@@ -103,18 +99,18 @@ bullet: {
     hittable: false
     pierce: true
     hitSize: 7
-
-    buildingDamageMultiplier: 1.32
+    pierceBuilding:true
+    pierceCap:2
+    buildingDamageMultiplier: 1.3
 
     statusDuration: 300
     status: burning
     lifetime: 21
-    damage: 17.5
+    damage: 24.5
     speed: 2
 
     hitEffect: hitFlamePlasma
     despawnEffect: none
-    ejectEffect: none
 
 shootEffect: {
     particles: 15
@@ -126,7 +122,6 @@ shootEffect: {
 
     lightColor: 98ffa9
     lightOpacity: 0.7
-    lightRadius: 17.5
 
     colorFrom: ffffff
     colorTo: 98ffa9

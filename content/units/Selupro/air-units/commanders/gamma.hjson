@@ -1,7 +1,7 @@
 research: core-nucleus
 researchCostMultiplier: 0
 
-itemCapacity: 75
+itemCapacity: 96
 buildSpeed: 1.5
 mineSpeed: 5
 mineTier: 2
@@ -35,10 +35,32 @@ weapons: [
     x: 1
     y: 2
     
-    reload: 5
-
+    reload: 30
+    velocityRnd: 0.2
+    inaccuracy: 9
     shootSound: machine-gun-shot-3
     ejectEffect: casing1
+
+shoot: {
+		type: ShootMulti
+		source: {
+		type: ShootBarrel
+		shotDelay: 2
+		shots: 3
+
+		barrels: [
+			-0.25, 0, 0,
+			0.25, 0, 0
+		]
+		}
+		dest: [
+			{
+			type: ShootPattern
+			shots: 2
+			shotDelay: 10
+			}
+	]
+	}
 
 bullet: {
     type: BasicBulletType
@@ -46,15 +68,19 @@ bullet: {
     height: 11
     width: 6.5
     
-    buildingDamageMultiplier: 0.01
+    buildingDamageMultiplier: 0.005
     pierceDamageFactor: 0.0125
 
-    homingPower: 0.125
+    homingPower: 0.006
     homingRange: 90
     lifetime: 104.5
-    pierceCap: 3
-    damage: 18
+    pierceCap: 2
+    damage: 17
     speed: 3.75
+
+    trailColor: fff8e850
+    trailWidth: 1
+    trailLength: 7
 
     smokeEffect: shootSmallSmoke
     shootEffect: shootSmall

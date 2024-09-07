@@ -93,7 +93,6 @@ shoot: {
 		source: {
 		type: ShootBarrel
 		shotDelay: 2
-		spread: 2
 		shots: 6
 
 		barrels: [
@@ -105,7 +104,7 @@ shoot: {
 		dest: [
 			{
 			type: ShootPattern
-			shots: 5
+			shots: 6
 			shotDelay: 16
 			}
 	]
@@ -125,10 +124,10 @@ bullet: {
     homingPower: 0.03
     splashDamage: 172
     homingRange: 80
-    lifetime: 90
+    lifetime: 110
     drag: -0.003
     damage: 186
-    speed: 3
+    speed: 3.25
 
     despawnEffect: blastExplosion
     hitEffect: blastExplosion
@@ -269,7 +268,7 @@ bullet: {
     predictTarget: false
     rotationLimit: 245
     rotateSpeed: 1.5
-	baseRoration:40
+	baseRotation:40
     alternate: true
     mirror: true
     rotate: true

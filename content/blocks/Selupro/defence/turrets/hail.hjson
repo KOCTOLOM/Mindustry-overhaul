@@ -223,26 +223,10 @@ fragBullet: {
     frontColor: ffaa5f
     backColor: d37f47
 
-hitEffect: {
-    type: MultiEffect
-
-effects: [
-{
+hitEffect: [
     effect: hitBulletSmall
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 3
-    sizeTo: 0
-    }
-{
     effect: fireHit
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 1
-    sizeTo: 0
-    }
 ]
-    }
 }
     }
 

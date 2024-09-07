@@ -18,7 +18,7 @@ lightRadius: 60
 
 trailLength: 8
 
-immunities: [ electrified, mov-status-air-specialization, mov-status-naval-specialization ]
+immunities: [ electrified, mov-air-specialization, mov-naval-specialization ]
 
 abilities: [
     {
@@ -40,21 +40,21 @@ weapons: [
     rotationLimit: 15
     rotateSpeed: 2.5
     alternate: false
-    shootCone: 90
+    shootCone: 20
     rotate: true
     shootY: 2
     recoil: 2
     x: 4.5
 
     cooldownTime: 96
-    reload: 120
+    reload: 80
 
     chargeSound: blaster-charge
     shootSound: blaster-shot-1
     ejectEffect: none
 shoot: {
-    firstShotDelay: 75
-    shotDelay: 10
+    firstShotDelay: 55
+    shotDelay: 6
     shots: 3
 }
 
@@ -62,12 +62,10 @@ bullet: {
     type: LaserBoltBulletType
     collidesTeam: true
 
-    pierceDamageFactor: 0.005
-
     healAmount: 32
     pierceCap: 2
     lifetime: 68
-    damage: 25
+    damage: 26
     speed: 5
 
     hitEffect: hitBulletColor

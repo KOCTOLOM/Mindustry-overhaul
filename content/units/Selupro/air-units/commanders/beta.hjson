@@ -1,7 +1,7 @@
 research: core-foundation
 researchCostMultiplier: 0
 
-itemCapacity: 48
+itemCapacity: 64
 buildSpeed: 1.25
 mineSpeed: 7.5
 mineTier: 2
@@ -26,25 +26,37 @@ weapons: [
     x: 3
     y: 0.5
 
-    reload: 18
+    reload: 22
+    velocityRnd: 0.2
+    inaccuracy: 9
 
     shootSound: machine-gun-shot-2
     ejectEffect: casing1
 shoot: {
-    shotDelay: 5
-    shots: 3
-}
-
+		type: ShootMulti
+		source: {
+		type: ShootSpread
+		spread: 2
+		shots: 2
+		}
+		dest: [
+			{
+			type: ShootPattern
+			shots: 2
+			shotDelay: 6
+			}
+	]
+	}
 bullet: {
     type: BasicBulletType
     scaleLife: true
     height: 9
     width: 7
     
-    buildingDamageMultiplier: 0.01
+    buildingDamageMultiplier: 0.005
     pierceDamageFactor: 0.0075
 
-    homingPower: 0.08
+    homingPower: 0.04
     homingRange: 60
     lifetime: 56.5
     pierceCap: 2
@@ -53,6 +65,10 @@ bullet: {
     
     smokeEffect: shootSmallSmoke
     shootEffect: shootSmall
+
+    trailColor: fff8e850
+    trailWidth: 1
+    trailLength: 5
 
     lightColor: fff8e8
     lightOpacity: 0.7

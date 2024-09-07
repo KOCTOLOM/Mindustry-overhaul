@@ -41,6 +41,9 @@ abilities: [
 	{
     type: ArmorPlateAbility
     healthMultiplier: 0.1
+    shineSpeed:0.4
+    color: ffd2ae20
+    drawShine: false
 }
     ]
 
@@ -419,7 +422,7 @@ fragBullet: {
         absorbable: false
         pierceBuilding: true
         }
-    incendChance: 10
+    incendChance: 1
     incendSpread: 10
     incendAmount: 1
 
@@ -795,7 +798,7 @@ fragBullet: {
     name: reign-missile-launcher
     showStatSprite: false
     controllable: false
-    layerOffset: -0.001
+    layerOffset: 0.001
     autoTarget: true
     alternate: false
     shootCone: 360
@@ -814,11 +817,11 @@ fragBullet: {
     shootSound: rocket-shot-2
 shoot: { 
     shotDelay: 4.5
-    shots: 24
+    shots: 20
     }
 
     warmupMaintainTime: 180
-    shootWarmupSpeed: 0.05
+    shootWarmupSpeed: 0.04
     minWarmup: 0.9
 parts: [
     {
@@ -854,7 +857,7 @@ parts: [
 bullet: {
     type: MissileBulletType
     keepVelocity: false
-    rangeOverride: 648
+    rangeOverride: 528
     despawnShake: 3
     shrinkX: 0.25
     shrinkY: 0.5
@@ -901,7 +904,7 @@ bullet: {
 	hitEffect:none
 	despawnEffect:none
 	incendAmount: 1
-    incendSpread: 1
+    incendSpread: 2
     incendChance: 0.8
 	}
 	

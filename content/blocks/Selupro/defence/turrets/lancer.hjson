@@ -48,7 +48,7 @@ shootType: {
     statusDuration: 540
     pierceCap: 6
     lifetime: 32
-    damage: 240
+    damage: 340
 
     lightningLengthRand: 7.5
     lightningAngleRand: 50
@@ -63,8 +63,8 @@ shootType: {
     hitEffect: hitLancer
 
     colors: [ a9d8ff, ffffff ]
-	frahOnHit:false
-	fragBullets:7
+	fragOnHit:false
+	fragBullets:14
 	fragRandomSpread:12
 	fragBullet:{
 	type: LightningBulletType
@@ -88,7 +88,7 @@ lightningType: {
     hittable: false
     hitSize: 3
 	width:0
-	heigth:0
+
     buildingDamageMultiplier: 0.25
 
     lifetime: 20

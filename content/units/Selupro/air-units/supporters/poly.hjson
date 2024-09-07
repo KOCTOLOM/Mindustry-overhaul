@@ -46,16 +46,15 @@ weapons: [
     beamWidth: 0.5
     shootCone: 30
     rotate: true
-    aimDst: 0
     x: 3.75
     y: -2.5
     
-    fractionRepairSpeed: 0.01
+    fractionRepairSpeed: 0.002
     repairSpeed: 0.25
     reload: 32
 
 bullet: {
-    maxRange: 90
+    maxRange: 45
     }
 }
     ]

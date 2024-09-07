@@ -31,7 +31,6 @@ loopSoundVolume: 0.5
 
 trailColor: bf92f9
 trailLength: 12.5
-trailWidth: 1.5
 
 engineColor: bf92f9
 engineLayer: 110

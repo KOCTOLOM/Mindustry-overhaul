@@ -137,7 +137,7 @@ bullet: {
         splashDamage: 3400
         lifetime: 19
         speed: 48
-        scaledLife:true 
+        scaleLife:true
         fragOnHit:false
         despawnEffect: [
         {
@@ -808,7 +808,7 @@ despawnEffect: {
     rotate: true
     shootY: 4.5
     recoil: 1
-    recoiltime:2
+    recoilTime:2
     shake: 2
     x: 16
     y: 26
@@ -824,7 +824,6 @@ despawnEffect: {
     shoot: {
         shotDelay: 2.5
         shots: 4
-        spread: 2
         }
 parts: [
 {
@@ -926,7 +925,7 @@ despawnEffect: {
     rotate: true
     shootY: 4.5
     recoil: 1
-    recoiltime:20
+    recoilTime:20
     shake: 5
     x: -7
     y: 37
@@ -942,7 +941,6 @@ despawnEffect: {
     shoot: {
         shotDelay: 2.5
         shots: 4
-        spread: 2
         }
 parts: [
 {
@@ -1047,7 +1045,7 @@ despawnEffect: {
     rotate: true
     shootY: 4.5
     recoil: 1
-    recoiltime:20
+    recoilTime:20
     shake: 5
     x: 18
     y: -32
@@ -1068,7 +1066,7 @@ despawnEffect: {
     type: ArtilleryBulletType
     sprite: large-bomb
     collidesTiles: false
-    scaledLife:true
+    scaleLife:true
     height: 10
     width: 10
     shrinkY:0.2

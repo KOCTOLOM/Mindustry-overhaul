@@ -18,7 +18,6 @@ abilities: [
 weapons: [
 {
     name: plasma-laser-mount
-    parentizeEffects: true
     controllable: false
     rotateSpeed: 0.5
 	rotationLimit:70
@@ -45,7 +44,6 @@ shoot: {
 
 bullet: {
     type: ContinuousFlameBulletType
-    timescaleDamage: true
 	hitEffect:[{
     type: ParticleEffect
     lifetime: 90
@@ -90,8 +88,7 @@ bullet: {
 	flareWidth:4
 	flareLength: 10
 	flareRotSpeed :-6
-	
-    parentizeEffects: true
+
     collidesTeam: true
     largeHit: false
     drawSize: 200
@@ -127,7 +124,6 @@ chargeEffect: {
 
 {
     name: plasma-laser-mount
-    parentizeEffects: true
     controllable: false
     rotateSpeed: 1.4
     autoTarget: true
@@ -154,7 +150,6 @@ shoot: {
 
 bullet: {
     type: ContinuousFlameBulletType
-    timescaleDamage: true
 	hitEffect:[{
     type: ParticleEffect
     lifetime: 40
@@ -201,8 +196,7 @@ bullet: {
 	flareWidth:4
 	flareLength: 10
 	flareRotSpeed :3
-	
-    parentizeEffects: true
+
     collidesTeam: true
     largeHit: false
     drawSize: 200
@@ -258,7 +252,6 @@ chargeEffect: {
     type: ShootSpread
     spread: 3
     shots: 3
-	shootDelay:5
     }
 	dest: [
 	{

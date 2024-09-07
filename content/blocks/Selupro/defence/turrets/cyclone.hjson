@@ -117,7 +117,6 @@ blast-compound: {
     height: 15.25
     width: 5.25
 	fragOnHit:false
-	scaledLife:true
     buildingDamageMultiplier: 0.1
     pierceDamageFactor: 100
     reloadMultiplier: 0.5
@@ -188,7 +187,6 @@ plastanium: {
     buildingDamageMultiplier: 0.21
     ammoMultiplier: 24
 	fragOnHit:false
-	scaledLife:true
     splashDamageRadius: 36
     splashDamage: 17.5
     fragBullets: 4
@@ -227,8 +225,7 @@ fragBullet: {
     pierceCap: 2
     lifetime: 15
     damage: 12
-	
-	scaledLife:true
+
     hitEffect: hitBulletColor
     despawnEffect: none
 
@@ -255,7 +252,6 @@ surge-alloy: {
     ammoMultiplier: 12
     rangeChange: 190
 
-	scaledLife:true
 	
     splashDamageRadius: 40
     statusDuration: 180
@@ -357,26 +353,10 @@ pyratite: {
     frontColor: ffaa5f
     backColor: d37f47
 
-hitEffect: {
-    type: MultiEffect
-
-effects: [
-    {
-    effect: hitBulletSmall
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 3
-    sizeTo: 0
-}
-    {
-    effect: fireHit
-    colorTo: ffaa5f
-    lifetime: 20
-    sizeFrom: 1
-    sizeTo: 0
-}
+hitEffect: [
+    hitBulletSmall
+    fireHit
     ]
-}
     }
 
 scrap: {

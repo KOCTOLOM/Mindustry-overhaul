@@ -75,7 +75,7 @@ smokeEffect: {
 
     lightColor: 696969
     lightOpacity: 0.7
-    lightRadius: 12.5
+
 
     colorFrom: db661c
     colorTo: 454545
@@ -94,7 +94,7 @@ shootEffect: {
 
     lightColor: 696969
     lightOpacity: 0.7
-    lightRadius: 12.5
+
 
     colorFrom: ffb855
     colorTo: db661c
@@ -153,7 +153,6 @@ smokeEffect: {
 
     lightColor: 696969
     lightOpacity: 0.7
-    lightRadius: 12.5
 
     colorFrom: 7457ce
     colorTo: 454545
@@ -172,7 +171,6 @@ shootEffect: {
 
     lightColor: 9e78dc
     lightOpacity: 0.7
-    lightRadius: 7.5
 
     colorFrom: 9e78dc
     colorTo: 7457ce

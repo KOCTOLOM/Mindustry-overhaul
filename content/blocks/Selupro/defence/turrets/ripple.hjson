@@ -27,7 +27,6 @@ shoot: {
     firstShotDelay: 80
     spread: 0.7
     shots: 2
-	shootDelay:6
     }
 	dest: [
 	{
@@ -357,13 +356,7 @@ hitEffect: {
     type: MultiEffect
 
 effects: [
-{
-    effect: hitBulletSmall
-    colorTo: ff795e
-    lifetime: 20
-    sizeFrom: 3
-    sizeTo: 0
-    }
+    hitBulletSmall
 {
     type: ExplosionEffect
 

@@ -4,6 +4,7 @@ targetAir: true
 stepShake: 3.25
 fogRadius: 47.5
 range: 384
+faceTarget: false
 
 itemCapacity: 81
 rotateSpeed: 2
@@ -91,7 +92,6 @@ bullet: {
     reload: 64
 
     shootSound: artillery-shot
-    shootEffect: shootSmall
     ejectEffect: casing4
 bullet: {
     type: ArtilleryBulletType
@@ -105,7 +105,37 @@ bullet: {
     width: 16
 
     buildingDamageMultiplier: 1.6
-    
+    shootEffect: [
+        {
+        type: ParticleEffect
+        startDelay: 0
+        particles: 12
+        lifetime: 20
+        cone: 15
+
+        sizeFrom: 2
+        length: 50
+        sizeTo: 2
+
+        colorFrom: f9c27a70
+        colorTo: f9c27a00
+    }
+
+        {
+        type: ParticleEffect
+        startDelay: 0
+        lifetime: 60
+        particles: 16
+        cone: 30
+
+        sizeFrom: 2
+        length: 26
+        sizeTo: 3
+
+        colorFrom: f9c27a40
+        colorTo: f9c27a00
+    }
+        ]
     damage: 90
     
     status: mov-armor-piercing-tier-1

@@ -4,7 +4,7 @@ rotateSpeed: 1
 shake: 15
 
 scaledHealth: 530
-ammoPerShot: 12
+ammoPerShot: 18
 shootCone: 0.35
 maxAmmo: 96
 reload: 480
@@ -12,12 +12,12 @@ range: 820
 armor: 32
 
 consumes: {
-    power: 100
+    power: 120
 	liquids: [
 		cryofluid/0.5
 	]
 	items: [
-		blast-compound/8
+		blast-compound/12
 	]
 }
 
@@ -43,7 +43,7 @@ ammoTypes: {
 		splashDamage: 1150
 		lifetime: 19
 		speed: 48
-		scaledLife:true 
+		scaleLife:true
 		fragOnHit:false
 		despawnEffect: [
 		{
@@ -281,7 +281,6 @@ ammoTypes: {
 		rotationSpacing : 120
 		rotationOffset: 0
 		lengthOffset: 0
-		offsetX:-10
 		effect: {
 			type: ParticleEffect
 			lifetime: 80
@@ -305,7 +304,6 @@ ammoTypes: {
 		rotationSpacing : 120
 		rotationOffset: 0
 		lengthOffset: 0
-		offsetX:-20
 		effect: {
 			type: ParticleEffect
 			lifetime: 80

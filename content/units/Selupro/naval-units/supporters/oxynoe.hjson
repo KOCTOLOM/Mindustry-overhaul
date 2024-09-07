@@ -41,7 +41,6 @@ bullet: {
 	backColor:ffffff00
     hitEffect: hitFlamePlasma
     despawnEffect: none
-    ejectEffect: none
 
 shootEffect: {
     particles: 15
@@ -51,9 +50,6 @@ shootEffect: {
     length: 50
     cone: 5
 
-    lightColor: 98ffa9
-    lightOpacity: 0.7
-    lightRadius: 17.5
 
     colorFrom: ffffff
     colorTo: 98ffa9
@@ -83,7 +79,6 @@ lightningType: {
     hittable: false
     hitSize: 3
 	width:0
-	heigth:0
     buildingDamageMultiplier: 2
 
     lifetime: 20

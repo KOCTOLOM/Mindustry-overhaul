@@ -115,7 +115,6 @@ bullet: {
     shootStatus: unmoving
 shoot: {
     firstShotDelay: 320
-    lifetime: 1
     }
 
 bullet: {
@@ -497,8 +496,7 @@ shoot: {
     }
 
 bullet: {
-    type: LaserBoltType
-    parentizeEffects: true
+    type: BasicBulletType
     pierceBuilding: true
     collidesAir: false
     despawnShake: 3.2
@@ -614,8 +612,7 @@ shoot: {
     }
 
 bullet: {
-    type: LaserBoltType
-    parentizeEffects: true
+    type: BasicBulletType
     pierceBuilding: true
     collidesAir: false
     despawnShake: 3.2
