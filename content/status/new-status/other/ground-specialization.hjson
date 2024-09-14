@@ -1,4 +1,0 @@
-name: Ground Specialization
-healthMultiplier: 0.9
-
-opposites: [ mov-naval-specialization, mov-air-specialization ]

@@ -154,6 +154,7 @@ pyratite: {
     fragBullets: 7
     fragLifeMin: 3
     lifetime: 80
+
     speed: 2.5
 	
 	incendAmount: 2
@@ -200,8 +201,6 @@ fragBullet: {
     height: 12
     width: 5
 
-    buildingDamageMultiplier: 0.25
-
 	buildingDamageMultiplier: 0.5
     splashDamageRadius: 26
     splashDamage: 14.5
@@ -224,8 +223,8 @@ fragBullet: {
     backColor: d37f47
 
 hitEffect: [
-    effect: hitBulletSmall
-    effect: fireHit
+    hitBulletSmall
+    fireHit
 ]
 }
     }

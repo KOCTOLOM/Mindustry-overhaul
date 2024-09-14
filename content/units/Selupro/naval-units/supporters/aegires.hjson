@@ -8,7 +8,7 @@ health: 24000
 speed: 0.35
 armor: 40
 
-immunities: [ burning, melting, electrified, blasted, overclock, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-1 ]
+immunities: [ burning, melting, electrified, blasted, overclock, mov-armor-piercing-tier-1 ]
 
 abilities: [
 {

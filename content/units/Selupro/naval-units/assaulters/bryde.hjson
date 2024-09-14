@@ -63,7 +63,7 @@ deathExplosionEffect: [
     }
 ]
 
-immunities: [ spore-slowed, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-2 ]
+immunities: [ spore-slowed, mov-armor-piercing-tier-2 ]
 
 abilities: [
 {

@@ -231,8 +231,6 @@ tungsten: {
     ammoMultiplier: 18
     rangeChange: 240
 
-    status: mov-air-specialization
-    statusDuration: 450
     knockback: 0.2
     lifetime: 41.5
     pierceCap: 8

@@ -15,7 +15,7 @@ lightOpacity: 0.7
 lightRadius: 47.5
 healColor: bf92f9
 
-immunities: [ sapped, mov-air-specialization, mov-naval-specialization ]
+immunities: [ sapped, spore-slowed]
 
 abilities: [
     {

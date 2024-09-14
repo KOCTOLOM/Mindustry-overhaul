@@ -5,7 +5,7 @@ health: 1280
 speed: 0.6
 armor: 9
 
-immunities: [ spore-slowed, electrified, shocked, mov-ground-specialization, mov-air-specialization ]
+immunities: [ spore-slowed, electrified, shocked ]
 
 weapons: [
 {

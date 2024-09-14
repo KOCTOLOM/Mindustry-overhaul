@@ -19,7 +19,7 @@ trailLength: 7.5
 
 deathSound: medium-air-crush-3
 
-immunities: [ electrified, shocked, tarred, wet, mov-ground-specialization, mov-naval-specialization ]
+immunities: [ electrified, shocked, tarred, wet]
 
 ammoType: {
     type: PowerAmmoType

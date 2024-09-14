@@ -4,7 +4,7 @@ controller: MissileAI
 
 playerControllable: false
 allowedInPayloads: false
-outlineColor: 565666
+outlineColor: 56566600
 createScorch: true
 createWreck: false
 lowAltitude: true
@@ -21,7 +21,7 @@ missileAccelTime: 25
 lifetime: 125
 rotateSpeed: 3
 fogRadius: 9
-maxRange: 6
+maxRange: 30
 health: 410
 speed: 4.5
 armor: 16
@@ -35,17 +35,29 @@ trailLength: 12.5
 engineColor: bf92f9
 engineLayer: 110
 
-immunities: [ mov-ground-specialization, mov-naval-specialization ]
+immunities: [ slow, spore-slowed, tarred]
 
 parts: [
-    type: FlarePart
-    followRotation: true
-    color2: ffffff
-    color1: bf92f9
-    rotation: 45
-    radius: 24
-    stroke: 3
-    y: -5
+    {
+        layer:100.3
+        type: HaloPart
+        stroke:3
+        shapes:4
+        tri:true
+        triLength: 8
+        triLengthTo: 30
+        color: bf92f9
+        colorTo: 9059E3
+        rotation: 0
+        haloRadius:0
+        haloRotateSpeed:3.2
+        radius: 3
+        radiusTo: 3
+        progress: life
+        stroke: 4
+        strokeTo: 1.5
+        y: -2.25
+    }
     ]
 
 weapons: [
@@ -80,46 +92,46 @@ bullet: {
 
     lightningColor: ffffff
 
-hitEffect: {
+hitEffect:{
     type: ExplosionEffect
 
-    lifetime: 64
+    lifetime: 124
 
     waveColor: bf92f9
     waveStroke: 5
-    waveRad: 60
+    waveRad: 76
 
-    smokeColor: 696969
+    smokeColor: 69696920
     smokeSizeBase: 0
-    smokeSize: 21.5
-    smokes: 9
+    smokeSize: 12.5
+    smokes: 8
 
     sparkColor: bf92f9
     sparkStroke: 1.5
-    sparkRad: 48
-    sparkLen: 3
-    sparks: 18
+    sparkRad: 58
+    sparkLen: 5
+    sparks: 26
 }
 
 despawnEffect: {
     type: ExplosionEffect
 
-    lifetime: 64
+    lifetime: 124
 
     waveColor: bf92f9
     waveStroke: 5
-    waveRad: 60
+    waveRad: 76
 
-    smokeColor: 696969
+    smokeColor: 69696920
     smokeSizeBase: 0
-    smokeSize: 21.5
-    smokes: 9
+    smokeSize: 12.5
+    smokes: 8
 
     sparkColor: bf92f9
     sparkStroke: 1.5
-    sparkRad: 48
-    sparkLen: 3
-    sparks: 18
+    sparkRad: 58
+    sparkLen: 5
+    sparks:26
 }
     }
 }

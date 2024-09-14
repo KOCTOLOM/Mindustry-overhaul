@@ -13,7 +13,7 @@ lightRadius: 52.5
 
 trailLength: 5.45
 
-immunities: [ tarred, wet, mov-ground-specialization, mov-naval-specialization ]
+immunities: [ tarred, wet, spore-slowed]
 
 ammoType: {
     type: PowerAmmoType

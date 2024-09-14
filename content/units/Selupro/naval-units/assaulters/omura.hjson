@@ -91,7 +91,7 @@ abilities: [
 
 healColor: EB7600
 
-immunities: [ spore-slowed, burning, melting, shocked, blasted, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-1, mov-armor-piercing-tier-2 ]
+immunities: [ spore-slowed, burning, melting, shocked, blasted, mov-armor-piercing-tier-1, mov-armor-piercing-tier-2 ]
 
 weapons: [
 {

@@ -14,7 +14,7 @@ lightOpacity: 0.7
 lightRadius: 67.5
 healColor: b0bac0
 
-immunities: [ burning, blasted, mov-air-specialization, mov-naval-specialization ]
+immunities: [ burning, blasted ]
 
 abilities: [
     {

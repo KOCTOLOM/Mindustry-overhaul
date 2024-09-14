@@ -14,7 +14,7 @@ lightOpacity: 0.7
 healColor: bf92f9
 lightRadius: 90
 
-immunities: [ melting, burning, sapped, mov-air-specialization, mov-naval-specialization ]
+immunities: [ melting, burning, sapped ]
 
 abilities: [
     {

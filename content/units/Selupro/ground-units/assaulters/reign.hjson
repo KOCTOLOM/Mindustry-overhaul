@@ -17,7 +17,7 @@ lightRadius: 170
 
 deathSound: mech-large-destroyed
 
-immunities: [ overclock, burning, melting, wet, blasted, shocked, mov-air-specialization, mov-naval-specialization ]
+immunities: [ overclock, burning, melting, wet, blasted, shocked ]
 
 abilities: [
     {

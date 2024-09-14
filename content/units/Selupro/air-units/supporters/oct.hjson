@@ -25,7 +25,7 @@ deathSound: air-crush-large-2
 loopSound: air-engine
 loopSoundVolume: 0.4
 
-immunities: [ electrified, melting, burning, blasted, shocked, tarred, wet, mov-ground-specialization, mov-naval-specialization ]
+immunities: [ electrified, melting, burning, blasted, shocked, tarred, wet, spore-slowed]
 
 abilities: [
     {

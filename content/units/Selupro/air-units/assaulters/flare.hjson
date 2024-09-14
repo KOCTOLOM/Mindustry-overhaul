@@ -22,7 +22,7 @@ trailLength: 7.5
 
 deathSound: air-crush-small-1
 
-immunities: [ mov-ground-specialization, mov-naval-specialization ]
+immunities: []
 
 targetFlags: [ generator, reactor, battery, extinguisher, drill, repair ]
 
@@ -52,10 +52,6 @@ bullet: {
     height: 9
     width: 7
 
-    ammoMultiplier: 5
-
-    status: naval-specialization
-    statusDuration: 10
     lifetime: 58
     damage: 12.5
     speed: 3

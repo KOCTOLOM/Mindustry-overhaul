@@ -1,4 +1,0 @@
-name: Naval Specialization
-healthMultiplier: 0.9
-
-opposites: [ mov-ground-specialization, mov-air-specialization ]

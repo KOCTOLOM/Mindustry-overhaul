@@ -17,7 +17,7 @@ lightRadius: 125
 
 trailLength: 15
 
-immunities: [ electrified, melting, burning, mov-air-specialization, mov-naval-specialization ]
+immunities: [ electrified, melting, burning ]
 
 abilities: [
     {

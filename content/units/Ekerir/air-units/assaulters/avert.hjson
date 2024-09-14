@@ -9,4 +9,4 @@ drag: 0.08
 armor: 9
 speed: 2
 
-immunities: [ mov-ground-specialization, mov-naval-specialization ]
+immunities: []

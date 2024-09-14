@@ -64,7 +64,7 @@ deathExplosionEffect: [
     }
 ]
 
-immunities: [ spore-slowed, mov-ground-specialization, mov-air-specialization, mov-armor-piercing-tier-1 ]
+immunities: [ spore-slowed, mov-armor-piercing-tier-1 ]
 
 weapons: [
 {
@@ -322,7 +322,6 @@ bullet: {
 
     buildingDamageMultiplier: 1.5
 
-    status: mov-ground-specialization
     splashDamageRadius: 40
     statusDuration: 180
     splashDamage: 75

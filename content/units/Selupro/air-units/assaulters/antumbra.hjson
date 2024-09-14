@@ -26,7 +26,7 @@ loopSound: air-engine
 
 trailLength: 19
 
-immunities: [ burning, blasted, shocked, tarred, wet, mov-ground-specialization, mov-naval-specialization ]
+immunities: [ burning, blasted, shocked, tarred, wet]
 
 targetFlags: [ unitAssembler, unitCargoUnloadPoint, turret, reactor, generator, battery, core ]
 

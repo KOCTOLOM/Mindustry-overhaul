@@ -7,19 +7,18 @@ fogRadius: 48
 
 rotateSpeed: 3
 speed: 0.66669
-health: 360
+health: 560
 armor: 5
 
 lightColor: 8ca9e8
 lightOpacity: 0.7
 lightRadius: 64.5
 
-immunities: [ mov-air-specialization, mov-naval-specialization ]
+immunities: []
 
 weapons: [
 {
     name: merui-weapon
-    alwaysShootWhenMoving: true
     parentizeEffects: true
     showStatSprite: false
     mirror: false
@@ -38,9 +37,9 @@ weapons: [
     shootStatusDuration: 128
 shoot: {
     type: ShootSpread
-    firstShotDelay: 75
-    shotDelay: 12.5
-    spread: 4.5
+    firstShotDelay: 45
+    shotDelay: 18
+    spread: 1
     shots: 3
     }
 
@@ -59,7 +58,6 @@ bullet: {
 
     buildingDamageMultiplier: 1.25
 
-    status: mov-armor-piercing-tier-1
     splashDamageRadius: 40
     statusDuration: 180
     splashDamage: 81
@@ -87,11 +85,12 @@ bullet: {
 shootEffect: {
     type: WaveEffect
     lifetime: 24
-    sizeFrom: 0
-    sizeTo: 18
-
+    sizeFrom: 12
+    sizeTo: 0
+    strokeFrom:4
+    strokeTo:2
     colorFrom: 8ca9e8
-    colorTo: ffffff
+    colorTo: ffffff00
     }
 
 hitEffect: {
@@ -101,18 +100,18 @@ hitEffect: {
 
     waveColor: 8ca9e8
     waveStroke: 3.2
-    waveRad: 48
+    waveRad: 23
 
     smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 14.5
-    smokes: 7
+    smokeSize: 6.5
+    smokes: 3
 
     sparkColor: 8ca9e8
-    sparkStroke: 1.8
-    sparkRad: 27.5
-    sparkLen: 3
-    sparks: 9
+    sparkStroke: 1.2
+    sparkRad: 20.5
+    sparkLen: 4
+    sparks: 5
 }
 
 chargeEffect: {

@@ -1,0 +1,213 @@
+type: missile
+template: MissileUnitType
+controller: MissileAI
+
+playerControllable: false
+allowedInPayloads: false
+outlineColor: 56566600
+createScorch: true
+createWreck: false
+lowAltitude: true
+useUnitCap: false
+drawCell: true
+physics: false
+hitSize: 3.5
+flying: true
+
+envDisabled: 0
+envEnabled: -1
+
+missileAccelTime: 10
+lifetime: 85
+rotateSpeed: 2.5
+fogRadius: 9
+maxRange: 30
+health: 1510
+speed: 5.5
+armor: 40
+homingDelay:20
+deathExplosionEffect: none
+loopSoundVolume: 0.5
+
+trailColor: 8ca9e8
+trailLength: 21
+trailWidth: 1.2
+engineColor: bf92f9
+engineLayer: 110
+
+immunities: [ slow, spore-slowed, tarred]
+
+parts: [
+    {
+        layer:100.3
+        type: HaloPart
+        stroke:3
+        shapes:6
+        tri:true
+        triLength: 6
+        triLengthTo: 16
+        color: 8ca9e8
+        colorTo: 8ca9e8
+        rotation: 0
+        haloRadius:0
+        haloRotateSpeed:6.2
+        radius: 2
+        radiusTo: 3
+        progress: life
+        stroke: 4
+        strokeTo: 1.5
+        y: -2.25
+    }
+    {
+        layer:100.3
+        type: HaloPart
+        stroke:3
+        shapes:6
+        tri:true
+        triLength: 4
+        triLengthTo: 6
+        color: 8ca9e8
+        colorTo: 8ca9e8
+        rotation: 0
+        haloRotation:30
+        haloRadius:0
+        haloRotateSpeed:3.1
+        radius: 6
+        radiusTo: 2
+        progress: life
+        stroke: 4
+        strokeTo: 1.5
+        y: -2.25
+    }
+    ]
+
+weapons: [
+{
+    shootOnDeath: true
+    shootCone: 360
+    mirror: false
+    shake: 2.5
+    x: 0
+    y: 0
+
+    reload: 1
+
+bullet: {
+    type: ExplosionBulletType
+    collidesAir: false
+    despawnShake: 10
+    maxRange: 24
+
+    buildingDamageMultiplier: 1.1
+
+    splashDamageRadius: 60
+    statusDuration: 300
+    status: mov-slow-reloading-tier-3
+    splashDamage: 20
+
+    hitSound: rocket-explosion
+    shootEffect: none
+    fragBullets:12
+    fragSpread:0.2
+    fragRandomSpread:50
+    fragAngle:0
+    fragVelocityMin:0.7
+    fragVelocityMax:2.1
+    fragLifeMin: 0.7
+    fragLifeMax: 1.4
+    fragBullet: {
+                type: BasicBulletType
+                sprite:large-orb
+                homingPower: 0.09
+                homingRange: 90
+                homingDelay:10
+                weaveMag: 2
+                weaveScale: 3
+                lifetime: 35
+                shrinkX:0
+                shrinkY:0
+                shootEffect: none
+                smokeEffect: none
+                damage:20
+                pierceArmor: true
+                pierceBuilding: true
+                pierceCap:2
+                splashDamage: 20
+                splashDamageRadius: 15
+                frontColor: ffffff
+                hitSound:none
+                width: 6
+                height: 5
+                speed:2.6
+                drag:0.007
+                lightColor: 8ca9e8
+                trailColor: 8ca9e8
+                backColor: 8ca9e8
+                lightRadius: 10
+                lightOpacity: 0.7
+
+                trailWidth: 1.4
+                trailLength: 5
+                despawnSound: dullExplosion
+
+                despawnEffect:none
+                hitEffect:{
+                    type: ExplosionEffect
+                    lifetime: 10
+                    waveStroke: 1
+                    waveColor:8ca9e8
+                    sparkColor: 8ca9e8
+                    waveRad: 6
+                    smokeSize: 0
+                    smokeSizeBase: 0
+                    sparks: 3
+                    sparkRad: 4
+                    sparkLen: 2
+                    sparkStroke: 1.5
+                    }
+                    }
+
+hitEffect:{
+    type: ExplosionEffect
+
+    lifetime: 34
+
+    waveColor: 8ca9e8
+    waveStroke: 5
+    waveRad: 76
+
+    smokeColor: 8ca9e830
+    smokeSizeBase: 0
+    smokeSize: 12.5
+    smokes: 4
+
+    sparkColor: 8ca9e8
+    sparkStroke: 1.5
+    sparkRad: 58
+    sparkLen: 5
+    sparks:12
+}
+
+despawnEffect: {
+    type: ExplosionEffect
+
+    lifetime: 34
+
+    waveColor: 8ca9e8
+    waveStroke: 5
+    waveRad: 76
+
+    smokeColor: 8ca9e830
+    smokeSizeBase: 0
+    smokeSize: 12.5
+    smokes: 4
+
+    sparkColor: 8ca9e8
+    sparkStroke: 1.5
+    sparkRad: 58
+    sparkLen: 5
+    sparks:12
+}
+    }
+}
+    ]
