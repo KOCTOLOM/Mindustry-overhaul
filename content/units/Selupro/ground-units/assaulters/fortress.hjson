@@ -4,7 +4,6 @@ targetAir: true
 stepShake: 3.25
 fogRadius: 47.5
 range: 384
-faceTarget: false
 
 itemCapacity: 81
 rotateSpeed: 2

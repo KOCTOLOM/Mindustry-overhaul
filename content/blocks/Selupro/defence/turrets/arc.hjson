@@ -39,7 +39,7 @@ shootType: {
     ammoMultiplier: 1
 
     lightningLength: 25
-    damage: 22
+    damage: 16
 
     lightColor: ffffff
     lightOpacity: 0.7

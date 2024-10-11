@@ -10,7 +10,7 @@ buildCostMultiplier: 2.1
 inaccuracy: 14
 maxAmmo: 45
 health: 660
-reload: 168
+reload: 178
 range: 360
 armor: 3
 

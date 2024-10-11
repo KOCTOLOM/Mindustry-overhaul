@@ -6,15 +6,15 @@ maxAmmo: 1800
 armor: 81
 
 consumes: {
-    power: 1600
+    power: 300
     }
 
 requirements: [
-    oxide/15000
-    beryllium/24000
-    graphite/50000
-    silicon/47000
-    tungsten/21000
-    thorium/18000
-    carbide/12000
+    oxide/5000
+    beryllium/4000
+    graphite/5000
+    silicon/6000
+    tungsten/2000
+    thorium/5000
+    carbide/2000
     ]
