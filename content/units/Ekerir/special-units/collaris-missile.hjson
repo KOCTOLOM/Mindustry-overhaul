@@ -6,32 +6,32 @@ playerControllable: false
 allowedInPayloads: false
 outlineColor: 56566600
 createScorch: true
-createWreck: false
+createWreck: true
 lowAltitude: true
 useUnitCap: false
 drawCell: true
-physics: false
+physics:  false
 hitSize: 3.5
 flying: true
-
+fallSpeed:0.3
 envDisabled: 0
 envEnabled: -1
 
-missileAccelTime: 10
-lifetime: 85
-rotateSpeed: 2.5
+missileAccelTime: 2
+accel:0.3
+lifetime: 125
+rotateSpeed: 0.35
 fogRadius: 9
 maxRange: 30
-health: 1510
+health: 3510
 speed: 5.5
-armor: 40
+armor: 90
 homingDelay:20
 deathExplosionEffect: none
 loopSoundVolume: 0.5
 
 trailColor: 8ca9e8
-trailLength: 21
-trailWidth: 1.2
+trailLength: 40
 engineColor: 8ca9e8
 engineLayer: 110
 
@@ -42,48 +42,29 @@ parts: [
         layer:100.3
         type: HaloPart
         stroke:3
-        shapes:6
+        shapes:4
         tri:true
         triLength: 6
-        triLengthTo: 16
+        triLengthTo: 60
         color: 8ca9e8
         colorTo: 8ca9e8
-        rotation: 0
+        rotation: 180
         haloRadius:0
-        haloRotateSpeed:6.2
+        haloRotateSpeed:0.25
         radius: 2
-        radiusTo: 3
+        radiusTo: 5
         progress: life
         stroke: 4
         strokeTo: 1.5
-        y: -2.25
-    }
-    {
-        layer:100.3
-        type: HaloPart
-        stroke:3
-        shapes:6
-        tri:true
-        triLength: 4
-        triLengthTo: 6
-        color: 8ca9e8
-        colorTo: 8ca9e8
-        rotation: 0
-        haloRotation:30
-        haloRadius:0
-        haloRotateSpeed:3.1
-        radius: 6
-        radiusTo: 2
-        progress: life
-        stroke: 4
-        strokeTo: 1.5
-        y: -2.25
+        y: -1.25
     }
     ]
 
 weapons: [
 {
     shootOnDeath: true
+    killShooter: true
+    controllable:false
     shootCone: 360
     mirror: false
     shake: 2.5
@@ -96,25 +77,26 @@ bullet: {
     type: ExplosionBulletType
     collidesAir: false
     despawnShake: 10
-    maxRange: 24
 
+    maxRange: 24
     buildingDamageMultiplier: 1.1
 
     splashDamageRadius: 60
     statusDuration: 300
     status: mov-slow-reloading-tier-3
-    splashDamage: 20
+    splashDamage: 700
 
     hitSound: rocket-explosion
     shootEffect: none
-    fragBullets:12
+    fragBullets:16
     fragSpread:0.2
     fragRandomSpread:50
     fragAngle:0
     fragVelocityMin:0.7
-    fragVelocityMax:2.1
-    fragLifeMin: 0.7
-    fragLifeMax: 1.4
+    fragVelocityMax: 6
+    fragLifeMin: 0.3
+    fragLifeMax: 1.1
+    fragOnHit:false
     fragBullet: {
                 type: BasicBulletType
                 sprite:large-orb
@@ -128,17 +110,17 @@ bullet: {
                 shrinkY:0
                 shootEffect: none
                 smokeEffect: none
-                damage:20
+                damage:50
                 pierceArmor: true
                 pierceBuilding: true
-                pierceCap:2
-                splashDamage: 20
+                pierceCap:3
+                splashDamage: 30
                 splashDamageRadius: 15
                 frontColor: ffffff
                 hitSound:none
                 width: 6
                 height: 5
-                speed:2.6
+                speed:1.4
                 drag:0.007
                 lightColor: 8ca9e8
                 trailColor: 8ca9e8
@@ -167,7 +149,9 @@ bullet: {
                     }
                     }
 
-hitEffect:{
+despawnEffect:none
+
+hitEffect: [{
     type: ExplosionEffect
 
     lifetime: 34
@@ -179,35 +163,115 @@ hitEffect:{
     smokeColor: 8ca9e830
     smokeSizeBase: 0
     smokeSize: 12.5
-    smokes: 4
+    smokes: 2
 
     sparkColor: 8ca9e8
     sparkStroke: 1.5
     sparkRad: 58
     sparkLen: 5
-    sparks:12
+    sparks:6
 }
-
-despawnEffect: {
+{
     type: ExplosionEffect
 
-    lifetime: 34
+    lifetime: 214
 
     waveColor: 8ca9e8
-    waveStroke: 5
-    waveRad: 76
+    waveStroke: 2
+    waveRad: 50
 
-    smokeColor: 8ca9e830
+    smokeColor: 8ca9e840
     smokeSizeBase: 0
     smokeSize: 12.5
-    smokes: 4
+    smokes: 5
 
     sparkColor: 8ca9e8
     sparkStroke: 1.5
     sparkRad: 58
     sparkLen: 5
-    sparks:12
+    sparks:0
 }
+]
     }
+}
+{
+    shootOnDeath: true
+    controllable:false
+    shootCone: 360
+    mirror: false
+    shake: 2.5
+    x: 0
+    y: 0
+
+    reload: 1
+
+    bullet: {
+        type: LaserBulletType
+        collidesAir: false
+        drawSize: 230
+        length: 225
+        hitSize: 5
+        maxRange: 24
+        buildingDamageMultiplier: 2
+        ammoMultiplier: 1
+
+        status: emp-tier-1
+        statusDuration: 540
+        pierceCap: 8
+        lifetime: 10
+        damage: 360
+
+        lightningLengthRand: 7.5
+        lightningAngleRand: 50
+        lightningSpacing: 35
+        lightningDamage: 220
+        lightningLength: 2.5
+        lightningDelay: 0.1
+
+        lightningColor: 8ca9e8
+        lightColor: 8ca9e8
+
+        hitEffect: hitLancer
+
+        colors: [ 8ca9e8, ffffff ]
+    	fragOnHit:false
+    	fragBullets:18
+    	fragRandomSpread:360
+    	fragBullet:{
+    	type: LightningBulletType
+        collidesAir: false
+        hittable: false
+        hitSize: 3
+
+        buildingDamageMultiplier: 1
+        ammoMultiplier: 1
+
+    	lightningLengthRand:6
+        lightningLength: 7
+        damage: 120
+
+        lightColor: 8ca9e8
+        lightOpacity: 0.7
+        lightRadius: 14.5
+
+    lightningType: {
+        collidesAir: false
+        hittable: false
+        hitSize: 3
+    	width:0
+
+        buildingDamageMultiplier: 1
+
+        lifetime: 10
+
+        hitEffect: hitLancer
+        despawnEffect: none
+
+        lightColor: ffffff
+        lightOpacity: 0.7
+        lightRadius: 14.5
+    }
+}
+}
 }
     ]

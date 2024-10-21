@@ -1,4 +1,333 @@
 research: tecta
 
-health: 690000
-armor: 180
+health: 90000
+armor: 240
+drag: 0.2
+speed:1.4
+rotateSpeed: 1.2
+accel:0.24
+legSplashDamage: 760
+legSplashRange: 40
+weapons: [
+    {
+        name:collaris-rocket-weapon
+        shootSound: malignShoot
+        mirror: false
+        layerOffset:0.002
+        rotationLimit:35
+        rotateSpeed: 0.4
+        rotate: true
+
+        x: -12
+        y: -6
+        shootY: 11.75
+        recoil: 3
+        reload: 520
+        shake: 3
+        cooldownTime: 720
+        heatColor: FF0000
+        inaccuracy: 3
+        velocityRnd: 0.1
+        heatColor: ff0000
+
+        shootStatus: unmoving
+        shootStatusDuration: 60
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 20
+            shotDelay:10
+            spread:1.2
+            shots: 3
+            }
+
+
+      bullet: {
+          type: BulletType
+          spawnUnit: collaris-missile
+          keepVelocity: false
+          collidesAir: true
+
+          speed: 0
+
+          smokeEffect: none
+          shootEffect: none
+          }
+    }
+    {
+        name:collaris-weapon
+        shootSound:pulseBlast
+        mirror:false
+        rotationLimit:35
+        rotateSpeed: 0.4
+        rotate: true
+
+        x: 12
+        y: -7
+        shootY: 16
+        recoil:4
+        reload:340
+        cooldownTime:430
+        shake: 5
+        layerOffset:0.02
+        inaccuracy: 2
+        velocityRnd: 0.1
+        shootStatus:slow
+        shootStatusDuration: 340
+
+       shoot: {
+       	type: ShootMulti
+       	source: {
+           type: ShootSpread
+           spread: 0.6
+           shots: 2
+           }
+       	dest: [
+       	{
+               	type: ShootMulti
+               	source: {
+                   type: ShootPattern
+                   shots: 3
+                   shotDelay: 5
+                   }
+               	dest: [
+               	{
+               	type: ShootPattern
+               	    firstShotDelay: 40
+               		shots: 6
+               		shotDelay: 50
+               	}
+               	]
+        }
+       	]
+       	}
+
+        heatColor: FF0000
+        bullet:{
+            type:ArtilleryBulletType
+            speed:7
+            damage:260
+            collidesTiles:true
+            collides:true
+            lifetime: 80
+            shootEffect:shootBigColor
+            smokeEffect:shootSmokeSquareBig
+            frontColor: ffffff
+            hitSound: none
+            width:17
+            height: 24
+
+            lightColor:8ca9e8
+            trailColor:8ca9e8
+            hitColor:8ca9e8
+            backColor:8ca9e8
+            lightRadius: 40
+            lightOpacity: 0.7
+
+            trailWidth: 2
+            trailLength: 19
+
+            despawnSound: dullExplosion
+
+            hitEffect:
+                {
+                type: ExplosionEffect
+                lifetime: 20
+                waveStroke: 1
+                waveColor:8ca9e8
+                sparkColor: 8ca9e8
+                waveRad: 40
+                smokes:3
+                smokeSize: 12
+                smokeSizeBase: 0
+                sparks: 15
+                sparkRad: 4
+                sparkLen: 12
+                sparkStroke: 2.4
+                }
+
+            despawnEffect:none
+            splashDamage: 125
+            splashDamageRadius:26
+            homingPower: 0.007
+            homingRange: 150
+            fragBullets:3
+            fragVelocityMin: 0.5
+            fragVelocityMax: 1.7
+            fragRandomSpread:30
+            fragLifeMin: 0.3
+            fragLifeMax: 1.2
+            despawnShake: 5
+
+            fragBullet:{
+                type:BasicBulletType
+                damage:170
+                pierceArmor:true
+                pierceCap: 2
+                pierceBuilding: true
+
+                homingPower: 0.03
+                homingRange: 150
+                speed:3.5
+                lifetime: 30
+                shootEffect: shootBigColor
+                smokeEffect: shootSmokeSquareBig
+                frontColor: ffffff
+                hitSound:none
+                width: 9
+                height: 20
+
+                lightColor:8ca9e8
+                trailColor:8ca9e8
+                hitColor:8ca9e8
+                backColor:8ca9e8
+                lightRadius: 40
+                lightOpacity: 0.7
+
+                trailWidth: 1.2
+                trailLength: 15
+
+                collidesAir: true
+
+                despawnEffect:none
+                splashDamage: 146
+                splashDamageRadius: 30
+
+                hitEffect:{
+                    type: ExplosionEffect
+                    lifetime: 10
+                    waveStroke: 1
+                    waveColor:8ca9e8
+                    sparkColor: 8ca9e8
+                    waveRad: 6
+                    smokes:3
+                    smokeSize: 3
+                    smokeSizeBase: 0
+                    sparks: 6
+                    sparkRad: 4
+                    sparkLen: 2
+                    sparkStroke: 1.2
+                    }
+                    }
+                }
+            }
+            {
+                minShootVelocity: 0.95
+                mirror: false
+                x: 0
+                y: -12
+                ignoreRotation: true
+                baseRotation:180
+                reload: 10
+                alwaysShooting:true
+                shootSound: none
+                inaccuracy:150
+            bullet: {
+                type: BasicBulletType
+                sprite: large-bomb
+                keepVelocity: false
+                collidesAir: false
+                absorbable: false
+                despawnShake: 9
+                collides: true
+                layer:70
+                hittable: false
+                hitShake: 11
+                height: 19
+                width: 19
+
+                buildingDamageMultiplier: 3
+
+                splashDamageRadius: 60
+                statusDuration: 900
+                status: electrified
+                splashDamage: 800
+                pierceCap: 32
+                lifetime: 500
+                drag: 0.2
+                speed: 5
+
+                despawnEffect: none
+                hitSound: plasmaboom
+                shootEffect:none
+                frontColor: ffffff
+                backColor: 8ca9e8
+
+            hitEffect:[
+            {
+                  type: RadialEffect
+                  rotationSpacing : 90
+                  rotationOffset: 0
+                  lengthOffset: 8
+                  effect: {
+                      type: ParticleEffect
+                      particles: 12
+                      length: 40
+                      lifetime: 30
+                      sizeFrom: 3
+                      sizeTo: 0
+                      cone: 1
+                      interp: circleOut
+                      colorFrom: 8ca9e8
+                      colorTo: 8ca9e800
+                      layer:100.3
+                      }
+            }
+            {
+                  type: RadialEffect
+                  rotationSpacing : 90
+                  rotationOffset: 45
+                  lengthOffset: 8
+                  effect: {
+                      type: ParticleEffect
+                      particles: 7
+                      startDelay:5
+                      length: 12
+                      lifetime: 40
+                      sizeFrom: 2
+                      sizeTo: 0
+                      cone: 50
+                      interp: circleOut
+                      colorFrom: 8ca9e8
+                      colorTo: 8ca9e800
+                      layer:100.3
+                      }
+            }
+            {
+                startDelay:5
+                type: ParticleEffect
+                particles: 4
+                cone: 360
+                length: 7
+                lifetime: 45
+                sizeFrom: 2
+                sizeTo: 3
+                layer:100.1
+                colorFrom: 5B5B5B
+                colorTo: 5B5B5B00
+                }
+            {
+                startDelay:5
+                type: ParticleEffect
+                particles: 4
+                cone: 360
+                length: 5
+                lifetime: 45
+                sizeFrom: 1
+                sizeTo: 2
+                layer:100.2
+                colorFrom: 808080
+                colorTo: 80808000
+                }
+            {
+                startDelay:7
+                type: WaveEffect
+                sizeFrom: 0
+                sizeTo: 26
+                lifetime: 90
+                colorFrom: 5B5B5B20
+                colorTo: 5B5B5B00
+                }
+                ]
+            }
+                }
+        ]

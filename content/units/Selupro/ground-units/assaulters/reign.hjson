@@ -154,7 +154,6 @@ bullet: {
     hitSize: 7
 
     buildingDamageMultiplier: 1.45
-    ammoMultiplier: 15
 
     statusDuration: 540
     status: burning
@@ -798,7 +797,7 @@ fragBullet: {
     name: reign-missile-launcher
     showStatSprite: false
     controllable: false
-    layerOffset: 0.001
+    layerOffset: -0.001
     autoTarget: true
     alternate: false
     shootCone: 360
@@ -806,22 +805,22 @@ fragBullet: {
     recoil: 0
     shootX: 0
     shootY: 0
-    x: 10.5
+    x: 10.25
     y: -2.5
 
-    cooldownTime: 480
+    cooldownTime: 880
     velocityRnd: 0.64
     inaccuracy: 360
     reload: 500
-
+    heatColor:FF00000
     shootSound: rocket-shot-2
 shoot: { 
-    shotDelay: 4.5
-    shots: 20
+    shotDelay: 3.5
+    shots: 22
     }
 
-    warmupMaintainTime: 180
-    shootWarmupSpeed: 0.04
+    warmupMaintainTime: 280
+    shootWarmupSpeed: 0.003
     minWarmup: 0.9
 parts: [
     {
@@ -829,7 +828,8 @@ parts: [
     suffix: -cover-top
     progress: warmup
     outline: false
-    moveY: 2.5
+    moveY: 2.4
+    layerOffset: 0.002
 }
     {
     type: RegionPart
@@ -837,6 +837,7 @@ parts: [
     progress: warmup
     outline: false
     moveY: -2.5
+    layerOffset: 0.002
 }
     {
     type: RegionPart
@@ -844,6 +845,7 @@ parts: [
     progress: warmup
     outline: false
     moveX: 2.5
+    layerOffset: 0.002
 }
     {
     type: RegionPart
@@ -851,6 +853,7 @@ parts: [
     progress: warmup
     outline: false
     moveX: -2.5
+    layerOffset: 0.002
 }
     ]
 
@@ -877,7 +880,7 @@ bullet: {
     lifetime: 360
     weaveMag: 4
     damage: 150
-    speed: 4
+    speed: 3.5
 	
 	intervalBullets: 1
     bulletInterval: 3
@@ -1069,7 +1072,7 @@ hitEffect: [{
     lifetime: 30
     }
     ]
-        hitEffect: none
+    hitEffect: none
     
     trailColor: 5B5B5B
     trailEffect: missileTrail
@@ -1112,7 +1115,7 @@ hitEffect: [{
     pierceCap: 3
     pierceBuilding: true
     
-        despawnEffect:[
+    despawnEffect:[
     {    
     startDelay:5
     type: ParticleEffect
@@ -1163,7 +1166,7 @@ hitEffect: [{
     lifetime: 35
     }
     ]
-        hitEffect: none
+    hitEffect: none
     
     trailColor: 5B5B5B
     trailEffect: missileTrail
@@ -1172,15 +1175,15 @@ hitEffect: [{
     trailParam: 2
     trailInterval: 1
     
-        frontColor: ffffff
-        backColor: F3E979
+    frontColor: ffffff
+    backColor: F3E979
     incendAmount: 1
     incendSpread: 4
     incendChance: 1
     
-        lightColor: F3E979
-        lightOpacity: 0.7
-        lightRadius: 31
+    lightColor: F3E979
+    lightOpacity: 0.7
+    lightRadius: 31
     }
     }
 }
@@ -1199,7 +1202,7 @@ hitEffect: [{
 
     inaccuracy: 4
     reload: 24
-
+    layerOffset: 0.003
     shootSound: rocket-fire
     ejectEffect: casing1
 

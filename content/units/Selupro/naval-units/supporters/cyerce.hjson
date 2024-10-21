@@ -80,8 +80,8 @@ hitEffect: [{
     waveStroke: 2
     waveLife: 10
 
-    smokeColor: ffffff
-    smokes: 3
+    smokeColor: 98ffa9
+    smokes: 6
 
     sparkColor: 98ffa9
     sparkStroke: 1.5
@@ -159,10 +159,10 @@ fragBullet: {
     sparkColor: 98ffa9
     sparkStroke: 1.5
     sparkRad: 35
-    sparkLen: 4
+    sparkLen: 25
     sparks: 6
     }
-	
+	despawnEffect:none
 	reflectable: false
 	hittable: false
 	intervalBullets: 3

@@ -322,7 +322,7 @@ ammoTypes: {
 			colorTo: a9d8ff00
 		}
 		}
-		]		
+		]
 		trailRotation: true
 		trailColor:ffffff
 		frontColor: ffffff
@@ -373,4 +373,264 @@ ammoTypes: {
 			trailWidth: 2
 		}
 	}
-}
+	phase-fabric:{
+    	scaleLife: true
+        type: ArtilleryBulletType
+    	sprite: circle-bullet
+        reflectable: false
+        pierceArmor: true
+        absorbable: true
+        despawnShake: 9
+        hittable: false
+        collides: true
+        collidesAir:true
+        hitShake: 17
+        shrinkY: 0.2
+        height: 22
+        width: 16
+
+        trailColor: EFCA98
+        trailLength: 22
+        trailWidth: 7
+        reloadMultiplier:0.7
+        buildingDamageMultiplier: 0.4
+
+    	smokeEffect: shootBigSmoke2
+        hitSound: plasma-bomb-hit
+        splashDamageRadius: 60
+        splashDamage: 1850
+        lightOpacity: 0.6
+
+        lightRadius: 40
+        knockback: 4
+        lifetime: 137
+        damage: 1620
+        speed: 6
+
+        smokeEffect: shootBigSmoke2
+        hitEffect: [{
+        type: WaveEffect
+        lifetime: 30
+        sides:12
+
+        sizeFrom: 0
+        sizeTo: 120
+
+        strokeFrom: 0
+        strokeTo: 6
+
+        colorFrom: EFCA98
+        colorTo: EFCA9800
+    }
+    {
+        type: ParticleEffect
+        particles: 12
+        lifetime: 60
+        cone: 360
+
+        sizeFrom: 3
+        length: 40
+        sizeTo: 3
+
+        colorFrom: EFCA9850
+        colorTo: EFCA9800
+    }
+    {
+            type: ParticleEffect
+            particles: 12
+            lifetime: 60
+            cone: 360
+
+            sizeFrom: 3
+            length: 90
+            sizeTo: 3
+
+            colorFrom: EFCA9820
+            colorTo: EFCA9800
+        }
+    ]
+    	despawnEffect:none
+        hitSound: cannon-hit
+
+        lightningColor: 98ffa9
+        lightColor: 98ffa9
+        lightOpacity: 0.7
+        lightRadius: 160
+
+        frontColor: ffffff
+        frontColor: EFCA98
+        backColor: E3A880
+
+    shootEffect: [
+        {
+        type: ParticleEffect
+        startDelay: 0
+        particles: 12
+        lifetime: 40
+        cone: 35
+
+        sizeFrom: 3
+        length: 70
+        sizeTo: 4
+
+        colorFrom: E3A88070
+        colorTo: E3A88000
+    }
+
+        {
+        type: ParticleEffect
+        startDelay: 0
+        lifetime: 240
+        particles: 7
+        cone: 20
+
+        sizeFrom: 3
+        length: 80
+        sizeTo: 6
+
+        colorFrom: E3A88040
+        colorTo: E3A88000
+    }
+        ]
+    	intervalBullets: 2
+        bulletInterval: 2
+        intervalRandomSpread: 120
+        intervalAngle:180
+    	intervalDelay:10
+    	intervalBullet:{
+    	type: ArtilleryBulletType
+        collidesTiles: false
+        collidesAir: true
+        sprite:large-bomb
+        despawnShake: 2
+        absorbable: false
+        hittable: true
+        hitShake: 3
+        height: 12
+        width: 12
+        frontColor: EFCA98
+        backColor: E3A880
+        buildingDamageMultiplier: 1.5
+
+        splashDamageRadius: 40
+        lightOpacity: 0.5
+        splashDamage: 210
+        lightRadius: 30
+        lifetime: 120
+        damage: 200
+        speed: 6
+        drag:0.2
+    	pierceCap:1
+    	pierceArmor:true
+
+        smokeEffect: shootBigSmoke2
+    	despawnEffect: [{
+        type: WaveEffect
+        lifetime: 20
+        sides:4
+        sizeFrom: 0
+        sizeTo: 20
+
+        strokeFrom: 0
+        strokeTo: 2
+
+        colorFrom: EFCA98
+        colorTo: EFCA9880
+    }
+    {
+    	startDelay:20
+        type: WaveEffect
+        lifetime: 30
+
+        sides:4
+        sizeFrom: 20
+        sizeTo: 15
+
+        strokeFrom: 2
+        strokeTo: 3
+
+        colorFrom: EFCA9860
+        colorTo: EFCA9800
+    }]
+        hitSound: cannon-hit
+    	hitEffect:none
+        lightColor: 98ffa9
+        lightOpacity: 0.7
+        lightRadius: 90
+
+        lightningColor: ffffff
+        }
+
+    	fragBullets: 27
+        fragLifeMin: 1
+    	fragLifeMin: 4
+    	fragVelocityMin:0.2
+    	fragVelocityMax:2
+    	fragRandomSpread:120
+    fragBullet: {
+        type: ArtilleryBulletType
+        collidesTiles: false
+        collidesAir: true
+        despawnShake: 4
+        absorbable: false
+        hittable: false
+        hitShake: 3
+        height: 18
+        width: 18
+        frontColor: EFCA98
+        backColor: E3A880
+
+        trailColor: EFCA98
+        trailLength: 7
+        trailWidth: 5
+
+        buildingDamageMultiplier: 1.5
+
+        splashDamageRadius: 40
+        lightOpacity: 0.5
+        splashDamage: 300
+        lightRadius: 30
+        lifetime: 50
+        damage: 280
+        speed: 7
+        drag:0.08
+    	pierceCap: 2
+    	pierceArmor:true
+
+
+        smokeEffect: shootBigSmoke2
+    	despawnEffect: [{
+        type: WaveEffect
+        lifetime: 40
+        sides:6
+        sizeFrom: 0
+        sizeTo: 29
+
+        strokeFrom: 0
+        strokeTo: 2
+
+        colorFrom: EFCA98
+        colorTo: EFCA9860
+    }
+    {
+    	startDelay:40
+        type: WaveEffect
+        lifetime: 90
+        sides:6
+        sizeFrom: 29
+        sizeTo: 40
+
+        strokeFrom: 2
+        strokeTo: 7
+
+        colorFrom: EFCA9860
+        colorTo: EFCA9800
+    }]
+        hitSound: cannon-hit
+    	hitEffect:none
+        lightColor: 98ffa9
+        lightOpacity: 0.7
+        lightRadius: 90
+        }
+    }
+    }

@@ -23,7 +23,7 @@ maxRange: 6
 health: 45
 speed: 4.3
 
-deathExplosionEffect: explosion
+deathExplosionEffect: none
 loopSoundVolume: 0.1
 
 engineColor: c67fff

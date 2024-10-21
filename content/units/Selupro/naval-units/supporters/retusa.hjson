@@ -52,7 +52,7 @@ bullet: {
 
     splashDamageRadius: 26
     homingPower: 0.09
-	homingRange: 20
+	homingRange: 120
 	homingDelay:2
     splashDamage: 50
     healPercent: 2

@@ -91,7 +91,7 @@ bullet: {
     velocityRnd: 0.3
     inaccuracy: 3
     reload: 100
-
+    heatColor:FF0000
     shootSound: rail-shot-2
     ejectEffect: casing3
 

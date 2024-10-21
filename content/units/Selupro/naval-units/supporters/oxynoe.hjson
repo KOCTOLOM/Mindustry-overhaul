@@ -10,14 +10,14 @@ immunities: [ spore-slowed, electrified, shocked ]
 weapons: [
 {
     name: flamethrower-weapon
-    rotateSpeed: 5
+    rotateSpeed: 3
     shootCone: 30
     rotate: true
     x: 4.5
     y: 6.5
 
-    inaccuracy: 10
-    reload: 5
+    inaccuracy: 5
+    reload: 6
 
     ejectEffect: casing1
     shootSound: flame
@@ -27,7 +27,7 @@ bullet: {
     collidesAir: false
     hittable: false
     pierce: true
-    hitSize: 7
+    hitSize: 4
 
     buildingDamageMultiplier: 1.5
 
@@ -36,20 +36,21 @@ bullet: {
     status: burning
     lifetime: 9.5
     damage: 37
-    speed: 5
+    speed: 4.7
 	frontColor:ffffff00
 	backColor:ffffff00
     hitEffect: hitFlamePlasma
     despawnEffect: none
 
 shootEffect: {
-    particles: 15
-    lifetime: 32
-    sizeFrom: 2.5
+    particles:29
+    lifetime: 28
+    sizeFrom: 1.5
     sizeTo: 0.25
-    length: 50
-    cone: 5
-
+    length: 57
+    cone: 4
+    followParent: false
+    rotWithParent: false
 
     colorFrom: ffffff
     colorTo: 98ffa9
@@ -58,12 +59,12 @@ shootEffect: {
     interp: pow5Out
     }
 	fragBullets:2
-	fragRandomSpread:20
+	fragRandomSpread:5
 	fragBullet:{
 	type: LightningBulletType
     collidesAir: false
     hittable: false
-    hitSize: 3
+    hitSize: 1
 
     buildingDamageMultiplier: 2
 	lightningLengthRand:3
@@ -77,7 +78,7 @@ shootEffect: {
 lightningType: {
     collidesAir: false
     hittable: false
-    hitSize: 3
+    hitSize: 1
 	width:0
     buildingDamageMultiplier: 2
 
