@@ -14,7 +14,7 @@ health: 180
 reload: 150
 range: 432
 armor: 1
-
+researchCostMultiplier:6
 shootSound: bang
 
 requirements: [

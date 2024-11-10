@@ -192,6 +192,10 @@ shoot: {
 
 bullet: {
     type: ArtilleryBulletType
+    sprite: large-bomb
+    spin:2
+    shrinkX: 0.4
+    shrinkY: 0.4
     collidesTiles: true
     reflectable: false
     collidesAir: false
@@ -201,9 +205,8 @@ bullet: {
     hittable: false
     collides: true
     hitShake: 17
-    shrinkY: 0.2
-    height: 28
-    width: 20
+    height: 40
+    width: 40
  
     buildingDamageMultiplier: 1.5
 
@@ -228,9 +231,71 @@ bullet: {
     suppressionEffectChance: 1
     suppressionDuration: 600
     suppressionRange: 140
+    trailChance:0.6
+    trailEffect:[
+    {
+    	startDelay: 5
+        type: ParticleEffect
+        particles: 1
+        lifetime: 60
+        layer: 100.3
+        cone: 360
 
+        sizeFrom: 5
+        length: 15
+        sizeTo: 0
+
+        colorFrom: bf92f9
+        colorTo: FFFFFFF00
+    }
+    {
+        	startDelay: 15
+            type: ParticleEffect
+            particles: 1
+            lifetime: 45
+            layer: 100.3
+            cone: 360
+
+            sizeFrom: 4
+            length: 9
+            sizeTo: 0
+
+            colorFrom: bf92f9
+            colorTo: AAAAAA00
+    }
+    {
+            	startDelay: 25
+                type: ParticleEffect
+                particles: 1
+                lifetime: 30
+                layer: 100.3
+                cone: 360
+
+                sizeFrom: 3
+                length: 7
+                sizeTo: 0
+
+                colorFrom: bf92f9
+                colorTo: 88888800
+    }
+    ]
     smokeEffect: shootBigSmoke2
     hitEffect: [
+    {
+    	startDelay: 0
+        type: ParticleEffect
+        particles: 120
+        lifetime: 70
+        layer: 100.2
+        cone: 360
+
+        sizeFrom: 2
+        length: 50
+        sizeTo: 4
+
+        colorFrom: bf92f9
+        colorTo: bf92f900
+    }
 	{    
 	startDelay: 35
     type: ParticleEffect
@@ -311,7 +376,7 @@ bullet: {
     lightOpacity: 0.7
     lightRadius: 160
 
-    frontColor: bf92f9
+    frontColor: ffffff
     backColor: 6d56bf
     
 shootEffect: [
@@ -348,6 +413,10 @@ shootEffect: [
 
 fragBullet: { 
     type: ArtilleryBulletType
+    sprite: large-bomb
+    spin:-4
+    shrinkX: 0.5
+    shrinkY: 0.5
     collidesTiles: false
     collidesAir: false
     despawnShake: 11
@@ -455,7 +524,7 @@ fragBullet: {
     lightRadius: 90
 
     lightningColor: bf92f9
-    frontColor: bf92f9
+    frontColor: ffffff
     backColor: 6d56bf
     }
 }
@@ -1065,4 +1134,11 @@ bullet: {
     }
 }
     ]
-
+researchCost: [
+    plastanium/2100
+    surge-alloy/5400
+    blast-compound/4800
+    thorium/6000
+    titanium/2250
+    silicon/3300
+]

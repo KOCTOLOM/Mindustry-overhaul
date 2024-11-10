@@ -215,3 +215,9 @@ hitEffect: {
     }
 }
     ]
+researchCost: [
+    titanium/90
+    metaglass/120
+    graphite/90
+    silicon/360
+]

@@ -518,3 +518,9 @@ bullet: {
     }
 }
     ]
+researchCost: [
+    plastanium/1500
+    pyratite/1200
+    titanium/2250
+    silicon/4200
+]

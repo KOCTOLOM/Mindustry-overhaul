@@ -9,7 +9,7 @@ health: 550
 range: 270
 damage: 2.4
 armor: 2
-
+researchCostMultiplier:6
 consumes: {
     power: 6
 }

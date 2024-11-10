@@ -854,3 +854,11 @@ bullet: {
     }
 }
     ]
+researchCost: [
+    plastanium/5700
+    surge-alloy/4200
+    copper/2700
+    lead/15000
+    titanium/2250
+    silicon/3600
+]

@@ -181,3 +181,9 @@ bullet: {
     }
 }
     ]
+researchCost: [
+    titanium/180
+    metaglass/180
+    graphite/90
+    silicon/360
+]

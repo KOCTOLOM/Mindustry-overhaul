@@ -968,3 +968,9 @@ despawnEffect: {
     }
 }
     ]
+researchCost: [
+    plastanium/4800
+    surge-alloy/4500
+    graphite/15000
+    silicon/6600
+]

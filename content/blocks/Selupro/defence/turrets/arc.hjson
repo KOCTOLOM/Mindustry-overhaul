@@ -7,7 +7,7 @@ recoil: 1
 
 buildCostMultiplier: 0.75
 coolantMultiplier: 3.2
-
+researchCostMultiplier:6
 health: 210
 reload: 32
 range: 144

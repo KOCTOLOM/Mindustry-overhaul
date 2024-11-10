@@ -10,7 +10,7 @@ shake: 2
 
 buildCostMultiplier: 0.7
 coolantMultiplier: 4
-
+researchCostMultiplier:8
 shootDuration: 425
 cooldownTime: 750
 health: 9600

@@ -196,3 +196,9 @@ bullet: {
     }
 }
     ]
+researchCost: [
+    titanium/90
+    metaglass/120
+    thorium/30
+    silicon/360
+]

@@ -16,7 +16,7 @@ armor: 5
 
 shootEffect: lancerLaserShoot
 smokeEffect: none
-
+researchCostMultiplier:6
 consumes: {
     power: 12
 }
@@ -113,10 +113,7 @@ effects: [
     length: 0
 
     sizeFrom: 0
-    sizeTo: 6
-
-    strokeFrom: 0.8
-    strokeTo: 0
+    sizeTo: 4
 
     colorFrom: ffffff
     colorTo: a9d8ff

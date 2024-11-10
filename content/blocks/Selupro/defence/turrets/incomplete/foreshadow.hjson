@@ -10,7 +10,7 @@ maxAmmo: 96
 reload: 480
 range: 820
 armor: 32
-
+researchCostMultiplier:9
 consumes: {
     power: 120
 	liquids: [

@@ -14,7 +14,7 @@ health: 4260
 reload: 72
 range: 380
 armor: 18
-
+researchCostMultiplier:8
 consumes: {
     power: 16
 }

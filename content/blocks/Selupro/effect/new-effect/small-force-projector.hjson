@@ -26,7 +26,7 @@ armor: 9
 consumes: {
     power: 8.333335
 }
-
+researchCostMultiplier:4
 requirements: [
     copper/320
     lead/150

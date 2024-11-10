@@ -565,3 +565,9 @@ despawnEffect: {
     }
 }
     ]
+researchCost: [
+    plastanium/2700
+    copper/2700
+    titanium/2250
+    silicon/3900
+]

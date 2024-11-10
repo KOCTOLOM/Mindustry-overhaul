@@ -1336,3 +1336,10 @@ bullet: {
     }
 }
     ]
+researchCost: [
+    plastanium/1200
+    surge-alloy/4800
+    phase-fabric/2100
+    titanium/4350
+    silicon/3300
+]

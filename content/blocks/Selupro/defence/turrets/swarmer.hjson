@@ -10,11 +10,11 @@ coolantMultiplier: 1
 ammoPerShot: 4
 inaccuracy: 12
 maxAmmo: 108
-reload: 92
+reload: 124
 health: 960
 range: 440
 armor: 5
-
+researchCostMultiplier:9
 consumes: {
     power: 6
 }

@@ -8,7 +8,7 @@ shake: 1
 
 buildCostMultiplier: 2.399
 coolantMultiplier: 2.5
-
+researchCostMultiplier:6
 ammoEjectBack: 5
 inaccuracy: 7.5
 maxAmmo: 60

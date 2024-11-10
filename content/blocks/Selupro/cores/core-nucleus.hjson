@@ -3,11 +3,11 @@ absorbLasers: true
 itemCapacity: 50000
 health: 50000
 armor: 7
-
+researchCostMultiplier:6
 requirements: [
-    lead/24000
+    lead/15000
     metaglass/9600
-    titanium/25000
-    thorium/18000
-    silicon/21000
+    titanium/16000
+    thorium/12000
+    silicon/16000
 ]

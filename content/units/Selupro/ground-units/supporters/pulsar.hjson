@@ -98,3 +98,7 @@ lightningType: {
     }
 }
     ]
+researchCost: [
+    silicon/60
+    graphite/375
+]

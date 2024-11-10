@@ -718,3 +718,8 @@ lightningType: {
 }
     }
     ]
+researchCost: [
+    plastanium/2700
+    titanium/4380
+    silicon/3900
+]

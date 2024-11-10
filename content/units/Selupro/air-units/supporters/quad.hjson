@@ -709,3 +709,9 @@ despawnEffect: [
     }
 }
     ]
+researchCost: [
+    plastanium/1500
+    phase-fabric/360
+    titanium/2250
+    silicon/3300
+]

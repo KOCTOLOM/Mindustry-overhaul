@@ -450,4 +450,11 @@ hitEffect: {
     }
 }
     ]
-
+researchCost: [
+    plastanium/2100
+    surge-alloy/4200
+    pyratite/1200
+    spore-pod/1200
+    titanium/3150
+    silicon/3300
+]

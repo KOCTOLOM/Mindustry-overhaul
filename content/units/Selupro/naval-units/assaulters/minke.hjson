@@ -283,7 +283,6 @@ bullet: {
     shake: 3
     x: 0
     y: -3
-
     cooldownTime: 210
     reload: 220
 
@@ -363,3 +362,7 @@ despawnEffect: {
     }
 }
     ]
+researchCost: [
+    silicon/180
+    graphite/390
+]

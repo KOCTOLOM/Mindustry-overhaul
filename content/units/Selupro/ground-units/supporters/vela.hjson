@@ -507,3 +507,9 @@ bullet: {
     }
 }
     ]
+researchCost: [
+    plastanium/2100
+    graphite/1500
+    titanium/2250
+    silicon/3600
+]

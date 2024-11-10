@@ -358,3 +358,9 @@ chargeEffect: {
     }
 }
     ]
+researchCost: [
+    plastanium/1800
+    thorium/1200
+    titanium/2250
+    silicon/5700
+]

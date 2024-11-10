@@ -580,3 +580,9 @@ bullet: {
     }
 }
     ]
+researchCost: [
+    plastanium/1200
+    thorium/1500
+    titanium/2250
+    silicon/4200
+]

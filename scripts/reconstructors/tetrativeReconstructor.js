@@ -6,6 +6,6 @@ script.handleReconstructor(Blocks.tetrativeReconstructor,
 	UnitTypes.scepter, ItemStack.with(Items.surgeAlloy, 1600, Items.plastanium, 400, Items.phaseFabric, 700, Items.silicon, 1100, Items.titanium, 1450),
 	UnitTypes.sei, ItemStack.with(Items.surgeAlloy, 2200, Items.plastanium, 700, Items.thorium, 2500, Items.silicon, 1200, Items.metaglass, 3250),
 	UnitTypes.quad, ItemStack.with(Items.surgeAlloy, 1400, Items.plastanium, 700, Items.pyratite, 400, Items.sporePod, 400, Items.silicon, 1100, Items.titanium, 1050),
-	UnitTypes.vela, ItemStack.with(Items.surgeAlloy, 1500, Items.plastanium, 1600, Items.graphite, 5000, Items.silicon, 1200),
+	UnitTypes.vela, ItemStack.with(Items.surgeAlloy, 1500, Items.plastanium, 1600, Items.graphite, 5000, Items.silicon, 2200),
 	UnitTypes.aegires, ItemStack.with(Items.surgeAlloy, 1900, Items.plastanium, 700, Items.silicon, 1300, Items.thorium, 2760, Items.phaseFabric, 700)
 );

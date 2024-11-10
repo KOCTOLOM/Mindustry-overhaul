@@ -1176,3 +1176,10 @@ hitEffect: [
 }
 }
     ]
+researchCost: [
+    plastanium/2100
+    surge-alloy/6600
+    metaglass/9750
+    thorium/7500
+    silicon/3600
+]

@@ -78,7 +78,7 @@ weapons: [
        	type: ShootMulti
        	source: {
            type: ShootSpread
-           spread: 0.6
+           spread: 2
            shots: 2
            }
        	dest: [

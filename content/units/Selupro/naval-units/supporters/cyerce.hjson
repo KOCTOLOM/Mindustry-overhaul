@@ -204,3 +204,8 @@ lightningType: {
 }
 }
     ]
+researchCost: [
+    titanium/480
+    metaglass/360
+    silicon/360
+]
