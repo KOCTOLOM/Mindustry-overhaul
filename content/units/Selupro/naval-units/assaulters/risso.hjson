@@ -62,7 +62,7 @@ bullet: {
     splashDamageRadius: 26
     statusDuration: 90
     splashDamage: 30
-    lifetime: 16.25
+    lifetime: 13
     pierceCap: 2
     damage: 32
     speed: 16

@@ -60,7 +60,24 @@ bullet: {
     incendAmount: 1
     incendSpread: 2
     incendChance: 0.04
-    
+
+    shootEffect:[
+    shootSmall
+    {
+        type: ParticleEffect
+        region:mov-spikes
+        length: 0
+        cone: 0
+        particles: 1
+        lifetime: 10
+        sizeFrom: 7
+        sizeTo: 0.0
+        colorFrom: ff9c5a
+        colorTo: ffffff40
+        followParent: true
+        rotWithParent: true
+    }
+    ]
     lightColor: fff8e8
     lightOpacity: 0.7
     lightRadius: 20

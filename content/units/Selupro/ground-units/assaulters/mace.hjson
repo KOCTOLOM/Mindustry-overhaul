@@ -35,7 +35,7 @@ weapons: [
     shootCone: 90
     rotate: true
     top: false
-    shootY: 2
+    shootY: 3
     recoil: 1
 
     reload: 7
@@ -48,17 +48,16 @@ bullet: {
     keepVelocity: false
     hittable: false
     pierce: true
-    hitSize: 7
+    hitSize: 4
     
     pierceBuilding:true
     
     buildingDamageMultiplier: 1.25
-    ammoMultiplier: 3
 
     statusDuration: 300
     status: burning
     pierceCap: 2
-    lifetime: 19
+    lifetime: 22
     damage: 45
     speed: 3
     
@@ -66,7 +65,74 @@ bullet: {
     incendSpread: 4
     incendChance: 0.1
     
-    shootEffect: shootSmallFlame
+    shootEffect:[
+    {
+        particles:7
+        lifetime: 190
+        sizeFrom: 2
+        sizeTo: 5.5
+        length: 96
+        cone: 5
+        layer:100.3
+        followParent: false
+        rotWithParent: false
+
+        colorFrom: 808080F0
+        colorTo: 80808000
+
+        sizeInterp: pow3In
+        interp: pow5Out
+    }
+    {
+        particles:2
+        lifetime: 190
+        sizeFrom: 2
+        sizeTo: 2.5
+        length: 14
+        cone: 360
+        layer:100.3
+        followParent: false
+        rotWithParent: false
+
+        colorFrom: 808080F0
+        colorTo: 80808000
+
+        interp: pow5Out
+    }
+    {
+        particles:4
+        lifetime: 40
+        sizeFrom: 2
+        sizeTo: 0
+        length: 62
+        cone: 2
+        layer:100.3
+        followParent: false
+        rotWithParent: false
+
+        colorFrom: FF8D5C
+        colorTo: FF8D5C
+
+        sizeInterp: pow3In
+        interp: pow5Out
+        }
+    {
+        particles:5
+        lifetime: 45
+        sizeFrom: 2.2
+        sizeTo: 0
+        length: 64
+        cone: 3
+        followParent: false
+        rotWithParent: false
+        layer:100.3
+        colorFrom: FFAD33
+        colorTo: FFAD33
+
+        sizeInterp: pow3In
+        interp: pow5Out
+        }
+    ]
     hitEffect: hitFlameSmall
     despawnEffect: none
     }

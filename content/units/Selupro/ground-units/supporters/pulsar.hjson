@@ -8,7 +8,7 @@ buildSpeed: 0.24
 mineSpeed: 0.75
 mineTier: 3
 health: 840
-speed: 1
+speed: 1.15
 armor: 9
 
 lightColor: 98ffa9
@@ -42,21 +42,45 @@ weapons: [
     shootCone: 90
     rotate: true
     recoil: 2.5
+    recoilTime: 65
     shootY: 2.5
     shake: 2.2
     x: 5
     y: 0.5
 
     inaccuracy: 5
-    reload: 24
-
+    reload: 102
+   shootStatus: mov-motor-deceleration-tier-1
+    chargeSound: target-locked-short
+    shootStatusDuration: 120
     shootSound: shotgun-electro-shot
     ejectEffect: none
 shoot: {
-    type: ShootSpread
-    spread: 2
-    shots: 4
-    }
+       	type: ShootMulti
+       	source: {
+           type: ShootSpread
+           spread: 2
+           shots: 2
+           }
+       	dest: [
+       	{
+               	type: ShootMulti
+               	source: {
+                   type: ShootPattern
+                   shots: 2
+                   shotDelay: 2
+                   }
+               	dest: [
+               	{
+               	type: ShootPattern
+               	    firstShotDelay: 30
+               		shots: 3
+               		shotDelay: 20
+               	}
+               	]
+        }
+       	]
+       	}
 
 bullet: {
     type: LightningBulletType

@@ -105,7 +105,7 @@ bullet: {
     y: -5
 
     velocityRnd: 0.24
-    inaccuracy: 9
+    inaccuracy: 12
     reload: 275
 
     shootStatus: motor-deceleration-tier-1
@@ -118,28 +118,27 @@ shoot: {
     shotDelay: 9
     spread: 1.8
     barrels: 2
-    shots: 6
+    shots: 4
     }
 
 bullet: {
     type: MissileBulletType
     keepVelocity: false
     despawnShake: 7.5
-    scaleLife: true
-    shrinkX: 0.25
-    shrinkY: 0.5
-    height: 11
-    width: 11
+    shrinkX: 0.15
+    shrinkY: 0.3
+    height: 18
+    width: 6
 
-    splashDamageRadius: 20
-    lightningDamage: 12.5
-    lightningLength: 5
-    splashDamage: 32
-    homingPower: 0.1
+    splashDamageRadius: 16
+    lightningDamage: 12
+    lightningLength: 4
+    splashDamage: 38
+    homingPower: 0.02
     homingRange: 180
     lifetime: 125
-    lightning: 3
-    damage: 28
+    lightning: 2
+    damage: 34
     speed: 2.25
     drag: 0.005
 
@@ -166,7 +165,7 @@ hitEffect: {
 
     waveColor: bf92f9
     waveStroke: 3.2
-    waveRad: 26
+    waveRad: 16
 
     smokeColor: 696969
     smokeSizeBase: 0

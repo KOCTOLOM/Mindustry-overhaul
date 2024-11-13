@@ -149,7 +149,7 @@ bullet: {
     velocityRnd:0.2
     cooldownTime: 120
     inaccuracy: 7
-    reload: 20
+    reload: 36
 
     shootSound: machine-gun-shot-3
     ejectEffect: casing1
@@ -182,9 +182,9 @@ bullet: {
     buildingDamageMultiplier: 0.3
     pierceDamageFactor: 0.3
 
-    lifetime: 37.5
+    lifetime: 25
     pierceCap: 3
-    damage: 42
+    damage: 48
     speed: 8
 
     lightColor: fff8e8

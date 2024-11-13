@@ -289,7 +289,56 @@ bullet: {
 
     shootEffect: shootSmall
     despawnEffect: none
-
+    hitEffect: [
+                {
+                      type: RadialEffect
+                      rotationSpacing : 120
+                      rotationOffset: 0
+                      lengthOffset: 0
+                      effect: {
+                          type: ParticleEffect
+                          particles: 3
+                          length: 15
+                          lifetime: 80
+                          sizeFrom: 1
+                          sizeTo: 2
+                          cone: 70
+                          interp: circleOut
+                          colorFrom: bf92f9
+                          colorTo: bf92f900
+                          layer:100.3
+                          }
+                }
+                {
+                    type: ParticleEffect
+                    particles: 8
+                    length: -80
+                    lifetime: 50
+                    line:true
+                    strokeFrom: 1.2
+                    strokeTo: 1
+                    cone: 1
+                    interp: circleOut
+                    colorFrom: ffffff
+                    colorTo: bf92f900
+                    layer:100.3
+                    }
+                {
+                     followParent: false
+                     type: ParticleEffect
+                     particles: 6
+                     length: -50
+                     lifetime: 30
+                     line:true
+                     strokeFrom: 1.2
+                     strokeTo: 1
+                     cone: 0
+                     interp: circleOut
+                     colorFrom: bf92f9
+                     colorTo: bf92f920
+                     layer:100.3
+                }
+                ]
     lightColor: bf92f9
     lightOpacity: 0.7
     lightRadius: 17
@@ -324,7 +373,56 @@ bullet: {
     sapStrength: 0.15
     lifetime: 30
     damage: 69
-
+    hitEffect: [
+        {
+            type: RadialEffect
+            rotationSpacing : 120
+            rotationOffset: 0
+            lengthOffset: 0
+            effect: {
+                type: ParticleEffect
+                particles: 3
+                length: 15
+                lifetime: 80
+                sizeFrom: 1
+                sizeTo: 2
+                cone: 70
+                interp: circleOut
+                colorFrom: bf92f9
+                colorTo: bf92f900
+                layer:100.3
+            }
+        }
+        {
+            type: ParticleEffect
+             particles: 8
+             length: -80
+             lifetime: 50
+             line:true
+             strokeFrom: 1.2
+             strokeTo: 1
+             cone: 1
+             interp: circleOut
+             colorFrom: ffffff
+             colorTo: bf92f900
+             layer:100.3
+        }
+        {
+            followParent: false
+            type: ParticleEffect
+            particles: 6
+            length: -50
+            lifetime: 30
+            line:true
+            strokeFrom: 1.2
+            strokeTo: 1
+            cone: 0
+            interp: circleOut
+            colorFrom: bf92f9
+            colorTo: bf92f920
+            layer:100.3
+        }
+        ]
     shootEffect: shootSmall
     despawnEffect: none
 

@@ -57,7 +57,55 @@ bullet: {
     knockback: -0.85
     lifetime: 25
     damage: 48
-
+    hitEffect: [
+                {
+                      type: RadialEffect
+                      rotationSpacing : 120
+                      rotationOffset: 0
+                      lengthOffset: 0
+                      effect: {
+                          type: ParticleEffect
+                          particles: 2
+                          length: 15
+                          lifetime: 80
+                          sizeFrom: 1
+                          sizeTo: 2
+                          cone: 70
+                          interp: circleOut
+                          colorFrom: bf92f9
+                          colorTo: bf92f900
+                          layer:100.3
+                          }
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    length: -80
+                    lifetime: 50
+                    line:true
+                    strokeFrom: 1.2
+                    strokeTo: 1
+                    cone: 1
+                    interp: circleOut
+                    colorFrom: ffffff
+                    colorTo: bf92f900
+                    layer:100.3
+                    }
+                {
+                     type: ParticleEffect
+                     particles: 3
+                     length: -50
+                     lifetime: 30
+                     line:true
+                     strokeFrom: 1.2
+                     strokeTo: 1
+                     cone: 0
+                     interp: circleOut
+                     colorFrom: bf92f9
+                     colorTo: bf92f920
+                     layer:100.3
+                }
+    ]
     shootEffect: shootSmall
     despawnEffect: none
 
@@ -101,7 +149,55 @@ bullet: {
     lightColor: bf92f9
     lightOpacity: 0.7
     lightRadius: 18
-
+    hitEffect: [
+                {
+                      type: RadialEffect
+                      rotationSpacing : 120
+                      rotationOffset: 0
+                      lengthOffset: 0
+                      effect: {
+                          type: ParticleEffect
+                          particles: 2
+                          length: 15
+                          lifetime: 80
+                          sizeFrom: 1
+                          sizeTo: 2
+                          cone: 70
+                          interp: circleOut
+                          colorFrom: bf92f9
+                          colorTo: bf92f900
+                          layer:100.3
+                          }
+                }
+                {
+                    type: ParticleEffect
+                    particles: 5
+                    length: -80
+                    lifetime: 50
+                    line:true
+                    strokeFrom: 1.2
+                    strokeTo: 1
+                    cone: 1
+                    interp: circleOut
+                    colorFrom: ffffff
+                    colorTo: bf92f900
+                    layer:100.3
+                    }
+                {
+                     type: ParticleEffect
+                     particles: 3
+                     length: -50
+                     lifetime: 30
+                     line:true
+                     strokeFrom: 1.2
+                     strokeTo: 1
+                     cone: 0
+                     interp: circleOut
+                     colorFrom: bf92f9
+                     colorTo: bf92f920
+                     layer:100.3
+                }
+                ]
     hitColor: bf92f9
     color: bf92f9
 }
@@ -140,23 +236,21 @@ shoot: {
 
 bullet: {
     type: MissileBulletType
-    collidesGround: false
     keepVelocity: false
     despawnShake: 5
-    scaleLife: true
-    shrinkX: 0.25
-    shrinkY: 0.5
-    height: 11
-    width: 11
-
+    shrinkX: 0.15
+    shrinkY: 0.3
+    height: 18
+    width: 6
+    buildingDamageMultiplier: 0.25
     status: mov-emp-tier-1
-    splashDamageRadius: 40
+    splashDamageRadius: 20
     statusDuration: 180
     lightningDamage: 9
     lightningLength: 4
-    homingPower: 0.06
-    splashDamage: 75
-    homingRange: 60
+    homingPower: 0.02
+    splashDamage: 65
+    homingRange: 120
     lifetime: 200
     lightning: 4
     speed: 2.75
@@ -187,18 +281,18 @@ hitEffect: {
 
     waveColor: bf92f9
     waveStroke: 3.2
-    waveRad: 48
+    waveRad: 20
 
     smokeColor: 696969
     smokeSizeBase: 0
     smokeSize: 6.5
-    smokes: 5
+    smokes: 4
 
     sparkColor: bf92f9
     sparkStroke: 1.8
     sparkRad: 27.5
     sparkLen: 3
-    sparks: 9
+    sparks: 8
 }
     }
 }

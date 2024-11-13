@@ -385,19 +385,19 @@ effects: [
 plastanium: {
     type: ArtilleryBulletType
     collidesTiles: false
-    height: 13
+    height: 15
     width: 13
 	
-    damage:30
-	buildingDamageMultiplier: 0.1
-    reloadMultiplier: 0.8
-    ammoMultiplier: 3
+    damage:40
+	buildingDamageMultiplier: 0.05
+    reloadMultiplier: 1.4
+    ammoMultiplier: 4
     
-    splashDamageRadius: 36
-    splashDamage: 45
-    fragBullets: 4
+    splashDamageRadius: 22
+    splashDamage: 58
+    fragBullets: 3
     knockback: 2.1
-    pierceCap: 9
+    pierceCap: 5
     lifetime: 80
     speed: 1.75
 
@@ -410,10 +410,10 @@ plastanium: {
     lightOpacity: 0.7
     lightRadius: 42.5
 
-    trailInterval: 12.5
+    trailInterval: 5.5
     trailColor: cbd97f
-    trailLength: 3
-    trailWidth: 2
+    trailLength: 8
+    trailWidth: 2.5
 
     frontColor: edf3a9
     backColor: cbd97f
@@ -425,15 +425,16 @@ fragBullet: {
     height: 12
     width: 10
 
-    buildingDamageMultiplier: 0.1
-    
+    buildingDamageMultiplier: 0.05
+    pierceArmor:true
     knockback: 1.25
-    pierceCap: 32
-    lifetime: 18
-    damage: 62
-
+    pierceCap: 2
+    lifetime: 36
+    damage: 20
+    speed:4
+    drag:0.005
     hitEffect: hitBulletColor
-    despawnEffect: none
+    despawnEffect: hitBulletColor
 
     lightColor: edf3a9
     lightOpacity: 0.7
@@ -441,7 +442,7 @@ fragBullet: {
 
     trailColor: cbd97f
     trailLength: 2.5
-    trailWidth: 2.5
+    trailWidth: 1.25
 
     frontColor: edf3a9
     backColor: cbd97f
