@@ -12,7 +12,7 @@ reload: 24
 armor: 2
 
 ammoUseEffect: casing1
-researchCostMultiplier:6
+researchCostMultiplier:0.6
 requirements: [
     copper/32
 ]

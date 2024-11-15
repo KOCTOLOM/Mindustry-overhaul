@@ -12,7 +12,7 @@ maxAmmo: 64
 reload: 48
 range: 100
 armor: 15
-researchCostMultiplier:6
+researchCostMultiplier:0.6
 requirements: [
     graphite/320
     titanium/275

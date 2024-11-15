@@ -16,7 +16,7 @@ armor: 5
 
 shootEffect: lancerLaserShoot
 smokeEffect: none
-researchCostMultiplier:6
+researchCostMultiplier:0.6
 consumes: {
     power: 12
 }

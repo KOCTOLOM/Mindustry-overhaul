@@ -7,7 +7,7 @@ inaccuracy: 5
 health: 320
 range: 200
 reload: 4
-researchCostMultiplier:5
+researchCostMultiplier:0.5
 shootEffect: shootLiquid
 
 ammoTypes: {
