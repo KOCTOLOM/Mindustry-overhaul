@@ -14,10 +14,10 @@ researchCostMultiplier:0.9
 consumes: {
     power: 120
 	liquids: [
-		cryofluid/0.5
+		cryofluid/1
 	]
 	items: [
-		blast-compound/12
+		blast-compound/24
 	]
 }
 
@@ -39,8 +39,8 @@ ammoTypes: {
 		lightningDamage: 120
 		lightningLength: 5
 		lightning: 10
-		damage: 600
-		splashDamage: 1150
+		damage: 1200
+		splashDamage: 1350
 		lifetime: 19
 		speed: 48
 		scaleLife:true
@@ -398,13 +398,13 @@ ammoTypes: {
     	smokeEffect: shootBigSmoke2
         hitSound: plasma-bomb-hit
         splashDamageRadius: 60
-        splashDamage: 1850
+        splashDamage: 650
         lightOpacity: 0.6
 
         lightRadius: 40
         knockback: 4
         lifetime: 137
-        damage: 1620
+        damage: 620
         speed: 6
 
         smokeEffect: shootBigSmoke2
@@ -512,12 +512,12 @@ ammoTypes: {
         backColor: E3A880
         buildingDamageMultiplier: 1.5
 
-        splashDamageRadius: 40
+        splashDamageRadius: 16
         lightOpacity: 0.5
-        splashDamage: 210
+        splashDamage: 320
         lightRadius: 30
         lifetime: 120
-        damage: 200
+        damage: 150
         speed: 6
         drag:0.2
     	pierceCap:1
@@ -561,9 +561,8 @@ ammoTypes: {
         lightningColor: ffffff
         }
 
-    	fragBullets: 27
+    	fragBullets: 22
         fragLifeMin: 1
-    	fragLifeMin: 4
     	fragVelocityMin:0.2
     	fragVelocityMax:2
     	fragRandomSpread:120
@@ -582,21 +581,20 @@ ammoTypes: {
 
         trailColor: EFCA98
         trailLength: 7
-        trailWidth: 5
+        trailWidth: 4
 
         buildingDamageMultiplier: 1.5
 
         splashDamageRadius: 40
         lightOpacity: 0.5
-        splashDamage: 300
+        splashDamage: 400
         lightRadius: 30
-        lifetime: 50
-        damage: 280
+        lifetime: 36
+        damage: 180
         speed: 7
         drag:0.08
     	pierceCap: 2
     	pierceArmor:true
-
 
         smokeEffect: shootBigSmoke2
     	despawnEffect: [{

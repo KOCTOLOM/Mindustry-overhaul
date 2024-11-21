@@ -3,8 +3,8 @@ targetAir: false
 stepShake: 0.048
 fogRadius: 5
 faceTarget: false
-health: 70
-armor: 5
+health: 95
+armor: 9
 itemCapacity: 18
 rotateSpeed: 7.5
 speed: 0.9

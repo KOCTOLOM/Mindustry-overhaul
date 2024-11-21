@@ -6,8 +6,9 @@ shootCone: 32
 recoil: 1
 
 buildCostMultiplier: 2.1
-
-inaccuracy: 14
+ammoPerShot: 3
+velocityRnd:0.05
+inaccuracy: 4
 maxAmmo: 45
 health: 660
 reload: 178
@@ -32,7 +33,7 @@ scrap: {
     scaleLife: true
     height: 8
     width: 6
-
+    inaccuracy: 13
     reloadMultiplier: 0.2
     ammoMultiplier: 3
 	
@@ -72,7 +73,7 @@ fragBullet: {
     damage: 5
 	
 	statusDuration: 180
-	status:motor-acceleration-tier-1
+    status:mov-motor-deceleration-tier-1
 	
     despawnEffect: none
 
@@ -95,7 +96,7 @@ lead: {
     scaleLife: true
     height: 8
     width: 6
-
+    inaccuracy: 11
     reloadMultiplier: 0.5
     ammoMultiplier: 6
 
@@ -160,19 +161,32 @@ metaglass: {
     type: FlakBulletType
     collidesGround: false
     scaleLife: true
-    height: 8
-    width: 6
+    height: 12
+    width: 4
 
-    ammoMultiplier: 6
-	
+    ammoMultiplier: 1
+	reloadMultiplier: 0.4
     splashDamageRadius: 12
-    splashDamage: 28
-    fragBullets: 3
-    pierceCap: 2
-    lifetime: 70
-    damage: 6
-    speed: 6
-    hitEffect: flakExplosion
+    splashDamage: 12
+    pierceArmor:true
+    lifetime: 35
+    damage: 8
+    speed: 12
+    hitEffect: [
+    flakExplosion
+    {
+        type: ParticleEffect
+        particles: 4
+        cone: 360
+        length: 3
+        lifetime: 15
+        sizeFrom: 2
+        sizeTo: 0
+        layer:100.3
+        colorFrom: ffffff
+        colorTo: ffffff
+    }
+    ]
     shootEffect: shootSmall
 
     lightColor: ffffff
@@ -185,17 +199,21 @@ metaglass: {
 
     frontColor: ffffff
     backColor: ebeef5
-
-fragBullet: {
+    fragBullets: 3
+    fragLifeMin: 1
+    fragVelocityMin:0.2
+    fragVelocityMax:9
+    fragRandomSpread:10
+    fragBullet: {
     type: BasicBulletType
     collidesGround: false
-    shrinkY: 1
-    height: 12
-    width: 5
+    shrinkY: 0.3
+    height: 7
+    width: 3
 
     pierceCap: 2
     lifetime: 20
-    damage: 7
+    damage: 4
 	pierceArmor:true
     despawnEffect: none
 

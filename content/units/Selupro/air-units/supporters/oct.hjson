@@ -10,7 +10,7 @@ itemOffsetY: -4.5
 rotateSpeed: 0.25
 buildSpeed: 0.81
 mineSpeed: 15
-health: 60000
+health: 54000
 mineTier: 4
 speed: 0.32
 armor: 180
@@ -46,7 +46,7 @@ abilities: [
     radius: 220
     regen: 58
     sides: 8
-    max: 58000
+    max: 64000
 }
 {
     type: ShieldRegenFieldAbility

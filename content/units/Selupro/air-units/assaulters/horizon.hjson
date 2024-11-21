@@ -5,9 +5,9 @@ fogRadius: 21.5
 rotateSpeed: 7
 accel: 0.015
 drag: 0.015
-health: 460
-speed: 2.7
-armor: 9
+health: 420
+speed: 2.3
+armor: 5
 
 lightColor: fff8e8
 lightOpacity: 0.7

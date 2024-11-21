@@ -175,30 +175,28 @@ hitEffect: {
 
 pyratite: {
     type: BasicBulletType
-    pierceBuilding: true
     hitSize: 5.5
     height: 25
     width: 17
 
     buildingDamageMultiplier: 0.5
     pierceDamageFactor: 1
-    reloadMultiplier: 0.6
+    reloadMultiplier: 0.4
     ammoMultiplier: 24
     rangeChange: 272
 	
-	incendAmount: 12
-	incendSpread: 30
-	incendChance: 1
-	
-    splashDamageRadius: 70
+    splashDamageRadius: 40
     statusDuration: 450
-    splashDamage: 72.5
+    splashDamage: 72
     knockback: 0.75
     status: burning
-    pierceCap: 4
-    lifetime: 141
+    lifetime: 71
     damage: 200
     speed: 5
+
+    incendAmount: 12
+    incendSpread: 24
+    incendChance: 1
 
     hitSound: cannon-large-hit
     shootEffect: shootBig
@@ -217,24 +215,143 @@ pyratite: {
 hitEffect: {
     type: ExplosionEffect
 
-    lifetime: 32
+    lifetime: 21
 
     waveColor: ffaa5f
     waveStroke: 7.5
     waveRad: 60
 
-    smokeColor: 696969
+    smokeColor: 69696970
     smokeSizeBase: 0
     smokeSize: 23
     smokes: 4
 
-    sparkColor: ffaa5f
+    sparkColor: ffaa5ff0
     sparkStroke: 3.2
     sparkRad: 14
     sparkLen: 18
     sparks: 12
 }
+    fragBullets: 16
+    fragLifeMin: 0.5
+    fragLifeMax: 2.4
+    fragVelocityMin:0.6
+    fragVelocityMax:1.8
+    fragRandomSpread:8
+    fragBullet: {
+    type: ArtilleryBulletType
+    collides:true
+    collidesTiles: true
+    collideGround:true
+    shrinkY: 0.3
+    height: 14
+    width: 6
+    splashDamageRadius: 16
+    splashDamage: 72
+    pierceBuilding: true
+    pierceCap: 3
+    lifetime:30
+    damage: 70
+	pierceArmor:true
+    despawnEffect: none
+    speed:3.5
+    lightColor: ffaa5f
+    lightOpacity: 0.7
+    lightRadius: 16.5
+
+    incendAmount: 3
+    incendSpread: 6
+    incendChance: 1
+
+    trailColor: d37f47
+    trailLength: 12.5
+    trailWidth: 2
+
+    frontColor: ffaa5f
+    backColor: d37f47
+    despawnEffect:[
+    {
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 7
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
     }
+    {
+    startDelay:15
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 3
+    lifetime: 45
+    sizeFrom: 1
+    sizeTo: 2
+    layer:100.2
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    }
+    {
+    startDelay:25
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 14
+    lifetime: 90
+    colorFrom: ffaa5f20
+    colorTo: ffaa5f00
+    }
+    {
+    type: ParticleEffect
+    particles: 21
+    cone: 360
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 5
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    lifetime: 35
+    }
+    {
+    particles: 45
+    type: ParticleEffect
+    particles: 12
+    cone: 360
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 12
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    lifetime: 35
+    }
+    {
+    particles: 55
+    type: ParticleEffect
+    particles: 16
+    cone: 360
+    line: true
+    strokeFrom: 0.4
+    strokeTo: 1
+    lenFrom: 2
+    lenTo: 2
+    length: 16
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    lifetime: 30
+    }
+    ]
+    }
+}
 
 blast-compound: {
     type: BasicBulletType
