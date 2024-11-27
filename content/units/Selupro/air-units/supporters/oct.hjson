@@ -2,7 +2,7 @@ research: quad
 fallSpeed: 0.0012
 faceTarget: true
 fogRadius: 55
-
+forceMultiTarget: true
 crashDamageMultiplier: 12.5
 
 itemCapacity: 5000
@@ -139,7 +139,36 @@ bullet: {
 	
     smokeEffect: shootBigSmoke
     shootEffect: shootBigColor
-    despawnEffect: explosion
+    hitEffect:[
+    {
+            type: ParticleEffect
+            particles: 22
+            length: 20
+            lifetime: 20
+            sizeFrom: 3
+            sizeTo: 1
+            cone: 40
+            interp: circleOut
+            sizeInterp:circleOut
+            colorFrom: ffffff
+            colorTo: 84f49100
+            layer:100.3
+        }
+    {
+            type: ParticleEffect
+            particles: 12
+            length: 60
+            lifetime: 40
+            sizeFrom: 1
+            sizeTo: 2
+            cone: 10
+            interp: circleOut
+            sizeInterp:circleOut
+            colorFrom: ffffff
+            colorTo: 84f49100
+            layer:100.3
+        }
+    ]
     hitSound: dullExplosion
 
     lightColor: 84f491
@@ -166,12 +195,34 @@ bullet: {
     y: -5
 	
     reload: 120
-
+    innacuracy:10
     shootSound: missile  
 shoot: {
-    shotDelay: 6
-    shots: 3
-    }
+       	type: ShootMulti
+       	source: {
+           type: ShootSpread
+           spread: 6
+           shots: 2
+           }
+       	dest: [
+       	{
+               	type: ShootMulti
+               	source: {
+                   type: ShootPattern
+                   shots: 2
+                   shotDelay: 5
+                   }
+               	dest: [
+               	{
+               	type: ShootPattern
+               	    firstShotDelay: 20
+               		shots: 3
+               		shotDelay: 10
+               	}
+               	]
+        }
+       	]
+       	}
 
 bullet: {
     type: BasicBulletType
@@ -184,7 +235,7 @@ bullet: {
     width: 7.5
 
     buildingDamageMultiplier: 0.2
-
+    pierceArmor:true
     splashDamageRadius: 24
     statusDuration: 180
     splashDamage: 90
@@ -193,7 +244,7 @@ bullet: {
     homingDelay: 40
     status: burning
     lifetime: 121
-    damage: 181
+    damage: 61
     speed: 3.5
 	pierce:true
 	pierceCap: 3
@@ -201,7 +252,36 @@ bullet: {
 	
     smokeEffect: shootBigSmoke
     shootEffect: shootBigColor
-    despawnEffect: explosion
+    hitEffect:[
+        {
+                type: ParticleEffect
+                particles: 22
+                length: 20
+                lifetime: 20
+                sizeFrom: 3
+                sizeTo: 1
+                cone: 40
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ffffff
+                colorTo: 84f49100
+                layer:100.3
+            }
+        {
+                type: ParticleEffect
+                particles: 12
+                length: 60
+                lifetime: 40
+                sizeFrom: 1
+                sizeTo: 2
+                cone: 10
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ffffff
+                colorTo: 84f49100
+                layer:100.3
+            }
+        ]
     hitSound: dullExplosion
 
     lightColor: 84f491
@@ -265,7 +345,36 @@ bullet: {
 	
     smokeEffect: shootBigSmoke
     shootEffect: shootBigColor
-    despawnEffect: explosion
+    hitEffect:[
+        {
+                type: ParticleEffect
+                particles: 22
+                length: 20
+                lifetime: 20
+                sizeFrom: 3
+                sizeTo: 1
+                cone: 40
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ffffff
+                colorTo: 84f49100
+                layer:100.3
+            }
+        {
+                type: ParticleEffect
+                particles: 12
+                length: 60
+                lifetime: 40
+                sizeFrom: 1
+                sizeTo: 2
+                cone: 10
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ffffff
+                colorTo: 84f49100
+                layer:100.3
+            }
+        ]
     hitSound: dullExplosion
 
     lightColor: 84f491
@@ -326,7 +435,8 @@ bullet: {
     lifetime: 40
     damage: 150
     speed: 6.4
-
+    hittable:false
+    reflectable: false
     despawnEffect: hitBulletColor
     smokeEffect: shootBigSmoke
     shootEffect: shootBigColor
@@ -344,25 +454,51 @@ bullet: {
     backColor: 84f491
     hitColor: 84f491
 
-hitEffect: {
-    type: ExplosionEffect
-    lifetime: 50
-
-    waveColor: 84f491
-    waveStroke: 4
-    waveRad: 60
-
-    smokeColor: 84f491
-    smokeSizeBase: 0
-    smokeSize: 5
-    smokes: 8
-
-    sparkColor: 84f491
-    sparkStroke: 3
-    sparkRad: 40
-    sparkLen: 4
-    sparks: 8
+hitEffect: [
+    {
+    type: RadialEffect
+    rotationOffset: 0
+    rotationSpacing : 60
+    amount: 6
+    lengthOffset: 0
+    effect: {
+        type: ParticleEffect
+        particles: 4
+        length: 20
+        lifetime: 40
+        sizeFrom: 1
+        sizeTo: 3
+        cone: 9
+        interp: circleOut
+        sizeInterp:circleOut
+        colorFrom: ffffff
+        colorTo: 84f49100
+        layer:100.3
     }
+}
+{
+    type: RadialEffect
+    rotationOffset: 30
+    rotationSpacing : 60
+    amount: 6
+    lengthOffset: 0
+    effect: {
+        type: ParticleEffect
+        startDelay:5
+        particles: 2
+        length: 40
+        lifetime: 40
+        sizeFrom: 1
+        sizeTo: 2
+        cone: 1
+        interp: circleOut
+        sizeInterp:circleOut
+        colorFrom: ffffff
+        colorTo: 84f49100
+        layer:100.3
+    }
+}
+]
 }
     }
 
@@ -410,7 +546,8 @@ bullet: {
     lifetime: 40
     damage: 180
     speed: 6.4
-
+    hittable:false
+    reflectable: false
     despawnEffect: hitBulletColor
     smokeEffect: shootBigSmoke
     shootEffect: shootBigColor
@@ -428,25 +565,51 @@ bullet: {
     backColor: 84f491
     hitColor: 84f491
 
-hitEffect: {
-    type: ExplosionEffect
-    lifetime: 50
-
-    waveColor: 84f491
-    waveStroke: 4
-    waveRad: 60
-
-    smokeColor: 84f491
-    smokeSizeBase: 0
-    smokeSize: 5
-    smokes: 8
-
-    sparkColor: 84f491
-    sparkStroke: 3
-    sparkRad: 40
-    sparkLen: 4
-    sparks: 8
+hitEffect: [
+    {
+    type: RadialEffect
+    rotationOffset: 0
+    rotationSpacing : 60
+    amount: 6
+    lengthOffset: 0
+    effect: {
+        type: ParticleEffect
+        particles: 4
+        length: 20
+        lifetime: 40
+        sizeFrom: 1
+        sizeTo: 3
+        cone: 9
+        interp: circleOut
+        sizeInterp:circleOut
+        colorFrom: ffffff
+        colorTo: 84f49100
+        layer:100.3
+    }
 }
+{
+    type: RadialEffect
+    rotationOffset: 30
+    rotationSpacing : 60
+    amount: 6
+    lengthOffset: 0
+    effect: {
+        type: ParticleEffect
+        startDelay:5
+        particles: 2
+        length: 40
+        lifetime: 40
+        sizeFrom: 1
+        sizeTo: 2
+        cone: 1
+        interp: circleOut
+        sizeInterp:circleOut
+        colorFrom: ffffff
+        colorTo: 84f49100
+        layer:100.3
+    }
+}
+]
     }
 }
     ]

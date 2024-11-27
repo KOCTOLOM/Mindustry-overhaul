@@ -114,7 +114,7 @@ bullet: {
     shootSound: laserblast
     shootStatus: unmoving
 shoot: {
-    firstShotDelay: 320
+    firstShotDelay: 340
     }
 
 bullet: {
@@ -128,9 +128,9 @@ bullet: {
     hitShake: 21
     length: 930
     width: 70
-	
+
     buildingDamageMultiplier: 0.7
-	
+
     statusDuration: 1920
     healPercent: 100
     status: melting
@@ -152,136 +152,2930 @@ chargeEffect: {
     type: MultiEffect
 
 effects: [
-    {
-    type: WaveEffect
-    lifetime: 300
-    sizeFrom: 70
-    sizeTo: 7
-    strokeFrom: 0
-    strokeTo: 7
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    followParent: true
-    rotWithParent: true
-}
-    {
-    type: WaveEffect
-    startDelay: 120
-    lifetime: 240
-    sizeFrom: 0
-    sizeTo: 15
-    strokeFrom: 0
-    strokeTo: 7
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    followParent: true
-    rotWithParent: true
-}
-    {
-    type: WaveEffect
-    startDelay: 290
-    lifetime: 15
-    sizeFrom: 150
-    sizeTo: 15
-    strokeFrom: 0
-    strokeTo: 5
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    followParent: true
-    rotWithParent: true
-}
-    {
-    type: WaveEffect
-    startDelay: 300
-    lifetime: 30
-    sizeFrom: 0
-    sizeTo: 120
-    strokeFrom: 0
-    strokeTo: 9
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    followParent: true
-    rotWithParent: true
-}
-    {
-    type: WaveEffect
-    startDelay: 310
-    lifetime: 30
-    sizeFrom: 0
-    sizeTo: 230
-    strokeFrom: 0
-    strokeTo: 6
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    followParent: true
-    rotWithParent: true
-}
-
-    {
-    type: ParticleEffect
-    baseLength: 60
-    length: -60
-    cone: 360
-    particles: 15
-    lifetime: 300
-    sizeFrom: 2.5
-    sizeTo: 0
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    strokeFrom: 0.8
-    strokeTo: 0.6 
-    followParent: true
-    rotWithParent: true
-}
-    {
-    type: ParticleEffect
-    baseLength: 50
-    length: -50
-    cone: 360
-    particles: 5
-    lifetime: 300
-    sizeFrom: 5
-    sizeTo: 0
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    strokeFrom: 0.8
-    strokeTo: 0.6 
-    followParent: true
-    rotWithParent: true
-}
-    {
-    type: ParticleEffect
-    baseLength: 40
-    length: -40
-    cone: 360
-    particles: 3
-    lifetime: 300
-    sizeFrom: 9
-    sizeTo: 0
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    strokeFrom: 0.8
-    strokeTo: 0.6 
-    followParent: true
-    rotWithParent: true
-    }
 {
-    type: ParticleEffect
-    startDelay: 290
-    baseLength: 120
-    length: -100
-    cone: 360
-    particles: 30
+    type: WaveEffect
     lifetime: 15
-    sizeFrom: 3
-    sizeTo: 0
-    colorFrom: 98ffa9
-    colorTo: ffffff
-    strokeFrom: 2
-    strokeTo: 0.4 
+    sizeFrom: 120
+    sizeTo: 74
+    strokeFrom: 0
+    strokeTo: 3
+    colorFrom: 98ffa990
+    colorTo: 98ffa930
     followParent: true
     rotWithParent: true
-    }
+}
+{
+    type: WaveEffect
+    startDelay: 15
+    lifetime: 5
+    sizeFrom: 74
+    sizeTo: 74.0625
+    strokeFrom: 3
+    strokeTo: 8
+    colorFrom: 98ffa990
+    colorTo: 98ffa9
+    followParent: true
+    rotWithParent: true
+}
+    {
+    startDelay: 20
+    type: WaveEffect
+    lifetime: 320
+    sizeFrom: 74.0625
+    sizeTo: 15.9375
+    strokeFrom: 8
+    strokeTo: 3
+    colorFrom: 98ffa9
+    colorTo: ffffff30
+    followParent: true
+    rotWithParent: true
+}
+    {
+    type: WaveEffect
+    startDelay: 150
+    lifetime: 140
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 2
+    strokeTo: 7
+    colorFrom: 98ffa9
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+    type: WaveEffect
+    startDelay: 180
+    lifetime: 120
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 2
+    strokeTo: 7
+    colorFrom: 98ffa9
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+    type: WaveEffect
+    startDelay: 200
+    lifetime: 120
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 2
+    strokeTo: 7
+    colorFrom: 98ffa9
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+    type: WaveEffect
+    sides:6
+    baseRotation:0
+    startDelay: 330
+    lifetime: 140
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 5
+    strokeTo: 7
+    colorFrom: 98ffa930
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+    type: WaveEffect
+    sides:6
+    baseRotation:10
+    startDelay: 340
+    lifetime: 140
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 5
+    strokeTo: 7
+    colorFrom: 98ffa930
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+    type: WaveEffect
+    sides:6
+    baseRotation:30
+    startDelay: 350
+    lifetime: 140
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 5
+    strokeTo: 7
+    colorFrom: 98ffa930
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+    type: WaveEffect
+    sides:6
+    baseRotation:40
+    startDelay: 360
+    lifetime: 140
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 5
+    strokeTo: 7
+    colorFrom: 98ffa930
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+    type: WaveEffect
+    sides:6
+    baseRotation:50
+    startDelay: 370
+    lifetime: 140
+    sizeFrom: 10
+    sizeTo: 200
+    strokeFrom: 5
+    strokeTo: 7
+    colorFrom: 98ffa930
+    colorTo: ffffff00
+    followParent: true
+    rotWithParent: true
+}
+{
+type: RadialEffect
+rotationOffset: 28.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 70.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 25
+length: -80.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -28.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 70.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:25
+length: -80.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 33.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 69.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 30
+length: -79.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -33.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 69.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:30
+length: -79.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 39.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 68.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 35
+length: -78.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -39.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 68.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:35
+length: -78.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 45.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 67.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 40
+length: -77.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -45.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 67.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:40
+length: -77.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 50.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 66.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 45
+length: -76.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -50.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 66.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:45
+length: -76.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 56.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 65.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 50
+length: -75.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -56.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 65.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:50
+length: -75.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 61.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 64.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 55
+length: -74.6875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -61.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 64.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:55
+length: -74.6875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 67.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 63.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 60
+length: -73.75
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -67.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 63.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:60
+length: -73.75
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 73.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 62.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 65
+length: -72.8125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -73.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 62.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:65
+length: -72.8125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 78.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 61.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 70
+length: -71.875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -78.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 61.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:70
+length: -71.875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 84.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 60.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 75
+length: -70.9375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -84.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 60.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:75
+length: -70.9375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 90.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 60.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 80
+length: -70.0
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -90.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 60.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:80
+length: -70.0
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 95.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 59.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 85
+length: -69.0625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -95.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 59.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:85
+length: -69.0625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 101.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 58.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 90
+length: -68.125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -101.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 58.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:90
+length: -68.125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 106.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 57.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 95
+length: -67.1875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -106.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 57.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:95
+length: -67.1875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 112.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 56.25
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 100
+length: -66.25
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -112.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 56.25
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:100
+length: -66.25
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 118.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 55.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 105
+length: -65.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -118.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 55.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:105
+length: -65.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 123.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 54.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 110
+length: -64.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -123.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 54.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:110
+length: -64.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 129.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 53.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 115
+length: -63.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -129.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 53.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:115
+length: -63.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 135.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 52.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 120
+length: -62.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -135.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 52.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:120
+length: -62.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 140.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 51.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 125
+length: -61.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -140.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 51.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:125
+length: -61.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 146.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 50.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 130
+length: -60.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -146.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 50.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:130
+length: -60.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 151.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 49.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 135
+length: -59.6875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -151.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 49.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:135
+length: -59.6875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 157.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 48.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 140
+length: -58.75
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -157.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 48.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:140
+length: -58.75
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 163.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 47.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 145
+length: -57.8125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -163.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 47.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:145
+length: -57.8125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 168.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 46.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 150
+length: -56.875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -168.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 46.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:150
+length: -56.875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 174.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 45.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 155
+length: -55.9375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -174.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 45.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:155
+length: -55.9375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 180.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 45.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 160
+length: -55.0
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -180.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 45.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:160
+length: -55.0
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 185.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 44.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 165
+length: -54.0625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -185.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 44.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:165
+length: -54.0625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 191.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 43.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 170
+length: -53.125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -191.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 43.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:170
+length: -53.125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 196.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 42.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 175
+length: -52.1875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -196.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 42.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:175
+length: -52.1875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 202.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 41.25
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 180
+length: -51.25
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -202.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 41.25
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:180
+length: -51.25
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 208.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 40.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 185
+length: -50.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -208.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 40.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:185
+length: -50.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 213.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 39.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 190
+length: -49.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -213.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 39.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:190
+length: -49.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 219.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 38.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 195
+length: -48.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -219.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 38.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:195
+length: -48.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 225.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 37.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 200
+length: -47.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -225.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 37.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:200
+length: -47.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 230.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 36.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 205
+length: -46.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -230.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 36.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:205
+length: -46.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 236.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 35.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 210
+length: -45.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -236.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 35.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:210
+length: -45.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 241.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 34.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 215
+length: -44.6875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -241.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 34.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:215
+length: -44.6875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 247.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 33.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 220
+length: -43.75
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -247.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 33.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:220
+length: -43.75
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 253.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 32.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 225
+length: -42.8125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -253.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 32.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:225
+length: -42.8125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 258.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 31.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 230
+length: -41.875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -258.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 31.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:230
+length: -41.875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 264.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 30.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 235
+length: -40.9375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -264.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 30.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:235
+length: -40.9375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 270.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 30.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 240
+length: -40.0
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -270.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 30.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:240
+length: -40.0
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 275.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 29.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 245
+length: -39.0625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -275.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 29.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:245
+length: -39.0625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 281.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 28.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 250
+length: -38.125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -281.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 28.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:250
+length: -38.125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 286.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 27.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 255
+length: -37.1875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -286.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 27.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:255
+length: -37.1875
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 292.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 26.25
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 260
+length: -36.25
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -292.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 26.25
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:260
+length: -36.25
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 298.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 25.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 265
+length: -35.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -298.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 25.3125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:265
+length: -35.3125
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 303.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 24.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 270
+length: -34.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -303.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 24.375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:270
+length: -34.375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 309.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 23.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 275
+length: -33.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -309.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 23.4375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:275
+length: -33.4375
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 315.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 22.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 280
+length: -32.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -315.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 22.5
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:280
+length: -32.5
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 320.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 21.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 285
+length: -31.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -320.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 21.5625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:285
+length: -31.5625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 326.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 20.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 290
+length: -30.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -326.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 20.625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:290
+length: -30.625
+lifetime: 120
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 331.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 19.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 295
+length: -29.6875
+lifetime: 115
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -331.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 19.6875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:295
+length: -29.6875
+lifetime: 115
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 337.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 18.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 300
+length: -28.75
+lifetime: 110
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -337.5
+rotationSpacing : 60
+amount: 6
+lengthOffset: 18.75
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:300
+length: -28.75
+lifetime: 110
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 343.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 17.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 305
+length: -27.8125
+lifetime: 105
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -343.125
+rotationSpacing : 60
+amount: 6
+lengthOffset: 17.8125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:305
+length: -27.8125
+lifetime: 105
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 348.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 16.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 310
+length: -26.875
+lifetime: 100
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -348.75
+rotationSpacing : 60
+amount: 6
+lengthOffset: 16.875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:310
+length: -26.875
+lifetime: 100
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 354.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 15.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 315
+length: -25.9375
+lifetime: 95
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -354.375
+rotationSpacing : 60
+amount: 6
+lengthOffset: 15.9375
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:315
+length: -25.9375
+lifetime: 95
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 360.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 15.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 320
+length: -25.0
+lifetime: 90
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -360.0
+rotationSpacing : 60
+amount: 6
+lengthOffset: 15.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:320
+length: -25.0
+lifetime: 90
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 365.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 14.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 325
+length: -24.0625
+lifetime: 85
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -365.625
+rotationSpacing : 60
+amount: 6
+lengthOffset: 14.0625
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:325
+length: -24.0625
+lifetime: 85
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 371.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 13.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 330
+length: -23.125
+lifetime: 80
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -371.25
+rotationSpacing : 60
+amount: 6
+lengthOffset: 13.125
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:330
+length: -23.125
+lifetime: 80
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: 376.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 12.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay: 335
+length: -22.1875
+lifetime: 75
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset: -376.875
+rotationSpacing : 60
+amount: 6
+lengthOffset: 12.1875
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:335
+length: -22.1875
+lifetime: 75
+sizeFrom: 1
+sizeTo: 4
+cone: 9
+interp: circleOut
+sizeInterp:circleOut
+colorFrom: ffffff
+colorTo: 98ffa900
+layer:100.3
+}
+}
 ]
     }
     despawnEffect:[
@@ -296,6 +3090,8 @@ effects: [
     sizeTo: 6
     colorFrom: 98ffa940
     colorTo: 98ffa900
+    interp: circleOut
+    sizeInterp:circleIn
     followParent: true
     rotWithParent: true
 }
@@ -310,6 +3106,8 @@ effects: [
     sizeTo: 5
     colorFrom: 98ffa970
     colorTo: 98ffa900
+    interp: circleOut
+    sizeInterp:circleIn
     followParent: true
     rotWithParent: true
 }
@@ -322,6 +3120,8 @@ effects: [
     lifetime: 260
     sizeFrom: 5
     sizeTo: 9
+    interp: circleOut
+    sizeInterp:circleIn
     colorFrom: 98ffa930
     colorTo: 98ffa900
     followParent: true
@@ -336,7 +3136,8 @@ effects: [
     strokeTo: 2.4 
     particles: 120
     lifetime: 280
-    From: 1
+    interp: circleOut
+    sizeInterp:circleIn
     colorFrom: 98ffa9
     colorTo: 98ffa900
     followParent: true
@@ -351,6 +3152,8 @@ effects: [
     lifetime: 300
     sizeFrom: 1
     sizeTo: 3
+    interp: circleOut
+    sizeInterp:circleIn
     colorFrom: 98ffa990
     colorTo: 98ffa900
     followParent: true
@@ -364,6 +3167,8 @@ effects: [
     lifetime: 270
     sizeFrom: 1
     sizeTo: 3
+    interp: circleOut
+    sizeInterp:circleIn
     colorFrom: 98ffa9
     colorTo: 98ffa910
     followParent: true
@@ -504,7 +3309,8 @@ bullet: {
     hitShake: 3.2
     height: 30
     width: 9
-    
+    hittable:false
+    reflectable: false
     buildingDamageMultiplier: 0.75
 
     splashDamageRadius: 26
@@ -620,7 +3426,7 @@ bullet: {
     hitShake: 3.2
     height: 20
     width: 6
-
+    hittable:false
     buildingDamageMultiplier: 0.5
 	
     splashDamageRadius: 26
@@ -740,8 +3546,9 @@ bullet: {
     shrinkY: 0
     height: 10
     width: 4
-
-    buildingDamageMultiplier: 1.25
+    hittable:false
+    reflectable: false
+    buildingDamageMultiplier: 1.75
 
     splashDamageRadius: 26
     statusDuration: 180
