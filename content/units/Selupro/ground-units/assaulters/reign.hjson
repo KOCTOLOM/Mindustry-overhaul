@@ -893,7 +893,7 @@ bullet: {
     height: 0
     width: 0
 
-	splashDamageRadius: 10
+	splashDamageRadius: 6
     splashDamage: 20
     lifetime: 2
     speed: -2
@@ -963,10 +963,10 @@ hitEffect: [{
     sparks: 19
     }
 	]
-	fragBullets: 7
+	fragBullets: 5
     fragRandomSpread: 25
     fragVelocityMin: 0.5
-    fragVelocityMax: 1.7
+    fragVelocityMax: 3.7
     fragLifeMin: 0.6
     fragLifeMax: 1.3
     fragBullet: {
@@ -978,7 +978,7 @@ hitEffect: [{
     width: 3
 
     lifetime: 14
-    speed: 2.25
+    speed: 3.25
     damage: 21
 	pierceArmor:true
     
@@ -988,10 +988,11 @@ hitEffect: [{
     
     hittable:false
     reflectable: false
-    absorbable: true
+    absorbable: false
     pierce: true
-    pierceCap: 2
+    pierceCap: 8
     pierceBuilding: true
+    FragOnHit:false
     
     despawnEffect:[
     {    
@@ -1103,16 +1104,16 @@ hitEffect: [{
     width: 3
 
     splashDamageRadius: 8
-    splashDamage: 20
+    splashDamage: 10
     lifetime: 10
-    speed: 2
-    damage: 20
+    speed: 4
+    damage: 10
     
     hittable:false
     reflectable: false
     absorbable: false
     pierce: true
-    pierceCap: 3
+    pierceCap: 6
     pierceBuilding: true
     
     despawnEffect:[

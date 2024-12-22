@@ -220,7 +220,7 @@ bullet: {
     lightOpacity: 0.6
     fragLifeMin: 0.3
     lightRadius: 40
-    fragBullets: 9
+    fragBullets: 12
     knockback: 0.8
     status: sapped
     lightning: 15
@@ -229,7 +229,7 @@ bullet: {
     speed: 1.45
 
     suppressionEffectChance: 1
-    suppressionDuration: 600
+    suppressionDuration: 900
     suppressionRange: 140
     trailChance:0.6
     trailEffect:[
@@ -439,7 +439,7 @@ fragBullet: {
     status: sapped
     lifetime: 110
     lightning: 2
-    damage: 90
+    damage: 900
     speed: 1.7
 
     smokeEffect: shootBigSmoke2

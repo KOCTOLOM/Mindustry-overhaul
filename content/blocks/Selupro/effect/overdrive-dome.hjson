@@ -7,11 +7,11 @@ liquidCapacity: 180
 itemCapacity: 96
 health: 2450
 reload: 60
-range: 450
+range: 290
 armor: 18
 
 consumes: {
-    liquid: cryofluid/0.5
+    liquid: cryofluid/0.75
     power: 45
 }
 researchCostMultiplier:14

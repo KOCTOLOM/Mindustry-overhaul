@@ -1,5 +1,7 @@
 research: power-node
 
+health: 80
+armor: 10
 requirements: [
     lead/12
     graphite/15

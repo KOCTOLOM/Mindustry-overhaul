@@ -2,17 +2,17 @@ research: differential-generator
 ambientSoundVolume: 0.25
 
 requirements: [
-    lead/600
+    lead/1700
     plastanium/340
     graphite/430
     silicon/600
-    surge-alloy/300
+    surge-alloy/800
     phase-fabric/130
     thorium/450
 ]
 
-powerProduction: 520
-explosionRadius: 32
+powerProduction: 500
+explosionRadius: 49
 liquidCapacity: 240
 itemDuration: 60
 itemCapacity: 360

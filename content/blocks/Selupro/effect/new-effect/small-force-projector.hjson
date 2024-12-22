@@ -7,8 +7,8 @@ category: effect
 size: 2
 
 buildCostMultiplier: 3.59719
-phaseShieldBoost: 600
-phaseRadiusBoost: 44
+phaseShieldBoost: 1400
+phaseRadiusBoost: 56
 phaseUseTime: 450
 
 cooldownBrokenBase: 0.90
@@ -17,11 +17,11 @@ cooldownLiquid: 1.24
 sides: 6
 
 liquidCapacity: 48
-shieldHealth: 2800
+shieldHealth: 3200
 itemCapacity: 0
-health: 1250
-radius: 100
-armor: 9
+health: 1100
+radius: 92
+armor: 7
 
 consumes: {
     power: 8.333335
@@ -29,8 +29,8 @@ consumes: {
 researchCostMultiplier:4
 requirements: [
     copper/320
-    lead/150
+    lead/250
     graphite/210
     titanium/180
-    silicon/120
+    silicon/80
 ]

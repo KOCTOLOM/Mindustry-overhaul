@@ -49,7 +49,7 @@ abilities: [
     type: UnitSpawnAbility
     unit: flare
 
-    spawnTime: 810
+    spawnTime: 1215
     spawnX: 20
     spawnY: -12
 }
@@ -57,13 +57,13 @@ abilities: [
     type: UnitSpawnAbility
     unit: flare
 
-    spawnTime: 810
+    spawnTime: 1215
     spawnX: -20
     spawnY: -12
 }
     {
     type: RegenAbility
-    amount: 1
+    amount: 2
 }
     ]
 
@@ -325,7 +325,7 @@ chargeEffect: {
     y: -6
 
     cooldownTime: 90
-    reload: 9
+    reload: 19
 
     shootSound: plasma-shot-3
     ejectEffect: casing3
@@ -395,15 +395,15 @@ bullet: {
     height: 14
     width: 8
 
-    buildingDamageMultiplier: 1.75
+    buildingDamageMultiplier: 0.75
 
     status: mov-oxidation-tier-2
     splashDamageRadius: 12
     statusDuration: 180
-    splashDamage: 50
+    splashDamage: 70
     pierceCap: 18
     lifetime: 32
-    damage: 75
+    damage: 146
     speed: 12
 
     smokeEffect: shootSmallSmoke
@@ -451,26 +451,31 @@ despawnEffect: {
     shake: 2
     x: 0
     y: 17
-
+    innacuracy:1
     cooldownTime: 90
-    reload: 9
+    reload: 154
 
     shootSound: plasma-shot-3
     ejectEffect: casing3
 shoot: { 
     type: ShootMulti
 source: {
-    type: ShootAlternate
-    spread: 7.5
-    barrels: 2
-    shots: 1
-}
-dest: [ 
-{
     type: ShootSpread
-    spread: 7.5
-    shots: 1
+    shots: 4
+    shotDelay: 6
+    spread:0
     }
+dest: [
+    {
+        type: ShootBarrel
+        shotDelay: 24
+        shots: 5
+        spread:0
+    barrels: [
+        3.25, 0, 0
+        -3.25, 0, 0
+    ]
+        }
 ]
     }
 
@@ -523,7 +528,7 @@ bullet: {
     height: 14
     width: 8
 
-    buildingDamageMultiplier: 1.75
+    buildingDamageMultiplier: 2.5
 
     status: mov-oxidation-tier-2
     splashDamageRadius: 12

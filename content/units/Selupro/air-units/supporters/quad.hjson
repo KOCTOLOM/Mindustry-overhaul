@@ -2,7 +2,7 @@ research: mega
 faceTarget: true
 fallSpeed: 0.02
 fogRadius: 64
-
+strafePenalty: 0.5
 crashDamageMultiplier: 5
 
 itemCapacity: 3200

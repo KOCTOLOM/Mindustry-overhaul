@@ -1,5 +1,5 @@
 itemCapacity: 4
-health: 40
+health: 20
 
 requirements: [
     copper/15

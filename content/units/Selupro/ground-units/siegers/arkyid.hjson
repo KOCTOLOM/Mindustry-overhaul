@@ -67,7 +67,7 @@ weapons: [
     x: 8.5
     y: 6.5
 
-    reload: 2.5
+    reload: 3
 
     ejectEffect: none
     shootSound: flame
@@ -138,7 +138,7 @@ hitEffect: {
     y: 8.5
 
     velocityRnd: 0.28
-    reload: 270
+    reload: 340
     inaccuracy:4
     chargeSound: anti-material-rifle-charge
     shootSound: anti-material-rifle-shot

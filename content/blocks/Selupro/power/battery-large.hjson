@@ -1,14 +1,14 @@
 research: battery
 
 baseExplosiveness: 15
-health: 1024
+health: 420
 
 consumes: {
     powerBuffered: 75000
 }
 
 requirements: [
-    lead/210
-    titanium/320
-    silicon/180
+    lead/360
+    titanium/270
+    silicon/140
 ]

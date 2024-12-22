@@ -1,7 +1,7 @@
 research: power-node-large
 
 laserRange: 120
-maxNodes: 4
+maxNodes: 3
 health: 450
 armor: 15
 

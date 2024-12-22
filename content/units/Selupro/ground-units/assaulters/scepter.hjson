@@ -127,7 +127,6 @@ parts: [
 
 bullet: {
     type: BasicBulletType
-    collideTerrain: true
     pierceBuilding: true
     despawnShake: 7.5
     hitShake: 7.5
@@ -233,12 +232,12 @@ chargeEffect: [
     colorTo: FFF480
 }
     ]
-    fragBullets: 2
+    fragBullets: 3
     fragRandomSpread: 10
-    fragVelocityMin: 0.5
+    fragVelocityMin: 0.7
     fragVelocityMax: 2.7
-    fragLifeMin: 0.6
-    fragLifeMax: 1.3
+    fragLifeMin: 0.9
+    fragLifeMax: 1.5
     fragBullet: {
     type: BasicBulletType
     sprite: large-orb
@@ -249,16 +248,16 @@ chargeEffect: [
     width: 3
     buildingDamageMultiplier:0
     splashDamageRadius: 20
-    splashDamage: 30
-    lifetime: 9
-    speed: 2.25
+    splashDamage: 16
+    lifetime: 12
+    speed: 3.45
     damage: 20
     pierceArmor:true
     hittable:false
     reflectable: false
     absorbable: false
     pierce: true
-    pierceCap: 2
+    pierceCap: 3
     pierceBuilding: true
         
     despawnEffect:[
@@ -419,7 +418,7 @@ bullet: {
     trailWidth: 1.5
     fragBullets: 3
     fragRandomSpread: 10
-    fragVelocityMin: 0.5
+    fragVelocityMin: 0.7
     fragVelocityMax: 3.2
     fragLifeMin: 0.6
     fragLifeMax: 1.3
@@ -428,24 +427,24 @@ bullet: {
     sprite: large-orb
     shrinkX: 0
     shrinkY: 0
-    drag: 0.02
+    drag: 0.01
     height: 5
     width: 3
 
     splashDamageRadius: 8
-    splashDamage: 20
+    splashDamage: 15
     lifetime: 10
-    speed: 2
+    speed: 3
     damage: 20
     
     hittable:false
     reflectable: false
     absorbable: false
     pierce: true
-    pierceCap: 3
+    pierceCap: 6
     pierceBuilding: true
     
-        despawnEffect:[
+    despawnEffect:[
     {    
     startDelay:5
     type: ParticleEffect

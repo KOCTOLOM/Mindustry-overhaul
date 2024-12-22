@@ -290,6 +290,8 @@ bullet: {
     keepVelocity: false
     collidesAir: false
     pierceArmor: true
+    absorbable:false
+    hittable:false
     despawnShake: 5
     pierceCap: 5
     pierce: true
@@ -371,7 +373,7 @@ barrels: [
 dest: [
 {
     type: ShootPattern
-    shots: 2
+    shots: 3
     shotDelay: 12
     }
 ]
@@ -431,14 +433,27 @@ bullet: {
     x: 24.5
     y: -1.5
 
-    velocityRnd: 0.5
+    velocityRnd: 0.4
     inaccuracy: 70
     reload: 230
 
     shootSound: missile
 shoot: {
-    shotDelay: 2
+    type: ShootMulti
+source: {
+    type: ShootSpread
+    shots: 3
+    shotDelay: 40
+    spread:0
+    }
+dest: [
+    {
+    type: ShootSpread
     shots: 5
+    shotDelay: 1.5
+    spread:4
+    }
+]
     }
 
 bullet: {
@@ -449,20 +464,20 @@ bullet: {
     shrinkX: 0.25
     shrinkY: 0.5
     hitShake: 7
-    height: 8
-    width: 8
+    height: 12
+    width: 7
 
     splashDamageRadius: 36
     splashDamage: 126
-    homingPower: 0.05
+    homingPower: 0.08
     homingRange: 55
     status: blasted
     weaveScale: 3
     lifetime: 75
     weaveMag: 1
-    drag: 0.003
+    drag: 0.002
     damage: 120
-    speed: 6.2
+    speed: 7.2
 
     despawnEffect: blastExplosion
     hitEffect: blastExplosion
@@ -789,7 +804,7 @@ bullet: {
     sideAngle: 20
     length: 370
     width: 7.5
-
+    hittable:false
     buildingDamageMultiplier: 1.25
 
     damage: 120

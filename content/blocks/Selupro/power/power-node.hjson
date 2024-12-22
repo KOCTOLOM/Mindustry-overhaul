@@ -1,5 +1,7 @@
 research: combustion-generator
 
+health: 20
+armor: 5
 requirements: [
     copper/2
     lead/3
