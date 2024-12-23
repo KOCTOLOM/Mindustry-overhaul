@@ -394,17 +394,15 @@ fragBullet: {
     splashDamageRadius: 26
     puddleLiquid: slag
     splashDamage: 60
-    puddleAmount: 6
-    puddleRange: 3
-    pierceCap: 2
+    puddleAmount: 9
+    puddleRange: 6
+    pierceCap: 4
     lifetime: 20
     damage: 80
-    puddles: 2
+    puddles: 3
     speed: 5
-
     fragBullets:1
-
-    	fragBullet: {
+    fragBullet: {
         type: BasicBulletType
         height: 0
         width: 0
@@ -604,13 +602,23 @@ fragBullet: {
     shootSound: blaster-shot-1
     ejectEffect: casing4
 shoot: {
-    type: ShootSpread
+    type: ShootMulti
+source: {
     firstShootDelay: 80
-    shotDelay: 5
-    spread: 0.4
-    shots: 3
+    type: ShootSpread
+    shots: 2
+    shotDelay: 10
+    spread:3
     }
-
+dest: [
+    {
+    type: ShootSpread
+    shots: 2
+    shotDelay: 1.5
+    spread:10
+    }
+]
+    }
 bullet: {
     type: BasicBulletType
     sprite: large-bomb

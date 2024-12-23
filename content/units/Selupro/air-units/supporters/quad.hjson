@@ -481,12 +481,12 @@ fragBullet: {
     width: 12
     spin: 4
     
-    buildingDamageMultiplier: 1.5
+    buildingDamageMultiplier: 0.7
 
     splashDamageRadius: 60
     statusDuration: 900
     status: electrified
-    splashDamage: 270
+    splashDamage: 1240
     healPercent: 1.8
     pierceCap: 32
     lifetime: 60

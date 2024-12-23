@@ -41,7 +41,7 @@ weapons: [
     rotate: true
     x: 4
     y: 3
-
+    shootCone: 90
     reload: 9
 
     shootSound: sap
@@ -126,7 +126,7 @@ bullet: {
     shootY: 4
     x: 8.5
     y: -1.5
-
+    shootCone: 90
     reload: 12.5
 
     shootSound: sap
@@ -139,7 +139,7 @@ bullet: {
 
     statusDuration: 300
     knockback: -0.75
-    sapStrength: 0.8
+    sapStrength: 0.6
     lifetime: 35
     damage: 69
 
@@ -150,54 +150,54 @@ bullet: {
     lightOpacity: 0.7
     lightRadius: 18
     hitEffect: [
-                {
-                      type: RadialEffect
-                      rotationSpacing : 120
-                      rotationOffset: 0
-                      lengthOffset: 0
-                      effect: {
-                          type: ParticleEffect
-                          particles: 2
-                          length: 15
-                          lifetime: 80
-                          sizeFrom: 1
-                          sizeTo: 2
-                          cone: 70
-                          interp: circleOut
-                          colorFrom: bf92f9
-                          colorTo: bf92f900
-                          layer:100.3
-                          }
-                }
-                {
-                    type: ParticleEffect
-                    particles: 5
-                    length: -80
-                    lifetime: 50
-                    line:true
-                    strokeFrom: 1.2
-                    strokeTo: 1
-                    cone: 1
-                    interp: circleOut
-                    colorFrom: ffffff
-                    colorTo: bf92f900
-                    layer:100.3
-                    }
-                {
-                     type: ParticleEffect
-                     particles: 3
-                     length: -50
-                     lifetime: 30
-                     line:true
-                     strokeFrom: 1.2
-                     strokeTo: 1
-                     cone: 0
-                     interp: circleOut
-                     colorFrom: bf92f9
-                     colorTo: bf92f920
-                     layer:100.3
-                }
-                ]
+        {
+              type: RadialEffect
+              rotationSpacing : 120
+              rotationOffset: 0
+              lengthOffset: 0
+              effect: {
+                  type: ParticleEffect
+                  particles: 2
+                  length: 15
+                  lifetime: 80
+                  sizeFrom: 1
+                  sizeTo: 2
+                  cone: 70
+                  interp: circleOut
+                  colorFrom: bf92f9
+                  colorTo: bf92f900
+                  layer:100.3
+                  }
+        }
+        {
+            type: ParticleEffect
+            particles: 5
+            length: -80
+            lifetime: 50
+            line:true
+            strokeFrom: 1.2
+            strokeTo: 1
+            cone: 1
+            interp: circleOut
+            colorFrom: ffffff
+            colorTo: bf92f900
+            layer:100.3
+            }
+        {
+             type: ParticleEffect
+             particles: 3
+             length: -50
+             lifetime: 30
+             line:true
+             strokeFrom: 1.2
+             strokeTo: 1
+             cone: 0
+             interp: circleOut
+             colorFrom: bf92f9
+             colorTo: bf92f920
+             layer:100.3
+        }
+        ]
     hitColor: bf92f9
     color: bf92f9
 }

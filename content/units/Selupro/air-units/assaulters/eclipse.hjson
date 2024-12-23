@@ -118,26 +118,26 @@ bullet: {
     x: 12
     y: 26
 
-    velocityRnd: 0.2
+    velocityRnd: 0.6
     inaccuracy: 7
-    reload: 45
-    
+    reload: 215
+
     ejectEffect: casing3
     shootSound: shootBig
 shoot: {
     type: ShootMulti
 source: {
     type: ShootSpread
-    shotDelay: 1
-    spread: 2
+    shotDelay: 4
+    spread: 4
     shots: 6
     }
 
 dest: [
 {
     type: ShootPattern
-    shotDelay: 10
-    shots: 2
+    shotDelay: 48
+    shots: 3
     }
 ]
     }
@@ -158,11 +158,11 @@ bullet: {
     buildingDamageMultiplier: 1.7
 
     splashDamageRadius: 26
-    splashDamage: 121
+    splashDamage: 72
     lifetime: 45
     speed: 5.75
-    damage: 170
-
+    damage: 42
+    pierceArmor:true
     hitEffect: flakExplosion
     shootEffect: shootBig
     
@@ -185,13 +185,13 @@ bullet: {
     y: -7
 
 
-    targetSwitchInterval: 1
-    targetInterval: 1
+    targetSwitchInterval: 0.05
+    targetInterval: 0.05
     reload: 1.5
 
     shootSound: lasershoot
 bullet: {
-    maxRange: 130
+    maxRange: 240
 
     damage: 64
 
@@ -210,13 +210,13 @@ bullet: {
     y: -4
 
 
-    targetSwitchInterval: 1
-    targetInterval: 1
-    reload: 4.5
+    targetSwitchInterval: 0.05
+    targetInterval: 0.05
+    reload: 1.5
 
     shootSound: lasershoot
 bullet: {
-    maxRange: 130
+    maxRange: 240
 
     damage: 64
 
@@ -236,13 +236,13 @@ name: orange-bsw
 
     rotateSpeed:45
 
-    targetSwitchInterval: 1
+    targetSwitchInterval: 0.5
     targetInterval: 3
     reload: 1.5
 
     shootSound: lasershoot
 bullet: {
-    maxRange: 170
+    maxRange: 250
 
     damage: 75
 
@@ -263,8 +263,8 @@ bullet: {
     y: 24
 
     inaccuracy: 2
-    reload: 170
-    
+    reload: 150
+    velocityRnd:0.3
     ejectEffect: casing3
     shootSound: shootBig
 shoot: {
@@ -272,14 +272,14 @@ shoot: {
 source: {
     type: ShootSpread
     shotDelay: 1
-    spread: 1
-    shots: 2
+    spread: 2
+    shots: 3
     }
 
 dest: [
 {
     type: ShootPattern
-    shotDelay: 10
+    shotDelay: 20
     shots: 2
     }
 ]
@@ -304,13 +304,12 @@ bullet: {
     splashDamageRadius: 26
     splashDamage: 82
     lifetime: 45
-    damage: 60
+    damage: 70
     speed: 4.2
 
     fragRandomSpread: 0
-    fragBullets: 2
-    fragSpread: 20
-    fragSpread: 20
+    fragBullets: 3
+    fragSpread: 12
     fragAngle: 0
 
     hitEffect: flakExplosion
@@ -333,7 +332,7 @@ fragBullet: {
 
     buildingDamageMultiplier: 3
 
-    damage: 95
+    damage: 75
 
     colors: [ ec7458aa, ff9c5a, ffffff ]
     }
@@ -342,18 +341,19 @@ fragBullet: {
 
 {
     name: zenith-missiles
-    rotationLimit: 15
-    baseRotation: 30
+    rotationLimit:14
+    baseRotation: 55
     alternate: false
-    shootCone: 30
+    shootCone: 120
+    baseRotation:45
     rotate: true
     shake: 4
-    x: 19.5
-    y: 19.5
+    x: -21.5
+    y: 14.5
 
     velocityRnd: 0.2
-    inaccuracy: 2
-    reload: 160
+    inaccuracy:10
+    reload: 90
 
     shootSound: missile
 shoot: {
@@ -363,6 +363,7 @@ source: {
     type: ShootBarrel
 
     shots: 2
+    shotDelay: 42
 
 barrels: [
     -1, 0, 0,
@@ -372,9 +373,9 @@ barrels: [
 
 dest: [
 {
-    type: ShootPattern
+    type: ShootSpread
     shots: 3
-    shotDelay: 12
+    shotDelay: 3
     }
 ]
     }
@@ -389,21 +390,22 @@ bullet: {
     shrinkY: 0.5
     drag: -0.003 
     hitShake: 7
-    height: 8
-    width: 8
+    height: 12
+    width: 6
 
     splashDamageRadius: 26
     statusDuration: 90
-    splashDamage: 120
-    homingPower: 0.03
-    homingRange: 32
+    splashDamage: 90
+    homingDelay: 20
+    homingPower: 0.005
+    homingRange: 150
     status: burning
     weaveScale: 3
-    lifetime: 75
+    lifetime: 140
     weaveMag: 1
-    damage: 190
-    speed: 2.8
-
+    damage: 140
+    speed: 2.6
+    drag: 0.004
     despawnEffect: blastExplosion
     hitEffect: blastExplosion
 
@@ -411,7 +413,7 @@ bullet: {
     trailColor: d06b53
     backColor: d06b53
 
-    trailLength: 4
+    trailLength: 12
     trailWidth: 1
     
     lightColor: d06b53
@@ -471,6 +473,7 @@ bullet: {
     splashDamage: 126
     homingPower: 0.08
     homingRange: 55
+    homingDelay: 16
     status: blasted
     weaveScale: 3
     lifetime: 75
@@ -486,7 +489,7 @@ bullet: {
     trailColor: d06b53
     backColor: d06b53
 
-    trailLength: 8
+    trailLength: 16
     trailWidth: 1
 
     lightColor: d06b53

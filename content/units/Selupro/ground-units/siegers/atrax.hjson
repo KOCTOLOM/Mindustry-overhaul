@@ -54,6 +54,7 @@ weapons: [
     name: atrax-weapon
     useAttackRange: false
     rotationLimit: 15
+    shootCone: 80
     rotateSpeed: 2.75
     rotate: true
     shootY: 3

@@ -13,7 +13,7 @@ lightOpacity: 0.7
 healColor: b0bac0
 lightRadius: 55
 
-immunities: [ blasted ]
+immunities: [ blasted, burning]
 
 abilities: [
     {
