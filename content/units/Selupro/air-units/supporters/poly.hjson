@@ -1,6 +1,6 @@
 research: mono
 fogRadius: 17.5
-maxRange: 88
+maxRange: 45
 
 itemCapacity: 32
 buildSpeed: 0.24
@@ -29,7 +29,7 @@ abilities: [
 {
     type: RepairFieldAbility
     reload: 240
-    amount: 24
+    amount: 48
     range: 70
     }
 ]
