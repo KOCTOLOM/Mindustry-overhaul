@@ -1,2 +1,3 @@
-healthMultiplier: 0.85
+healthMultiplier: 0.9
+reloadMultiplier: 0.9
 transitionDamage: 24

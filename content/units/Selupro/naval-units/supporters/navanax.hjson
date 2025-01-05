@@ -241,8 +241,8 @@ chargeEffect: {
 
     cooldownTime: 390
     reload: 210
-	inaccuracy:7
-	velocityRnd: 0.3
+	inaccuracy:9
+	velocityRnd: 0.4
 	
     shootSound: beam-large-shot-1
 	
@@ -250,8 +250,8 @@ chargeEffect: {
 	type: ShootMulti
 	source: {
     type: ShootSpread
-    spread: 3
-    shots: 3
+    spread: 4
+    shots: 4
     }
 	dest: [
 	{
@@ -433,7 +433,7 @@ shootEffect: [
     }
 	fragBullets: 9
     fragLifeMin: 0.3
-	fragLifeMin: 6
+	fragLifeMax: 6
 fragBullet: { 
     type: ArtilleryBulletType
     collidesTiles: false
@@ -760,8 +760,371 @@ hitEffect: {
 	}
 	}
 	}
-	
+	{
+        controllable: false
+        shootOnDeath: true
+        alternate: false
+        shootCone: 360
+        alternate: false
+        mirror: false
+        recoil: 0
+        x: 0
+        y: 0
 
+        reload: 0
+
+        shootSound: bomb-plasma-hit
+    bullet: {
+         type: EmpBulletType
+            sprite: large-orb
+            despawnShake: 16
+            collidesAir: true
+            hitShake: 16
+            shrinkY: 0.0
+            height: 30
+            width: 30
+            keepVelocity:false
+            splashDamageRadius: 3000
+            statusDuration: 1400
+            status: electrified
+            splashDamage: 500
+            healPercent: 100
+            knockback: 16
+            lifetime: 120
+            damage: 20000
+            speed: 0
+            radius:300
+            powerDamageScl:1.5
+            powerSclDecrease:0.1
+            timeIncrease:4
+            timeDuration:1200
+            smokeEffect: shootBigSmoke2
+            hitSound: bomb-plasma-hit
+            shootEffect: shootBig
+
+            lightColor: 84f491
+            lightOpacity: 0.7
+            lightRadius: 75
+
+            frontColor: ffffff
+            backColor: 84f491
+        shootEffect:[
+            {
+            startDelay:25
+            type: ParticleEffect
+            length: 160
+            cone: 360
+            particles: 90
+            lifetime: 300
+            sizeFrom: 4
+            sizeTo: 6
+            colorFrom: 98ffa940
+            colorTo: 98ffa900
+            interp: circleOut
+            sizeInterp:circleIn
+            followParent: true
+            rotWithParent: true
+        }
+        	{
+            type: ParticleEffect
+            startDelay:30
+            length: 240
+            cone: 360
+            particles: 70
+            lifetime: 270
+            sizeFrom: 2
+            sizeTo: 5
+            colorFrom: 98ffa970
+            colorTo: 98ffa900
+            interp: circleOut
+            sizeInterp:circleIn
+            followParent: true
+            rotWithParent: true
+        }
+        	{
+            type: ParticleEffect
+            startDelay:10
+            length: 180
+            cone: 360
+            particles: 30
+            lifetime: 260
+            sizeFrom: 5
+            sizeTo: 9
+            interp: circleOut
+            sizeInterp:circleIn
+            colorFrom: 98ffa930
+            colorTo: 98ffa900
+            followParent: true
+            rotWithParent: true
+        }
+        	{
+            type: ParticleEffect
+            startDelay:50
+            length: 200
+            cone: 360
+            particles: 120
+            lifetime: 300
+            sizeFrom: 1
+            sizeTo: 3
+            interp: circleOut
+            sizeInterp:circleIn
+            colorFrom: 98ffa990
+            colorTo: 98ffa900
+            followParent: true
+            rotWithParent: true
+        }
+        {
+            startDelay:20
+            type: WaveEffect
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 300
+            sides:8
+
+            lifetime: 60
+
+            colorFrom: 84f49180
+            colorTo: 84f49100
+        }
+        {
+            startDelay:20
+            type: WaveEffect
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 300
+            sides:8
+
+            lifetime: 60
+
+            colorFrom: 84f49180
+            colorTo: 84f49100
+        }
+        {
+            startDelay:80
+            type: WaveEffect
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 300
+            sides:8
+
+            lifetime: 60
+
+            colorFrom: 84f49180
+            colorTo: 84f49100
+        }
+        {
+            startDelay:140
+            type: WaveEffect
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 300
+            sides:8
+
+            lifetime: 60
+
+            colorFrom: 84f49180
+            colorTo: 84f49100
+        }
+        {
+            startDelay:200
+            type: WaveEffect
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 300
+            sides:8
+
+            lifetime: 60
+
+            colorFrom: 84f49180
+            colorTo: 84f49100
+        }
+        {
+            type: ParticleEffect
+            lifetime: 120
+            particles: 60
+            line: true
+            cone: 360
+
+            baseRotation: 0
+            baseLength: 120
+            length: -120
+
+            strokeFrom: 2
+            strokeTo: 0
+
+            colorFrom: ffffff
+            colorTo: a9d8ff
+        }
+        {
+            startDelay:60
+            type: ParticleEffect
+            lifetime: 60
+            particles: 60
+            line: true
+            cone: 360
+
+            baseRotation: 0
+            baseLength: 120
+            length: -90
+
+            strokeFrom: 2
+            strokeTo: 0
+
+            colorFrom: ffffff
+            colorTo: a9d8ff
+        }
+        ]
+        hitEffect: [{
+            type: ExplosionEffect
+
+            lifetime: 300
+
+            waveColor: 84f491
+            waveStroke: 9
+            waveRad: 180
+
+            smokeColor: 84f49120
+            smokeSizeBase: 0
+            smokeSize: 7
+            smokes: 14
+
+            sparkColor: 84f491
+            sparkStroke: 2
+            sparkRad: 120
+            sparkLen: 6
+            sparks: 40
+            }
+            {
+            type: ParticleEffect
+            lifetime: 120
+            particles: 40
+            line: true
+            cone: 360
+
+            baseRotation: 0
+            length: 200
+
+            strokeFrom: 2
+            strokeTo: 0
+
+            colorFrom: ffffff
+            colorTo: a9d8ff00
+            }
+            {
+            type: ParticleEffect
+            startDelay:40
+            lifetime: 80
+            particles: 120
+            line: true
+            cone: 360
+
+            baseRotation: 0
+            length: 250
+
+            strokeFrom: 2
+            strokeTo: 1
+
+            colorFrom: ffffff
+            colorTo: a9d8ff00
+            }
+            {
+            type: ParticleEffect
+            startDelay:80
+            lifetime: 40
+            particles: 120
+            line: true
+            cone: 360
+
+            baseRotation: 0
+            length: 300
+
+            strokeFrom: 2
+            strokeTo: 1
+
+            colorFrom: ffffff30
+            colorTo: a9d8ff00
+            }
+            ]
+            intervalBullets: 2
+            bulletInterval: 1
+            intervalRandomSpread: 360
+            intervalDelay:20
+            intervalBullet:{
+            type: LightningBulletType
+                collidesAir: false
+                hittable: false
+                hitSize: 3
+
+                buildingDamageMultiplier: 2
+
+            	lightningLengthRand:30
+                lightningLength: 12
+                damage: 120
+                lightningColor:84f491
+                lightColor: 84f491
+                lightOpacity: 0.7
+                lightRadius: 14.5
+
+            lightningType: {
+                collidesAir: false
+                hittable: false
+                hitSize: 3
+            	width:0
+
+                buildingDamageMultiplier: 2
+
+                lifetime: 20
+
+                hitEffect: hitLancer
+                despawnEffect: none
+                lightColor: 84f491
+                lightOpacity: 0.7
+                lightRadius: 14.5
+            }
+            }
+            fragBullets: 30
+            fragLifeMin: 0.9
+            fragLifeMax: 10
+            fragBullet:{
+                type: LightningBulletType
+                collidesAir: false
+                hittable: false
+                hitSize: 3
+
+                buildingDamageMultiplier: 2
+
+                lightningLengthRand:30
+                lightningLength: 12
+                damage: 40
+                lightningColor:84f491
+                lightColor: 84f491
+                lightOpacity: 0.7
+                lightRadius: 14.5
+
+            lightningType: {
+                collidesAir: false
+                hittable: false
+                hitSize: 3
+                width:0
+
+                buildingDamageMultiplier: 2
+
+                lifetime: 70
+
+                hitEffect: hitLancer
+                despawnEffect: none
+                lightColor: 84f491
+                lightOpacity: 0.7
+                lightRadius: 14.5
+            }
+            }
+            }
+            }
 	]
 researchCost: [
     plastanium/2100

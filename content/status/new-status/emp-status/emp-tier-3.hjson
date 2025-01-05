@@ -1,7 +1,7 @@
 name: Tier 3 EMP
 healthMultiplier: 0.9
-reloadMultiplier: 0.7
-speedMultiplier: 0.25
+reloadMultiplier: 0.75
+speedMultiplier: 0.35
 
 effectChance: 0.125
 effect: {

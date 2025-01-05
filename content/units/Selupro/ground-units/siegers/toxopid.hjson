@@ -196,7 +196,7 @@ bullet: {
     spin:2
     shrinkX: 0.4
     shrinkY: 0.4
-    collidesTiles: true
+    collidesTiles: false
     reflectable: false
     collidesAir: false
     pierceArmor: true

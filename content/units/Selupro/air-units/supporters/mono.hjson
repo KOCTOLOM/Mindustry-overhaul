@@ -5,7 +5,7 @@ itemCapacity: 48
 mineSpeed: 3
 mineTier: 2
 speed: 2.25
-health: 69
+health: 90
 
 lightColor: 98ffa9
 lightOpacity: 0.7

@@ -1,7 +1,7 @@
 name: Tier 2 EMP
-reloadMultiplier: 0.8
+reloadMultiplier: 0.85
 healthMultiplier: 0.95
-speedMultiplier: 0.5
+speedMultiplier: 0.6
 
 effectChance: 0.075
 effect: {

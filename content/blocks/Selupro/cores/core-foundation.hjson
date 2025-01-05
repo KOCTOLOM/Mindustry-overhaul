@@ -1,6 +1,6 @@
 absorbLasers: true
 
-itemCapacity: 25000
+itemCapacity: 10000
 health: 25000
 armor: 5
 researchCostMultiplier:6
