@@ -25,7 +25,9 @@ deathSound: air-crush-large-2
 loopSound: air-engine
 loopSoundVolume: 0.4
 
-immunities: [ electrified, melting, burning, blasted, shocked, tarred, wet, spore-slowed]
+immunities: [ electrified, melting, burning, blasted, shocked, tarred, wet, spore-slowed, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-damage-reduction-tier-3,mov-armor-piercing-tier-1,mov-armor-piercing-tier-2,mov-emp-tier-1, mov-oxidation-tier-1, mov-oxidation-tier-2,mov-slow-reloading-tier-2,mov-slow-reloading-tier-3, mov-high-emp]
+
+targetFlags: [ reactor, turret, generator, core ]
 
 abilities: [
     {

@@ -87,17 +87,16 @@ bullet: {
     width: 8
 
     splashDamageRadius: 15
-    statusDuration: 60
     splashDamage: 48
-    status: blasted
     homingPower: 0.002
     homingRange: 40
     weaveScale: 6
     lifetime: 95
     weaveMag: 1
     damage: 50
-    speed: 2.8
-
+    speed: 3.4
+    statusDuration: 60
+    status: mov-oxidation-tier-1
     lightColor: d06b53
     lightOpacity: 0.7
     lightRadius: 72.5

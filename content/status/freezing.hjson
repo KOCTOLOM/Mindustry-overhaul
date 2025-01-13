@@ -1,3 +1,4 @@
 healthMultiplier: 0.9
 reloadMultiplier: 0.9
+speedMultiplier: 0.75
 transitionDamage: 24

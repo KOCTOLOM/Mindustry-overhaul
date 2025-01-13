@@ -26,7 +26,7 @@ loopSound: air-engine
 
 trailLength: 19
 
-immunities: [ burning, blasted, shocked, tarred, wet]
+immunities: [ burning, blasted, tarred, wet, shocked, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2]
 
 targetFlags: [ unitAssembler, unitCargoUnloadPoint, turret, reactor, generator, battery, core ]
 
@@ -576,3 +576,4 @@ researchCost: [
     titanium/2250
     silicon/3900
 ]
+

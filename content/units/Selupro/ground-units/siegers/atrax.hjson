@@ -16,6 +16,8 @@ lightRadius: 90
 
 immunities: [ melting, burning, sapped ]
 
+targetFlags: [ unitAssembler, unitCargoUnloadPoint, turret, core ]
+
 abilities: [
     {
     type: ShieldArcAbility

@@ -62,7 +62,10 @@ bullet: {
     pierceCap: 2
     damage: 14
     speed: 3.5
-    
+
+    status: slow-reloading-tier-1
+    statusDuration: 30
+
     smokeEffect: shootSmallSmoke
     shootEffect: shootSmall
 

@@ -15,7 +15,9 @@ lightOpacity: 0.7
 healColor: bf92f9
 lightRadius: 230
 
-immunities: [ spore-slowed, blasted, shocked, sapped ]
+immunities: [ spore-slowed, freezing, blasted, shocked, sapped, melting, spore-slowed, electrified, burning, blasted, melting, shocked, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-damage-reduction-tier-3,mov-armor-piercing-tier-1,mov-emp-tier-1, mov-high-emp, tarred ]
+
+targetFlags: [ turret, core ]
 
 abilities: [
     {

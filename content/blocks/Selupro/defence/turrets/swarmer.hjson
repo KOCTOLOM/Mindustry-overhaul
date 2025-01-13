@@ -71,10 +71,10 @@ blast-compound: {
 
     splashDamageRadius: 20
     statusDuration: 60
-    homingPower: 0.02
+    homingPower: 0.008
     splashDamage: 60
     homingRange: 180
-    status: blasted
+    status: mov-slow-reloading-tier-1
     knockback: 2.8
     lifetime: 63
     damage: 190
@@ -114,6 +114,40 @@ hitEffect: {
     sparkRad: 45
     sparkLen: 4
     sparks: 21
+}
+fragBullets:1
+	fragBullet: {
+    type: BasicBulletType
+    collidesAir: false
+    shrinkY: 1
+    height: 0
+    width: 0
+	hittable:false
+    buildingDamageMultiplier: 0.4
+    pierceDamageFactor: 0.75
+
+    splashDamageRadius: 20
+    statusDuration: 10
+    splashDamage: 10
+    status: blasted
+    knockback: 0
+    lifetime: 0
+    damage: 10
+    speed: 0
+
+    lightColor: ff795e
+    lightOpacity: 0.7
+    lightRadius: 27.5
+
+    trailColor: c85c51
+    trailLength: 12.5
+    trailWidth: 1.75
+
+    frontColor: ff795e
+    backColor: c85c51
+
+	hitEffect:none
+	despawnEffect: none
 }
     }
 

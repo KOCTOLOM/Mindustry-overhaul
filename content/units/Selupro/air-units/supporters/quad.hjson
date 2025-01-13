@@ -26,8 +26,8 @@ deathSound: air-crush-2
 loopSoundVolume: 0.25
 loopSound: air-engine
 
-immunities: [ electrified, melting, blasted, shocked, wet  ]
-
+immunities: [ electrified, melting, blasted, wet, shocked, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2 ]
+targetFlags: [ reactor, generator, turret, core ]
 abilities: [
     {
     type: ShieldRegenFieldAbility

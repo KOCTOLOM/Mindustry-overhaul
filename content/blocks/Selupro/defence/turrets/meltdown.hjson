@@ -20,7 +20,7 @@ armor: 24
 
 loopSoundVolume: 3
 shootSound: none
-
+liquidCapacity: 1200
 consumes: {
     power: 180
     }
@@ -42,15 +42,17 @@ shoot: {
     shots: 1
     }
 
-shootEffect: {
+shootEffect: [
+{
     type: WaveEffect
-    lifetime: 30
+    lifetime: 40
     sizeFrom: 0
     sizeTo: 360
 
-    colorFrom: ec745855
-    colorTo: ffffff
-    }
+    colorFrom: ec7458
+    colorTo: ffffff00
+}
+    ]
 
 shootType: {
     type: ContinuousFlameBulletType
@@ -72,7 +74,1962 @@ shootType: {
     damage: 105
 	
 	laserAbsorb:true
+    despawnEffect:[
 
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  344
+lifetime: 120
+line:true
+baseRotation:  1
+strokeFrom:  2.25
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: -10
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  261
+lifetime: 120
+line:true
+baseRotation:  2
+strokeFrom:  1.0
+strokeTo:  0
+cone: 2
+lenFrom: 2.5
+lenTo: -3.5
+offsetY: 6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  349
+lifetime: 120
+line:true
+baseRotation:  3
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: -2
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  329
+lifetime: 120
+line:true
+baseRotation:  4
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: -6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  285
+lifetime: 120
+line:true
+baseRotation:  5
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: -11
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  252
+lifetime: 120
+line:true
+baseRotation:  6
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 8
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  278
+lifetime: 120
+line:true
+baseRotation:  7
+strokeFrom:  2.25
+strokeTo:  0
+cone: 2
+lenFrom: 2.5
+lenTo: -3.5
+offsetY: -9
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  389
+lifetime: 120
+line:true
+baseRotation:  8
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 7.0
+lenTo: 1.0
+offsetY: 8
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  290
+lifetime: 120
+line:true
+baseRotation:  9
+strokeFrom:  1.0
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: 2
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  217
+lifetime: 120
+line:true
+baseRotation:  10
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 2.5
+lenTo: -3.5
+offsetY: 7
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  330
+lifetime: 120
+line:true
+baseRotation:  9
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: 0
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  327
+lifetime: 120
+line:true
+baseRotation:  8
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 5.5
+lenTo: -0.5
+offsetY: 6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  241
+lifetime: 120
+line:true
+baseRotation:  7
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: 10
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  260
+lifetime: 120
+line:true
+baseRotation:  6
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 2.5
+lenTo: -3.5
+offsetY: -3
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  308
+lifetime: 120
+line:true
+baseRotation:  5
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: 5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  437
+lifetime: 120
+line:true
+baseRotation:  4
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: 12
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  211
+lifetime: 120
+line:true
+baseRotation:  3
+strokeFrom:  1.25
+strokeTo:  0
+cone: 2
+lenFrom: 7.0
+lenTo: 1.0
+offsetY: -13
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  346
+lifetime: 120
+line:true
+baseRotation:  2
+strokeFrom:  0.75
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  341
+lifetime: 120
+line:true
+baseRotation:  1
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 8
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  271
+lifetime: 120
+line:true
+baseRotation:  0
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: 1
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  269
+lifetime: 120
+line:true
+baseRotation:  -1
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 7.0
+lenTo: 1.0
+offsetY: -2
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  286
+lifetime: 120
+line:true
+baseRotation:  -2
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: -12
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  313
+lifetime: 120
+line:true
+baseRotation:  -3
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: 12
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  303
+lifetime: 120
+line:true
+baseRotation:  -4
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: -4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  380
+lifetime: 120
+line:true
+baseRotation:  -5
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: 5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  444
+lifetime: 120
+line:true
+baseRotation:  -6
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: 6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  289
+lifetime: 120
+line:true
+baseRotation:  -7
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: 4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  343
+lifetime: 120
+line:true
+baseRotation:  -8
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 7.0
+lenTo: 1.0
+offsetY: -13
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  205
+lifetime: 120
+line:true
+baseRotation:  -9
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: 7
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  231
+lifetime: 120
+line:true
+baseRotation:  -10
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 2
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  245
+lifetime: 120
+line:true
+baseRotation:  -9
+strokeFrom:  1.0
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: -13
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  267
+lifetime: 120
+line:true
+baseRotation:  -8
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: -6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  241
+lifetime: 120
+line:true
+baseRotation:  -7
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: -10
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  366
+lifetime: 120
+line:true
+baseRotation:  -6
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: 4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  319
+lifetime: 120
+line:true
+baseRotation:  -5
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: -2
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  201
+lifetime: 120
+line:true
+baseRotation:  -4
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 2.5
+lenTo: -3.5
+offsetY: 6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  378
+lifetime: 120
+line:true
+baseRotation:  -3
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 3.5
+lenTo: -2.5
+offsetY: -4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  250
+lifetime: 120
+line:true
+baseRotation:  -2
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 5.5
+lenTo: -0.5
+offsetY: -9
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  241
+lifetime: 120
+line:true
+baseRotation:  -1
+strokeFrom:  2.25
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: 5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  270
+lifetime: 120
+line:true
+baseRotation:  0
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: 3
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  316
+lifetime: 120
+line:true
+baseRotation:  1
+strokeFrom:  1.0
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: 12
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  433
+lifetime: 120
+line:true
+baseRotation:  2
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 5.5
+lenTo: -0.5
+offsetY: 6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  247
+lifetime: 120
+line:true
+baseRotation:  3
+strokeFrom:  1.0
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: 1
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  336
+lifetime: 120
+line:true
+baseRotation:  4
+strokeFrom:  0.75
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: -7
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  398
+lifetime: 120
+line:true
+baseRotation:  5
+strokeFrom:  2.25
+strokeTo:  0
+cone: 2
+lenFrom: 5.0
+lenTo: -1.0
+offsetY: 4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  375
+lifetime: 120
+line:true
+baseRotation:  6
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: 5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  361
+lifetime: 120
+line:true
+baseRotation:  7
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 8
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  272
+lifetime: 120
+line:true
+baseRotation:  8
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: 4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  440
+lifetime: 120
+line:true
+baseRotation:  9
+strokeFrom:  0.75
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  248
+lifetime: 120
+line:true
+baseRotation:  10
+strokeFrom:  1.0
+strokeTo:  0
+cone: 2
+lenFrom: 7.0
+lenTo: 1.0
+offsetY: -11
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  280
+lifetime: 120
+line:true
+baseRotation:  9
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  408
+lifetime: 120
+line:true
+baseRotation:  8
+strokeFrom:  0.75
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: 11
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  345
+lifetime: 120
+line:true
+baseRotation:  7
+strokeFrom:  1.75
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: -6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  338
+lifetime: 120
+line:true
+baseRotation:  6
+strokeFrom:  1.25
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: -7
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  415
+lifetime: 120
+line:true
+baseRotation:  5
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: -1
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  399
+lifetime: 120
+line:true
+baseRotation:  4
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: -3
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  254
+lifetime: 120
+line:true
+baseRotation:  3
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: 1
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  272
+lifetime: 120
+line:true
+baseRotation:  2
+strokeFrom:  0.25
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: -6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  334
+lifetime: 120
+line:true
+baseRotation:  1
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: 9
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  216
+lifetime: 120
+line:true
+baseRotation:  0
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: 0
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  368
+lifetime: 120
+line:true
+baseRotation:  -1
+strokeFrom:  2.25
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: -6
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  443
+lifetime: 120
+line:true
+baseRotation:  -2
+strokeFrom:  0.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: -10
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  416
+lifetime: 120
+line:true
+baseRotation:  -3
+strokeFrom:  2.25
+strokeTo:  0
+cone: 2
+lenFrom: 5.5
+lenTo: -0.5
+offsetY: -4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  223
+lifetime: 120
+line:true
+baseRotation:  -4
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: -10
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  331
+lifetime: 120
+line:true
+baseRotation:  -5
+strokeFrom:  1.25
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: 0
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  349
+lifetime: 120
+line:true
+baseRotation:  -6
+strokeFrom:  0.75
+strokeTo:  0
+cone: 2
+lenFrom: 2.5
+lenTo: -3.5
+offsetY: -5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  200
+lifetime: 120
+line:true
+baseRotation:  -7
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 5.5
+lenTo: -0.5
+offsetY: -4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  365
+lifetime: 120
+line:true
+baseRotation:  -8
+strokeFrom:  1.75
+strokeTo:  0
+cone: 2
+lenFrom: 3.5
+lenTo: -2.5
+offsetY: 8
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  395
+lifetime: 120
+line:true
+baseRotation:  -9
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 12
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  307
+lifetime: 120
+line:true
+baseRotation:  -10
+strokeFrom:  0.75
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: 12
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  407
+lifetime: 120
+line:true
+baseRotation:  -9
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 6.0
+lenTo: 0.0
+offsetY: -11
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  436
+lifetime: 120
+line:true
+baseRotation:  -8
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.5
+lenTo: -2.5
+offsetY: -1
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  341
+lifetime: 120
+line:true
+baseRotation:  -7
+strokeFrom:  1.75
+strokeTo:  0
+cone: 2
+lenFrom: 7.0
+lenTo: 1.0
+offsetY: -5
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  232
+lifetime: 120
+line:true
+baseRotation:  -6
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: 10
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  257
+lifetime: 120
+line:true
+baseRotation:  -5
+strokeFrom:  1.75
+strokeTo:  0
+cone: 2
+lenFrom: 2.5
+lenTo: -3.5
+offsetY: 12
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  203
+lifetime: 120
+line:true
+baseRotation:  -4
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 5.5
+lenTo: -0.5
+offsetY: 3
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  288
+lifetime: 120
+line:true
+baseRotation:  -3
+strokeFrom:  2.75
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: -1
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  365
+lifetime: 120
+line:true
+baseRotation:  -2
+strokeFrom:  1.25
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: -7
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  373
+lifetime: 120
+line:true
+baseRotation:  -1
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: 2
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  446
+lifetime: 120
+line:true
+baseRotation:  0
+strokeFrom:  0.75
+strokeTo:  0
+cone: 2
+lenFrom: 4.0
+lenTo: -2.0
+offsetY: -8
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  443
+lifetime: 120
+line:true
+baseRotation:  1
+strokeFrom:  2.0
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 7
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  344
+lifetime: 120
+line:true
+baseRotation:  2
+strokeFrom:  1.75
+strokeTo:  0
+cone: 2
+lenFrom: 6.5
+lenTo: 0.5
+offsetY: 4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  344
+lifetime: 120
+line:true
+baseRotation:  3
+strokeFrom:  1.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.5
+lenTo: -2.5
+offsetY: -4
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  330
+lifetime: 120
+line:true
+baseRotation:  4
+strokeFrom:  1.0
+strokeTo:  0
+cone: 2
+lenFrom: 4.5
+lenTo: -1.5
+offsetY: -1
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+
+
+{
+followParent: true
+rotWithParent: true
+type: ParticleEffect
+particles: 2
+length:  274
+lifetime: 120
+line:true
+baseRotation:  5
+strokeFrom:  2.5
+strokeTo:  0
+cone: 2
+lenFrom: 3.0
+lenTo: -3.0
+offsetY: 3
+startDelay: 0
+interp: circleOut
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+    ]
 	fragBullets:1
 
 	fragBullet: {
@@ -152,7 +2109,7 @@ effects: [
     type: WaveEffect
     lifetime: 240
     sizeFrom: 70
-    sizeTo: 7
+    sizeTo: 0
     strokeFrom: 0
     strokeTo: 4
     colorFrom: ec7458
@@ -178,7 +2135,7 @@ effects: [
     startDelay: 220
     lifetime: 15
     sizeFrom: 150
-    sizeTo: 15
+    sizeTo: 0
     strokeFrom: 0
     strokeTo: 3
     colorFrom: ec7458
@@ -232,21 +2189,1810 @@ effects: [
     followParent: true
     rotWithParent: true
 }
-    {
-    type: ParticleEffect
-    baseLength: 40
-    length: -40
-    cone: 360
-    particles: 3
-    lifetime: 240
-    sizeFrom: 9
-    sizeTo: 0
-    colorFrom: ec7458
-    colorTo: ffffff
-    strokeFrom: 0.8
-    strokeTo: 0.6 
-    followParent: true
-    rotWithParent: true
+
+{
+type: RadialEffect
+rotationOffset:  93
+rotationSpacing : 180
+amount: 2
+lengthOffset:  97.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  0
+length:  -101.0
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  96
+rotationSpacing : 180
+amount: 2
+lengthOffset:  85.14285714285714
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  3
+length:  -89.14285714285714
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  99
+rotationSpacing : 180
+amount: 2
+lengthOffset:  98.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  6
+length:  -102.28571428571429
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  102
+rotationSpacing : 180
+amount: 2
+lengthOffset:  89.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  9
+length:  -93.42857142857143
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  105
+rotationSpacing : 180
+amount: 2
+lengthOffset:  91.57142857142857
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  12
+length:  -95.57142857142857
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  108
+rotationSpacing : 180
+amount: 2
+lengthOffset:  97.71428571428571
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  15
+length:  -101.71428571428571
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  114
+rotationSpacing : 180
+amount: 2
+lengthOffset:  94.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  18
+length:  -98.85714285714286
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  120
+rotationSpacing : 180
+amount: 2
+lengthOffset:  86.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  21
+length:  -90.0
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  126
+rotationSpacing : 180
+amount: 2
+lengthOffset:  79.14285714285714
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  24
+length:  -83.14285714285714
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  135
+rotationSpacing : 180
+amount: 2
+lengthOffset:  77.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  27
+length:  -81.28571428571429
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  126
+rotationSpacing : 180
+amount: 2
+lengthOffset:  95.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  30
+length:  -99.42857142857143
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  117
+rotationSpacing : 180
+amount: 2
+lengthOffset:  93.57142857142857
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  33
+length:  -97.57142857142857
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  111
+rotationSpacing : 180
+amount: 2
+lengthOffset:  81.71428571428572
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  36
+length:  -85.71428571428572
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  105
+rotationSpacing : 180
+amount: 2
+lengthOffset:  85.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  39
+length:  -89.85714285714286
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  102
+rotationSpacing : 180
+amount: 2
+lengthOffset:  92.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  42
+length:  -96.0
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  99
+rotationSpacing : 180
+amount: 2
+lengthOffset:  85.14285714285714
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  45
+length:  -89.14285714285714
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  96
+rotationSpacing : 180
+amount: 2
+lengthOffset:  75.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  48
+length:  -79.28571428571429
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  93
+rotationSpacing : 180
+amount: 2
+lengthOffset:  84.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  51
+length:  -88.42857142857143
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  90
+rotationSpacing : 180
+amount: 2
+lengthOffset:  85.57142857142857
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  54
+length:  -89.57142857142857
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  87
+rotationSpacing : 180
+amount: 2
+lengthOffset:  80.71428571428572
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  57
+length:  -84.71428571428572
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  84
+rotationSpacing : 180
+amount: 2
+lengthOffset:  67.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  60
+length:  -71.85714285714286
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  81
+rotationSpacing : 180
+amount: 2
+lengthOffset:  82.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  63
+length:  -86.0
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  78
+rotationSpacing : 180
+amount: 2
+lengthOffset:  70.14285714285714
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  66
+length:  -74.14285714285714
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  75
+rotationSpacing : 180
+amount: 2
+lengthOffset:  69.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  69
+length:  -73.28571428571429
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  72
+rotationSpacing : 180
+amount: 2
+lengthOffset:  77.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  72
+length:  -81.42857142857143
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  66
+rotationSpacing : 180
+amount: 2
+lengthOffset:  77.57142857142857
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  75
+length:  -81.57142857142857
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  60
+rotationSpacing : 180
+amount: 2
+lengthOffset:  72.71428571428572
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  78
+length:  -76.71428571428572
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  54
+rotationSpacing : 180
+amount: 2
+lengthOffset:  69.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  81
+length:  -73.85714285714286
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  45
+rotationSpacing : 180
+amount: 2
+lengthOffset:  77.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  84
+length:  -81.0
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  54
+rotationSpacing : 180
+amount: 2
+lengthOffset:  62.14285714285714
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  87
+length:  -66.14285714285714
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  63
+rotationSpacing : 180
+amount: 2
+lengthOffset:  78.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  90
+length:  -82.28571428571429
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  69
+rotationSpacing : 180
+amount: 2
+lengthOffset:  59.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  93
+length:  -63.42857142857143
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  75
+rotationSpacing : 180
+amount: 2
+lengthOffset:  58.57142857142857
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  96
+length:  -62.57142857142857
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  78
+rotationSpacing : 180
+amount: 2
+lengthOffset:  61.714285714285715
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  99
+length:  -65.71428571428572
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  81
+rotationSpacing : 180
+amount: 2
+lengthOffset:  72.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  102
+length:  -76.85714285714286
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  84
+rotationSpacing : 180
+amount: 2
+lengthOffset:  69.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  105
+length:  -73.0
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  87
+rotationSpacing : 180
+amount: 2
+lengthOffset:  67.14285714285714
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  108
+length:  -71.14285714285714
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  90
+rotationSpacing : 180
+amount: 2
+lengthOffset:  69.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  111
+length:  -73.28571428571429
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  93
+rotationSpacing : 180
+amount: 2
+lengthOffset:  69.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  114
+length:  -73.42857142857143
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  96
+rotationSpacing : 180
+amount: 2
+lengthOffset:  69.57142857142858
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  117
+length:  -73.57142857142858
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  99
+rotationSpacing : 180
+amount: 2
+lengthOffset:  52.714285714285715
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  120
+length:  -56.714285714285715
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  102
+rotationSpacing : 180
+amount: 2
+lengthOffset:  55.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  123
+length:  -59.85714285714286
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  105
+rotationSpacing : 180
+amount: 2
+lengthOffset:  64.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  126
+length:  -68.0
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  108
+rotationSpacing : 180
+amount: 2
+lengthOffset:  65.14285714285714
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  129
+length:  -69.14285714285714
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  114
+rotationSpacing : 180
+amount: 2
+lengthOffset:  63.285714285714285
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  132
+length:  -67.28571428571428
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  120
+rotationSpacing : 180
+amount: 2
+lengthOffset:  51.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  135
+length:  -55.42857142857143
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  126
+rotationSpacing : 180
+amount: 2
+lengthOffset:  61.57142857142858
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  138
+length:  -65.57142857142858
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  135
+rotationSpacing : 180
+amount: 2
+lengthOffset:  45.714285714285715
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  141
+length:  -49.714285714285715
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  126
+rotationSpacing : 180
+amount: 2
+lengthOffset:  47.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  144
+length:  -51.85714285714286
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  117
+rotationSpacing : 180
+amount: 2
+lengthOffset:  46.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  147
+length:  -50.0
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  111
+rotationSpacing : 180
+amount: 2
+lengthOffset:  55.142857142857146
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  150
+length:  -59.142857142857146
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  105
+rotationSpacing : 180
+amount: 2
+lengthOffset:  49.285714285714285
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  153
+length:  -53.285714285714285
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  102
+rotationSpacing : 180
+amount: 2
+lengthOffset:  58.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  156
+length:  -62.42857142857143
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  99
+rotationSpacing : 180
+amount: 2
+lengthOffset:  40.57142857142858
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  159
+length:  -44.57142857142858
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  96
+rotationSpacing : 180
+amount: 2
+lengthOffset:  56.714285714285715
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  162
+length:  -60.714285714285715
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  93
+rotationSpacing : 180
+amount: 2
+lengthOffset:  47.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  165
+length:  -51.85714285714286
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  90
+rotationSpacing : 180
+amount: 2
+lengthOffset:  47.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  168
+length:  -51.0
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  87
+rotationSpacing : 180
+amount: 2
+lengthOffset:  51.142857142857146
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  171
+length:  -55.142857142857146
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  84
+rotationSpacing : 180
+amount: 2
+lengthOffset:  50.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  174
+length:  -54.28571428571429
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  81
+rotationSpacing : 180
+amount: 2
+lengthOffset:  37.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  177
+length:  -41.42857142857143
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  78
+rotationSpacing : 180
+amount: 2
+lengthOffset:  47.57142857142858
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  180
+length:  -51.57142857142858
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  75
+rotationSpacing : 180
+amount: 2
+lengthOffset:  46.714285714285715
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  183
+length:  -50.714285714285715
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  72
+rotationSpacing : 180
+amount: 2
+lengthOffset:  41.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  186
+length:  -45.85714285714286
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  66
+rotationSpacing : 180
+amount: 2
+lengthOffset:  40.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  189
+length:  -44.0
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  60
+rotationSpacing : 180
+amount: 2
+lengthOffset:  45.142857142857146
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  192
+length:  -49.142857142857146
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  54
+rotationSpacing : 180
+amount: 2
+lengthOffset:  43.28571428571429
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  195
+length:  -47.28571428571429
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  45
+rotationSpacing : 180
+amount: 2
+lengthOffset:  28.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  198
+length:  -32.42857142857143
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  54
+rotationSpacing : 180
+amount: 2
+lengthOffset:  38.57142857142858
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  201
+length:  -42.57142857142858
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  63
+rotationSpacing : 180
+amount: 2
+lengthOffset:  37.714285714285715
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  204
+length:  -41.714285714285715
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  69
+rotationSpacing : 180
+amount: 2
+lengthOffset:  36.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  207
+length:  -40.85714285714286
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  75
+rotationSpacing : 180
+amount: 2
+lengthOffset:  25.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  210
+length:  -29.0
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  78
+rotationSpacing : 180
+amount: 2
+lengthOffset:  25.142857142857146
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  213
+length:  -29.142857142857146
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  81
+rotationSpacing : 180
+amount: 2
+lengthOffset:  24.285714285714292
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  216
+length:  -28.285714285714292
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  84
+rotationSpacing : 180
+amount: 2
+lengthOffset:  36.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  219
+length:  -40.42857142857143
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  87
+rotationSpacing : 180
+amount: 2
+lengthOffset:  31.571428571428577
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  222
+length:  -35.57142857142858
+lifetime:  50
+sizeFrom: 2.5
+sizeTo:  6.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  90
+rotationSpacing : 180
+amount: 2
+lengthOffset:  34.71428571428572
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  225
+length:  -38.71428571428572
+lifetime:  50
+sizeFrom: 2.0
+sizeTo:  6.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  93
+rotationSpacing : 180
+amount: 2
+lengthOffset:  20.85714285714286
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  228
+length:  -24.85714285714286
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  96
+rotationSpacing : 180
+amount: 2
+lengthOffset:  37.0
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  231
+length:  -41.0
+lifetime:  50
+sizeFrom: 3.5
+sizeTo:  7.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  99
+rotationSpacing : 180
+amount: 2
+lengthOffset:  20.142857142857153
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  234
+length:  -24.142857142857153
+lifetime:  50
+sizeFrom: 3.0
+sizeTo:  7.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  102
+rotationSpacing : 180
+amount: 2
+lengthOffset:  27.285714285714292
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  237
+length:  -31.285714285714292
+lifetime:  50
+sizeFrom: 1.5
+sizeTo:  5.5
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  105
+rotationSpacing : 180
+amount: 2
+lengthOffset:  17.42857142857143
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  240
+length:  -21.42857142857143
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
+}
+{
+type: RadialEffect
+rotationOffset:  108
+rotationSpacing : 180
+amount: 2
+lengthOffset:  22.57142857142857
+effect: {
+type: ParticleEffect
+particles: 2
+startDelay:  243
+length:  -26.57142857142857
+lifetime:  50
+sizeFrom: 1.0
+sizeTo:  5.0
+cone: 3
+interp: circleIn
+sizeInterp:circleIn
+colorFrom: ec7458
+colorTo: ec745800
+layer:100.3
+}
 }
     ]
 }

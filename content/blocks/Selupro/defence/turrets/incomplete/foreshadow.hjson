@@ -20,7 +20,7 @@ consumes: {
 		blast-compound/24
 	]
 }
-
+liquidCapacity: 900
 ammoUseEffect: casing3
 
 ammoTypes: {
@@ -493,7 +493,7 @@ ammoTypes: {
     }
         ]
     	intervalBullets: 2
-        bulletInterval: 2
+        bulletInterval: 4
         intervalRandomSpread: 120
         intervalAngle:180
     	intervalDelay:10
@@ -508,15 +508,18 @@ ammoTypes: {
         hitShake: 3
         height: 12
         width: 12
+        shrinkY:0
+        shrinkX:0
+        spin:1.5
         frontColor: EFCA98
         backColor: E3A880
         buildingDamageMultiplier: 1.5
 
         splashDamageRadius: 16
         lightOpacity: 0.5
-        splashDamage: 320
+        splashDamage: 240
         lightRadius: 30
-        lifetime: 120
+        lifetime: 90
         damage: 150
         speed: 6
         drag:0.2
@@ -527,12 +530,12 @@ ammoTypes: {
     	despawnEffect: [{
         type: WaveEffect
         lifetime: 20
-        sides:4
+        sides:10
         sizeFrom: 0
         sizeTo: 20
 
-        strokeFrom: 0
-        strokeTo: 2
+        strokeFrom: 1
+        strokeTo: 5
 
         colorFrom: EFCA98
         colorTo: EFCA9880
@@ -542,17 +545,110 @@ ammoTypes: {
         type: WaveEffect
         lifetime: 30
 
-        sides:4
+        sides:10
         sizeFrom: 20
         sizeTo: 15
 
-        strokeFrom: 2
-        strokeTo: 3
+        strokeFrom: 1
+        strokeTo: 5
 
         colorFrom: EFCA9860
         colorTo: EFCA9800
-    }]
-        hitSound: cannon-hit
+    }
+    {
+        startDelay:50
+        type: ParticleEffect
+        lifetime: 60
+        particles: 12
+        line: true
+        cone:360
+        length:30
+        baseLength:15
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:12
+        lenTo:0
+        colorFrom: EFCA9830
+        colorTo: EFCA9800
+    }
+    {
+        startDelay:50
+        type: ParticleEffect
+        lifetime: 60
+        particles: 7
+        line: true
+        cone:360
+        length:40
+        baseLength:15
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:6
+        lenTo:0
+        colorFrom: EFCA98
+        colorTo: EFCA98
+    }
+    {
+        startDelay:50
+        type: ParticleEffect
+        lifetime: 30
+        particles: 3
+        line: true
+        cone:360
+        length:-4
+        baseLength:16
+        strokeFrom: 1.4
+        strokeTo: 1
+        lenFrom:8
+        lenTo:0
+        colorFrom: EFCA98
+        colorTo: EFCA9820
+    }
+    {
+        startDelay:50
+        type: ParticleEffect
+        lifetime: 75
+        particles: 4
+        line: true
+        cone:360
+        length:80
+        baseLength:15
+        sizeFrom:1
+        sizeTo:2
+        colorFrom: EFCA9830
+        colorTo: EFCA9800
+    }
+    {
+        type: ParticleEffect
+        lifetime: 20
+        particles: 4
+        line: true
+        cone:360
+        length:-16
+        baseLength:15
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:6
+        lenTo:0
+        colorFrom: EFCA9880
+        colorTo: EFCA9800
+    }
+    {
+        type: ParticleEffect
+        lifetime: 30
+        particles: 4
+        line: true
+        cone:360
+        length:-21
+        baseLength:20
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:3
+        lenTo:0
+        colorFrom: EFCA9880
+        colorTo: EFCA9800
+    }
+    ]
+        despawnSound : plasma-shot-3
     	hitEffect:none
         lightColor: 98ffa9
         lightOpacity: 0.7
@@ -561,51 +657,56 @@ ammoTypes: {
         lightningColor: ffffff
         }
 
-    	fragBullets: 22
+    	fragBullets: 42
         fragLifeMin: 1
+        fragLifeMax: 3
     	fragVelocityMin:0.2
-    	fragVelocityMax:2
-    	fragRandomSpread:120
+    	fragVelocityMax:4
+    	fragRandomSpread:360
     fragBullet: {
         type: ArtilleryBulletType
         collidesTiles: false
         collidesAir: true
+        sprite:large-bomb
         despawnShake: 4
         absorbable: false
         hittable: false
         hitShake: 3
-        height: 18
-        width: 18
+        shrinkY:0
+        shrinkX:0
+        height: 22
+        width: 22
         frontColor: EFCA98
         backColor: E3A880
 
         trailColor: EFCA98
-        trailLength: 7
-        trailWidth: 4
+        trailLength: 12
+        trailWidth: 3
 
-        buildingDamageMultiplier: 1.5
+        buildingDamageMultiplier: 0.5
 
-        splashDamageRadius: 40
+        splashDamageRadius: 80
         lightOpacity: 0.5
-        splashDamage: 400
+        splashDamage: 220
         lightRadius: 30
-        lifetime: 36
+        lifetime: 40
         damage: 180
-        speed: 7
+        speed: 4
         drag:0.08
+        spin:2
     	pierceCap: 2
     	pierceArmor:true
 
         smokeEffect: shootBigSmoke2
-    	despawnEffect: [{
+    	hitEffect: [{
         type: WaveEffect
         lifetime: 40
-        sides:6
+        sides:9
         sizeFrom: 0
         sizeTo: 29
 
         strokeFrom: 0
-        strokeTo: 2
+        strokeTo: 6
 
         colorFrom: EFCA98
         colorTo: EFCA9860
@@ -614,21 +715,122 @@ ammoTypes: {
     	startDelay:40
         type: WaveEffect
         lifetime: 90
-        sides:6
+        sides:9
         sizeFrom: 29
         sizeTo: 40
 
-        strokeFrom: 2
-        strokeTo: 7
+        strokeFrom: 6
+        strokeTo: 0.3
 
         colorFrom: EFCA9860
+        colorTo: EFCA9810
+    }
+    {
+        startDelay:130
+        type: ParticleEffect
+        lifetime: 60
+        particles: 24
+        line: true
+        cone:360
+        length:80
+        baseLength:40
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:12
+        lenTo:0
+        colorFrom: EFCA9830
         colorTo: EFCA9800
-    }]
-        hitSound: cannon-hit
-    	hitEffect:none
+    }
+    {
+        startDelay:130
+        type: ParticleEffect
+        lifetime: 60
+        particles: 14
+        line: true
+        cone:360
+        length:80
+        baseLength:40
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:6
+        lenTo:0
+        colorFrom: EFCA98
+        colorTo: EFCA98
+    }
+    {
+        startDelay:130
+        type: ParticleEffect
+        lifetime: 30
+        particles: 14
+        line: true
+        cone:360
+        length:-10
+        baseLength:43
+        strokeFrom: 1.4
+        strokeTo: 1
+        lenFrom:8
+        lenTo:0
+        colorFrom: EFCA98
+        colorTo: EFCA9820
+    }
+    {
+        startDelay:130
+        type: ParticleEffect
+        lifetime: 75
+        particles: 9
+        line: true
+        cone:360
+        length:80
+        baseLength:40
+        sizeFrom:3
+        sizeTo:4
+        colorFrom: EFCA9830
+        colorTo: EFCA9800
+    }
+    {
+        type: ParticleEffect
+        lifetime: 20
+        particles: 12
+        line: true
+        cone:360
+        length:-40
+        baseLength:30
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:6
+        lenTo:0
+        colorFrom: EFCA9880
+        colorTo: EFCA9800
+    }
+    {
+        type: ParticleEffect
+        lifetime: 30
+        particles: 9
+        line: true
+        cone:360
+        length:-60
+        baseLength:50
+        strokeFrom: 1.4
+        strokeTo: 0
+        lenFrom:3
+        lenTo:0
+        colorFrom: EFCA9880
+        colorTo: EFCA9800
+    }
+    ]
+        despawnSound : plasma-shot-3
+    	DespawnEffect:none
         lightColor: 98ffa9
         lightOpacity: 0.7
         lightRadius: 90
         }
     }
     }
+requirements: [
+    copper/1450
+    titanium/400
+    metaglass/450
+    silicon/700
+    plastanium/300
+    surge-alloy/400
+]

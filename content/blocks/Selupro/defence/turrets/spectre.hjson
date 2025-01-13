@@ -18,7 +18,7 @@ researchCostMultiplier:0.8
 consumes: {
     power: 16
 }
-
+liquidCapacity: 900
 requirements: [
     lead/1250
     graphite/850
@@ -370,8 +370,8 @@ blast-compound: {
 	
     splashDamageRadius: 100
     statusDuration: 48
-    splashDamage: 500
-    status: blasted
+    splashDamage: 300
+    status: mov-oxidation-tier-2
     knockback: 2.1
     pierceCap: 3
     lifetime: 149
@@ -412,7 +412,40 @@ hitEffect: {
     sparkLen: 30
     sparks: 25
 }
+    fragBullets:20
+	fragBullet: {
+    type: BasicBulletType
+    collidesAir: false
+    shrinkY: 1
+    height: 0
+    width: 0
+	hittable:false
+    buildingDamageMultiplier: 0.0
+
+    splashDamageRadius: 100
+    statusDuration: 10
+    splashDamage: 30
+    status: blasted
+    knockback: 0
+    lifetime: 0
+    damage: 70
+    speed: 0
+
+    lightColor: ff795e
+    lightOpacity: 0.7
+    lightRadius: 27.5
+
+    trailColor: c85c51
+    trailLength: 12.5
+    trailWidth: 1.75
+
+    frontColor: ff795e
+    backColor: c85c51
+
+	hitEffect:none
+	despawnEffect: none
     }
+}
 
 titanium: {
     type: BasicBulletType

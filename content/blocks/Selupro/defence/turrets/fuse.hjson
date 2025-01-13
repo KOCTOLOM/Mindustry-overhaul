@@ -181,8 +181,8 @@ blast-compound: {
     ammoMultiplier: 4
     rangeChange: 72
 
-    statusDuration: 16
-    status: blasted
+    statusDuration: 120
+    status: mov-oxidation-tier-1
     knockback: 6
     pierceCap: 32
     lifetime: 18

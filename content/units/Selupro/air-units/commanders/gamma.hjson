@@ -78,6 +78,9 @@ bullet: {
     damage: 17
     speed: 3.75
 
+    status: slow-reloading-tier-2
+    statusDuration: 30
+
     trailColor: fff8e850
     trailWidth: 1
     trailLength: 7

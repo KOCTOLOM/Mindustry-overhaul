@@ -14,7 +14,9 @@ lightOpacity: 0.7
 healColor: b0bac0
 lightRadius: 140
 
-immunities: [ burning, melting, shocked, blasted]
+immunities: [ burning, melting, shocked, blasted, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2]
+
+argetFlags: [ turret, repair, core ]
 
 abilities: [
     {

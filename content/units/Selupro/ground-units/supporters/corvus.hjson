@@ -16,7 +16,9 @@ lightOpacity: 0.7
 healColor: 84f491
 lightRadius: 150
 
-immunities: [ shocked, wet, burning, melting, blasted, overclock ]
+immunities: [ burning,freezing, wet, blasted, shocked, spore-slowed, electrified, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1, mov-emp-tier-2, mov-oxidation-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2,mov-slow-reloading-tier-3, mov-high-emp, tarred ]
+
+targetFlags: [ turret, core ]
 
 abilities: [
     {

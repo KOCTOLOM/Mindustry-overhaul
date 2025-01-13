@@ -17,7 +17,9 @@ lightRadius: 125
 
 trailLength: 15
 
-immunities: [ electrified, melting, burning ]
+immunities: [ electrified, melting, burning, shocked, blasted, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2 ]
+
+targetFlags: [ turret, repair, core ]
 
 abilities: [
     {

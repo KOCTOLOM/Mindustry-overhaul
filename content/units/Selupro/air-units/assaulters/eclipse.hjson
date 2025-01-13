@@ -23,7 +23,7 @@ deathSound: air-crush-large-1
 loopSoundVolume: 0.24
 loopSound: air-engine
 
-immunities: [ melting, burning, blasted, shocked, tarred, wet]
+immunities: [ burning, freezing, melting, blasted, shocked, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-damage-reduction-tier-3,mov-armor-piercing-tier-1,mov-armor-piercing-tier-2,mov-emp-tier-1, mov-oxidation-tier-1, mov-oxidation-tier-2,mov-slow-reloading-tier-2,mov-slow-reloading-tier-3, mov-high-emp, tarred ]
 
 targetFlags: [ turret, repair, extinguisher, hasFogRadius, unitAssembler, unitCargoUnloadPoint, launchPad, reactor, generator, battery, factory, storage, drill, core ]
 
@@ -849,7 +849,7 @@ bullet: {
         colorFrom: ffffff
         colorTo: ff9c5a00
         layer:100.3
-        }
+    }
     {
          followParent: false
          rotWithParent: false

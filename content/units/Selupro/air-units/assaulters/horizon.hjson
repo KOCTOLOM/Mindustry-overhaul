@@ -20,7 +20,7 @@ deathSound: medium-air-crush-1
 
 immunities: [ blasted ]
 
-targetFlags: [ generator, unitAssembler, factory, storage, battery, drill ]
+targetFlags: [ factory, unitAssembler, generator, storage, battery, drill ]
 
 abilities: [
     {

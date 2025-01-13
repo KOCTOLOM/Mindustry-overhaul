@@ -14,7 +14,9 @@ lightOpacity: 0.7
 healColor: bf92f9
 lightRadius: 150
 
-immunities: [ spore-slowed, shocked, sapped]
+immunities: [ spore-slowed, shocked, sapped, blasted, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2]
+
+targetFlags: [ unitAssembler, unitCargoUnloadPoint, turret, reactor, core ]
 
 abilities: [
     {

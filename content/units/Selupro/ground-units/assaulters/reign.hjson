@@ -17,7 +17,8 @@ lightRadius: 170
 
 deathSound: mech-large-destroyed
 
-immunities: [ overclock, burning, melting, wet, blasted, shocked ]
+immunities: [ burning, freezing, melting, wet, blasted, shocked, spore-slowed, electrified, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-damage-reduction-tier-3,mov-armor-piercing-tier-1,mov-armor-piercing-tier-2,mov-emp-tier-1, mov-oxidation-tier-1, mov-oxidation-tier-2,mov-slow-reloading-tier-2,mov-slow-reloading-tier-3, mov-high-emp, tarred ]
+targetFlags: [ turret, repair, core ]
 
 abilities: [
     {

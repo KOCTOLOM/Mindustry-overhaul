@@ -8,7 +8,7 @@ shake: 5
 
 buildCostMultiplier: 1.5
 
-inaccuracy: 9
+inaccuracy: 7
 maxAmmo: 15
 health: 180
 reload: 150
@@ -18,8 +18,8 @@ researchCostMultiplier:0.6
 shootSound: bang
 
 requirements: [
-    copper/45
-    graphite/25
+    copper/28
+    graphite/12
 ]
 
 ammoTypes: {
@@ -40,8 +40,8 @@ graphite: {
     splashDamageRadius: 40
     splashDamage: 52.5
     pierceCap: 8
-    lifetime: 80
-    speed: 2
+    lifetime: 40
+    speed: 4
 
     lightColor: 95abd9
     lightOpacity: 0.7
@@ -97,8 +97,8 @@ silicon: {
     homingPower: 0.05
     homingRange: 50
     pierceCap: 3
-    lifetime: 80
-    speed: 3.2
+    lifetime: 40
+    speed: 6.4
 
     lightColor: 8e9097
     lightOpacity: 0.7
@@ -153,9 +153,9 @@ pyratite: {
     knockback: 0.75
     fragBullets: 7
     fragLifeMin: 3
-    lifetime: 80
+    lifetime: 40
 
-    speed: 2.5
+    speed: 5
 	
 	incendAmount: 2
 	incendSpread: 5
@@ -250,8 +250,8 @@ scrap: {
     fragBullets: 8
     fragSpread: 32
     pierceCap: 5
-    lifetime: 80
-    speed: 4.5
+    lifetime: 40
+    speed: 9
 
     lightColor: e0b28d
     lightOpacity: 0.7
@@ -332,8 +332,8 @@ spore-pod: {
     statusDuration: 260
     splashDamage: 10
     knockback: 0.75
-    lifetime: 80
-    speed: 1.8
+    lifetime: 40
+    speed: 3.6
     damage: 0
 
     lightColor: 9e78dc

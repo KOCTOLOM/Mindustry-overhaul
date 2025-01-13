@@ -6,7 +6,7 @@ health: 92000
 speed: 0.25
 armor: 230
 
-immunities: [ spore-slowed, electrified, burning, blasted, melting, shocked, mov-armor-piercing-tier-2, mov-armor-piercing-tier-3 ]
+immunities: [ spore-slowed, electrified,freezing, burning, blasted, melting, shocked, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-armor-piercing-tier-1,mov-armor-piercing-tier-2,mov-emp-tier-1, mov-oxidation-tier-1,mov-slow-reloading-tier-2,mov-high-emp, tarred ]
 
 abilities: [ 
     {
@@ -14,6 +14,8 @@ abilities: [
     amount: 12
 }
     ]
+
+targetFlags: [ turret, repair, core ]
 
 weapons: [
 {
