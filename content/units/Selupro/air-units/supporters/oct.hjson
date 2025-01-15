@@ -1,5 +1,5 @@
 research: quad
-fallSpeed: 0.0012
+fallSpeed: 0.003
 faceTarget: true
 fogRadius: 55
 forceMultiTarget: true

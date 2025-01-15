@@ -8,7 +8,7 @@ buildSpeed: 0.24
 mineSpeed: 0.75
 mineTier: 3
 health: 840
-speed: 1.15
+speed: 1.2
 armor: 9
 
 lightColor: 98ffa9
@@ -50,7 +50,7 @@ weapons: [
 
     inaccuracy: 5
     reload: 102
-   shootStatus: mov-motor-deceleration-tier-1
+   shootStatus: mov-motor-deceleration-tier-2
     chargeSound: target-locked-short
     shootStatusDuration: 120
     shootSound: shotgun-electro-shot

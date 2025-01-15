@@ -5,7 +5,7 @@ stepShake: 0.6
 
 itemCapacity: 32
 rotateSpeed: 3.5
-speed: 0.64
+speed: 0.6
 armor: 15
 health: 940
 
@@ -23,7 +23,7 @@ abilities: [
 }
     {
     type: RegenAbility
-    amount: 0.05
+    amount: 0.1
 }
     ]
 
@@ -63,7 +63,7 @@ bullet: {
     
     incendAmount: 3
     incendSpread: 4
-    incendChance: 0.1
+    incendChance: 0.2
     
     shootEffect:[
     {

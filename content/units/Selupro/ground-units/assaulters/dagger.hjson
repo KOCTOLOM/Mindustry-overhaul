@@ -59,7 +59,7 @@ bullet: {
     
     incendAmount: 1
     incendSpread: 2
-    incendChance: 0.04
+    incendChance: 0.1
 
     shootEffect:[
     shootSmall

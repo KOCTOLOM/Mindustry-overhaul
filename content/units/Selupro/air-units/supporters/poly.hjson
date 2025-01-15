@@ -1,6 +1,6 @@
 research: mono
 fogRadius: 17.5
-maxRange: 45
+maxRange: 42
 
 itemCapacity: 32
 buildSpeed: 0.24
@@ -54,7 +54,7 @@ weapons: [
     reload: 32
 
 bullet: {
-    maxRange: 45
+    maxRange: 54
     }
 }
     ]
