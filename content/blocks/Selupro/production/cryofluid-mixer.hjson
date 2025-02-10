@@ -1,0 +1,326 @@
+craftEffect:[
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 45
+      lengthOffset: 1
+      amount: 4
+      effect: {
+          startDelay:0
+          type: ParticleEffect
+          particles: 2
+          length: 8
+          lifetime: 200
+          sizeFrom: 1
+          baseRotation:-60
+          sizeTo: 1
+          cone: 2
+          interp: pow10Out
+          colorFrom: 5CF4FF
+          colorTo: 5CF4FF00
+          layer:100.3
+}
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 60
+      lengthOffset: 1
+      amount: 4
+      effect: {
+          startDelay:20
+          type: ParticleEffect
+          particles: 2
+          length: 8
+          lifetime: 200
+          sizeFrom: 1
+          sizeTo: 1
+          baseRotation:-60
+          cone: 2
+          interp: pow10Out
+          colorFrom: 5CF4FF
+          colorTo: 5CF4FF00
+          layer:100.3
+}
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 75
+      lengthOffset: 1
+      amount: 4
+      effect: {
+          startDelay:40
+          type: ParticleEffect
+          particles: 2
+          length: 8
+          lifetime: 200
+          sizeFrom: 1
+          sizeTo: 1
+          baseRotation:-60
+          cone: 2
+          interp: pow10Out
+          colorFrom: 5CF4FF
+          colorTo: 5CF4FF00
+          layer:100.3
+}
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 75
+      lengthOffset: 1
+      amount: 4
+      effect: {
+          startDelay:60
+          type: ParticleEffect
+          particles: 2
+          length: 8
+          lifetime: 200
+          sizeFrom: 1
+          sizeTo: 1
+          baseRotation:-60
+          cone: 2
+          interp: pow10Out
+          colorFrom: 5CF4FF
+          colorTo: 5CF4FF00
+          layer:100.3
+}
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 45
+      lengthOffset: 1
+      amount: 4
+      effect: {
+          startDelay:80
+          type: ParticleEffect
+          particles: 2
+          length: 8
+          lifetime: 200
+          sizeFrom: 1
+          baseRotation:-60
+          sizeTo: 1
+          cone: 2
+          interp: pow10Out
+          colorFrom: 5CF4FF
+          colorTo: 5CF4FF00
+          layer:100.3
+}
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 60
+      lengthOffset: 1
+      amount: 4
+      effect: {
+          startDelay:100
+          type: ParticleEffect
+          particles: 2
+          length: 8
+          lifetime: 200
+          sizeFrom: 1
+          sizeTo: 1
+          baseRotation:-60
+          cone: 2
+          interp: pow10Out
+          colorFrom: 5CF4FF
+          colorTo: 5CF4FF00
+          layer:100.3
+}
+}
+{
+    type: ParticleEffect
+    particles: 2
+    length: 70
+    startDelay:0
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+    {
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:10
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:20
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFFFA
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:30
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+}
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:40
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:50
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+    {
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:60
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:70
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:80
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+}
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:90
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:100
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+{
+    type: ParticleEffect
+    particles: 1
+    length: 70
+    startDelay:110
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 70
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFFFFF3A
+    colorTo: FFFFFF00
+    layer:100.2
+    }
+]

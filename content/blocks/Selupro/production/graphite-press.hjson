@@ -1,0 +1,64 @@
+craftEffect:[
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 8
+      amount: 4
+      effect: {
+          type: ParticleEffect
+          particles: 2
+          length: 21
+          lifetime: 240
+          sizeFrom: 2
+          sizeTo: 3
+          cone: 30
+          interp: pow10Out
+          colorFrom: 929292
+          colorTo: 92929200
+          layer:100.3
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 8
+      amount: 4
+      effect: {
+          type: ParticleEffect
+          particles: 1
+          length: 16
+          lifetime: 160
+          sizeFrom: 1
+          sizeTo: 1
+          cone: 60
+          interp: pow5Out
+          colorFrom: 929292
+          colorTo: 92929200
+          layer:100.3
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 8
+      amount: 4
+      effect: {
+          startDelay:50
+          type: ParticleEffect
+          particles: 2
+          length: 7
+          lifetime: 900
+          sizeFrom: 2
+          sizeTo: 2
+          cone: 50
+          interp: circleOut
+          colorFrom: 6D6D6D
+          colorTo: 6D6D6D05
+          layer:100.3
+          }
+}
+
+]

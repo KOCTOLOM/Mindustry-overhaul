@@ -10,13 +10,13 @@ buildCostMultiplier: 2.399
 coolantMultiplier: 2.5
 researchCostMultiplier:0.6
 ammoEjectBack: 5
-inaccuracy: 7.5
+inaccuracy: 7
 maxAmmo: 60
 reload: 38
 health: 500
-range: 384
+range: 284
 armor: 4
-
+velocityRnd:0.2
 consumes: {
     power: 3
 }
@@ -31,7 +31,7 @@ requirements: [
 ammoUseEffect: casing2
 shootSound: shootBig
 shoot: {
-    shotDelay: 4
+    shotDelay: 5
     shots: 5
     }
 
@@ -43,11 +43,10 @@ copper: {
     width: 7
 
     buildingDamageMultiplier: 0.25
-    pierceDamageFactor: 0.00008
     ammoMultiplier: 12
 
     pierceCap: 2
-    lifetime: 80
+    lifetime: 75.73
     speed: 3.75
     damage: 21
 
@@ -68,12 +67,12 @@ graphite: {
 
     buildingDamageMultiplier: 0.35
     pierceDamageFactor: 0.00005
-    reloadMultiplier: 0.84
+    reloadMultiplier: 0.8
     ammoMultiplier: 6
 
     pierceCap: 5
-    lifetime: 84
-    damage: 32
+    lifetime: 71
+    damage: 38
     speed: 4
 
     lightColor: 95abd9
@@ -86,7 +85,26 @@ graphite: {
 
     frontColor: 95abd9
     backColor: 6b77a1
-}
+    hitEffect:{
+        type: ExplosionEffect
+        lifetime: 30
+
+        waveColor: 6b77a1
+        waveStroke: 1.25
+        waveRad: 14
+
+        smokeColor: 454545
+        smokeSizeBase: 2
+        smokeSize: 1
+        smokes: 2
+
+        sparkColor: 95abd9
+        sparkStroke: 1.25
+        sparkRad: 4
+        sparkLen: 5
+        sparks: 4
+        }
+        }
 
 silicon: {
     type: BasicBulletType
@@ -98,11 +116,12 @@ silicon: {
     pierceDamageFactor: 0.00015
     reloadMultiplier: 1.15
     ammoMultiplier: 24
+    pierceArmor:true
 
     homingPower: 0.18
     pierceCap: 3
-    lifetime: 80
-    damage: 16.5
+    lifetime: 65
+    damage: 12
     speed: 4.8
 
     lightColor: 8e9097
@@ -124,14 +143,14 @@ thorium: {
     width: 10
 
     buildingDamageMultiplier: 1.5
-    reloadMultiplier: 0.5
+    reloadMultiplier: 0.7
     ammoMultiplier: 4
 
-    splashDamageRadius: 26
-    splashDamage: 27.5
+    splashDamageRadius: 16
+    splashDamage: 25
     pierceCap: 7
-    lifetime: 84
-    damage: 48.5
+    lifetime: 87
+    damage: 65
     speed: 3.25
 
     despawnEffect: flakExplosion
@@ -155,29 +174,33 @@ pyratite: {
     type: BasicBulletType
     collidesAir: false
     makeFire: true
-    height: 12
-    width: 10
+    height: 15
+    width: 8
 
     buildingDamageMultiplier: 0.01
-    pierceDamageFactor: 0.0003
-    reloadMultiplier: 0.9
-    ammoMultiplier: 8
+    pierceDamageFactor: 0.03
+    reloadMultiplier: 1.1
+    ammoMultiplier: 1
 
     splashDamageRadius: 20
     splashDamage: 14.5
     status: burning
-    pierceCap: 3
-    lifetime: 84
-    damage: 17.5
-    speed: 4.25
+    lifetime: 36
+    damage: 24
+    speed: 6
 
     lightColor: ffaa5f
     lightOpacity: 0.7
     lightRadius: 32.5
 
     trailColor: d37f47
-    trailLength: 7.5
-    trailWidth: 2.4
+    trailLength: 16
+    trailWidth: 2.2
+
+    incendAmount: 4
+    incendSpread: 8
+    incendChance: 1
+
 
     frontColor: ffaa5f
     backColor: d37f47
@@ -190,5 +213,121 @@ effects: [
     fireHit
 ]
     }
-}
+    fragBullets: 2
+    fragLifeMin: 0.5
+    fragLifeMax: 1.7
+    fragVelocityMin:0.6
+    fragVelocityMax:1.4
+    fragRandomSpread:30
+    fragBullet: {
+    type: ArtilleryBulletType
+    collides:true
+    collidesTiles: true
+    collideGround:true
+    shrinkY: 0.3
+    height: 6
+    width: 2
+    splashDamageRadius: 8
+    splashDamage: 6
+    pierceCap: 2
+    lifetime:20
+    damage:8
+    pierceArmor:true
+    despawnEffect: none
+    speed:2.1
+    lightColor: ffaa5f
+    lightOpacity: 0.7
+    lightRadius: 16.5
+
+    incendAmount: 2
+    incendSpread: 3
+    incendChance: 1
+
+    trailColor: d37f47
+    trailLength: 12.5
+    trailWidth: 2
+
+    frontColor: ffaa5f
+    backColor: d37f47
+    despawnEffect:[
+    {
+    startDelay:5
+    type: ParticleEffect
+    particles: 3
+    cone: 360
+    length: 7
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
     }
+    {
+    startDelay:15
+    type: ParticleEffect
+    particles: 3
+    cone: 360
+    length: 3
+    lifetime: 45
+    sizeFrom: 1
+    sizeTo: 2
+    layer:100.2
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    }
+    {
+    startDelay:25
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 7
+    lifetime: 90
+    colorFrom: ffaa5f20
+    colorTo: ffaa5f00
+    }
+    {
+    type: ParticleEffect
+    particles: 12
+    cone: 360
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 5
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    lifetime: 35
+    }
+    {
+    particles: 6
+    type: ParticleEffect
+    cone: 360
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 12
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    lifetime: 35
+    }
+    {
+    type: ParticleEffect
+    particles: 16
+    cone: 360
+    line: true
+    strokeFrom: 0.4
+    strokeTo: 1
+    lenFrom: 2
+    lenTo: 2
+    length: 16
+    colorFrom: ffaa5f
+    colorTo: ffaa5f00
+    lifetime: 30
+    }
+    ]
+    }
+    }
+}

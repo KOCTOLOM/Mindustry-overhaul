@@ -1,0 +1,117 @@
+craftEffect:[
+{
+    type: ParticleEffect
+    baseLength:42
+    length:-42
+    cone:360
+    particles: 3
+    interp: swingIn
+    sizeFrom: 1
+    sizeTo: 1
+    colorFrom: FF80E300
+    colorTo: FF80E3
+    lifetime: 45
+}
+{
+    startDelay:45
+    type: ParticleEffect
+    particles: 6
+    length: 20
+    lifetime: 120
+    line:true
+    strokeFrom: 1.2
+    strokeTo: 1
+    cone: 360
+    interp: circleOut
+    colorFrom: FFCC80
+    colorTo: FFCC8000
+    layer:100.3
+}
+{
+    startDelay:30
+    type: ParticleEffect
+    baseLength:42
+    length:-42
+    cone:360
+    particles: 3
+    interp: swingIn
+    sizeFrom: 1
+    sizeTo: 1
+    colorFrom: FF80E300
+    colorTo: FF80E3
+    lifetime: 45
+}
+{
+    startDelay:75
+    type: ParticleEffect
+    particles: 6
+    length: 20
+    lifetime: 120
+    line:true
+    strokeFrom: 1.2
+    strokeTo: 1
+    cone: 360
+    interp: circleOut
+    colorFrom: FFCC80
+    colorTo: FFCC8000
+    layer:100.3
+}
+{
+    startDelay:60
+    type: ParticleEffect
+    baseLength:42
+    length:-42
+    cone:360
+    particles: 3
+    interp: swingIn
+    sizeFrom: 1
+    sizeTo: 1
+    colorFrom: FF80E300
+    colorTo: FF80E3
+    lifetime: 45
+}
+{
+    startDelay:105
+    type: ParticleEffect
+    particles: 6
+    length: 20
+    lifetime: 120
+    line:true
+    strokeFrom: 1.2
+    strokeTo: 1
+    cone: 360
+    interp: circleOut
+    colorFrom: FFCC80
+    colorTo: FFCC8000
+    layer:100.3
+}
+{
+    startDelay:75
+    type: ParticleEffect
+    baseLength:42
+    length:-42
+    cone:360
+    particles: 3
+    interp: swingIn
+    sizeFrom: 1
+    sizeTo: 1
+    colorFrom: FF80E300
+    colorTo: FF80E3
+    lifetime: 45
+}
+{
+    startDelay:120
+    type: ParticleEffect
+    particles: 6
+    length: 20
+    lifetime: 120
+    line:true
+    strokeFrom: 1.2
+    strokeTo: 1
+    cone: 360
+    interp: circleOut
+    colorFrom: FFCC80
+    colorTo: FFCC8000
+    layer:100.3
+}
+]

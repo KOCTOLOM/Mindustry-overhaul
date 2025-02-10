@@ -1,0 +1,15 @@
+craftEffect: {
+    type: ParticleEffect
+    particles: 2
+    length: 160
+    lifetime: 700
+    sizeFrom: 1
+    sizeTo: 4
+    cone: 6
+    baseRotation: 74
+    useRotation:false
+    interp: pow3Out
+    colorFrom: FFDAA3FA
+    colorTo: FFDAA300
+    layer:100.2
+    }

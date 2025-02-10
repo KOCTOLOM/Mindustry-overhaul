@@ -1,0 +1,107 @@
+craftEffect:[
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 4
+      amount: 4
+      effect: {
+          startDelay:40
+          type: ParticleEffect
+          particles: 4
+          length: 32
+          lifetime: 120
+          sizeFrom: 1
+          sizeTo: 3
+          cone: 1
+          interp: pow3In
+          colorFrom: FFF7A3
+          colorTo: FFF7A300
+          layer:100.3
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 4
+      amount: 4
+      effect: {
+          startDelay:20
+          type: ParticleEffect
+          particles: 6
+          length: 27
+          lifetime: 150
+          sizeFrom: 1
+          sizeTo: 3
+          cone: 5
+          interp: pow3Out
+          colorFrom: FFEE3390
+          colorTo: FFEE3300
+          layer:100.3
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 4
+      amount: 4
+      effect: {
+          startDelay:5
+          type: ParticleEffect
+          particles: 3
+          length: 16
+          lifetime: 190
+          sizeFrom: 1
+          sizeTo: 4
+          cone: 5
+          interp: pow3Out
+          colorFrom: C7B60070
+          colorTo: C7B60000
+          layer:100.1
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 45
+      lengthOffset: 2
+      amount: 4
+      effect: {
+          startDelay:50
+          type: ParticleEffect
+          particles: 8
+          length: 8
+          lifetime: 200
+          sizeFrom: 2
+          sizeTo: 4
+          cone: 90
+          interp: pow3Out
+          colorFrom: C7B60070
+          colorTo: C7B60000
+          layer:100.1
+          }
+}
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 45
+      lengthOffset: 4
+      amount: 4
+      effect: {
+          startDelay:20
+          type: ParticleEffect
+          particles: 4
+          length: 12
+          lifetime: 200
+          sizeFrom: 1
+          sizeTo: 3
+          cone: 90
+          interp: pow3Out
+          colorFrom: FFEE3380
+          colorTo: FFEE3300
+          layer:100.3
+          }
+}
+]

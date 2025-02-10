@@ -1,4 +1,4 @@
-const remorse = extend(CoreBlock, "remorse", {
+/*const remorse = extend(CoreBlock, "remorse", {
     requirements: ItemStack.with(Items.copper, 1),
     category: Category.effect,
     size: 5,
@@ -21,4 +21,4 @@ const remorse = extend(CoreBlock, "remorse", {
     canBreak(tile) {
         return true;
     },
-});
+});*/

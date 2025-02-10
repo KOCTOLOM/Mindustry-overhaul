@@ -320,9 +320,8 @@ hitEffect: {
     lifetime: 35
     }
     {
-    particles: 45
+    particles: 24
     type: ParticleEffect
-    particles: 12
     cone: 360
     line: true
     strokeFrom: 1.3
@@ -335,9 +334,8 @@ hitEffect: {
     lifetime: 35
     }
     {
-    particles: 55
+    particles: 28
     type: ParticleEffect
-    particles: 16
     cone: 360
     line: true
     strokeFrom: 0.4
