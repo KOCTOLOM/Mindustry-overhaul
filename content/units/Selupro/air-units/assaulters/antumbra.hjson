@@ -179,17 +179,17 @@ bullet: {
     hitSound: bomb-plasma-hit
     shootEffect: shootBig
 
-    lightColor: d1efff
+    lightColor: EBD700
     lightOpacity: 0.7
     lightRadius: 37.5
 
-    trailColor: 8ca9e8
+    trailColor: EBD700
     trailLength: 5.5
     trailWidth: 1.25
 
     lightningColor: d1efff
-    frontColor: d1efff
-    backColor: 8ca9e8
+    frontColor: FFEE33
+    backColor: EBD700
 
 despawnEffect: {
     type: WaveEffect
@@ -200,8 +200,8 @@ despawnEffect: {
     sizeFrom: 0
     sizeTo: 24
 
-    colorFrom: d1efff
-    colorTo: 8ca9e8
+    colorFrom: FFEE33
+    colorTo: FFEE3300
     }
 
 chargeEffect: {
@@ -271,17 +271,17 @@ bullet: {
     hitSound: bomb-plasma-hit
     shootEffect: shootBig
 
-    lightColor: d1efff
+    lightColor: EBD700
     lightOpacity: 0.7
     lightRadius: 37.5
 
-    trailColor: 8ca9e8
+    trailColor: EBD700
     trailLength: 5.5
     trailWidth: 1.25
 
     lightningColor: d1efff
-    frontColor: d1efff
-    backColor: 8ca9e8
+    frontColor: FFEE33
+    backColor: EBD700
 
 despawnEffect: {
     type: WaveEffect
@@ -292,8 +292,8 @@ despawnEffect: {
     sizeFrom: 0
     sizeTo: 24
 
-    colorFrom: d1efff
-    colorTo: 8ca9e8
+    colorFrom: FFEE33
+    colorTo: FFEE3300
     }
 
 chargeEffect: {

@@ -120,7 +120,7 @@ bullet: {
 
     velocityRnd: 0.6
     inaccuracy: 7
-    reload: 215
+    reload: 100
 
     ejectEffect: casing3
     shootSound: shootBig
@@ -129,15 +129,15 @@ shoot: {
 source: {
     type: ShootSpread
     shotDelay: 4
-    spread: 4
-    shots: 6
+    spread: 3
+    shots: 7
     }
 
 dest: [
 {
     type: ShootPattern
     shotDelay: 48
-    shots: 3
+    shots: 2
     }
 ]
     }
@@ -148,7 +148,7 @@ bullet: {
     keepVelocity: false
     collidesAir: true
     pierceArmor: true
-    despawnShake: 5
+    despawnShake: 3
     pierceCap: 5
     pierce: true
     hitShake: 5
@@ -159,9 +159,9 @@ bullet: {
 
     splashDamageRadius: 26
     splashDamage: 72
-    lifetime: 45
-    speed: 5.75
-    damage: 42
+    lifetime: 33
+    speed: 7.9
+    damage: 58
     pierceArmor:true
     hitEffect: flakExplosion
     shootEffect: shootBig
@@ -263,7 +263,7 @@ bullet: {
     y: 24
 
     inaccuracy: 2
-    reload: 150
+    reload: 120
     velocityRnd:0.3
     ejectEffect: casing3
     shootSound: shootBig
@@ -273,7 +273,7 @@ source: {
     type: ShootSpread
     shotDelay: 1
     spread: 2
-    shots: 3
+    shots: 2
     }
 
 dest: [
@@ -305,7 +305,7 @@ bullet: {
     splashDamage: 82
     lifetime: 45
     damage: 70
-    speed: 4.2
+    speed: 4.6
 
     fragRandomSpread: 0
     fragBullets: 3
@@ -782,7 +782,7 @@ shoot: {
 source: {
     type: ShootBarrel
     shotDelay: 2
-    shots: 7
+    shots: 6
 
 barrels: [
     -1, 0, 0,
@@ -793,8 +793,8 @@ barrels: [
 dest: [
 {
     type: ShootPattern
-    shots: 4
-    shotDelay: 12
+    shots: 5
+    shotDelay: 34
     }
 ]
     }

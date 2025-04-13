@@ -8,12 +8,13 @@ recoil: 6
 buildCostMultiplier: 1.32
 
 ammoPerShot: 32
-inaccuracy: 0
+inaccuracy: 3
 maxAmmo: 384
 health: 4260
 reload: 72
 range: 380
 armor: 18
+velocityRnd:0.1
 researchCostMultiplier:0.8
 consumes: {
     power: 16

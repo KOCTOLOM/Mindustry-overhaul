@@ -2,6 +2,6 @@ research: vanquish
 drownTimeMultiplier: 24
 
 rotateSpeed: 0.24
-health: 780000
+health: 130000
 speed: 0.24
-armor: 256
+armor: 260

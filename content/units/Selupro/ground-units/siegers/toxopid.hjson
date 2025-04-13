@@ -181,7 +181,7 @@ bullet: {
 
     recoilTime: 90
     inaccuracy: 9
-    reload: 1720
+    reload: 1920
 
     shootSound: 105-mm-cannon-shot
     shootStatusDuration: 550
@@ -189,7 +189,7 @@ bullet: {
     shootStatus: slow
 shoot: {
     shotDelay: 120
-    shots: 3
+    shots: 4
     }
 
 bullet: {
@@ -214,9 +214,9 @@ bullet: {
 
     lightningLengthRand: 12
     splashDamageRadius: 140
-    lightningDamage: 90
+    lightningDamage: 160
     lightningLength: 20
-    statusDuration: 720
+    statusDuration: 1220
     ammoMultiplier: 4
     splashDamage: 820
     lightOpacity: 0.6
@@ -227,7 +227,7 @@ bullet: {
     status: sapped
     lightning: 15
     lifetime: 500
-    damage: 520
+    damage: 820
     speed: 1.45
 
     suppressionEffectChance: 1
@@ -546,7 +546,7 @@ fragBullet: {
     velocityRnd: 0.3
     inaccuracy: 15
     recoil: 1.5
-    reload: 620
+    reload: 310
 
     shootSound: rocket-fire
 shoot: {
@@ -555,7 +555,7 @@ source: {
     type: ShootSpread
     shotDelay: 5
     spread: 0.4
-    shots: 3
+    shots: 2
     }
 
 dest: [
@@ -651,23 +651,23 @@ bullet: {
     velocityRnd: 0.4
     inaccuracy: 15
     recoil: 1.5
-    reload: 620
+    reload: 210
 
     shootSound: rocket-fire
 shoot: {
     type: ShootMulti
 source: {
     type: ShootSpread
-    shotDelay: 5
+    shotDelay: 10
     spread: 0.4
-    shots: 3
+    shots: 2
     }
 
 dest: [
     {
     type: ShootPattern
     shotDelay: 30
-    shots: 2
+    shots: 3
     }
 ]
     }
@@ -765,7 +765,7 @@ bullet: {
 
     splashDamageRadius: 240
     splashDamage: 3200
-    lifetime: 65
+    lifetime: 70
     damage: 0
     speed: 0
 
@@ -1104,10 +1104,43 @@ bullet: {
     width: 0
 
     splashDamageRadius: 120
-    splashDamage: 3000
+    splashDamage: 500
+    splashDamagePierce:true
     lifetime: 60
     damage: 0
     speed: 0
+    fragBullet:{
+    hittable: false
+    height: 0
+    width: 0
+
+    splashDamageRadius: 90
+    splashDamage: 500
+    splashDamagePierce:true
+    lifetime: 1
+    damage: 0
+    speed: 0
+    fragBullet:{
+    hittable: false
+    height: 0
+    width: 0
+
+    splashDamageRadius: 90
+    splashDamage: 1000
+    lifetime: 1
+    damage: 0
+    speed: 0
+    fragBullet:{
+    hittable: false
+    height: 0
+    width: 0
+
+    splashDamageRadius: 90
+    splashDamage: 3000
+    lifetime: 1
+    damage: 0
+    speed: 0
+    }}}
 }
     }
 {
@@ -1130,9 +1163,22 @@ bullet: {
 
     splashDamageRadius: 80
     splashDamage: 8000
-    lifetime: 55
+    lifetime: 50
     damage: 0
     speed: 0
+    fragBullet:{
+    lifetime:1
+    hittable: false
+    height: 0
+    width: 0
+
+    splashDamageRadius: 80
+    splashDamage: 8000
+    lifetime: 50
+    damage: 0
+    speed: 0
+    splashDamagePierce:true
+    }
     }
 }
     ]

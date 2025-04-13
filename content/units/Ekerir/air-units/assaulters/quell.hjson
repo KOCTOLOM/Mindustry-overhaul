@@ -3,7 +3,7 @@ forceMultiTarget: true
 fogRadius: 48
 
 rotateSpeed: 0.8
-health: 96000
+health: 36000
 speed: 0.95
 accel: 0.1
 drag: 0.06

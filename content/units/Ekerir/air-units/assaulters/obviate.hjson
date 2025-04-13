@@ -3,7 +3,7 @@ fogRadius: 25
 
 rotateSpeed: 2.1
 itemCapacity: 0
-health: 18000
+health: 5000
 accel: 0.09
 speed: 1.5
 drag: 0.08

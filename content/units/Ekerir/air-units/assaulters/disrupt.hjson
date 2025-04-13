@@ -1,7 +1,7 @@
 research: quell
 
 rotateSpeed: 0.5
-health: 240000
+health: 120000
 speed: 0.25
 armor: 150
 accel: 0.1

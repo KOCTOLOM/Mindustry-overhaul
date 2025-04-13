@@ -94,10 +94,10 @@ bullet: {
     collidesTeam: true
     largeHit: false
     drawSize: 200
-    length: 212
+    length: 262
     width: 3
-	
-	buildingDamageMultiplier:3
+	lengthInterp:pow5Out
+	buildingDamageMultiplier:3.5
 	
     healPercent: 0.6
     lifetime: 260
@@ -120,6 +120,48 @@ chargeEffect: {
 
     colorFrom: 84f491
     colorTo: ffffff
+    }
+    intervalBullets: 1
+    bulletInterval:3
+    intervalRandomSpread:10
+    intervalBullet: {
+        type: BasicBulletType
+        pierceBuilding: true
+        collidesAir: false
+        collidesTiles: true
+        despawnShake: 1
+        pierce: true
+        hitShake: 1
+        height: 5
+        width: 1
+        shrinkX:0
+        shrinkY:0
+        buildingDamageMultiplier: 0.1
+        pierceArmor:true
+        lifetime: 40
+        damage: 30
+        drag: -0.01
+        speed: 3
+        hitEffect:none
+        lightningColor: ffffff
+        frontColor: ffffff
+        backColor: 98ffa9
+        trailColor:98ffa9
+        trailWidth:1
+        trailLength:12
+        incendSpread: 1
+        incendAmount: 3
+        incendChance: 0.4
+
+        despawnEffect: none
+
+        lightColor: 84f491
+        lightOpacity: 0.7
+        lightRadius: 21
+
+        trailColor: 84f49140
+        trailLength: 6
+        trailWidth: 1
     }
 }
     }
@@ -187,10 +229,10 @@ bullet: {
 	
     statusDuration: 220
     status: melting
-	
+	lengthInterp:pow5Out
     lifetime: 30
     damage: 140
-	buildingDamageMultiplier: 0.2
+	buildingDamageMultiplier: 0.3
 	pierceArmor:tue
 	laserAbsorb:true
 	
@@ -202,7 +244,7 @@ bullet: {
     collidesTeam: true
     largeHit: false
     drawSize: 200
-    length: 262
+    length: 282
     width: 3
 
     healPercent: 0.5
@@ -227,6 +269,49 @@ chargeEffect: {
     colorFrom: 84f491
     colorTo: ffffff
     }
+    intervalBullets: 1
+    bulletInterval:3
+    intervalRandomSpread:9
+    intervalBullet: {
+        type: BasicBulletType
+        pierceBuilding: true
+        collidesAir: false
+        collidesTiles: true
+        despawnShake: 1
+        pierce: true
+        hitShake: 1
+        height: 5
+        width: 1
+        shrinkX:0
+        shrinkY:0
+        buildingDamageMultiplier: 0.1
+        pierceArmor:true
+        lifetime: 40
+        damage: 30
+        drag: -0.02
+        speed: 3
+        hitEffect:none
+        lightningColor: ffffff
+        frontColor: ffffff
+        backColor: 98ffa9
+        trailColor:98ffa9
+        trailWidth:1
+        trailLength:12
+        incendSpread: 1
+        incendAmount: 3
+        incendChance: 0.4
+
+        despawnEffect: none
+
+        lightColor: 84f491
+        lightOpacity: 0.7
+        lightRadius: 21
+
+        trailColor: 84f49140
+        trailLength: 6
+        trailWidth: 1
+    }
+
 }
     }
 
@@ -252,8 +337,8 @@ chargeEffect: {
 	type: ShootMulti
 	source: {
     type: ShootSpread
-    spread: 4
-    shots: 4
+    spread: 6
+    shots: 5
     }
 	dest: [
 	{
@@ -552,6 +637,7 @@ bullet: {
 	lifetime:90
 	drag:0.04
 	hitEffect:none
+	despawnEffect:none
 	lightningColor: ffffff
     frontColor: ffffff
     backColor: 98ffa9
@@ -580,10 +666,10 @@ bullet: {
 	
     splashDamageRadius: 26
     statusDuration: 300
-    homingPower: 0.02
-	homingDelay:20
+    homingPower: 0.07
+	homingDelay:10
     splashDamage: 48
-    homingRange: 200
+    homingRange: 1200
     status: burning
     weaveScale: 4
     lifetime: 220
