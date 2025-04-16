@@ -39,12 +39,9 @@ abilities: [
     type: RegenAbility
     amount: 8
 }
-	{
+    {
     type: ArmorPlateAbility
     healthMultiplier: 0.1
-    shineSpeed:0.4
-    color: ffd2ae20
-    drawShine: false
 }
     ]
 

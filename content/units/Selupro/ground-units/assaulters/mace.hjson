@@ -19,7 +19,7 @@ immunities: [ burning, blasted ]
 abilities: [
     {
     type: ArmorPlateAbility
-    healthMultiplier: 0.7
+    healthMultiplier: 0.75
 }
     {
     type: RegenAbility

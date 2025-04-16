@@ -35,7 +35,7 @@ abilities: [
 }
     {
     type: ArmorPlateAbility
-    healthMultiplier: 0.1
+    healthMultiplier: 0.15
 }
     {
     type: RegenAbility

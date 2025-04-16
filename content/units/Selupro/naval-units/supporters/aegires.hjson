@@ -681,8 +681,11 @@ fragBullet: {
 	reflectable: false
 	hittable: false
 	absorbable:false
+	sticky:true
+	stickyExtraLifetime:200
 	intervalBullets: 9
 	bulletInterval: 20
+	intervalDelay:50
 	intervalRandomSpread: 360
 	intervalBullet: {
 	type: LightningBulletType

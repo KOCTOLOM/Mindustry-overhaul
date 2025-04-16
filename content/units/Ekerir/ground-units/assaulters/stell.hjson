@@ -2,8 +2,8 @@ research: tank-fabricator
 targetAir: false
 fogRadius: 32.5
 
-rotateSpeed: 3
-health: 810
+rotateSpeed:3
+health: 550
 speed: 0.45
 armor: 15
 
@@ -11,9 +11,230 @@ lightColor: feb380
 lightOpacity: 0.7
 lightRadius: 62.5
 
-immunities: [ burning, blasted ]
+immunities: [ blasted, burning]
+
+abilities: [
+    {
+    type: ShieldRegenFieldAbility
+    reload: 30
+    amount: 50
+    range: 0
+    max: 1200
+    applyEffect:{
+    type: WaveEffect
+    lifetime: 10
+    sizeFrom: 40
+    sizeTo: 10
+    strokeFrom: 1
+    strokeTo: 4
+    colorFrom: FFCC8070
+    colorTo: FFCC8000
+    followParent: true
+    rotWithParent: true
+    }
+    activeEffect:[{
+        type: WaveEffect
+        sides:6
+        baseRotation:0
+        lifetime: 20
+        sizeFrom: 22
+        sizeTo: 15
+        strokeFrom: 3
+        strokeTo: 2
+        colorFrom: FFCC80
+        colorTo: FFCC8000
+        followParent: true
+        rotWithParent: true
+        }
+        {
+        type: WaveEffect
+        sides:6
+        startDelay:180
+        baseRotation:0
+        lifetime: 20
+        sizeFrom: 1
+        sizeTo: 5
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: FFCC8000
+        colorTo: FFCC80
+        }
+        {
+        type: WaveEffect
+        sides:6
+        startDelay:120
+        baseRotation:0
+        lifetime: 20
+        sizeFrom: 7
+        sizeTo: 9
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: FFCC8000
+        colorTo: FFCC80
+        }
+        {
+        type: WaveEffect
+        sides:6
+        startDelay:60
+        baseRotation:0
+        lifetime: 20
+        sizeFrom: 8
+        sizeTo: 12
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: FFCC8000
+        colorTo: FFCC80
+        }
+        ]
+}
+    {
+    type: RegenAbility
+    amount: 0.03
+}
+    ]
 
 weapons: [
+{
+    layerOffset: -0.0001
+    rotateSpeed: 1000
+    rotate: true
+    reload:99999999999999999999999
+    display:false
+    shootY: 0
+    recoil: 0
+    shake: 0
+    x: 0
+    y: 0
+    alwaysShooting:true
+    shootStatus: fortified
+    shootStatusDuration: 600
+    shootSound: none
+    bullet:{
+        shootEffect:[
+        {
+            type: ParticleEffect
+            baseLength:42
+            length:-42
+            cone:360
+            particles: 3
+            interp: swingIn
+            sizeFrom: 1
+            sizeTo: 1
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            lifetime: 45
+        }
+        {
+            startDelay:45
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 120
+            line:true
+            strokeFrom: 1.2
+            strokeTo: 1
+            cone: 360
+            interp: circleOut
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            layer:100.3
+        }
+        {
+            startDelay:30
+            type: ParticleEffect
+            baseLength:42
+            length:-42
+            cone:360
+            particles: 3
+            interp: swingIn
+            sizeFrom: 1
+            sizeTo: 1
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            lifetime: 45
+        }
+        {
+            startDelay:75
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 120
+            line:true
+            strokeFrom: 1.2
+            strokeTo: 1
+            cone: 360
+            interp: circleOut
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            layer:100.3
+        }
+        {
+            startDelay:60
+            type: ParticleEffect
+            baseLength:42
+            length:-42
+            cone:360
+            particles: 3
+            interp: swingIn
+            sizeFrom: 1
+            sizeTo: 1
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            lifetime: 45
+        }
+        {
+            startDelay:105
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 120
+            line:true
+            strokeFrom: 1.2
+            strokeTo: 1
+            cone: 360
+            interp: circleOut
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            layer:100.3
+        }
+        {
+            startDelay:75
+            type: ParticleEffect
+            baseLength:42
+            length:-42
+            cone:360
+            particles: 3
+            interp: swingIn
+            sizeFrom: 1
+            sizeTo: 1
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            lifetime: 45
+        }
+        {
+            startDelay:120
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 120
+            line:true
+            strokeFrom: 1.2
+            strokeTo: 1
+            cone: 360
+            interp: circleOut
+            colorFrom: FF9F0F
+            colorTo: FF9F0F
+            layer:100.3
+        }
+        ]
+        type: BasicBulletType
+        height: 0
+        width: 0
+        lifetime: 0
+        damage: 0
+        speed: 0
+        }
+}
 {
     name: stell-weapon
 
@@ -35,28 +256,21 @@ weapons: [
 
     shootSound: dullExplosion
 
-shoot: { 
-    type: ShootAlternate
-    barrels: 2
-    spread: 3.5
-    shots: 2
-}
 
 bullet: {
     type: BasicBulletType
     sprite: missile-large
-    collideTerrain: true
     soundPitchMax: 0.45
     collidesAir: false
     despawnShake: 4.5
     hitShake: 4.5
     hitSize: 4
     height: 7
-    width: 5
+    width: 3
 
-    splashDamageRadius: 26
+    splashDamageRadius: 12
     splashDamage: 45
-    lifetime: 82
+    lifetime: 62
     damage: 32
     speed: 3.2
 
@@ -73,7 +287,43 @@ bullet: {
     frontColor: ffffff
     backColor: feb380
     hitColor: feb380
+    fragBullets: 3
+    fragVelocityMin:0.4
+    fragVelocityMax:3
+    fragLifeMin:0.2
+    fragLifeMax:2
+    fragRandomSpread: 15
+    fragBullet: {
+            type: BasicBulletType
+            sprite: missile-large
+            soundPitchMax: 0.12
+            collidesAir: false
+            despawnShake: 4.5
+            hitShake: 4.5
+            hitSize: 2
+            height: 4
+            width: 1
 
+            splashDamageRadius: 12
+            splashDamage: 12
+            lifetime: 12
+            damage: 12
+            speed: 1.2
+
+            lightColor: feb380
+            lightOpacity: 0.7
+            lightRadius: 21.5
+
+            trailColor: feb380
+            trailWidth: 1.1
+            trailLength: 6
+
+            hitSound: explosion
+
+            frontColor: ffffff
+            backColor: feb380
+            hitColor: feb380
+            }
     despawnEffect: hitBulletColor
     smokeEffect: shootBigSmoke
     shootEffect: shootBigColor
