@@ -2,11 +2,57 @@ research: elude
 fogRadius: 25
 
 itemCapacity: 0
+flying: true
 rotateSpeed: 4
-health: 2100
+health: 1100
 accel: 0.09
 drag: 0.08
 armor: 9
 speed: 2
 
 immunities: []
+
+weapons: [
+    {
+    reload: 35
+    x: 0
+    y: 6.5
+    layerOffset: -0.01
+    rotate: false
+    mirror: false
+    recoil: 1
+    shootY: 5
+    top: false
+    shootSound: sounds.blaster
+
+    shoot: {
+        type: ShootHelix
+        scl: 2
+        mag: 1.5
+        }
+
+    bullet:{
+    type: BasicBulletType
+    height: 12
+    width: 7
+    shootEffect: sparkShoot
+    smokeEffect: shootBigSmoke
+    despawnEffect:none
+    lifetime: 18
+    damage: 34
+    speed: 5
+    }
+
+    frontColor: ffffff
+    backColor: #665C9F
+    hitColor: #665C9F
+
+    trailColor: #665C9F
+    trailLength: 5
+    trailWidth: 1.5
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 24.5
+    }
+]
