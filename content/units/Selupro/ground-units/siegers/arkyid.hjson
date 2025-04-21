@@ -155,7 +155,6 @@ bullet: {
     sprite: missile-large 
     height: 13
     width: 3
-
     pierceCap: 4
     damage:65
     drag: 0.04

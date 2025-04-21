@@ -62,7 +62,6 @@ shoot: {
 
 bullet: {
     type: BasicBulletType
-    collideTerrain: true
     height: 9
     width: 3
 
