@@ -4,7 +4,7 @@ When the easy path no longer tempts,
 And the heart yearns for a true trial.  
 If you dare to challenge the mundane,  
 If you're ready to step beyond comfort—  
-Then we offer you a ticket... \n
+Then we offer you a ticket... 
 ...to <b>your own personal hell</p></b>
 # Mindustry Overhaul
 Welcome to the world of <ins>Mindustry Overhaul</ins> — where the familiar takes on a whole new form.  
