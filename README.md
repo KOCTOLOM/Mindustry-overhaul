@@ -4,7 +4,7 @@ When the easy path no longer tempts,
 And the heart yearns for a true trial.  
 If you dare to challenge the mundane,  
 If you're ready to step beyond comfort—  
-Then we offer you a ticket... 
+Then we offer you a ticket... \n
 ...to <b>your own personal hell</p></b>
 # Mindustry Overhaul
 Welcome to the world of <ins>Mindustry Overhaul</ins> — where the familiar takes on a whole new form.  
@@ -12,6 +12,6 @@ Welcome to the world of <ins>Mindustry Overhaul</ins> — where the familiar tak
 Forget the old balance: now, every resource, every unit, every choice carries weight, and even the smallest mistake can lead to complete collapse in the blink of an eye.  
 New soundscapes and visual effects will draw you in so deep, there's no turning back.
 
-<p align='center'>**`WARNING!`**</p>
+<p align='center'><b>**`WARNING!`**</b></p>
 
 It is strongly recommended to back up your save before installing the mod, as playing with it may corrupt your progress due to major balance changes.
