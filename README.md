@@ -1,10 +1,10 @@
-There comes a moment of revelation,  
+<p align='center'>There comes a moment of revelation,  
 When the familiar grows painfully dull,  
 When the easy path no longer tempts,  
 And the heart yearns for a true trial.  
 If you dare to challenge the mundane,  
 If you're ready to step beyond comfort—  
-Then we offer you a ticket...  
+Then we offer you a ticket...  </p>
 ...to <b>your own personal hell</b>
 # Mindustry Overhaul
 Welcome to the world of <ins>Mindustry Overhaul</ins> — where the familiar takes on a whole new form.  
