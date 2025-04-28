@@ -24,7 +24,7 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 
 </div>
 <h1>Main changes</h1>
-<ul><br><li>During a series of tests, we discovered that the standard version of the Serpulo campaign suffered from a lack of depth in its balance. In response, we reworked it with a focus on emphasizing the unique strengths of units.</li>
+<ul><li>During a series of tests, we discovered that the standard version of the Serpulo campaign suffered from a lack of depth in its balance. In response, we reworked it with a focus on emphasizing the unique strengths of units.</li>
 <br>
 <br><li>All characteristics of the vanilla turrets and their ammunition have been completely reworked. In addition to updating existing stats, most turrets have received new types of ammunition, some of which apply status effects. These changes make defensive structures much more flexible in their usage.</li>
 <br>
@@ -36,7 +36,7 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <h1>Contributors</h1>
 <div>
   
-<br>`KOSTOLOM[kostolom9777]`: "<em>trying to get into Tokyio no Kuni...</em>"
+`KOSTOLOM[kostolom9777]`: "<em>trying to get into Tokyio no Kuni...</em>"
 <br>`Laim[laimik.json]`: "<em>lets paint this world!</em>"
 <br>`𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝[𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝]`: "<em>...</em>"
 
