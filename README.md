@@ -7,7 +7,7 @@
 <br>...to <b>your own personal hell</b>"</p>
 <h1 align='center'>Mindustry Overhaul</h1>
 <div align="center">
-<img src="https://github.com/KOCTOLOM/Mindustry-overhaul/raw/main/sprites-override/ui/logo.png" width="300">
+<img src="https://github.com/KOCTOLOM/Mindustry-overhaul/raw/main/sprites-override/ui/logo.png" width="600">
 </div>
 <br>
 <p>Welcome to the world of <ins>Mindustry Overhaul</ins> - where the familiar takes on a whole new form.
