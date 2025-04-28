@@ -36,10 +36,10 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <h1>Contributors</h1>
 <div>
   
-`KOSTOLOM[kostolom9777]`: owner, coder, ideas creator, map maker, balancer;      "<em>trying to get into Tokyio no Kuni...</em>"
+`KOSTOLOM[kostolom9777]`: owner, coder, ideas creator, map maker, balancer;<p align='right'>"<em>trying to get into Tokyio no Kuni...</em>"</p>
 <br>
-<br>`Laim[laimik.json]`: spriter, map maker, tester;                     "<em>lets paint this world!</em>"
+<br>`Laim[laimik.json]`: spriter, map maker, tester;<p align='right'>"<em>lets paint this world!</em>"</p>
 <br>
-<br>`𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝[𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝]`: tester                      "<em>...</em>"
+<br>`𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝[𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝]`: tester;<p align='right'>"<em>...</em>"</p>
 
 </div>
