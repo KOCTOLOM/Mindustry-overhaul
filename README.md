@@ -34,4 +34,8 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <br>
 <br>As a result of all these changes, the gameplay becomes more challenging, deeper, and richer, offering players new opportunities for planning and more interesting challenges.
 <h1>Contributors</h1>
-`KOSTOLOM[kostolom9777]`: "_lol_"
+<div>
+  
+  `KOSTOLOM[kostolom9777]`: <em>lol</em>
+
+</div>
