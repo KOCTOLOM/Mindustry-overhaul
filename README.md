@@ -5,11 +5,11 @@
 <br>If you're ready to step beyond comfort-
 <br>Then we offer you a ticket...    
 <br>...to <b>your own personal hell</b>"</p>
-<h>
+<hr>
 <div align="center">
 <img src="https://github.com/KOCTOLOM/Mindustry-overhaul/raw/main/sprites-override/ui/logo.png" width="550">
 </div>
-<h>
+<hr>
 <p>Welcome to the world of <ins>Mindustry Overhaul</ins> - where the familiar takes on a whole new form.
 This mod isn't just an add-on; it's a reimagined reality. We've taken the core mechanics you know, deconstructed them, and rebuilt them from the ground up - more complex, deeper, and far more demanding.
 <br>
@@ -33,3 +33,5 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <br><li>A large collection of new status effects has also been introduced, which can be applied by both turret ammunition and unit attacks. These effects play a key role in battles, encouraging players to find enemy vulnerabilities and develop strategies based on new conditions.</li></ul>
 <br>
 <br>As a result of all these changes, the gameplay becomes more challenging, deeper, and richer, offering players new opportunities for planning and more interesting challenges.
+<h1>Contributors</h1>
+`KOSTOLOM[kostolom9777]`: "_ывыв_"
