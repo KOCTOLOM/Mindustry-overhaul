@@ -36,8 +36,10 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <h1>Contributors</h1>
 <div>
   
-`KOSTOLOM[kostolom9777]`: "<em>trying to get into Tokyio no Kuni...</em>"
-<br>`Laim[laimik.json]`: "<em>lets paint this world!</em>"
-<br>`𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝[𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝]`: "<em>...</em>"
+`KOSTOLOM[kostolom9777]`: <div align="right">"<em>trying to get into Tokyio no Kuni...</em>"</div>
+<br>
+<br>`Laim[laimik.json]`: <div align="right">"<em>lets paint this world!</em>"</div>
+<br>
+<br>`𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝[𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝]`: <div align="right">"<em>...</em>"</div>
 
 </div>
