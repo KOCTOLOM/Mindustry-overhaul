@@ -13,4 +13,5 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 
 <p align='center'><code><strong>WARNING!</strong>
 
-It is strongly recommended to back up your save before installing the mod, as playing with it may corrupt your progress due to major balance changes.</code></p>
+It is strongly recommended to back up your save before installing the mod,
+as playing with it may corrupt your progress due to major balance changes.</code></p>
