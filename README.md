@@ -17,15 +17,15 @@ This mod isn't just an add-on; it's a reimagined reality. We've taken the core m
 New soundscapes and visual effects will draw you in so deep, there's no turning back.</p><br>
 
 <p align='center'>
-  <code style="white-space: pre-line; font-size: 3em;">
+  <code style="white-space: pre-line; font-size: 3;">
     <strong>WARNING!</strong>
   </code>
   <br><br>
-  <code style="font-size: 3em;">
+  <code style="font-size: 3;">
     It is strongly recommended to back up your save before installing the mod,
   </code>
   <br>
-  <code style="font-size: 3em;">
+  <code style="font-size: 3;">
     as playing with it may corrupt your progress due to major balance changes.
   </code>
 </p>
