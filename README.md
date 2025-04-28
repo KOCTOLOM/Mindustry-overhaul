@@ -35,18 +35,9 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <br>As a result of all these changes, the gameplay becomes more challenging, deeper, and richer, offering players new opportunities for planning and more interesting challenges.
 <h1>Contributors</h1>
 <div>
-<table>
-  <tr>
-    <td><code>KOSTOLOM[kostolom9777]</code></td>
-    <td align="right"><em>"trying to get into Tokyio no Kuni..."</em></td>
-  </tr>
-  <tr>
-    <td><code>Laim[laimik.json]</code></td>
-    <td align="right"><em>"lets paint this world!"</em></td>
-  </tr>
-  <tr>
-    <td><code>𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝[inflarespirit]</code></td>
-    <td align="right"><em>"..."</em></td>
-  </tr>
-</table>
+
+<span><code>KOSTOLOM[kostolom9777]</code></span> <span style="float: right;"><em>"trying to get into Tokyio no Kuni..."</em></span>  
+<span><code>Laim[laimik.json]</code></span> <span style="float: right;"><em>"lets paint this world!"</em></span>  
+<span><code>𝚒𝚗𝚏𝚕𝚊𝚛𝚎𝚜𝚙𝚒𝚛𝚒𝚝[inflarespirit]</code></span> <span style="float: right;"><em>"..."</em></span>
+
 </div>
