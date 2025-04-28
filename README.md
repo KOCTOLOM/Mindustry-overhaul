@@ -5,7 +5,7 @@
 <br>If you're ready to step beyond comfort-
 <br>Then we offer you a ticket...    
 <br>...to <b>your own personal hell</b>"</p>
-<h1 align='center'>Mindustry Overhaul</h1>
+<br>
 <div align="center">
 <img src="https://github.com/KOCTOLOM/Mindustry-overhaul/raw/main/sprites-override/ui/logo.png" width="600">
 </div>
