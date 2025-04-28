@@ -9,6 +9,7 @@
 <div align="center">
 <img src="https://github.com/KOCTOLOM/Mindustry-overhaul/raw/main/sprites-override/ui/logo.png" width="300">
 </div>
+
 <p>Welcome to the world of <ins>Mindustry Overhaul</ins> - where the familiar takes on a whole new form.
 This mod isn't just an add-on; it's a reimagined reality. We've taken the core mechanics you know, deconstructed them, and rebuilt them from the ground up - more complex, deeper, and far more demanding.  
 <br>Forget the old balance: now, every resource, every unit, every choice carries weight, and even the smallest mistake can lead to complete collapse in the blink of an eye.
