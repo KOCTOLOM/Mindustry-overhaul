@@ -11,7 +11,5 @@ This mod isn't just an add-on; it's a reimagined reality. We've taken the core m
 <br>Forget the old balance: now, every resource, every unit, every choice carries weight, and even the smallest mistake can lead to complete collapse in the blink of an eye.
 New soundscapes and visual effects will draw you in so deep, there's no turning back.</p><br>
 
-<p align='center'><strong>```WARNING!```</strong><br></p>
-
-
-It is strongly recommended to back up your save before installing the mod, as playing with it may corrupt your progress due to major balance changes.
+<pre align='center'><strong>WARNING!</strong>
+It is strongly recommended to back up your save...</pre>
