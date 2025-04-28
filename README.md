@@ -21,12 +21,12 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <br><code>It is strongly recommended to back up your save before installing the mod,</code>
 <br><code>as playing with it may corrupt your progress due to major balance changes.</code></p>
 <h1>Main changes</h1>
-<br>During a series of tests, we discovered that the standard version of the Serpulo campaign suffered from a lack of depth in its balance. In response, we reworked it with a focus on emphasizing the unique strengths of units.
+<ul><li><br>During a series of tests, we discovered that the standard version of the Serpulo campaign suffered from a lack of depth in its balance. In response, we reworked it with a focus on emphasizing the unique strengths of units.</li>
 <br>
-<br>All characteristics of the vanilla turrets and their ammunition have been completely reworked. In addition to updating existing stats, most turrets have received new types of ammunition, some of which apply status effects. These changes make defensive structures much more flexible in their usage.
+<li><br>All characteristics of the vanilla turrets and their ammunition have been completely reworked. In addition to updating existing stats, most turrets have received new types of ammunition, some of which apply status effects. These changes make defensive structures much more flexible in their usage.</li>
 <br>
-<br>Units now require more resources to build, but this is compensated by significantly improved stats. Some units have also received partial AI updates: they now act based on new target prioritization algorithms, making enemy behavior more focused on exploiting weaknesses and more effective in combat. Additionally, their weapons and firing visual effects have been completely redesigned, adding more variety and chaos to battles.
+<li><br>Units now require more resources to build, but this is compensated by significantly improved stats. Some units have also received partial AI updates: they now act based on new target prioritization algorithms, making enemy behavior more focused on exploiting weaknesses and more effective in combat. Additionally, their weapons and firing visual effects have been completely redesigned, adding more variety and chaos to battles.</li>
 <br>
-<br>A large collection of new status effects has also been introduced, which can be applied by both turret ammunition and unit attacks. These effects play a key role in battles, encouraging players to find enemy vulnerabilities and develop strategies based on new conditions.
+<li><br>A large collection of new status effects has also been introduced, which can be applied by both turret ammunition and unit attacks. These effects play a key role in battles, encouraging players to find enemy vulnerabilities and develop strategies based on new conditions.</li></ul>
 <br>
 <br>As a result of all these changes, the gameplay becomes more challenging, deeper, and richer, offering players new opportunities for planning and more interesting challenges.
