@@ -16,17 +16,19 @@ This mod isn't just an add-on; it's a reimagined reality. We've taken the core m
 <br>Forget the old balance: now, every resource, every unit, every choice carries weight, and even the smallest mistake can lead to complete collapse in the blink of an eye.
 New soundscapes and visual effects will draw you in so deep, there's no turning back.</p><br>
 
-<div align="center" style="font-size: 18px;">
-  <code style="white-space: pre-line; font-weight: bold;">
-    WARNING!
+<p align='center'>
+  <code style="white-space: pre-line; font-size: 1.5em;">
+    <strong>WARNING!</strong>
   </code>
   <br><br>
-  <code>
+  <code style="font-size: 1.3em;">
     It is strongly recommended to back up your save before installing the mod,
-    <br>
+  </code>
+  <br>
+  <code style="font-size: 1.3em;">
     as playing with it may corrupt your progress due to major balance changes.
   </code>
-</div>
+</p>
 <h1>Main changes</h1>
 <ul><br><li>During a series of tests, we discovered that the standard version of the Serpulo campaign suffered from a lack of depth in its balance. In response, we reworked it with a focus on emphasizing the unique strengths of units.</li>
 <br>
