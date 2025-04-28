@@ -12,4 +12,4 @@ This mod isn't just an add-on; it's a reimagined reality. We've taken the core m
 New soundscapes and visual effects will draw you in so deep, there's no turning back.</p><br>
 
 <p align='center'><code><strong>WARNING!</strong><br>
-<br>It is strongly recommended to back up your save...</code></p>
+<br>It is strongly recommended to back up your save before installing the mod, as playing with it may corrupt your progress due to major balance changes.</code></p>
