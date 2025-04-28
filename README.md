@@ -7,7 +7,7 @@
 <br>...to <b>your own personal hell</b>"</p>
 <hr>
 <div align="center">
-<img src="https://github.com/KOCTOLOM/Mindustry-overhaul/raw/main/sprites-override/ui/logo.png" width="600">
+<img src="https://github.com/KOCTOLOM/Mindustry-overhaul/raw/main/sprites-override/ui/logo.png" width="550">
 </div>
 <hr>
 <p>Welcome to the world of <ins>Mindustry Overhaul</ins> - where the familiar takes on a whole new form.
@@ -19,3 +19,9 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <br>
 <br><code>It is strongly recommended to back up your save before installing the mod,</code>
 <br><code>as playing with it may corrupt your progress due to major balance changes.</code></p>
+<h1>Main changes</h1>
+<br>During a series of tests, we discovered that the standard version of the Serpulo campaign suffered from a lack of depth in its balance. In response, we reworked it with a focus on emphasizing the unique strengths of units.
+<br>All characteristics of the vanilla turrets and their ammunition have been completely reworked. In addition to updating existing stats, most turrets have received new types of ammunition, some of which apply status effects. These changes make defensive structures much more flexible in their usage.
+<br>Units now require more resources to build, but this is compensated by significantly improved stats. Some units have also received partial AI updates: they now act based on new target prioritization algorithms, making enemy behavior more focused on exploiting weaknesses and more effective in combat. Additionally, their weapons and firing visual effects have been completely redesigned, adding more variety and chaos to battles.
+<br>A large collection of new status effects has also been introduced, which can be applied by both turret ammunition and unit attacks. These effects play a key role in battles, encouraging players to find enemy vulnerabilities and develop strategies based on new conditions.
+<br>As a result of all these changes, the gameplay becomes more challenging, deeper, and richer, offering players new opportunities for planning and more interesting challenges.
