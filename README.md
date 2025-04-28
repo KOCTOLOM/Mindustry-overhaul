@@ -19,9 +19,9 @@ New soundscapes and visual effects will draw you in so deep, there's no turning 
 <div align="center">
 
 <b>`WARNING!`</b>
-
-<b>`**It is strongly recommended to back up your save before installing the mod,**`</b>
-<b>`**as playing with it may corrupt your progress due to major balance changes.**`</b>
+<br>
+<b>`It is strongly recommended to back up your save before installing the mod,`</b>
+<br><b>`as playing with it may corrupt your progress due to major balance changes.`</b>
 
 </div>
 <h1>Main changes</h1>
