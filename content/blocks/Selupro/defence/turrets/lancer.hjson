@@ -10,7 +10,7 @@ coolantMultiplier: 12.5
 cooldownTime: 450
 reload: 450
 health: 1700
-range: 445
+range: 345
 recoil: 2
 armor: 5
 
@@ -38,7 +38,7 @@ shootType: {
     type: LaserBulletType
     collidesAir: false
     drawSize: 400
-    length: 445
+    length: 345
     hitSize: 4
 
     buildingDamageMultiplier: 2
@@ -98,7 +98,7 @@ lightningType: {
 
     lightColor: ffffff
     lightOpacity: 0.7
-    lightRadius: 14.5
+    lightRadius: 3.5
 }}
 chargeEffect: {
     type: MultiEffect

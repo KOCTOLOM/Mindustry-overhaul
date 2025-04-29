@@ -11,7 +11,7 @@ velocityRnd:0.05
 inaccuracy: 4
 maxAmmo: 45
 health: 660
-reload: 178
+reload: 195
 range: 360
 armor: 3
 researchCostMultiplier:0.6
@@ -34,7 +34,7 @@ scrap: {
     height: 8
     width: 6
     inaccuracy: 13
-    reloadMultiplier: 0.2
+    reloadMultiplier: 0.4
     ammoMultiplier: 3
 	
     splashDamageRadius: 20
@@ -97,7 +97,7 @@ lead: {
     height: 8
     width: 6
     inaccuracy: 11
-    reloadMultiplier: 0.5
+    reloadMultiplier: 1
     ammoMultiplier: 6
 
     splashDamageRadius: 30
@@ -134,7 +134,9 @@ silicon: {
     ammoMultiplier: 18
 	
     splashDamageRadius: 0
-    homingPower: 0.02
+    homingPower: 0.06
+    homingRange: 90
+    homingDelay: 5
 	splashDamageRadius:5
     splashDamage: 10
     pierceCap: 3
@@ -165,7 +167,7 @@ metaglass: {
     width: 4
 
     ammoMultiplier: 1
-	reloadMultiplier: 0.4
+	reloadMultiplier: 0.5
     splashDamageRadius: 12
     splashDamage: 12
     pierceArmor:true

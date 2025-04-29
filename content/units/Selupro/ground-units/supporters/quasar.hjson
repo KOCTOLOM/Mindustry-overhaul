@@ -1,7 +1,7 @@
 research: pulsar
 forceMultiTarget: true
 stepShake: 2.65
-fogRadius: 32.5
+fogRadius: 21
 
 rotateSpeed: 2.25
 itemCapacity: 96

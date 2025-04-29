@@ -1,5 +1,5 @@
 research: ground-factory
-fogRadius: 26.5
+fogRadius: 15
 stepShake: 0.15
 
 rotateSpeed: 12.5

@@ -3,14 +3,14 @@ researchCostMultiplier: 0
 
 itemCapacity: 32
 buildSpeed: 1
-mineSpeed: 5
+mineSpeed: 7.5
 health: 180
 speed: 4.5
 armor: 3
 
 lightColor: fff8e8
 lightOpacity: 0.7
-lightRadius: 60
+lightRadius: 30
 
 trailLength: 5.25
 

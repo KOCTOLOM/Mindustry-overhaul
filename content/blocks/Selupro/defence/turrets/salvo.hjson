@@ -121,7 +121,7 @@ silicon: {
     homingPower: 0.18
     pierceCap: 3
     lifetime: 65
-    damage: 12
+    damage: 26
     speed: 4.8
 
     lightColor: 8e9097
@@ -150,7 +150,7 @@ thorium: {
     splashDamage: 25
     pierceCap: 7
     lifetime: 87
-    damage: 65
+    damage: 68
     speed: 3.25
 
     despawnEffect: flakExplosion
@@ -179,10 +179,10 @@ pyratite: {
 
     buildingDamageMultiplier: 0.01
     pierceDamageFactor: 0.03
-    reloadMultiplier: 1.1
+    reloadMultiplier: 0.8
     ammoMultiplier: 1
 
-    splashDamageRadius: 20
+    splashDamageRadius: 30
     splashDamage: 14.5
     status: burning
     lifetime: 36
@@ -228,12 +228,13 @@ effects: [
     height: 6
     width: 2
     splashDamageRadius: 8
-    splashDamage: 6
+    splashDamage: 13
     pierceCap: 2
     lifetime:20
-    damage:8
+    damage:12
     pierceArmor:true
     despawnEffect: none
+    hitSound:none
     speed:2.1
     lightColor: ffaa5f
     lightOpacity: 0.7

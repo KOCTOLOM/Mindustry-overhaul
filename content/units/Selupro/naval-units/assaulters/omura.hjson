@@ -5,7 +5,7 @@ rotateSpeed: 0.5
 health: 145000
 speed: 0.2
 armor: 35
-
+fogRadius: 65
 deathExplosionEffect: [
     {
         type: ExplosionEffect

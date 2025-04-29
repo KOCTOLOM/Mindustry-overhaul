@@ -5,7 +5,7 @@ rotateSpeed: 1.25
 health: 2600
 speed: 0.64
 armor: 18
-
+fogRadius: 21
 lightColor: fff8e8
 lightOpacity: 0.7
 lightRadius: 90

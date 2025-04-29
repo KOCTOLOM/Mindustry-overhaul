@@ -1,6 +1,6 @@
 research: spiroct
 alwaysShootWhenMoving: true
-fogRadius: 84.5
+fogRadius: 32
 stepShake: 2.35
 
 itemCapacity: 180

@@ -1,7 +1,7 @@
 research: antumbra
 alwaysShootWhenMoving: true
 circleTarget: true
-fogRadius: 55
+fogRadius: 42
 
 crashDamageMultiplier: 9
 

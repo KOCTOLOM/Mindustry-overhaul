@@ -2,8 +2,8 @@ research: core-nucleus
 researchCostMultiplier: 0
 
 itemCapacity: 96
-buildSpeed: 1.5
-mineSpeed: 5
+buildSpeed: 1.75
+mineSpeed: 15
 mineTier: 2
 health: 320
 speed: 5
@@ -11,7 +11,7 @@ armor: 8
 
 lightColor: fff8e8
 lightOpacity: 0.7
-lightRadius: 80
+lightRadius: 45
 
 trailLength: 5.75
 

@@ -1,6 +1,6 @@
 research: atrax
 alwaysShootWhenMoving: true
-fogRadius: 36.5
+fogRadius: 18
 stepShake: 1.7
 
 itemCapacity: 130

@@ -2,8 +2,8 @@ research: core-foundation
 researchCostMultiplier: 0
 
 itemCapacity: 64
-buildSpeed: 1.25
-mineSpeed: 7.5
+buildSpeed: 1.35
+mineSpeed: 11.25
 mineTier: 2
 health: 250
 speed: 4.75
@@ -11,7 +11,7 @@ armor: 5
 
 lightColor: fff8e8
 lightOpacity: 0.7
-lightRadius: 70
+lightRadius: 40
 
 trailLength: 5.5
 

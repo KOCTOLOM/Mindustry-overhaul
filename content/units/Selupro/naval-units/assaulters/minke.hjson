@@ -1,10 +1,10 @@
 faceTarget: false
 research: risso
 hitSize: 18
-
+fogRadius: 14
 speed: 0.5666666666666
 rotateSpeed: 1.8
-health: 1350
+health: 1150
 armor: 18
 
 lightColor: fff8e8
@@ -167,12 +167,12 @@ bullet: {
     pierceDamageFactor: 0.025
 
     status: mov-armor-piercing-tier-1
-    splashDamageRadius: 26
+    splashDamageRadius: 14
     statusDuration: 90
-    splashDamage: 24
+    splashDamage: 15
     lifetime: 12.25
     pierceCap: 15
-    damage: 48
+    damage: 32
     speed: 16
 
     smokeEffect: shootSmallSmoke
@@ -321,12 +321,12 @@ bullet: {
 
     buildingDamageMultiplier: 1.5
 
-    splashDamageRadius: 40
+    splashDamageRadius: 14
     statusDuration: 180
-    splashDamage: 75
+    splashDamage: 3F5
     lifetime: 35
     pierceCap: 2
-    damage: 60
+    damage: 40
     speed: 8
 
     smokeEffect: shootSmallSmoke

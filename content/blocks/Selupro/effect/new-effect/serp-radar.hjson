@@ -1,0 +1,21 @@
+type: Radar
+name: "Radar"
+description: "small instrument for exploring territory"
+research: titanium-wall-large
+category: effect
+size: 1
+
+buildVisibility:fogOnly
+health: 210
+fogRadius: 19
+armor: 3
+
+consumes: {
+    power: 0.5
+}
+researchCostMultiplier:4
+requirements: [
+    copper/30
+    lead/25
+    graphite/10
+]

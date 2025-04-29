@@ -1,6 +1,6 @@
 research: ground-factory
 stepShake: 0.08
-fogRadius: 35
+fogRadius: 12
 
 boostMultiplier: 2
 itemCapacity: 32

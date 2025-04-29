@@ -2,7 +2,7 @@ research: zenith
 alwaysShootWhenMoving: true
 forceMultiTarget: true
 circleTarget: true
-fogRadius: 48
+fogRadius: 32
 
 crashDamageMultiplier: 6
 

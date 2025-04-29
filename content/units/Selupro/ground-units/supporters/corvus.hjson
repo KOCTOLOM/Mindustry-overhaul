@@ -3,7 +3,7 @@ alwaysShootWhenMoving: true
 legSplashDamage: 520
 legSplashRange: 26
 stepShake: 10.5
-fogRadius: 128
+fogRadius: 62
 
 itemCapacity: 2250
 rotateSpeed: 0.36

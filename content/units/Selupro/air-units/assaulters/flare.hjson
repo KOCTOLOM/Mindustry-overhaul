@@ -1,7 +1,7 @@
 research: air-factory
 circleTarget: true
 faceTarget: false
-fogRadius: 23.5
+fogRadius: 5
 range: 174
 
 strafePenalty: 0
@@ -37,7 +37,7 @@ weapons: [
 {   
     name: mount-weapon
     layerOffset: -0.001
-    shootCone: 24
+    shootCone: 70
     x: 3.75
     y: 2.25
 

@@ -4,7 +4,7 @@ health: 3250
 armor: 12
 
 consumes: {
-    power: 35
+    power: 2
     }
 
 requirements: [
@@ -12,3 +12,655 @@ requirements: [
     oxide/350
     beryllium/270
     ]
+ammoTypes:{
+ozone:{
+    type:ContinuousFlameBulletType
+    damage: 60
+    length: 130
+    knockback: 1
+    pierceCap: 2
+    buildingDamageMultiplier: 0.3
+    timescaleDamage: true
+
+    colors: [eb7abeA0,e189f550,907ef770,91a4ff,ffffff]
+    flareColor: eb7abeA0
+    intervalRandomSpread:0
+    intervalBullet:{
+         lifetime:0
+         shootEffect:none
+         despawnEffect:none
+         hitEffect:none
+         spawnBullets:[
+         {
+         type: BasicBulletType
+          randomAngleOffset:30
+          pierce: true
+          velocityScaleRandMin:0.4
+          velocityScaleRandMax:1.3
+          height: 12
+          width: 5
+          shrinkX:0
+          shrinkY:0
+          buildingDamageMultiplier:1.8
+          pierceCap: 2
+          lifetime: 20
+          drag:0.01
+          damage: 30
+          pierceArmor:true
+          speed: 4
+          status: mov-motor-deceleration-tier-1
+          statusDuration:70
+          hitEffect: hitBulletColor
+          trailColor: eb7abe
+          trailLength: 12
+          trailWidth: 1.2
+          frontColor: ffffff
+          backColor: eb7abeA0
+          despawnEffect:[{
+                  type: ParticleEffect
+                  particles:3
+                  length: 20
+                  lifetime: 50
+                  sizeFrom: 1
+                  sizeTo: 2
+                  cone: 50
+                  interp: circleOut
+                  sizeInterp:circleOut
+                  colorFrom: eb7abeA0
+                  colorTo: eb7abeA0
+                  layer:100.2
+              }
+              {
+                  type: ParticleEffect
+                  particles: 1
+                  length: 0
+                  lifetime: 10
+                  sizeFrom: 2
+                  sizeTo: 0
+                  colorFrom: eb7abeA0
+                  colorTo: eb7abeA0
+                  layer:100.3
+              }
+              {
+                  type: ParticleEffect
+                  particles:1
+                  region:large-bomb
+                  length: 0
+                  spin:-2
+                  lifetime: 80
+                  sizeFrom: 6
+                  sizeTo: 0
+                  cone: 0
+                  interp: circleOut
+                  sizeChangeStart:30
+                  sizeInterp:circleOut
+                  colorFrom: ffffff
+                  colorTo: eb7abeA0
+                  layer:100.2
+              }
+              ]
+          hitEffect:[
+          {
+                  type: ParticleEffect
+                  particles: 2
+                  length: 30
+                  lifetime: 40
+                  sizeFrom: 1
+                  sizeTo: 2
+                  cone: 9
+                  interp: circleOut
+                  sizeInterp:circleOut
+                  colorFrom: eb7abeA0
+                  colorTo: eb7abe00
+                  layer:100.3
+              }
+          {
+                  type: ParticleEffect
+                  particles: 3
+                  length: 67
+                  line:true
+                  lifetime: 24
+                  lenFrom: 1
+                  lenTo: 2
+                  strokeFrom:1.2
+                  strokeTo:0.5
+                  cone: 3
+                  interp: circleOut
+                  sizeInterp:circleOut
+                  colorFrom: eb7abeA0
+                  colorTo: eb7abe00
+                  layer:100.3
+              }
+          ]
+         fragBullets:3
+         fragBullet:{
+             type: BasicBulletType
+             pierce: true
+             height: 12
+             width: 5
+             drag:0.01
+             shrinkX:0
+             shrinkY:0
+             pierceCap: 2
+             lifetime: 10
+             damage: 25
+             pierceArmor:true
+             speed: 4
+             status: mov-motor-deceleration-tier-1
+             statusDuration:40
+             hitEffect: hitBulletColor
+             trailColor: eb7abe
+             trailLength: 12
+             trailWidth: 1.2
+             frontColor: ffffff
+             backColor: eb7abeA0
+             despawnEffect:[{
+                     type: ParticleEffect
+                     particles:3
+                     length: 20
+                     lifetime: 50
+                     sizeFrom: 1
+                     sizeTo: 2
+                     cone: 50
+                     interp: circleOut
+                     sizeInterp:circleOut
+                     colorFrom: eb7abe50
+                     colorTo: eb7abe00
+                     layer:100.2
+                 }
+                 {
+                     type: ParticleEffect
+                     particles: 1
+                     length: 0
+                     lifetime: 10
+                     sizeFrom: 2
+                     sizeTo: 0
+                     colorFrom: eb7abe
+                     colorTo: eb7abe
+                     layer:100.3
+                 }
+                 {
+                     type: ParticleEffect
+                     particles:1
+                     region:large-bomb
+                     length: 0
+                     spin:-2
+                     lifetime: 80
+                     sizeFrom: 6
+                     sizeTo: 0
+                     cone: 0
+                     interp: circleOut
+                     sizeChangeStart:30
+                     sizeInterp:circleOut
+                     colorFrom: ffffff
+                     colorTo: eb7abe
+                     layer:100.2
+                 }
+                 ]
+             hitEffect:[
+             {
+                     type: ParticleEffect
+                     particles: 2
+                     length: 30
+                     lifetime: 40
+                     sizeFrom: 1
+                     sizeTo: 2
+                     cone: 9
+                     interp: circleOut
+                     sizeInterp:circleOut
+                     colorFrom: eb7abe
+                     colorTo: eb7abe00
+                     layer:100.3
+                 }
+             {
+                     type: ParticleEffect
+                     particles: 3
+                     length: 67
+                     line:true
+                     lifetime: 24
+                     lenFrom: 1
+                     lenTo: 2
+                     strokeFrom:1.2
+                     strokeTo:0.5
+                     cone: 3
+                     interp: circleOut
+                     sizeInterp:circleOut
+                     colorFrom: eb7abe
+                     colorTo: eb7abe00
+                     layer:100.3
+                 }
+             ]
+             }
+             }
+         ]
+         }
+}
+cyanogen:{
+    type:ContinuousFlameBulletType
+    damage: 130
+    length: 170
+    rangeChange:40
+    knockback: 2
+    pierceCap: 4
+    buildingDamageMultiplier: 0.3
+    timescaleDamage: true
+
+     colors: [89e8b6A0,66a6d280,89e8b6BF,cafcbe, ffffff]
+     flareColor:89e8b6
+     intervalRandomSpread:0
+     intervalBullet:{
+     lifetime:0
+     shootEffect:none
+     despawnEffect:none
+     hitEffect:none
+     spawnBullets:[
+     {
+     type: BasicBulletType
+      pierce: true
+      lifeScaleRandMin:0.4
+      lifeScaleRandMax:1.3
+      height: 12
+      width: 5
+      shrinkX:0
+      shrinkY:0
+      buildingDamageMultiplier:1.8
+      pierceCap: 2
+      lifetime: 1
+      damage: 25
+      pierceArmor:true
+      speed: 60
+      status: mov-motor-deceleration-tier-1
+      statusDuration:70
+      hitEffect: hitBulletColor
+      trailColor: 89e8b6A0
+      trailLength: 12
+      trailWidth: 1.2
+      frontColor: ffffff
+      backColor: 89e8b6
+      despawnEffect:[{
+              type: ParticleEffect
+              particles:3
+              length: 20
+              lifetime: 50
+              sizeFrom: 1
+              sizeTo: 2
+              cone: 50
+              interp: circleOut
+              sizeInterp:circleOut
+              colorFrom: 89e8b6
+              colorTo: 89e8b600
+              layer:100.2
+          }
+          {
+              type: ParticleEffect
+              particles: 1
+              length: 0
+              lifetime: 10
+              sizeFrom: 2
+              sizeTo: 0
+              colorFrom: 89e8b6
+              colorTo: 89e8b6
+              layer:100.3
+          }
+          {
+              type: ParticleEffect
+              particles:1
+              region:large-bomb
+              length: 0
+              spin:-2
+              lifetime: 80
+              sizeFrom: 6
+              sizeTo: 0
+              cone: 0
+              interp: circleOut
+              sizeChangeStart:30
+              sizeInterp:circleOut
+              colorFrom: ffffff
+              colorTo: 89e8b6
+              layer:100.2
+          }
+          ]
+      hitEffect:[
+      {
+              type: ParticleEffect
+              particles: 2
+              length: 30
+              lifetime: 40
+              sizeFrom: 1
+              sizeTo: 2
+              cone: 9
+              interp: circleOut
+              sizeInterp:circleOut
+              colorFrom: 89e8b6
+              colorTo: 89e8b6500
+              layer:100.3
+          }
+      {
+              type: ParticleEffect
+              particles: 3
+              length: 67
+              line:true
+              lifetime: 24
+              lenFrom: 1
+              lenTo: 2
+              strokeFrom:1.2
+              strokeTo:0.5
+              cone: 3
+              interp: circleOut
+              sizeInterp:circleOut
+              colorFrom: 89e8b6
+              colorTo: 89e8b6500
+              layer:100.3
+          }
+      ]
+     fragBullets:1
+     fragBullet:{
+         type: BasicBulletType
+         pierce: true
+         height: 12
+         width: 5
+         drag:0.01
+         shrinkX:0
+         shrinkY:0
+         pierceCap: 2
+         lifetime: 300
+         damage: 25
+         pierceArmor:true
+         speed: 2
+         status: mov-motor-deceleration-tier-1
+         statusDuration:40
+         circleShooter: true
+         circleShooterRadius:60
+         circleShooterRadiusSmooth:30
+         circleShooterRotateSpeed:1.2
+         hitEffect: hitBulletColor
+         trailColor: 89e8b6
+         trailLength: 12
+         trailWidth: 1.2
+         frontColor: ffffff
+         backColor: 89e8b6
+         despawnEffect:[{
+                 type: ParticleEffect
+                 particles:3
+                 length: 20
+                 lifetime: 50
+                 sizeFrom: 1
+                 sizeTo: 2
+                 cone: 50
+                 interp: circleOut
+                 sizeInterp:circleOut
+                 colorFrom: 89e8b650
+                 colorTo: 89e8b600
+                 layer:100.2
+             }
+             {
+                 type: ParticleEffect
+                 particles: 1
+                 length: 0
+                 lifetime: 10
+                 sizeFrom: 2
+                 sizeTo: 0
+                 colorFrom: 89e8b6
+                 colorTo: 89e8b6
+                 layer:100.3
+             }
+             {
+                 type: ParticleEffect
+                 particles:1
+                 region:large-bomb
+                 length: 0
+                 spin:-2
+                 lifetime: 80
+                 sizeFrom: 6
+                 sizeTo: 0
+                 cone: 0
+                 interp: circleOut
+                 sizeChangeStart:30
+                 sizeInterp:circleOut
+                 colorFrom: ffffff
+                 colorTo: 89e8b6
+                 layer:100.2
+             }
+             ]
+         hitEffect:[
+         {
+                 type: ParticleEffect
+                 particles: 2
+                 length: 30
+                 lifetime: 40
+                 sizeFrom: 1
+                 sizeTo: 2
+                 cone: 9
+                 interp: circleOut
+                 sizeInterp:circleOut
+                 colorFrom: 89e8b6
+                 colorTo: 89e8b600
+                 layer:100.3
+             }
+         {
+                 type: ParticleEffect
+                 particles: 3
+                 length: 67
+                 line:true
+                 lifetime: 24
+                 lenFrom: 1
+                 lenTo: 2
+                 strokeFrom:1.2
+                 strokeTo:0.5
+                 cone: 3
+                 interp: circleOut
+                 sizeInterp:circleOut
+                 colorFrom: 89e8b6
+                 colorTo: 89e8b600
+                 layer:100.3
+             }
+         ]
+         }
+     }
+     {
+     type: BasicBulletType
+           pierce: true
+           lifeScaleRandMin:0.4
+           lifeScaleRandMax:1.3
+           height: 12
+           width: 5
+           shrinkX:0
+           shrinkY:0
+           buildingDamageMultiplier:1.8
+           pierceCap: 2
+           lifetime: 1
+           damage: 25
+           pierceArmor:true
+           speed: 60
+           status: mov-motor-deceleration-tier-1
+           statusDuration:70
+           hitEffect: hitBulletColor
+           trailColor: 89e8b6
+           trailLength: 12
+           trailWidth: 1.2
+           frontColor: ffffff
+           backColor: ab8ec5
+           despawnEffect:[{
+                   type: ParticleEffect
+                   particles:3
+                   length: 20
+                   lifetime: 50
+                   sizeFrom: 1
+                   sizeTo: 2
+                   cone: 50
+                   interp: circleOut
+                   sizeInterp:circleOut
+                   colorFrom: 89e8b650
+                   colorTo: 89e8b600
+                   layer:100.2
+               }
+               {
+                   type: ParticleEffect
+                   particles: 1
+                   length: 0
+                   lifetime: 10
+                   sizeFrom: 2
+                   sizeTo: 0
+                   colorFrom: 89e8b6
+                   colorTo: 89e8b6
+                   layer:100.3
+               }
+               {
+                   type: ParticleEffect
+                   particles:1
+                   region:large-bomb
+                   length: 0
+                   spin:-2
+                   lifetime: 80
+                   sizeFrom: 6
+                   sizeTo: 0
+                   cone: 0
+                   interp: circleOut
+                   sizeChangeStart:30
+                   sizeInterp:circleOut
+                   colorFrom: ffffff
+                   colorTo: 89e8b6
+                   layer:100.2
+               }
+               ]
+           hitEffect:[
+           {
+                   type: ParticleEffect
+                   particles: 2
+                   length: 30
+                   lifetime: 40
+                   sizeFrom: 1
+                   sizeTo: 2
+                   cone: 9
+                   interp: circleOut
+                   sizeInterp:circleOut
+                   colorFrom: 89e8b6
+                   colorTo: 89e8b600
+                   layer:100.3
+               }
+           {
+                   type: ParticleEffect
+                   particles: 3
+                   length: 67
+                   line:true
+                   lifetime: 24
+                   lenFrom: 1
+                   lenTo: 2
+                   strokeFrom:1.2
+                   strokeTo:0.5
+                   cone: 3
+                   interp: circleOut
+                   sizeInterp:circleOut
+                   colorFrom: 89e8b6
+                   colorTo: 89e8b600
+                   layer:100.3
+               }
+           ]
+          fragBullets:1
+          fragBullet:{
+              type: BasicBulletType
+              pierce: true
+              height: 12
+              width: 5
+              drag:0.01
+              shrinkX:0
+              shrinkY:0
+              pierceCap: 2
+              lifetime: 300
+              damage: 25
+              pierceArmor:true
+              speed: 3
+              status: mov-motor-deceleration-tier-1
+              statusDuration:40
+              circleShooter: true
+              circleShooterRadius:60
+              circleShooterRadiusSmooth:30
+              circleShooterRotateSpeed:7
+              hitEffect: hitBulletColor
+              trailColor: 89e8b6
+              trailLength: 90
+              trailWidth: 1.2
+              frontColor: ffffff
+              backColor: 89e8b6
+              despawnEffect:[{
+                      type: ParticleEffect
+                      particles:3
+                      length: 20
+                      lifetime: 50
+                      sizeFrom: 1
+                      sizeTo: 2
+                      cone: 50
+                      interp: circleOut
+                      sizeInterp:circleOut
+                      colorFrom: 89e8b650
+                      colorTo: 89e8b600
+                      layer:100.2
+                  }
+                  {
+                      type: ParticleEffect
+                      particles: 1
+                      length: 0
+                      lifetime: 10
+                      sizeFrom: 2
+                      sizeTo: 0
+                      colorFrom: 89e8b6
+                      colorTo: 89e8b6
+                      layer:100.3
+                  }
+                  {
+                      type: ParticleEffect
+                      particles:1
+                      region:large-bomb
+                      length: 0
+                      spin:-2
+                      lifetime: 80
+                      sizeFrom: 6
+                      sizeTo: 0
+                      cone: 0
+                      interp: circleOut
+                      sizeChangeStart:30
+                      sizeInterp:circleOut
+                      colorFrom: ffffff
+                      colorTo: 89e8b6
+                      layer:100.2
+                  }
+                  ]
+              hitEffect:[
+              {
+                      type: ParticleEffect
+                      particles: 2
+                      length: 30
+                      lifetime: 40
+                      sizeFrom: 1
+                      sizeTo: 2
+                      cone: 9
+                      interp: circleOut
+                      sizeInterp:circleOut
+                      colorFrom: 89e8b6
+                      colorTo: 89e8b600
+                      layer:100.3
+                  }
+              {
+                      type: ParticleEffect
+                      particles: 3
+                      length: 67
+                      line:true
+                      lifetime: 24
+                      lenFrom: 1
+                      lenTo: 2
+                      strokeFrom:1.2
+                      strokeTo:0.5
+                      cone: 3
+                      interp: circleOut
+                      sizeInterp:circleOut
+                      colorFrom: 89e8b6
+                      colorTo: 89e8b600
+                      layer:100.3
+                  }
+              ]
+              }
+          }
+     ]
+}
+}
+}

@@ -2,7 +2,7 @@ research: arkyid
 alwaysShootWhenMoving: true
 rotateSpeed: 0.45
 stepShake: 5.75
-fogRadius: 96
+fogRadius: 60
 
 legSplashDamage: 1500
 legSplashRange: 40

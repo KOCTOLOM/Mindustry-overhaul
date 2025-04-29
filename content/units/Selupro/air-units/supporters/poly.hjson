@@ -1,5 +1,5 @@
 research: mono
-fogRadius: 17.5
+fogRadius: 6.5
 maxRange: 40
 
 itemCapacity: 32

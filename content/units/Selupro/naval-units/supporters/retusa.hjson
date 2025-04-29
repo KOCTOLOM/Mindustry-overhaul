@@ -38,13 +38,12 @@ bullet: {
     type: BasicBulletType
     sprite: mine-bullet
     keepVelocity: false
-    collideFloor: true
+    collideFloor: false
     collidesAir: false
     rangeOverride: 150
     hitSize: 22
     shrinkX: 0
     shrinkY: 0
-    layer: 10
     height: 8
     width: 8
 

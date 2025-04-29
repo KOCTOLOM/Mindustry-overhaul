@@ -1,7 +1,7 @@
 research: quad
-fallSpeed: 0.003
+fallSpeed: 0.005
 faceTarget: true
-fogRadius: 55
+fogRadius: 40
 forceMultiTarget: true
 crashDamageMultiplier: 12.5
 
@@ -645,7 +645,7 @@ bullet: {
         healPercent: 100
         knockback: 16
         lifetime: 120
-        damage: 80000
+        damage: 20000
         speed: 0
         radius:400
         powerDamageScl:1.5

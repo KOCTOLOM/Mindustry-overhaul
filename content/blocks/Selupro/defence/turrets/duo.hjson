@@ -123,7 +123,7 @@ silicon: {
     homingPower: 0.05
     lifetime: 42.5
     pierceCap: 3
-    damage: 16
+    damage: 19
     speed: 4.75
 
     lightColor: 8e9097

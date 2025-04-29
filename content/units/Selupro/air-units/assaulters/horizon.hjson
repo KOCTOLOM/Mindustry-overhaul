@@ -1,6 +1,6 @@
 research: flare
 faceTarget: false
-fogRadius: 21.5
+fogRadius: 12
 strafePenalty: 0.5
 rotateSpeed: 7
 accel: 0.015
@@ -134,7 +134,7 @@ despawnEffect: [
     type: BasicBulletType
     damage: 0
     splashDamageRadius: 30
-    splashDamage: 120
+    splashDamage: 50
     speed: 0
     width: 0
     height: 0

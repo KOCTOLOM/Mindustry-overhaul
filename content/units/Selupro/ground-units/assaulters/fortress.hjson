@@ -2,7 +2,7 @@ research: mace
 forceMultiTarget: true
 targetAir: true
 stepShake: 3.25
-fogRadius: 47.5
+fogRadius: 21
 range: 384
 
 itemCapacity: 81

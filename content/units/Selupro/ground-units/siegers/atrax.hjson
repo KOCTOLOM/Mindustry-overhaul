@@ -2,7 +2,7 @@ research: crawler
 alwaysShootWhenMoving: true
 targetAir: true
 stepShake: 0.7
-fogRadius: 29
+fogRadius: 16
 
 rotateSpeed: 1.8
 speed: 0.53335

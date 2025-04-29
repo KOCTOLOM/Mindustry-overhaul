@@ -1,7 +1,7 @@
 research: mega
 faceTarget: true
 fallSpeed: 0.02
-fogRadius: 64
+fogRadius: 26
 strafePenalty: 0.5
 crashDamageMultiplier: 5
 
@@ -177,7 +177,6 @@ shoot: {
 
 bullet: {
     type: MissileBulletType
-    collideTerrain: true
     keepVelocity: false
     collidesTeam: true
     despawnShake: 3.25
@@ -273,7 +272,6 @@ bullet: {
     shootSound: lasershoot
 bullet: {
     type: LaserBoltBulletType
-    collideTerrain: true
     collidesTeam: true
     collidesAir: false
 
@@ -317,7 +315,6 @@ shoot: {
 
 bullet: {
     type: BasicBulletType
-    collideTerrain: true
     collidesAir: false
     despawnShake: 5
     shrinkX: 0.5

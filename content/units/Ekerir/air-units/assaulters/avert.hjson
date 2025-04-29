@@ -1,22 +1,37 @@
 research: elude
 fogRadius: 25
-
+strafePenalty: 0.7
 itemCapacity: 0
 flying: true
-rotateSpeed: 4
+rotateSpeed: 4.5
 health: 1100
-accel: 0.09
-drag: 0.08
+accel: 0.08
+drag: 0.07
 armor: 9
 speed: 2
+range:120
+
+trailLength: 6.5
 
 immunities: []
-
+abilities:[
+{
+type:MoveEffectAbility
+minVelocity:0.06
+x: 0
+y: -2.5
+interval:3
+effect:colorTrail
+effectParam:3.5
+color:bf92f9
+}
+]
 weapons: [
     {
-    reload: 35
+    name:avert-weapon
+    reload: 60
     x: 0
-    y: 6.5
+    y: 7.25
     layerOffset: -0.01
     rotate: false
     mirror: false
@@ -24,35 +39,465 @@ weapons: [
     shootY: 5
     top: false
     shootSound: sounds.blaster
-
+    inaccuracy: 10
     shoot: {
-        type: ShootHelix
-        scl: 2
-        mag: 1.5
+    	type: ShootMulti
+    	source: {
+        type: ShootSpread
+        spread: 30
+        shots: 2
         }
-
+    	dest: [
+    	{
+    	type: ShootPattern
+    		shots: 3
+    		shotDelay: 10
+    	}
+    	]
+    	}
     bullet:{
     type: BasicBulletType
     height: 12
     width: 7
-    shootEffect: sparkShoot
-    smokeEffect: shootBigSmoke
-    despawnEffect:none
-    lifetime: 18
-    damage: 34
-    speed: 5
+    drag:0.01
+    velocityScaleRandMin:0.7
+    velocityScaleRandMax:1.2
+    shootEffect: none
+    smokeEffect: {
+         type: ParticleEffect
+         lifetime:30
+         particles: 4
+         layer: 100.3
+         cone: 9
+
+         sizeFrom: 1
+         length: 20
+         sizeTo: 2
+
+         colorFrom: bf92f9
+         colorTo: bf92f900
     }
+    despawnEffect:[
+            {
+            type: ParticleEffect
+            lifetime:20
+            particles: 12
+            layer: 100.2
+            cone: 360
+
+            sizeFrom: 2
+            length: 12
+            sizeTo: 0
+
+            colorFrom: bf92f9
+            colorTo: bf92f9
+       }
+       {
+            type: ParticleEffect
+            lifetime: 60
+            particles: 6
+            layer: 100.3
+            cone: 360
+
+            sizeFrom: 2
+            length: 9
+            sizeTo: 0
+
+            colorFrom: bf92f9
+            colorTo: bf92f9
+       }
+       ]
+    hitEffect: hitBulletColor
+        shootEffect: [
+             {
+             type: ParticleEffect
+             lifetime:40
+             particles: 5
+             layer: 100.2
+             cone: 10
+
+             sizeFrom: 2
+             length: 12
+             sizeTo: 0
+
+             colorFrom: bf92f9
+             colorTo: bf92f990
+        }
+        {
+             type: ParticleEffect
+             lifetime: 30
+             particles: 2
+             layer: 100.3
+             cone: 360
+
+             sizeFrom: 2
+             length: 9
+             sizeTo: 1
+
+             colorFrom: ffffff
+             colorTo: bf92f900
+        }
+        ]
+    lifetime: 42
+    damage: 34
+    speed: 4
+    homingPower:0.1
+    homingRange:30
+    homingDelay:10
 
     frontColor: ffffff
-    backColor: #665C9F
-    hitColor: #665C9F
+    backColor: bf92f9
+    hitColor: bf92f9
 
-    trailColor: #665C9F
-    trailLength: 5
+    trailColor: bf92f9
+    trailLength: 9
     trailWidth: 1.5
 
     lightColor: ffffff
     lightOpacity: 0.7
     lightRadius: 24.5
     }
+}
+{
+    parts: [
+    {
+    type: HaloPart
+    progress: warmup
+    y: 9
+    sides:32
+    tri:false
+    shapes: 1
+    stroke: 1.4
+    strokeTo: 4
+    radius: 4
+    haloRadius: 6
+    haloRotation: 180
+    color: bf92f9
+    layer: 109
+    }
+    {
+    type: HaloPart
+    progress: warmup
+    y: 9
+    sides:32
+    tri:false
+    shapes: 1
+    stroke: 0.4
+    strokeTo: 1
+    radius: 2
+    haloRadius: 4
+    haloRotation: 180
+    color: bf92f9
+    layer: 110
+    }
+    ]
+    layerOffset: 0.0001
+    rotateSpeed: 0
+    rotate: false
+    baseRotation:180
+    reload:9
+    display:false
+    recoil: 0
+    shake: 0
+    shootY:-9
+    x: 0
+    top:true
+    y: -2
+    controllable:false
+    autoTarget:true
+    inaccuracy:35
+    minShootVelocity:0.8
+    alwaysShooting:true
+    shootSound: none
+    bullet:{
+    type: BasicBulletType
+    height: 12
+    width: 7
+    drag:0.07
+    keepVelocity:false
+    velocityScaleRandMin:0.7
+    velocityScaleRandMax:2.1
+    shootEffect: none
+    smokeEffect: {
+         type: ParticleEffect
+         line:true
+         lifetime:30
+         particles: 3
+         layer: 100.3
+         cone: 9
+
+         lenFrom: 1
+         length: 20
+         lenTo: 3
+
+         colorFrom: ffffff
+         colorTo: bf92f900
+    }
+    despawnEffect:none
+    hitEffect: hitBulletColor
+        shootEffect: [
+             {
+             type: ParticleEffect
+             lifetime:50
+             particles: 6
+             layer: 100.2
+             cone: 10
+
+             sizeFrom: 1
+             length: 12
+             sizeTo: 2
+
+             colorFrom: bf92f9
+             colorTo: bf92f990
+        }
+        {
+             type: ParticleEffect
+             lifetime: 30
+             particles: 2
+             layer: 100.3
+             cone: 360
+
+             sizeFrom: 2
+             length: 9
+             sizeTo: 1
+
+             colorFrom: ffffff
+             colorTo: bf92f900
+        }
+        ]
+    lifetime: 30
+    damage: 60
+    speed: 2.0
+
+    frontColor: ffffff
+    backColor: bf92f9
+    hitColor: bf92f9
+
+    trailColor: bf92f9
+    trailLength: 15
+    trailWidth: 1.5
+
+    lightColor: ffffff
+    lightOpacity: 0.7
+    lightRadius: 24.5
+    fragBullets:1
+    fragBullet:{
+        type: BasicBulletType
+        height: 12
+        width: 7
+        velocityScaleRandMin:0.7
+        velocityScaleRandMax:1.4
+        shootEffect: none
+        smokeEffect: {
+             type: ParticleEffect
+             line:true
+             lifetime:30
+             particles: 3
+             layer: 100.3
+             cone: 9
+
+             lenFrom: 1
+             length: 20
+             lenTo: 3
+
+             colorFrom: ffffff
+             colorTo: bf92f900
+        }
+        despawnEffect:[
+                {
+                type: ParticleEffect
+                lifetime:20
+                particles: 12
+                layer: 100.2
+                cone: 360
+
+                sizeFrom: 2
+                length: 12
+                sizeTo: 0
+
+                colorFrom: bf92f9
+                colorTo: bf92f9
+           }
+           {
+                type: ParticleEffect
+                lifetime: 60
+                particles: 6
+                layer: 100.3
+                cone: 360
+
+                sizeFrom: 2
+                length: 9
+                sizeTo: 0
+
+                colorFrom: bf92f9
+                colorTo: bf92f9
+           }
+           ]
+        hitEffect: hitBulletColor
+            shootEffect: [
+                 {
+                 type: ParticleEffect
+                 lifetime:40
+                 particles: 5
+                 layer: 100.2
+                 cone: 10
+
+                 sizeFrom: 2
+                 length: 12
+                 sizeTo: 0
+
+                 colorFrom: bf92f9
+                 colorTo: bf92f990
+            }
+            {
+                 type: ParticleEffect
+                 lifetime: 30
+                 particles: 2
+                 layer: 100.3
+                 cone: 360
+
+                 sizeFrom: 2
+                 length: 9
+                 sizeTo: 1
+
+                 colorFrom: ffffff
+                 colorTo: bf92f900
+            }
+            ]
+        lifetime: 120
+        damage: 60
+        speed: 6
+        circleShooter:true
+        circleShooterRadius:15
+        circleShooterRadiusSmooth:10
+        circleShooterRotateSpeed:4
+
+        frontColor: ffffff
+        backColor: bf92f9
+        hitColor: bf92f9
+
+        trailColor: bf92f9
+        trailLength: 9
+        trailWidth: 1.5
+
+        lightColor: ffffff
+        lightOpacity: 0.7
+        lightRadius: 24.5
+        fragBullets:1
+        fragVelocityMin:1
+        fragBullet:{
+            type: BasicBulletType
+            height: 12
+            width: 7
+            shootEffect: none
+            despawnEffect:[
+                    {
+                    type: ParticleEffect
+                    lifetime:20
+                    particles: 12
+                    layer: 100.2
+                    cone: 360
+
+                    sizeFrom: 2
+                    length: 12
+                    sizeTo: 0
+
+                    colorFrom: bf92f9
+                    colorTo: bf92f9
+               }
+               {
+                    type: ParticleEffect
+                    lifetime: 60
+                    particles: 6
+                    layer: 100.3
+                    cone: 360
+
+                    sizeFrom: 2
+                    length: 9
+                    sizeTo: 0
+
+                    colorFrom: bf92f9
+                    colorTo: bf92f9
+               }
+               ]
+            hitEffect: hitBulletColor
+                shootEffect: [
+                     {
+                     type: ParticleEffect
+                     lifetime:40
+                     particles: 5
+                     layer: 100.2
+                     cone: 10
+
+                     sizeFrom: 2
+                     length: 12
+                     sizeTo: 0
+
+                     colorFrom: bf92f9
+                     colorTo: bf92f990
+                }
+                {
+                     type: ParticleEffect
+                     lifetime: 30
+                     particles: 2
+                     layer: 100.3
+                     cone: 360
+
+                     sizeFrom: 2
+                     length: 9
+                     sizeTo: 1
+
+                     colorFrom: ffffff
+                     colorTo: bf92f900
+                }
+                ]
+            lifetime: 20
+            damage: 60
+            speed: 16
+            homingPower:0.6
+            homingRange:320
+
+            frontColor: ffffff
+            backColor: bf92f9
+            hitColor: bf92f9
+
+            trailColor: bf92f9
+            trailLength: 9
+            trailWidth: 1.5
+
+            lightColor: ffffff
+            lightOpacity: 0.7
+            lightRadius: 24.5
+            }
+        }
+    }
+}
+
+{
+    layerOffset: -0.0001
+    rotateSpeed: 1000
+    rotate: true
+    reload:2
+    display:false
+    recoil: 0
+    shake: 0
+    x: 0
+    y: 0
+    minShootVelocity:0.6
+    alwaysShooting:true
+    shootStatus: strafe
+    shootStatusDuration: 20
+    shootSound: none
+    bullet:{
+        type: BasicBulletType
+        height: 0
+        width: 0
+        shootEffect:none
+        despawnEffect:none
+        smokeEffect:none
+        lifetime: 0
+        damage: 0
+        speed: 0
+        }
+}
 ]

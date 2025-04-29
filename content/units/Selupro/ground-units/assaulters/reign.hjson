@@ -1,6 +1,6 @@
 research: scepter
 forceMultiTarget: true
-fogRadius: 52.5
+fogRadius: 46
 stepShake: 14.5
 range: 600
 

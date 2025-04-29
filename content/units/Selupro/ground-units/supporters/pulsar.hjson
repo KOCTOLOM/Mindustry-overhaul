@@ -1,7 +1,7 @@
 research: nova
 targetAir: false
 stepShake: 0.6
-fogRadius: 18
+fogRadius: 9
 
 itemCapacity: 48
 buildSpeed: 0.24

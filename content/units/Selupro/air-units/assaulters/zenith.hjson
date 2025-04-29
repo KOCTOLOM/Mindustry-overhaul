@@ -1,7 +1,7 @@
 research: horizon
 alwaysShootWhenMoving: true
 circleTarget: true
-fogRadius: 32
+fogRadius: 18
 
 itemCapacity: 96
 rotateSpeed: 3

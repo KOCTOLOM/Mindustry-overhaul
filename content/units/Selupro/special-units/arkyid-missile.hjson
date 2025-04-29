@@ -20,7 +20,7 @@ envEnabled: -1
 missileAccelTime: 25
 lifetime: 125
 rotateSpeed: 3
-fogRadius: 9
+fogRadius: 2
 maxRange: 30
 health: 410
 speed: 4.5
