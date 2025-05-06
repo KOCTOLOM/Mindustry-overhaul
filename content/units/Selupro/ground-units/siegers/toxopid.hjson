@@ -10,10 +10,10 @@ itemCapacity: 900
 health: 65000
 armor: 240
 
-lightColor: 665c9f
-lightOpacity: 0.7
+lightColor: 7A3FD2
+lightOpacity: 0.2
 healColor: bf92f9
-lightRadius: 230
+lightRadius: 250
 
 immunities: [ spore-slowed, freezing, blasted, shocked, sapped, melting, spore-slowed, electrified, burning, blasted, melting, shocked, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-damage-reduction-tier-3,mov-armor-piercing-tier-1,mov-emp-tier-1, mov-high-emp, tarred ]
 
@@ -100,7 +100,7 @@ bullet: {
     hitColor: bf92f9
     color: bf92f9
 
-    lightColor: bf92f9
+    lightColor: 661DD2
     lightOpacity: 0.7
     lightRadius: 17
 shootEffect: {
@@ -217,7 +217,6 @@ bullet: {
     lightningDamage: 160
     lightningLength: 20
     statusDuration: 1220
-    ammoMultiplier: 4
     splashDamage: 820
     lightOpacity: 0.6
     fragLifeMin: 0.3
@@ -375,8 +374,8 @@ bullet: {
 
     lightningColor: bf92f9
     lightColor: 665c9f
-    lightOpacity: 0.7
-    lightRadius: 160
+    lightOpacity: 0.3
+    lightRadius: 80
 
     frontColor: ffffff
     backColor: 6d56bf
@@ -434,7 +433,9 @@ fragBullet: {
     lightningDamage: 64
     statusDuration: 540
     lightningLength: 6
-    lightOpacity: 0.5
+    lightColor: 661DD2
+    lightRadius: 30
+    lightOpacity: 0.3
     splashDamage: 240
     lightRadius: 30
     knockback: 0.8
@@ -602,7 +603,7 @@ bullet: {
     despawnEffect: blastExplosion
     hitEffect: blastExplosion
     hitSound : plasma-shot-3
-    lightColor: bf92f9
+    lightColor: 661DD2
     lightOpacity: 0.7
     lightRadius: 31
 
@@ -614,6 +615,9 @@ bullet: {
     backColor: bf92f9
     fragBullets: 3
     fragRandomSpread:10
+    lightColor: 661DD2
+    lightOpacity: 0.4
+    lightRadius: 14
     fragBullet: {
     type: ShrapnelBulletType
     length: 60
@@ -630,7 +634,9 @@ bullet: {
     pierceArmor:true
     shootEffect: none 
     smokeEffect: none
-
+    lightColor: 661DD2
+    lightOpacity: 0.4
+    lightRadius: 14
     fromColor: bf92f9
     toColor: 6d56bf
 }
@@ -701,6 +707,10 @@ bullet: {
     speed: 3.25
     drag: 0.003
 
+    lightColor: 661DD2
+    lightOpacity: 0.4
+    lightRadius: 14
+
     suppressionEffectChance: 1
     suppressionDuration: 200
     suppressionRange: 70
@@ -708,7 +718,7 @@ bullet: {
     despawnEffect: blastExplosion
     hitEffect: blastExplosion
     hitSound : plasma-shot-3
-    lightColor: bf92f9
+    lightColor: 661DD2
     lightOpacity: 0.7
     lightRadius: 31
 
@@ -737,6 +747,10 @@ bullet: {
     pierceArmor:true
     shootEffect: none 
     smokeEffect: none
+
+    lightColor: 661DD2
+    lightOpacity: 0.4
+    lightRadius: 14
 
     fromColor: bf92f9
     toColor: 6d56bf
@@ -949,7 +963,7 @@ fragBullet: {
 
     hitEffect: none
 
-    lightColor: bf92f9
+    lightColor: 661DD2
     lightOpacity: 0.7
     lightRadius: 31
 
@@ -1030,7 +1044,7 @@ fragBullet: {
 
     hitEffect: none
 
-    lightColor: bf92f9
+    lightColor: 661DD2
     lightOpacity: 0.7
     lightRadius: 31
     

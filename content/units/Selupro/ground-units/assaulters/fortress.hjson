@@ -11,7 +11,7 @@ health: 2450
 speed: 0.434
 armor: 32
 
-lightColor: fff8e8
+lightColor: FF5218
 lightOpacity: 0.7
 lightRadius: 81.5
 healColor: b0bac0

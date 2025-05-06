@@ -17,6 +17,10 @@ flying: true
 envDisabled: 0
 envEnabled: -1
 
+lightColor: bf92f9
+lightOpacity: 0.1
+lightRadius: 27.5
+
 missileAccelTime: 25
 lifetime: 125
 rotateSpeed: 3

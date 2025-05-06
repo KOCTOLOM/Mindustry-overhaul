@@ -8,8 +8,8 @@ health: 210
 speed: 0.6
 armor: 9
 
-lightColor: fff8e8
-lightOpacity: 0.7
+lightColor: FF5218
+lightOpacity: 0.5
 healColor: b0bac0
 lightRadius: 55
 

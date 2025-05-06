@@ -8,10 +8,10 @@ speed: 2.25
 health: 90
 
 lightColor: 98ffa9
-lightOpacity: 0.7
-lightRadius: 52.5
+lightOpacity: 0.3
+lightRadius: 18.5
 
-trailLength: 5.45
+trailLength: 6.75
 
 immunities: [ tarred, wet, spore-slowed]
 

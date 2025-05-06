@@ -7,8 +7,8 @@ fogRadius: 35
 health: 620
 armor: 8
 
-lightColor: fff8e8
-lightOpacity: 0.7
+lightColor: FFA218
+lightOpacity: 0.4
 lightRadius: 62.5
 healColor: b0bac0
 

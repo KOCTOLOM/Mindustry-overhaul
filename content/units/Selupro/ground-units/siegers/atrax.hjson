@@ -9,8 +9,8 @@ speed: 0.53335
 health: 960
 armor: 8
 
-lightColor: 665c9f
-lightOpacity: 0.7
+lightColor: 7A3FD2
+lightOpacity: 0.3
 healColor: bf92f9
 lightRadius: 90
 
@@ -76,8 +76,7 @@ bullet: {
     collideTerrain: true
     collidesAir: false
     scaleLife: true
-
-    buildingDamageMultiplier: 2
+    buildingDamageMultiplier: 1.7
 
     statusDuration: 450
     status: melting
@@ -90,8 +89,8 @@ bullet: {
     shootEffect: shootSmall
 
     lightColor: ffa166
-    lightOpacity: 0.7
-    lightRadius: 32
+    lightOpacity: 0.8
+    lightRadius: 17
 }
     }
 
@@ -148,8 +147,8 @@ bullet: {
     despawnEffect: none
 
     lightColor: bf92f9
-    lightOpacity: 0.7
-    lightRadius: 23.5
+    lightOpacity: 0.4
+    lightRadius: 15
 
     trailEffect: artilleryTrail
     trailInterval: 12.5

@@ -9,8 +9,8 @@ health: 24000
 speed: 0.6
 armor: 75
 
-lightColor: 665c9f
-lightOpacity: 0.7
+lightColor: 7A3FD2
+lightOpacity: 0.5
 healColor: bf92f9
 lightRadius: 150
 
@@ -166,8 +166,8 @@ bullet: {
     hitEffect: hitBulletColor
 
     lightColor: bf92f9
-    lightOpacity: 0.7
-    lightRadius: 21
+    lightOpacity: 0.5
+    lightRadius: 12
 
     trailColor: 6d56bf
     trailLength: 6

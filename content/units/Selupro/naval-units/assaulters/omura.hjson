@@ -6,6 +6,10 @@ health: 145000
 speed: 0.2
 armor: 35
 fogRadius: 65
+
+lightColor: FFA218
+lightOpacity: 0.7
+lightRadius: 325
 deathExplosionEffect: [
     {
         type: ExplosionEffect

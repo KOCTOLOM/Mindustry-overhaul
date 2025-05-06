@@ -10,7 +10,7 @@ health: 76000
 speed: 0.21
 armor: 196
 
-lightColor: fff8e8
+lightColor: FF5218
 lightOpacity: 0.7
 healColor: b0bac0
 lightRadius: 170
@@ -367,7 +367,7 @@ bullet: {
 	]
 	shootEffect: shootBig
 
-    lightColor: fff8e8
+    lightColor:FC2F00
     lightOpacity: 0.7
     lightRadius: 52
 
@@ -384,8 +384,8 @@ bullet: {
         despawnShake: 1
         pierce: true
         hitShake: 1
-        height: 5
-        width: 1
+        height: 6
+        width: 3
         shrinkX:0
         shrinkY:0
         buildingDamageMultiplier: 0.1
@@ -403,13 +403,13 @@ bullet: {
 
         despawnEffect: none
 
-        lightColor: fff8e8
-        lightOpacity: 0.7
-        lightRadius: 21
+        lightColor:FC2F00
+        lightOpacity: 0.6
+        lightRadius: 8
 
         trailColor: F3E979F0
-        trailLength: 6
-        trailWidth: 1
+        trailLength: 4
+        trailWidth: 0.4
     }
 
 fragBullet: {
@@ -611,7 +611,7 @@ fragBullet: {
     colorTo: ffd2ae00
 	}
 	]
-    lightColor: fff8e8
+    lightColor:FC2F00
     lightOpacity: 0.7
     lightRadius: 21
 
@@ -691,7 +691,7 @@ bullet: {
     shootEffect: shootBig
     hitEffect: none
 
-    lightColor: fff8e8
+    lightColor:FC2F00
     lightOpacity: 0.7
     lightRadius: 52
 
@@ -1745,9 +1745,9 @@ fragBullet: {
 
     hitEffect: flakExplosion
 
-    lightColor: fff8e8
-    lightOpacity: 0.7
-    lightRadius: 21
+    lightColor:FC2F00
+    lightOpacity: 0.8
+    lightRadius: 16
 
     trailColor: F3E979F0
     trailLength: 6
@@ -1785,9 +1785,9 @@ intervalBullet: {
 
     hitEffect: flakExplosion
 
-    lightColor: fff8e8
-    lightOpacity: 0.7
-    lightRadius: 21
+    lightColor:FC2F00
+    lightOpacity: 0.3
+    lightRadius: 14
 
     trailColor: F3E979F0
     trailLength: 16

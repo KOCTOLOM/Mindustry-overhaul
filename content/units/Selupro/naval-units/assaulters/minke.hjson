@@ -7,8 +7,8 @@ rotateSpeed: 1.8
 health: 1150
 armor: 18
 
-lightColor: fff8e8
-lightOpacity: 0.7
+lightColor: FFA218
+lightOpacity: 0.5
 lightRadius: 75
 
 deathExplosionEffect: [

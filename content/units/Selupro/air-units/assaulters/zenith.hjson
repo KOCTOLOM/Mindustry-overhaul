@@ -11,7 +11,7 @@ drag: 0.06
 speed: 2.4
 armor: 24
 
-lightColor: fff8e8
+lightColor: FFE818
 lightOpacity: 0.7
 lightRadius: 72.5
 healColor: b0bac0

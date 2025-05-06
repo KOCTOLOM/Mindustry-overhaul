@@ -11,8 +11,8 @@ speed: 3.25
 armor: 2
 
 lightColor: 98ffa9
-lightOpacity: 0.7
-lightRadius: 62.5
+lightOpacity: 0.6
+lightRadius: 35
 
 trailLength: 6.25
 
