@@ -7,7 +7,7 @@ size: 1
 
 buildVisibility:fogOnly
 health: 250
-fogRadius: 22
+fogRadius: 29
 armor: 5
 
 consumes: {

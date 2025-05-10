@@ -1,0 +1,21 @@
+type: Radar
+name: "Armored-radar"
+description: "instrument for exploring territory"
+research: serp-radar
+category: effect
+size: 2
+
+buildVisibility:fogOnly
+health: 1800
+fogRadius: 92
+armor: 20
+
+consumes: {
+    power: 6
+}
+researchCostMultiplier:3
+requirements: [
+    copper/300
+    lead/450
+    titanium/150
+]

@@ -1,7 +1,7 @@
 research: 01t-01-fragment
 retargetTime: 0.1
 rotateSpeed: 18
-fogRadius: 34.5
+fogRadiusMultiplier: 0.7
 shootCone: 18
 
 coolantMultiplier: 5

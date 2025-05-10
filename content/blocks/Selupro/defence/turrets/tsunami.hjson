@@ -2,7 +2,7 @@ research: wave
 inaccuracy: 5
 shootCone: 45
 recoil: 1
-
+fogRadiusMultiplier: 0.6
 liquidCapacity: 320
 velocityRnd: 0.1
 ammoPerShot: 2

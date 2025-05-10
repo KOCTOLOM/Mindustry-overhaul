@@ -17,7 +17,7 @@ health: 9600
 reload: 900
 range: 600
 armor: 24
-
+fogRadiusMultiplier: 0.8
 loopSoundVolume: 3
 shootSound: none
 liquidCapacity: 1200

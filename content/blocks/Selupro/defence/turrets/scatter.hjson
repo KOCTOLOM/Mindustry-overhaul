@@ -1,10 +1,9 @@
 research: duo
 targetGround: false
 rotateSpeed: 12.5
-fogRadius: 34.5
 shootCone: 32
 recoil: 1
-
+fogRadiusMultiplier: 0.3
 buildCostMultiplier: 2.1
 ammoPerShot: 3
 velocityRnd:0.05
@@ -96,23 +95,23 @@ lead: {
     scaleLife: true
     height: 8
     width: 6
-    inaccuracy: 11
+    inaccuracy: 12
     reloadMultiplier: 1
     ammoMultiplier: 6
 
     splashDamageRadius: 30
     splashDamage: 16
     pierceCap: 2
-    lifetime: 81
+    lifetime: 40.5
     damage: 19
-    speed: 3.75
+    speed: 7.5
 
     hitEffect: flakExplosion
     shootEffect: shootSmall
 
     lightColor: ab99d3
     lightOpacity: 0.7
-    lightRadius: 24.5
+    lightRadius: 12.5
 
     trailColor: 8c7fa9
     trailLength: 12.5

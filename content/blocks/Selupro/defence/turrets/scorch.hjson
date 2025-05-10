@@ -1,6 +1,6 @@
 research: duo
 targetAir: false
-fogRadius: 10.5
+fogRadiusMultiplier: 0.9
 shootCone: 50
 shootY: 3
 recoil: 0

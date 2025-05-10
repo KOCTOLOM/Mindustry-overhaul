@@ -15,7 +15,7 @@ range: 576
 armor: 9
 researchCostMultiplier:0.6
 coolantMultiplier: 1.7
-
+fogRadiusMultiplier: 0.5
 shootSound: cannon-large-shot
 ammoUseEffect: casing3Double
 ammoEjectBack: 5

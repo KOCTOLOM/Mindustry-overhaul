@@ -1,7 +1,7 @@
 research: duo
 rotateSpeed: 0.84
 targetAir: false
-fogRadius: 32.5
+fogRadiusMultiplier: 0.5
 shootCone: 10
 recoil: 2
 shake: 5
@@ -18,8 +18,8 @@ researchCostMultiplier:0.6
 shootSound: bang
 
 requirements: [
-    copper/28
-    graphite/12
+    copper/32
+    graphite/20
 ]
 
 ammoTypes: {
@@ -37,8 +37,8 @@ graphite: {
 	
 	rangeChange: 72
 	
-    splashDamageRadius: 40
-    splashDamage: 52.5
+    splashDamageRadius: 20
+    splashDamage: 35
     pierceCap: 8
     lifetime: 40
     speed: 4

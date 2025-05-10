@@ -1,12 +1,11 @@
 research: salvo
 rotateSpeed: 1.75
-fogRadius: 47.5
 recoilTime: 10
 shootCone: 30
 recoil: 1.5
 recoils: 3
 shootY: 10
-
+fogRadiusMultiplier: 0.6
 buildCostMultiplier: 2.60589
 coolantMultiplier: 2.4
 researchCostMultiplier:0.6

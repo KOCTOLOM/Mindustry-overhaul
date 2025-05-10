@@ -16,3 +16,4 @@ require("reconstructors/tetrativeReconstructor");
 require("launchPadDisabling");
 require("plastaniumWalls");
 require("remorse");
+require("shaders_display");

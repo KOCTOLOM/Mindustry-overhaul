@@ -6,7 +6,7 @@ shake: 4
 
 buildCostMultiplier: 2.28
 coolantMultiplier: 1.8
-
+fogRadiusMultiplier: 0.9
 health: 1750
 maxAmmo: 64
 reload: 48

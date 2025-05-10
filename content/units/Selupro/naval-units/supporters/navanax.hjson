@@ -75,7 +75,9 @@ bullet: {
 	}
 	]
 	colors:[98ffa910,98ffa930,98ffa9150,98ffa970,98ffa9]
-	
+    lightColor: 98ffa9
+    lightOpacity: 1
+    lightRadius: 10
 	pierceArmor:true
 	
     statusDuration: 220
@@ -132,8 +134,8 @@ chargeEffect: {
         despawnShake: 1
         pierce: true
         hitShake: 1
-        height: 5
-        width: 1
+        height: 6
+        width: 2.5
         shrinkX:0
         shrinkY:0
         buildingDamageMultiplier: 0.1
@@ -147,7 +149,7 @@ chargeEffect: {
         frontColor: ffffff
         backColor: 98ffa9
         trailColor:98ffa9
-        trailWidth:1
+        trailWidth:0.4
         trailLength:12
         incendSpread: 1
         incendAmount: 3
@@ -155,9 +157,9 @@ chargeEffect: {
 
         despawnEffect: none
 
-        lightColor: 84f491
+        lightColor: 98ffa9
         lightOpacity: 0.7
-        lightRadius: 21
+        lightRadius: 10
 
         trailColor: 84f49140
         trailLength: 6
@@ -202,7 +204,9 @@ bullet: {
     cone:20
 	interp:circleOut
     length:120
-
+    lightColor: 98ffa9
+    lightOpacity: 1
+    lightRadius: 10
     strokeFrom: 1.4
     strokeTo: 0
     colorFrom: 98ffa9150
@@ -280,8 +284,8 @@ chargeEffect: {
         despawnShake: 1
         pierce: true
         hitShake: 1
-        height: 5
-        width: 1
+        height: 6
+        width: 2.5
         shrinkX:0
         shrinkY:0
         buildingDamageMultiplier: 0.1
@@ -295,7 +299,7 @@ chargeEffect: {
         frontColor: ffffff
         backColor: 98ffa9
         trailColor:98ffa9
-        trailWidth:1
+        trailWidth:0.5
         trailLength:12
         incendSpread: 1
         incendAmount: 3
@@ -308,8 +312,6 @@ chargeEffect: {
         lightRadius: 21
 
         trailColor: 84f49140
-        trailLength: 6
-        trailWidth: 1
     }
 
 }
@@ -370,9 +372,9 @@ bullet: {
     hitSound: plasma-bomb-hit
     splashDamageRadius: 80
     splashDamage: 550
-    lightOpacity: 0.6
-
-    lightRadius: 40
+    lightColor: 98ffa9
+    lightOpacity: 1.2
+    lightRadius: 22
     knockback: 0.8
     lifetime: 360
     damage: 1820
@@ -463,13 +465,13 @@ shootEffect: [
     hitShake: 3
     height: 0
     width: 0
-
     buildingDamageMultiplier: 1.5
 
     splashDamageRadius: 45
-    lightOpacity: 0.5
     splashDamage: 80
-    lightRadius: 30
+    lightColor: 98ffa9
+    lightOpacity: 0.5
+    lightRadius: 10
     lifetime: 20
     damage: 50
     speed: 0
@@ -531,13 +533,14 @@ fragBullet: {
     hitShake: 3
     height: 0
     width: 0
-
+    lightColor: 98ffa9
+    lightOpacity: 1
+    lightRadius: 15
     buildingDamageMultiplier: 1.5
 
     splashDamageRadius: 45
     lightOpacity: 0.5
     splashDamage: 200
-    lightRadius: 30
     lifetime: 90
     damage: 50
     speed: 0
@@ -627,6 +630,9 @@ bullet: {
 	shrinkX:0
 	shrinkY:0
 	damage:40
+    lightColor: 98ffa9
+    lightOpacity: 0.2
+    lightRadius: 10
 	pierceCap:50
 	pierceBuilding:true
 	absorbable:false
@@ -661,7 +667,9 @@ bullet: {
     hitShake: 3
     height: 14
     width: 8
-
+    lightColor: 98ffa9
+    lightOpacity: 1
+    lightRadius: 12
     buildingDamageMultiplier: 0.7
 	
     splashDamageRadius: 26

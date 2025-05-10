@@ -145,7 +145,97 @@ bullet: {
     lightningSpacing: 12.5
     lightningDamage: 350
     lightningDelay: 0.7
-
+    shootEffect:[
+    {
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 700
+        lightColor:98ffa9
+        lightOpacity:1
+        strokeFrom: 0
+        strokeTo: 50
+        colorFrom: 98ffa900
+        colorTo: 98ffa900
+        followParent: true
+        rotWithParent: true
+    }
+    {
+        startDelay:10
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 700
+        lightColor:98ffa9
+        lightOpacity:0.9
+        strokeFrom: 0
+        strokeTo: 50
+        colorFrom: 98ffa900
+        colorTo: 98ffa900
+        followParent: true
+        rotWithParent: true
+    }
+    {
+        startDelay:20
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 700
+        lightColor:98ffa9
+        lightOpacity:0.7
+        strokeFrom: 0
+        strokeTo: 50
+        colorFrom: 98ffa900
+        colorTo: 98ffa900
+        followParent: true
+        rotWithParent: true
+    }
+    {
+        startDelay:30
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 700
+        lightColor:98ffa9
+        lightOpacity:0.5
+        strokeFrom: 0
+        strokeTo: 50
+        colorFrom: 98ffa900
+        colorTo: 98ffa900
+        followParent: true
+        rotWithParent: true
+    }
+    {
+        startDelay:40
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 700
+        lightColor:98ffa9
+        lightOpacity:0.3
+        strokeFrom: 0
+        strokeTo: 50
+        colorFrom: 98ffa900
+        colorTo: 98ffa900
+        followParent: true
+        rotWithParent: true
+    }
+    {
+        startDelay:50
+        type: WaveEffect
+        lifetime: 60
+        sizeFrom: 0
+        sizeTo: 700
+        lightColor:98ffa9
+        lightOpacity:0.1
+        strokeFrom: 0
+        strokeTo: 50
+        colorFrom: 98ffa900
+        colorTo: 98ffa900
+        followParent: true
+        rotWithParent: true
+    }
+    ]
     colors: [ 98ffa9, ffffff ]
     lightningColor: 98ffa9
     lightColor: 98ffa9

@@ -6,7 +6,7 @@ shake: 7.5
 recoil: 6
 
 buildCostMultiplier: 1.32
-
+fogRadiusMultiplier: 0.7
 ammoPerShot: 32
 inaccuracy: 3
 maxAmmo: 384

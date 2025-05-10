@@ -4,7 +4,7 @@ description: "Smaller, cheaper and more compact version of Â«[#feb380]Segment[]Â
 research: parallax
 rotateSpeed: 4
 category: turret
-fogRadius: 47.5
+fogRadius: 3
 hasPower: true
 size: 1
 

@@ -4,7 +4,7 @@ fogRadius: 21.5
 rotateSpeed: 4
 shootCone: 45
 recoil: 1
-
+fogRadiusMultiplier: 0.2
 buildCostMultiplier: 0.75
 coolantMultiplier: 3.2
 researchCostMultiplier:0.6
