@@ -55,7 +55,7 @@ bullet: {
 
     lifetime: 49
     damage: 13
-    speed: 4
+    speed: 3.6
     
     incendAmount: 1
     incendSpread: 2

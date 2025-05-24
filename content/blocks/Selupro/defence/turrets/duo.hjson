@@ -2,7 +2,7 @@ rotateSpeed: 10
 fogRadiusMultiplier: 0.2
 shootCone: 15
 recoil: 0.5
-range: 192
+range: 184
 shootY: 3
 
 inaccuracy: 2
@@ -27,9 +27,9 @@ copper: {
     ammoMultiplier: 6
 
     pierceCap: 2
-    lifetime: 48
+    lifetime: 42
     damage: 18
-    speed: 3.2
+    speed: 4.38
 
     lightColor: fff8e8
     lightOpacity: 0.7
@@ -74,7 +74,7 @@ graphite: {
     pierceCap: 2
     lifetime: 64
     damage: 25
-    speed: 2.75
+    speed: 2.875
 
     lightColor: 95abd9
     lightOpacity: 0.7
@@ -121,10 +121,10 @@ silicon: {
     ammoMultiplier: 9
 
     homingPower: 0.05
-    lifetime: 42.5
+    lifetime: 45
     pierceCap: 3
     damage: 19
-    speed: 4.75
+    speed: 4.4
 
     lightColor: 8e9097
     lightOpacity: 0.7
@@ -177,9 +177,9 @@ scrap: {
     fragLifeMin: 0.8
     fragBullets: 3
     fragSpread: 45
-    lifetime: 48
+    lifetime: 30.6
     damage: 7
-    speed: 5
+    speed: 6
 	
 	pierceArmor:true
 	
@@ -278,7 +278,7 @@ pyratite: {
     splashDamage: 5
     status: burning
     pierceCap: 2
-    lifetime: 56
+    lifetime: 49
     damage: 14.5
     speed: 4
 

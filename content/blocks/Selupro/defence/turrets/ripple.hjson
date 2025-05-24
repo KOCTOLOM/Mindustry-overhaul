@@ -47,7 +47,7 @@ graphite: {
     ammoMultiplier: 3
 	
 	buildingDamageMultiplier: 0.2
-    splashDamageRadius: 40
+    splashDamageRadius: 32
     splashDamage: 72.5
     knockback: 1.8
     pierceCap: 32

@@ -38,7 +38,7 @@ coal: {
     pierceCap: 4
     lifetime: 16
     speed: 2.75
-    damage: 36
+    damage: 35
 
     shootEffect: shootSmallFlame
     hitEffect: hitFlameSmall

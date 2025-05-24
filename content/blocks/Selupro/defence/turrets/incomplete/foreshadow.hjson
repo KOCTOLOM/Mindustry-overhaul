@@ -10,7 +10,7 @@ maxAmmo: 96
 reload: 480
 range: 820
 armor: 32
-fogRadiusMultiplier: 0.8
+fogRadiusMultiplier: 0.7
 researchCostMultiplier:0.9
 consumes: {
     power: 120

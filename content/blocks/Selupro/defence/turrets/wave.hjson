@@ -1,11 +1,12 @@
 research: duo
 shootCone: 50
 recoil: 0.8
-fogRadiusMultiplier: 0.5
+fogRadiusMultiplier: 0.4
 liquidCapacity: 75
 inaccuracy: 5
-health: 320
-range: 200
+velocityRnd:0.4
+health: 520
+range: 240
 reload: 4
 researchCostMultiplier:0.5
 shootEffect: shootLiquid
@@ -43,7 +44,7 @@ slag: {
     statusDuration: 480
     knockback: 0.32
     status: melting
-    lifetime: 50
+    lifetime: 69
     damage: 6.5
 	pierceArmor:true
     speed: 3.5
@@ -65,8 +66,8 @@ cryofluid: {
     statusDuration: 540
     status: freezing
     knockback: 1.2
-    lifetime: 51.5
-    pierceCap: 25
+    lifetime: 46
+    pierceCap: 3
     speed: 5.25
     damage: 5
 

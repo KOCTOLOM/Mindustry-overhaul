@@ -2,17 +2,17 @@ research: wave
 inaccuracy: 5
 shootCone: 45
 recoil: 1
-fogRadiusMultiplier: 0.6
+fogRadiusMultiplier: 0.4
 liquidCapacity: 320
-velocityRnd: 0.1
+velocityRnd: 0.2
 ammoPerShot: 2
-health: 1500
-range: 260
+health: 1700
+range: 290
 reload: 3
 armor: 15
 researchCostMultiplier:0.6
 consumes: {
-    power: 12.08334
+    power: 7
 }
 
 shootEffect: shootLiquid
@@ -29,14 +29,14 @@ water: {
     liquid: water
     scaleLife: true
     orbSize: 4.5
-    drag: 0.01
+    drag: 0.002
     layer: 98
 
     reloadMultiplier: 1.25
 
     statusDuration: 900
     knockback: 1
-    lifetime: 75
+    lifetime: 58
     status: wet
     damage: 5
     speed: 5
@@ -50,15 +50,15 @@ slag: {
     liquid: slag
     scaleLife: true
     orbSize: 4.1
-    drag: 0.01
+    drag: 0.002
 
     reloadMultiplier: 0.5
 
     statusDuration: 1080
     status: melting
     knockback: 0.5
-    pierceCap: 50
-    lifetime: 70
+    pierceCap: 3
+    lifetime: 78
     damage: 32.5
     speed: 3.75
 
@@ -72,7 +72,7 @@ cryofluid: {
     liquid: cryofluid
     scaleLife: true
     orbSize: 3.75
-    drag: 0.01
+    drag: 0.002
 
     reloadMultiplier: 1.5
 
@@ -80,7 +80,7 @@ cryofluid: {
     status: freezing
     knockback: 1.32
     pierceCap: 32
-    lifetime: 75
+    lifetime: 54
     damage: 12.5
     speed: 5.5
 
@@ -94,13 +94,13 @@ oil: {
     liquid: oil
     scaleLife: true
     orbSize: 4.5
-    drag: 0.01
+    drag: 0.002
     layer: 98
 
     statusDuration: 1920
     knockback: 0.75
     status: tarred
-    lifetime: 75
+    lifetime: 69
     damage: 3.2
     speed: 4.25
 

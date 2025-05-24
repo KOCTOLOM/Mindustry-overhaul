@@ -6,7 +6,7 @@ shootY: 4.5
 
 buildCostMultiplier: 2
 coolantMultiplier: 1
-fogRadiusMultiplier: 0.5
+fogRadiusMultiplier: 0.4
 ammoPerShot: 4
 inaccuracy: 12
 maxAmmo: 108

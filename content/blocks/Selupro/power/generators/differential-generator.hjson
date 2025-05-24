@@ -8,7 +8,7 @@ requirements: [
     metaglass/75
 ]
 
-powerProduction: 34
+powerProduction: 30
 liquidCapacity: 32
 itemDuration: 120
 itemCapacity: 75

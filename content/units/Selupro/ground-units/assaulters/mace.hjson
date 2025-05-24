@@ -7,7 +7,7 @@ itemCapacity: 32
 rotateSpeed: 3.5
 speed: 0.6
 armor: 15
-health: 940
+health: 630
 
 lightColor: FF5218
 lightOpacity: 0.7
@@ -19,7 +19,7 @@ immunities: [ burning, blasted ]
 abilities: [
     {
     type: ArmorPlateAbility
-    healthMultiplier: 0.75
+    healthMultiplier: 0.3
 }
     {
     type: RegenAbility

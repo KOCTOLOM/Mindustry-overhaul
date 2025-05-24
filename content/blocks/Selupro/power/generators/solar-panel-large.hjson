@@ -2,7 +2,7 @@ research: solar-panel-medium
 
 buildCostMultiplier: 4.63
 
-powerProduction: 6
+powerProduction: 6.5
 health: 360
 armor: 3
 

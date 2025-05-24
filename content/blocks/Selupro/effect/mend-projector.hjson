@@ -1,17 +1,17 @@
 research: mender
 
-buildCostMultiplier: 1.265
+buildCostMultiplier: 1.5
 phaseRangeBoost: -20
-phaseBoost: 8
-useTime: 450
+phaseBoost: 5.5
+useTime: 300
 
 itemCapacity: 36
-healPercent: 0.67
+healPercent: 0.92
 reload: 120
 health: 720
 range: 66
 armor: 4
 researchCostMultiplier:9
 consumes: {
-    power: 6
+    power: 5
 }

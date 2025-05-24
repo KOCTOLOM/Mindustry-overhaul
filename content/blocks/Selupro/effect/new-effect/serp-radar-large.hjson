@@ -7,15 +7,16 @@ size: 2
 
 buildVisibility:fogOnly
 health: 1800
-fogRadius: 92
+fogRadius: 82
 armor: 20
 
 consumes: {
-    power: 6
+    power: 10
 }
 researchCostMultiplier:3
 requirements: [
     copper/300
     lead/450
     titanium/150
+    plastanium/45
 ]

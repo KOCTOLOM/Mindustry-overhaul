@@ -11,7 +11,7 @@ requirements: [
     thorium/450
 ]
 
-powerProduction: 500
+powerProduction: 460
 explosionRadius: 49
 liquidCapacity: 240
 itemDuration: 60

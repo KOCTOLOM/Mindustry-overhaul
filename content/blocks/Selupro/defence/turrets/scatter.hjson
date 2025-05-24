@@ -35,7 +35,7 @@ scrap: {
     inaccuracy: 13
     reloadMultiplier: 0.4
     ammoMultiplier: 3
-	
+	knockback:0.2
     splashDamageRadius: 20
     splashDamage: 18
     fragBullets: 6
@@ -98,7 +98,7 @@ lead: {
     inaccuracy: 12
     reloadMultiplier: 1
     ammoMultiplier: 6
-
+    knockback:0.3
     splashDamageRadius: 30
     splashDamage: 16
     pierceCap: 2
@@ -128,7 +128,7 @@ silicon: {
     width: 6
 	
 	inaccuracy:20
-	
+	knockback:0.5
     reloadMultiplier: 1.25
     ammoMultiplier: 18
 	
@@ -164,7 +164,7 @@ metaglass: {
     scaleLife: true
     height: 12
     width: 4
-
+    knockback:0.8
     ammoMultiplier: 1
 	reloadMultiplier: 0.5
     splashDamageRadius: 12
