@@ -4,19 +4,19 @@ description: "Smaller, cheaper and more compact version of Â«[#feb380]Segment[]Â
 research: parallax
 rotateSpeed: 4
 category: turret
-fogRadius: 3
+fogRadiusMultiplier: 0.1
 hasPower: true
 size: 1
 
 shootLength: 4.5
-bulletDamage: 6
-reload: 18
+bulletDamage: 9
+reload: 9
 health: 210
 range: 150
 armor: 3
 
 consumes: {
-    power: 5.416669
+    power: 2.5
 }
 
 requirements: [

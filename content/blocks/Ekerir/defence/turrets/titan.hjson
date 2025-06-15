@@ -697,7 +697,7 @@ carbide:{
     hitSound: titanExplosion
 
     status: mov-slow-reloading-tier-2
-    statusDuration: 300
+    statusDuration: 500
     reloadMultiplier: 0.2
 
     trailLength: 140

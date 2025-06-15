@@ -1,7 +1,7 @@
 research: breach
 shootWarmupSpeed: 0.009
 parentizeEffects: true
-consumeAmmoOnce: false
+consumeAmmoOnce: true
 targetGround: false
 shootCone: 30
 shootY: 11
@@ -10,28 +10,28 @@ shake: 4
 
 coolantMultiplier: 2.5
 
-firingMoveFract: 0.18
-liquidCapacity: 5000
-velocityRnd: 0.24
+firingMoveFract: 0.2
+liquidCapacity: 50
+velocityRnd: 0.2
 rotateSpeed: 1.25
-inaccuracy: -10
+inaccuracy: 2
 ammoPerShot: 8
-maxAmmo: 9600
-health: 24000
-reload: 1500
-range: 340
+maxAmmo: 300
+health: 3500
+reload: 16
+range: 400
 armor: 15
 
 consumes: {
-    power: 300
-    liquid: nitrogen/0.1
+    power: 5
     }
 
 requirements: [
-    silicon/9600
-    graphite/6000
-    tungsten/7200
-    beryllium/8100
+    silicon/150
+    graphite/300
+    tungsten/230
+    thorium/120
+    beryllium/270
     ]
 
 chargeSound: heavy-minigun-charge
@@ -39,11 +39,10 @@ shootSound: hell-minigun-shot
 ammoUseEffect: casing4
 shoot: {
     type: ShootAlternate
-    firstShotDelay: 102
-    shotDelay: 1.5
+    shotDelay: 6
     spread: 4.7
     barrels: 4
-    shots: 240
+    shots: 4
     }
 
 smokeEffect: {
@@ -67,7 +66,6 @@ smokeEffect: {
     }
 
 ammoTypes: {
-//--------------------------------------ammo-1
 thorium: {
     type: BasicBulletType
     backSprite: large-bomb-back
@@ -75,148 +73,99 @@ thorium: {
     collidesGround: false
     collidesTiles: false
     shrinkY: 0.5
-    height: 18
-    width: 18
+
+    height: 20
+    width: 12
 
     pierceDamageFactor: 100
-    reloadMultiplier: 0.4
-    ammoMultiplier: 12
+    reloadMultiplier: 0.8
+    ammoMultiplier: 2
 
     status: mov-armor-piercing-tier-1
     splashDamageRadius: 26
-    statusDuration: 300
-    splashDamage: 90
+    statusDuration: 40
+    splashDamage: 40
     knockback: 0.5
-    lifetime: 23.5
-    damage: 180
+    lifetime: 24
+    damage: 90
+    pierceArmor:true
+    fragOnPierce:false
     speed: 14.5
 
-    fragRandomSpread: 5
-    fragSpread: 120
-    fragBullets: 3
+    fragRandomSpread: 0
 
     smokeEffect: shootSmokeDisperse
     despawnEffect: hitBulletColor
     shootEffect: shootBigColor
     hitEffect: hitBulletColor
 
-    trailEffect: disperseTrail
-    trailRotation: true
+    trailEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 60
+        particles: 1
+        cone: 1
+        length: 0
+        sizeFrom: 1
+        sizeTo: 1
+        interp: circleOut
+        colorFrom: ffffff
+        colorTo: ffffff00
+    }
+    ]
     rotationOffset: 90
     trailColor: f9a3c7
-    trailChance: 0.44
-    trailLength: 1.75
-    trailWidth: 1.75
-
+    trailChance: 1
+    trailWidth: 0.5
+    trailLength: 12
+    trailSinScl: 0.02
+    trailSinMag: 4
     frontColor: ffffff
     backColor: f9a3c7
     hitColor: f9a3c7
 
-despawnEffect: {
-    type: ExplosionEffect
-    lifetime: 32
-
-    waveColor: f9a3c7
-    waveStroke: 3.2
-    waveRad: 26
-
-    smokeColor: 696969
-    smokeSizeBase: 0
-    smokeSize: 12
-    smokes: 5
-
-    sparkColor: f9a3c7
-    sparkStroke: 1.25
-    sparkRad: 18
-    sparkLen: 3
-    sparks: 12
-    }
+despawnEffect: none
 
 hitEffect: {
-    type: ExplosionEffect
-    lifetime: 32
+   type: ExplosionEffect
+   lifetime: 32
 
-    waveColor: f9a3c7
-    waveStroke: 3.2
-    waveRad: 26
+   waveColor: f9a3c7
+   waveStroke: 2
+   waveRad: 12
 
-    smokeColor: 696969
-    smokeSizeBase: 0
-    smokeSize: 12
-    smokes: 5
+   smokeColor: f9a3c720
+   smokeSizeBase: 0
+   smokeSize: 1
+   smokes: 1
 
-    sparkColor: f9a3c7
-    sparkStroke: 1.25
-    sparkRad: 18
-    sparkLen: 3
-    sparks: 12
-    }
-
+   sparkColor: f9a3c770
+   sparkStroke: 1.25
+   sparkRad: 18
+   sparkLen: 2
+   sparks: 4
+   }
+fragBullets:1
 fragBullet: {
     type: ShrapnelBulletType
-    serrationSpaceOffset: 20
+    serrationSpaceOffset: 10
     collidesGround: false
-    serrationSpacing: 4
+    serrationSpacing: 1
     serrationLenScl: 3
-    serrationWidth: 2
-    serrations: 1.5
-    length: 5
+    serrationWidth: 1
+    serrations: 1
+    length: 10
     width: 3
 
     knockback: 0.25
-    lifetime: 60
+    lifetime: 10
     damage: 40
 
-    fromColor: ffffff
-    toColor: f9a3c7
+    fromColor: f9a3c7
+    toColor: f9a3c720
 }
     }
 
-//--------------------------------------ammo-2
-surge-alloy: {
-    type: BasicBulletType
-    backSprite: large-bomb-back
-    sprite: mine-bullet
-    collidesGround: false
-    collidesTiles: false
-    shrinkY: 0.5
-    height: 12
-    width: 12
-
-    pierceDamageFactor: 0.0005
-    reloadMultiplier: 1.8
-    ammoMultiplier: 8
-    rangeChange: 428
-
-    homingPower: 0.03
-    pierceCap: 18
-    lifetime: 48
-    damage: 69
-    speed: 16
-
-    lightningDamage: 20
-    lightningLength: 5
-    lightning: 4
-
-    smokeEffect: shootSmokeDisperse
-    despawnEffect: hitBulletColor
-    shootEffect: shootBigColor
-    hitEffect: hitBulletColor
-
-    trailEffect: disperseTrail
-    trailRotation: true
-    rotationOffset: 90
-    trailColor: fcf387
-    trailChance: 0.44
-    trailLength: 1
-    trailWidth: 1
-
-    frontColor: ffffff
-    backColor: fcf387
-    hitColor: fcf387
-    }
-
-//--------------------------------------ammo-3
 tungsten: {
     type: BasicBulletType
     backSprite: large-bomb-back
@@ -228,7 +177,7 @@ tungsten: {
     width: 16
 
     pierceDamageFactor: 0.005
-    ammoMultiplier: 18
+    ammoMultiplier: 1
     rangeChange: 240
 
     knockback: 0.2
@@ -255,7 +204,6 @@ tungsten: {
     hitColor: a0b0c8
     }
 
-//--------------------------------------ammo-4
 carbide: {
     type: BasicBulletType
     backSprite: large-bomb-back
@@ -264,37 +212,526 @@ carbide: {
     collidesTiles: false
     pierceArmor: true
     shrinkY: 0.5
-    height: 20
-    width: 20
+    height: 22
+    width: 15
 
-    pierceDamageFactor: 0.025
-    reloadMultiplier: 0.55
-    ammoMultiplier: 4
-    rangeChange: 212
+    reloadMultiplier: 0.5
+    ammoMultiplier: 2
+    rangeChange: 100
 
     status: mov-armor-piercing-tier-2
     statusDuration: 180
     knockback: 0.3
     pierceCap: 15
-    lifetime: 40
+    lifetime: 20
     damage: 150
-    speed: 14
+    speed: 28
+
+    smokeEffect: shootSmokeDisperse
+
+    trailColor: ab8ec5
+    trailChance: 0.44
+    trailLength: 15
+    trailWidth: 1.2
+
+    frontColor: ffffff
+    backColor: ab8ec5
+    drag:0.02
+    trailColor: ab8ec5
+    despawnEffect:[
+    {
+        type: ParticleEffect
+        particles:6
+        length: 20
+        lifetime: 50
+        sizeFrom: 1
+        sizeTo: 2
+        cone: 50
+        interp: circleOut
+        sizeInterp:circleOut
+        colorFrom: ab8ec540
+        colorTo: ab8ec500
+        layer:100.2
+    }
+    {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 10
+        strokeFrom:1
+        strokeTo:4
+        lifetime: 30
+        rotation:50
+        colorFrom: ab8ec5
+        colorTo: ab8ec500
+    }
+    ]
+    hitEffect:[
+    {
+            type: ParticleEffect
+            particles: 14
+            length: 30
+            lifetime: 40
+            sizeFrom: 1
+            sizeTo: 2
+            cone: 9
+            interp: circleOut
+            sizeInterp:circleOut
+            colorFrom: ab8ec570
+            colorTo: ab8ec500
+            layer:100.3
+        }
+    {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 10
+            sizeFrom: 2
+            sizeTo: 0
+            colorFrom: ab8ec5
+            colorTo: ab8ec5
+            layer:100.3
+        }
+    {
+            type: ParticleEffect
+            particles: 6
+            length: 67
+            line:true
+            lifetime: 24
+            lenFrom: 1
+            lenTo: 4
+            strokeFrom:1.2
+            strokeTo:0.5
+            cone: 3
+            interp: circleOut
+            sizeInterp:circleOut
+            colorFrom: ab8ec580
+            colorTo: ab8ec500
+            layer:100.3
+        }
+    ]
+    fragBullets: 3
+    fragVelocityMin:0.9
+    fragVelocityMax:4
+    fragLifeMin:0.2
+    fragLifeMax:1.2
+    fragRandomSpread: 12
+    fragSpread:3
+    fragBullet:{
+        type: BasicBulletType
+        collideTiles:true
+        pierce: true
+        height: 12
+        width: 5
+        shrinkX:0
+        shrinkY:0
+        buildingDamageMultiplier:1.8
+        pierceCap: 2
+        lifetime: 18
+        damage: 17
+        pierceArmor:true
+        speed: 3
+        status: mov-motor-deceleration-tier-2
+        statusDuration:90
+        hitEffect: hitBulletColor
+        trailColor: ab8ec5
+        trailLength: 3
+        trailWidth: 1.1
+
+        frontColor: ffffff
+        backColor: ab8ec5
+        despawnEffect:[{
+                type: ParticleEffect
+                particles:3
+                length: 20
+                lifetime: 50
+                sizeFrom: 1
+                sizeTo: 2
+                cone: 50
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ab8ec550
+                colorTo: ab8ec500
+                layer:100.2
+            }
+            {
+                type: ParticleEffect
+                particles: 1
+                length: 0
+                lifetime: 10
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: ab8ec5
+                colorTo: ab8ec5
+                layer:100.3
+            }
+            ]
+        hitEffect:[
+        {
+                type: ParticleEffect
+                particles: 2
+                length: 30
+                lifetime: 40
+                sizeFrom: 1
+                sizeTo: 2
+                cone: 9
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ab8ec5
+                colorTo: ab8ec500
+                layer:100.3
+            }
+        {
+                type: ParticleEffect
+                particles: 3
+                length: 67
+                line:true
+                lifetime: 24
+                lenFrom: 1
+                lenTo: 2
+                strokeFrom:1.2
+                strokeTo:0.5
+                cone: 3
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ab8ec5
+                colorTo: ab8ec500
+                layer:100.3
+            }
+        ]
+}
+spawnBullets:[
+{
+    lifetime:10
+    collides:false
+    width:0
+    despawnEffect:none
+    hitEffect:none
+    fragBullets:1
+    lifeScaleRandMin:1
+    lifeScaleRandMax:1.2
+    fragRandomSpread:0
+    fragBullet:
+    {
+        type: BasicBulletType
+        backSprite: large-bomb-back
+        sprite: mine-bullet
+        collidesGround: false
+        collidesTiles: false
+        pierceArmor: true
+        shrinkY: 0.5
+        height: 22
+        width: 15
+        lifeScaleRandMin:0.4
+        lifeScaleRandMax:1
+        randomAngleOffset:10
+        status: mov-armor-piercing-tier-2
+        statusDuration: 180
+        knockback: 0.3
+        pierceCap: 15
+        lifetime: 20
+        damage: 90
+        speed: 24
+
+        smokeEffect: shootSmokeDisperse
+        despawnEffect: hitBulletColor
+        shootEffect: shootBigColor
+        hitEffect: hitBulletColor
+
+        trailColor: ab8ec5
+        trailChance: 0.44
+        trailLength: 15
+        trailWidth: 1.2
+
+        frontColor: ffffff
+        backColor: ab8ec5
+        hitColor: ab8ec5
+        drag:0.07
+        trailColor: ab8ec5
+        despawnEffect:[
+        {
+            type: ParticleEffect
+            particles:6
+            length: 20
+            lifetime: 50
+            sizeFrom: 1
+            sizeTo: 2
+            cone: 50
+            interp: circleOut
+            sizeInterp:circleOut
+            colorFrom: ab8ec540
+            colorTo: ab8ec500
+            layer:100.2
+        }
+        {
+            type: WaveEffect
+            sizeFrom: 0
+            sizeTo: 20
+            strokeFrom:1
+            strokeTo:3
+            lifetime: 60
+            rotation:50
+            colorFrom: ab8ec5
+            colorTo: ab8ec500
+        }
+        ]
+        hitEffect:[
+        {
+                type: ParticleEffect
+                particles: 14
+                length: 30
+                lifetime: 40
+                sizeFrom: 1
+                sizeTo: 2
+                cone: 9
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ab8ec570
+                colorTo: ab8ec500
+                layer:100.3
+            }
+        {
+                type: ParticleEffect
+                particles: 1
+                length: 0
+                lifetime: 10
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: ab8ec5
+                colorTo: ab8ec5
+                layer:100.3
+            }
+        {
+                type: ParticleEffect
+                particles: 6
+                length: 67
+                line:true
+                lifetime: 24
+                lenFrom: 1
+                lenTo: 4
+                strokeFrom:1.2
+                strokeTo:0.5
+                cone: 3
+                interp: circleOut
+                sizeInterp:circleOut
+                colorFrom: ab8ec580
+                colorTo: ab8ec500
+                layer:100.3
+            }
+        ]
+        fragBullets: 12
+        fragVelocityMin:0.9
+        fragVelocityMax:4
+        fragLifeMin:0.2
+        fragLifeMax:1.2
+        fragRandomSpread: 90
+        fragSpread:6
+        fragBullet:{
+            type: BasicBulletType
+            collideTiles:true
+            pierce: true
+            height: 12
+            width: 5
+            shrinkX:0
+            shrinkY:0
+            buildingDamageMultiplier:1.8
+            pierceCap: 2
+            lifetime: 18
+            damage: 17
+            pierceArmor:true
+            speed: 3
+            status: mov-motor-deceleration-tier-2
+            statusDuration:90
+            hitEffect: hitBulletColor
+            trailColor: ab8ec5
+            trailLength: 3
+            trailWidth: 1.1
+
+            frontColor: ffffff
+            backColor: ab8ec5
+            despawnEffect:[{
+                    type: ParticleEffect
+                    particles:3
+                    length: 20
+                    lifetime: 50
+                    sizeFrom: 1
+                    sizeTo: 2
+                    cone: 50
+                    interp: circleOut
+                    sizeInterp:circleOut
+                    colorFrom: ab8ec550
+                    colorTo: ab8ec500
+                    layer:100.2
+                }
+                {
+                    type: ParticleEffect
+                    particles: 1
+                    length: 0
+                    lifetime: 10
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: ab8ec5
+                    colorTo: ab8ec5
+                    layer:100.3
+                }
+                ]
+            hitEffect:[
+            {
+                    type: ParticleEffect
+                    particles: 2
+                    length: 30
+                    lifetime: 40
+                    sizeFrom: 1
+                    sizeTo: 2
+                    cone: 9
+                    interp: circleOut
+                    sizeInterp:circleOut
+                    colorFrom: ab8ec5
+                    colorTo: ab8ec500
+                    layer:100.3
+                }
+            {
+                    type: ParticleEffect
+                    particles: 3
+                    length: 67
+                    line:true
+                    lifetime: 24
+                    lenFrom: 1
+                    lenTo: 2
+                    strokeFrom:1.2
+                    strokeTo:0.5
+                    cone: 3
+                    interp: circleOut
+                    sizeInterp:circleOut
+                    colorFrom: ab8ec5
+                    colorTo: ab8ec500
+                    layer:100.3
+                }
+            ]
+    }
+    }
+}
+]
+}
+surge-alloy: {
+    type: BasicBulletType
+    backSprite: large-bomb-back
+    sprite: mine-bullet
+    collidesGround: false
+    collidesTiles: false
+    shrinkY: 0.2
+    height: 10
+    width: 22
+    innacuracy:5
+
+    reloadMultiplier: 0.25
+    ammoMultiplier: 1
+    rangeChange: 428
+
+    homingPower: 0.01
+    pierceCap: 4
+    lifetime: 48
+    damage: 90
+    speed: 16
 
     smokeEffect: shootSmokeDisperse
     despawnEffect: hitBulletColor
     shootEffect: shootBigColor
     hitEffect: hitBulletColor
 
-    trailEffect: disperseTrail
-    trailRotation: true
-    rotationOffset: 90
-    trailColor: c9a5c8
+    trailColor: fcf387
     trailChance: 0.44
-    trailLength: 1.5
-    trailWidth: 1.5
+    trailLength: 10
+    trailWidth: 3
 
     frontColor: ffffff
-    backColor: c9a5c8
-    hitColor: c9a5c8
-}
+    backColor: fcf387
+    hitColor: fcf387
+    spawnBullets:[
+    {
+    width:0
+    collides:false
+    damage:1
+    lifetime:1
+    speed:0
+    fragBullets:3
+    fragRandomSpread:0
+    fragBullet:{
+        type: BasicBulletType
+        backSprite: large-bomb-back
+        sprite: mine-bullet
+        collidesGround: false
+        collidesTiles: false
+        shrinkY: 0.2
+        height: 10
+        width: 22
+        lifeScaleRandMin:0.4
+        lifeScaleRandMax:1
+        randomAngleOffset:10
+        ammoMultiplier: 1
+        rangeChange: 428
+
+        homingPower: 0.03
+        pierceCap: 3
+        lifetime: 48
+        damage: 90
+        speed: 16
+
+        smokeEffect: shootSmokeDisperse
+        despawnEffect: hitBulletColor
+        shootEffect: shootBigColor
+        hitEffect: hitBulletColor
+
+        trailColor: fcf387
+        trailChance: 0.44
+        trailLength: 10
+        trailWidth: 3
+
+        frontColor: ffffff
+        backColor: fcf387
+        hitColor: fcf387
+        }
+    }
+    {
+    width:0
+    collides:false
+    damage:1
+    speed:0
+    lifetime:20
+    fragBullets:6
+    fragRandomSpread:0
+    fragBullet:{
+        type: BasicBulletType
+        backSprite: large-bomb-back
+        sprite: mine-bullet
+        collidesGround: false
+        collidesTiles: false
+        shrinkY: 0.2
+        height: 10
+        width: 22
+        lifeScaleRandMin:0.4
+        lifeScaleRandMax:1
+        randomAngleOffset:10
+
+        knockback:1
+        pierceCap: 1
+        lifetime: 34
+        damage: 90
+        speed: 12
+
+        smokeEffect: shootSmokeDisperse
+        despawnEffect: hitBulletColor
+        shootEffect: shootBigColor
+        hitEffect: hitBulletColor
+
+        trailColor: fcf38770
+        trailLength: 10
+        trailWidth: 3
+
+        frontColor: ffffff
+        backColor: fcf387
+        hitColor: fcf387
+        }
+        }
+    ]
+    }
     }

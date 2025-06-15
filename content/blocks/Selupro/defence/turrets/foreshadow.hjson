@@ -61,7 +61,7 @@ ammoTypes: {
 		strokeTo: 1
 
 		colorFrom: ffffff
-		colorTo: a9d8ff00
+		colorTo: F3E97900
 		}
 		{
 		type: ParticleEffect
@@ -78,7 +78,7 @@ ammoTypes: {
 		strokeTo: 1
 
 		colorFrom: ffffff
-		colorTo: a9d8ff00
+		colorTo: F3E97900
 		}
 		{
 		type: ParticleEffect
@@ -94,8 +94,8 @@ ammoTypes: {
 		strokeFrom: 1.5
 		strokeTo: 0
 
-		colorFrom: ffffff
-		colorTo: a9d8ff
+		colorFrom: F3E979
+		colorTo: F3E979
 		}
 		{
 		type: ParticleEffect
@@ -110,8 +110,8 @@ ammoTypes: {
 		sizeFrom:1
 		sizeTo:3
 
-		colorFrom: ffffff
-		colorTo: a9d8ff00
+		colorFrom: F3E979
+		colorTo: F3E97900
 		}
 		{
 		type: ParticleEffect
@@ -126,8 +126,8 @@ ammoTypes: {
 		sizeFrom:1
 		sizeTo:2
 
-		colorFrom: ffffff
-		colorTo: a9d8ff00
+		colorFrom: F3E979
+		colorTo: F3E97900
 		}
 		{
 		type: ParticleEffect
@@ -142,8 +142,8 @@ ammoTypes: {
 		sizeFrom:2
 		sizeTo:5
 
-		colorFrom: ffffff
-		colorTo: a9d8ff00
+		colorFrom: F3E979
+		colorTo: F3E97900
 		}
 		{
 		type: ParticleEffect
@@ -159,58 +159,73 @@ ammoTypes: {
 		strokeFrom: 1.2
 		strokeTo: 1
 
-		colorFrom: ffffff
-		colorTo: a9d8ff00
+		colorFrom: F3E979
+		colorTo: F3E97900
 		}
 		{
 		type: WaveEffect
-		sides: 5
+		sides: 6
 		sizeFrom: 0
 		sizeTo: 50
 		lifetime: 30
 		strokeFrom: 0
 		strokeTo: 10
-		colorFrom: ffffff40
-		colorTo: a9d8ff00
+		colorFrom: F3E97940
+		colorTo: F3E97900
 		}
 		{
 		startDelay:10
 		type: WaveEffect
-		sides: 5
+		sides: 6
+		rotation:15
 		sizeFrom: 0
 		sizeTo: 50
 		lifetime: 30
 		strokeFrom: 0
 		strokeTo: 10
-		colorFrom: ffffff40
-		colorTo: a9d8ff00
+		colorFrom: F3E97940
+		colorTo: F3E97900
 		}
 		{
 		startDelay:20
 		type: WaveEffect
-		sides: 5
+		sides: 6
+		rotation:30
 		sizeFrom: 0
 		sizeTo: 50
 		lifetime: 30
 		strokeFrom: 0
 		strokeTo: 10
-		colorFrom: ffffff40
-		colorTo: a9d8ff00
+		colorFrom: F3E97940
+		colorTo: F3E97900
 		}
+		{
+        startDelay:30
+        type: WaveEffect
+        sides: 6
+        rotation:45
+        sizeFrom: 0
+        sizeTo: 50
+        lifetime: 30
+        strokeFrom: 0
+        strokeTo: 10
+        colorFrom: F3E97940
+        colorTo: F3E97900
+        }
 		]
 		hitEffect: blastExplosion
 		shootEffect: shootBig
 
-		lightColor: ffffff
+		lightColor: F3E979
 		lightOpacity: 0.7
 		lightRadius: 32
 		
 		trailEffect:[
 		{
 		type: ParticleEffect
-		lifetime:80
+		lifetime:30
 		particles: 8
-		
+		offsetX:10
 		cone: 120
 		interp: circleOut
 		baseRotation: 0
@@ -219,15 +234,16 @@ ammoTypes: {
 		sizeFrom: 2
 		sizeTo: 0
 
-		colorFrom: ffffff
-		colorTo: a9d8ff
+		colorFrom: F3E979
+		colorTo: F3E979
 		}
 		{
 		type: ParticleEffect
-		lifetime:100
+		lifetime:35
 		particles: 12
-		
-		cone: 95
+
+		offsetX:10
+		cone: 20
 		interp: circleOut
 		baseRotation: 0
 		length: -26
@@ -235,12 +251,12 @@ ammoTypes: {
 		sizeFrom: 2
 		sizeTo: 0
 
-		colorFrom: ffffff
-		colorTo: a9d8ff
+		colorFrom: F3E979
+		colorTo: F3E979
 		}
 		{
 		type: ParticleEffect
-		lifetime:120
+		lifetime:40
 		particles: 9
 		interp: circleOut
 		cone: 70
@@ -251,17 +267,18 @@ ammoTypes: {
 		sizeFrom: 2
 		sizeTo: 0
 
-		colorFrom: ffffff
-		colorTo: a9d8ff
+		colorFrom: F3E979
+		colorTo: F3E979
 		}
 		{
 		type: RadialEffect
-		rotationSpacing : 120
-		rotationOffset: 0
+		rotationSpacing : 60
+		rotationOffset: 150
 		lengthOffset: 0
+		amount:2
 		effect: {
 			type: ParticleEffect
-			lifetime: 120
+			lifetime: 40
 			interp: circleOut
 			particles: 8
 			line: true
@@ -270,21 +287,22 @@ ammoTypes: {
 			baseRotation: 0
 			length: 40
 
-			strokeFrom: 3
+			strokeFrom: 2
 			strokeTo: 0
 
-			colorFrom: ffffff
-			colorTo: a9d8ff00
+			colorFrom: F3E979
+			colorTo: F3E97900
 		}
 		}
 		{
 		type: RadialEffect
-		rotationSpacing : 120
-		rotationOffset: 0
+		rotationSpacing : 30
+		rotationOffset: 175
+		amount:2
 		lengthOffset: 0
 		effect: {
 			type: ParticleEffect
-			lifetime: 80
+			lifetime: 30
 			interp: circleOut
 			particles: 8
 			line: true
@@ -296,43 +314,121 @@ ammoTypes: {
 			strokeFrom: 3
 			strokeTo: 0
 
-			colorFrom: ffffff
-			colorTo: a9d8ff00
+			colorFrom: F3E979
+			colorTo: F3E97930
 		}
 		}
 		{
-		type: RadialEffect
-		rotationSpacing : 120
-		rotationOffset: 0
-		lengthOffset: 0
-		effect: {
-			type: ParticleEffect
-			lifetime: 80
-			interp: circleOut
-			particles: 8
-			line: true
-			cone: 30
+            type: ParticleEffect
+            lifetime:30
+            particles: 8
+            offsetX:30
+            cone: 120
+            interp: circleOut
+            baseRotation: 0
+            length: -16
 
-			baseRotation: 0
-			length: 20
+            sizeFrom: 2
+            sizeTo: 0
 
-			strokeFrom: 3
-			strokeTo: 0
+            colorFrom: F3E979
+            colorTo: F3E979
+            }
+            {
+            type: ParticleEffect
+            lifetime:35
+            particles: 12
 
-			colorFrom: ffffff
-			colorTo: a9d8ff00
-		}
-		}
+            offsetX:30
+            cone: 20
+            interp: circleOut
+            baseRotation: 0
+            length: -26
+
+            sizeFrom: 2
+            sizeTo: 0
+
+            colorFrom: F3E979
+            colorTo: F3E979
+            }
+            {
+            type: ParticleEffect
+            lifetime:40
+            particles: 9
+
+            interp: circleOut
+            cone: 70
+
+            baseRotation: 0
+            length: -32
+
+            sizeFrom: 2
+            sizeTo: 0
+
+            colorFrom: F3E979
+            colorTo: F3E979
+            }
+            {
+            type: RadialEffect
+            rotationSpacing : 60
+            rotationOffset: 150
+            lengthOffset: -5
+            amount:2
+            effect: {
+                type: ParticleEffect
+                lifetime: 40
+                interp: circleOut
+                particles: 8
+                line: true
+                cone: 3
+                offsetX:20
+                baseRotation: 0
+                length: 40
+
+                strokeFrom: 2
+                strokeTo: 0
+
+                colorFrom: F3E979
+                colorTo: F3E97900
+            }
+            }
+            {
+            type: RadialEffect
+            rotationSpacing : 30
+            rotationOffset: 175
+            amount:2
+            lengthOffset: -5
+            effect: {
+                type: ParticleEffect
+                lifetime: 30
+                interp: circleOut
+                particles: 8
+                line: true
+                cone: 20
+                offsetX:20
+                baseRotation: 0
+                length: 30
+
+                strokeFrom: 3
+                strokeTo: 0
+
+                colorFrom: F3E979
+                colorTo: F3E97930
+            }
+            }
 		]
 		trailRotation: true
-		trailColor:ffffff
+		trailColor:F3E979
 		frontColor: ffffff
 		backColor: ffffff
-		trailChance: 100
-		trailWidth: 2
-        trailLength: 100
-		trailInterval:1.5
-		fragBullets: 22
+		hitSound:cannon-hit
+		trailChance: 1
+		trailWidth: 4.7
+        trailLength: 140
+		trailInterval:1
+		fragLifeMin:0.3
+		fragLifeMax:2
+		fragBullets: 27
 		fragRandomSpread: 10		
 		fragBullet: { 
 			type: BasicBulletType
@@ -347,29 +443,30 @@ ammoTypes: {
 			hitShake: 1
 			height: 40
 			width: 4
-			
+			hitSound:plasma-shot-1
 			buildingDamageMultiplier: 0.1
-			
+			hitSoundPitch:1.1
+			hitSoundVolume:0.12
 			splashDamageRadius: 20
 			lightningDamage: 35
 			lightningLength: 6
 			lightningLengthRand:3
-			lightning: 2
-			damage: 90
+			lightning: 1
+			damage: 60
 			splashDamage: 60
 			pierceArmor:true
 			
-			lifetime: 10
-			speed: 16
+			lifetime: 20
+			speed: 8
 
 			despawnEffect: blastExplosion
 			hitEffect: blastExplosion
 
-			lightColor: fcf387
+			lightColor: F3E979
 			lightOpacity: 0.7
 			lightRadius: 32
 			
-			trailColor: ffffff
+			trailColor: F3E979
 			trailLength: 6.5
 			trailWidth: 2
 		}

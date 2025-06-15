@@ -3,9 +3,6 @@ research: breach
 health: 3250
 armor: 12
 
-consumes: {
-    power: 2
-    }
 
 requirements: [
     silicon/320
@@ -244,10 +241,25 @@ cyanogen:{
     pierceCap: 4
     buildingDamageMultiplier: 0.3
     timescaleDamage: true
-
      colors: [89e8b6A0,66a6d280,89e8b6BF,cafcbe, ffffff]
      flareColor:89e8b6
      intervalRandomSpread:0
+     hitEffect:[
+     {
+       type: ParticleEffect
+       particles:3
+       length: 20
+       lifetime: 50
+       sizeFrom: 1
+       sizeTo: 2
+       cone: 30
+       interp: circleOut
+       sizeInterp:circleOut
+       colorFrom: 89e8b6
+       colorTo: 89e8b600
+       layer:100.2
+     }]
+     bulletInterval:20
      intervalBullet:{
      lifetime:0
      shootEffect:none
@@ -525,39 +537,39 @@ cyanogen:{
                ]
            hitEffect:[
            {
-                   type: ParticleEffect
-                   particles: 2
-                   length: 30
-                   lifetime: 40
-                   sizeFrom: 1
-                   sizeTo: 2
-                   cone: 9
-                   interp: circleOut
-                   sizeInterp:circleOut
-                   colorFrom: 89e8b6
-                   colorTo: 89e8b600
-                   layer:100.3
-               }
+               type: ParticleEffect
+               particles: 2
+               length: 30
+               lifetime: 40
+               sizeFrom: 1
+               sizeTo: 2
+               cone: 9
+               interp: circleOut
+               sizeInterp:circleOut
+               colorFrom: 89e8b6
+               colorTo: 89e8b600
+               layer:100.3
+           }
            {
-                   type: ParticleEffect
-                   particles: 3
-                   length: 67
-                   line:true
-                   lifetime: 24
-                   lenFrom: 1
-                   lenTo: 2
-                   strokeFrom:1.2
-                   strokeTo:0.5
-                   cone: 3
-                   interp: circleOut
-                   sizeInterp:circleOut
-                   colorFrom: 89e8b6
-                   colorTo: 89e8b600
-                   layer:100.3
-               }
+               type: ParticleEffect
+               particles: 3
+               length: 67
+               line:true
+               lifetime: 24
+               lenFrom: 1
+               lenTo: 2
+               strokeFrom:1.2
+               strokeTo:0.5
+               cone: 3
+               interp: circleOut
+               sizeInterp:circleOut
+               colorFrom: 89e8b6
+               colorTo: 89e8b600
+               layer:100.3
+           }
            ]
-          fragBullets:1
           fragBullet:{
+          fragBullets:1
               type: BasicBulletType
               pierce: true
               height: 12

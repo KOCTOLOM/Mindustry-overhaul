@@ -2,15 +2,159 @@ research: sublimate
 
 health: 18000
 armor: 21
-
+range:310
 consumes: {
-    power: 800
+    power: 5
     }
 
 requirements: [
-    silicon/5000
-    graphite/3600
-    tungsten/7500
-    thorium/2100
-    carbide/1800
+    silicon/300
+    graphite/220
+    oxide/20
+    thorium/100
+    carbide/80
     ]
+shootType:{
+    type: PointLaserBulletType
+    damage: 200
+    color: ffffff
+    bulletInterval:2
+    intervalRandomSpread:0
+    intervalBullet:{
+    speed:1
+    width:0
+    lifetime:1
+    collides:false
+    scaleLife:true
+    hitEffect:none
+    despawnEffect:none
+    fragBullets:8
+    fragLifeMin:1
+    fragLifeMax:16
+    fragBullet:{
+    collides:false
+    splashDamage:20
+    pierceArmor:true
+    lifetime:10
+    speed:0
+    width:0
+    splashDamageRadius:4
+    hitEffect:none
+    despawnEffect:[
+    {
+        type: ParticleEffect
+        lifetime: 10
+        particles: 1
+        cone: 0
+        baseRotation: 90
+        length: 0
+        useRotation:false
+        sizeFrom: 6
+        sizeTo: 0
+        colorFrom: FFFFFF00
+        colorTo: ffffff40
+    }
+    {
+        type: ParticleEffect
+        startDelay:10
+        lifetime: 60
+        particles: 2
+        line: true
+        cone: 2
+        baseRotation: 90
+        length: 20
+        useRotation:false
+        strokeFrom: 1
+        strokeTo: 1
+        interp: circleOut
+        colorFrom: FFFFFF
+        colorTo: ffffff00
+    }
+    {
+        type: ParticleEffect
+        startDelay:10
+        lifetime: 60
+        particles: 3
+        line: true
+        cone: 12
+        baseRotation: 90
+        length: 12
+        useRotation:false
+        strokeFrom: 1
+        strokeTo: 1
+        interp: circleOut
+        colorFrom: FFFFFF60
+        colorTo: ffffff00
+    }
+    ]
+    }
+    spawnBullets:[
+    {
+        speed:0
+        createChance:0.02
+        width: 0
+        collides:false
+        lifetime: 20
+        collides:false
+        pierce:true
+        lifeScaleRandMin:0.5
+        lifeScaleRandMax:5
+        pierceArmor:true
+        splashDamage:170
+        pierceArmor:true
+        status: slow
+        statusDuration: 30
+        splashDamageRadius:20
+        hitEffect:none
+        despawnEffect:[
+        {
+            type: RadialEffect
+            rotationOffset:  4
+            rotationSpacing : 15
+            amount: 30
+            lengthOffset:  20
+            effect: {
+                type: ParticleEffect
+                startDelay:5
+                lifetime: 60
+                particles: 1
+                line: true
+                cone: 2
+                baseRotation: 90
+                length: 20
+                useRotation:false
+                strokeFrom: 1
+                strokeTo: 1
+                interp: circleOut
+                colorFrom: ffffff
+                colorTo: ffffff00
+                }
+            }
+            {
+            type: RadialEffect
+            rotationOffset:  0
+            rotationSpacing : 24
+            amount: 15
+            lengthOffset:  38
+            effect: {
+                type: ParticleEffect
+                startDelay:5
+                lifetime: 60
+                particles: 2
+                line: true
+                cone: 2
+                baseRotation: 90
+                length: 10
+                useRotation:false
+                strokeFrom: 1
+                strokeTo: 1
+                interp: circleOut
+                colorFrom: FFFFFF30
+                colorTo: ffffff00
+                }
+            }
+        ]
+    }
+    ]
+    }
+}
