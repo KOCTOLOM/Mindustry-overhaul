@@ -6,7 +6,7 @@ var settingsEnabledName = "mov-shader"
 var settingsDebugName = "mov-shader-debug"
 
 const buffer = new FrameBuffer()
-const hueShift = new Vec3(1.0, 0.9, 0.72);
+const hueShift = new Vec3(1.0, 0.9, 0.85);
 
 Events.on(ClientLoadEvent, e => {
     Vars.ui.settings.graphics.checkPref(settingsEnabledName, true);
