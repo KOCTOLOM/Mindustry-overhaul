@@ -6,7 +6,7 @@ maxAmmo: 80
 armor: 35
 range:420
 consumes: {
-    power: 20
+    power: 25
     }
 
 requirements: [

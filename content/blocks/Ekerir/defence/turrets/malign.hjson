@@ -9,7 +9,7 @@ inaccuracy:20
 range:520
 shootSound:plasma-shot-2
 consumes: {
-    power: 50
+    power: 75
     }
 
 requirements: [
