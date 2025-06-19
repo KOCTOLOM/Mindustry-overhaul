@@ -23,7 +23,7 @@ shoot: {
     }
 
 shootType: {
-    type:basicBulletType:
+    type:basicBulletType
     smokeEffect: shootSmokeTitan
     hitColor: f3e979
     sprite: large-orb

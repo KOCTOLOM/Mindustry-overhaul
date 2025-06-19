@@ -1,20 +1,360 @@
 research: afflict
 
-ammoPerShot: 69
-health: 500000
-maxAmmo: 1800
-armor: 81
-
+reload:90
+ammoPerShot: 1
+health: 13000
+maxAmmo: 200
+armor: 25
+inaccuracy:20
+range:520
+shootSound:plasma-shot-2
 consumes: {
-    power: 300
+    power: 50
     }
 
 requirements: [
-    oxide/5000
-    beryllium/4000
-    graphite/5000
-    silicon/6000
-    tungsten/2000
-    thorium/5000
-    carbide/2000
+    oxide/250
+    beryllium/2000
+    graphite/500
+    silicon/400
+    tungsten/1200
+    thorium/200
+    phase-fabric/500
     ]
+
+shoot: {
+        type: ShootMulti
+        source: {
+            type: ShootMulti
+            source: {
+                type: ShootHelix
+                shots: 2
+                scl:80
+                mag:4
+            }
+            dest: [
+                {
+                type: ShootSpread
+                shots: 2
+                spread:16
+                }
+        ]
+        }
+        dest: [
+            {
+            type: ShootSpread
+            shots: 2
+            spread:0
+            shotDelay: 15
+            }
+    ]
+    }
+
+shootType:
+{
+        type: BasicBulletType
+        sprite: large-orb
+        despawnShake: 4.5
+        hitShake: 4.5
+        shrinkX: 0.0
+        shrinkY: 0.0
+        height: 15
+        width: 15
+
+        buildingDamageMultiplier: 0.5
+
+        splashDamageRadius: 12
+        statusDuration: 180
+        splashDamage: 90
+        homingPower: 0.04
+        homingRange: 200
+        homingDelay: 30
+        status: burning
+        lifetime: 80
+        damage: 140
+        speed: 6
+        drag:0.02
+	    pierceBuilding:true
+	    pierceArmor:true
+
+        smokeEffect: shootBigSmoke
+        shootEffect: shootBigColor
+        despawnEffect: [{
+            type: WaveEffect
+            sides:0
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 20
+
+            lifetime: 60
+
+            colorFrom: d370d3
+            colorTo: d370d3
+}
+	{
+    startDelay:60
+    type: WaveEffect
+    sides:0
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 20
+    sizeTo: 10
+
+    lifetime: 40
+
+    colorFrom: d370d3
+    colorTo: d370d300
+}
+{
+    startDelay:0
+    type: WaveEffect
+    sides:6
+    rotWithParent: false
+    followParent: false
+    sizeFrom: 0
+    sizeTo: 6
+
+    lifetime: 70
+
+    colorFrom: d370d3
+    colorTo: d370d300
+}
+]
+    hitEffect:none
+    hitSound: plasma-shot-2
+    hitSoundPitch:0.9
+    hitSoundVolume:0.3
+
+    lightColor: d370d3
+    lightOpacity: 0.4
+    lightRadius: 12.5
+    trailChance:1
+    trailEffect:[
+    {
+        startDelay:10
+        type: WaveEffect
+        sides:6
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 5
+        sizeTo: 12
+
+        lifetime: 40
+
+        colorFrom: d370d3
+        colorTo: d370d300
+    }
+    {
+        type: WaveEffect
+        sides:6
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 3
+        sizeTo: 8
+
+        lifetime: 40
+
+        colorFrom: ffffff
+        colorTo: d370d300
+    }
+    {
+        type: ParticleEffect
+        region:large-bomb
+        particles: 1
+        length: 30
+        lifetime: 70
+        sizeFrom: 5
+        sizeTo: 0
+        cone: 360
+        sizeChangeStart: 30
+        interp: circleOut
+        sizeInterp:circleOut
+        colorFrom: d370d3
+        colorTo: d370d3
+        layer:100.3
+    }
+    ]
+    trailInterval:4
+    trailColor: d370d3
+    trailLength: 90
+    trailWidth: 2
+
+    weaveScale: 9
+    weaveMag: 2
+
+    frontColor: ffffff
+    backColor: d370d3
+    hitColor: d370d3
+    fragBullets: 2
+    fragRandomSpread: 30
+    fragBullet: {
+        velocityScaleRandMin:0.5
+        velocityScaleRandMin:4
+        type: BasicBulletType
+        sprite: large-orb
+        despawnShake: 4.5
+        hitShake: 4.5
+        shrinkX: 0.0
+        shrinkY: 0.0
+        height: 15
+        width: 15
+
+        buildingDamageMultiplier: 0.2
+
+        splashDamageRadius: 12
+        statusDuration: 180
+        splashDamage: 90
+        homingPower: 0.04
+        homingRange: 200
+        homingDelay: 30
+        status: burning
+        lifetime: 80
+        damage: 120
+        speed: 6
+        drag:0.02
+        pierce:true
+        pierceCap: 5
+        pierceArmor:true
+
+        smokeEffect: shootBigSmoke
+        shootEffect: shootBigColor
+        despawnEffect: [{
+            type: WaveEffect
+            sides:6
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 20
+
+            lifetime: 60
+
+            colorFrom: d370d3
+            colorTo: d370d3
+        }
+        {
+            type: WaveEffect
+            sides:6
+            startDelay:15
+            rotation: 15
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 25
+
+            lifetime: 50
+
+            colorFrom: d370d3
+            colorTo: d370d3
+        }
+        {
+            type: WaveEffect
+            sides:6
+            startDelay:30
+            rotation: 30
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 30
+
+            lifetime: 40
+
+            colorFrom: d370d3
+            colorTo: d370d3
+        }
+        {
+            type: WaveEffect
+            sides:6
+            startDelay:45
+            rotation: 45
+            rotWithParent: false
+            followParent: false
+            sizeFrom: 0
+            sizeTo: 30
+
+            lifetime: 40
+
+            colorFrom: d370d3
+            colorTo: d370d3
+        }
+        {
+            type: ParticleEffect
+            particles: 12
+            length: 40
+            lifetime: 80
+            sizeFrom: 0
+            sizeTo: 6
+            cone: 360
+            sizeChangeStart: 30
+            interp: circleOut
+            sizeInterp:circleOut
+            colorFrom: d370d3
+            colorTo: d370d300
+            layer:100.3
+        }
+        ]
+    hitEffect:none
+    despawnSound: plasma-shot-2
+    despawnSoundPitch:0.4
+    despawnSoundVolume:0.12
+    lightColor: d370d3
+    lightOpacity: 0.4
+    lightRadius: 12.5
+    trailChance:1
+    trailEffect:[
+    {
+        startDelay:10
+        type: WaveEffect
+        sides:6
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 3
+        sizeTo: 8
+
+        lifetime: 40
+
+        colorFrom: d370d3
+        colorTo: d370d300
+    }
+    {
+        type: WaveEffect
+        sides:6
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 2
+        sizeTo: 4
+
+        lifetime: 40
+
+        colorFrom: ffffff
+        colorTo: d370d300
+    }
+    {
+        type: ParticleEffect
+        region:large-bomb
+        particles: 2
+        length: 20
+        lifetime: 80
+        sizeFrom: 3
+        sizeTo: 0
+        cone: 360
+        sizeChangeStart: 30
+        interp: circleOut
+        sizeInterp:circleOut
+        colorFrom: d370d340
+        colorTo: d370d3
+        layer:100.3
+    }
+    ]
+    trailColor: d370d3
+    trailLength: 90
+    trailWidth: 2
+    trailInterval:4
+    weaveScale: 9
+    weaveMag: 2
+
+    frontColor: ffffff
+    backColor: d370d3
+    hitColor: d370d3
+    }
+    }
