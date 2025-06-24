@@ -16,7 +16,7 @@ armor: 5
 fogRadiusMultiplier: 0.4
 shootEffect: lancerLaserShoot
 smokeEffect: none
-researchCostMultiplier:0.6
+researchCostMultiplier:0.3
 consumes: {
     power: 12
 }

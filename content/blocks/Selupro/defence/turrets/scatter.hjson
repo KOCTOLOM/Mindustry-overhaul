@@ -13,7 +13,7 @@ health: 660
 reload: 195
 range: 360
 armor: 3
-researchCostMultiplier:0.6
+researchCostMultiplier:0.2
 requirements: [
     copper/120
     lead/45

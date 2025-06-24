@@ -7,7 +7,7 @@ recoil: 1
 fogRadiusMultiplier: 0.2
 buildCostMultiplier: 0.75
 coolantMultiplier: 3.2
-researchCostMultiplier:0.6
+researchCostMultiplier:0.2
 health: 210
 reload: 32
 range: 144

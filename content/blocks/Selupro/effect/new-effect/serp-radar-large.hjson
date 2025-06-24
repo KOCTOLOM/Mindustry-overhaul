@@ -9,7 +9,7 @@ buildVisibility:fogOnly
 health: 1800
 fogRadius: 82
 armor: 20
-
+researchCostMultiplier:0.5
 consumes: {
     power: 10
 }

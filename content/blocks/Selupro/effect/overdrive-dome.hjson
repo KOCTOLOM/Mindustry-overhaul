@@ -14,7 +14,7 @@ consumes: {
     liquid: cryofluid/0.75
     power: 45
 }
-researchCostMultiplier:14
+researchCostMultiplier:2
 requirements: [
     lead/1200
     graphite/325

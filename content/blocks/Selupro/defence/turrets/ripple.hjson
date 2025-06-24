@@ -13,7 +13,7 @@ maxAmmo: 45
 reload: 340
 range: 576
 armor: 9
-researchCostMultiplier:0.6
+researchCostMultiplier:0.4
 coolantMultiplier: 1.7
 fogRadiusMultiplier: 0.5
 shootSound: cannon-large-shot

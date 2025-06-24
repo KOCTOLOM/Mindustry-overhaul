@@ -21,7 +21,7 @@ armor: 19
 consumes: {
     power: 19
 }
-researchCostMultiplier:9
+researchCostMultiplier:2
 requirements: [
     lead/820
     graphite/340
