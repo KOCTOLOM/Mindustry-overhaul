@@ -1,6 +1,6 @@
 research: flare
 faceTarget: false
-fogRadius: 12
+fogRadius: 5
 strafePenalty: 0.5
 rotateSpeed: 7
 accel: 0.015

@@ -1,6 +1,6 @@
 research: ground-factory
 stepShake: 0.08
-fogRadius: 12
+fogRadius: 9
 
 boostMultiplier: 2
 itemCapacity: 32
@@ -9,7 +9,7 @@ mineSpeed: 0.32
 mineTier: 2
 health: 180
 speed: 0.64
-armor: 5
+armor: 4
 
 lightColor: 98ffa9
 lightOpacity: 0.7

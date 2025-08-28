@@ -7,7 +7,7 @@ fogRadiusMultiplier: 0.3
 buildCostMultiplier: 2.1
 ammoPerShot: 3
 velocityRnd:0.05
-inaccuracy: 4
+inaccuracy: 5
 maxAmmo: 45
 health: 660
 reload: 195
@@ -35,7 +35,7 @@ scrap: {
     inaccuracy: 13
     reloadMultiplier: 0.4
     ammoMultiplier: 3
-	knockback:0.2
+	knockback:0.4
     splashDamageRadius: 20
     splashDamage: 18
     fragBullets: 6
@@ -98,7 +98,7 @@ lead: {
     inaccuracy: 12
     reloadMultiplier: 1
     ammoMultiplier: 6
-    knockback:0.3
+    knockback:0.6
     splashDamageRadius: 30
     splashDamage: 16
     pierceCap: 2
@@ -164,7 +164,7 @@ metaglass: {
     scaleLife: true
     height: 12
     width: 4
-    knockback:0.8
+    knockback:1.6
     ammoMultiplier: 1
 	reloadMultiplier: 0.5
     splashDamageRadius: 12

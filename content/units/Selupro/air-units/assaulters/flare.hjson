@@ -1,7 +1,7 @@
 research: air-factory
 circleTarget: true
 faceTarget: false
-fogRadius: 5
+fogRadius: 3
 range: 174
 
 strafePenalty: 0
@@ -48,12 +48,12 @@ weapons: [
     
 bullet: {
     type: BasicBulletType
-    rangeOverride: 332
+    rangeOverride: 180
     height: 9
     width: 7
 
-    lifetime: 58
-    damage: 12.5
+    lifetime: 36
+    damage: 9
     speed: 3
     
     smokeEffect: shootSmallSmoke

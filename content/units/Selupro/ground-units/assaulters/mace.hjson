@@ -1,6 +1,6 @@
 research: dagger
 targetAir: false
-fogRadius: 8
+fogRadius: 9
 stepShake: 0.6
 
 itemCapacity: 32

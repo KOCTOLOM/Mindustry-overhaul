@@ -1,12 +1,12 @@
 research: ground-factory
-fogRadius: 15
+fogRadius: 7
 stepShake: 0.15
 
 rotateSpeed: 12.5
 itemCapacity: 24
 health: 210
 speed: 0.6
-armor: 9
+armor: 7
 
 lightColor: FF5218
 lightOpacity: 0.5

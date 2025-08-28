@@ -1,7 +1,7 @@
 research: poly
 forceMultiTarget: true
 faceTarget: true
-fogRadius: 15.5
+fogRadius: 18
 
 itemCapacity: 81
 buildSpeed: 0.32
