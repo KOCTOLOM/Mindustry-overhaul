@@ -62,7 +62,6 @@ weapons: [
     drag:0.01
     velocityScaleRandMin:0.7
     velocityScaleRandMax:1.2
-    shootEffect: none
     smokeEffect: {
          type: ParticleEffect
          lifetime:30

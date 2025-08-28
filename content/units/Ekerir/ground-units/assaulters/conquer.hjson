@@ -5,3 +5,8 @@ rotateSpeed: 0.24
 health: 130000
 speed: 0.24
 armor: 260
+weapons:[
+{
+
+}
+]

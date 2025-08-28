@@ -12,6 +12,7 @@ researchCostMultiplier:0.6
 ammoEjectBack: 5
 inaccuracy: 7
 maxAmmo: 60
+ammoPerShot: 24
 reload: 38
 health: 500
 range: 284
@@ -114,14 +115,14 @@ silicon: {
 
     buildingDamageMultiplier: 0.15
     pierceDamageFactor: 0.00015
-    reloadMultiplier: 1.15
+    reloadMultiplier: 1.05
     ammoMultiplier: 24
     pierceArmor:true
 
     homingPower: 0.18
-    pierceCap: 3
+    pierceCap: 2
     lifetime: 65
-    damage: 26
+    damage: 16
     speed: 4.8
 
     lightColor: 8e9097

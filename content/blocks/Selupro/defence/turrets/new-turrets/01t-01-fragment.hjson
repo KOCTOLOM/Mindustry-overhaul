@@ -9,8 +9,8 @@ hasPower: true
 size: 1
 
 shootLength: 4.5
-bulletDamage: 9
-reload: 9
+bulletDamage: 17
+reload: 7
 health: 210
 range: 150
 armor: 3

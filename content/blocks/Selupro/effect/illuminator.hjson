@@ -1,3 +1,4 @@
 research: combustion-generator
 researchCostMultiplier:2
-radius: 60
+radius: 55
+brightness:0.35

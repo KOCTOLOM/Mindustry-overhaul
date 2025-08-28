@@ -22,6 +22,7 @@ ozone:{
     colors: [eb7abeA0,e189f550,907ef770,91a4ff,ffffff]
     flareColor: eb7abeA0
     intervalRandomSpread:0
+    bulletInterval:8
     intervalBullet:{
          lifetime:0
          shootEffect:none
@@ -261,7 +262,7 @@ cyanogen:{
      }]
      bulletInterval:20
      intervalBullet:{
-     lifetime:0
+     lifetime:1
      shootEffect:none
      despawnEffect:none
      hitEffect:none

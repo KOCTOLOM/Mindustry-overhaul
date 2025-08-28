@@ -12,7 +12,7 @@ range: 24
 
 lightColor: 7A3FD2
 lightOpacity: 0.2
-lightRadius: 27.5
+lightRadius: 9.5
 healColor: bf92f9
 
 immunities: [ sapped, spore-slowed]

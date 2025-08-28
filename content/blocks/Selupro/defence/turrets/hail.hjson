@@ -1,7 +1,7 @@
 research: duo
 rotateSpeed: 0.84
 targetAir: false
-fogRadiusMultiplier: 0.5
+fogRadiusMultiplier: 0.3
 shootCone: 10
 recoil: 2
 shake: 5
