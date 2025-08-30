@@ -93,7 +93,7 @@ weapons: [
 
     velocityRnd: 0.6
     inaccuracy: 9
-    reload: 160
+    reload: 220
     shootSound: missile
     ejectEffect: none
 shoot: {

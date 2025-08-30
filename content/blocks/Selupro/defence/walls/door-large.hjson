@@ -1,3 +1,4 @@
 research: door
+buildCostMultiplier: 2
 health: 3240
 armor: 5

@@ -1,7 +1,7 @@
 constructTime: 2880
 itemCapacity: 300
 health: 1800
-armor: 9
+armor: 14
 
 consumes: {
     power: 12.5

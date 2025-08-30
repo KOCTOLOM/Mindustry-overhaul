@@ -7,23 +7,23 @@ shootY: 4.5
 buildCostMultiplier: 2
 coolantMultiplier: 1
 fogRadiusMultiplier: 0.4
-ammoPerShot: 4
+ammoPerShot: 6
 inaccuracy: 12
 maxAmmo: 108
 reload: 124
 health: 960
-range: 440
+range: 300
 armor: 5
 researchCostMultiplier:0.8
 consumes: {
-    power: 6
+    power: 6.5
 }
 
 requirements: [
     graphite/180
-    titanium/120
-    silicon/120
-    plastanium/70
+    titanium/210
+    silicon/130
+    plastanium/90
 ]
 
 drawer: {
@@ -64,20 +64,19 @@ blast-compound: {
     shrinkY: 0
     height: 15
     width: 13
-
-    pierceDamageFactor: 0.65
-    reloadMultiplier: 0.3
+    shieldDamageMultiplier:2
+    reloadMultiplier: 0.4
     ammoMultiplier: 2
 
     splashDamageRadius: 20
-    statusDuration: 60
+    statusDuration: 220
     homingPower: 0.008
-    splashDamage: 60
+    splashDamage: 130
     homingRange: 180
     status: mov-slow-reloading-tier-1
-    knockback: 2.8
-    lifetime: 63
-    damage: 190
+    knockback: 2.2
+    lifetime: 42.5
+    damage: 130
     speed: 7
 	
 	pierceArmor:true
@@ -115,7 +114,7 @@ hitEffect: {
     sparkLen: 4
     sparks: 21
 }
-fragBullets:1
+fragBullets:4
 	fragBullet: {
     type: BasicBulletType
     collidesAir: false
@@ -125,13 +124,13 @@ fragBullets:1
 	hittable:false
     buildingDamageMultiplier: 0.4
     pierceDamageFactor: 0.75
-
-    splashDamageRadius: 20
+    shieldDamageMultiplier:4
+    splashDamageRadius: 15
     statusDuration: 10
     splashDamage: 10
     status: blasted
     knockback: 0
-    lifetime: 0
+    lifetime: 1
     damage: 10
     speed: 0
 
@@ -157,11 +156,7 @@ pyratite: {
     shrinkY: 0
     height: 15
     width: 13
-
-	incendAmount: 2
-	incendSpread: 8
-	incendChance: 1
-	
+    shieldDamageMultiplier:1.5
     reloadMultiplier: 0.85
     ammoMultiplier: 2
     rangeChange: 120
@@ -172,10 +167,10 @@ pyratite: {
     splashDamage: 44
     knockback: 0.08
     status: burning
-    lifetime: 52
+    lifetime: 50
     speed: 8.5
     damage: 125
-	   homingDelay: 30
+	homingDelay: 30
     hitSound: rocket-hit
 
     lightColor: ffaa5f
@@ -217,24 +212,22 @@ surge-alloy: {
     shrinkY: 0
     height: 11
     width: 9
-
+    shieldDamageMultiplier:0.2
     reloadMultiplier: 1.2
     ammoMultiplier: 4
     rangeChange: 80
 
-    splashDamageRadius: 0
-    lightningLength: 12.5
+    lightningLength: 6
     lightningDamage: 25
-    statusDuration: 300
+    statusDuration: 120
     status: emp-tier-2
     homingPower: 0.09
     homingRange: 60
-    splashDamage: 0
     knockback: 0.15
     pierceCap: 2
-    lifetime: 26
+    lifetime: 19
     lightning: 3
-    damage: 80
+    damage: 70
     speed: 20
 	homingDelay: 5
     pierceArmor:true
@@ -297,18 +290,17 @@ titanium: {
 
     reloadMultiplier: 2.5
     ammoMultiplier: 6
-    rangeChange: 70
-
+    shieldDamageMultiplier:0.5
     status: armor-piercing-tier-1
-    splashDamageRadius: 20
+    splashDamageRadius: 8
     statusDuration: 250
     homingPower: 0.02
 	homingDelay: 30
     splashDamage: 40
     homingRange: 30
     knockback: 0.5
-    lifetime: 85
-    damage: 40
+    lifetime: 50
+    damage: 64
     speed: 6
 	
 	pierceArmor:true
@@ -333,7 +325,7 @@ hitEffect: {
 
     waveColor: a4b8fa
     waveStroke: 3.2
-    waveRad: 40
+    waveRad: 14
 
     smokeColor: 696969
     smokeSizeBase: 0
@@ -353,24 +345,19 @@ plastanium: {
     shrinkY: 0
     height: 13
     width: 11
-
-    pierceDamageFactor: 100
     ammoMultiplier: 3
     rangeChange: 40
 
-    splashDamageRadius: 26
     homingPower: 0.02
-    splashDamage: 41
     homingRange: 180
 	homingDelay: 30
     knockback: 0.25
-    fragBullets: 4
+    fragBullets: 12
     pierceCap: 2
     lifetime: 64
-    damage: 40
+    damage: 60
     speed: 7.6
-	
-    pierceArmor:true
+
 	
     despawnEffect: plasticExplosion
     hitEffect: plasticExplosion
@@ -396,7 +383,7 @@ fragBullet: {
 
     pierceCap: 2
     lifetime: 25
-    damage: 30
+    damage: 16
     speed: 3.2
 	pierceArmor:true
     hitEffect: hitBulletColor

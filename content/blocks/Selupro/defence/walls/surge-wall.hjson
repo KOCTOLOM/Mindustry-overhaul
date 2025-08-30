@@ -1,7 +1,7 @@
 research: plastanium-wall-large
 insulated: true
 
-buildCostMultiplier: 9
+buildCostMultiplier: 10
 
 lightningChance: 0.15
 lightningDamage: 12

@@ -1,12 +1,12 @@
 research: phase-wall
 
-buildCostMultiplier: 11.02
+buildCostMultiplier: 10
 
-chanceDeflect: 25
-health: 5440
+chanceDeflect:0.7
+health: 6640
 armor: 32
 
 requirements: [
-    thorium/18
-    phase-fabric/25
+    thorium/16
+    phase-fabric/40
 ]

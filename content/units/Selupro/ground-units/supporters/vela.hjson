@@ -9,6 +9,7 @@ buildSpeed: 0.96
 health: 27000
 speed: 0.32
 armor: 69
+boostMultiplier:0.8
 
 lightColor: 98ffa9
 lightOpacity: 0.7

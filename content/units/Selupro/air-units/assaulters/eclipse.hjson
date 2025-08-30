@@ -8,7 +8,7 @@ crashDamageMultiplier: 9
 itemCapacity: 4000
 rotateSpeed: 0.55
 fallSpeed: 0.003
-health: 64000
+health: 68000
 speed: 0.7
 armor: 220
 
@@ -31,14 +31,14 @@ abilities: [
 {
     type: ShieldArcAbility
     region: mov-eclipse-shield
-    radius: 52.5
-    angle: 54.5
-    width: 10.5
+    radius: 60
+    angle: 72
+    width: 12
     y: -7
 
     cooldown: 900
-    regen: 3.2
-    max: 18000
+    regen: 8
+    max: 30000
     }
 {
     type: ShieldRegenFieldAbility
@@ -118,9 +118,9 @@ bullet: {
     x: 12
     y: 26
 
-    velocityRnd: 0.6
-    inaccuracy: 7
-    reload: 100
+    velocityRnd: 0.4
+    inaccuracy: 4
+    reload: 180
 
     ejectEffect: casing3
     shootSound: shootBig
@@ -129,15 +129,15 @@ shoot: {
 source: {
     type: ShootSpread
     shotDelay: 4
-    spread: 3
-    shots: 7
+    spread: 2
+    shots: 5
     }
 
 dest: [
 {
     type: ShootPattern
-    shotDelay: 48
-    shots: 2
+    shotDelay: 24
+    shots: 4
     }
 ]
     }
@@ -155,13 +155,13 @@ bullet: {
     height: 15
     width: 9
 
-    buildingDamageMultiplier: 1.7
+    buildingDamageMultiplier: 1.25
 
-    splashDamageRadius: 26
+    splashDamageRadius: 14
     splashDamage: 72
-    lifetime: 33
-    speed: 7.9
-    damage: 58
+    lifetime: 52
+    speed: 9.2
+    damage: 120
     pierceArmor:true
     hitEffect: flakExplosion
     shootEffect: shootBig
@@ -186,14 +186,14 @@ bullet: {
 
 
     targetSwitchInterval: 0.05
-    targetInterval: 0.05
+    targetInterval: 0.01
     reload: 1.5
 
     shootSound: lasershoot
 bullet: {
     maxRange: 240
 
-    damage: 64
+    damage: 140
 
     shootEffect: sparkShoot
     hitEffect: pointHit
@@ -211,14 +211,14 @@ bullet: {
 
 
     targetSwitchInterval: 0.05
-    targetInterval: 0.05
+    targetInterval: 0.01
     reload: 1.5
 
     shootSound: lasershoot
 bullet: {
     maxRange: 240
 
-    damage: 64
+    damage: 140
 
     shootEffect: sparkShoot
     hitEffect: pointHit
@@ -396,8 +396,8 @@ bullet: {
     splashDamageRadius: 26
     statusDuration: 90
     splashDamage: 90
-    homingDelay: 20
-    homingPower: 0.005
+    homingDelay: 14
+    homingPower: 0.08
     homingRange: 150
     status: burning
     weaveScale: 3
@@ -468,12 +468,12 @@ bullet: {
     hitShake: 7
     height: 12
     width: 7
-
-    splashDamageRadius: 36
-    splashDamage: 126
-    homingPower: 0.08
+    damage:75
+    splashDamageRadius: 14
+    splashDamage: 146
+    homingPower: 0.13
     homingRange: 55
-    homingDelay: 16
+    homingDelay: 13
     status: blasted
     weaveScale: 3
     lifetime: 75
@@ -774,7 +774,7 @@ despawnEffect: [
     y: 2
 
     inaccuracy: 2
-    reload: 270
+    reload: 245
 
     shootSound: laser
 shoot: {
@@ -808,9 +808,9 @@ bullet: {
     length: 370
     width: 7.5
     hittable:false
-    buildingDamageMultiplier: 1.25
+    buildingDamageMultiplier: 1.45
 
-    damage: 120
+    damage: 140
     
     shootEffect: [
     {

@@ -1,3 +1,4 @@
 research: titanium-wall-large
+buildCostMultiplier: 2
 health: 810
 armor: 3

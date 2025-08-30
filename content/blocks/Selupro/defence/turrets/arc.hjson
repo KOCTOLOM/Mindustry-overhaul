@@ -21,8 +21,8 @@ consumes: {
 }
 
 requirements: [
-    lead/32
-    graphite/24
+    lead/24
+    graphite/16
 ]
 shoot: {
 	firstShotDelay: 5

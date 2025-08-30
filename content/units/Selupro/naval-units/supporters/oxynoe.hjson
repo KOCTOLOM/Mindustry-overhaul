@@ -29,14 +29,14 @@ bullet: {
     pierce: true
     hitSize: 4
 
-    buildingDamageMultiplier: 1.5
+    buildingDamageMultiplier: 2
 
     statusDuration: 300
     healPercent: 1.5
     status: burning
     lifetime: 9.5
-    damage: 37
-    speed: 4.7
+    damage: 46
+    speed: 4.2
 	frontColor:ffffff00
 	backColor:ffffff00
     hitEffect: hitFlamePlasma
@@ -58,7 +58,7 @@ shootEffect: {
     sizeInterp: pow3In
     interp: pow5Out
     }
-	fragBullets:2
+	fragBullets:1
 	fragRandomSpread:5
 	fragBullet:{
 	type: LightningBulletType
@@ -67,9 +67,9 @@ shootEffect: {
     hitSize: 1
 
     buildingDamageMultiplier: 2
-	lightningLengthRand:3
-    lightningLength: 6
-    damage: 12
+	lightningLengthRand:2
+    lightningLength: 7
+    damage: 24
 	pierceArmor:true
     lightColor: 98ffa9
     lightOpacity: 0.7
@@ -87,9 +87,6 @@ lightningType: {
     hitEffect: hitLancer
     despawnEffect: none
 
-    lightColor: 98ffa9
-    lightOpacity: 0.7
-    lightRadius: 14.5
 	}
     }
 	fragOnHit:false
@@ -109,7 +106,7 @@ lightningType: {
 
 bullet: {
     maxRange: 100
-    damage: 17
+    damage: 24
 
     shootEffect: sparkShoot
     hitEffect: pointHit

@@ -1,3 +1,4 @@
 research: copper-wall
-
+buildCostMultiplier: 1.5
+armor:2
 health: 2900

@@ -1,5 +1,5 @@
 research: titanium-wall-large
 
-buildCostMultiplier: 5.7
+buildCostMultiplier: 5
 
-health: 850
+health: 1200

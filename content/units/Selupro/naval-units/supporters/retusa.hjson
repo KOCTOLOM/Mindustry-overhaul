@@ -47,13 +47,13 @@ bullet: {
     height: 8
     width: 8
 
-    buildingDamageMultiplier: 1.75
+    buildingDamageMultiplier: 1.45
 
     splashDamageRadius: 26
     homingPower: 0.09
 	homingRange: 120
 	homingDelay:2
-    splashDamage: 50
+    splashDamage: 35
     healPercent: 2
     lifetime: 147
     damage: 32

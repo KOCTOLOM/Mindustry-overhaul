@@ -13,7 +13,7 @@ ammoEjectBack: 5
 inaccuracy: 7
 maxAmmo: 60
 ammoPerShot: 24
-reload: 38
+reload: 42
 health: 500
 range: 284
 armor: 4

@@ -360,7 +360,7 @@ blast-compound: {
     hitSize: 5.32
     height: 24
     width: 19
-
+    shieldDamageMultiplier:2
     buildingDamageMultiplier: 1.5
     pierceDamageFactor: 1
     reloadMultiplier: 0.05
@@ -429,7 +429,7 @@ hitEffect: {
     lifetime: 0
     damage: 70
     speed: 0
-
+    shieldDamageMultiplier:5
     lightColor: ff795e
     lightOpacity: 0.7
     lightRadius: 27.5
@@ -515,23 +515,23 @@ surge-alloy: {
     hitSize: 5
     height: 24
     width: 16
-
-    buildingDamageMultiplier: 0.32
+    shieldDamageMultiplier:0.2
+    buildingDamageMultiplier: 0.2
     pierceDamageFactor: 100
-    reloadMultiplier: 3
+    reloadMultiplier: 2.5
     ammoMultiplier: 16
     rangeChange: 388
 
-    splashDamageRadius: 33
-    lightningLength: 16
+    splashDamageRadius: 16
+    lightningLength: 9
     statusDuration: 250
-    lightningDamage: 25
+    lightningDamage: 20
     status: emp-tier-2
     splashDamage: 35
 	pierceArmor:true
-    lightning: 3
+    lightning: 2
     lifetime: 140
-    damage: 55
+    damage: 65
     speed: 5.5
 	
     hitSound: cannon-large-hit
@@ -600,12 +600,11 @@ phase-fabric: {
 	shrinkX:0
 	sprite: large-bomb
     buildingDamageMultiplier: 0.5
-    reloadMultiplier: 0.35
+    reloadMultiplier: 0.4
     ammoMultiplier: 4
-	
+	shieldDamageMultiplier:1.6
     status: sapped
     splashDamageRadius: 33
-    lightningLength: 16
     statusDuration: 250
     splashDamage: 48
     pierceCap: 3

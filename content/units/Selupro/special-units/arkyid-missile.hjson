@@ -21,11 +21,11 @@ lightColor: bf92f9
 lightOpacity: 0.1
 lightRadius: 27.5
 
-missileAccelTime: 25
+missileAccelTime: 35
 lifetime: 125
 rotateSpeed: 3
 fogRadius: 2
-maxRange: 30
+maxRange: 15
 health: 410
 speed: 4.5
 armor: 16

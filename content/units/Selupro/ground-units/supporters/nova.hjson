@@ -10,6 +10,7 @@ mineTier: 2
 health: 180
 speed: 0.64
 armor: 4
+boostMultiplier:0.7
 
 lightColor: 98ffa9
 lightOpacity: 0.7

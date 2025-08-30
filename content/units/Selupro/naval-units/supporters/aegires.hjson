@@ -552,9 +552,9 @@ bullet: {
     shrinkY: 0
     height: 8
     width: 8
-    buildingDamageMultiplier: 0.8
+    buildingDamageMultiplier: 1.2
     splashDamageRadius: 25
-    splashDamage: 70
+    splashDamage: 120
     weaveScale: 3
     lifetime: 60
     drag: 0.005
@@ -624,7 +624,6 @@ fragBullet: {
     width: 14
 	pierce: true
 	pierceBuilding: true
-	pierceCap: 9999
 	lifetime: 200
 	lightRadius: 40
 	lightOpacity: 0.9
@@ -692,11 +691,11 @@ fragBullet: {
     hittable: false
     hitSize: 3
 
-    buildingDamageMultiplier: 0.3
+    buildingDamageMultiplier: 3
 
 	lightningLengthRand:4
     lightningLength: 6
-    damage: 16
+    damage: 22
 	pierceArmor:true
     lightColor: 98ffa9
     lightOpacity: 0.7
@@ -712,9 +711,6 @@ lightningType: {
 
     hitEffect: hitLancer
     despawnEffect: none
-    lightColor: 98ffa9
-    lightOpacity: 0.7
-    lightRadius: 14.5
 	}
     }
 	}

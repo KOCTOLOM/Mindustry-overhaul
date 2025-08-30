@@ -1,8 +1,8 @@
 research: titanium-wall-large
 
-buildCostMultiplier: 10.95
+buildCostMultiplier: 10
 
-health: 1500
+health: 1750
 armor: 8
 
 destroyBullet: {

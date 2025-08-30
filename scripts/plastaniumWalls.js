@@ -1,5 +1,5 @@
 var plastWallBullet = extend(ShrapnelBulletType, {
-	damage: 120,
+	damage: 130,
 	lifetime: 25,
 	width: 5,
     serrations: 3,
@@ -13,8 +13,8 @@ var plastWallBullet = extend(ShrapnelBulletType, {
 const ReinfPlastWall = extend(Wall, "reinf-plast-wall", {
     requirements: ItemStack.with(Items.plastanium, 10, Items.metaglass, 20, Items.surgeAlloy, 8),
     category: Category.defense,
-    health: 1800,
-    armor:9,
+    health: 2100,
+    armor:14,
     insulated: true,
     absorbLasers: true,
     schematicPriority: 10,
@@ -41,8 +41,8 @@ ReinfPlastWall.buildType = () => extend(Wall.WallBuild, ReinfPlastWall, {
 const ReinfPlastWallLarge = extend(Wall, "reinf-plast-wall-large", {
     requirements: ItemStack.mult(ReinfPlastWall.requirements, 4),
     category: Category.defense,
-    health: 1800 * 4,
-    armor: 9,
+    health: 2100 * 4,
+    armor: 14,
     insulated: true,
     absorbLasers: true,
     schematicPriority: 10,

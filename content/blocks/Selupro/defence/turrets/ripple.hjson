@@ -10,7 +10,7 @@ velocityRnd: 0.2
 inaccuracy: 6
 health: 1250
 maxAmmo: 45
-reload: 340
+reload: 280
 range: 576
 armor: 9
 researchCostMultiplier:0.4

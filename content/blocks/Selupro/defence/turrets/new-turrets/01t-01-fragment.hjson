@@ -21,7 +21,7 @@ consumes: {
 
 requirements: [
     copper/75
-    lead/64
-    titanium/45
-    silicon/32
+    lead/45
+    titanium/35
+    silicon/26
 ]

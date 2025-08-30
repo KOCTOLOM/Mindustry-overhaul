@@ -4,7 +4,7 @@ rotateSpeed: 1
 shake: 15
 
 scaledHealth: 530
-ammoPerShot: 18
+ammoPerShot: 24
 shootCone: 0.35
 maxAmmo: 96
 reload: 480
@@ -18,7 +18,7 @@ consumes: {
 		cryofluid/1
 	]
 	items: [
-		blast-compound/24
+		blast-compound/15
 	]
 }
 liquidCapacity: 900

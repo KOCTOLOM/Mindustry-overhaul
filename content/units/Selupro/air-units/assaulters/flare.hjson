@@ -53,8 +53,8 @@ bullet: {
     width: 7
 
     lifetime: 36
-    damage: 9
-    speed: 3
+    damage: 11
+    speed: 3.4
     
     smokeEffect: shootSmallSmoke
     shootEffect:[

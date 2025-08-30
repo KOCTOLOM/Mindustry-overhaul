@@ -172,7 +172,7 @@ bullet: {
     splashDamage: 15
     lifetime: 12.25
     pierceCap: 15
-    damage: 32
+    damage: 48
     speed: 16
 
     smokeEffect: shootSmallSmoke
@@ -319,14 +319,14 @@ bullet: {
     height: 14
     width: 8
 
-    buildingDamageMultiplier: 1.5
+    buildingDamageMultiplier: 2.25
 
     splashDamageRadius: 14
     statusDuration: 180
     splashDamage: 35
     lifetime: 35
     pierceCap: 2
-    damage: 40
+    damage: 45
     speed: 8
 
     smokeEffect: shootSmallSmoke

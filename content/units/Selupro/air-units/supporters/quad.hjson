@@ -7,7 +7,7 @@ crashDamageMultiplier: 5
 
 itemCapacity: 3200
 rotateSpeed: 1.4
-buildSpeed: 1.5
+buildSpeed: 3
 mineSpeed: 7.5
 health: 24000
 accel: 0.025
