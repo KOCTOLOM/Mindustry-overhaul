@@ -42,7 +42,7 @@ weapons: [
     x: 4
     y: 3
     shootCone: 90
-    reload: 9
+    reload: 11
 
     shootSound: sap
 bullet: {
@@ -53,7 +53,7 @@ bullet: {
     buildingDamageMultiplier: 0.75
 
     statusDuration: 180
-    sapStrength: 0.75
+    sapStrength: 0.6
     knockback: -0.85
     lifetime: 25
     damage: 48
