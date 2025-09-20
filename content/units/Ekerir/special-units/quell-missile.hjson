@@ -1,5 +1,5 @@
 template: MissileUnitType
-
+hidden:true
 type: missile
 playerControllable: false
 allowedInPayloads: false
@@ -14,7 +14,6 @@ hitSize: 3
 
 envEnabled: -1
 envDisabled: 0
-
 missileAccelTime: 20
 rotateSpeed: 4
 fogRadius: 5

@@ -1,0 +1,3127 @@
+fogRadius: 300
+stepShake: 14.5
+range: 600
+
+rotateSpeed: 0.75
+health: 160000
+speed: 0.21
+armor: 240
+hidden:true
+type:mech
+
+lightColor: FF5218
+lightOpacity: 0.7
+healColor: b0bac0
+lightRadius: 170
+
+mechStepParticles: true
+stepShake: 4
+drownTimeMultiplier: 12
+mechFrontSway: 0.1
+mechSideSway: 0.2
+
+deathSound: mech-large-destroyed
+
+immunities: [ burning, freezing, melting, wet, blasted, shocked, spore-slowed, electrified, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-damage-reduction-tier-3,mov-armor-piercing-tier-1,mov-armor-piercing-tier-2,mov-emp-tier-1, mov-oxidation-tier-1, mov-oxidation-tier-2,mov-slow-reloading-tier-2,mov-slow-reloading-tier-3, mov-high-emp, tarred ]
+targetFlags: [ turret, repair, core ]
+
+abilities: [
+    {
+    type: ShieldRegenFieldAbility
+    reload: 640
+    amount: 3000
+    max: 10000
+    range: 0
+}
+    {
+    type: ShieldRegenFieldAbility
+    reload: 1920
+    amount: 700
+    range: 100
+    max: 5000
+}
+    {
+    type: RegenAbility
+    amount: 15
+}
+{
+    type: ShieldArcAbility
+    radius: 1
+    angle: 0
+    width: 0
+    y: -9
+    display:false
+    cooldown: 0
+    regen: 4
+    max: 0
+}
+    {
+    type: ArmorPlateAbility
+    healthMultiplier: 0.3
+    shineSpeed:2
+    color: f9c27a90
+}
+    ]
+
+weapons: [
+{
+    minShootVelocity: 0.01
+    alwaysShooting: true
+    display: false
+    mirror: false
+    rotate: true
+    shootX: 0
+    shootY: 0
+    x: 0
+    y: 0
+
+    reload: 81
+
+    shootSound: mech-large-footsteps
+bullet: {
+    type: BasicBulletType
+    maxRange: 652
+    height: 0
+    width: 0
+
+    lifetime: 10
+    damage: 0
+    speed: 1
+
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: none
+    hitEffect: none
+}
+    }
+
+{
+    name: hidden-bombing-mw
+    controllable: false
+    layerOffset: -0.001
+    rotationLimit: 30
+    autoTarget: true
+    alternate: false
+    shootCone: 45
+    rotate: true
+    mirror: true
+    shake: 1.75
+    shootY: 1
+    x: 11
+    y: 10
+
+    reload: 2
+
+    ejectEffect: none
+    shootSound: flame
+bullet: {
+    type: BasicBulletType
+    pierceBuilding: true
+    keepVelocity: false
+    collidesAir: false
+    pierceArmor: true
+    hittable: false
+    pierce: true
+    hitSize: 7
+
+    buildingDamageMultiplier: 1.45
+    ammoMultiplier: 15
+
+    statusDuration: 540
+    status: burning
+    pierceCap: 80
+    lifetime: 19
+    damage: 81
+    speed: 3
+
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+}
+    }
+
+{
+    name: hidden-bombing-mw
+    controllable: false
+    layerOffset: -0.001
+    rotationLimit: 30
+    autoTarget: true
+    alternate: false
+    shootCone: 45
+    rotate: true
+    mirror: true
+    shake: 1.75
+    shootY: 1
+    x: 7
+    y: 11
+
+    reload: 3
+
+    ejectEffect: none
+    shootSound: flame
+bullet: {
+    type: BulletType
+    pierceBuilding: true
+    keepVelocity: false
+    collidesAir: false
+    pierceArmor: true
+    hittable: false
+    pierce: true
+    hitSize: 7
+
+    buildingDamageMultiplier: 1.45
+
+    statusDuration: 540
+    status: burning
+    pierceCap: 81
+    lifetime: 19
+    damage: 81
+    speed: 3
+
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+}
+    }
+
+{
+    name: RN-M1-war-weapon
+    rotationLimit: 12
+    baseRotation: 4.5
+    rotateSpeed: 0.6
+    shootCone: 45
+    rotate: true
+    shootY: 8
+    recoil: 5
+    shake: 6
+    x: 23.5
+    y: 1
+    cooldownTime: 240
+    inaccuracy: 6
+    reload: 150
+    heatColor:FF000090
+    shootSound: rail-shot-2
+    ejectEffect: casing3
+    velocityRnd:0.4
+   shoot: {
+    type: ShootMulti
+    source: {
+        type: ShootSpread
+        spread: 0.5
+        shots: 6
+        shotDelay: 0.5
+    }
+    dest: [
+    {
+            type: ShootMulti
+            source: {
+               type: ShootPattern
+               shots: 3
+               shotDelay: 12
+               }
+            dest: [
+            {
+            type: ShootPattern
+                firstShotDelay: 40
+                shots: 4
+                shotDelay: 50
+            }
+            ]
+    }
+    ]
+    }
+/*parts: [
+    {
+    type: RegionPart
+    suffix: -rotator
+    progress: reload
+    outline: false
+    under: true
+    moveRot: 15000
+    x: 4.5
+    y: -0.75
+}
+    ]*/
+
+bullet: {
+    type: BasicBulletType
+    pierceBuilding: true
+    despawnShake: 7.5
+    hitShake: 7.5
+    pierce: true
+    height: 26
+    width: 11
+    puddleAmount: 9
+    puddleRange: 6
+    puddles: 3
+    status: mov-armor-piercing-tier-3
+    splashDamageRadius: 16
+    statusDuration: 300
+    splashDamage: 92
+    lifetime: 26
+    weaveScale: 4
+    pierceCap: 6
+    weaveMag: 1
+    damage: 162
+    speed: 34
+    drag:0.04
+    incendAmount: 4
+    incendSpread: 10
+    incendChance: 1
+    buildingDamageMultiplier: 0.4
+    smokeEffect: shootBigSmoke2
+    hitEffect: hitBulletColor
+    shootEffect: sparkShoot
+    trailRotation:true
+    lightColor: f9c27a
+    lightOpacity: 0.4
+    lightRadius: 14
+    trailInterval:1
+    trailChance:1
+    trailEffect:[
+    {
+        startDelay:0
+        type: WaveEffect
+        sides:5
+        offsetX:12
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 2
+        sizeTo: 3
+        strokeTo:4
+        strokeFrom:1
+        lifetime: 12
+
+        colorFrom: f9c27a
+        colorTo: f9c27a00
+    }
+    {
+        startDelay:0
+        type: WaveEffect
+        sides:5
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 2
+        sizeTo: 3
+        strokeTo:4
+        strokeFrom:1
+        lifetime: 12
+
+        colorFrom: f9c27a
+        colorTo: f9c27a00
+    }
+    {
+        startDelay:10
+        type: WaveEffect
+        sides:3
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 2
+        lifetime: 12
+        strokeTo:3
+        strokeFrom:1
+        colorFrom: f9c27a
+        colorTo: f9c27a00
+    }
+    {
+        startDelay:10
+        type: WaveEffect
+        sides:3
+        offsetX:12
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 2
+        lifetime: 12
+        strokeTo:3
+        strokeFrom:1
+        colorFrom: f9c27a
+        colorTo: f9c27a00
+    }
+    ]
+    trailColor: f9c27a
+    trailLength: 30.25
+    trailWidth: 2.1
+
+    frontColor: f9c27a
+    backColor: f9c27a
+
+despawnEffect: {
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 9
+
+    sizeFrom: 0
+    sizeTo: 24
+
+    colorFrom: FF9F0F
+    colorTo: FFF480
+    }
+
+    fragBullets: 3
+    fragRandomSpread: 10
+    fragVelocityMin: 0.7
+    fragVelocityMax: 2.7
+    fragLifeMin: 0.9
+    fragLifeMax: 1.5
+    fragBullet: {
+    type: BasicBulletType
+    sprite: large-orb
+    shrinkX: 0
+    shrinkY: 0
+    drag: 0.03
+    height: 12
+    width: 5
+    splashDamageRadius: 10
+    splashDamage: 50
+    lifetime: 35
+    speed: 5.45
+    damage: 60
+    pierceArmor:true
+    hittable:false
+    reflectable: false
+    absorbable: false
+    pierce: true
+    pierceCap: 14
+    pierceBuilding: true
+
+    lightColor: f9c27a
+    lightOpacity: 0.4
+    lightRadius: 14
+
+    trailColor: f9c27a
+    trailLength: 30.25
+    trailWidth: 2.1
+
+    frontColor: f9c27a
+    backColor: f9c27a
+    despawnEffect:[
+        {
+        type: ParticleEffect
+        particles: 6
+        cone: 50
+        line: true
+        strokeFrom: 1.3
+        strokeTo: 1
+        lenFrom: 2
+        lenTo: 3
+        length: 20
+        colorFrom: f9c27a
+        colorTo: f9c27a00
+        lifetime: 35
+        }
+        ]
+        hitEffect: none
+
+        trailColor: f9c27a
+        trailWidth: 1
+        trailLength: 2
+        trailParam: 2
+        trailInterval: 1
+
+        frontColor: ffffff
+        backColor: f9c27a
+        incendAmount: 1
+        incendSpread: 10
+        incendChance: 1
+
+        lightColor: f9c27a
+        lightOpacity: 0.7
+        lightRadius: 31
+    }
+    }
+}
+
+{
+    inaccuracy: 8
+    shootCone: 45
+    shootY: 11
+    recoil: 5
+    shake: 5
+    x: -22.5
+    y: 1
+
+    velocityRnd: 0.6
+    reload: 570
+
+    shootSound: blaster-shot-1
+    ejectEffect: casing4
+shoot: {
+    type: ShootMulti
+source: {
+    type: ShootSpread
+    shots: 2
+    shotDelay: 10
+    spread:3
+    }
+dest: [
+    {
+    type: ShootSpread
+    shots: 2
+    shotDelay: 1.5
+    spread:10
+    }
+]
+    }
+bullet:{
+    type: BasicBulletType
+    sprite: large-bomb
+    pierceBuilding: true
+    despawnShake: 10
+    fragOnHit: false
+    hitSound: none
+    pierce: true
+    hitShake: 5
+    shrinkX: 0
+    shrinkY: 0
+    height: 20
+    width: 20
+    spin: 1
+
+    buildingDamageMultiplier: 0
+
+    pierceCap: 200
+    lifetime: 200
+    damage: 450
+    drag: 0.032
+    speed: 24
+
+    fragRandomSpread: 360
+    fragVelocityMin: 0.2
+    fragVelocityMax: 1.4
+    fragLifeMin: 0.4
+    fragBullets: 6
+    fragLifeMax: 3
+
+    homingPower: 0.002
+    homingRange: 30
+    homingDelay: 80
+
+    shootEffect: shootBig
+    hitEffect: none
+
+    lightColor:FC2F00
+    lightOpacity: 0.7
+    lightRadius: 52
+
+    trailColor: f9c27a
+    trailLength: 8
+    trailWidth: 1.5
+
+despawnEffect: [
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    particles: 1
+    lifetime: 30
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 10
+    length: 0
+    sizeTo: 50
+
+    colorFrom: FF9F0F00
+    colorTo: FF9F0F
+}
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    startDelay: 30
+    particles: 1
+    lifetime: 90
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 50
+    length: 0
+    sizeTo: 70
+
+    colorFrom: FF9F0F
+    colorTo: FFF480
+}
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    startDelay: 100
+    particles: 1
+    lifetime: 60
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 70
+    sizeTo: 40
+    length: 0
+
+    colorFrom: FFF480
+    colorTo: FFF480
+}
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    startDelay: 160
+    particles: 1
+    lifetime: 20
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 40
+    length: 0
+    sizeTo: 0
+
+    colorFrom: FFF4803
+    colorTo: 000000
+}
+    {
+    type: ParticleEffect
+    particles: 30
+    lifetime: 200
+    layer: 100.3
+    cone: 360
+
+    sizeFrom: 2
+    length: 70
+    sizeTo: 3
+
+    colorFrom: 5B5B5B80
+    colorTo: 5B5B5B00
+}
+    {
+    type: ParticleEffect
+    particles: 45
+    lifetime: 200
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 1
+    length: 50
+    sizeTo: 3
+
+    colorFrom: 5B5B5B80
+    colorTo: 5B5B5B00
+}
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  31.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 0
+type: ParticleEffect
+particles: 2
+length:  29
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  32.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 2
+type: ParticleEffect
+particles: 2
+length:  37
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  33.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 4
+type: ParticleEffect
+particles: 2
+length:  41
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  35.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 6
+type: ParticleEffect
+particles: 2
+length:  32
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  37.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 8
+type: ParticleEffect
+particles: 2
+length:  43
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  39.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 10
+type: ParticleEffect
+particles: 2
+length:  35
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  41.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 12
+type: ParticleEffect
+particles: 2
+length:  36
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  43.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 14
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  46.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 16
+type: ParticleEffect
+particles: 2
+length:  38
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  49.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 18
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  52.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 20
+type: ParticleEffect
+particles: 2
+length:  36
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  55.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 22
+type: ParticleEffect
+particles: 2
+length:  47
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  58.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 24
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  62.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 26
+type: ParticleEffect
+particles: 2
+length:  43
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  66.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 28
+type: ParticleEffect
+particles: 2
+length:  50
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  70.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 30
+type: ParticleEffect
+particles: 2
+length:  41
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  74.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 32
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  78.60000000000001
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 34
+type: ParticleEffect
+particles: 2
+length:  50
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  83.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 36
+type: ParticleEffect
+particles: 2
+length:  50
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  88.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 38
+type: ParticleEffect
+particles: 2
+length:  56
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  93.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 40
+type: ParticleEffect
+particles: 2
+length:  49
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  98.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 42
+type: ParticleEffect
+particles: 2
+length:  53
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  103.60000000000001
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 44
+type: ParticleEffect
+particles: 2
+length:  57
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  109.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 46
+type: ParticleEffect
+particles: 2
+length:  66
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  115.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 48
+type: ParticleEffect
+particles: 2
+length:  67
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  121.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 50
+type: ParticleEffect
+particles: 2
+length:  65
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  127.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 52
+type: ParticleEffect
+particles: 2
+length:  68
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  133.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 54
+type: ParticleEffect
+particles: 2
+length:  74
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  140.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 56
+type: ParticleEffect
+particles: 2
+length:  82
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  147.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 58
+type: ParticleEffect
+particles: 2
+length:  84
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  154.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 60
+type: ParticleEffect
+particles: 2
+length:  87
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  161.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 62
+type: ParticleEffect
+particles: 2
+length:  86
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  168.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 64
+type: ParticleEffect
+particles: 2
+length:  90
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  176.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 66
+type: ParticleEffect
+particles: 2
+length:  82
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  184.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 68
+type: ParticleEffect
+particles: 2
+length:  93
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  192.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 70
+type: ParticleEffect
+particles: 2
+length:  90
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  200.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 72
+type: ParticleEffect
+particles: 2
+length:  99
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  208.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 74
+type: ParticleEffect
+particles: 2
+length:  91
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  217.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 76
+type: ParticleEffect
+particles: 2
+length:  96
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  226.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 78
+type: ParticleEffect
+particles: 2
+length:  105
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+    ]
+fragBullet:{
+    type: BasicBulletType
+    sprite: large-bomb
+    pierceBuilding: true
+    despawnShake: 10
+    fragOnHit: false
+    hitSound: none
+    pierce: true
+    hitShake: 5
+    shrinkX: 0
+    shrinkY: 0
+    height: 20
+    width: 20
+    spin: 1
+
+    buildingDamageMultiplier: 0
+
+    pierceCap: 200
+    lifetime: 40
+    damage: 240
+    drag: 0.032
+    speed: 7.5
+
+    fragRandomSpread: 360
+    fragVelocityMin: 0.2
+    fragVelocityMax: 2
+    fragLifeMin: 0.4
+    fragBullets: 7
+    fragLifeMax: 3
+
+    homingPower: 0.002
+    homingRange: 30
+    homingDelay: 80
+
+    shootEffect: shootBig
+    hitEffect: none
+
+    lightColor:FC2F00
+    lightOpacity: 0.7
+    lightRadius: 52
+
+    trailColor: f9c27a
+    trailLength: 8
+    trailWidth: 1.5
+
+despawnEffect: [
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    particles: 1
+    lifetime: 30
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 10
+    length: 0
+    sizeTo: 50
+
+    colorFrom: FF9F0F00
+    colorTo: FF9F0F
+}
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    startDelay: 30
+    particles: 1
+    lifetime: 90
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 50
+    length: 0
+    sizeTo: 70
+
+    colorFrom: FF9F0F
+    colorTo: FFF480
+}
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    startDelay: 100
+    particles: 1
+    lifetime: 60
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 70
+    sizeTo: 40
+    length: 0
+
+    colorFrom: FFF480
+    colorTo: FFF480
+}
+    {
+    type: ParticleEffect
+    region: mov-cross-explode
+    useRotation: false
+    startDelay: 160
+    particles: 1
+    lifetime: 20
+    layer: 100.3
+    cone: 0
+
+    sizeFrom: 40
+    length: 0
+    sizeTo: 0
+
+    colorFrom: FFF4803
+    colorTo: 000000
+}
+    {
+    type: ParticleEffect
+    particles: 30
+    lifetime: 200
+    layer: 100.3
+    cone: 360
+
+    sizeFrom: 2
+    length: 70
+    sizeTo: 3
+
+    colorFrom: 5B5B5B80
+    colorTo: 5B5B5B00
+}
+    {
+    type: ParticleEffect
+    particles: 45
+    lifetime: 200
+    layer: 100.1
+    cone: 360
+
+    sizeFrom: 1
+    length: 50
+    sizeTo: 3
+
+    colorFrom: 5B5B5B80
+    colorTo: 5B5B5B00
+}
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  31.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 0
+type: ParticleEffect
+particles: 2
+length:  29
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  32.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 2
+type: ParticleEffect
+particles: 2
+length:  37
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  33.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 4
+type: ParticleEffect
+particles: 2
+length:  41
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  35.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 6
+type: ParticleEffect
+particles: 2
+length:  32
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  37.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 8
+type: ParticleEffect
+particles: 2
+length:  43
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  39.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 10
+type: ParticleEffect
+particles: 2
+length:  35
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  41.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 12
+type: ParticleEffect
+particles: 2
+length:  36
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  43.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 14
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  46.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 16
+type: ParticleEffect
+particles: 2
+length:  38
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  49.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 18
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  52.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 20
+type: ParticleEffect
+particles: 2
+length:  36
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  55.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 22
+type: ParticleEffect
+particles: 2
+length:  47
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  58.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 24
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  62.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 26
+type: ParticleEffect
+particles: 2
+length:  43
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  66.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 28
+type: ParticleEffect
+particles: 2
+length:  50
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  70.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 30
+type: ParticleEffect
+particles: 2
+length:  41
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  74.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 32
+type: ParticleEffect
+particles: 2
+length:  46
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  78.60000000000001
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 34
+type: ParticleEffect
+particles: 2
+length:  50
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  83.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 36
+type: ParticleEffect
+particles: 2
+length:  50
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  88.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 38
+type: ParticleEffect
+particles: 2
+length:  56
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  93.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 40
+type: ParticleEffect
+particles: 2
+length:  49
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  98.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 42
+type: ParticleEffect
+particles: 2
+length:  53
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  103.60000000000001
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 44
+type: ParticleEffect
+particles: 2
+length:  57
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  109.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 46
+type: ParticleEffect
+particles: 2
+length:  66
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  115.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 48
+type: ParticleEffect
+particles: 2
+length:  67
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  121.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 50
+type: ParticleEffect
+particles: 2
+length:  65
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  127.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 52
+type: ParticleEffect
+particles: 2
+length:  68
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  133.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 54
+type: ParticleEffect
+particles: 2
+length:  74
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  140.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 56
+type: ParticleEffect
+particles: 2
+length:  82
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  147.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 58
+type: ParticleEffect
+particles: 2
+length:  84
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  154.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 60
+type: ParticleEffect
+particles: 2
+length:  87
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  161.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 62
+type: ParticleEffect
+particles: 2
+length:  86
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  168.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 64
+type: ParticleEffect
+particles: 2
+length:  90
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  176.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 66
+type: ParticleEffect
+particles: 2
+length:  82
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  184.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 68
+type: ParticleEffect
+particles: 2
+length:  93
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  192.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 70
+type: ParticleEffect
+particles: 2
+length:  90
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  200.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 72
+type: ParticleEffect
+particles: 2
+length:  99
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  208.6
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 74
+type: ParticleEffect
+particles: 2
+length:  91
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  4
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  217.2
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 76
+type: ParticleEffect
+particles: 2
+length:  96
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  3
+interp: pow5Out
+colorFrom:  FFCC80
+colorTo:  C7770000
+layer:100.3
+}
+}
+
+
+{
+type: RadialEffect
+rotationSpacing : 60
+rotationOffset:  226.0
+lengthOffset: 10
+amount: 6
+effect: {
+startDelay: 78
+type: ParticleEffect
+particles: 2
+length:  105
+lifetime: 200
+sizeFrom: 1
+sizeTo: 3
+cone:  2
+interp: pow5Out
+colorFrom:  929292
+colorTo:  92929200
+layer:100.3
+}
+}
+    ]
+fragRandomSpread: 360
+fragVelocityMin: 0.4
+fragVelocityMax: 2
+fragLifeMin: 0.2
+fragBullets: 8
+fragLifeMax: 2
+fragBullet: {
+    type: BasicBulletType
+    sprite: large-bomb
+    pierceBuilding: true
+    collidesAir: false
+    despawnShake: 1
+    pierce: true
+    hitShake: 1
+    height: 10
+    width: 10
+    spin: 3
+
+    buildingDamageMultiplier: 0.2
+
+    splashDamageRadius: 26
+    splashDamage: 30
+    pierceCap: 200
+    lifetime: 60
+    damage: 90
+    drag: 0.07
+    speed: 6
+    shrinkX:0
+    shrinkY:0
+    incendSpread: 16
+    incendAmount: 16
+    incendChance: 1
+
+    hitEffect: flakExplosion
+
+    lightColor:FC2F00
+    lightOpacity: 0.8
+    lightRadius: 16
+
+    trailColor: F3E979F0
+    trailLength: 6
+    trailWidth: 1
+    }
+intervalDelay: 100
+intervalBullets: 1
+bulletInterval:10
+intervalBullet: {
+    type: BasicBulletType
+    sprite: large-bomb
+    pierceBuilding: true
+    collidesAir: false
+    despawnShake: 1
+    pierce: true
+    hitShake: 1
+    height: 8
+    width: 8
+    spin: 3
+    shrinkX:0
+    shrinkY:0
+    buildingDamageMultiplier: 0.1
+
+    splashDamageRadius: 26
+    splashDamage: 30
+    pierceCap: 200
+    lifetime: 60
+    damage: 90
+    drag: 0.06
+    speed: 6
+
+    incendSpread: 16
+    incendAmount: 6
+    incendChance: 1
+
+    hitEffect: flakExplosion
+
+    lightColor:FC2F00
+    lightOpacity: 0.3
+    lightRadius: 14
+
+    trailColor: F3E979F0
+    trailLength: 16
+    trailWidth: 1
+    }
+}
+    }
+    }
+{
+    name: orb-strike
+    showStatSprite: false
+    controllable: false
+    layerOffset: -0.001
+    autoTarget: true
+    alternate: true
+    shootCone: 360
+    shake: 4.5
+    recoil: 0
+    shootX: 0
+    shootY: 0
+    x: 10.25
+    y: -2.5
+    rotate:true
+
+    cooldownTime: 600
+    velocityRnd: 0.8
+    inaccuracy: 80
+    reload: 800
+    heatColor:FF00000
+    shootSound: rocket-shot-2
+
+       shoot: {
+       	type: ShootMulti
+       	source: {
+           type: ShootSpread
+           spread: 2
+           shots: 3
+           }
+       	dest: [{
+            type: ShootPattern
+                shotDelay: 40
+                shots: 12
+            }]
+       	}
+    shootWarmupSpeed: 0.004
+    minWarmup: 0.9
+
+bullet: {
+    type: BasicBulletType
+    keepVelocity: false
+    rangeOverride: 3000
+    despawnShake: 3
+    collides:false
+    hitShake: 3
+    height: 14
+    width: 8
+
+    splashDamageRadius: 26
+    statusDuration: 300
+    homingPower: 0.008
+    splashDamage: 48
+    homingRange: 300
+    status: melting
+    lifetime: 520
+    damage: 150
+    speed: 56
+    drag:0.03
+    despawnEffect: none
+
+    shootEffect: [
+    {
+    type: ParticleEffect
+    particles: 12
+    cone: 360
+    length: 14
+    lifetime: 35
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: 5B5B5B
+    colorTo: 5B5B5B00
+    }
+    {
+    type: ParticleEffect
+    particles: 6
+    cone: 360
+    length: 27
+    lifetime: 35
+    sizeFrom: 2
+    sizeTo:4
+    layer:100.2
+    colorFrom: 808080
+    colorTo: 80808000
+    }
+    {
+    startDelay:2
+    type: ParticleEffect
+    particles: 12
+    cone: 20
+    length: 27
+    lifetime: 35
+    sizeFrom: 1
+    sizeTo: 2
+    baseRotation:90
+    useRotation:false
+    layer:100.3
+    colorFrom: 808080
+    colorTo: 80808000
+    }
+    {
+    startDelay:4
+    type: ParticleEffect
+    particles: 6
+    cone: 12
+    length: 35
+    lifetime: 35
+    sizeFrom: 1
+    sizeTo: 2
+    baseRotation:90
+    useRotation:false
+    layer:100.3
+    colorFrom: 808080
+    colorTo: 80808000
+    }
+    {
+    startDelay:6
+    type: ParticleEffect
+    particles: 8
+    lifetime: 30
+    layer: 100.2
+    cone: 8
+    baseRotation:90
+    useRotation:false
+    sizeFrom: 2
+    length: 50
+    sizeTo: 3
+    interp:pow3Out
+    colorFrom: ffd2ae80
+    colorTo: ffd2ae00
+    }
+    {
+    startDelay:10
+    type: ParticleEffect
+
+    particles: 7
+    lifetime: 70
+    layer: 100.2
+    cone:6
+    baseRotation:90
+    useRotation:false
+    sizeFrom: 2
+    length: 70
+    sizeTo: 0
+    sizeInterp:pow3Out
+    sizeChangeStart:50
+    interp:pow5Out
+    colorFrom: ffd2ae
+    colorTo: ffd2ae40
+    }
+    {
+    startDelay:10
+    type: ParticleEffect
+    particles: 15
+    lifetime: 140
+    layer: 100.3
+    cone: 1
+    interp:pow10Out
+    sizeInterp:pow3Out
+    sizeFrom: 2
+    sizeChangeStart:100
+    length: 300
+    sizeTo: 0
+    followParent:false
+    baseRotation:90
+    useRotation:false
+    colorFrom: ffd2ae
+    colorTo: ffd2ae20
+    }
+    {
+    startDelay:20
+    type: ParticleEffect
+    particles: 200
+    lifetime: 30
+    layer: 100.3
+    cone: 0
+    interp:pow10Out
+    sizeFrom: 1
+    sizeChangeStart:24
+    length: 3000
+    lenFrom:50
+    lenTo:50
+    line:true
+    strokeFrom: 1
+    strokeTo: 0
+    followParent:false
+    baseRotation:90
+    useRotation:false
+    colorFrom: ffffff
+    colorTo: ffffff00
+    }
+    ]
+
+    fragRandomSpread: 0
+    fragBullets:3
+    fragLifeMin: 0.6
+    fragLifeMax: 2
+    fragBullet: {
+    type: BasicBulletType
+    shrinkX: 0
+    shrinkY: 0
+    drag: 0.02
+    height: 0
+    width: 0
+    collides:false
+    absorbable:false
+    hittable:false
+    lifetime: 60
+    speed: 0
+    damage: 200
+    splashDamage:800
+    splashDamageRadius:30
+	pierceArmor:true
+    
+    incendAmount: 12
+    incendSpread: 20
+    incendChance: 1
+    
+    hittable:false
+    reflectable: false
+    absorbable: false
+    pierce: true
+    pierceCap: 8
+    pierceBuilding: true
+    
+    despawnEffect:[
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 7
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: 5B5B5B
+    colorTo: 5B5B5B00
+    }    
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 5
+    lifetime: 45
+    sizeFrom: 1
+    sizeTo: 2
+    layer:100.2
+    colorFrom: 808080
+    colorTo: 80808000
+    }
+    {
+    startDelay:4
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 26
+    lifetime: 90
+    colorFrom: 5B5B5B20
+    colorTo: 5B5B5B00
+    }
+    {
+    type: ParticleEffect
+    particles: 7
+    cone: 40
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 5
+    colorFrom: F3E979
+    colorTo: F3E97900
+    lifetime: 35
+    }
+    {
+    type: ParticleEffect
+    particles: 12
+    cone: 25
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 2
+    lenFrom: 2
+    lenTo: 3
+    length: 12
+    colorFrom: F3E979
+    colorTo: F3E97900
+    lifetime: 35
+    }
+    {
+    type: ParticleEffect
+    particles: 12
+    cone: 24
+    line: true
+    strokeFrom: 0.4
+    strokeTo: 1
+    lenFrom: 2
+    lenTo: 2
+    length: 16
+    colorFrom: F3E979
+    colorTo: F3E97900
+    lifetime: 30
+    }
+    ]
+    hitEffect: none
+
+    frontColor: ffffff
+    backColor: F3E979
+
+    fragBullets: 15
+    fragRandomSpread: 360
+    fragVelocityMin: 0.5
+    fragVelocityMax: 1.5
+    fragLifeMin: 0.6
+    fragLifeMax: 1.3
+    fragBullet: {
+    type: BasicBulletType
+    sprite: large-orb
+    shrinkX: 0
+    shrinkY: 0
+    drag: 0.02
+    height: 9
+    width: 4
+
+    splashDamageRadius: 8
+    splashDamage: 10
+    lifetime: 34
+    speed: 5
+    drag:0.02
+    damage: 10
+
+    incendAmount: 3
+    incendSpread: 8
+    incendChance: 1
+
+    hittable:false
+    reflectable: false
+    absorbable: false
+    pierce: true
+    pierceCap: 6
+    pierceBuilding: true
+    
+    despawnEffect:[
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 12
+    lifetime: 45
+    sizeFrom: 2
+    sizeTo: 3
+    layer:100.1
+    colorFrom: f9c27a
+    colorTo: f9c27a00
+    }    
+    {    
+    startDelay:5
+    type: ParticleEffect
+    particles: 4
+    cone: 360
+    length: 12
+    lifetime: 45
+    sizeFrom: 1
+    sizeTo: 2
+    layer:100.2
+    colorFrom: f9c27a
+    colorTo: f9c27a00
+    }
+    {
+    startDelay:4
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 13
+    lifetime: 90
+    colorFrom: f9c27a20
+    colorTo: f9c27a00
+    }
+    {
+    type: ParticleEffect
+    particles: 6
+    cone: 50
+    line: true
+    strokeFrom: 1.3
+    strokeTo: 1
+    lenFrom: 2
+    lenTo: 3
+    length: 20
+    colorFrom: f9c27a
+    colorTo: f9c27a00
+    lifetime: 35
+    }
+    ]
+    hitEffect: none
+    
+    trailColor: f9c27a
+    trailWidth: 1
+    trailLength: 3
+
+    frontColor: ffffff
+    backColor: f9c27a
+    incendAmount: 1
+    incendSpread: 4
+    incendChance: 1
+    intervalBullets: 1
+    bulletInterval:2
+    intervalRandomSpread:5
+    intervalBullet: {
+        type: BasicBulletType
+        pierceBuilding: true
+        collidesAir: false
+        despawnShake: 1
+        pierce: true
+        hitShake: 1
+        height: 6
+        width: 3
+        shrinkX:0
+        shrinkY:0
+        buildingDamageMultiplier: 0.1
+        pierceArmor:true
+        splashDamageRadius: 10
+        splashDamage: 10
+        lifetime: 10
+        drag: 0.04
+        speed: 1
+
+        hitEffect:none
+
+        incendSpread: 1
+        incendAmount: 3
+        incendChance: 0.4
+
+        despawnEffect: none
+
+        lightColor:FC2F00
+        lightOpacity: 0.6
+        lightRadius: 8
+
+        trailColor: F3E979F0
+        trailLength: 4
+        trailWidth: 0.4
+    }
+    lightColor: f9c27a
+    lightOpacity: 0.7
+    lightRadius: 31
+    }
+    }
+}
+    }
+   ]
+

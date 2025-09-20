@@ -26,6 +26,20 @@ abilities: [
     amount: 45
     range: 0
     max: 90
+    activeEffect:{
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 30
+        sizeTo: 0
+        lightColor:ffd37f
+        lightOpacity:1
+        strokeFrom: 0
+        strokeTo: 3
+        colorFrom: ffd37f00
+        colorTo: ffd37f
+        followParent: true
+        rotWithParent: true
+    }
 }
     ]
 

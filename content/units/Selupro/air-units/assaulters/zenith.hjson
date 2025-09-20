@@ -4,9 +4,9 @@ circleTarget: true
 fogRadius: 14
 
 itemCapacity: 96
-rotateSpeed: 3
+rotateSpeed: 6
 accel: 0.05
-health: 1400
+health: 1250
 drag: 0.06
 speed: 2.4
 armor: 24

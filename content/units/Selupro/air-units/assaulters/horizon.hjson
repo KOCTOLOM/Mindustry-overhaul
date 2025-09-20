@@ -5,7 +5,7 @@ strafePenalty: 0.5
 rotateSpeed: 7
 accel: 0.015
 drag: 0.015
-health: 320
+health: 260
 speed: 2.3
 armor: 5
 

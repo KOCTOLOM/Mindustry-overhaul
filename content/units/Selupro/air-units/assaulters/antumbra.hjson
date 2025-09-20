@@ -8,7 +8,7 @@ crashDamageMultiplier: 6
 
 itemCapacity: 2600
 fallSpeed: 0.004
-rotateSpeed: 0.9
+rotateSpeed: 2
 health: 28000
 accel: 0.015
 drag: 0.015

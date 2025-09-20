@@ -1,2 +1,83 @@
 research: core-acropolis
 researchCostMultiplier: 0
+trailLength: 8
+immunities: [ mov-motor-deceleration-tier-1,mov-motor-deceleration-tier-2,mov-motor-deceleration-tier-3, mov-motor-acceleration-tier-1,mov-motor-acceleration-tier-2,mov-motor-acceleration-tier-3 ]
+abilities: [
+{
+    type:MoveEffectAbility
+    interval:0.5
+    rotateEffect:true
+    rotation:-90
+    effect:{
+     type: ParticleEffect
+     particles: 1
+     length: 0
+     lifetime: 22
+     sizeFrom: 12
+     sizeTo: 7
+     cone: 0
+     region:mov-emanate-trace
+     colorFrom: ffffff40
+     colorTo: ffffff00
+     layer:79.3
+     }
+}
+{
+    type: StatusFieldAbility
+    effect: mov-motor-acceleration-tier-1
+    activeEffect:none
+    duration: 50
+    reload: 70
+    range: 60
+
+    applyEffect:[
+        {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 0
+        sizeTo: 15
+        lightColor:ffd37f
+        lightOpacity:1
+        strokeFrom: 0
+        strokeTo: 2
+        colorFrom: ffd37f
+        colorTo: ffd37f00
+        followParent: true
+        rotWithParent: true
+        }
+        ]
+}
+{
+    type: EnergyFieldAbility
+    sameTypeHealMult: 0
+    statusDuration: 80
+    hitBuildings:false
+    status: mov-motor-deceleration-tier-1
+    healPercent: 2
+    maxTargets: 5
+    damage: 20
+    reload: 120
+    range: 60
+    color: ffd37f
+    hitEffect:[
+    {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 17
+        sizeTo: 0
+        lightColor:ffd37f
+        lightOpacity:1
+        strokeFrom: 0
+        strokeTo: 2
+        colorFrom: ffd37f
+        colorTo: ffd37f00
+        followParent: true
+        rotWithParent: true
+    }
+    ]
+    damageEffect:none
+    sectors:12
+    sectorRad:0.003
+    rotateSpeed:0.02
+}
+]

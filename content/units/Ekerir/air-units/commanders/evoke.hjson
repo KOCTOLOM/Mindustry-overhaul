@@ -1,2 +1,24 @@
 research: core-bastion
 researchCostMultiplier: 0
+immunities: [ mov-motor-deceleration-tier-1,mov-motor-deceleration-tier-2,mov-motor-deceleration-tier-3, mov-motor-acceleration-tier-1,mov-motor-acceleration-tier-2,mov-motor-acceleration-tier-3 ]
+abilities: [
+{
+    type:MoveEffectAbility
+    interval:0.5
+    rotateEffect:true
+    rotation:-90
+    effect:{
+     type: ParticleEffect
+     particles: 1
+     length: 0
+     lifetime: 22
+     sizeFrom: 12
+     sizeTo: 7
+     cone: 0
+     region:mov-evoke-trace
+     colorFrom: ffffff40
+     colorTo: ffffff00
+     layer:79.3
+     }
+}
+]

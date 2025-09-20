@@ -1,30 +1,52 @@
 research: duo
 targetGround: false
 rotateSpeed: 12.5
-shootCone: 32
+shootCone: 18
 recoil: 1
 fogRadiusMultiplier: 0.3
-buildCostMultiplier: 2.1
+buildCostMultiplier: 1.2
 ammoPerShot: 3
-velocityRnd:0.05
+velocityRnd:0.08
 inaccuracy: 5
 maxAmmo: 45
-health: 660
+health: 780
 reload: 195
 range: 360
 armor: 3
 researchCostMultiplier:0.2
 requirements: [
-    copper/120
-    lead/45
+    copper/110
+    lead/55
 ]
 
 shootSound: shootSnap
-shoot: {
-    shotDelay: 6
-    shots: 12
-    }
 
+shoot: {
+type: ShootMulti
+source: {
+    type: ShootSpread
+    spread: 2
+    shots: 2
+    shotDelay: 1
+}
+dest: [
+{
+        type: ShootMulti
+        source: {
+           type: ShootPattern
+           shots: 2
+           shotDelay: 6
+           }
+        dest: [
+        {
+        type: ShootPattern
+            shots: 4
+            shotDelay: 30
+        }
+        ]
+}
+]
+    }
 ammoTypes: {
 scrap: {
     type: FlakBulletType
@@ -40,10 +62,11 @@ scrap: {
     splashDamage: 18
     fragBullets: 6
 	fragRandomSpread:40
-	
+	explodeRange: 16
+    explodeDelay: 3
     lifetime: 67.5
     pierceCap: 2
-    damage: 18
+    damage: 34
     speed: 6
 
     hitEffect: flakExplosion
@@ -54,7 +77,7 @@ scrap: {
     lightRadius: 21
 
     trailColor: 9b928b
-    trailLength: 12.5
+    trailLength: 7
     trailWidth: 1.25
 
     frontColor: e0b28d
@@ -93,18 +116,20 @@ lead: {
     type: FlakBulletType
     collidesGround: false
     scaleLife: true
+    explodeRange: 20
+    explodeDelay: 4
     height: 8
     width: 6
-    inaccuracy: 12
+    inaccuracy: 5
     reloadMultiplier: 1
     ammoMultiplier: 6
     knockback:0.3
-    splashDamageRadius: 30
-    splashDamage: 16
+    splashDamageRadius: 28
+    splashDamage: 26
     pierceCap: 2
-    lifetime: 40.5
-    damage: 19
-    speed: 7.5
+    lifetime: 35.5
+    damage: 22
+    speed: 8.5
 
     hitEffect: flakExplosion
     shootEffect: shootSmall
@@ -114,7 +139,7 @@ lead: {
     lightRadius: 12.5
 
     trailColor: 8c7fa9
-    trailLength: 12.5
+    trailLength: 9
     trailWidth: 1.25
 
     frontColor: ab99d3
@@ -136,11 +161,11 @@ silicon: {
     homingPower: 0.06
     homingRange: 90
     homingDelay: 5
-	splashDamageRadius:5
-    splashDamage: 10
+	splashDamageRadius:14
+    splashDamage: 22
     pierceCap: 3
     lifetime: 75
-    damage: 20
+    damage: 14
     speed: 4.8
 
     hitEffect: hitBulletColor
@@ -165,13 +190,13 @@ metaglass: {
     height: 12
     width: 4
     knockback:0.9
-    ammoMultiplier: 1
+    ammoMultiplier: 2
 	reloadMultiplier: 0.5
-    splashDamageRadius: 12
-    splashDamage: 12
+    splashDamageRadius: 9
+    splashDamage: 16
     pierceArmor:true
     lifetime: 35
-    damage: 8
+    damage: 12
     speed: 12
     hitEffect: [
     flakExplosion

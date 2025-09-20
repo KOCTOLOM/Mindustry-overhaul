@@ -1,7 +1,7 @@
 type: missile
 template: MissileUnitType
 controller: MissileAI
-
+hidden:true
 playerControllable: false
 allowedInPayloads: false
 outlineColor: 56566600

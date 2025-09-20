@@ -9,8 +9,8 @@ itemCapacity: 24
 rotateSpeed: 9
 accel: 0.025
 drag: 0.015
-health: 135
-speed: 5
+health: 95
+speed: 4.75
 armor: 3
 
 lightColor: FFE818
@@ -41,7 +41,7 @@ weapons: [
     x: 3.75
     y: 2.25
 
-    reload: 7
+    reload: 12
 
     shootSound: machine-gun-shot-3
     ejectEffect: casing1

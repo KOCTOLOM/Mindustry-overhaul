@@ -431,10 +431,10 @@ fragBullet: {
     splashDamage: 60
     puddleAmount: 9
     puddleRange: 6
+    puddles: 3
     pierceCap: 4
     lifetime: 30
     damage: 80
-    puddles: 3
     speed: 5
     fragBullets:1
     fragBullet: {

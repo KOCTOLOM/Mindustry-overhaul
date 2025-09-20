@@ -1,5 +1,5 @@
 absorbLasers: true
-
+unitCapModifier:4
 itemCapacity: 20000
 health: 50000
 armor: 7

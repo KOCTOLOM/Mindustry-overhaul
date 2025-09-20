@@ -1,7 +1,7 @@
-itemCapacity: 500
+itemCapacity: 200
 health: 725
 armor: 5
 
 consumes: {
-    power: 4
+    power: 6
 }

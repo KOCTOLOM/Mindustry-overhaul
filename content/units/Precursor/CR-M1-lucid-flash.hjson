@@ -25,7 +25,7 @@ legBaseOffset: 14
 legMoveSpace: 1.55
 legForwardScl: 0.62
 shadowElevation: 0.24
-
+hidden:true
 legGroupSize: 1
 legContinuousMove: true
 groundLayer: 75
