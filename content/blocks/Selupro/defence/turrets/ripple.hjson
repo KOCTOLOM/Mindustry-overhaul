@@ -37,6 +37,114 @@ shoot: {
 	]
 	}
 ammoTypes: {
+
+spore-pod: {
+    type: ArtilleryBulletType
+    collidesTiles: false
+    despawnShake: 5
+    hitShake: 5
+    height: 13
+    width: 13
+
+    ammoMultiplier: 15
+
+    splashDamageRadius: 120
+    status: spore-slowed
+    statusDuration: 900
+    splashDamage: 0
+    fragBullets: 3
+    knockback: 0.8
+    lifetime: 80
+    speed: 2.32
+    damage: 0
+
+    hitSound: cannon-large-hit
+    hitSoundVolume: 0.75
+
+    lightColor: 9e78dc
+    lightOpacity: 0.7
+    lightRadius: 32
+
+    trailInterval: 12.5
+    trailColor: 7457ce
+    trailLength: 14.5
+    trailWidth: 3.2
+    trailSize: 4.5
+
+    frontColor: 9e78dc
+    backColor: 7457ce
+
+despawnEffect: {
+    type: ExplosionEffect
+
+    lifetime: 120
+
+    waveColor: 7457ce
+    waveStroke: 4
+    waveRad: 130
+
+    smokeColor: 9e78dc70
+    smokeSizeBase: 0
+    smokeSize: 5.5
+    smokes: 12
+
+    sparkColor: 7457ce
+    sparkStroke: 0
+    sparkRad: 0
+    sparkLen: 0
+    sparks: 0
+    }
+
+fragBullet: {
+    type: BasicBulletType
+    collidesAir: false
+    shrinkY: 1
+    height: 0
+    width: 0
+
+    splashDamageRadius: 40
+    status: spore-slowed
+    statusDuration: 450
+    splashDamage: 0
+    knockback: 0.5
+    lifetime: 21
+    speed: 3.2
+    damage: 0
+
+    lightColor: 9e78dc
+    lightOpacity: 0
+    lightRadius: 0
+
+    trailColor: 7457ce
+    trailLength: 0
+    trailWidth: 0
+
+    frontColor: 9e78dc
+    backColor: 7457ce
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 60
+
+    waveColor: 7457ce
+    waveStroke: 2.2
+    waveRad: 60
+
+    smokeColor: 9e78dc
+    smokeSizeBase: 0
+    smokeSize: 3.5
+    smokes: 5
+
+    sparkColor: 7457ce
+    sparkStroke: 0
+    sparkRad: 0
+    sparkLen: 0
+    sparks: 0
+}
+    }
+}
+
 graphite: {
     type: ArtilleryBulletType
     collidesTiles: false
@@ -192,78 +300,6 @@ despawnEffect: {
 }
     }
 
-thorium: {
-    type: ArtilleryBulletType
-    collidesTiles: false
-	hittable:false
-    height: 17.5
-    width: 17.5
-    damage:30
-    buildingDamageMultiplier: 1.5
-    reloadMultiplier: 0.5
-    ammoMultiplier: 3
-	rangeChange: -146
-    splashDamageRadius: 60
-    splashDamage: 50
-	damage:100
-    knockback: 1.25
-    lifetime: 40
-    speed: 3
-
-    hitSound: cannon-large-hit
-    hitSoundVolume: 0.75
-	
-    lightColor: F9A3C7
-    lightOpacity: 0.7
-    lightRadius: 64.5
-
-    trailInterval: 12.5
-    trailColor: CB8EBF
-    trailLength: 17.5
-    trailWidth: 3.2
-
-    frontColor: F9A3C7
-    backColor: CB8EBF
-
-hitEffect: {
-    type: ExplosionEffect
-
-    lifetime: 120
-
-    waveColor: F9A3C7
-    waveStroke: 6
-    waveRad: 70
-
-    smokeColor: 696969
-    smokeSizeBase: 0
-    smokeSize: 3
-    smokes: 0
-
-    sparkColor: F9A3C7
-    sparkStroke: 2
-    sparkRad: 45
-    sparkLen: 4
-    sparks: 18
-}
-	fragSpread: 60
-	fragRandomSpread: 5
-	fragBullets:6
-	fragBullet: {
-		type: ShrapnelBulletType
-		
-		buildingDamageMultiplier: 2
-		
-		damage: 50
-		length: 10
-		serrations: 3
-		width: 6
-		knockback: 2
-		lifetime: 60
-		fromColor: F9A3C7
-		toColor: CB8EBF
-	}
-
-    }
 
 blast-compound: {
     type: ArtilleryBulletType
@@ -448,113 +484,78 @@ fragBullet: {
     backColor: cbd97f
 }
     }
-
-spore-pod: {
+thorium: {
     type: ArtilleryBulletType
     collidesTiles: false
-    despawnShake: 5
-    hitShake: 5
-    height: 13
-    width: 13
-
-    ammoMultiplier: 15
-
-    splashDamageRadius: 120
-    status: spore-slowed
-    statusDuration: 900
-    splashDamage: 0
-    fragBullets: 3
-    knockback: 0.8
-    lifetime: 80
-    speed: 2.32
-    damage: 0
+	hittable:false
+    height: 17.5
+    width: 17.5
+    damage:30
+    buildingDamageMultiplier: 1.5
+    reloadMultiplier: 0.5
+    ammoMultiplier: 3
+	rangeChange: -146
+    splashDamageRadius: 60
+    splashDamage: 50
+	damage:100
+    knockback: 1.25
+    lifetime: 40
+    speed: 3
 
     hitSound: cannon-large-hit
     hitSoundVolume: 0.75
 
-    lightColor: 9e78dc
+    lightColor: F9A3C7
     lightOpacity: 0.7
-    lightRadius: 32
+    lightRadius: 64.5
 
     trailInterval: 12.5
-    trailColor: 7457ce
-    trailLength: 14.5
+    trailColor: CB8EBF
+    trailLength: 17.5
     trailWidth: 3.2
-    trailSize: 4.5
 
-    frontColor: 9e78dc
-    backColor: 7457ce
-
-despawnEffect: {
-    type: ExplosionEffect
-
-    lifetime: 120
-
-    waveColor: 7457ce
-    waveStroke: 4
-    waveRad: 130
-
-    smokeColor: 9e78dc70
-    smokeSizeBase: 0
-    smokeSize: 5.5
-    smokes: 12
-
-    sparkColor: 7457ce
-    sparkStroke: 0
-    sparkRad: 0
-    sparkLen: 0
-    sparks: 0
-    }
-
-fragBullet: {
-    type: BasicBulletType
-    collidesAir: false
-    shrinkY: 1
-    height: 0
-    width: 0
-
-    splashDamageRadius: 40
-    status: spore-slowed
-    statusDuration: 450
-    splashDamage: 0
-    knockback: 0.5
-    lifetime: 21
-    speed: 3.2
-    damage: 0
-
-    lightColor: 9e78dc
-    lightOpacity: 0
-    lightRadius: 0
-
-    trailColor: 7457ce
-    trailLength: 0
-    trailWidth: 0
-
-    frontColor: 9e78dc
-    backColor: 7457ce
+    frontColor: F9A3C7
+    backColor: CB8EBF
 
 hitEffect: {
     type: ExplosionEffect
 
-    lifetime: 60
+    lifetime: 120
 
-    waveColor: 7457ce
-    waveStroke: 2.2
-    waveRad: 60
+    waveColor: F9A3C7
+    waveStroke: 6
+    waveRad: 70
 
-    smokeColor: 9e78dc
+    smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 3.5
-    smokes: 5
+    smokeSize: 3
+    smokes: 0
 
-    sparkColor: 7457ce
-    sparkStroke: 0
-    sparkRad: 0
-    sparkLen: 0
-    sparks: 0
+    sparkColor: F9A3C7
+    sparkStroke: 2
+    sparkRad: 45
+    sparkLen: 4
+    sparks: 18
 }
+	fragSpread: 60
+	fragRandomSpread: 5
+	fragBullets:6
+	fragBullet: {
+		type: ShrapnelBulletType
+
+		buildingDamageMultiplier: 2
+
+		damage: 50
+		length: 10
+		serrations: 3
+		width: 6
+		knockback: 2
+		lifetime: 60
+		fromColor: F9A3C7
+		toColor: CB8EBF
+	}
+
     }
-}
 
 phase-fabric: {
     type: ArtilleryBulletType

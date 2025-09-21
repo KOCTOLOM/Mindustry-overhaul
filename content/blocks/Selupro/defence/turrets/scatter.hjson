@@ -191,12 +191,12 @@ metaglass: {
     width: 4
     knockback:0.9
     ammoMultiplier: 2
-	reloadMultiplier: 0.5
-    splashDamageRadius: 9
-    splashDamage: 16
+	reloadMultiplier: 0.6
+    splashDamageRadius: 12
+    splashDamage: 20
     pierceArmor:true
     lifetime: 35
-    damage: 12
+    damage: 25
     speed: 12
     hitEffect: [
     flakExplosion

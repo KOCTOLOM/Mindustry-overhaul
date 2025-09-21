@@ -1,5 +1,5 @@
 research: duo
-rotateSpeed: 0.64
+rotateSpeed: 0.8
 targetAir: false
 fogRadiusMultiplier: 0.6
 shootY: 1.5
@@ -12,8 +12,8 @@ researchCostMultiplier:0.6
 ammoEjectBack: 5
 inaccuracy: 7
 maxAmmo: 60
-ammoPerShot: 24
-reload: 42
+ammoPerShot: 18
+reload: 32
 health: 500
 range: 284
 armor: 4
@@ -32,8 +32,8 @@ requirements: [
 ammoUseEffect: casing2
 shootSound: shootBig
 shoot: {
-    shotDelay: 5
-    shots: 5
+    shotDelay: 4
+    shots: 4
     }
 
 ammoTypes: {
@@ -67,8 +67,7 @@ graphite: {
     width: 9
 
     buildingDamageMultiplier: 0.35
-    pierceDamageFactor: 0.00005
-    reloadMultiplier: 0.8
+    reloadMultiplier: 0.85
     ammoMultiplier: 6
 
     pierceCap: 5
@@ -115,14 +114,13 @@ silicon: {
 
     buildingDamageMultiplier: 0.15
     pierceDamageFactor: 0.00015
-    reloadMultiplier: 1.05
+    reloadMultiplier: 1.15
     ammoMultiplier: 24
     pierceArmor:true
 
-    homingPower: 0.18
-    pierceCap: 2
+    homingPower: 0.018
     lifetime: 65
-    damage: 16
+    damage: 20
     speed: 4.8
 
     lightColor: 8e9097
@@ -136,41 +134,6 @@ silicon: {
     frontColor: 8e9097
     backColor: 767a84
 }
-
-thorium: {
-    type: BasicBulletType
-    collidesAir: false
-    height: 13
-    width: 10
-
-    buildingDamageMultiplier: 1.5
-    reloadMultiplier: 0.7
-    ammoMultiplier: 4
-
-    splashDamageRadius: 16
-    splashDamage: 25
-    pierceCap: 7
-    lifetime: 87
-    damage: 68
-    speed: 3.25
-
-    despawnEffect: flakExplosion
-    smokeEffect: shootBigSmoke
-    hitEffect: flakExplosion
-    shootEffect: shootBig
-
-    lightColor: f9a3c7
-    lightOpacity: 0.7
-    lightRadius: 32
-
-    trailColor: cb8ebf
-    trailLength: 12.5
-    trailWidth: 2.4
-
-    frontColor: f9a3c7
-    backColor: cb8ebf
-}
-
 pyratite: {
     type: BasicBulletType
     collidesAir: false
@@ -332,4 +295,39 @@ effects: [
     ]
     }
     }
+
+thorium: {
+    type: BasicBulletType
+    collidesAir: false
+    height: 13
+    width: 10
+
+    buildingDamageMultiplier: 1.5
+    reloadMultiplier: 0.65
+    ammoMultiplier: 4
+
+    splashDamageRadius: 16
+    splashDamage: 35
+    pierceCap: 4
+    lifetime: 87
+    damage: 90
+    speed: 3.25
+
+    despawnEffect: flakExplosion
+    smokeEffect: shootBigSmoke
+    hitEffect: flakExplosion
+    shootEffect: shootBig
+
+    lightColor: f9a3c7
+    lightOpacity: 0.7
+    lightRadius: 32
+
+    trailColor: cb8ebf
+    trailLength: 12.5
+    trailWidth: 2.4
+
+    frontColor: f9a3c7
+    backColor: cb8ebf
+}
+
 }

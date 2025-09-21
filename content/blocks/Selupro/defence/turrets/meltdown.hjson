@@ -71,7 +71,7 @@ shootType: {
     status: melting
 	
     lifetime: 48
-    damage: 105
+    damage: 135
 	
 	laserAbsorb:true
     despawnEffect:[

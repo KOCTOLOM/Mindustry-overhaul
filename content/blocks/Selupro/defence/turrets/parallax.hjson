@@ -7,7 +7,7 @@ buildCostMultiplier: 1.8
 fogRadiusMultiplier: 0.5
 health: 550
 range: 270
-damage: 2.4
+damage: 4
 armor: 2
 researchCostMultiplier:0.6
 consumes: {

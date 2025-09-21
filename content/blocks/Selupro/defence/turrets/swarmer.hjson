@@ -8,9 +8,9 @@ buildCostMultiplier: 2
 coolantMultiplier: 1
 fogRadiusMultiplier: 0.4
 ammoPerShot: 6
-inaccuracy: 12
+inaccuracy: 8
 maxAmmo: 108
-reload: 124
+reload: 165
 health: 960
 range: 300
 armor: 5
@@ -48,7 +48,7 @@ shootEffect: shootBig
 shoot: {
     type: ShootBarrel
     shotDelay: 2
-    shots: 3
+    shots: 6
 
 barrels: [
     -4, 1.25, 0

@@ -51,17 +51,17 @@ graphite: {
     height: 23
     width: 14
 
-    buildingDamageMultiplier: 0.85
-    reloadMultiplier: 2.5
+    buildingDamageMultiplier: 0.35
+    reloadMultiplier: 2.25
     ammoMultiplier: 128
     rangeChange: 220
 
-    splashDamageRadius: 90
-    splashDamage: 62
+    splashDamageRadius: 46
+    splashDamage: 94
     knockback: 1.25
     pierceCap: 3
     lifetime: 134
-    damage: 140
+    damage: 90
     speed: 4.5
 
     hitSound: cannon-large-hit
@@ -85,12 +85,12 @@ hitEffect: {
 
     waveColor: 95abd9
     waveStroke: 7.5
-    waveRad: 90
+    waveRad: 50
 
     smokeColor: 95abd980
     smokeSizeBase: 0
     smokeSize: 24.5
-    smokes: 16
+    smokes: 9
 
     sparkColor: 95abd9
     sparkStroke: 3.2
@@ -99,79 +99,64 @@ hitEffect: {
     sparks: 15
 }
     }
-
-thorium: {
+titanium: {
     type: BasicBulletType
     pierceBuilding: true
+    scaleLife: true
     hittable: false
-    hitSize: 5.2
-    height: 28
-    width: 15
+    hitSize: 5
+    height: 23
+    width: 14.5
 
-    pierceDamageFactor: 100
-    reloadMultiplier: 0.6
-    ammoMultiplier: 6
-    
-    status: armor-piercing-tier-2
-    splashDamageRadius: 72
-    statusDuration: 180
-    splashDamage: 96
-    knockback: 1.8
-    pierceCap: 5
-    lifetime: 104
-    damage: 250
-    speed: 2.5
+    buildingDamageMultiplier: 0.25
+    reloadMultiplier: 1.5
+    ammoMultiplier: 12
+    rangeChange: 132
+
+    status: armor-piercing-tier-1
+    splashDamageRadius: 30
+    statusDuration: 300
+    splashDamage: 40
+    knockback: 1.32
+    pierceCap: 50
+    lifetime: 160
+    damage: 180
+    speed: 3.2
 
     hitSound: cannon-large-hit
     shootEffect: shootBig
 
-    lightColor: f9a3c7
+    lightColor: a4b8fa
     lightOpacity: 0.7
-    lightRadius: 14.5
+    lightRadius: 45
 
-    trailColor: cb8ebf
-    trailLength: 24.5
-    trailWidth: 3.15
+    trailColor: 919fe7
+    trailLength: 12.5
+    trailWidth: 3
 
-    frontColor: f9a3c7
-    backColor: cb8ebf
+    frontColor: a4b8fa
+    backColor: 919fe7
 
 hitEffect: {
     type: ExplosionEffect
 
     lifetime: 32
 
-    waveColor: f9a3c7
+    waveColor: a4b8fa
     waveStroke: 7.5
-    waveRad: 75
+    waveRad: 70
 
-    smokeColor: 69696940
+    smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 6.5
-    smokes: 18
+    smokeSize: 9
+    smokes: 13
 
-    sparkColor: f9a3c7
-    sparkStroke: 6
-    sparkRad: 48
-    sparkLen: 15
-    sparks: 18
+    sparkColor: a4b8fa
+    sparkStroke: 3.5
+    sparkRad: 23
+    sparkLen: 4
+    sparks: 9
 }
-	fragOnHit:false
-	fragRandomSpread: 0
-	fragBullets:1
-	fragBullet: {
-		type: ShrapnelBulletType
-		buildingDamageMultiplier: 2
-		pierceArmor:true
-		damage: 140
-		length: 110
-		serrations: 4
-		width: 6
-		knockback: 2
-		lifetime: 60
-		fromColor: F9A3C7
-		toColor: CB8EBF
-	}
     }
 
 pyratite: {
@@ -188,7 +173,7 @@ pyratite: {
 	
     splashDamageRadius: 40
     statusDuration: 450
-    splashDamage: 72
+    splashDamage: 150
     knockback: 0.75
     status: burning
     lifetime: 71
@@ -247,12 +232,12 @@ hitEffect: {
     shrinkY: 0.3
     height: 14
     width: 6
-    splashDamageRadius: 16
+    splashDamageRadius: 12
     splashDamage: 72
     pierceBuilding: true
     pierceCap: 3
     lifetime:30
-    damage: 70
+    damage: 65
 	pierceArmor:true
     despawnEffect: none
     speed:3.5
@@ -352,6 +337,82 @@ hitEffect: {
     }
 }
 
+
+thorium: {
+    type: BasicBulletType
+    pierceBuilding: true
+    hittable: false
+    hitSize: 5.2
+    height: 28
+    width: 15
+
+    reloadMultiplier: 0.8
+    ammoMultiplier: 6
+
+    buildingDamageMultiplier: 1.5
+
+    status: armor-piercing-tier-2
+    splashDamageRadius: 46
+    statusDuration: 180
+    splashDamage: 96
+    knockback: 1.8
+    pierceCap: 5
+    lifetime: 94
+    damage: 250
+    speed: 2.7
+
+    hitSound: cannon-large-hit
+    shootEffect: shootBig
+
+    lightColor: f9a3c7
+    lightOpacity: 0.7
+    lightRadius: 14.5
+
+    trailColor: cb8ebf
+    trailLength: 24.5
+    trailWidth: 3.15
+
+    frontColor: f9a3c7
+    backColor: cb8ebf
+
+hitEffect: {
+    type: ExplosionEffect
+
+    lifetime: 32
+
+    waveColor: f9a3c7
+    waveStroke: 7.5
+    waveRad: 75
+
+    smokeColor: 69696940
+    smokeSizeBase: 0
+    smokeSize: 6.5
+    smokes: 18
+
+    sparkColor: f9a3c7
+    sparkStroke: 6
+    sparkRad: 48
+    sparkLen: 15
+    sparks: 18
+}
+	fragOnHit:false
+	fragRandomSpread: 0
+	fragBullets:1
+	fragBullet: {
+		type: ShrapnelBulletType
+		buildingDamageMultiplier: 1.2
+		pierceArmor:true
+		damage: 180
+		length: 110
+		serrations: 4
+		width: 6
+		knockback: 2
+		lifetime: 60
+		fromColor: F9A3C7
+		toColor: CB8EBF
+	}
+    }
+
 blast-compound: {
     type: BasicBulletType
     pierceBuilding: true
@@ -360,22 +421,21 @@ blast-compound: {
     hitSize: 5.32
     height: 24
     width: 19
-    shieldDamageMultiplier:2
+    shieldDamageMultiplier:5
     buildingDamageMultiplier: 1.5
-    pierceDamageFactor: 1
     reloadMultiplier: 0.05
     ammoMultiplier: 4
-	rangeChange:-120
+	rangeChange:-80
 	
     splashDamageRadius: 100
     statusDuration: 48
-    splashDamage: 300
+    splashDamage: 600
     status: mov-oxidation-tier-2
     knockback: 2.1
     pierceCap: 3
-    lifetime: 149
-    damage: 500
-    speed: 1.75
+    lifetime: 90
+    damage: 1200
+    speed: 3
 
     hitSound: cannon-large-hit
     shootEffect: shootBig
@@ -423,7 +483,7 @@ hitEffect: {
 
     splashDamageRadius: 100
     statusDuration: 10
-    splashDamage: 30
+    splashDamage: 100
     status: blasted
     knockback: 0
     lifetime: 0
@@ -446,67 +506,6 @@ hitEffect: {
     }
 }
 
-titanium: {
-    type: BasicBulletType
-    pierceBuilding: true
-    scaleLife: true
-    hittable: false
-    hitSize: 5
-    height: 23
-    width: 14.5
-
-    buildingDamageMultiplier: 0.75
-    pierceDamageFactor: 100
-    reloadMultiplier: 1.25
-    ammoMultiplier: 12
-    rangeChange: 132
-
-    status: armor-piercing-tier-1
-    splashDamageRadius: 64
-    statusDuration: 300
-    splashDamage: 75
-    knockback: 1.32
-    pierceCap: 50
-    lifetime: 160
-    damage: 121
-    speed: 3.2
-
-    hitSound: cannon-large-hit
-    shootEffect: shootBig
-
-    lightColor: a4b8fa
-    lightOpacity: 0.7
-    lightRadius: 45
-
-    trailColor: 919fe7
-    trailLength: 12.5
-    trailWidth: 3
-
-    frontColor: a4b8fa
-    backColor: 919fe7
-
-hitEffect: {
-    type: ExplosionEffect
-
-    lifetime: 32
-
-    waveColor: a4b8fa
-    waveStroke: 7.5
-    waveRad: 70
-
-    smokeColor: 696969
-    smokeSizeBase: 0
-    smokeSize: 9
-    smokes: 13
-
-    sparkColor: a4b8fa
-    sparkStroke: 3.5
-    sparkRad: 23
-    sparkLen: 4
-    sparks: 9
-}
-    }
-
 surge-alloy: {
     type: BasicBulletType
     pierceBuilding: true
@@ -517,21 +516,20 @@ surge-alloy: {
     width: 16
     shieldDamageMultiplier:0.2
     buildingDamageMultiplier: 0.2
-    pierceDamageFactor: 100
     reloadMultiplier: 2.5
     ammoMultiplier: 16
     rangeChange: 388
 
-    splashDamageRadius: 16
+    splashDamageRadius: 24
     lightningLength: 9
     statusDuration: 250
-    lightningDamage: 20
+    lightningDamage: 75
     status: emp-tier-2
-    splashDamage: 35
+    splashDamage: 90
 	pierceArmor:true
     lightning: 2
     lifetime: 140
-    damage: 65
+    damage: 75
     speed: 5.5
 	
     hitSound: cannon-large-hit
@@ -599,17 +597,17 @@ phase-fabric: {
 	shrinkY:0
 	shrinkX:0
 	sprite: large-bomb
-    buildingDamageMultiplier: 0.5
-    reloadMultiplier: 0.4
+    buildingDamageMultiplier: 0.3
+    reloadMultiplier: 0.6
     ammoMultiplier: 4
-	shieldDamageMultiplier:1.6
+	shieldDamageMultiplier:2
     status: sapped
     splashDamageRadius: 33
     statusDuration: 250
     splashDamage: 48
     pierceCap: 3
     lifetime: 140
-    damage: 150
+    damage: 300
     speed: 5.5
 	
 	pierceArmor:true
@@ -654,8 +652,8 @@ effects: [
 	
 ]
     }
-	fragRandomSpread: 110
-	fragBullets: 18
+	fragRandomSpread: 70
+	fragBullets: 14
 	fragLifeMin:1
 	fragLifeMax:1.8
 	fragVelocityMin:0.5
@@ -664,7 +662,7 @@ effects: [
 	shrinkX:0
 	type: ArtilleryBulletType
 	speed: 10
-	lifetime: 14
+	lifetime: 11
 	spin:-3
 	damage: 10
 	splashDamageRadius: 10
@@ -745,11 +743,10 @@ effects: [
 	despawnSound : plasma-shot-3
 	fragBullet: {
 		type: ShrapnelBulletType
-		
 		buildingDamageMultiplier: 0.5
 		pierceArmor:true
-		damage: 50
-		length: 70
+		damage: 120
+		length: 120
 		serrations: 0
 		hitSound:none
 		width: 3

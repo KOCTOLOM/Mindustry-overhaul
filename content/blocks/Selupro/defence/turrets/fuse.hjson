@@ -61,7 +61,7 @@ titanium: {
     statusDuration: 180
     knockback: 4.5
     lifetime: 18
-    damage: 121
+    damage: 140
 
     toColor: a4b8fa
 
@@ -69,34 +69,6 @@ titanium: {
     lightOpacity: 0.7
     lightRadius: 27.5
 }
-
-thorium: {
-    type: ShrapnelBulletType
-    pierce: false
-    length: 240
-	rangeChange: 135
-	
-	buildingDamageMultiplier:2
-    reloadMultiplier: 0.2
-    ammoMultiplier: 2
-
-    status: armor-piercing-tier-2
-    statusDuration: 108
-    knockback: 7.5
-    pierceCap: 25
-    lifetime: 18
-    damage: 360
-
-    shootEffect: thoriumShoot
-    smokeEffect: thoriumShoot
-
-    toColor: f9a3c7
-
-    lightColor: f9a3c7
-    lightOpacity: 0.7
-    lightRadius: 24.5
-}
-
 pyratite: {
     type: ShrapnelBulletType
     pierce: false
@@ -173,6 +145,35 @@ smokeEffect: {
     }
 }
 
+thorium: {
+    type: ShrapnelBulletType
+    pierce: false
+    length: 240
+	rangeChange: 135
+	
+	buildingDamageMultiplier:2
+    reloadMultiplier: 0.3
+    ammoMultiplier: 2
+
+    status: armor-piercing-tier-2
+    statusDuration: 108
+    knockback: 7.5
+    pierceCap: 25
+    lifetime: 18
+    damage: 360
+
+    shootEffect: thoriumShoot
+    smokeEffect: thoriumShoot
+
+    toColor: f9a3c7
+
+    lightColor: f9a3c7
+    lightOpacity: 0.7
+    lightRadius: 24.5
+}
+
+
+
 blast-compound: {
     type: ShrapnelBulletType
     pierce: false
@@ -181,12 +182,12 @@ blast-compound: {
     ammoMultiplier: 4
     rangeChange: 72
 
-    statusDuration: 120
+    statusDuration: 180
     status: mov-oxidation-tier-1
     knockback: 6
     pierceCap: 32
     lifetime: 18
-    damage: 181
+    damage: 200
 
     toColor: ff795e
 

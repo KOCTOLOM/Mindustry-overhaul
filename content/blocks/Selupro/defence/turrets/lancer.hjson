@@ -41,14 +41,14 @@ shootType: {
     length: 345
     hitSize: 4
 
-    buildingDamageMultiplier: 2
+    buildingDamageMultiplier: 1.75
     ammoMultiplier: 1
 
     status: emp-tier-1
     statusDuration: 540
     pierceCap: 6
     lifetime: 32
-    damage: 340
+    damage: 450
 
     lightningLengthRand: 7.5
     lightningAngleRand: 50

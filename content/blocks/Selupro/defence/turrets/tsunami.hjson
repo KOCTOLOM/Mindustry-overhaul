@@ -8,11 +8,11 @@ velocityRnd: 0.2
 ammoPerShot: 2
 health: 1700
 range: 290
-reload: 3
+reload: 2
 armor: 15
 researchCostMultiplier:0.6
 consumes: {
-    power: 7
+    power: 4
 }
 
 shootEffect: shootLiquid
