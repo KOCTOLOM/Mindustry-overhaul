@@ -6,9 +6,9 @@ size: 2
 
 buildCostMultiplier: 3.405
 
-powerProduction: 2
-health: 180
-armor: 2
+powerProduction: 2.6
+health: 280
+armor: 7
 
 requirements: [
     lead/32

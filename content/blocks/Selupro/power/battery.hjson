@@ -1,7 +1,7 @@
 research: combustion-generator
 
 baseExplosiveness: 5
-health: 81
+health: 120
 
 consumes: {
     powerBuffered: 3000

@@ -6,8 +6,8 @@ stepShake: 1.7
 itemCapacity: 130
 rotateSpeed: 1.25
 health: 1960
-speed: 0.567
-armor: 21
+speed: 0.45
+armor: 19
 
 lightColor: 7A3FD2
 lightOpacity: 0.3
@@ -42,12 +42,13 @@ weapons: [
     x: 4
     y: 3
     shootCone: 90
-    reload: 11
-
+    reload: 13
+    shootStatus: mov-motor-deceleration-tier-2
+    shootStatusDuration: 70
     shootSound: sap
 bullet: {
     type: SapBulletType
-    length: 128
+    length: 108
     width: 0.5
 
     buildingDamageMultiplier: 0.75

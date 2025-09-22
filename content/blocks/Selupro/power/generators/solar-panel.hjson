@@ -1,6 +1,6 @@
 research: combustion-generator
 
-powerProduction: 0.5
+powerProduction: 0.4
 health: 96
 
 requirements: [

@@ -51,7 +51,7 @@ weapons: [
 
     inaccuracy: 5
     reload: 102
-   shootStatus: mov-motor-deceleration-tier-2
+    shootStatus: mov-motor-deceleration-tier-2
     chargeSound: target-locked-short
     shootStatusDuration: 120
     shootSound: shotgun-electro-shot

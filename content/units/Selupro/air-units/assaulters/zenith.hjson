@@ -68,7 +68,7 @@ dest: [
     type: ShootPattern
     firstShotDelay: 185
     shotDelay: 7
-    shots: 5
+    shots: 4
     }
 ]
     }
@@ -81,25 +81,25 @@ bullet: {
     hitShake: 2.25
     shrinkX: 0.25
     shrinkY: 0.5
-    pierce: true
-    drag: -0.003
+    pierceCap: 2
+    drag: 0.003
     height: 12
     width: 8
 
     splashDamageRadius: 22
-    splashDamage: 46
+    splashDamage: 42
     homingPower: 0.002
     homingRange: 40
     weaveScale: 6
     lifetime: 95
     weaveMag: 1
-    damage: 32
-    speed: 3.4
-    statusDuration: 60
+    damage: 57
+    speed: 3.6
+    statusDuration: 90
     status: mov-oxidation-tier-1
     lightColor: d06b53
     lightOpacity: 0.7
-    lightRadius: 72.5
+    lightRadius: 18.5
 
     trailInterp: slope
     trailColor: 454545
