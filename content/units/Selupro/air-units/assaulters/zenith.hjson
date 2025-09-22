@@ -86,8 +86,8 @@ bullet: {
     height: 12
     width: 8
 
-    splashDamageRadius: 15
-    splashDamage: 32
+    splashDamageRadius: 22
+    splashDamage: 46
     homingPower: 0.002
     homingRange: 40
     weaveScale: 6
