@@ -1,14 +1,14 @@
 research: differential-generator
 
 requirements: [
-    lead/80
+    lead/100
     plastanium/25
-	   silicon/75
-	   titanium/45
+    silicon/60
+    titanium/45
     thorium/60
 ]
-
+health:1200
 powerProduction: 6
 liquidCapacity: 32
-itemDuration:500
+itemDuration:560
 itemCapacity: 24

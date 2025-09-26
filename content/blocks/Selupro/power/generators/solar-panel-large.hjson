@@ -2,12 +2,12 @@ research: solar-panel-medium
 
 buildCostMultiplier: 4.63
 
-powerProduction: 6.5
+powerProduction: 6
 health: 520
 armor: 9
 
 requirements: [
-    lead/75
-    silicon/32
-    phase-fabric/15
+    lead/150
+    silicon/64
+    phase-fabric/35
 ]
