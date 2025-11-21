@@ -16,7 +16,7 @@ lightRadius: 170
 
 mechStepParticles: true
 stepShake: 4
-drownTimeMultiplier: 12
+drownTimeMultiplier: 999
 mechFrontSway: 0.1
 mechSideSway: 0.2
 
@@ -75,7 +75,7 @@ weapons: [
     x: 0
     y: 0
 
-    reload: 81
+    reload: 149
 
     shootSound: mech-large-footsteps
 bullet: {
@@ -191,14 +191,15 @@ bullet: {
     rotateSpeed: 0.6
     shootCone: 45
     rotate: true
-    shootY: 8
+    shootY: 11
     recoil: 5
     shake: 6
-    x: 23.5
+    x: 23
     y: 1
+    layerOffset: -0.001
     cooldownTime: 240
     inaccuracy: 6
-    reload: 150
+    reload: 180
     heatColor:FF000090
     shootSound: rail-shot-2
     ejectEffect: casing3
@@ -208,7 +209,7 @@ bullet: {
     source: {
         type: ShootSpread
         spread: 0.5
-        shots: 6
+        shots: 5
         shotDelay: 0.5
     }
     dest: [
@@ -223,7 +224,7 @@ bullet: {
             {
             type: ShootPattern
                 firstShotDelay: 40
-                shots: 4
+                shots: 3
                 shotDelay: 50
             }
             ]
@@ -2676,9 +2677,7 @@ intervalBullet: {
 {
     name: orb-strike
     showStatSprite: false
-    controllable: false
     layerOffset: -0.001
-    autoTarget: true
     alternate: true
     shootCone: 360
     shake: 4.5
@@ -2690,28 +2689,14 @@ intervalBullet: {
     rotate:true
 
     cooldownTime: 600
-    velocityRnd: 0.8
-    inaccuracy: 80
+    velocityRnd: 0.2
+    inaccuracy: 10
     reload: 800
     heatColor:FF00000
     shootSound: rocket-shot-2
-
-       shoot: {
-       	type: ShootMulti
-       	source: {
-           type: ShootSpread
-           spread: 2
-           shots: 3
-           }
-       	dest: [{
-            type: ShootPattern
-                shotDelay: 40
-                shots: 12
-            }]
-       	}
     shootWarmupSpeed: 0.004
     minWarmup: 0.9
-
+    ignoreRotation:true
 bullet: {
     type: BasicBulletType
     keepVelocity: false
@@ -2720,408 +2705,4145 @@ bullet: {
     collides:false
     hitShake: 3
     height: 14
-    width: 8
-
-    splashDamageRadius: 26
+    width: 0
+    spawnBullets:[
+    {
+    type: BasicBulletType
+        width:0
+        lifetime:1
+        hittable:false
+        collides:false
+        ignoreSpawnAngle:true
+        despawnEffect:[
+        {
+        	startDelay:  0.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 15.0
+        	strokeTo: 7.5
+        	rotation: 2.0
+        	followParent: false
+        	sizeFrom: 42.0
+        	offsetY: 2
+        	sizeTo:  39.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  4.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 1
+        	baseLength: 46.5
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  5.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 0
+        	baseLength: 46.5
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  2.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 14.2
+        	strokeTo: 7.1
+        	rotation: 4.029999999999999
+        	followParent: false
+        	sizeFrom: 39.759999
+        	offsetY: 4
+        	sizeTo:  36.759999
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  6.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 3
+        	baseLength: 43.859999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  7.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 2
+        	baseLength: 43.859999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  4.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 13.4
+        	strokeTo: 6.7
+        	rotation: 6.079999999999999
+        	followParent: false
+        	sizeFrom: 37.520001
+        	offsetY: 6
+        	sizeTo:  34.520001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  8.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 5
+        	baseLength: 41.220001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  9.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 4
+        	baseLength: 41.220001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  6.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 12.6
+        	strokeTo: 6.3
+        	rotation: 8.16
+        	followParent: false
+        	sizeFrom: 35.28
+        	offsetY: 8
+        	sizeTo:  32.28
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  10.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 7
+        	baseLength: 38.58
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  11.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 6
+        	baseLength: 38.58
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  8.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 11.8
+        	strokeTo: 5.9
+        	rotation: 10.27
+        	followParent: false
+        	sizeFrom: 33.039998999999995
+        	offsetY: 11
+        	sizeTo:  30.039998999999995
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  12.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 10
+        	baseLength: 35.93999899999999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  13.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 9
+        	baseLength: 35.93999899999999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  10.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 11.0
+        	strokeTo: 5.5
+        	rotation: 12.399999999999999
+        	followParent: false
+        	sizeFrom: 30.800001
+        	offsetY: 14
+        	sizeTo:  27.800001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  14.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 13
+        	baseLength: 33.300001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  15.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 12
+        	baseLength: 33.300001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  12.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 10.2
+        	strokeTo: 5.1
+        	rotation: 14.559999999999999
+        	followParent: false
+        	sizeFrom: 28.56
+        	offsetY: 17
+        	sizeTo:  25.56
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  16.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 16
+        	baseLength: 30.659999999999997
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  17.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 15
+        	baseLength: 30.659999999999997
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  14.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 9.4
+        	strokeTo: 4.7
+        	rotation: 16.75
+        	followParent: false
+        	sizeFrom: 26.319998999999996
+        	offsetY: 20
+        	sizeTo:  23.319998999999996
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  18.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 19
+        	baseLength: 28.019998999999995
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  19.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 18
+        	baseLength: 28.019998999999995
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  16.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8.6
+        	strokeTo: 4.3
+        	rotation: 18.96
+        	followParent: false
+        	sizeFrom: 24.080001
+        	offsetY: 24
+        	sizeTo:  21.080001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  20.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 23
+        	baseLength: 25.380001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  21.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 22
+        	baseLength: 25.380001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  18.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 21.200000000000003
+        	followParent: false
+        	sizeFrom: 21.84
+        	offsetY: 28
+        	sizeTo:  18.84
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  22.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 27
+        	baseLength: 22.84
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  23.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 26
+        	baseLength: 22.84
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  20.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 23.470000000000002
+        	followParent: false
+        	sizeFrom: 19.599999
+        	offsetY: 32
+        	sizeTo:  16.599999
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  24.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 31
+        	baseLength: 20.599999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  25.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 30
+        	baseLength: 20.599999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  22.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 25.76
+        	followParent: false
+        	sizeFrom: 17.360000999999997
+        	offsetY: 36
+        	sizeTo:  14.360000999999997
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  26.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 35
+        	baseLength: 18.360000999999997
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  27.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 34
+        	baseLength: 18.360000999999997
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  24.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 28.080000000000002
+        	followParent: false
+        	sizeFrom: 15.120000000000001
+        	offsetY: 41
+        	sizeTo:  12.120000000000001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  28.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 40
+        	baseLength: 16.12
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  29.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 39
+        	baseLength: 16.12
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  26.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 30.430000000000003
+        	followParent: false
+        	sizeFrom: 12.879998999999998
+        	offsetY: 46
+        	sizeTo:  9.879998999999998
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  30.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 45
+        	baseLength: 13.879998999999998
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  31.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 44
+        	baseLength: 13.879998999999998
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  28.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 32.800000000000004
+        	followParent: false
+        	sizeFrom: 10.640001
+        	offsetY: 51
+        	sizeTo:  7.640001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  32.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 50
+        	baseLength: 11.640001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  33.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 49
+        	baseLength: 11.640001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  30.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 35.2
+        	followParent: false
+        	sizeFrom: 8.399999999999999
+        	offsetY: 57
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  34.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 56
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  35.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 55
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  32.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 37.63
+        	followParent: false
+        	sizeFrom: 6.159998999999999
+        	offsetY: 63
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  36.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 62
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  37.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 61
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  34.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 40.080000000000005
+        	followParent: false
+        	sizeFrom: 3.920001
+        	offsetY: 69
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  38.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 68
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  39.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 67
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  36.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 42.56
+        	followParent: false
+        	sizeFrom: 1.6800000000000002
+        	offsetY: 75
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  40.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 74
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  41.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 73
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  38.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 45.07
+        	followParent: false
+        	sizeFrom: 0.560001
+        	offsetY: 82
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  42.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 81
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  43.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 80
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  40.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 47.6
+        	followParent: false
+        	sizeFrom: 2.7999989999999997
+        	offsetY: 89
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  44.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 88
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  45.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 87
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  42.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 50.160000000000004
+        	followParent: false
+        	sizeFrom: 5.04
+        	offsetY: 96
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  46.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 95
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  47.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 94
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  44.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 52.75
+        	followParent: false
+        	sizeFrom: 7.280001
+        	offsetY: 103
+        	sizeTo:  6
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  48.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 102
+        	baseLength: 10.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  49.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 101
+        	baseLength: 10.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  46.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 55.36
+        	followParent: false
+        	sizeFrom: 9.519999
+        	offsetY: 111
+        	sizeTo:  6.519999
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  50.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 110
+        	baseLength: 10.519999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  51.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 109
+        	baseLength: 10.519999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  48.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 58.0
+        	followParent: false
+        	sizeFrom: 11.76
+        	offsetY: 119
+        	sizeTo:  8.76
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  52.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 118
+        	baseLength: 12.76
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  53.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 117
+        	baseLength: 12.76
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  50.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 60.67
+        	followParent: false
+        	sizeFrom: 14.000001000000001
+        	offsetY: 127
+        	sizeTo:  11.000001000000001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  54.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 126
+        	baseLength: 15.000001000000001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  55.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 125
+        	baseLength: 15.000001000000001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  52.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 63.36
+        	followParent: false
+        	sizeFrom: 16.239998999999997
+        	offsetY: 135
+        	sizeTo:  13.239998999999997
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  56.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 134
+        	baseLength: 17.239998999999997
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  57.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 133
+        	baseLength: 17.239998999999997
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  54.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 66.08
+        	followParent: false
+        	sizeFrom: 18.48
+        	offsetY: 144
+        	sizeTo:  15.48
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  58.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 143
+        	baseLength: 19.48
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  59.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 142
+        	baseLength: 19.48
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  56.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8
+        	strokeTo: 4.0
+        	rotation: 68.83
+        	followParent: false
+        	sizeFrom: 20.720001
+        	offsetY: 153
+        	sizeTo:  17.720001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  60.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 152
+        	baseLength: 21.720001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  61.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 151
+        	baseLength: 21.720001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  58.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 8.2
+        	strokeTo: 4.1
+        	rotation: 71.6
+        	followParent: false
+        	sizeFrom: 22.959999
+        	offsetY: 162
+        	sizeTo:  19.959999
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  62.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 161
+        	baseLength: 24.059998999999998
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  63.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 160
+        	baseLength: 24.059998999999998
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  60.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 9.0
+        	strokeTo: 4.5
+        	rotation: 74.39999999999999
+        	followParent: false
+        	sizeFrom: 25.200000000000003
+        	offsetY: 172
+        	sizeTo:  22.200000000000003
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  64.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 171
+        	baseLength: 26.700000000000003
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  65.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 170
+        	baseLength: 26.700000000000003
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  62.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 9.8
+        	strokeTo: 4.9
+        	rotation: 77.22999999999999
+        	followParent: false
+        	sizeFrom: 27.440001000000002
+        	offsetY: 182
+        	sizeTo:  24.440001000000002
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  66.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 181
+        	baseLength: 29.340001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  67.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 180
+        	baseLength: 29.340001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  64.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 10.6
+        	strokeTo: 5.3
+        	rotation: 80.07999999999998
+        	followParent: false
+        	sizeFrom: 29.679999000000002
+        	offsetY: 192
+        	sizeTo:  26.679999000000002
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  68.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 191
+        	baseLength: 31.979999000000003
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  69.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 190
+        	baseLength: 31.979999000000003
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  66.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 11.4
+        	strokeTo: 5.7
+        	rotation: 82.95999999999998
+        	followParent: false
+        	sizeFrom: 31.92
+        	offsetY: 202
+        	sizeTo:  28.92
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  70.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 201
+        	baseLength: 34.620000000000005
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  71.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 200
+        	baseLength: 34.620000000000005
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  68.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 12.2
+        	strokeTo: 6.1
+        	rotation: 85.86999999999998
+        	followParent: false
+        	sizeFrom: 34.160000999999994
+        	offsetY: 213
+        	sizeTo:  31.160000999999994
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  72.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 212
+        	baseLength: 37.260000999999995
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  73.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 211
+        	baseLength: 37.260000999999995
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  70.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 13.0
+        	strokeTo: 6.5
+        	rotation: 88.79999999999998
+        	followParent: false
+        	sizeFrom: 36.399999
+        	offsetY: 224
+        	sizeTo:  33.399999
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  74.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 223
+        	baseLength: 39.899999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  75.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 222
+        	baseLength: 39.899999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  72.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 13.8
+        	strokeTo: 6.9
+        	rotation: 91.75999999999998
+        	followParent: false
+        	sizeFrom: 38.64
+        	offsetY: 235
+        	sizeTo:  35.64
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  76.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 234
+        	baseLength: 42.54
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  77.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 233
+        	baseLength: 42.54
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  74.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 14.6
+        	strokeTo: 7.3
+        	rotation: 94.74999999999997
+        	followParent: false
+        	sizeFrom: 40.880001
+        	offsetY: 246
+        	sizeTo:  37.880001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  78.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 245
+        	baseLength: 45.180001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  79.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 244
+        	baseLength: 45.180001
+        	lifetime: 20
+        	}
+        ]
+    }
+    ]
+    collides:false
+    scaleLife:true
+    splashDamageRadius: 0
     statusDuration: 300
-    homingPower: 0.008
+    homingPower: 1
     splashDamage: 48
     homingRange: 300
     status: melting
     lifetime: 520
-    damage: 150
-    speed: 56
+    damage: 0
+    speed: 43
     drag:0.03
     despawnEffect: none
-
-    shootEffect: [
-    {
-    type: ParticleEffect
-    particles: 12
-    cone: 360
-    length: 14
-    lifetime: 35
-    sizeFrom: 2
-    sizeTo: 3
-    layer:100.1
-    colorFrom: 5B5B5B
-    colorTo: 5B5B5B00
-    }
-    {
-    type: ParticleEffect
-    particles: 6
-    cone: 360
-    length: 27
-    lifetime: 35
-    sizeFrom: 2
-    sizeTo:4
-    layer:100.2
-    colorFrom: 808080
-    colorTo: 80808000
-    }
-    {
-    startDelay:2
-    type: ParticleEffect
-    particles: 12
-    cone: 20
-    length: 27
-    lifetime: 35
-    sizeFrom: 1
-    sizeTo: 2
-    baseRotation:90
-    useRotation:false
-    layer:100.3
-    colorFrom: 808080
-    colorTo: 80808000
-    }
-    {
-    startDelay:4
-    type: ParticleEffect
-    particles: 6
-    cone: 12
-    length: 35
-    lifetime: 35
-    sizeFrom: 1
-    sizeTo: 2
-    baseRotation:90
-    useRotation:false
-    layer:100.3
-    colorFrom: 808080
-    colorTo: 80808000
-    }
-    {
-    startDelay:6
-    type: ParticleEffect
-    particles: 8
-    lifetime: 30
-    layer: 100.2
-    cone: 8
-    baseRotation:90
-    useRotation:false
-    sizeFrom: 2
-    length: 50
-    sizeTo: 3
-    interp:pow3Out
-    colorFrom: ffd2ae80
-    colorTo: ffd2ae00
-    }
-    {
-    startDelay:10
-    type: ParticleEffect
-
-    particles: 7
-    lifetime: 70
-    layer: 100.2
-    cone:6
-    baseRotation:90
-    useRotation:false
-    sizeFrom: 2
-    length: 70
-    sizeTo: 0
-    sizeInterp:pow3Out
-    sizeChangeStart:50
-    interp:pow5Out
-    colorFrom: ffd2ae
-    colorTo: ffd2ae40
-    }
-    {
-    startDelay:10
-    type: ParticleEffect
-    particles: 15
-    lifetime: 140
-    layer: 100.3
-    cone: 1
-    interp:pow10Out
-    sizeInterp:pow3Out
-    sizeFrom: 2
-    sizeChangeStart:100
-    length: 300
-    sizeTo: 0
-    followParent:false
-    baseRotation:90
-    useRotation:false
-    colorFrom: ffd2ae
-    colorTo: ffd2ae20
-    }
-    {
-    startDelay:20
-    type: ParticleEffect
-    particles: 200
-    lifetime: 30
-    layer: 100.3
-    cone: 0
-    interp:pow10Out
-    sizeFrom: 1
-    sizeChangeStart:24
-    length: 3000
-    lenFrom:50
-    lenTo:50
-    line:true
-    strokeFrom: 1
-    strokeTo: 0
-    followParent:false
-    baseRotation:90
-    useRotation:false
-    colorFrom: ffffff
-    colorTo: ffffff00
-    }
-    ]
-
-    fragRandomSpread: 0
-    fragBullets:3
-    fragLifeMin: 0.6
-    fragLifeMax: 2
-    fragBullet: {
-    type: BasicBulletType
-    shrinkX: 0
-    shrinkY: 0
-    drag: 0.02
-    height: 0
-    width: 0
-    collides:false
-    absorbable:false
-    hittable:false
-    lifetime: 60
-    speed: 0
-    damage: 200
-    splashDamage:800
-    splashDamageRadius:30
-	pierceArmor:true
-    
-    incendAmount: 12
-    incendSpread: 20
-    incendChance: 1
-    
-    hittable:false
-    reflectable: false
-    absorbable: false
-    pierce: true
-    pierceCap: 8
-    pierceBuilding: true
-    
-    despawnEffect:[
-    {    
-    startDelay:5
-    type: ParticleEffect
-    particles: 4
-    cone: 360
-    length: 7
-    lifetime: 45
-    sizeFrom: 2
-    sizeTo: 3
-    layer:100.1
-    colorFrom: 5B5B5B
-    colorTo: 5B5B5B00
-    }    
-    {    
-    startDelay:5
-    type: ParticleEffect
-    particles: 4
-    cone: 360
-    length: 5
-    lifetime: 45
-    sizeFrom: 1
-    sizeTo: 2
-    layer:100.2
-    colorFrom: 808080
-    colorTo: 80808000
-    }
-    {
-    startDelay:4
-    type: WaveEffect
-    sizeFrom: 0
-    sizeTo: 26
-    lifetime: 90
-    colorFrom: 5B5B5B20
-    colorTo: 5B5B5B00
-    }
-    {
-    type: ParticleEffect
-    particles: 7
-    cone: 40
-    line: true
-    strokeFrom: 1.3
-    strokeTo: 2
-    lenFrom: 2
-    lenTo: 3
-    length: 5
-    colorFrom: F3E979
-    colorTo: F3E97900
-    lifetime: 35
-    }
-    {
-    type: ParticleEffect
-    particles: 12
-    cone: 25
-    line: true
-    strokeFrom: 1.3
-    strokeTo: 2
-    lenFrom: 2
-    lenTo: 3
-    length: 12
-    colorFrom: F3E979
-    colorTo: F3E97900
-    lifetime: 35
-    }
-    {
-    type: ParticleEffect
-    particles: 12
-    cone: 24
-    line: true
-    strokeFrom: 0.4
-    strokeTo: 1
-    lenFrom: 2
-    lenTo: 2
-    length: 16
-    colorFrom: F3E979
-    colorTo: F3E97900
-    lifetime: 30
-    }
-    ]
-    hitEffect: none
-
-    frontColor: ffffff
-    backColor: F3E979
-
-    fragBullets: 15
     fragRandomSpread: 360
-    fragVelocityMin: 0.5
-    fragVelocityMax: 1.5
+    fragBullets: 32
     fragLifeMin: 0.6
-    fragLifeMax: 1.3
+    fragLifeMax: 3
+    fragVelocityMin:0.1
+    fragVelocityMax:2
     fragBullet: {
     type: BasicBulletType
-    sprite: large-orb
-    shrinkX: 0
-    shrinkY: 0
-    drag: 0.02
-    height: 9
-    width: 4
-
-    splashDamageRadius: 8
-    splashDamage: 10
-    lifetime: 34
-    speed: 5
-    drag:0.02
-    damage: 10
-
-    incendAmount: 3
-    incendSpread: 8
-    incendChance: 1
-
-    hittable:false
-    reflectable: false
-    absorbable: false
-    pierce: true
-    pierceCap: 6
-    pierceBuilding: true
-    
-    despawnEffect:[
-    {    
-    startDelay:5
-    type: ParticleEffect
-    particles: 4
-    cone: 360
-    length: 12
-    lifetime: 45
-    sizeFrom: 2
-    sizeTo: 3
-    layer:100.1
-    colorFrom: f9c27a
-    colorTo: f9c27a00
-    }    
-    {    
-    startDelay:5
-    type: ParticleEffect
-    particles: 4
-    cone: 360
-    length: 12
-    lifetime: 45
-    sizeFrom: 1
-    sizeTo: 2
-    layer:100.2
-    colorFrom: f9c27a
-    colorTo: f9c27a00
-    }
-    {
-    startDelay:4
-    type: WaveEffect
-    sizeFrom: 0
-    sizeTo: 13
-    lifetime: 90
-    colorFrom: f9c27a20
-    colorTo: f9c27a00
-    }
-    {
-    type: ParticleEffect
-    particles: 6
-    cone: 50
-    line: true
-    strokeFrom: 1.3
-    strokeTo: 1
-    lenFrom: 2
-    lenTo: 3
-    length: 20
-    colorFrom: f9c27a
-    colorTo: f9c27a00
-    lifetime: 35
-    }
+    keepVelocity: false
+    despawnShake: 3
+    collides:false
+    hitShake: 3
+    height: 14
+    width: 0
+    splashDamageRadius: 0
+    statusDuration: 300
+    homingPower: 0.002
+    splashDamage: 48
+    homingRange: 300
+    status: melting
+    lifetime: 160
+    damage: 150
+    speed: 20
+    drag:0.04
+    despawnEffect: none
+    fragBullets:1
+    fragBullet:{
+    width:0
+    collides:false
+    lifetime:1
+    spawnBullets:[{
+        width:0
+        lifetime:1
+        ignoreSpawnAngle:true
+        collides: false
+        despawnEffect:[
+        {
+        	startDelay:  0.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 7.5
+        	strokeTo: 3.75
+        	rotation: -2.0
+        	followParent: false
+        	sizeFrom: 21.0
+        	offsetY: 278
+        	sizeTo:  9.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  4.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 277
+        	baseLength: 12.75
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  5.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 276
+        	baseLength: 12.75
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  2.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 7.1
+        	strokeTo: 3.55
+        	rotation: -4.029999999999999
+        	followParent: false
+        	sizeFrom: 19.8799995
+        	offsetY: 276
+        	sizeTo:  8.43999975
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  6.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 275
+        	baseLength: 11.989999749999999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  7.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 274
+        	baseLength: 11.989999749999999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  4.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 6.7
+        	strokeTo: 3.35
+        	rotation: -6.079999999999999
+        	followParent: false
+        	sizeFrom: 18.7600005
+        	offsetY: 274
+        	sizeTo:  7.88000025
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  8.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 273
+        	baseLength: 11.23000025
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  9.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 272
+        	baseLength: 11.23000025
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  6.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 6.3
+        	strokeTo: 3.15
+        	rotation: -8.16
+        	followParent: false
+        	sizeFrom: 17.64
+        	offsetY: 272
+        	sizeTo:  7.32
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  10.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 271
+        	baseLength: 10.47
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  11.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 270
+        	baseLength: 10.47
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  8.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 5.9
+        	strokeTo: 2.95
+        	rotation: -10.27
+        	followParent: false
+        	sizeFrom: 16.519999499999997
+        	offsetY: 269
+        	sizeTo:  6.759999749999999
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  12.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 268
+        	baseLength: 9.709999749999998
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  13.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 267
+        	baseLength: 9.709999749999998
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  10.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 5.5
+        	strokeTo: 2.75
+        	rotation: -12.399999999999999
+        	followParent: false
+        	sizeFrom: 15.4000005
+        	offsetY: 266
+        	sizeTo:  6.20000025
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  14.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 265
+        	baseLength: 8.95000025
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  15.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 264
+        	baseLength: 8.95000025
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  12.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 5.1
+        	strokeTo: 2.55
+        	rotation: -14.559999999999999
+        	followParent: false
+        	sizeFrom: 14.28
+        	offsetY: 263
+        	sizeTo:  5.64
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  16.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 262
+        	baseLength: 8.19
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  17.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 261
+        	baseLength: 8.19
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  14.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.7
+        	strokeTo: 2.35
+        	rotation: -16.75
+        	followParent: false
+        	sizeFrom: 13.159999499999998
+        	offsetY: 260
+        	sizeTo:  5.079999749999999
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  18.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 259
+        	baseLength: 7.429999749999999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  19.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 258
+        	baseLength: 7.429999749999999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  16.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.3
+        	strokeTo: 2.15
+        	rotation: -18.96
+        	followParent: false
+        	sizeFrom: 12.0400005
+        	offsetY: 256
+        	sizeTo:  4.52000025
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  20.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 255
+        	baseLength: 6.670000249999999
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  21.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 254
+        	baseLength: 6.670000249999999
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  18.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -21.200000000000003
+        	followParent: false
+        	sizeFrom: 10.92
+        	offsetY: 252
+        	sizeTo:  3.96
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  22.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 251
+        	baseLength: 5.96
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  23.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 250
+        	baseLength: 5.96
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  20.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -23.470000000000002
+        	followParent: false
+        	sizeFrom: 9.7999995
+        	offsetY: 248
+        	sizeTo:  3.39999975
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  24.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 247
+        	baseLength: 5.39999975
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  25.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 246
+        	baseLength: 5.39999975
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  22.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -25.76
+        	followParent: false
+        	sizeFrom: 8.680000499999998
+        	offsetY: 244
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  26.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 243
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  27.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 242
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  24.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -28.080000000000002
+        	followParent: false
+        	sizeFrom: 7.5600000000000005
+        	offsetY: 239
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  28.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 238
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  29.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 237
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  26.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -30.430000000000003
+        	followParent: false
+        	sizeFrom: 6.439999499999999
+        	offsetY: 234
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  30.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 233
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  31.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 232
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  28.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -32.800000000000004
+        	followParent: false
+        	sizeFrom: 5.3200005
+        	offsetY: 229
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  32.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 228
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  33.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 227
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  30.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -35.2
+        	followParent: false
+        	sizeFrom: 4.199999999999999
+        	offsetY: 223
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  34.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 222
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  35.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 221
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  32.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -37.63
+        	followParent: false
+        	sizeFrom: 3.0799994999999996
+        	offsetY: 217
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  36.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 216
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  37.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 215
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  34.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -40.080000000000005
+        	followParent: false
+        	sizeFrom: 1.9600005
+        	offsetY: 211
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  38.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 210
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  39.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 209
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  36.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -42.56
+        	followParent: false
+        	sizeFrom: 0.8400000000000001
+        	offsetY: 205
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  40.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 204
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  41.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 203
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  38.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -45.07
+        	followParent: false
+        	sizeFrom: 0.2800005
+        	offsetY: 198
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  42.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 197
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  43.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 196
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  40.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -47.6
+        	followParent: false
+        	sizeFrom: 1.3999994999999998
+        	offsetY: 191
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  44.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 190
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  45.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 189
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  42.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -50.160000000000004
+        	followParent: false
+        	sizeFrom: 2.52
+        	offsetY: 184
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  46.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 183
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  47.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 182
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  44.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -52.75
+        	followParent: false
+        	sizeFrom: 3.6400005
+        	offsetY: 177
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  48.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 176
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  49.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 175
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  46.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -55.36
+        	followParent: false
+        	sizeFrom: 4.7599995
+        	offsetY: 169
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  50.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 168
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  51.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 167
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  48.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -58.0
+        	followParent: false
+        	sizeFrom: 5.88
+        	offsetY: 161
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  52.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 160
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  53.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 159
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  50.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -60.67
+        	followParent: false
+        	sizeFrom: 7.0000005000000005
+        	offsetY: 153
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  54.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 152
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  55.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 151
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  52.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -63.36
+        	followParent: false
+        	sizeFrom: 8.119999499999999
+        	offsetY: 145
+        	sizeTo:  3.0
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  56.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 144
+        	baseLength: 5.0
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  57.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 143
+        	baseLength: 5.0
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  54.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -66.08
+        	followParent: false
+        	sizeFrom: 9.24
+        	offsetY: 136
+        	sizeTo:  3.12
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  58.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 135
+        	baseLength: 5.12
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  59.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 134
+        	baseLength: 5.12
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  56.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.0
+        	strokeTo: 2.0
+        	rotation: -68.83
+        	followParent: false
+        	sizeFrom: 10.3600005
+        	offsetY: 127
+        	sizeTo:  3.68000025
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  60.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 126
+        	baseLength: 5.68000025
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  61.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 125
+        	baseLength: 5.68000025
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  58.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.1
+        	strokeTo: 2.05
+        	rotation: -71.6
+        	followParent: false
+        	sizeFrom: 11.4799995
+        	offsetY: 118
+        	sizeTo:  4.23999975
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  62.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 117
+        	baseLength: 6.28999975
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  63.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 116
+        	baseLength: 6.28999975
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  60.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.5
+        	strokeTo: 2.25
+        	rotation: -74.39999999999999
+        	followParent: false
+        	sizeFrom: 12.600000000000001
+        	offsetY: 108
+        	sizeTo:  4.800000000000001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  64.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 107
+        	baseLength: 7.050000000000001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  65.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 106
+        	baseLength: 7.050000000000001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  62.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 4.9
+        	strokeTo: 2.45
+        	rotation: -77.22999999999999
+        	followParent: false
+        	sizeFrom: 13.720000500000001
+        	offsetY: 98
+        	sizeTo:  5.360000250000001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  66.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 97
+        	baseLength: 7.810000250000001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  67.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 96
+        	baseLength: 7.810000250000001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  64.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 5.3
+        	strokeTo: 2.65
+        	rotation: -80.07999999999998
+        	followParent: false
+        	sizeFrom: 14.839999500000001
+        	offsetY: 88
+        	sizeTo:  5.919999750000001
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  68.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 87
+        	baseLength: 8.569999750000001
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  69.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 86
+        	baseLength: 8.569999750000001
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  66.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 5.7
+        	strokeTo: 2.85
+        	rotation: -82.95999999999998
+        	followParent: false
+        	sizeFrom: 15.96
+        	offsetY: 78
+        	sizeTo:  6.48
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  70.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 77
+        	baseLength: 9.33
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  71.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 76
+        	baseLength: 9.33
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  68.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 6.1
+        	strokeTo: 3.05
+        	rotation: -85.86999999999998
+        	followParent: false
+        	sizeFrom: 17.080000499999997
+        	offsetY: 67
+        	sizeTo:  7.0400002499999985
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  72.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 66
+        	baseLength: 10.09000025
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  73.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 65
+        	baseLength: 10.09000025
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  70.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 6.5
+        	strokeTo: 3.25
+        	rotation: -88.79999999999998
+        	followParent: false
+        	sizeFrom: 18.1999995
+        	offsetY: 56
+        	sizeTo:  7.59999975
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  74.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 55
+        	baseLength: 10.84999975
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  75.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 54
+        	baseLength: 10.84999975
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  72.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 6.9
+        	strokeTo: 3.45
+        	rotation: -91.75999999999998
+        	followParent: false
+        	sizeFrom: 19.32
+        	offsetY: 45
+        	sizeTo:  8.16
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  76.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 44
+        	baseLength: 11.61
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  77.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 43
+        	baseLength: 11.61
+        	lifetime: 20
+        	}
+        {
+        	startDelay:  74.0
+        	type: WaveEffect
+        	useRotation:false
+        	sides: 6
+        	rotWithParent: false
+        	strokeFrom: 7.3
+        	strokeTo: 3.65
+        	rotation: -94.74999999999997
+        	followParent: false
+        	sizeFrom: 20.4400005
+        	offsetY: 34
+        	sizeTo:  8.72000025
+        	lifetime:  20
+        	colorFrom: f9c27a90
+        	colorTo: f9c27a30
+        }
+        {
+        	startDelay:  78.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 6
+        	cone: 360
+        	line: true
+        	strokeFrom: 2
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 50
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 33
+        	baseLength: 12.37000025
+        	lifetime: 35
+        	}
+        {
+        	startDelay:  79.0
+        	type: ParticleEffect
+        	useRotation:false
+        	particles: 8
+        	cone: 360
+        	line: true
+        	strokeFrom: 1
+        	strokeTo: 1
+        	lenFrom: 2
+        	lenTo: 5
+        	length: 70
+        	colorFrom: f9c27a
+        	colorTo: f9c27a00
+        	offsetY: 32
+        	baseLength: 12.37000025
+        	lifetime: 20
+        	}
     ]
-    hitEffect: none
-    
-    trailColor: f9c27a
-    trailWidth: 1
-    trailLength: 3
-
-    frontColor: ffffff
-    backColor: f9c27a
-    incendAmount: 1
-    incendSpread: 4
-    incendChance: 1
-    intervalBullets: 1
-    bulletInterval:2
-    intervalRandomSpread:5
-    intervalBullet: {
-        type: BasicBulletType
-        pierceBuilding: true
-        collidesAir: false
-        despawnShake: 1
-        pierce: true
-        hitShake: 1
-        height: 6
-        width: 3
-        shrinkX:0
-        shrinkY:0
-        buildingDamageMultiplier: 0.1
-        pierceArmor:true
-        splashDamageRadius: 10
-        splashDamage: 10
-        lifetime: 10
-        drag: 0.04
-        speed: 1
-
-        hitEffect:none
-
-        incendSpread: 1
-        incendAmount: 3
-        incendChance: 0.4
-
-        despawnEffect: none
-
-        lightColor:FC2F00
-        lightOpacity: 0.6
-        lightRadius: 8
-
-        trailColor: F3E979F0
-        trailLength: 4
-        trailWidth: 0.4
-    }
-    lightColor: f9c27a
-    lightOpacity: 0.7
-    lightRadius: 31
+        }]
+        fragBullets:30
+        fragLifeMin:1
+        fragLifeMax:40
+        fragOffsetMin:0
+        fragOffsetMax:0
+        collides:false
+        fragBullet:{
+        speed:0
+        collides:false
+        sprite: large-bomb
+        collides:false
+        splashDamage:20
+        splashDamageRadius:50
+        makeFire:true
+        spin:0.3
+        incendAmount:16
+        incendSpread:30
+        despawnEffect:[{
+        type: WaveEffect
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 50
+        strokeTo:3
+        strokeFrom:50
+        lifetime: 60
+        colorFrom: f9c27a
+        colorTo: f9c27a00
+        }
+        {
+        startDelay:20
+        type: WaveEffect
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 60
+        strokeTo:2
+        strokeFrom:5
+        lifetime: 60
+        colorFrom: f9c27a50
+        colorTo: f9c27a00
+        }
+        ]
+        }
     }
     }
-}
+    }
     }
    ]
 
