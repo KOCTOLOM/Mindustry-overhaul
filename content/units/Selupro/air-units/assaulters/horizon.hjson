@@ -1,8 +1,9 @@
 research: flare
 faceTarget: false
 fogRadius: 5
-strafePenalty: 0.5
-rotateSpeed: 7
+strafePenalty: 0.2
+circleTargetRadius: 120
+rotateSpeed: 0.9
 accel: 0.015
 drag: 0.015
 health: 260
@@ -53,8 +54,8 @@ shoot: {
 
 bullet: {
     type: BombBulletType
-    despawnShake: 3.25
-    hitShake: 3.25
+    despawnShake: 2.25
+    hitShake: 2.25
     maxRange: 90
     height: 9
     width: 6
@@ -65,7 +66,7 @@ bullet: {
     status: burning
     lifetime: 45
     drag: 0.035
-    damage: 60
+    damage:80
     speed: 2
 
     hitEffect: flakExplosion

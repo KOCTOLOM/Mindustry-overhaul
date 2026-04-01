@@ -41,7 +41,7 @@ weapons: [
     reload: 14
     
     ejectEffect: none
-    shootSound: flame
+    shootSound: shootFlame
 
 bullet: {
     type: BulletType
@@ -138,7 +138,3 @@ bullet: {
     }
 }
     ]
-researchCost: [
-    silicon/150
-    graphite/210
-]

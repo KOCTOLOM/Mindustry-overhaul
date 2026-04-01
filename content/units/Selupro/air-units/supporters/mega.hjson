@@ -157,7 +157,7 @@ bullet: {
     x: 4.2
     y: -3.6
 
-    reload: 3
+    reload:
 
     ejectEffect: none
 
@@ -168,9 +168,9 @@ bullet: {
     collidesGround: false
 
     healPercent: 0.05
-    lifetime: 45
+    lifetime: 32
     speed: 6.25
-    damage: 5
+    damage: 12
 
     frontColor: ffffff
     backColor: 84f491

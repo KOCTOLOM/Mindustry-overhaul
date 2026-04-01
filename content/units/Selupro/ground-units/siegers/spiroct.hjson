@@ -45,7 +45,7 @@ weapons: [
     reload: 13
     shootStatus: mov-motor-deceleration-tier-2
     shootStatusDuration: 70
-    shootSound: sap
+    shootSound: shootSap
 bullet: {
     type: SapBulletType
     length: 108

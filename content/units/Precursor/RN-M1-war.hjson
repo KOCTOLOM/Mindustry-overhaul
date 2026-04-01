@@ -258,12 +258,12 @@ bullet: {
     status: mov-armor-piercing-tier-3
     splashDamageRadius: 16
     statusDuration: 300
-    splashDamage: 92
+    splashDamage: 35
     lifetime: 26
     weaveScale: 4
-    pierceCap: 6
+    pierceCap: 4
     weaveMag: 1
-    damage: 162
+    damage: 122
     speed: 34
     drag:0.04
     incendAmount: 4
@@ -361,7 +361,7 @@ despawnEffect: {
     colorTo: FFF480
     }
 
-    fragBullets: 3
+    fragBullets: 2
     fragRandomSpread: 10
     fragVelocityMin: 0.7
     fragVelocityMax: 2.7
@@ -376,16 +376,16 @@ despawnEffect: {
     height: 12
     width: 5
     splashDamageRadius: 10
-    splashDamage: 50
+    splashDamage: 30
     lifetime: 35
     speed: 5.45
-    damage: 60
+    damage: 40
     pierceArmor:true
     hittable:false
     reflectable: false
     absorbable: false
     pierce: true
-    pierceCap: 14
+    pierceCap: 6
     pierceBuilding: true
 
     lightColor: f9c27a
@@ -444,7 +444,7 @@ despawnEffect: {
     x: -22.5
     y: 1
 
-    velocityRnd: 0.6
+    velocityRnd: 0.5
     reload: 570
 
     shootSound: blaster-shot-1
@@ -484,10 +484,10 @@ bullet:{
     buildingDamageMultiplier: 0
 
     pierceCap: 200
-    lifetime: 200
+    lifetime: 210
     damage: 450
     drag: 0.032
-    speed: 24
+    speed: 27
 
     fragRandomSpread: 360
     fragVelocityMin: 0.2
@@ -2691,7 +2691,7 @@ intervalBullet: {
     cooldownTime: 600
     velocityRnd: 0.2
     inaccuracy: 10
-    reload: 800
+    reload: 740
     heatColor:FF00000
     shootSound: rocket-shot-2
     shootWarmupSpeed: 0.004
@@ -2711,6 +2711,7 @@ bullet: {
     type: BasicBulletType
         width:0
         lifetime:1
+        instantDisappear:true
         hittable:false
         collides:false
         ignoreSpawnAngle:true
@@ -4746,11 +4747,11 @@ bullet: {
     drag:0.03
     despawnEffect: none
     fragRandomSpread: 360
-    fragBullets: 32
+    fragBullets: 36
     fragLifeMin: 0.6
-    fragLifeMax: 3
+    fragLifeMax: 4.5
     fragVelocityMin:0.1
-    fragVelocityMax:2
+    fragVelocityMax:2.5
     fragBullet: {
     type: BasicBulletType
     keepVelocity: false
@@ -6796,9 +6797,8 @@ bullet: {
         	lifetime: 20
         	}
     ]
-        }]
         fragBullets:30
-        fragLifeMin:1
+        fragLifeMin:0.1
         fragLifeMax:40
         fragOffsetMin:0
         fragOffsetMax:0
@@ -6808,7 +6808,9 @@ bullet: {
         collides:false
         sprite: large-bomb
         collides:false
-        splashDamage:20
+        splashDamage:40
+        width:30
+        height:30
         splashDamageRadius:50
         makeFire:true
         spin:0.3
@@ -6840,7 +6842,7 @@ bullet: {
         colorTo: f9c27a00
         }
         ]
-        }
+        }}]
     }
     }
     }

@@ -173,11 +173,11 @@ pyratite: {
 	
     splashDamageRadius: 40
     statusDuration: 450
-    splashDamage: 150
+    splashDamage: 120
     knockback: 0.75
     status: burning
     lifetime: 71
-    damage: 200
+    damage: 160
     speed: 5
 
     incendAmount: 12
@@ -218,7 +218,7 @@ hitEffect: {
     sparkLen: 18
     sparks: 12
 }
-    fragBullets: 16
+    fragBullets: 10
     fragLifeMin: 0.5
     fragLifeMax: 2.4
     fragVelocityMin:0.6
@@ -232,12 +232,12 @@ hitEffect: {
     shrinkY: 0.3
     height: 14
     width: 6
-    splashDamageRadius: 12
-    splashDamage: 72
+    splashDamageRadius: 8
+    splashDamage: 34
     pierceBuilding: true
     pierceCap: 3
     lifetime:30
-    damage: 65
+    damage: 55
 	pierceArmor:true
     despawnEffect: none
     speed:3.5

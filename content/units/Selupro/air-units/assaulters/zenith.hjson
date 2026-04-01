@@ -1,6 +1,7 @@
 research: horizon
 alwaysShootWhenMoving: true
 circleTarget: true
+circleTargetRadius:100
 fogRadius: 14
 
 itemCapacity: 96

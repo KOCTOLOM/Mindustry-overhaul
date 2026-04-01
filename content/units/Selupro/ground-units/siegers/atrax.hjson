@@ -68,7 +68,7 @@ weapons: [
     reload: 2.4
 
     ejectEffect: none
-    shootSound: flame
+    shootSound: shootAtrax
 
 bullet: { 
     type: LiquidBulletType
@@ -102,7 +102,7 @@ bullet: {
     mirror: false
     recoil: 2
     shootY: 1
-    shake: 5
+    shake: 2
     x: 4.15
     y: -5
 

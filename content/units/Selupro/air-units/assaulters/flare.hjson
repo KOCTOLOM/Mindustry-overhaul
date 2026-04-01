@@ -4,9 +4,10 @@ faceTarget: false
 fogRadius: 3
 range: 174
 
-strafePenalty: 0
+strafePenalty: 0.0
 itemCapacity: 24
-rotateSpeed: 9
+circleTargetRadius:240
+rotateSpeed: 7
 accel: 0.025
 drag: 0.015
 health: 95

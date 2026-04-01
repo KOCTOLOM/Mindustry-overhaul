@@ -3,6 +3,7 @@ alwaysShootWhenMoving: true
 forceMultiTarget: true
 circleTarget: true
 fogRadius: 32
+circleTargetRadius:150
 
 crashDamageMultiplier: 6
 

@@ -1,7 +1,7 @@
 research: fortress
 forceMultiTarget: true
 rotateSpeed: 1.32
-stepShake: 8.75
+stepShake: 6.75
 fogRadius: 34.5
 
 itemCapacity: 9600

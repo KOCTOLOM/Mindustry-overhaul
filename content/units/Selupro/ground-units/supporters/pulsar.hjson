@@ -45,7 +45,7 @@ weapons: [
     recoil: 2.5
     recoilTime: 65
     shootY: 2.5
-    shake: 2.2
+    shake: 1.4
     x: 5
     y: 0.5
 

@@ -43,7 +43,7 @@ abilities: [
     {
     type: EnergyFieldAbility
     statusDuration: 750
-    shootSound:emp-wave2
+    shootSound:spark
     healPercent: 1.2
     sectors: 12
     rotateSpeed:0.2
@@ -13037,7 +13037,7 @@ spawnBullets:[
             lifetime:15
             damage:1
             fragBullets:120
-            fragRandomSpread:1
+            fragRandomSpread:3
             fragVelocityMin: 0.02
             fragVelocityMax: 2.2
             fragBullets: 600
@@ -13049,6 +13049,8 @@ spawnBullets:[
             width: 20
             shrinkX:0
             shrinkY:0
+            hittable:false
+            absorbable:false
             sprite:large-bomb
             spin:2
             frontColor: ffffff
@@ -13358,11 +13360,15 @@ spawnBullets:[
         shrinkX:0
         shrinkY:0
         sprite:large-bomb
-        velocityScaleRandMin:0.7
-        velocityScaleRandMax:1.4
+        lifeScaleRandMin :0.4
+        lifeScaleRandMax :1.6
         shootEffect: none
         hitEffect:none
         despawnEffect:none
+        despawnSound:plasma-shot-1
+        hitSoundPitch: 1.3
+        hitSoundPitchRange: 0.2
+        hitSoundVolume:0.4
         lifetime: 300
         damage: 300
         speed: 6
@@ -13388,8 +13394,8 @@ spawnBullets:[
         fragRandomSpread:0
         fragBullet:{
             type: BasicBulletType
-            height: 20
-            width: 20
+            height: 40
+            width: 40
             shrinkX:0
             shrinkY:0
             sprite:large-bomb
@@ -13444,22 +13450,43 @@ spawnBullets:[
                }
                ]
             lifetime: 130
-            drag:0.04
+            drag:0.024
             damage: 300
             splashDamage:200
             splashDamageRadius:20
-            speed: 19
+            speed: 21
 
-            homingPower:1
-            homingRange:2000
-
+            homingPower:0.7
+            homingDelay:6
+            homingRange:740
+            hitSound:emp-wave
+            hitSoundPitch: 0.6
+            hitSoundPitchRange: 0.1
+            hitSoundVolume:1.2
             frontColor: ffffff
             backColor: 98ffa9
 
             trailColor: 98ffa9
             trailLength: 20
             trailWidth: 4
-
+            trailEffect:{
+                startDelay:3
+                type: ParticleEffect
+                lifetime:23
+                region:large-bomb
+                particles: 1
+                layer: 100.1
+                cone:360
+                spin:0.5
+                sizeFrom: 12
+                length: 6
+                sizeTo: 0
+                sizeChangeStart:14
+                colorFrom: 98ffa9
+                colorTo: 00F529
+            }
+            trailInterval:12
+            trailChance:1
             lightColor: ffffff
             lightOpacity: 0.5
             lightRadius: 12.5
@@ -13469,7 +13496,7 @@ spawnBullets:[
 }
 {
     name: lightning-strike
-    reload:30
+    reload:26
     recoil: 0
     shake: 0
     x: 0
@@ -13488,7 +13515,7 @@ spawnBullets:[
     speed:40
     lifetime:20
     rangeOverride:2000
-    homingPower:0.2
+    homingPower:0.14
     homingDelay:2
     homingRange:200
     velocityScaleRandMin:0.2
@@ -13516,19 +13543,19 @@ spawnBullets:[
         ignoreSpawnAngle:true
         fragRandomSpread:0
         fragBullet:{
-        splashDamage:300
-        splashDamageRadius:8
+        splashDamage:160
+        splashDamageRadius:17
         speed:0
         collides:false
         width:0
-        lifetime:0
+        lifetime:1
         hitEffect:[
         {
         type: RadialEffect
         rotationOffset:  0
         rotationSpacing : 24
         amount: 15
-        lengthOffset: 9
+        lengthOffset: 14
         effect: {
             type: ParticleEffect
             startDelay:5
@@ -13551,7 +13578,7 @@ spawnBullets:[
         rotationOffset:  8
         rotationSpacing : 24
         amount: 15
-        lengthOffset: 9
+        lengthOffset: 15
         effect: {
             type: ParticleEffect
             startDelay:5
@@ -13574,10 +13601,10 @@ spawnBullets:[
             rotationOffset:  18
             rotationSpacing : 24
             amount: 15
-            lengthOffset: 9
+            lengthOffset: 17
             effect: {
                 type: ParticleEffect
-                startDelay:5
+                startDelay:4
                 lifetime: 70
                 particles: 1
                 line: true
@@ -13635,6 +13662,136 @@ spawnBullets:[
         ]
     }
     }
+}
+}
+{
+    name: flame
+    inaccuracy: 0
+    mirror: true
+    x: 0
+    y:-1
+
+    reload: 80
+    recoil: 0
+    velocityRnd:0.6
+    xRand:6
+    shootSound:plasma-shoot-3
+    shootSoundVolume:0.6
+shoot: {
+       	type: ShootMulti
+       	source: {
+           type: ShootSpread
+           spread: 3
+           shots: 3
+           }
+       	dest: [
+       	{
+               	type: ShootMulti
+               	source: {
+                   type: ShootPattern
+                   shots: 4
+                   shotDelay: 12
+                   }
+               	dest: [
+               	{
+               	type: ShootPattern
+               	    firstShotDelay: 20
+               		shots: 3
+               		shotDelay: 42
+               	}
+               	]
+        }
+       	]
+       	}
+
+bullet: {
+    type: BasicBulletType
+    sprite: large-orb
+    despawnShake: 1
+    hitShake: 1
+    shrinkX: 0.0
+    shrinkY: 0.0
+    height: 12
+    width: 12
+    shootEffect:[
+    {
+        type: ParticleEffect
+        cone: 12
+        particles: 2
+        lifetime: 15
+        length:10
+        colorFrom: ffffff
+        colorTo: 84f491
+        sizeFrom: 2
+        sizeTo: 1
+    }
+    ]
+    buildingDamageMultiplier: 1.2
+
+    splashDamageRadius: 20
+    statusDuration: 180
+    splashDamage: 50
+    homingPower: 0.009
+    homingRange: 120
+    homingDelay: 8
+    status: burning
+    lifetime: 90
+    damage: 90
+    speed: 16
+    drag:0.016
+    pierce:true
+    pierceCap: 2
+    pierceBuilding:true
+    pierceArmor:true
+    hitEffect:none
+    hitSound: dullExplosion
+
+    lightColor: 84f491
+    lightOpacity: 0.7
+    lightRadius: 24.5
+
+    trailColor: 84f491
+    trailLength: 18
+    trailWidth: 2
+
+    weaveScale: 18
+    weaveMag: 1.5
+
+    frontColor: ffffff
+    backColor: 84f491
+    hitColor: 84f491
+    hitSound:emp-wave
+    hitSoundPitch: 1.3
+    hitSoundPitchRange: 0.3
+    hitSoundVolume:0.3
+
+    smokeEffect: shootBigSmoke
+    shootEffect: shootBigColor
+    despawnEffect: [{
+        type: WaveEffect
+        sides:6
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 20
+
+        lifetime: 30
+
+        colorFrom: 84f491
+        colorTo: 84f491
+}
+{
+        type: ParticleEffect
+        cone: 360
+        particles: 15
+        lifetime: 15
+        length:10
+        colorFrom: ffffff
+        colorTo: 84f491
+        sizeFrom: 2
+        sizeTo: 1
+    }
+]
 }
 }
 ]

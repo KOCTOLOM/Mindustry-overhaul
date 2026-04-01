@@ -37,29 +37,36 @@ abilities: [
 weapons: [
 {
     name: poly-weapon
-    type: RepairBeamWeapon
-    targetBuildings: true
-    controllable: true
-    targetUnits: true
-    autoTarget: false
-    widthSinMag: 0.1
-    beamWidth: 0.5
-    shootCone: 30
+    alternate:true
+    rotationLimit: 40
+    shootCone: 14
     rotate: true
-    x: 3.75
+    x: 3.76
     y: -2.5
 
-    fractionRepairSpeed: 0.002
-    repairSpeed: 0.25
-    reload: 32
+    inaccuracy: 4
+    reload: 60
 
-bullet: {
-    maxRange: 120
-    rangeOverride:90
+    shootSound: lasershoot
+shoot: {
+    shotDelay: 7
+    shots: 2
     }
+bullet: {
+    type: LaserBoltBulletType
+    collidesTeam: true
+    collidesAir: true
+    drag:0.035
+    trailLength:6
+    trailColor:84f491
+    buildingDamageMultiplier: 0.4
+    healPercent: 0.6
+    lifetime: 55
+    speed: 5.25
+    damage: 12
+
+    frontColor: ffffff
+    backColor: 84f491
+}
 }
     ]
-researchCost: [
-    silicon/150
-    graphite/150
-]

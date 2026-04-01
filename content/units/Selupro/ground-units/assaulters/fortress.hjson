@@ -1,7 +1,7 @@
 research: mace
 forceMultiTarget: true
 targetAir: true
-stepShake: 3.25
+stepShake: 2.25
 fogRadius: 22
 range: 384
 
@@ -332,9 +332,3 @@ bullet: {
     }
 }
     ]
-researchCost: [
-    titanium/75
-    metaglass/120
-    thorium/60
-    silicon/420
-]

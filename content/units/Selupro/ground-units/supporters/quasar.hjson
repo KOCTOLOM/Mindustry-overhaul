@@ -81,7 +81,7 @@ bullet: {
     rotate: true
     recoil: 4
     shootY: 4
-    shake: 9
+    shake: 2.5
     x: 7.5
 
     reload: 160
@@ -121,7 +121,7 @@ bullet: {
     rotate: false
     shootY: 5.25
     recoil: -5
-    shake: 5
+    shake: 1.5
     x: 3
     y: -2.5
 
@@ -140,7 +140,7 @@ bullet: {
     
     keepVelocity: false
     collidesTeam: true
-    despawnShake: 3
+    despawnShake: 1
     scaleLife: true
     shrinkX: 0.25
     shrinkY: 0.5

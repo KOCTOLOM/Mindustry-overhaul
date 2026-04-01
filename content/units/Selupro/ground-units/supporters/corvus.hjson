@@ -2,7 +2,7 @@ research: vela
 alwaysShootWhenMoving: true
 legSplashDamage: 520
 legSplashRange: 26
-stepShake: 10.5
+stepShake: 6.5
 fogRadius: 62
 
 itemCapacity: 2250
@@ -86,7 +86,7 @@ weapons: [
     targetInterval: 15
     reload: 9
 
-    shootSound: lasershoot
+    shootSound: shootSegment
 bullet: {
     maxRange: 180
 
@@ -112,8 +112,8 @@ bullet: {
     recoil: 0
 
     shootStatusDuration: 470
-    chargeSound: lasercharge
-    shootSound: laserblast
+    chargeSound: chargeCorvus
+    shootSound: shootCorvus
     shootStatus: unmoving
 shoot: {
     firstShotDelay: 340
@@ -3376,7 +3376,7 @@ layer:100.3
     mirror: true
     rotate: true
     recoil: 2
-    shake: 5
+    shake: 3
     x: 20
     y: 3.5
     
@@ -3385,7 +3385,7 @@ layer:100.3
     reload: 120
 
     ejectEffect: casing1
-    shootSound: laser
+    shootSound: shootBeamPlasmaSmall
 shoot: {
     firstShotDelay: 30
     shotDelay: 4
@@ -3396,9 +3396,9 @@ bullet: {
     type: BasicBulletType
     pierceBuilding: true
     collidesAir: false
-    despawnShake: 3.2
+    despawnShake: 2.2
     pierceArmor: true
-    hitShake: 3.2
+    hitShake: 2.2
     height: 30
     width: 9
     hittable:false
@@ -3493,7 +3493,7 @@ hitEffect: [
     mirror: true
     rotate: true
     recoil: 2
-    shake: 5
+    shake: 3
     x: 9.75
     y: 12.5
     
@@ -3502,7 +3502,7 @@ hitEffect: [
     reload: 230
 
     ejectEffect: casing1
-    shootSound: laser
+    shootSound: shootBeamPlasmaSmall
 shoot: {
     firstShotDelay: 30
     shotDelay: 6
@@ -3513,9 +3513,9 @@ bullet: {
     type: BasicBulletType
     pierceBuilding: true
     collidesAir: false
-    despawnShake: 3.2
+    despawnShake: 2.2
     pierceArmor: true
-    hitShake: 3.2
+    hitShake: 2.2
     height: 20
     width: 6
     hittable:false
@@ -3610,7 +3610,7 @@ hitEffect: [
     mirror: false
     recoil: -4.65
     shootY: 9
-    shake: 15
+    shake: 2
     x: 0
     y: -9
 
@@ -3618,7 +3618,7 @@ hitEffect: [
     inaccuracy: 25
     reload: 360
 
-    shootSound: missile
+    shootSound: shootMissilePlasma
 shoot: { 
     type: ShootAlternate
     shotDelay: 3
@@ -3632,8 +3632,8 @@ bullet: {
     sprite:missile
     keepVelocity: false
     collidesTeam: true
-    despawnShake: 11
-    hitShake: 11
+    despawnShake: 2
+    hitShake: 2
     shrinkX: 0
     shrinkY: 0
     height: 10
@@ -3699,7 +3699,7 @@ bullet: {
     shootY: 4.5
     recoils: 2
     recoil: 1
-    shake: 5
+    shake: 3
     x: 18.5
     y: -4
 
@@ -3773,9 +3773,9 @@ heatProgress: {
 bullet: {
     type: BasicBulletType
     collidesGround: false
-    despawnShake: 3.2
+    despawnShake: 2.2
     pierceArmor: true
-    hitShake: 3.2
+    hitShake: 2.2
     hitSize: 3
     height: 9
     width: 6
@@ -3883,9 +3883,9 @@ despawnEffect: {
 bullet: {
      type: EmpBulletType
         sprite: large-orb
-        despawnShake: 16
+        despawnShake: 3
         collidesAir: true
-        hitShake: 16
+        hitShake: 3
         shrinkY: 0.0
         height: 30
         width: 30
@@ -4232,9 +4232,4 @@ bullet: {
         }
         }
     ]
-researchCost: [
-    plastanium/4800
-    surge-alloy/4500
-    graphite/15000
-    silicon/6600
-]
+

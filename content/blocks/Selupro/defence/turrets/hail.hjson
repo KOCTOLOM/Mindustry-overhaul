@@ -292,7 +292,7 @@ pyratite: {
 	status:burning
     splashDamage: 27.5
     knockback: 0.75
-    fragBullets: 7
+    fragBullets: 5
     fragLifeMin: 3
     lifetime: 40
 

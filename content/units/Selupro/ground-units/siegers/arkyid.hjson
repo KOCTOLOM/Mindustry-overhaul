@@ -72,7 +72,7 @@ weapons: [
     reload: 3
 
     ejectEffect: none
-    shootSound: flame
+    shootSound: shootFlame
 
 bullet: {
     type: BasicBulletType
@@ -236,7 +236,7 @@ despawnEffect: [
 
     reload: 9
 
-    shootSound: sap
+    shootSound: shootSap
 bullet: {
     type: SapBulletType
     collidesAir: false
@@ -274,7 +274,7 @@ bullet: {
 
     reload: 48
 
-    shootSound: sap
+    shootSound: shootSap
 bullet: {
     type: SapBulletType
     collidesAir: false
@@ -361,7 +361,8 @@ bullet: {
 
     reload: 22
 
-    shootSound: sap
+    shootSound: shootSap
+
 bullet: {
     type: SapBulletType
     collidesAir: false

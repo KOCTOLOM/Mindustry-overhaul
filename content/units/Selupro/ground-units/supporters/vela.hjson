@@ -71,7 +71,7 @@ bullet: {
     shootY: 14
     top: false
     recoil: 0
-    shake: 8
+    shake: 5
     x: 0
     y: 0
     predictTarget: false
@@ -93,7 +93,7 @@ bullet: {
     drawSize: 500
     hitShake: 4.5
     length: 320
-    shake: 5.5
+    shake: 6
 	rangeOverride: 320
 	buildingDamageMultiplier: 0.6
 	
@@ -138,7 +138,7 @@ chargeEffect: {
     shootY: 14
     top: false
     recoil: 0
-    shake: 8
+    shake: 2
     x: 0
     y: 0
     predictTarget: false
@@ -301,7 +301,7 @@ bullet: {
     mirror: false
     rotate: true
     recoil: 3
-    shake: 15
+    shake: 4
     x: 11
     y: -8
 	velocityRnd:0.25
@@ -404,7 +404,7 @@ hitEffect: {
     shootY: 4.5
     recoils: 2
     recoil: 1
-    shake: 5
+    shake: 1.5
     x: -12
     y: -7.5
 
@@ -474,9 +474,9 @@ heatProgress: {
 bullet: {
     type: FlakBulletType
     collidesGround: false
-    despawnShake: 3.2
+    despawnShake: 1.2
     scaleLife: true
-    hitShake: 3.2
+    hitShake: 2
     hitSize: 3
     height: 15
     width: 9
@@ -510,9 +510,3 @@ bullet: {
     }
 }
     ]
-researchCost: [
-    plastanium/2100
-    graphite/1500
-    titanium/2250
-    silicon/3600
-]
