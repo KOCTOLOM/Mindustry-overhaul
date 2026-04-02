@@ -129,7 +129,7 @@ bullet: {
     inaccuracy: 30
     reload: 180
 
-    shootSound: missile
+    shootSound: shootMissile
 shoot: { 
     shotDelay: 5
     shots: 3
@@ -163,6 +163,7 @@ bullet: {
 
     despawnEffect: blastExplosion
     hitEffect: blastExplosion
+    hitSound: explosion
 
     trailColor: 62ae7f
     trailInterval: 12

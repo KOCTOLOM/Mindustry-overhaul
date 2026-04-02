@@ -690,7 +690,7 @@ fragBullet: {
 	type: LightningBulletType
     hittable: false
     hitSize: 3
-
+    hitSound:shockBullet
     buildingDamageMultiplier: 3
 
 	lightningLengthRand:4

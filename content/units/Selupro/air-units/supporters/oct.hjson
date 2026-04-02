@@ -97,7 +97,7 @@ weapons: [
     inaccuracy: 40
     reload: 900
 
-    shootSound: missile
+    shootSound: shootLaser
 shoot: {
     type: ShootMulti
 source: {
@@ -171,7 +171,7 @@ bullet: {
             layer:100.3
         }
     ]
-    hitSound: dullExplosion
+    hitSound: explosionDull
 
     lightColor: 84f491
     lightOpacity: 0.7
@@ -198,7 +198,7 @@ bullet: {
 	
     reload: 120
     innacuracy:10
-    shootSound: missile  
+    shootSound: shootLaser
 shoot: {
        	type: ShootMulti
        	source: {
@@ -284,7 +284,7 @@ bullet: {
                 layer:100.3
             }
         ]
-    hitSound: dullExplosion
+    hitSound: explosionDull
 
     lightColor: 84f491
     lightOpacity: 0.7
@@ -312,7 +312,7 @@ bullet: {
 
     reload: 480
 
-    shootSound: missile
+    shootSound: shootLaser
     inaccuracy: 30
 shoot: { 
     shotDelay: 8
@@ -377,7 +377,7 @@ bullet: {
                 layer:100.3
             }
         ]
-    hitSound: dullExplosion
+    hitSound: explosionDull
 
     lightColor: 84f491
     lightOpacity: 0.7
@@ -411,7 +411,7 @@ bullet: {
     cooldownTime: 60
     reload: 80
 
-    shootSound: railgun
+    shootSound: shootArtillerySmall
 shoot: { 
     type: ShootAlternate
     shotDelay: 6
@@ -442,7 +442,7 @@ bullet: {
     despawnEffect: hitBulletColor
     smokeEffect: shootBigSmoke
     shootEffect: shootBigColor
-    hitSound: dullExplosion
+    hitSound: explosionDull
 
     lightColor: 84f491
     lightOpacity: 0.7
@@ -522,7 +522,7 @@ hitEffect: [
     cooldownTime: 60
     reload: 80
 
-    shootSound: railgun
+    shootSound: shootArtillerySmall
 shoot: { 
     type: ShootAlternate
     shotDelay: 6

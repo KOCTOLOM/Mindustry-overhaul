@@ -37,7 +37,7 @@ bullet: {
     inaccuracy: 1
     reload: 45
 
-    shootSound: missile
+    shootSound: shootMissile
     ejectEffect: none
 
 bullet: {
@@ -68,6 +68,7 @@ bullet: {
     trailColor: 98ffa9
     trailLength: 29
     trailWidth: 3
+    hitSound:shockBullet
 
     frontColor: ffffff
     backColor: 98ffa9
@@ -190,6 +191,7 @@ lightningType: {
     hittable: false
     hitSize: 3
 	width:0
+	hitSound:shockBullet
     buildingDamageMultiplier: 2
 
     lifetime: 20

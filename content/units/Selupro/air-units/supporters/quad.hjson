@@ -79,7 +79,7 @@ weapons: [
     inaccuracy: 40
     reload: 125
 
-    shootSound: plasmadrop
+    shootSound: shootQuad
 shoot: {
     type: ShootPattern
     shots: 10
@@ -120,7 +120,7 @@ bullet: {
     trailWidth: 3
 
     despawnEffect: greenBomb
-    hitSound: plasmaboom
+    hitSound: explosionQuad
 
     frontColor: ffffff
     mixColorTo: ffffff
@@ -187,7 +187,7 @@ hitEffect: [
     inaccuracy: 20
     reload: 200
     
-    shootSound: missile
+    shootSound: shootMissile
 shoot: {
     shotDelay: 5
     shots: 6
@@ -236,7 +236,7 @@ bullet: {
     velocityRnd: 0.25
     reload: 180
 
-    shootSound: missile
+    shootSound: shootMissileLarge
 shoot: {
     shotDelay: 2
     shots: 3
@@ -353,7 +353,7 @@ bullet: {
     despawnEffect: massiveExplosion
     smokeEffect: shootBigSmoke2
     hitEffect: massiveExplosion
-    hitSound: dullExplosion
+    hitSound: explosionDull
 
     lightColor: 84f491
     lightOpacity: 0.7

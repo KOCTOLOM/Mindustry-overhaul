@@ -653,6 +653,7 @@ bullet: {
 	fragRandomSpread: 0
 	fragAngle:-135
 	fragOnHit:false
+	hitSound:shootMissileLarge
     fragVelocityMin: 0.7
 	fragVelocityMax: 1.4
     fragBullets: 1
@@ -671,7 +672,7 @@ bullet: {
     lightOpacity: 1
     lightRadius: 12
     buildingDamageMultiplier: 0.7
-	
+	hitSound:explosionDull
     splashDamageRadius: 26
     statusDuration: 300
     homingPower: 0.07
