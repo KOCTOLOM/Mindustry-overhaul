@@ -1,12 +1,12 @@
 absorbLasers: true
 unitCapModifier:6
-itemCapacity: 10000
+itemCapacity: 12000
 health: 25000
 armor: 5
 researchCostMultiplier:6
 requirements: [
-    graphite/5000
-    lead/6000
-    titanium/7250
-    silicon/3600
+    graphite/4600
+    lead/5000
+    titanium/5450
+    silicon/3900
 ]

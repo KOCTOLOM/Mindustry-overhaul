@@ -1,6 +1,6 @@
 absorbLasers: true
 unitCapModifier:4
-itemCapacity: 5000
+itemCapacity: 6000
 health: 10000
 armor: 3
 researchCostMultiplier:6
