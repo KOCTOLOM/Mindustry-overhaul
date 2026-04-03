@@ -10,7 +10,7 @@ maxAmmo: 32
 health: 360
 reload: 24
 armor: 2
-
+shootSound:shoot
 ammoUseEffect: casing1
 researchCostMultiplier:0.2
 requirements: [

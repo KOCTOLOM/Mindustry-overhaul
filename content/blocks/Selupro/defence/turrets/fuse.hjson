@@ -12,6 +12,7 @@ maxAmmo: 64
 reload: 48
 range: 100
 armor: 22
+shootSound:shootFuse
 researchCostMultiplier:0.4
 requirements: [
     graphite/320

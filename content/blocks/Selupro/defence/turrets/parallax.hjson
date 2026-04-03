@@ -9,6 +9,7 @@ health: 550
 range: 270
 damage: 4
 armor: 2
+shootSound: beamParallax
 researchCostMultiplier:0.6
 consumes: {
     power: 6

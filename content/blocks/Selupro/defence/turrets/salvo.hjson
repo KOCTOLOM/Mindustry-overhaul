@@ -18,6 +18,7 @@ health: 500
 range: 284
 armor: 4
 velocityRnd:0.2
+shootSound:shootSalvo
 consumes: {
     power: 3
 }

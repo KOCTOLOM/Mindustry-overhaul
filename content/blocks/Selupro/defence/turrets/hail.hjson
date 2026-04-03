@@ -15,7 +15,7 @@ reload: 160
 range: 432
 armor: 1
 researchCostMultiplier:0.6
-shootSound: bang
+shootSound: shootArtillerySmall
 
 requirements: [
     copper/32

@@ -14,7 +14,7 @@ range: 144
 armor: 2
 
 shootEffect: lightningShoot
-shootSound: spark
+shootSound: shootArc
 
 consumes: {
     power: 2.5

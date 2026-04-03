@@ -13,6 +13,7 @@ health: 780
 reload: 195
 range: 360
 armor: 3
+shootSound:shootScatter
 researchCostMultiplier:0.2
 requirements: [
     copper/110
