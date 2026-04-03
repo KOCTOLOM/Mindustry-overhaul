@@ -42,7 +42,7 @@ weapons: [
     inaccuracy: 7.5
     reload: 6
 
-    shootSound: lasershoot
+    shootSound: shootLaser
 
 bullet: {
     type: LaserBoltBulletType
@@ -161,7 +161,7 @@ bullet: {
 
     ejectEffect: none
 
-    shootSound: lasershoot
+    shootSound: shootLaser
 
 bullet: {
     type: LaserBoltBulletType

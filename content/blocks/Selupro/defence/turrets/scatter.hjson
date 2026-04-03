@@ -20,8 +20,6 @@ requirements: [
     lead/55
 ]
 
-shootSound: shootSnap
-
 shoot: {
 type: ShootMulti
 source: {

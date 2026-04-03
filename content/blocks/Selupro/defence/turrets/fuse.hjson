@@ -12,7 +12,6 @@ maxAmmo: 64
 reload: 48
 range: 100
 armor: 22
-shootSound:shootFuse
 researchCostMultiplier:0.4
 requirements: [
     graphite/320
@@ -20,7 +19,7 @@ requirements: [
     thorium/225
 ]
 
-shootSound: shotgun
+shootSound: shootFuse
 shoot: {
     type: ShootSpread
     spread: 12
@@ -32,7 +31,6 @@ graphite: {
     type: ShrapnelBulletType
     pierce: false
     length: 125
-
     reloadMultiplier: 1.75
     ammoMultiplier: 18
     rangeChange: 20

@@ -47,7 +47,7 @@ weapons: [
     inaccuracy: 4
     reload: 60
 
-    shootSound: lasershoot
+    shootSound: shootLaser
 shoot: {
     shotDelay: 7
     shots: 2

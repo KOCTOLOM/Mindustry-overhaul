@@ -31,7 +31,6 @@ requirements: [
 ]
 
 ammoUseEffect: casing2
-shootSound: shootBig
 shoot: {
     shotDelay: 4
     shots: 4
