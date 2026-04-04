@@ -52,7 +52,6 @@ parts: [
         triLengthTo: 30
         color: bf92f9
         colorTo: 9059E3
-        rotation: 0
         haloRadius:0
         haloRotateSpeed:3.2
         radius: 3

@@ -65,7 +65,7 @@ shootEffect: {
     collidesAir: false
     hittable: false
     hitSize: 1
-    hitsound:shockBullet
+    hitSound:shockBullet
     buildingDamageMultiplier: 2
 	lightningLengthRand:2
     lightningLength: 7

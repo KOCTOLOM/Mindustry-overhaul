@@ -57,13 +57,14 @@ bullet: {
     collidesTeam: true
     collidesAir: true
     drag:0.035
-    trailLength:6
+    trailLength:8
+    trailWidth:0.6
     trailColor:84f491
-    buildingDamageMultiplier: 0.4
+    buildingDamageMultiplier: 0.3
     healPercent: 0.6
     lifetime: 55
     speed: 5.25
-    damage: 12
+    damage: 14
 
     frontColor: ffffff
     backColor: 84f491

@@ -1223,10 +1223,3 @@ hitEffect: {
             }
             }
 	]
-researchCost: [
-    plastanium/2100
-    surge-alloy/5100
-    phase-fabric/2100
-    thorium/8280
-    silicon/3900
-]

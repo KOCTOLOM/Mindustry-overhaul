@@ -279,7 +279,6 @@ bullet: {
     type: ArtilleryBulletType
 	collides:true
     collidesTiles: true
-	collideGround:true
     despawnShake: 4.5
     hitShake: 4.5
     hitSize: 4
@@ -321,9 +320,3 @@ bullet: {
     }
 }
     ]
-researchCost: [
-    titanium/120
-    metaglass/270
-    thorium/180
-    silicon/360
-]

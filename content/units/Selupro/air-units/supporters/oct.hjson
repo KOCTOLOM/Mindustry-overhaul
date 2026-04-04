@@ -197,7 +197,7 @@ bullet: {
     y: -5
 	
     reload: 120
-    innacuracy:10
+    inaccuracy:5
     shootSound: shootLaser
 shoot: {
        	type: ShootMulti
@@ -981,11 +981,3 @@ bullet: {
         }
 
     ]
-researchCost: [
-    plastanium/2100
-    surge-alloy/4200
-    pyratite/1200
-    spore-pod/1200
-    titanium/3150
-    silicon/3300
-]

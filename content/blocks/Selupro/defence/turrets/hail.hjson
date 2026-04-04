@@ -60,12 +60,12 @@ despawnEffect: {
 
     waveColor: 7457ce
     waveStroke: 2.25
-    waveRad: 35
+    waveRad: 32
 
     smokeColor: 9e78dc70
     smokeSizeBase: 0
     smokeSize: 4
-    smokes: 11
+    smokes: 6
 
     sparkColor: 7457ce
     sparkStroke: 0
@@ -172,7 +172,7 @@ graphite: {
     height: 13
     width: 13
 	
-	buildingDamageMultiplier: 0.2
+	buildingDamageMultiplier: 0.1
 	
     ammoMultiplier: 2
 	
@@ -202,11 +202,11 @@ hitEffect: {
 
     waveColor: 95abd9
     waveStroke: 3.2
-    waveRad: 48
+    waveRad: 22
 
     smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 14.5
+    smokeSize: 6.5
     smokes: 7
 
     sparkColor: 95abd9
@@ -282,24 +282,24 @@ pyratite: {
     height: 15
     width: 15
 
-    buildingDamageMultiplier: 0.4
-    reloadMultiplier: 0.75
+    buildingDamageMultiplier: 0.3
+    reloadMultiplier: 0.5
     ammoMultiplier: 3
 
-    splashDamageRadius: 60
+    splashDamageRadius: 34
     fragRandomSpread: 360
     statusDuration: 900
 	status:burning
-    splashDamage: 27.5
+    splashDamage: 45
     knockback: 0.75
-    fragBullets: 5
+    fragBullets: 3
     fragLifeMin: 3
     lifetime: 40
 
     speed: 5
 	
 	incendAmount: 2
-	incendSpread: 5
+	incendSpread: 3
 	incendChance: 0.5
 	
     lightColor: ffaa5f
@@ -321,7 +321,7 @@ hitEffect: {
 
     waveColor: ffaa5f
     waveStroke: 4
-    waveRad: 65
+    waveRad: 34
 
     smokeColor: 696969
     smokeSizeBase: 0
@@ -343,7 +343,7 @@ fragBullet: {
     width: 5
 
 	buildingDamageMultiplier: 0.5
-    splashDamageRadius: 26
+    splashDamageRadius: 12
     splashDamage: 14.5
     lifetime: 12
     damage: 9

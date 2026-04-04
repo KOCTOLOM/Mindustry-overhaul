@@ -208,7 +208,7 @@ bullet: {
     targetInterval: 0.01
     reload: 1.5
 
-    shootSound: lasershoot
+    shootSound: shootLaser
 bullet: {
     maxRange: 240
 
@@ -233,7 +233,7 @@ bullet: {
     targetInterval: 0.01
     reload: 1.5
 
-    shootSound: lasershoot
+    shootSound: shootLaser
 bullet: {
     maxRange: 240
 
@@ -259,7 +259,7 @@ name: orange-bsw
     targetInterval: 3
     reload: 1.5
 
-    shootSound: lasershoot
+    shootSound: shootLaser
 bullet: {
     maxRange: 250
 
@@ -561,7 +561,7 @@ bullet: {
     width: 15
 
     despawnSound:bomb-hit
-    hitsound:bomb-hit
+    hitSound:bomb-hit
 
     buildingDamageMultiplier: 4.5
 
@@ -693,7 +693,7 @@ fragBullet: {
 
     hitEffect: flakExplosion
     despawnSound:bomb-hit
-    hitsound:bomb-hit
+    hitSound:bomb-hit
     trailColor: ffa665
     trailLength: 4
     trailWidth: 1
@@ -946,7 +946,7 @@ bullet: {
         width: 34
         recoil:3.6
         despawnSound:bomb-hit
-        hitsound:bomb-hit
+        hitSound:bomb-hit
         rangeOverride:90
         buildingDamageMultiplier: 0.5
 
@@ -1075,7 +1075,7 @@ bullet: {
 
         hitEffect: flakExplosion
         despawnSound:bomb-hit
-        hitsound:bomb-hit
+        hitSound:bomb-hit
         trailColor: ffa665
         trailLength: 4
         trailWidth: 1

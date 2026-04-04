@@ -452,7 +452,7 @@ despawnEffect: {
     shake: 2
     x: 0
     y: 17
-    innacuracy:1
+    inaccuracy:1
     cooldownTime: 90
     reload: 154
 
@@ -471,7 +471,6 @@ dest: [
         type: ShootBarrel
         shotDelay: 24
         shots: 7
-        spread:0
     barrels: [
         3.25, 0, 0
         -3.25, 0, 0
@@ -571,10 +570,4 @@ despawnEffect: {
     }
 }
     ]
-researchCost: [
-    plastanium/2700
-    copper/2700
-    titanium/2250
-    silicon/3900
-]
 

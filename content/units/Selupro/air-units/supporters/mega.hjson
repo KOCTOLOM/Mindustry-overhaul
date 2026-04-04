@@ -21,11 +21,6 @@ deathSound: medium-air-crush-3
 
 immunities: [ electrified, shocked, tarred, wet]
 
-ammoType: {
-    type: PowerAmmoType
-    totalPower: 1100
-}
-
 weapons: [
     {
     name: plasma-weapon-mount
@@ -60,7 +55,6 @@ bullet: {
     backColor: 84f491
 }
     }
-
 {
 name: repair-bwc-large-green
 
@@ -80,7 +74,7 @@ name: repair-bwc-large-green
     reload: 50
 
     ejectEffect: casing1
-    shootSound: missile
+    shootSound: shootMissile
 
 shoot: { 
     shotDelay: 4
@@ -142,7 +136,6 @@ bullet: {
     lightRadius: 27
 }
     }
-
 {
     name: plasma-gun
 
@@ -157,7 +150,7 @@ bullet: {
     x: 4.2
     y: -3.6
 
-    reload:
+    reload: 8
 
     ejectEffect: none
 
@@ -181,9 +174,3 @@ bullet: {
     }
 }
     ]
-researchCost: [
-    titanium/180
-    metaglass/180
-    graphite/90
-    silicon/360
-]

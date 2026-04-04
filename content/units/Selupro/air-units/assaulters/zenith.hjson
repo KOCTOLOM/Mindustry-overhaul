@@ -55,7 +55,6 @@ shoot: {
 source: {
     type: ShootBarrel
     shotDelay: 2
-    spread: 2
     shots: 2
 
 barrels: [
@@ -215,9 +214,3 @@ hitEffect: {
     }
 }
     ]
-researchCost: [
-    titanium/90
-    metaglass/120
-    graphite/90
-    silicon/360
-]

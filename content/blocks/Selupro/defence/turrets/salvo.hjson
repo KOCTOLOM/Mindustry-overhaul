@@ -67,12 +67,12 @@ graphite: {
     width: 9
 
     buildingDamageMultiplier: 0.35
-    reloadMultiplier: 0.85
+    reloadMultiplier: 0.80
     ammoMultiplier: 6
 
     pierceCap: 5
     lifetime: 71
-    damage: 38
+    damage: 44
     speed: 4
 
     lightColor: 95abd9
@@ -187,7 +187,7 @@ effects: [
     type: ArtilleryBulletType
     collides:true
     collidesTiles: true
-    collideGround:true
+    collidesGround:true
     shrinkY: 0.3
     height: 6
     width: 2

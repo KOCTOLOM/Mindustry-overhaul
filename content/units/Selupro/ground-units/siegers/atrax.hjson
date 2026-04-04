@@ -278,7 +278,3 @@ bullet: {
     }
 }
     ]
-researchCost: [
-    silicon/120
-    graphite/90
-]

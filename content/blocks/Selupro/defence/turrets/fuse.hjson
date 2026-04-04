@@ -70,10 +70,9 @@ titanium: {
 }
 pyratite: {
     type: ShrapnelBulletType
-    pierce: false
     length: 205
 	makeFire:true
-    reloadMultiplier: 0.85
+    reloadMultiplier: 1.30
     ammoMultiplier: 8
     rangeChange: 100
 
@@ -81,7 +80,7 @@ pyratite: {
     status: burning
     pierceCap: 18
     lifetime: 24
-    damage: 64
+    damage: 95
 
     toColor: ffaa5f
 

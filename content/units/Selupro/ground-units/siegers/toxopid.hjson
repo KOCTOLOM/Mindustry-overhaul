@@ -1196,11 +1196,3 @@ bullet: {
     }
 }
     ]
-researchCost: [
-    plastanium/2100
-    surge-alloy/5400
-    blast-compound/4800
-    thorium/6000
-    titanium/2250
-    silicon/3300
-]

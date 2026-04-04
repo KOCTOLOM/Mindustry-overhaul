@@ -362,7 +362,3 @@ despawnEffect: {
     }
 }
     ]
-researchCost: [
-    silicon/180
-    graphite/390
-]

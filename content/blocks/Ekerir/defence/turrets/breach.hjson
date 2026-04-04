@@ -28,7 +28,7 @@ ammoTypes: {
 beryllium: {
     type: BasicBulletType
     pierceBuilding: true
-    collideTiles:true
+
     pierce: true
     height: 26
     width: 9
@@ -114,7 +114,7 @@ beryllium: {
 tungsten: {
     type: BasicBulletType
     pierceBuilding: true
-    collideTiles:true
+
     pierce: true
     height: 31
     width: 6
@@ -203,7 +203,7 @@ tungsten: {
     fragSpread:3
     fragBullet:{
         type: BasicBulletType
-        collideTiles:true
+
         pierce: true
         height: 12
         width: 5
@@ -288,7 +288,7 @@ tungsten: {
 carbide: {
     type: BasicBulletType
         pierceBuilding: true
-        collideTiles:true
+
         height: 12
         width: 12
         shrinkX:0
@@ -374,7 +374,7 @@ carbide: {
         fragSpread:3
         fragBullet:{
             type: BasicBulletType
-            collideTiles:true
+
             pierce: true
             height: 12
             width: 5
