@@ -39,7 +39,7 @@ dest: [
         dest: [
         {
         type: ShootPattern
-            shots: 4
+            shots: 3
             shotDelay: 30
         }
         ]
@@ -124,8 +124,7 @@ lead: {
     ammoMultiplier: 6
     knockback:0.3
     splashDamageRadius: 28
-    splashDamage: 26
-    pierceCap: 2
+    splashDamage: 17
     lifetime: 35.5
     damage: 22
     speed: 8.5
@@ -162,7 +161,7 @@ silicon: {
     homingDelay: 5
 	splashDamageRadius:14
     splashDamage: 22
-    pierceCap: 3
+    pierceCap: 2
     lifetime: 75
     damage: 14
     speed: 4.8
@@ -192,10 +191,10 @@ metaglass: {
     ammoMultiplier: 2
 	reloadMultiplier: 0.6
     splashDamageRadius: 12
-    splashDamage: 20
+    splashDamage: 12
     pierceArmor:true
     lifetime: 35
-    damage: 25
+    damage: 12
     speed: 12
     hitEffect: [
     flakExplosion
@@ -224,10 +223,10 @@ metaglass: {
 
     frontColor: ffffff
     backColor: ebeef5
-    fragBullets: 3
+    fragBullets: 2
     fragLifeMin: 1
     fragVelocityMin:0.2
-    fragVelocityMax:9
+    fragVelocityMax:7
     fragRandomSpread:10
     fragBullet: {
     type: BasicBulletType
@@ -238,7 +237,7 @@ metaglass: {
 
     pierceCap: 2
     lifetime: 20
-    damage: 4
+    damage: 5
 	pierceArmor:true
     despawnEffect: none
 

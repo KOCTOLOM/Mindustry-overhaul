@@ -66,7 +66,7 @@ bullet: {
     healAmount: 32
     pierceCap: 2
     lifetime: 38
-    damage: 26
+    damage: 24
     speed: 5
 
     hitEffect: hitBulletColor

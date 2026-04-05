@@ -8,8 +8,8 @@ buildSpeed: 0.24
 mineSpeed: 0.75
 mineTier: 3
 health: 540
-speed: 1.2
-armor: 7
+speed: 1.25
+armor: 9
 boostMultiplier:0.4
 
 lightColor: 98ffa9
@@ -31,7 +31,7 @@ abilities: [
 }
     {
     type: RegenAbility
-    amount: 0.04
+    amount: 0.08
 }
     ]
 

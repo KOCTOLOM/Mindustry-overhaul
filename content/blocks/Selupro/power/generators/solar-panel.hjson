@@ -4,6 +4,6 @@ powerProduction: 0.4
 health: 96
 
 requirements: [
-    lead/15
-    silicon/12
+    lead/30
+    silicon/24
 ]

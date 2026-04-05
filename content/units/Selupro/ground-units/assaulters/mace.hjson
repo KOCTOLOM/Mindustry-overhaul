@@ -6,7 +6,7 @@ stepShake: 0.6
 itemCapacity: 32
 rotateSpeed: 3.5
 speed: 0.6
-armor: 15
+armor: 14
 health: 630
 
 lightColor: FF5218
@@ -23,7 +23,7 @@ abilities: [
 }
     {
     type: RegenAbility
-    amount: 0.1
+    amount: 0.15
 }
     ]
 

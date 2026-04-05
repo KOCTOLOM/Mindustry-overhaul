@@ -28,9 +28,9 @@ abilities: [
     width: 3
     y: -1
 
-    cooldown: 300
-    regen: 3
-    max: 180
+    cooldown: 60
+    regen: 1
+    max: 240
 }
     {
     type: ShieldArcAbility
@@ -41,9 +41,9 @@ abilities: [
     width: 3
     y: -1
 
-    cooldown: 300
-    regen: 3
-    max: 180
+    cooldown: 60
+    regen: 1
+    max: 240
 }
     {
     type: RegenAbility
@@ -65,7 +65,7 @@ weapons: [
     y: 0
 
     inaccuracy: 5
-    reload: 2.4
+    reload: 3
 
     ejectEffect: none
     shootSound: shootAtrax
@@ -76,13 +76,13 @@ bullet: {
     collideTerrain: true
     collidesAir: false
     scaleLife: true
-    buildingDamageMultiplier: 1.7
+    buildingDamageMultiplier: 1.4
 
     statusDuration: 450
     status: melting
     knockback: 0.5
     lifetime: 64
-    damage: 18
+    damage: 15
     speed: 2.5
     drag: 0.01
 
@@ -132,15 +132,15 @@ bullet: {
     height: 18
     width: 6
 
-    splashDamageRadius: 16
+    splashDamageRadius: 8
     lightningDamage: 12
     lightningLength: 4
-    splashDamage: 38
+    splashDamage: 24
     homingPower: 0.02
     homingRange: 180
     lifetime: 125
     lightning: 2
-    damage: 34
+    damage: 28
     speed: 2.25
     drag: 0.005
 

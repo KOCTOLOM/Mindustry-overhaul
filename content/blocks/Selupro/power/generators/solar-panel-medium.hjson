@@ -11,7 +11,7 @@ health: 280
 armor: 7
 
 requirements: [
-    lead/64
-    thorium/15
-    silicon/24
+    lead/96
+    thorium/40
+    silicon/46
 ]

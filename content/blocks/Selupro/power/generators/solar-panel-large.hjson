@@ -7,7 +7,7 @@ health: 520
 armor: 9
 
 requirements: [
-    lead/150
-    silicon/64
-    phase-fabric/35
+    lead/230
+    silicon/96
+    phase-fabric/45
 ]
