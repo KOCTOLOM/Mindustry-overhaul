@@ -96,7 +96,7 @@ weapons: [
     reload: 25
 
     ejectEffect: casing1
-    shootSound: shoot
+    shootSound: shootScepter
 shoot: {
     shotDelay: 3
     shots: 3
@@ -142,7 +142,7 @@ bullet: {
     reload: 180
 
     ejectEffect: casing3
-    shootSound: shootBig
+    shootSound: shootSpectre
 shoot: {
     type: ShootMulti
 source: {
@@ -208,7 +208,7 @@ bullet: {
     targetInterval: 0.01
     reload: 1.5
 
-    shootSound: shootLaser
+    shootSound: shootSegment
 bullet: {
     maxRange: 240
 
@@ -233,7 +233,7 @@ bullet: {
     targetInterval: 0.01
     reload: 1.5
 
-    shootSound: shootLaser
+    shootSound: shootSegment
 bullet: {
     maxRange: 240
 
@@ -259,7 +259,7 @@ name: orange-bsw
     targetInterval: 3
     reload: 1.5
 
-    shootSound: shootLaser
+    shootSound: shootSegment
 bullet: {
     maxRange: 250
 
@@ -285,7 +285,7 @@ bullet: {
     reload: 120
     velocityRnd:0.3
     ejectEffect: casing3
-    shootSound: shootBig
+    shootSound: shootSpectre
 shoot: {
     type: ShootMulti
 source: {
@@ -374,7 +374,7 @@ fragBullet: {
     inaccuracy:10
     reload: 90
 
-    shootSound: missile
+    shootSound: shootMissileLarge
 shoot: {
     type: ShootMulti
 
@@ -458,7 +458,7 @@ bullet: {
     inaccuracy: 70
     reload: 230
 
-    shootSound: missile
+    shootSound: shootMissileLarge
 shoot: {
     type: ShootMulti
 source: {
@@ -537,7 +537,7 @@ bullet: {
     inaccuracy: 28
     reload: 60
 
-    shootSound: artillery
+    shootSound: shootArtillery
     ejectEffect: casing2
 shoot: {
     shotDelay: 6
@@ -795,7 +795,7 @@ despawnEffect: [
     inaccuracy: 2
     reload: 245
 
-    shootSound: laser
+    shootSound: shootLancer
 shoot: {
     type: ShootMulti
 source: {
@@ -933,6 +933,7 @@ bullet: {
     shootStatus : shielded
     shootStatusDuration: 30
     reload: 600
+    shootSound:unitCreateBig
     bullet: {
         type: BasicBulletType
         sprite: mine-bullet
