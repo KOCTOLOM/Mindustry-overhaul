@@ -1,2 +1,4 @@
 research: combustion-generator
 powerProduction: 3.8
+explosivenessScale:0.5
+flammabilityScale:0.5

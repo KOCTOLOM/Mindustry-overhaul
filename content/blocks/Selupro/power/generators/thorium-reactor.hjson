@@ -10,5 +10,5 @@ requirements: [
 ]
 
 powerProduction: 32
-explosionRadius: 32
-health: 4100
+baseExplosiveness: 120
+health: 4800

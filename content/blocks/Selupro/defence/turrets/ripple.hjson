@@ -3,7 +3,7 @@ shootY: 3.5
 shake: 7.5
 recoil: 6
 
-buildCostMultiplier: 4.5
+buildCostMultiplier: 5.5
 
 cooldownTime: 700
 velocityRnd: 0.2
@@ -318,7 +318,6 @@ blast-compound: {
     status: blasted
     fragBullets: 8
     knockback: 1
-    pierceCap: 40
     lifetime: 80
     speed: 1.5
 
@@ -366,7 +365,6 @@ fragBullet: {
     width: 0
 	hittable:false
     buildingDamageMultiplier: 0.4
-    pierceDamageFactor: 0.75
 
     splashDamageRadius: 26
     statusDuration: 10
@@ -426,12 +424,12 @@ plastanium: {
 	
     damage:40
 	buildingDamageMultiplier: 0.05
-    reloadMultiplier: 1.3
+    reloadMultiplier: 1
     ammoMultiplier: 4
     
     splashDamageRadius: 32
-    splashDamage: 58
-    fragBullets: 5
+    splashDamage: 74
+    fragBullets: 4
     knockback: 1.5
     pierceCap: 5
     lifetime: 80

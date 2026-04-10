@@ -10,7 +10,8 @@ requirements: [
     phase-fabric/130
     thorium/450
 ]
-
+explosivenessScale:10
+flammabilityScale:5
 powerProduction: 460
 explosionRadius: 49
 liquidCapacity: 240

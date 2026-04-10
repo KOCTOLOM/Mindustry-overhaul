@@ -1,14 +1,17 @@
 research: steam-generator
 
 requirements: [
-    lead/250
-    copper/250
+    lead/350
+    copper/350
     silicon/110
     titanium/120
     metaglass/75
 ]
-
-powerProduction: 30
+health:750
+armor:4
+explosivenessScale:2.5
+flammabilityScale:1.5
+powerProduction: 28
 liquidCapacity: 32
 itemDuration: 120
 itemCapacity: 75

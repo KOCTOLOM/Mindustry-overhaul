@@ -62,3 +62,77 @@ craftEffect:[
 }
 
 ]
+destroyBullet:{
+    type: ArtilleryBulletType
+    height: 0
+    width: 13
+    damage:40
+	buildingDamageMultiplier: 1.2
+    reloadMultiplier: 1
+    ammoMultiplier: 4
+
+    splashDamageRadius: 16
+    splashDamage: 30
+    fragBullets: 6
+    knockback: 3
+    lifetime: 0
+    speed: 0
+    fragVelocityMin:0.7
+    fragVelocityMax:1.2
+    fragLifeMin:0.2
+    fragLifeMax:2
+    despawnEffect: {
+           type: ExplosionEffect
+
+           lifetime: 30
+
+           waveColor: 696969
+           waveStroke: 3.5
+           waveRad: 20
+
+           smokeColor: 69696960
+           smokeSizeBase: 0
+           smokeSize: 3
+           smokes: 4
+
+           sparkColor: 696969
+           sparkStroke: 1.5
+           sparkRad: 22
+           sparkLen: 3
+           sparks: 3
+       }
+    hitEffect: none
+
+fragBullet: {
+    type: BasicBulletType
+    collidesAir: false
+    shrinkY: 1
+    height: 10
+    width: 6
+
+    buildingDamageMultiplier: 1.2
+    knockback: 1.25
+    pierceCap: 2
+    lifetime: 36
+    damage: 12
+    speed:4
+    drag:0.005
+    hitEffect: none
+    despawnEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 12
+        lifetime: 20
+        strokeFrom: 3
+        strokeTo: 2
+        colorFrom: 696969
+        colorTo: 69696900
+    }
+
+    trailColor: 696969
+    trailLength: 2.5
+    trailWidth: 1.25
+
+    frontColor: 696969
+    backColor: 69696970
+}}
