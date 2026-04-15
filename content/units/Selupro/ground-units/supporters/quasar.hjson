@@ -161,8 +161,62 @@ bullet: {
     drag: 0.02
     speed: 4
 
-    despawnEffect: blastExplosion
-    hitEffect: blastExplosion
+    despawnEffect: [{
+        type: WaveEffect
+        sides:4
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 13
+
+        lifetime: 20
+
+        colorFrom: 84f491
+        colorTo: 84f491
+       }
+        {
+           startDelay:20
+           type: WaveEffect
+           sides:4
+           rotWithParent: false
+           followParent: false
+           sizeFrom: 13
+           sizeTo: 4
+
+           lifetime: 40
+
+           colorFrom: 84f491
+           colorTo: 84f49100
+    }
+    ]
+    hitEffect: [{
+        type: WaveEffect
+        sides:4
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 13
+
+        lifetime: 20
+
+        colorFrom: 84f491
+        colorTo: 84f491
+                  }
+        {
+          startDelay:20
+          type: WaveEffect
+          sides:4
+          rotWithParent: false
+          followParent: false
+          sizeFrom: 13
+          sizeTo: 4
+
+          lifetime: 40
+
+          colorFrom: 84f491
+          colorTo: 84f49100
+    }
+    ]
     hitSound: explosion
 
     trailColor: 62ae7f

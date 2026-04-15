@@ -15,9 +15,9 @@ size: 1
 researchCostMultiplier: 0.2
 buildCostMultiplier: 2
 
-tileDamage: 100
+tileDamage: 35
 cooldown: 60
-damage: 300
+damage: 200
 health: 100
 
 destroySound: mine-boom

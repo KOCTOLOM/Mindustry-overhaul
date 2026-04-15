@@ -149,7 +149,21 @@ bullet: {
     incendAmount: 8
     incendSpread: 14
     incendChance: 1
-    hitEffect: blastExplosion
+    hitEffect: [blastExplosion,
+    {
+        type: WaveEffect
+        strokeFrom:15
+        strokeTo:5
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 55
+
+        lifetime: 15
+        colorFrom: fff8e830
+        colorTo: 65656500
+    }
+    ]
     hitSound: artillery-hit
 
     lightColor: fff8e8

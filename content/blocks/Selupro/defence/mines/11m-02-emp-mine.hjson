@@ -15,8 +15,8 @@ size: 1
 researchCostMultiplier: 0.5
 buildCostMultiplier: 3.2
 
-tileDamage: 75
-cooldown: 60
+tileDamage: 15
+cooldown: 600
 damage: 1.5
 health: 75
 

@@ -14,8 +14,9 @@ health: 1320
 armor: 16
 
 requirements: [
-    lead/21
+    lead/80
     graphite/18
-    titanium/15
-    silicon/12
+    titanium/14
+    silicon/14
+    plastanium/10
 ]

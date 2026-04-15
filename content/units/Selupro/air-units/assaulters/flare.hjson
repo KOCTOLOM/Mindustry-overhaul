@@ -10,7 +10,7 @@ circleTargetRadius:240
 rotateSpeed: 7
 accel: 0.025
 drag: 0.015
-health: 95
+health: 115
 speed: 4.75
 armor: 3
 

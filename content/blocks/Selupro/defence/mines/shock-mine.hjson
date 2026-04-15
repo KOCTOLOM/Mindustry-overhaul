@@ -3,6 +3,6 @@ underBullets: true
 
 buildCostMultiplier: 0.25
 
-tileDamage: 10
-cooldown: 5
-damage: 9
+tileDamage:5
+cooldown: 20
+damage: 27

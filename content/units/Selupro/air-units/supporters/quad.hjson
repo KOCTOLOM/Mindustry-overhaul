@@ -103,8 +103,8 @@ bullet: {
     width: 20
     spin: 2
     recoil:-0.4
-    buildingDamageMultiplier: 0.5
-
+    buildingDamageMultiplier: 0.6
+    damage: 800
     splashDamageRadius: 60
     statusDuration: 900
     status: electrified
@@ -119,7 +119,19 @@ bullet: {
     trailLength: 18
     trailWidth: 3
 
-    despawnEffect: greenBomb
+    despawnEffect: [greenBomb,{
+        type: WaveEffect
+        strokeFrom:50
+        strokeTo:7
+        rotWithParent: false
+        followParent: false
+        sizeFrom: 0
+        sizeTo: 110
+
+        lifetime: 15
+        colorFrom: 84f49130
+        colorTo: 30303000
+    }]
     hitSound: explosionQuad
 
     frontColor: ffffff

@@ -1,0 +1,325 @@
+type: legs
+alwaysShootWhenMoving: true
+fogRadius: 66
+stepShake: 2.35
+hitSize:26
+rotateSpeed: 1.2
+health: 20000
+speed: 0.35
+armor: 130
+hidden:true
+legCount: 5
+legMoveSpace: 1
+legPairOffset: 3
+legLength: 30
+legExtension: -15
+legBaseOffset: 10
+stepShake: 1
+legLengthScl: 0.96
+rippleScale: 2
+legSpeed:0.2
+
+lightColor: 7A3FD2
+lightOpacity: 0.5
+healColor: bf92f9
+lightRadius: 150
+
+immunities: [ spore-slowed, shocked, slow, sapped, blasted, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2]
+
+targetFlags: [ unitAssembler, unitCargoUnloadPoint, turret, reactor, core ]
+
+abilities: [
+    {
+    type: ShieldArcAbility
+    radius: 65
+    angle: 365
+    width: 2
+    y: -1.5
+    color: bf92f9
+    cooldown: 60
+    regen: 50
+    max: 32000
+    chanceDeflect: 1
+    reflectVel:3
+    reflectTime:0
+    whenShooting: false
+    missileUnitMultiplier:1.5
+    pushUnits: true
+}
+    {
+    type: SuppressionFieldAbility
+    orbRadius: 3
+    reload: 81
+    range: 60
+    layer: 60
+    x: 0
+    y: -9
+}
+    {
+    type: RegenAbility
+    amount: 3
+}
+    ]
+
+weapons: [
+{
+    name: hidden-flamethrower-mw
+    layerOffset: -0.001
+    rotationLimit: 70
+    controllable:false
+    autoTarget: true
+    alternate: false
+    shootCone: 45
+    rotate: true
+    mirror: true
+    shake: 1.75
+    shootY: 1
+    x: 8.5
+    y: 6.5
+
+    reload: 6
+
+    ejectEffect: none
+    shootSound: shootFlame
+
+bullet: {
+    type: BasicBulletType
+    collidesAir: false
+    hittable: false
+    hitSize: 6
+
+    pierceArmor:true
+    buildingDamageMultiplier: 1.25
+
+    statusDuration: 300
+    status: spore-slowed
+    pierceCap: 12
+    lifetime: 24
+    damage: 75
+    speed: 4
+    width:0
+    despawnEffect: none
+
+shootEffect: {
+    sizeInterp: pow3In
+    interp: pow5Out
+    particles: 7
+    lifetime: 55
+    cone: 7
+    followParent:false
+    sizeTo: 0.25
+    sizeFrom: 2
+    length: 90
+
+    colorFrom: 6d56bf
+    colorTo: bf92f9
+
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+    lifetime: 15
+
+    waveColor: bf92f9
+    waveStroke: 1.5
+    waveRad: 3
+
+    smokeColor: bf92f9
+    smokeSizeBase: 0
+    smokeSize: 2.5
+    smokes: 3
+
+    sparkColor: bf92f9
+    sparkStroke: 1.25
+    sparkRad: 4.5
+    sparkLen: 1.5
+    sparks: 3
+    }
+}
+    }
+{
+    name: hidden-flamethrower-mw
+    layerOffset: -0.001
+    rotationLimit: 70
+    baseRotation:160
+    autoTarget: true
+    controllable:false
+    alternate: false
+    shootCone: 45
+    rotate: true
+    mirror: true
+    shake: 1.75
+    shootY: 1
+    x: -8.5
+    y: -6.5
+
+    reload: 6
+
+    ejectEffect: none
+    shootSound: shootFlame
+
+bullet: {
+    type: BasicBulletType
+    collidesAir: false
+    hittable: false
+    hitSize: 6
+
+    pierceArmor:true
+    buildingDamageMultiplier: 1.25
+
+    statusDuration: 300
+    status: spore-slowed
+    pierceCap: 12
+    lifetime: 24
+    damage: 75
+    speed: 4
+    width:0
+    despawnEffect: none
+
+shootEffect: {
+    sizeInterp: pow3In
+    interp: pow5Out
+    particles: 7
+    lifetime: 55
+    cone: 7
+    followParent:false
+    sizeTo: 0.25
+    sizeFrom: 2
+    length: 90
+    colorFrom: 6d56bf
+    colorTo: bf92f9
+
+    }
+
+hitEffect: {
+    type: ExplosionEffect
+    lifetime: 15
+
+    waveColor: bf92f9
+    waveStroke: 1.5
+    waveRad: 3
+
+    smokeColor: bf92f9
+    smokeSizeBase: 0
+    smokeSize: 2.5
+    smokes: 3
+
+    sparkColor: bf92f9
+    sparkStroke: 1.25
+    sparkRad: 4.5
+    sparkLen: 1.5
+    sparks: 3
+    }
+}
+    }
+{
+    name: tree-sprout
+    layerOffset: 0.001
+    autoTarget: true
+    mirror:false
+    alternate: false
+    shootCone: 360
+    shake: 1.75
+    x: -4.5
+    y: -5.5
+
+    reload: 220
+    recoil:0
+    shoot: {
+        type: ShootMulti
+    source: {
+        type: ShootSpread
+        shotDelay: 16
+        spread: 25
+        shots: 5
+        }
+
+    dest: [
+        {
+        type: ShootSpread
+        shotDelay: 6
+        spread: 60
+        shots: 6
+        }
+    ]
+        }
+    ejectEffect: none
+    shootSound: shootFlame
+    velocityRnd:0.4
+    bullet: {
+        type: BasicBulletType
+        sprite: missile-large
+        height: 12
+        width: 6
+        pierceCap: 3
+        damage:120
+        drag: 0.022
+        speed: 8
+        homingPower:0.04
+        homingDelay:6
+        homingRange:170
+        buildingDamageMultiplier: 5
+        pierceArmor:true
+        lifetime:80
+        shootEffect: none
+        hitEffect: hitBulletColor
+
+        lightColor: bf92f9
+        lightOpacity: 0.5
+        lightRadius: 12
+
+        trailColor: 6d56bf
+        trailLength: 7
+        trailWidth: 1
+
+        frontColor: bf92f9
+        backColor: 6d56bf
+        hitColor: bf92f9
+
+    despawnEffect: [
+        {
+        type: ParticleEffect
+        lifetime: 120
+        particles: 5
+        layer: 100.2
+        cone: 360
+
+        sizeFrom: 1
+        length: 12
+        sizeTo: 0
+
+        colorFrom: 6d56bf70
+        colorTo: 6d56bf00
+    }
+    {
+        type: ParticleEffect
+        lifetime: 90
+        particles: 3
+        layer: 100.2
+        cone: 360
+
+        sizeFrom: 1
+        length: 20
+        sizeTo: 0
+
+        colorFrom: 6d56bf30
+        colorTo: 6d56bf00
+    	}
+        {
+        type: ParticleEffect
+        lifetime: 160
+        particles: 7
+        layer: 100.0
+        cone: 1
+
+        sizeFrom: 3
+        sizeTo: 2
+        length: 0
+
+        colorFrom: 6d56bf40
+        colorTo: 6d56bf00
+    }
+        ]
+    }
+   }
+    ]

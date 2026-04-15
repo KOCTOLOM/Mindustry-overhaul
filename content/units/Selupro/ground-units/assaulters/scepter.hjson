@@ -33,9 +33,21 @@ abilities: [
     range: 256
     max: 5000
 }
+{
+    type: ShieldArcAbility
+    region: mov-plsh
+    radius: 0
+    angle: 0
+    width: 0
+    display:false
+    cooldown: 0
+    regen: 1
+    max: 1
+}
     {
     type: ArmorPlateAbility
     healthMultiplier: 0.15
+    shineSpeed:1
 }
     {
     type: RegenAbility

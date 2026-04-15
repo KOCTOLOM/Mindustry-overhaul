@@ -1,0 +1,159 @@
+flying:true
+circleTarget: true
+faceTarget: true
+range: 230
+hitSize:7
+circleTargetRadius:80
+rotateSpeed: 16
+accel: 0.045
+drag: 0.015
+health: 1700
+armor: 30
+speed: 6.75
+hidden:true
+lightColor: FFE818
+lightOpacity: 0.3
+healColor: b0bac0
+lightRadius: 45
+
+trailLength: 18
+
+deathSound: air-crush-small-1
+
+immunities: [slow, melting, motor-deceleration-tier-1, freezing, tarred, electrified,motor-deceleration-tier-2 ,motor-deceleration-tier-3]
+
+targetFlags: [ drill,generator, reactor, battery, extinguisher, drill, repair ]
+
+abilities: [
+    {
+    type: RegenAbility
+    amount: 1
+}
+{
+    type:MoveEffectAbility
+    minVelocity:0.2
+    interval:2
+    rotateEffect:true
+    rotation:-90
+    effect:{
+     type: ParticleEffect
+     particles: 1
+     length: 1
+     lifetime: 50
+     sizeFrom: 6
+     sizeTo: 5
+     cone: 0
+     region:mov-fantom-trace
+     colorFrom: ffffff50
+     colorTo: ff9c5a00
+     layer:79.3
+     }
+}
+
+{
+    type:MoveEffectAbility
+    minVelocity:7
+    interval:0.5
+    rotateEffect:true
+    rotation:-90
+    effect:{
+     type: ParticleEffect
+     particles: 1
+     length: 1
+     lifetime: 30
+     sizeFrom: 6
+     sizeTo: 5
+     cone: 0
+     region:mov-fantom-trace
+     colorFrom: FF000050
+     colorTo: FF530000
+     layer:100.3
+     }
+}
+    ]
+
+weapons: [
+{
+    layerOffset: -0.001
+    shootCone: 70
+    x: 3.75
+    y: 2.25
+    rotate:true
+    rotationLimit: 40
+    reload: 26
+    inaccuracy:2
+    velocityRnd:0.3
+    shootSound: machine-gun-shot-3
+    ejectEffect: casing1
+shoot: {
+    firstShotDelay: 12
+    shotDelay: 2
+    shots: 6
+    }
+bullet: {
+    type: BasicBulletType
+    rangeOverride: 300
+    height: 15
+    width: 6
+
+    lifetime: 36
+    damage: 35
+    speed: 6
+    pierceArmor:true
+    pierceCap:5
+    smokeEffect: shootSmallSmoke
+    trailLength:5
+    trailWidth:1
+    trailColor: f9c27a
+    shootEffect:[
+    shootSmall
+    {
+        type: ParticleEffect
+        region:mov-spikes
+        length: 0
+        cone: 0
+        particles: 1
+        lifetime: 10
+        sizeFrom: 12
+        sizeTo: 0.0
+        colorFrom: ff9c5a
+        colorTo: ffffff40
+        followParent: true
+        rotWithParent: true
+    }
+    ]
+    lightColor: fff8e8
+    lightOpacity: 0.7
+    lightRadius: 17.5
+    }
+}
+{
+    rotateSpeed:100
+    mirror: false
+    x: 0
+    y: 0
+    rotate:true
+    shootStatus : shielded
+    shootStatusDuration: 20
+    inaccuracy:360
+    reload: 60
+    autoTarget:true
+    controllable:false
+    shootSound: none
+    shoot:{
+    type:ShootSpread
+    firstShotDelay: 6
+    spread:13
+    shoot:1
+    }
+bullet: {
+    maxRange: 90
+    recoil: 12
+    damage: 1
+    width:0
+    lifetime:1
+    shootEffect: none
+    hitEffect: none
+}
+    }
+    ]

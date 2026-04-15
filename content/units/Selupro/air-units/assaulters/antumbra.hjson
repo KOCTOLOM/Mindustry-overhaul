@@ -600,8 +600,7 @@ despawnEffect: {
     y: 0
     autoTarget:true
     controllable:false
-    ignoreRotation: true
-    velocityRnd: 0.8
+    ignoreRotation:true
     inaccuracy: 0
     reload: 200
     shootStatus : shielded

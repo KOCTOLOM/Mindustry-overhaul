@@ -3,7 +3,7 @@ targetGround: false
 rotateSpeed: 12.5
 shootCone: 18
 recoil: 1
-fogRadiusMultiplier: 0.3
+fogRadiusMultiplier: 0.15
 buildCostMultiplier: 1.2
 ammoPerShot: 3
 velocityRnd:0.08

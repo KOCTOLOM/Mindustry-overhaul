@@ -6,9 +6,9 @@ circleTargetRadius: 120
 rotateSpeed: 0.9
 accel: 0.015
 drag: 0.015
-health: 260
+health: 280
 speed: 2.3
-armor: 5
+armor: 7
 
 lightColor: FFE818
 lightOpacity: 0.7

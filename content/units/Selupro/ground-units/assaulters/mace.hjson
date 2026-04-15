@@ -20,6 +20,7 @@ abilities: [
     {
     type: ArmorPlateAbility
     healthMultiplier: 0.3
+    shineSpeed:1
 }
     {
     type: RegenAbility

@@ -1,4 +1,4 @@
-rotateSpeed: 10
+rotateSpeed: 7
 fogRadiusMultiplier: 0.2
 shootCone: 15
 recoil: 0.5
@@ -8,7 +8,7 @@ shootY: 3
 inaccuracy: 2
 maxAmmo: 32
 health: 360
-reload: 24
+reload: 32
 armor: 2
 shootSound:shoot
 ammoUseEffect: casing1
@@ -28,7 +28,7 @@ copper: {
 
     pierceCap: 2
     lifetime: 42
-    damage: 18
+    damage: 16
     speed: 4.38
 
     lightColor: fff8e8
@@ -74,7 +74,7 @@ scrap: {
     fragRandomSpread: 360
     fragLifeMax: 2.1
     fragLifeMin: 0.8
-    fragBullets: 3
+    fragBullets: 2
     fragSpread: 45
     lifetime: 30.6
     damage: 7
@@ -173,7 +173,7 @@ graphite: {
 
     pierceCap: 2
     lifetime: 64
-    damage: 25
+    damage: 24
     speed: 2.875
 
     lightColor: 95abd9
@@ -223,7 +223,7 @@ silicon: {
     homingPower: 0.05
     lifetime: 45
     pierceCap: 3
-    damage: 19
+    damage: 17
     speed: 4.4
 
     lightColor: 8e9097
