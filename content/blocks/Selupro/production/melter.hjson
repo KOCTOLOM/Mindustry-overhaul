@@ -14,17 +14,17 @@ craftEffect: [{
     layer:100.2
     }
     {
-        type: ParticleEffect
-        particles: 2
-        length: 9
-        lifetime: 200
-        sizeFrom: 0.7
-        sizeTo: 0.7
-        cone: 360
-        useRotation:false
-        interp: pow3In
-        colorFrom: 57310E
-        colorTo: 57310E00
-        layer:100.2
-        }
+    type: ParticleEffect
+    particles: 2
+    length: 9
+    lifetime: 200
+    sizeFrom: 0.7
+    sizeTo: 0.7
+    cone: 360
+    useRotation:false
+    interp: pow3In
+    colorFrom: 57310E
+    colorTo: 57310E00
+    layer:100.2
+    }
 ]

@@ -144,22 +144,11 @@ chargeEffect: {
     predictTarget: false
     velocityRnd:0.4
     reload: 1390
-    shootSound: cannon-shot-1
 shoot: {
-        type: ShootMulti
-        source: {
-            type: ShootSpread
-            shots: 2
-            spread: 3
-        }
-        dest: [
-            {
-            type: ShootPattern
-            firstShotDelay: 155
-            shots: 48
-            shotDelay: 10
-            }
-    ]
+        type: ShootPattern
+        firstShotDelay: 155
+        shots: 96
+        shotDelay: 5
     }
         bullet: {
                 type: BasicBulletType
@@ -175,13 +164,13 @@ shoot: {
 
                 splashDamageRadius: 12
                 statusDuration: 80
-                splashDamage: 50
-                homingPower: 0.02
+                splashDamage: 25
+                homingPower: 0.04
                 homingRange: 60
                 homingDelay: 40
                 status: slow
                 lifetime: 18
-                damage: 40
+                damage: 25
                 speed: 16
             	pierce:true
               	pierceCap: 2
@@ -241,7 +230,7 @@ shoot: {
                     type: LaserBulletType
                     length: 60
         	        width:6
-                    damage: 80
+                    damage: 50
                     pierceArmor: true
                     hitColor: 98ffa9
                     hitEffect:none

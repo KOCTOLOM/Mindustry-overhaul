@@ -3,8 +3,8 @@ forceMultiTarget: true
 targetAir: true
 stepShake: 2.25
 fogRadius: 22
-range: 384
-
+maxRange: 384
+range:256
 itemCapacity: 81
 rotateSpeed: 2
 health: 2450
@@ -62,7 +62,6 @@ weapons: [
 
 bullet: {
     type: BasicBulletType
-    maxRange: 388
     height: 0
     width: 0
 
@@ -79,18 +78,19 @@ bullet: {
 
 {
     name: fortress-weapon
-    rotationLimit: 15
+    rotationLimit: 17
     rotateSpeed: 1
-    shootCone: 30
+    shootCone: 5
     rotate: true
     recoil: 3.25
     shootY: 7
     shake: 9
     x: 9.5
     y: 1
-
     reload: 64
-
+    velocityRnd:0.05
+    inaccuracy:2
+    predictTarget:false
     shootSound: artillery-shot
     ejectEffect: casing4
 bullet: {
@@ -291,12 +291,11 @@ bullet: {
     shootY: 7.5
     x: 5
     y: -3.5
-
     cooldownTime: 150
     velocityRnd: 0.24
     inaccuracy: 1
     reload: 120
-
+    predictTarget:false
     chargeSound: turret-target-lock
     shootSound: turret-shot
     ejectEffect: casing2

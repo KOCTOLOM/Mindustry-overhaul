@@ -10,12 +10,359 @@ requirements: [
     phase-fabric/130
     thorium/450
 ]
-explosivenessScale:10
-flammabilityScale:5
+explodeEffect: none
+explosivenessScale:0
+flammabilityScale:0
 powerProduction: 460
-explosionRadius: 49
+explosionRadius: 0
 liquidCapacity: 240
-itemDuration: 60
+itemDuration: 30
 itemCapacity: 360
-health: 8500
-armor: 30
+health: 14500
+armor: 45
+destroyBullet:{
+    despawnEffect:[
+    {
+        type: ParticleEffect
+        region:mov-plasma-ring
+        length: 0
+        cone: 1
+        spin:4.5
+        particles: 1
+        lifetime: 20
+        sizeChangeStart: 56
+        sizeFrom: 20
+        sizeTo: 6
+        colorFrom: ffffff70
+        colorTo: ffffff
+        layer:100.3
+    }
+    {
+        type: ParticleEffect
+        region:mov-plasma-ring
+        length: 0
+        cone: 1
+        spin:-8
+        particles: 1
+        lifetime: 20
+        sizeChangeStart: 56
+        sizeFrom: 25
+        sizeTo: 6
+        colorFrom: d9d9af70
+        colorTo: ffffff
+        layer:100.2
+    }
+    {
+        type: ParticleEffect
+        region:mov-plasma-ring
+        length: 0
+        cone: 1
+        spin:12
+        particles: 1
+        lifetime: 20
+        sizeChangeStart: 56
+        sizeFrom: 30
+        sizeTo: 6
+        colorFrom: c6958590
+        colorTo: ffffff
+        layer:100.1
+    }
+    {
+        startDelay: 6
+        type: WaveEffect
+        sides:10
+        rotWithParent: false
+        strokeFrom:3
+        strokeTo:9
+        followParent: false
+        sizeFrom: 200
+        sizeTo: 6
+        lifetime: 20
+        colorFrom: 6e6e6e00
+        colorTo: ffffff20
+    }
+    {
+        startDelay: 12
+        type: WaveEffect
+        sides:10
+        rotWithParent: false
+        strokeFrom:3
+        strokeTo:9
+        followParent: false
+        sizeFrom: 180
+        sizeTo: 6
+        lifetime: 20
+        colorFrom: 6e6e6e00
+        colorTo: ffffff20
+    }
+    {
+        startDelay: 18
+        type: WaveEffect
+        sides:10
+        rotWithParent: false
+        strokeFrom:3
+        strokeTo:9
+        followParent: false
+        sizeFrom: 160
+        sizeTo: 6
+        lifetime: 20
+        colorFrom: 6e6e6e00
+        colorTo: ffffff20
+    }
+    {
+        startDelay: 24
+        type: WaveEffect
+        sides:10
+        rotWithParent: false
+        strokeFrom:3
+        strokeTo:9
+        followParent: false
+        sizeFrom: 140
+        sizeTo: 6
+        lifetime: 20
+        colorFrom: 6e6e6e00
+        colorTo: ffffff20
+    }
+    {
+        startDelay: 30
+        type: WaveEffect
+        sides:10
+        rotWithParent: false
+        strokeFrom:3
+        strokeTo:9
+        followParent: false
+        sizeFrom: 120
+        sizeTo: 40
+        lifetime: 250
+        colorFrom: 6e6e6e00
+        colorTo: ffffff20
+    }
+    {
+        startDelay: 0
+        type: WaveEffect
+        sides:10
+        rotWithParent: false
+        strokeFrom:40
+        strokeTo:40
+        followParent: false
+        sizeFrom: 40
+        sizeTo: 300
+        lifetime: 80
+        colorFrom: ffffff00
+        colorTo: ffffff00
+        lightColor:ffffff
+        lightScl:2
+        lightOpacity:1
+    }
+    {
+        startDelay:30
+        type: ParticleEffect
+        region:mov-lucidSpark
+        length: 0
+        cone: 1
+        spin:4
+        particles: 1
+        lifetime: 50
+        sizeChangeStart: 10
+        sizeFrom: 40
+        sizeTo: 230
+        colorFrom: c6958500
+        colorTo: ffffff
+        layer:100.3
+        lightScl:0
+        lightOpacity:0
+    }
+    {
+        startDelay:30
+        type: ParticleEffect
+        region:mov-lucidSpark
+        length: 0
+        cone: 1
+        spin:-4
+        particles: 1
+        lifetime: 50
+        sizeChangeStart: 10
+        sizeFrom: 40
+        sizeTo: 140
+        colorFrom: c6958500
+        colorTo: ffffff
+        layer:100.3
+        lightScl:0
+        lightOpacity:0
+    }
+    {
+        startDelay:30
+        type: ParticleEffect
+        region:mov-lucidSpark
+        length: 0
+        cone: 1
+        spin:-7
+        particles: 1
+        lifetime: 50
+        sizeChangeStart: 10
+        sizeFrom: 40
+        sizeTo: 160
+        colorFrom: c6958500
+        colorTo: ffffff
+        layer:100.3
+        lightScl:0
+        lightOpacity:0
+    }
+    {
+        startDelay:30
+        type: ParticleEffect
+        region:mov-lucidSpark
+        length: 0
+        cone: 1
+        spin:11
+        particles: 1
+        lifetime: 50
+        sizeChangeStart: 10
+        sizeFrom: 40
+        sizeTo: 120
+        colorFrom: c6958500
+        colorTo: ffffff
+        layer:100.3
+        lightScl:0
+        lightOpacity:0
+    }
+    {
+        startDelay: 80
+        type: WaveEffect
+        rotWithParent: false
+        strokeFrom:20
+        strokeTo:0
+        followParent: false
+        sizeFrom: 4
+        sizeTo: 160
+        lifetime: 30
+        colorFrom: c69585
+        colorTo: c69585
+    }
+    {
+        startDelay: 80
+        type: WaveEffect
+        rotWithParent: false
+        strokeFrom:14
+        strokeTo:0
+        followParent: false
+        sizeFrom: 4
+        sizeTo: 190
+        lifetime: 30
+        colorFrom: c69585
+        colorTo: d9d9af
+    }
+    {
+        startDelay: 80
+        type: WaveEffect
+        rotWithParent: false
+        strokeFrom:12
+        strokeTo:0
+        followParent: false
+        sizeFrom: 4
+        sizeTo: 230
+        lifetime: 30
+        colorFrom: d9d9af
+        colorTo: d9d9af
+    }
+    {
+        startDelay:80
+        type: ParticleEffect
+        length: 200
+        cone: 360
+        particles: 80
+        lifetime: 250
+        sizeFrom: 4
+        sizeChangeStart:220
+        sizeTo: 0
+        interp: pow5Out
+        colorFrom: d9d9af
+        colorTo: d9d9af
+        layer:100.3
+        lightScl:10
+        lightOpacity:0.8
+        lightColor: d9d9af
+    }
+    {
+        startDelay:80
+        type: ParticleEffect
+        length: 230
+        cone: 360
+        particles: 120
+        sizeChangeStart:240
+        lifetime: 270
+        sizeFrom: 6
+        sizeTo: 0
+        interp: pow3Out
+        colorFrom: c69585
+        colorTo: c69585
+        layer:100.2
+        lightScl:8
+        lightOpacity:0.7
+        lightColor: c69585
+    }
+    {
+        startDelay:80
+        type: ParticleEffect
+        length: 160
+        cone: 360
+        particles: 70
+        lifetime: 200
+        sizeChangeStart:170
+        sizeFrom: 3
+        sizeTo: 0
+        interp: pow10Out
+        colorFrom: ffffff
+        colorTo: ffffff
+        layer:100.4
+        lightScl:14
+        lightOpacity:1
+        lightColor: ffffff
+    }
+    ]
+    lifetime:1
+    damage:1
+    hittable:false
+    absorbable:false
+    fragBullets: 12
+    fragLifeMin: 1
+    fragLifeMax: 4
+    fragBullet: {
+        type: ArtilleryBulletType
+        collidesTiles: false
+        collidesAir: true
+        despawnShake: 6
+        absorbable: false
+        hittable: false
+        hitShake: 3
+        height: 0
+        width: 0
+        buildingDamageMultiplier: 10
+        splashDamageRadius: 180
+        lightOpacity: 0.5
+        splashDamage: 300
+        lifetime: 80
+        damage: 50
+        speed: 0
+        suppressionEffectChance: 1
+        suppressionDuration: 300
+        suppressionRange:180
+        smokeEffect: shootBigSmoke2
+        despawnEffect: [{
+        type: WaveEffect
+        lifetime: 20
+
+        sizeFrom: 0
+        sizeTo: 160
+
+        strokeFrom: 7
+        strokeTo: 0
+
+        colorFrom: 6e6e6e30
+        colorTo: 6e6e6e30
+        }
+        ]
+        hitSound: none
+        hitEffect:none
+    }
+}

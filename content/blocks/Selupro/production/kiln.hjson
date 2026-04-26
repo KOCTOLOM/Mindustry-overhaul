@@ -1,4 +1,4 @@
-craftEffect: {
+*craftEffect: {
     type: ParticleEffect
     particles: 2
     length: 160
