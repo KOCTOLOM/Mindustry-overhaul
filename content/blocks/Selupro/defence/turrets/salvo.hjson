@@ -152,7 +152,6 @@ silicon: {
     sparks: 4
     }
     }
-}
 pyratite: {
     type: BasicBulletType
     collidesAir: false
@@ -321,9 +320,9 @@ thorium: {
     height: 13
     width: 10
     shootPattern: {
-        shotDelay: 6
-        shots: 6
-        }
+    shotDelay: 6
+    shots: 6
+    }
     buildingDamageMultiplier: 1.3
     reloadMultiplier: 0.35
     ammoMultiplier: 2
@@ -374,7 +373,7 @@ thorium: {
        sparkRad: 16
        sparkLen: 4
        sparks: 5
-       }
+   }
     shootEffect: shootBig
 
     lightColor: f9a3c7
@@ -388,5 +387,4 @@ thorium: {
     frontColor: f9a3c7
     backColor: cb8ebf
 }
-
 }
