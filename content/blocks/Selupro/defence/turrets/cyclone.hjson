@@ -1,24 +1,25 @@
 research: salvo
 rotateSpeed: 1.75
-recoilTime: 10
+recoilTime: 4
 shootCone: 30
 recoil: 1.5
 recoils: 3
 shootY: 10
-fogRadiusMultiplier: 0.6
+fogRadiusMultiplier: 0.4
 buildCostMultiplier: 2.60589
 coolantMultiplier: 2.4
 researchCostMultiplier:0.4
-ammoPerShot: 60
+ammoPerShot: 6
 inaccuracy: 4.5
-maxAmmo: 180
+maxAmmo: 120
 health: 1320
-reload: 345
+reload: 52
 range: 340
 armor: 12
+velocityRnd:0.15
 
 consumes: {
-    power: 8
+    power: 6
 }
 
 requirements: [
@@ -33,9 +34,9 @@ shootSound: minigun-shot
 ammoUseEffect: casing2
 shoot: {
     type: ShootBarrel
-    firstShotDelay: 30
-    shotDelay: 3.2
-    shots: 35
+    firstShotDelay: 16
+    shotDelay: 7
+    shots:8
 
 barrels: [
     0, 1, 0
@@ -135,9 +136,10 @@ silicon: {
 
 	inaccuracy:25
     homingPower: 0.03
+    homingRange: 40
     pierceCap: 2
     lifetime: 75
-    damage: 18
+    damage: 24
     speed: 4.8
 
 	pierceArmor:true

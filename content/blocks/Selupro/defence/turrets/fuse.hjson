@@ -51,7 +51,11 @@ titanium: {
     type: ShrapnelBulletType
     length: 118
     width: 17
-
+    serrations:7
+    serrationLenScl:6
+    serrationWidth:4
+    serrationSpacing:6
+    serrationSpaceOffset:4
     reloadMultiplier: 1.25
     ammoMultiplier: 5
     rangeChange: 16
@@ -80,7 +84,7 @@ pyratite: {
     status: burning
     pierceCap: 18
     lifetime: 24
-    damage: 95
+    damage: 125
 
     toColor: ffaa5f
 
@@ -148,7 +152,11 @@ thorium: {
     pierce: false
     length: 240
 	rangeChange: 135
-	
+	serrations:16
+    serrationLenScl:2
+    serrationWidth:6
+    serrationSpacing:8
+    serrationSpaceOffset:12
 	buildingDamageMultiplier:2
     reloadMultiplier: 0.3
     ammoMultiplier: 2

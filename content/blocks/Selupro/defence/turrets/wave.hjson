@@ -1,12 +1,12 @@
 research: duo
 shootCone: 50
 recoil: 0.8
-fogRadiusMultiplier: 0.4
+fogRadiusMultiplier: 0.3
 liquidCapacity: 75
 inaccuracy: 5
 velocityRnd:0.4
 health: 520
-range: 240
+range: 208
 reload: 4
 researchCostMultiplier:0.5
 shootEffect: shootLiquid
@@ -35,13 +35,12 @@ water: {
 slag: {
     type: LiquidBulletType
     liquid: slag
-    scaleLife: true
     orbSize: 4.1
     drag: 0.01
 
     reloadMultiplier: 0.85
 
-    statusDuration: 480
+    statusDuration: 280
     knockback: 0.32
     status: melting
     lifetime: 69
@@ -57,13 +56,12 @@ slag: {
 cryofluid: {
     type: LiquidBulletType
     liquid: cryofluid
-    scaleLife: true
     orbSize: 3.75
     drag: 0.01
 
     reloadMultiplier: 1.5
 
-    statusDuration: 540
+    statusDuration: 240
     status: freezing
     knockback: 1.2
     lifetime: 46
@@ -79,12 +77,11 @@ cryofluid: {
 oil: {
     type: LiquidBulletType
     liquid: oil
-    scaleLife: true
     orbSize: 4.5
     drag: 0.01
     layer: 98
 
-    statusDuration: 900
+    statusDuration: 400
     knockback: 0.5
     status: tarred
     lifetime: 55

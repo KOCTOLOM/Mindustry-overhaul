@@ -9,7 +9,7 @@ buildCostMultiplier: 0.75
 coolantMultiplier: 3.2
 researchCostMultiplier:0.2
 health: 210
-reload: 32
+reload: 38
 range: 144
 armor: 2
 
@@ -39,8 +39,8 @@ shootType: {
     ammoMultiplier: 1
 
     lightningLengthRand:5
-    lightningLength: 23
-    damage: 17
+    lightningLength: 19
+    damage: 15
 
     lightColor: ffffff
     lightOpacity: 0.7

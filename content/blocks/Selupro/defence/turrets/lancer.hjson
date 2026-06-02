@@ -4,8 +4,8 @@ fogRadius: 32
 recoil: 3
 shake: 5
 
-buildCostMultiplier: 2.57
-coolantMultiplier: 12.5
+buildCostMultiplier: 2.5
+coolantMultiplier: 7.5
 
 cooldownTime: 450
 reload: 450
@@ -13,7 +13,8 @@ health: 1700
 range: 345
 recoil: 2
 armor: 5
-fogRadiusMultiplier: 0.4
+shootCone:3
+fogRadiusMultiplier: 0.3
 shootEffect: lancerLaserShoot
 smokeEffect: none
 researchCostMultiplier:0.3
@@ -42,7 +43,7 @@ shootType: {
     hitSize: 4
 
     buildingDamageMultiplier: 1.75
-    ammoMultiplier: 1
+    armorMultiplier:3
 
     status: emp-tier-1
     statusDuration: 540

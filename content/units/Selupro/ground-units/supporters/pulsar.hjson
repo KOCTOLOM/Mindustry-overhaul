@@ -4,8 +4,8 @@ stepShake: 0.6
 fogRadius: 11
 
 itemCapacity: 48
-buildSpeed: 0.24
-mineSpeed: 0.75
+buildSpeed: 0.16
+mineSpeed: 0.2
 mineTier: 3
 health: 540
 speed: 1.25

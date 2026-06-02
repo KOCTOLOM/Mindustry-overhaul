@@ -1,6 +1,6 @@
 research: duo
 targetAir: false
-fogRadiusMultiplier: 0.9
+fogRadiusMultiplier: 0.4
 shootCone: 50
 shootY: 3
 recoil: 0
@@ -42,7 +42,7 @@ spore-pod: {
     despawnEffect: none
 
 smokeEffect: {
-    particles: 4
+    particles: 6
     lifetime: 48
     sizeFrom: 2
     sizeTo: 0.25
@@ -56,7 +56,7 @@ smokeEffect: {
     colorTo: 454545
 
     sizeInterp: pow3In
-    interp: pow5Out
+    interp: pow10Out
     }
 
 shootEffect: {
@@ -112,7 +112,7 @@ coal: {
     statusDuration: 240
     status: burning
     pierceCap: 2
-    lifetime: 16
+    lifetime: 19
     speed: 2.75
     damage: 35
 

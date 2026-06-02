@@ -5,8 +5,8 @@ fogRadius: 18
 
 rotateSpeed: 2.25
 itemCapacity: 96
-buildSpeed: 0.81
-mineSpeed: 0.96
+buildSpeed: 0.4
+mineSpeed: 0.4
 health: 2100
 mineTier: 3
 armor: 18

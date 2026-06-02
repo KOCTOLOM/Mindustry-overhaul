@@ -3385,7 +3385,7 @@ layer:100.3
     reload: 120
 
     ejectEffect: casing1
-    shootSound: shootBeamPlasmaSmall
+    shootSound: plasma-mis
 shoot: {
     firstShotDelay: 30
     shotDelay: 4
@@ -3502,7 +3502,7 @@ hitEffect: [
     reload: 230
 
     ejectEffect: casing1
-    shootSound: shootBeamPlasmaSmall
+    shootSound: plasma-mis
 shoot: {
     firstShotDelay: 30
     shotDelay: 6

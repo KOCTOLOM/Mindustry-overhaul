@@ -22,7 +22,7 @@ healColor: b0bac0
 lightRadius: 110
 
 deathSound: air-crush-1
-loopSoundVolume: 0.18
+loopSoundVolume: 0.56
 loopSound: air-engine
 
 trailLength: 19
@@ -593,7 +593,7 @@ despawnEffect: {
     }
 }
 {
-    minShootVelocity: 0.55
+    minShootVelocity: 0.6
     soundPitchMin: 1
     mirror: false
     x: 0
@@ -624,6 +624,9 @@ bullet: {
     width: 0
     recoil:-0.7
     lifetime:1
+    shootEffect:none
+    despawnEffect:none
+    smokeEffect:none
     }
     }
     ]

@@ -113,7 +113,6 @@ silicon: {
     width: 7
 
     buildingDamageMultiplier: 0.15
-    pierceDamageFactor: 0.00015
     reloadMultiplier: 1.15
     ammoMultiplier: 24
     pierceArmor:true
@@ -133,6 +132,26 @@ silicon: {
 
     frontColor: 8e9097
     backColor: 767a84
+    hitEffect:{
+    type: ExplosionEffect
+    lifetime: 30
+
+    waveColor: 767a84
+    waveStroke: 1.25
+    waveRad: 7
+
+    smokeColor: 767a84
+    smokeSizeBase: 2
+    smokeSize: 1
+    smokes: 2
+
+    sparkColor: 767a84
+    sparkStroke: 1.25
+    sparkRad: 12
+    sparkLen: 5
+    sparks: 4
+    }
+    }
 }
 pyratite: {
     type: BasicBulletType
@@ -159,7 +178,7 @@ pyratite: {
 
     trailColor: d37f47
     trailLength: 16
-    trailWidth: 2.2
+    trailWidth: 2
 
     incendAmount: 4
     incendSpread: 8
@@ -301,21 +320,61 @@ thorium: {
     collidesAir: false
     height: 13
     width: 10
-
-    buildingDamageMultiplier: 1.5
-    reloadMultiplier: 0.65
-    ammoMultiplier: 4
+    shootPattern: {
+        shotDelay: 6
+        shots: 6
+        }
+    buildingDamageMultiplier: 1.3
+    reloadMultiplier: 0.35
+    ammoMultiplier: 2
 
     splashDamageRadius: 16
     splashDamage: 35
-    pierceCap: 4
+    pierceCap: 3
     lifetime: 87
     damage: 90
     speed: 3.25
 
-    despawnEffect: flakExplosion
+    despawnEffect: {
+        type: ExplosionEffect
+
+        lifetime: 25
+        waveColor: fcf387
+        waveStroke: 1.25
+        waveRad: 18
+
+        smokeColor: cb8ebf
+        smokeSizeBase: 0
+        smokeSize: 4
+        smokes: 4
+
+        sparkColor: cb8ebf
+        sparkStroke: 1.5
+        sparkRad: 16
+        sparkLen: 4
+        sparks: 5
+    }
     smokeEffect: shootBigSmoke
-    hitEffect: flakExplosion
+    hitEffect: {
+       type: ExplosionEffect
+
+       lifetime: 25
+
+       waveColor: cb8ebf
+       waveStroke: 1.25
+       waveRad: 30
+
+       smokeColor: cb8ebf
+       smokeSizeBase: 0
+       smokeSize: 4
+       smokes: 4
+
+       sparkColor: cb8ebf
+       sparkStroke: 1.5
+       sparkRad: 16
+       sparkLen: 4
+       sparks: 5
+       }
     shootEffect: shootBig
 
     lightColor: f9a3c7
@@ -324,7 +383,7 @@ thorium: {
 
     trailColor: cb8ebf
     trailLength: 12.5
-    trailWidth: 2.4
+    trailWidth: 2.25
 
     frontColor: f9a3c7
     backColor: cb8ebf

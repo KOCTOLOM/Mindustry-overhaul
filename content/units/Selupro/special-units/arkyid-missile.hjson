@@ -51,7 +51,7 @@ parts: [
         triLength: 8
         triLengthTo: 30
         color: bf92f9
-        colorTo: 9059E3
+        colorTo: 9059C3
         haloRadius:0
         haloRotateSpeed:3.2
         radius: 3
@@ -112,8 +112,8 @@ hitEffect:{
     sparkColor: bf92f9
     sparkStroke: 1.5
     sparkRad: 58
-    sparkLen: 5
-    sparks: 26
+    sparkLen: 3
+    sparks: 12
 }
 
 despawnEffect: {
@@ -133,8 +133,8 @@ despawnEffect: {
     sparkColor: bf92f9
     sparkStroke: 1.5
     sparkRad: 58
-    sparkLen: 5
-    sparks:26
+    sparkLen: 3
+    sparks:12
 }
     }
 }

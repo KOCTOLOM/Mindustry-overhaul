@@ -5,6 +5,7 @@ buildSpeed: 5
 health: 92000
 speed: 0.25
 armor: 230
+buildSpeed: 12
 
 immunities: [ spore-slowed, electrified,freezing, burning, blasted, melting, shocked, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-armor-piercing-tier-1,mov-armor-piercing-tier-2,mov-emp-tier-1, mov-oxidation-tier-1,mov-slow-reloading-tier-2,mov-high-emp, tarred ]
 
@@ -653,7 +654,7 @@ bullet: {
 	fragRandomSpread: 0
 	fragAngle:-135
 	fragOnHit:false
-	hitSound:shootMissileLarge
+	hitSound:plasma-mis
     fragVelocityMin: 0.7
 	fragVelocityMax: 1.4
     fragBullets: 1

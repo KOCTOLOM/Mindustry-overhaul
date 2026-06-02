@@ -5,7 +5,7 @@ fogRadius: 32
 
 itemCapacity: 960
 rotateSpeed: 1.2
-buildSpeed: 0.96
+buildSpeed: 6
 health: 25000
 speed: 0.32
 armor: 70
@@ -141,6 +141,7 @@ chargeEffect: {
     shake: 2
     x: 0
     y: 0
+    shootSound: plasma-shot-3
     predictTarget: false
     velocityRnd:0.4
     reload: 1390

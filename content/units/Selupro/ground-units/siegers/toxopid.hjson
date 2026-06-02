@@ -152,11 +152,11 @@ bullet: {
 
     buildingDamageMultiplier: 0.3
 
-    serrationSpaceOffset: 60
+    serrationSpaceOffset: 30
     serrationFadeOffset: 0
-    serrationLenScl: 7
-    serrationWidth: 6
-    serrations: 10
+    serrationLenScl: 2
+    serrationWidth: 4
+    serrations: 4
     damage: 1000
 
     shootEffect: sparkShoot
@@ -626,10 +626,10 @@ bullet: {
     buildingDamageMultiplier: 2
     lifetime:20
     serrationSpaceOffset: 2
-    serrationFadeOffset: 0
+    serrationFadeOffset: 0.5
     serrationLenScl: 3
     serrationWidth: 2
-    serrations: 6
+    serrations: 4
     damage: 60
     pierceArmor:true
     shootEffect: none 
@@ -738,11 +738,11 @@ bullet: {
 
     buildingDamageMultiplier: 2
     lifetime:20
-    serrationSpaceOffset: 2
-    serrationFadeOffset: 0
+    serrationSpaceOffset: 4
+    serrationFadeOffset: 0.5
     serrationLenScl: 3
     serrationWidth: 2
-    serrations: 6
+    serrations: 4
     damage: 40
     pierceArmor:true
     shootEffect: none 

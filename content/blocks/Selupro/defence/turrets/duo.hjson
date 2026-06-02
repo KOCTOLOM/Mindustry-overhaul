@@ -1,5 +1,5 @@
 rotateSpeed: 7
-fogRadiusMultiplier: 0.2
+fogRadiusMultiplier: 0.12
 shootCone: 15
 recoil: 0.5
 range: 184
@@ -99,18 +99,18 @@ scrap: {
     type: ExplosionEffect
     lifetime: 30
 
-    waveColor: 767a84
+    waveColor: 9b928b
     waveStroke: 1.25
     waveRad: 3
 
     smokeColor: 454545
     smokeSizeBase: 0
     smokeSize: 2
-    smokes: 3
+    smokes: 2
 
-    sparkColor: e0b28d
+    sparkColor: 9b928b
     sparkStroke: 0.75
-    sparkRad: 1
+    sparkRad: 4
     sparkLen: 2
     sparks: 2
     }
@@ -141,9 +141,9 @@ fragBullet: {
 
 	hitEffect:{
     type: ExplosionEffect
-    lifetime: 12
+    lifetime: 15
 
-    waveColor: 767a84
+    waveColor: 9b928b
     waveStroke: 1.25
     waveRad: 4
 
@@ -152,7 +152,7 @@ fragBullet: {
     smokeSize: 1
     smokes: 2
 
-    sparkColor: e0b28d
+    sparkColor: 9b928b
     sparkStroke: 0.75
     sparkRad: 1
     sparkLen: 2
@@ -292,10 +292,27 @@ pyratite: {
     frontColor: ffaa5f
     backColor: d37f47
 
-hitEffect: [
-    hitBulletSmall
-    fireHit
+    hitEffect: [
+    {
+        type: ExplosionEffect
+        lifetime: 30
 
-]
+        waveColor: d37f47
+        waveStroke: 1.25
+        waveRad: 3
+
+        smokeColor: 454545
+        smokeSizeBase: 0
+        smokeSize: 1
+        smokes: 1
+
+        sparkColor: ffaa5f
+        sparkStroke: 0.75
+        sparkRad: 1
+        sparkLen: 2
+        sparks: 3
+    }
+        fireHit
+    ]
     }
 }

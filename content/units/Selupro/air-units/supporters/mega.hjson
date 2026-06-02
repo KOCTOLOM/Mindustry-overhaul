@@ -4,8 +4,8 @@ faceTarget: true
 fogRadius: 18
 
 itemCapacity: 81
-buildSpeed: 0.32
-mineSpeed: 0.96
+buildSpeed: 0.38
+mineSpeed: 0.5
 mineTier: 2
 health: 750
 speed: 2.75

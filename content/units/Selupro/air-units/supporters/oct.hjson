@@ -8,8 +8,8 @@ crashDamageMultiplier: 12.5
 itemCapacity: 5000
 itemOffsetY: -4.5
 rotateSpeed: 0.25
-buildSpeed: 5
-mineSpeed: 15
+buildSpeed: 15
+mineSpeed: 38
 health: 54000
 mineTier: 4
 speed: 0.32
@@ -23,7 +23,7 @@ trailLength: 41.5
 
 deathSound: air-crush-large-2
 loopSound: air-engine
-loopSoundVolume: 0.4
+loopSoundVolume: 1
 
 immunities: [ electrified, melting, burning, blasted, shocked, tarred, wet, spore-slowed, mov-damage-reduction-tier-1,mov-damage-reduction-tier-2,mov-damage-reduction-tier-3,mov-armor-piercing-tier-1,mov-armor-piercing-tier-2,mov-emp-tier-1, mov-oxidation-tier-1, mov-oxidation-tier-2,mov-slow-reloading-tier-2,mov-slow-reloading-tier-3, mov-high-emp]
 

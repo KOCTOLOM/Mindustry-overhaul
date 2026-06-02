@@ -47,7 +47,7 @@ shootSound: rocket-shot-1
 shootEffect: shootBig
 shoot: {
     type: ShootBarrel
-    shotDelay: 2
+    shotDelay: 6
     shots: 6
 
 barrels: [
@@ -61,12 +61,23 @@ ammoTypes: {
 blast-compound: {
     type: MissileBulletType
     collidesGround: false
+    shootPattern: {
+        type: ShootBarrel
+        shotDelay: 10
+        shots: 12
+
+    barrels: [
+        -4, 1.25, 0
+        0, 0, 0
+        4, -1.25, 0
+    ]
+    }
     shrinkY: 0
     height: 15
     width: 13
     shieldDamageMultiplier:2
-    reloadMultiplier: 0.4
-    ammoMultiplier: 2
+    reloadMultiplier: 0.15
+    ammoMultiplier: 1
 
     splashDamageRadius: 20
     statusDuration: 220
@@ -94,27 +105,27 @@ blast-compound: {
     frontColor: ff795e
     backColor: c85c51
 
-hitEffect: {
-    type: ExplosionEffect
+    hitEffect: {
+        type: ExplosionEffect
 
-    lifetime: 25
+        lifetime: 25
 
-    waveColor: ff795e
-    waveStroke: 3.2
-    waveRad: 60
+        waveColor: ff795e
+        waveStroke: 3.2
+        waveRad: 25
 
-    smokeColor: 696969
-    smokeSizeBase: 0
-    smokeSize: 21.5
-    smokes: 18
+        smokeColor: ff795e
+        smokeSizeBase: 0
+        smokeSize: 8
+        smokes: 3
 
-    sparkColor: ff795e
-    sparkStroke: 2.5
-    sparkRad: 45
-    sparkLen: 4
-    sparks: 21
-}
-fragBullets:4
+        sparkColor: ff795e
+        sparkStroke: 2.5
+        sparkRad: 32
+        sparkLen: 4
+        sparks: 21
+    }
+    fragBullets:4
 	fragBullet: {
     type: BasicBulletType
     collidesAir: false
@@ -123,7 +134,6 @@ fragBullets:4
     width: 0
 	hittable:false
     buildingDamageMultiplier: 0.4
-    pierceDamageFactor: 0.75
     shieldDamageMultiplier:4
     splashDamageRadius: 15
     statusDuration: 10
@@ -191,18 +201,18 @@ hitEffect: {
 
     waveColor: ffaa5f
     waveStroke: 3.2
-    waveRad: 60
+    waveRad: 26
 
     smokeColor: 696969
     smokeSizeBase: 0
-    smokeSize: 17.5
-    smokes: 12
+    smokeSize: 4
+    smokes: 3
 
     sparkColor: ffaa5f
     sparkStroke: 2.25
-    sparkRad: 45
+    sparkRad: 25
     sparkLen: 4
-    sparks: 25
+    sparks: 12
 }
     }
 
@@ -254,15 +264,15 @@ surge-alloy: {
     waveStroke: 1.25
     waveRad: 30
 
-    smokeColor: 696969
+    smokeColor: fcf387
     smokeSizeBase: 0
-    smokeSize: 12
-    smokes: 8
+    smokeSize: 5
+    smokes: 3
 
     sparkColor: fcf387
     sparkStroke: 2.5
-    sparkRad: 45
-    sparkLen: 6
+    sparkRad: 26
+    sparkLen: 7
     sparks: 14
     }
     hitEffect: {
@@ -281,6 +291,17 @@ surge-alloy: {
 }
 
 titanium: {
+    shootPattern: {
+        type: ShootBarrel
+        shotDelay: 20.6
+        shots: 8
+
+    barrels: [
+        -4, 1.25, 0
+        0, 0, 0
+        4, -1.25, 0
+    ]
+    }
     type: MissileBulletType
     collidesGround: false
     scaleLife: true
@@ -288,15 +309,14 @@ titanium: {
     height: 12
     width: 10
 
-    reloadMultiplier: 2.5
-    ammoMultiplier: 6
+    ammoMultiplier: 4
     shieldDamageMultiplier:0.5
     status: armor-piercing-tier-1
     splashDamageRadius: 8
     statusDuration: 250
     homingPower: 0.02
 	homingDelay: 30
-    splashDamage: 40
+    splashDamage: 35
     homingRange: 30
     knockback: 0.5
     lifetime: 50
@@ -327,10 +347,10 @@ hitEffect: {
     waveStroke: 3.2
     waveRad: 14
 
-    smokeColor: 696969
+    smokeColor: a4b8fa
     smokeSizeBase: 0
-    smokeSize: 18
-    smokes: 12
+    smokeSize: 4
+    smokes: 6
 
     sparkColor: a4b8fa
     sparkStroke: 1.5

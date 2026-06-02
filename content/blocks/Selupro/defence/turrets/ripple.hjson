@@ -3,8 +3,15 @@ shootY: 3.5
 shake: 7.5
 recoil: 6
 
-buildCostMultiplier: 5.5
+buildCostMultiplier: 4.25
 
+requirements: [
+    copper/150
+    lead/125
+    graphite/150
+    titanium/80
+
+]
 cooldownTime: 700
 velocityRnd: 0.2
 inaccuracy: 6
@@ -14,7 +21,7 @@ reload: 280
 range: 576
 armor: 9
 researchCostMultiplier:0.4
-coolantMultiplier: 1.7
+coolantMultiplier: 1.5
 fogRadiusMultiplier: 0.5
 shootSound: cannon-large-shot
 ammoUseEffect: casing3Double
@@ -540,19 +547,40 @@ hitEffect: {
 	fragBullets:6
 	fragBullet: {
 		type: ShrapnelBulletType
-
+		serrations:2
+        serrationLenScl:3
+        serrationWidth:2
+        serrationSpacing:4
+        serrationSpaceOffset:2
 		buildingDamageMultiplier: 2
-
 		damage: 50
-		length: 10
-		serrations: 3
+		length: 24
 		width: 6
 		knockback: 2
-		lifetime: 60
+		lifetime: 20
 		fromColor: F9A3C7
 		toColor: CB8EBF
-	}
+		hitEffect:{
+          type: ExplosionEffect
 
+          lifetime: 15
+
+          waveColor: F9A3C7
+          waveStroke: 1.5
+          waveRad: 5
+
+          smokeColor: F9A3C770
+          smokeSizeBase: 0
+          smokeSize: 2
+          smokes: 1
+
+          sparkColor: F9A3C7
+          sparkStroke: 2
+          sparkRad: 4.5
+          sparkLen: 3
+          sparks: 2
+        }
+	}
     }
 
 phase-fabric: {
@@ -777,6 +805,26 @@ hitEffect: [
 		lifetime: 60
 		fromColor: EFCA98F0
 		toColor: E3A88080
+		hitEffect:{
+          type: ExplosionEffect
+
+          lifetime: 15
+
+          waveColor: EFCA98
+          waveStroke: 1.5
+          waveRad: 5
+
+          smokeColor: EFCA9870
+          smokeSizeBase: 0
+          smokeSize: 2
+          smokes: 1
+
+          sparkColor: E3A880
+          sparkStroke: 2
+          sparkRad: 4.5
+          sparkLen: 3
+          sparks: 2
+        }
 	}
 	}
     }

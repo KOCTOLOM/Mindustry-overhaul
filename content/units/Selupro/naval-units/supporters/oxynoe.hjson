@@ -4,7 +4,7 @@ rotateSpeed: 1.5
 health: 780
 speed: 0.6
 armor: 9
-
+buildSpeed: 1.8
 immunities: [ spore-slowed, electrified, shocked ]
 
 weapons: [

@@ -20,7 +20,7 @@ healColor: b0bac0
 trailLength: 12.5
 
 deathSound: helicopter-crush
-loopSoundVolume: 0.075
+loopSoundVolume: 0.75
 loopSound: air-engine
 
 immunities: [ blasted, shocked]

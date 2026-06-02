@@ -4,7 +4,7 @@ rotateSpeed: 1
 health: 2200
 speed: 0.56
 armor: 15
-
+buildSpeed: 2
 immunities: [ burning, melting, freezing, shocked, blasted, mov-armor-piercing-tier-2, mov-damage-reduction-tier-1,mov-armor-piercing-tier-1,mov-emp-tier-1,mov-slow-reloading-tier-1,mov-slow-reloading-tier-2]
 
 targetFlags: [turret, repair, core ]

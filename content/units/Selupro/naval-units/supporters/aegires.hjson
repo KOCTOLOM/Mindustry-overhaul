@@ -7,6 +7,7 @@ rotateSpeed: 1
 health: 24000
 speed: 0.35
 armor: 40
+buildSpeed: 8
 
 immunities: [ burning, melting, electrified, blasted, overclock, mov-armor-piercing-tier-1 ]
 
