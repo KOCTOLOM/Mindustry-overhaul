@@ -10,7 +10,7 @@ craftEffect:[
           type: ParticleEffect
           particles: 4
           length: 32
-          lifetime: 120
+          lifetime: 60
           sizeFrom: 1
           sizeTo: 3
           cone: 1
@@ -31,7 +31,7 @@ craftEffect:[
           type: ParticleEffect
           particles: 6
           length: 27
-          lifetime: 150
+          lifetime: 70
           sizeFrom: 1
           sizeTo: 3
           cone: 5
@@ -52,7 +52,7 @@ craftEffect:[
           type: ParticleEffect
           particles: 3
           length: 16
-          lifetime: 190
+          lifetime: 85
           sizeFrom: 1
           sizeTo: 4
           cone: 5
@@ -73,7 +73,7 @@ craftEffect:[
           type: ParticleEffect
           particles: 8
           length: 8
-          lifetime: 200
+          lifetime: 90
           sizeFrom: 2
           sizeTo: 4
           cone: 90
@@ -94,7 +94,7 @@ craftEffect:[
           type: ParticleEffect
           particles: 4
           length: 12
-          lifetime: 200
+          lifetime: 90
           sizeFrom: 1
           sizeTo: 3
           cone: 90

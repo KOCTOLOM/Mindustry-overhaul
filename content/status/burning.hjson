@@ -1,5 +1,5 @@
 affinities: [ tarred, spore-slowed ]
+transitionDamage:18
 intervalDamageTime:10
 intervalDamage:3
 intervalDamagePierce:true
-transitionDamage:60

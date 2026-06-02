@@ -26,7 +26,7 @@ fogRadiusMultiplier: 0.5
 shootSound: cannon-large-shot
 ammoUseEffect: casing3Double
 ammoEjectBack: 5
-ammoPerShot: 15
+ammoPerShot: 20
 shoot: {
 	type: ShootMulti
 	source: {
@@ -318,12 +318,12 @@ blast-compound: {
     reloadMultiplier: 0.65
     ammoMultiplier: 2
 
-    splashDamageRadius: 60
-    splashDamage: 135
+    splashDamageRadius: 52
+    splashDamage: 125
     fragLifeMax: 6
-    fragLifeMin: 0
+    fragLifeMin: 1
     status: blasted
-    fragBullets: 8
+    fragBullets: 6
     knockback: 1
     lifetime: 80
     speed: 1.5
@@ -367,9 +367,10 @@ hitEffect: {
 fragBullet: {
     type: BasicBulletType
     collidesAir: false
-    shrinkY: 1
-    height: 0
-    width: 0
+    shrinkY: 0
+    height: 9
+    sprite:large-orb
+    width: 9
 	hittable:false
     buildingDamageMultiplier: 0.4
 
@@ -378,10 +379,10 @@ fragBullet: {
     splashDamage: 40
     status: blasted
     knockback: 1.5
-    lifetime: 15
+    lifetime: 18
     damage: 10
-    speed: 0
-
+    speed: 3
+    drag:0.05
     lightColor: ff795e
     lightOpacity: 0.7
     lightRadius: 27.5

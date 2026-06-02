@@ -483,7 +483,7 @@ blast-compound: {
     frontColor: ff795e
     backColor: c85c51
 
-hitEffect: {
+    hitEffect: {
     type: ExplosionEffect
 
     lifetime: 120
@@ -502,8 +502,8 @@ hitEffect: {
     sparkRad: 70
     sparkLen: 7
     sparks: 25
-}
-    fragBullets:15
+    }
+    fragBullets:7
 	fragBullet: {
     type: BasicBulletType
     collidesAir: false
@@ -513,12 +513,12 @@ hitEffect: {
     width: 8
 	hittable:false
     buildingDamageMultiplier: 0.0
-    splashDamageRadius: 20
+    splashDamageRadius: 30
     statusDuration: 10
     splashDamage: 20
     status: blasted
     knockback: 0
-    lifetime: 7
+    lifetime: 25
     damage: 70
     speed: 4
     drag:0.1
@@ -533,7 +533,26 @@ hitEffect: {
     frontColor: ff795e
     backColor: c85c51
 
-	hitEffect:none
+	hitEffect: {
+        type: ExplosionEffect
+
+        lifetime: 15
+
+        waveColor: ff795e
+        waveStroke: 5
+        waveRad: 35
+
+        smokeColor: 69696980
+        smokeSizeBase: 0
+        smokeSize: 3
+        smokes: 2
+
+        sparkColor: ff795e
+        sparkStroke: 3
+        sparkRad: 35
+        sparkLen: 2
+        sparks: 4
+    }
 	despawnEffect: none
     }
 }

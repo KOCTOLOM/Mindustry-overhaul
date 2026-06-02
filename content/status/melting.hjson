@@ -1,3 +1,5 @@
+affinities: [ tarred, spore-slowed ]
+transitionDamage:42
 healthMultiplier: 0.9
 damage: 1
 intervalDamageTime:35
