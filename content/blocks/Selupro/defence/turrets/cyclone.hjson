@@ -43,7 +43,7 @@ barrels: [
     3, 0, 0
     -3, 0, 0
 ]
-    }
+}
 
 ammoTypes: {
 scrap: {
@@ -57,10 +57,10 @@ scrap: {
     ammoMultiplier: 9
     rangeChange: 60
 
-    fragBullets: 8
-    pierceCap: 5
+    fragBullets: 5
+    pierceCap: 3
     lifetime: 66
-    damage: 18
+    damage: 42
     speed: 6.75
 
     lightColor: e0b28d
@@ -87,8 +87,8 @@ fragBullet: {
     pierceDamageFactor: 0.5
 
     lifetime: 13.5
-    pierceCap: 5
-    damage: 14
+    pierceCap: 3
+    damage: 26
     speed: 4.5
 
     lightColor: e0b28d
@@ -139,10 +139,10 @@ silicon: {
     homingRange: 40
     pierceCap: 2
     lifetime: 75
-    damage: 24
+    damage: 56
     speed: 4.8
 
-	pierceArmor:true
+	armorMultiplier:0.75
 
     hitEffect: hitBulletSmall
     shootEffect: shootSmall
@@ -220,10 +220,10 @@ metaglass: {
     fragBullets: 2
     pierceCap: 2
     lifetime: 32
-    damage: 18
+    damage: 27
     speed: 12
 	
-	pierceArmor:true
+	armorMultiplier:0.25
 	
     hitEffect: flakExplosion
     shootEffect: shootSmall
@@ -246,12 +246,11 @@ fragBullet: {
     height: 12
     width: 5
 
-    buildingDamageMultiplier: 0.01
 
     pierceCap: 18
     lifetime: 20
-    damage: 4.5
-	pierceArmor:true
+    damage: 7
+	armorMultiplier:0.25
     despawnEffect: none
 
     lightColor: ffffff
@@ -278,21 +277,58 @@ blast-compound: {
     ammoMultiplier: 4
     rangeChange: 20
 
-    splashDamageRadius: 60
+    splashDamageRadius: 36
     fragRandomSpread: 45
     fragVelocityMin: 0.4
     statusDuration: 60
     splashDamage: 80
     lifetime: 53
     status: blasted
-    fragBullets: 5
+    fragBullets: 3
     fragLifeMin: 0
     pierceCap: 2
     damage: 140
     speed: 6.4
 
-    despawnEffect: flakExplosionBig
-    hitEffect: flakExplosionBig
+    despawnEffect:
+    {
+        type: ExplosionEffect
+        lifetime: 32
+
+        waveColor: ff795e
+        waveStroke: 7.5
+        waveRad: 67
+
+        smokeColor: ff795e
+        smokeSizeBase: 0
+        smokeSize: 6
+        smokes: 5
+
+        sparkColor: ff795e
+        sparkStroke: 2
+        sparkRad: 41
+        sparkLen: 12
+        sparks: 6
+    }
+    hitEffect: {
+        type: ExplosionEffect
+        lifetime: 32
+
+        waveColor: ff795e
+        waveStroke: 7.5
+        waveRad: 67
+
+        smokeColor: ff795e
+        smokeSizeBase: 0
+        smokeSize: 14.5
+        smokes: 12
+
+        sparkColor: ff795e
+        sparkStroke: 2.75
+        sparkRad: 41
+        sparkLen: 18
+        sparks: 15
+    }
     shootEffect: shootBig
 
     lightColor: ff795e
@@ -307,27 +343,30 @@ blast-compound: {
     backColor: c85c51
 fragBullet: {
     type: BasicBulletType
-    height:0
-    width:0
-
+    shrinkY:0
+    height:6
+    width:6
+    sprite: large-orb
     buildingDamageMultiplier: 0.05
-    pierceDamageFactor: 0.5
-
     splashDamageRadius: 26
     statusDuration: 60
-    splashDamage: 27.5
+    splashDamage: 46
     status: blasted
     lifetime: 33.5
-    pierceCap: 32
-    damage: 32.5
-    speed: 0
+    pierceCap: 2
+    damage: 25
+    speed: 1
 
     despawnEffect: blastExplosion
     hitEffect: hitBulletColor
 
     lightColor: ff795e
     lightOpacity: 0.7
-    lightRadius: 27.5
+    lightRadius: 6
+
+    trailColor: c85c51
+    trailLength: 2
+    trailWidth: 1
 
     frontColor: ff795e
     backColor: c85c51
@@ -342,14 +381,14 @@ plastanium: {
     buildingDamageMultiplier: 0.2
     ammoMultiplier: 24
 	fragOnHit:false
-    splashDamageRadius: 36
-    splashDamage: 25
-    fragBullets: 4
+    splashDamageRadius: 16
+    splashDamage: 45
+    fragBullets: 3
     lifetime: 66.5
     pierceCap: 3
-    damage: 32
+    damage: 64
     speed: 5
-    pierceArmor:true
+    armorMultiplier:0.15
 	
 	statusDuration: 120
 	status:slow-reloading-tier-1
@@ -379,7 +418,9 @@ fragBullet: {
 
     pierceCap: 2
     lifetime: 15
-    damage: 20
+    damage: 28
+
+    armorMultiplier:0.15
 
     hitEffect: hitBulletColor
     despawnEffect: none
@@ -398,28 +439,40 @@ fragBullet: {
     }
 
 surge-alloy: {
+    shootPattern: {
+        type: ShootBarrel
+        firstShotDelay: 26
+        shotDelay: 3
+        shots:12
+
+    barrels: [
+        0, 1, 0
+        3, 0, 0
+        -3, 0, 0
+    ]
+    }
     type: BasicBulletType
     height: 16
     width: 4.5
 
     buildingDamageMultiplier: 0.15
-    reloadMultiplier: 0.4
+    reloadMultiplier: 0.3
     ammoMultiplier: 12
     rangeChange: 190
 
 	
     splashDamageRadius: 20
     statusDuration: 180
-    lightningDamage: 30
+    lightningDamage: 34
     lightningLength: 7
 	lightningLengthRand: 4
     status: emp-tier-1
     splashDamage: 30
     lifetime: 27
     lightning: 2
-    damage: 70
+    damage: 78
     speed: 19
-	pierceCap:5
+	pierceCap:4
 	pierceArmor:true
 	
     despawnEffect: flakExplosionBig
@@ -437,7 +490,4 @@ surge-alloy: {
     frontColor: fcf387
     backColor: e8d174
     }
-
-
-
 }

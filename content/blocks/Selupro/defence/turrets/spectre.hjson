@@ -364,7 +364,7 @@ thorium: {
     statusDuration: 180
     splashDamage: 96
     knockback: 1.8
-    pierceCap: 5
+    pierceCap: 3
     lifetime: 94
     damage: 250
     speed: 2.7
@@ -435,9 +435,9 @@ blast-compound: {
     }
     dest:[
     {
-    type: ShootSpread
-    shots: 5
-    spread:3
+        type: ShootSpread
+        shots: 5
+        spread:3
     }
     ]
     }
@@ -492,7 +492,7 @@ blast-compound: {
     waveStroke: 15
     waveRad: 70
 
-    smokeColor: 69696980
+    smokeColor: ff795e
     smokeSizeBase: 0
     smokeSize: 13
     smokes: 8
@@ -542,9 +542,9 @@ blast-compound: {
         waveStroke: 5
         waveRad: 35
 
-        smokeColor: 69696980
+        smokeColor: ff795e
         smokeSizeBase: 0
-        smokeSize: 3
+        smokeSize: 4
         smokes: 2
 
         sparkColor: ff795e
@@ -561,7 +561,7 @@ surge-alloy: {
     shootPattern: {
         type: ShootBarrel
         shotDelay: 5
-        shots: 22
+        shots: 26
 
     barrels: [
         -3.75, 0, 0
@@ -569,7 +569,7 @@ surge-alloy: {
     	3.75, 0, 0
     	-3.75, 0, 0
     ]
-        }
+    }
     inaccuracy:2
     velocityScaleRandMin:0.8
     velocityScaleRandMax:1.2
@@ -581,13 +581,13 @@ surge-alloy: {
     height: 24
     width: 16
     buildingDamageMultiplier: 0.2
-    reloadMultiplier: 0.08
+    reloadMultiplier: 0.1
     ammoMultiplier: 16
-    rangeChange: 120
+    rangeChange: 220
     splashDamageRadius: 32
     lightningLength: 5
     statusDuration: 120
-    lightningDamage: 14
+    lightningDamage: 28
     status: emp-tier-2
     splashDamage: 75
 	pierceArmor:true
@@ -654,6 +654,7 @@ phase-fabric: {
     pierceBuilding: true
     scaleLife: true
     hittable: false
+    absorbable: false
     hitSize: 5
     height: 22
     width: 22

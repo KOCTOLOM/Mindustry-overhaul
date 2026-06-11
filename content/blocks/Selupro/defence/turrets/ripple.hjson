@@ -153,19 +153,34 @@ hitEffect: {
 }
 
 graphite: {
+    shootPattern: {
+    type: ShootMulti
+    source: {
+        type: ShootSpread
+        firstShotDelay: 80
+        spread: 3
+        shots: 3
+    }
+    dest: [
+    {
+    type: ShootPattern
+        shots: 3
+        shotDelay: 40
+    }
+    ]
+    }
     type: ArtilleryBulletType
     collidesTiles: false
     height: 15
     width: 15
     damage:50
     reloadMultiplier: 0.75
-    ammoMultiplier: 3
+    ammoMultiplier: 1
 	
 	buildingDamageMultiplier: 0.2
     splashDamageRadius: 32
     splashDamage: 72.5
     knockback: 1.8
-    pierceCap: 32
     lifetime: 80
     speed: 1.8
 	
@@ -238,7 +253,8 @@ silicon: {
     buildingDamageMultiplier: 0.1
     reloadMultiplier: 1.75
     ammoMultiplier: 5
-	
+	armorMultiplier:0.75
+
 	rangeChange: 72
 	
     splashDamageRadius: 26
@@ -352,7 +368,7 @@ hitEffect: {
     waveStroke: 7.5
     waveRad: 67
 
-    smokeColor: 696969
+    smokeColor: ff795e
     smokeSizeBase: 0
     smokeSize: 14.5
     smokes: 12
@@ -394,11 +410,7 @@ fragBullet: {
     frontColor: ff795e
     backColor: c85c51
 
-hitEffect: {
-    type: MultiEffect
-
-effects: [
-    hitBulletSmall
+hitEffect:[
 {
     type: ExplosionEffect
 
@@ -408,7 +420,7 @@ effects: [
     waveStroke: 7.5
     waveRad: 35
 
-    smokeColor: 696969
+    smokeColor: ff795e
     smokeSizeBase: 0
     smokeSize: 3
     smokes: 4
@@ -420,7 +432,6 @@ effects: [
     sparks: 6
     }
 ]
-    }
 }
     }
 
@@ -434,12 +445,13 @@ plastanium: {
 	buildingDamageMultiplier: 0.05
     reloadMultiplier: 1
     ammoMultiplier: 4
-    
+
+    armorMultiplier:0.15
+
     splashDamageRadius: 32
     splashDamage: 74
     fragBullets: 4
     knockback: 1.5
-    pierceCap: 5
     lifetime: 80
     speed: 1.75
 
@@ -468,11 +480,11 @@ fragBullet: {
     width: 10
 
     buildingDamageMultiplier: 0.05
-    pierceArmor:true
+    armorMultiplier:0.15
     knockback: 1.25
     pierceCap: 2
     lifetime: 36
-    damage: 35
+    damage: 42
     speed:4
     drag:0.005
     hitEffect: hitBulletColor

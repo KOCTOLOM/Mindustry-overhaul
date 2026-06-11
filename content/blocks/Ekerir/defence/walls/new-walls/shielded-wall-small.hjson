@@ -1,4 +1,4 @@
-type: ShieldWall
+/*type: ShieldWall
 name: Small Shielded Wall
 description: Protects structures from enemy projectiles, reflecting most bullets upon impact. Deploys a shield that absorbs most projectiles when power is provided. Conducts power.
 research: reinforced-surge-wall-large
@@ -25,4 +25,4 @@ requirements: [
     silicon/12
     phase-fabric/15
     carbide/8
-    ]
+    ]*/

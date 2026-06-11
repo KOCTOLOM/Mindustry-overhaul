@@ -9,6 +9,7 @@ requirements: [
     thorium/275
 ]
 
+itemCapacity: 80
 powerProduction: 32
 baseExplosiveness: 120
 health: 4800

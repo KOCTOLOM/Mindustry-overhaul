@@ -1,4 +1,4 @@
-type: AutoDoor
+/*type: AutoDoor
 name: Small Blast Door
 description: A small wall that opens when allied ground units are in range. Cannot be manually controlled.
 research: tungsten-wall-large
@@ -12,4 +12,4 @@ armor: 5
 requirements: [
     silicon/6
     tungsten/6
-    ]
+    ]*/

@@ -18,6 +18,7 @@ researchCostMultiplier:0.8
 consumes: {
     power: 6.5
 }
+velocityRnd:0.1
 
 requirements: [
     graphite/180
@@ -125,16 +126,17 @@ blast-compound: {
         sparkLen: 4
         sparks: 21
     }
-    fragBullets:4
+    fragBullets:2
 	fragBullet: {
     type: BasicBulletType
     collidesAir: false
-    shrinkY: 1
-    height: 0
-    width: 0
+    shrinkY: 0
+    height: 6
+    width: 6
+    sprite:large-orb
 	hittable:false
     buildingDamageMultiplier: 0.4
-    shieldDamageMultiplier:4
+    shieldDamageMultiplier:2
     splashDamageRadius: 15
     statusDuration: 10
     splashDamage: 10
@@ -149,7 +151,7 @@ blast-compound: {
     lightRadius: 27.5
 
     trailColor: c85c51
-    trailLength: 12.5
+    trailLength: 3
     trailWidth: 1.75
 
     frontColor: ff795e
@@ -372,12 +374,11 @@ plastanium: {
     homingRange: 180
 	homingDelay: 30
     knockback: 0.25
-    fragBullets: 12
-    pierceCap: 2
+    fragBullets: 6
     lifetime: 64
     damage: 60
     speed: 7.6
-
+    armorMultiplier:0.15
 	
     despawnEffect: plasticExplosion
     hitEffect: plasticExplosion
@@ -401,11 +402,11 @@ fragBullet: {
     height: 12
     width: 9
 
-    pierceCap: 2
+    pierceCap: 3
     lifetime: 25
-    damage: 16
+    damage: 26
     speed: 3.2
-	pierceArmor:true
+	armorMultiplier:0.15
     hitEffect: hitBulletColor
     despawnEffect: none
 

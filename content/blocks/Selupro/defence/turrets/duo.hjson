@@ -167,7 +167,6 @@ graphite: {
     width: 9
 
     buildingDamageMultiplier: 1.25
-    pierceDamageFactor: 0.2
     reloadMultiplier: 0.75
     ammoMultiplier: 3
 
@@ -216,15 +215,16 @@ silicon: {
     width: 7
 
     buildingDamageMultiplier: 0.75
-    pierceDamageFactor: 0.2
     reloadMultiplier: 1.5
     ammoMultiplier: 9
 
-    homingPower: 0.05
+    homingPower: 0.03
     lifetime: 45
-    pierceCap: 3
+    pierceCap: 2
     damage: 17
     speed: 4.4
+
+    armorMultiplier:0.75
 
     lightColor: 8e9097
     lightOpacity: 0.7

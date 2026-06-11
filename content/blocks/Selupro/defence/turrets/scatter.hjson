@@ -52,8 +52,8 @@ scrap: {
     type: ShootMulti
     source: {
         type: ShootSpread
-        spread: 4
-        shots: 6
+        spread: 2
+        shots: 3
     }
     dest: [
     {
@@ -66,7 +66,7 @@ scrap: {
         dest: [
         {
         type: ShootPattern
-            shots: 3
+            shots: 2
             shotDelay: 30
         }
         ]
@@ -78,13 +78,13 @@ scrap: {
     scaleLife: true
     height: 8
     width: 6
-    inaccuracy: 13
-    reloadMultiplier: 0.4
+    inaccuracy: 7
+    reloadMultiplier: 0.5
     ammoMultiplier: 3
 	knockback:0.2
     splashDamageRadius: 20
     splashDamage: 18
-    fragBullets: 6
+    fragBullets: 3
 	fragRandomSpread:40
 	explodeRange: 16
     explodeDelay: 3
@@ -115,9 +115,10 @@ fragBullet: {
     width: 5
 
     pierceCap: 6
-    lifetime: 20
-    damage: 5
-	
+    lifetime: 8
+    damage: 7
+	speed: 3.5
+
 	statusDuration: 180
     status:mov-motor-deceleration-tier-1
 	
@@ -216,10 +217,10 @@ metaglass: {
     ammoMultiplier: 2
 	reloadMultiplier: 0.6
     splashDamageRadius: 12
-    splashDamage: 12
-    pierceArmor:true
+    splashDamage: 16
+    armorMultiplier:0.25
     lifetime: 35
-    damage: 12
+    damage: 18
     speed: 12
     hitEffect: [
     flakExplosion
@@ -262,8 +263,8 @@ metaglass: {
 
     pierceCap: 2
     lifetime: 20
-    damage: 5
-	pierceArmor:true
+    damage: 6
+	armorMultiplier:0.25
     despawnEffect: none
 
     lightColor: ffffff

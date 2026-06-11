@@ -17,7 +17,7 @@ powerProduction: 460
 explosionRadius: 0
 liquidCapacity: 240
 itemDuration: 30
-itemCapacity: 360
+itemCapacity: 120
 health: 14500
 armor: 45
 destroyBullet:{

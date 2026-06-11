@@ -115,11 +115,11 @@ silicon: {
     buildingDamageMultiplier: 0.15
     reloadMultiplier: 1.15
     ammoMultiplier: 24
-    pierceArmor:true
+    armorMultiplier:0.75
 
     homingPower: 0.018
     lifetime: 65
-    damage: 20
+    damage: 26
     speed: 4.8
 
     lightColor: 8e9097
@@ -210,11 +210,11 @@ effects: [
     height: 6
     width: 2
     splashDamageRadius: 8
-    splashDamage: 13
+    splashDamage: 16
     pierceCap: 2
     lifetime:20
-    damage:12
-    pierceArmor:true
+    damage:18
+    armorMultiplier:0.2
     despawnEffect: none
     hitSound:none
     speed:2.1
@@ -326,10 +326,11 @@ thorium: {
     buildingDamageMultiplier: 1.3
     reloadMultiplier: 0.35
     ammoMultiplier: 2
+    hittable:false
 
     splashDamageRadius: 16
     splashDamage: 35
-    pierceCap: 3
+    pierceCap: 2
     lifetime: 87
     damage: 90
     speed: 3.25
