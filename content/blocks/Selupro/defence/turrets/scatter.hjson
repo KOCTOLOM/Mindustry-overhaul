@@ -218,7 +218,7 @@ metaglass: {
 	reloadMultiplier: 0.6
     splashDamageRadius: 12
     splashDamage: 16
-    armorMultiplier:0.25
+    armorMultiplier:0.2
     lifetime: 35
     damage: 18
     speed: 12
@@ -264,7 +264,7 @@ metaglass: {
     pierceCap: 2
     lifetime: 20
     damage: 6
-	armorMultiplier:0.25
+	armorMultiplier:0.2
     despawnEffect: none
 
     lightColor: ffffff

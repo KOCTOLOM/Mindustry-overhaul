@@ -13,11 +13,11 @@ requirements: [
 
 ]
 cooldownTime: 700
-velocityRnd: 0.2
-inaccuracy: 6
+velocityRnd: 0.12
+inaccuracy: 5
 health: 1250
 maxAmmo: 45
-reload: 280
+reload: 260
 range: 576
 armor: 9
 researchCostMultiplier:0.4
@@ -31,7 +31,7 @@ shoot: {
 	type: ShootMulti
 	source: {
     type: ShootSpread
-    firstShotDelay: 80
+    firstShotDelay: 50
     spread: 0.7
     shots: 2
     }
@@ -253,7 +253,7 @@ silicon: {
     buildingDamageMultiplier: 0.1
     reloadMultiplier: 1.75
     ammoMultiplier: 5
-	armorMultiplier:0.75
+	armorMultiplier:0.85
 
 	rangeChange: 72
 	
@@ -446,7 +446,7 @@ plastanium: {
     reloadMultiplier: 1
     ammoMultiplier: 4
 
-    armorMultiplier:0.15
+    armorMultiplier:0.55
 
     splashDamageRadius: 32
     splashDamage: 74
@@ -480,7 +480,7 @@ fragBullet: {
     width: 10
 
     buildingDamageMultiplier: 0.05
-    armorMultiplier:0.15
+    armorMultiplier:0.55
     knockback: 1.25
     pierceCap: 2
     lifetime: 36

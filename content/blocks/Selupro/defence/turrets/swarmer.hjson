@@ -8,11 +8,11 @@ buildCostMultiplier: 2
 coolantMultiplier: 1
 fogRadiusMultiplier: 0.3
 ammoPerShot: 6
-inaccuracy: 8
+inaccuracy: 6
 maxAmmo: 108
-reload: 165
+reload: 135
 health: 960
-range: 300
+range: 320
 armor: 5
 researchCostMultiplier:0.8
 consumes: {

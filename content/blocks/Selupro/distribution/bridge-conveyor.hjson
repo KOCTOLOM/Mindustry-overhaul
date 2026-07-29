@@ -1,7 +1,5 @@
-itemCapacity: 4
-health: 20
-
 requirements: [
+health: 20
     copper/15
     lead/8
 ]

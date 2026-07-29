@@ -461,12 +461,12 @@ blast-compound: {
 	
     splashDamageRadius: 60
     statusDuration: 48
-    splashDamage: 220
+    splashDamage: 240
     status: mov-oxidation-tier-2
     knockback: 5
     pierceCap: 3
     lifetime: 90
-    damage: 200
+    damage: 250
     speed: 3
 
     hitSound: cannon-large-hit
@@ -570,7 +570,8 @@ surge-alloy: {
     	-3.75, 0, 0
     ]
     }
-    inaccuracy:2
+    type: ArtilleryBulletType
+    inaccuracy:3
     velocityScaleRandMin:0.8
     velocityScaleRandMax:1.2
     type: BasicBulletType
@@ -578,20 +579,20 @@ surge-alloy: {
     scaleLife: true
     hittable: false
     hitSize: 5
-    height: 24
-    width: 16
-    buildingDamageMultiplier: 0.2
-    reloadMultiplier: 0.1
+    height: 19
+    width: 11
+    buildingDamageMultiplier: 0.25
+    reloadMultiplier: 0.15
     ammoMultiplier: 16
-    rangeChange: 220
-    splashDamageRadius: 32
-    lightningLength: 5
+    rangeChange: 260
+    splashDamageRadius: 28
+    lightningLength: 6
     statusDuration: 120
-    lightningDamage: 28
+    lightningDamage: 128
     status: emp-tier-2
-    splashDamage: 75
+    splashDamage: 130
 	pierceArmor:true
-    lightning: 4
+    lightning: 6
     lifetime: 70
     damage: 140
     speed: 11
@@ -604,8 +605,9 @@ surge-alloy: {
     lightRadius: 12.5
 
     trailColor: e8d174
-    trailLength: 27.5
-    trailWidth: 3.25
+    trailLength: 12
+    trailWidth: 2.25
+    trailEffect:none
 
     frontColor: fcf387
     backColor: e8d174
@@ -662,7 +664,7 @@ phase-fabric: {
 	shrinkX:0
 	sprite: large-bomb
     buildingDamageMultiplier: 0.3
-    reloadMultiplier: 0.6
+    reloadMultiplier: 0.40
     ammoMultiplier: 4
 	shieldDamageMultiplier:2
     status: sapped
@@ -717,10 +719,11 @@ effects: [
 ]
     }
 	fragRandomSpread: 70
-	fragBullets: 14
+	fragBullets: 9
 	fragLifeMin:1
-	fragLifeMax:1.8
+	fragLifeMax:1.9
 	fragVelocityMin:0.5
+	fragVelocityMax:1.2
 	fragBullet: {
 	shrinkY:0
 	shrinkX:0
@@ -809,8 +812,8 @@ effects: [
 		type: ShrapnelBulletType
 		buildingDamageMultiplier: 0.5
 		pierceArmor:true
-		damage: 120
-		length: 120
+		damage: 95
+		length: 115
 		serrations: 0
 		hitSound:none
 		width: 3

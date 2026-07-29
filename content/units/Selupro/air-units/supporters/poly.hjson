@@ -3,8 +3,8 @@ fogRadius: 6.5
 maxRange: 40
 
 itemCapacity: 32
-buildSpeed: 0.3
-mineSpeed: 0.6
+buildSpeed: 0.5
+mineSpeed: 0.75
 mineTier: 1
 health: 180
 speed: 3.25

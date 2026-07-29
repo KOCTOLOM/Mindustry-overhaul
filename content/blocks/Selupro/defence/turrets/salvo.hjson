@@ -115,7 +115,7 @@ silicon: {
     buildingDamageMultiplier: 0.15
     reloadMultiplier: 1.15
     ammoMultiplier: 24
-    armorMultiplier:0.75
+    armorMultiplier:0.85
 
     homingPower: 0.018
     lifetime: 65
@@ -214,7 +214,7 @@ effects: [
     pierceCap: 2
     lifetime:20
     damage:18
-    armorMultiplier:0.2
+    armorMultiplier:0.6
     despawnEffect: none
     hitSound:none
     speed:2.1

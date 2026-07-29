@@ -38,26 +38,44 @@ copper: {
     trailColor: f9c27a
     trailLength: 7.5
     trailWidth: 1.5
-	
-	despawnEffect:none
+
 	hitEffect:{
-    type: ExplosionEffect
-    lifetime: 30
+        type: ExplosionEffect
+        lifetime: 30
 
-    waveColor: f9c27a
-    waveStroke: 1.25
-    waveRad: 3
+        waveColor: f9c27a
+        waveStroke: 1.25
+        waveRad: 3
 
-    smokeColor: 454545
-    smokeSizeBase: 0
-    smokeSize: 1
-    smokes: 1
+        smokeColor: 454545
+        smokeSizeBase: 0
+        smokeSize: 1
+        smokes: 1
 
-    sparkColor: fff8e8
-    sparkStroke: 0.75
-    sparkRad: 1
-    sparkLen: 2
-    sparks: 2
+        sparkColor: fff8e8
+        sparkStroke: 0.75
+        sparkRad: 1
+        sparkLen: 2
+        sparks: 2
+    }
+    despawnEffect:{
+        type: ExplosionEffect
+        lifetime: 30
+
+        waveColor: f9c27a
+        waveStroke: 1.25
+        waveRad: 3
+
+        smokeColor: 454545
+        smokeSizeBase: 0
+        smokeSize: 1
+        smokes: 1
+
+        sparkColor: fff8e8
+        sparkStroke: 0.75
+        sparkRad: 1
+        sparkLen: 2
+        sparks: 2
     }
     }
 scrap: {
@@ -137,26 +155,44 @@ fragBullet: {
     frontColor: e0b28d
     backColor: 9b928b
 
-	despawnEffect:none
+	despawnEffect:{
+        type: ExplosionEffect
+        lifetime: 15
+
+        waveColor: 9b928b
+        waveStroke: 1.25
+        waveRad: 4
+
+        smokeColor: 454545
+        smokeSizeBase: 0
+        smokeSize: 1
+        smokes: 2
+
+        sparkColor: 9b928b
+        sparkStroke: 0.75
+        sparkRad: 1
+        sparkLen: 2
+        sparks: 2
+    }
 
 	hitEffect:{
-    type: ExplosionEffect
-    lifetime: 15
+        type: ExplosionEffect
+        lifetime: 15
 
-    waveColor: 9b928b
-    waveStroke: 1.25
-    waveRad: 4
+        waveColor: 9b928b
+        waveStroke: 1.25
+        waveRad: 4
 
-    smokeColor: 454545
-    smokeSizeBase: 0
-    smokeSize: 1
-    smokes: 2
+        smokeColor: 454545
+        smokeSizeBase: 0
+        smokeSize: 1
+        smokes: 2
 
-    sparkColor: 9b928b
-    sparkStroke: 0.75
-    sparkRad: 1
-    sparkLen: 2
-    sparks: 2
+        sparkColor: 9b928b
+        sparkStroke: 0.75
+        sparkRad: 1
+        sparkLen: 2
+        sparks: 2
     }
     }
 }
@@ -186,7 +222,25 @@ graphite: {
     frontColor: 95abd9
     backColor: 6b77a1
 	
-	despawnEffect:none
+	despawnEffect:{
+        type: ExplosionEffect
+        lifetime: 30
+
+        waveColor: 6b77a1
+        waveStroke: 1.25
+        waveRad: 3
+
+        smokeColor: 454545
+        smokeSizeBase: 0
+        smokeSize: 1
+        smokes: 1
+
+        sparkColor: 95abd9
+        sparkStroke: 0.75
+        sparkRad: 1
+        sparkLen: 2
+        sparks: 2
+    }
 	
 	hitEffect:{
     type: ExplosionEffect
@@ -224,7 +278,7 @@ silicon: {
     damage: 17
     speed: 4.4
 
-    armorMultiplier:0.75
+    armorMultiplier:0.85
 
     lightColor: 8e9097
     lightOpacity: 0.7
@@ -237,7 +291,25 @@ silicon: {
     frontColor: 8e9097
     backColor: 767a84
 	
-	despawnEffect:none
+	despawnEffect:{
+        type: ExplosionEffect
+        lifetime: 30
+
+        waveColor: 767a84
+        waveStroke: 1.25
+        waveRad: 3
+
+        smokeColor: 454545
+        smokeSizeBase: 0
+        smokeSize: 1
+        smokes: 1
+
+        sparkColor: 8e9097
+        sparkStroke: 0.75
+        sparkRad: 1
+        sparkLen: 2
+        sparks: 3
+    }
 	
 	hitEffect:{
     type: ExplosionEffect

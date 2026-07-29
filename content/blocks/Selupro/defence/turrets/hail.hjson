@@ -11,7 +11,7 @@ buildCostMultiplier: 1.5
 inaccuracy: 4
 maxAmmo: 15
 health: 180
-reload: 160
+reload: 180
 range: 432
 armor: 1
 researchCostMultiplier:0.6
@@ -181,7 +181,7 @@ silicon: {
     buildingDamageMultiplier: 0.1
     reloadMultiplier: 1.4
     ammoMultiplier: 5
-	armorMultiplier:0.15
+	armorMultiplier:0.85
 
 	inaccuracy:15
 	

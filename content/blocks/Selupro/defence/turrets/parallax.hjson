@@ -1,22 +1,25 @@
 research: scatter
 rotateSpeed: 14.5
 scaledForce: 4
-force: 16
+force: 18
+trackingRange:420
+buildCostMultiplier: 2
+fogRadiusMultiplier: 0.4
+health: 650
+range: 340
+damage: 1.2
+armor: 5
+minRange:40
+drawMinRange:true
 
-buildCostMultiplier: 1.8
-fogRadiusMultiplier: 0.5
-health: 550
-range: 270
-damage: 4
-armor: 2
 shootSound: beamParallax
 researchCostMultiplier:0.6
 consumes: {
-    power: 6
+    power: 4.5
 }
 
 requirements: [
-    graphite/65
+    graphite/45
     titanium/75
-    silicon/42
+    silicon/35
 ]

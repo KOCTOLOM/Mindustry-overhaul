@@ -19,9 +19,9 @@ abilities: [
     {
     type: ShieldRegenFieldAbility
     reload: 600
-    amount: 50
+    amount: 10
     range: 0
-    max: 50
+    max: 60
 }
     {
     type: ArmorPlateAbility
