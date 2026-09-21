@@ -18,6 +18,8 @@ health: 2700
 radius: 134
 armor: 19
 
+researchCostMultiplier:0.6
+
 consumes: {
     power: 19
 }
