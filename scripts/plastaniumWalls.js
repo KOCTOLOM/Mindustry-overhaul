@@ -29,7 +29,7 @@ const ReinfPlastWall = extend(Wall, "reinf-plast-wall", {
     insulated: true,
     absorbLasers: true,
     schematicPriority: 10,
-    buildVisibility: BuildVisibility.shown
+    buildVisibility: BuildVisibility.shown,
 });
 
 ReinfPlastWall.buildType = () => extend(Wall.WallBuild, ReinfPlastWall, {
@@ -59,7 +59,7 @@ const ReinfPlastWallLarge = extend(Wall, "reinf-plast-wall-large", {
     absorbLasers: true,
     schematicPriority: 10,
     buildVisibility: BuildVisibility.shown,
-    size: 2
+    size: 2,
 });
 
 ReinfPlastWallLarge.buildType = () => extend(Wall.WallBuild, ReinfPlastWallLarge, {

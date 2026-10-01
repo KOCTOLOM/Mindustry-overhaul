@@ -1,2 +1,4 @@
 squareSprite: false
 health: 9
+explosivenessScale:3
+flammabilityScale:3

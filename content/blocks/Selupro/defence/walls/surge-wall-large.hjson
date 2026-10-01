@@ -1,7 +1,5 @@
 research: surge-wall
-insulated: true
-
-buildCostMultiplier: 10
+buildCostMultiplier: 14
 
 lightningChance: 0.6
 lightningDamage: 24

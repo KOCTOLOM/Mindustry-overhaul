@@ -1,2 +1,4 @@
-health:120
+health:190
 armor:20
+explosivenessScale:0.7
+flammabilityScale:0.7

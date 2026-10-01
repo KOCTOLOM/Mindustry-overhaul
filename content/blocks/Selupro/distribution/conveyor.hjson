@@ -1,2 +1,4 @@
 displayedSpeed: 4.5
 health: 12
+explosivenessScale:3
+flammabilityScale:3

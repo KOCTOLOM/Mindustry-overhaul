@@ -2,32 +2,32 @@ research: duo
 rotateSpeed: 0.84
 targetAir: false
 fogRadiusMultiplier: 0.15
-shootCone: 10
+shootCone: 2
 recoil: 2
 shake: 5
 
 buildCostMultiplier: 1.5
 
-inaccuracy: 4
+inaccuracy: 3
 maxAmmo: 15
 health: 180
-reload: 180
+reload: 160
 range: 432
 armor: 1
+ammoPerShot: 3
 researchCostMultiplier:0.6
 shootSound: shootArtillerySmall
 
 requirements: [
     copper/32
-    graphite/20
+    graphite/24
 ]
-
 ammoTypes: {
 
 scrap: {
     shootPattern:{
     shotDelay: 3
-    shots: 3
+    shots: 12
     }
     type: ArtilleryBulletType
     collidesTiles: false
@@ -38,7 +38,7 @@ scrap: {
     width: 11
 
     buildingDamageMultiplier: 1
-    reloadMultiplier: 0.12
+    reloadMultiplier: 0.08
 
     splashDamageRadius: 12
     fragRandomSpread: 360
@@ -126,7 +126,7 @@ graphite: {
 	
 	buildingDamageMultiplier: 0.1
 	
-    ammoMultiplier: 2
+    ammoMultiplier: 4
 	
 	rangeChange: 72
 	
@@ -180,7 +180,7 @@ silicon: {
 	
     buildingDamageMultiplier: 0.1
     reloadMultiplier: 1.4
-    ammoMultiplier: 5
+    ammoMultiplier: 4
 	armorMultiplier:0.85
 
 	inaccuracy:15
@@ -236,7 +236,7 @@ pyratite: {
 
     buildingDamageMultiplier: 0.3
     reloadMultiplier: 0.5
-    ammoMultiplier: 3
+    ammoMultiplier: 2
 
     splashDamageRadius: 34
     fragRandomSpread: 360

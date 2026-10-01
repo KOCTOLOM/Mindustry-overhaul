@@ -218,7 +218,7 @@ metaglass: {
 	reloadMultiplier: 0.6
     splashDamageRadius: 12
     splashDamage: 16
-    armorMultiplier:0.2
+    armorMultiplier:0.25
     lifetime: 35
     damage: 18
     speed: 12

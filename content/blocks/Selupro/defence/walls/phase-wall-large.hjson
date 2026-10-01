@@ -1,6 +1,6 @@
 research: phase-wall
 
-buildCostMultiplier: 10
+buildCostMultiplier: 16
 
 chanceDeflect:0.7
 health: 6640

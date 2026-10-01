@@ -26951,7 +26951,8 @@ carbide:{
         }
         }
 }
-}*/
+}
+*/
 }
 requirements: [
     copper/1450

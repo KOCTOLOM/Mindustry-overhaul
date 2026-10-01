@@ -1,3 +1,5 @@
 displayedSpeed: 11
 health: 340
 armor: 14
+explosivenessScale:0.7
+flammabilityScale:0.7

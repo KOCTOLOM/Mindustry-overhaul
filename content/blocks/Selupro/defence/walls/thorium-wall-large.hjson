@@ -1,6 +1,6 @@
 research: thorium-wall
 
-buildCostMultiplier: 10
+buildCostMultiplier: 14
 
 health: 7000
 armor: 24

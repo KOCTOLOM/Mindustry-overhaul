@@ -3,3 +3,5 @@ health: 20
     copper/15
     lead/8
 ]
+explosivenessScale:3
+flammabilityScale:3

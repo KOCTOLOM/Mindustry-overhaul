@@ -126,7 +126,7 @@ pyratite: {
     hittable: false
     pierce: true
     hitSize: 7
-    armorMultiplier:0.75
+    armorMultiplier:0.70
     reloadMultiplier: 0.9
     ammoMultiplier: 12
     rangeChange: 40
@@ -137,7 +137,6 @@ pyratite: {
     damage: 46
     speed: 3
 	pierceCap: 3
-	pierceArmor:true
     despawnEffect: none
 
 smokeEffect: {

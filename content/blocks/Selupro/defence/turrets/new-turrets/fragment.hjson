@@ -1,7 +1,7 @@
 type: PointDefenseTurret
 name: Fragment
 description: "Smaller, cheaper and more compact version of «[#feb380]Segment[]». Damages and destroys approaching projectiles. \n Does not interact with laser beams."
-research: parallax
+research: arc
 rotateSpeed: 4
 category: turret
 fogRadiusMultiplier: 0.1

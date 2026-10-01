@@ -36,6 +36,7 @@ shootType: {
     hitSize: 3
 
     buildingDamageMultiplier: 0.25
+    armorMultiplier:1.3
     ammoMultiplier: 1
 
     lightningLengthRand:5

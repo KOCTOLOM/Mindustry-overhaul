@@ -3,3 +3,5 @@ requirements: [
     lead/15
 ]
 health: 50
+explosivenessScale:3
+flammabilityScale:3

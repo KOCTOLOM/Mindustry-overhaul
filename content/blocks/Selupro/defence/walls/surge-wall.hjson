@@ -1,7 +1,5 @@
-research: plastanium-wall-large
-insulated: true
-
-buildCostMultiplier: 10
+research: titanium-wall-large
+buildCostMultiplier: 7
 
 lightningChance: 0.15
 lightningDamage: 12

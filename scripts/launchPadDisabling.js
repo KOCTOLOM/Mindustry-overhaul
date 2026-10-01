@@ -1,1 +1,2 @@
-Blocks.launchPad.buildVisibility = BuildVisibility.hidden;
+Blocks.advancedLaunchPad.buildVisibility = BuildVisibility.hidden;
+Blocks.landingPad.buildVisibility = BuildVisibility.hidden;
