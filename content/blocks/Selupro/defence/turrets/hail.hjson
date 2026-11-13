@@ -26,8 +26,8 @@ ammoTypes: {
 
 scrap: {
     shootPattern:{
-    shotDelay: 3
-    shots: 12
+    shotDelay: 12
+    shots: 4
     }
     type: ArtilleryBulletType
     collidesTiles: false
@@ -46,7 +46,7 @@ scrap: {
     fragLifeMax: 2.25
     fragLifeMin: 0.8
     knockback: 1.25
-    fragBullets: 8
+    fragBullets: 12
     fragSpread: 32
     lifetime: 40
     speed: 9
@@ -79,7 +79,7 @@ fragBullet: {
 	statusDuration: 180
 	status:mov-motor-deceleration-tier-1
 
-	armorMultiplier:0.8
+	armorMultiplier:0.5
 
     trailColor: 9b928b
     trailLength: 5.25
