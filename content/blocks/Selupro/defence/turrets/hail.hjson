@@ -71,7 +71,7 @@ fragBullet: {
 
     buildingDamageMultiplier: 0.75
 
-    pierceCap: 3
+    pierceCap: 2
     damage: 8
     lifetime: 8
     speed: 4.5
@@ -79,7 +79,7 @@ fragBullet: {
 	statusDuration: 180
 	status:mov-motor-deceleration-tier-1
 
-	pierceArmor:true
+	armorMultiplier:0.8
 
     trailColor: 9b928b
     trailLength: 5.25
